@@ -9,7 +9,7 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - run: cd backend && ./mvnw -B package
+      - run: cd backend && chmod +x mvnw && ./mvnw -B package
   frontend:
     runs-on: ubuntu-latest
     steps:
