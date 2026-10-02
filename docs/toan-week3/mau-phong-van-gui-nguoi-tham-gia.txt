@@ -1,0 +1,64 @@
+PHỎNG VẤN NHU CẦU THEO DÕI RỦI RO BẢO TRÌ DỰ ÁN GIT
+Nhóm Git Health Monitor — Toản và Tưởng
+
+Chào anh/chị/bạn,
+Mình là Toản, đang cùng nhóm thực hiện tiểu luận về công cụ hỗ trợ developer
+xác định file nên ưu tiên review và theo dõi thay đổi của dự án từ lịch sử Git.
+Mình muốn tìm hiểu cách mọi người đang làm việc thực tế, khoảng 10–15 phút.
+Chưa có đáp án đúng/sai và nhóm chưa mặc định giải pháp của mình là cần thiết.
+
+Việc tham gia hoàn toàn tự nguyện. Bạn có thể bỏ qua câu hỏi hoặc dừng bất kỳ lúc nào.
+Nhóm chỉ dùng câu trả lời cho nghiên cứu/đồ án, dùng mã ẩn danh trong báo cáo.
+Xin không gửi mã nguồn nội bộ, tên khách hàng, khóa API hay thông tin bí mật.
+Nhóm không ghi âm nếu chưa được bạn đồng ý riêng.
+
+1. Bạn có đồng ý tham gia và cho phép nhóm dùng câu trả lời đã ẩn danh trong báo cáo không?
+Trả lời: Có / Không.
+Nếu Không, dừng tại đây.
+
+2. Vai trò hiện tại của bạn là gì? Bạn đã dùng Git trong dự án nhóm bao lâu?
+Ví dụ vai trò: developer, maintainer, technical lead, sinh viên có dự án nhóm thực tế.
+Bạn thường làm dự án có khoảng bao nhiêu người? Không cần nêu tên đơn vị/dự án.
+
+3. Lần gần nhất bạn phải chọn khu vực/file để review hoặc sửa chữa là khi nào?
+Bạn đã dựa vào thông tin nào, làm các bước gì? Hãy kể một tình huống cụ thể.
+
+4. Trong tình huống đó, bước nào khó hoặc mất thời gian nhất?
+Khó khăn xảy ra thường xuyên thế nào? Nếu nhớ, khoảng bao nhiêu thời gian bị mất?
+Nếu không gặp khó khăn, điều gì trong cách làm hiện tại đang hiệu quả?
+
+5. Hiện bạn dùng công cụ/cách nào để hiểu lịch sử thay đổi và chất lượng của file?
+Điểm nào hữu ích? Điều gì còn thiếu? Không dùng công cụ chuyên dụng cũng là câu trả lời hợp lệ.
+
+6. Bạn từng sửa một file rồi phát hiện phải sửa thêm file khác chưa?
+Bạn nhận ra quan hệ đó bằng cách nào? Hậu quả nếu bỏ sót là gì?
+
+7. Khi người hiểu rõ một phần mã không có mặt, nhóm bạn xử lý thế nào?
+Bạn có cần biết ai thường sửa file đó không? Vì sao có hoặc không?
+
+8. Nếu có thông tin thay đổi qua các lần quét, trường hợp nào khiến bạn muốn nhận cảnh báo?
+Thông tin nào phải có trong cảnh báo để bạn quyết định hành động? Điều gì sẽ gây phiền?
+
+9. Sau các câu hỏi trên mới giới thiệu ý tưởng:
+"Nhóm đang thử hiển thị tần suất thay đổi, độ phức tạp, các file hay được sửa cùng nhau,
+phân bố đóng góp và xu hướng; đây chỉ là tín hiệu hỗ trợ review, không kết luận file có bug."
+Thông tin nào trong số này hữu ích với công việc của bạn? Thông tin nào không cần?
+Bạn cần bằng chứng gì để tin hoặc phản biện một kết quả xếp hạng?
+
+10. Nếu có trợ lý AI giải thích các chỉ số và gợi ý checklist review:
+Bạn có dùng không, trong trường hợp nào? Bạn lo ngại gì về dữ liệu và độ chính xác?
+Bạn mong đầu ra như thế nào và sẽ kiểm chứng ra sao?
+
+11. Trong các nhu cầu vừa kể, bạn ưu tiên ba nhu cầu nào nhất? Vì sao?
+Điều gì khiến bạn quyết định không dùng công cụ như vậy?
+
+12. Bạn có sẵn lòng tham gia thử nghiệm sản phẩm ở giai đoạn sau không?
+Không bắt buộc. Nếu có, cách liên hệ được lưu riêng, không đưa vào repository công khai.
+
+Cảm ơn bạn. Nhóm có thể gửi lại phần tóm tắt để bạn kiểm tra việc ghi nhận có đúng ý không.
+
+GHI CHÚ CHO TOẢN (bỏ phần này nếu chỉ gửi câu hỏi):
+- Thu ít nhất 3 phản hồi từ người có kinh nghiệm Git phù hợp, không tự điền hộ.
+- Giữ nguyên ý kiến không đồng ý; không chỉ chọn nhận xét ủng hộ đề tài.
+- Đây là khảo sát nhu cầu TC1, chưa phải user study TC2.7, chưa đo SUS/task success.
+- Không bắt buộc thu tên, số điện thoại, tên công ty. Dùng S01, S02, S03.

@@ -1,0 +1,230 @@
+TÀI LIỆU HỌC TUẦN 3 CỦA TOẢN
+Git Health Monitor — 27/09–03/10/2026
+Soạn và đối chiếu tài liệu ngày 30/09/2026 với hỗ trợ AI.
+
+Đây là tài liệu tự học gắn với mã trong nhánh feat/toan-week-3, không phải xác nhận
+Toản đã đọc, tự viết hoặc làm chủ toàn bộ nội dung. Sau mỗi phần, chạy bài thực hành
+và tự trả lời câu hỏi. Ghi chỗ chưa hiểu vào báo cáo; không đánh dấu đã học hộ.
+
+1. LỘ TRÌNH HỌC VÀ NGUỒN CHÍNH THỨC
+
+Học theo thứ tự bên dưới. Thời lượng là gợi ý, không phải giờ đã làm.
+
+S01. REST và controller (45–60 phút)
+https://spring.io/guides/gs/rest-service/
+Đọc mapping request, record/JSON và chạy endpoint.
+
+S02. JPA cơ bản (45–60 phút)
+https://spring.io/guides/gs/accessing-data-jpa/
+Đọc entity, repository và lưu/đọc dữ liệu. Tutorial dùng database embedded;
+dự án của nhóm kiểm tra tiếp trên PostgreSQL thật.
+
+S03. SQL/JPA và cấu hình datasource theo Spring Boot đang dùng
+https://docs.spring.io/spring-boot/reference/data/sql.html
+Repo hiện là Boot 4.1.1; không copy import/dependency của Boot 3 mà không kiểm tra.
+
+S04. PostgreSQL constraints (30–45 phút)
+https://www.postgresql.org/docs/18/ddl-constraints.html
+S05. PostgreSQL transactions (20–30 phút)
+https://www.postgresql.org/docs/18/tutorial-transactions.html
+
+S06. Migration và Flyway (30 phút)
+https://docs.spring.io/spring-boot/how-to/data-initialization.html
+
+S07. Tách component, props và state (45 phút)
+https://react.dev/learn/thinking-in-react
+S08. Effect và cleanup (30 phút)
+https://react.dev/learn/synchronizing-with-effects
+
+S09. Recharts, bài mẫu LineChart (30–45 phút)
+https://recharts.github.io/en-US/examples/SimpleLineChart/
+
+S10. Biến môi trường Vite (15 phút)
+https://vite.dev/guide/env-and-mode
+
+S11. GitHub Actions + Maven (30 phút)
+https://docs.github.com/en/actions/tutorials/build-and-test-code/java-with-maven
+S12. PostgreSQL service trong CI (20 phút)
+https://docs.github.com/en/actions/tutorials/use-containerized-services/create-postgresql-service-containers
+S13. Review Pull Request (15 phút)
+https://docs.github.com/en/pull-requests/reference/pull-request-reviews
+S14. Docker Compose startup order (15 phút)
+https://docs.docker.com/compose/how-tos/startup-order/
+
+Các liên kết đã được tra cứu trong phiên làm việc ngày 30/09. Ưu tiên đọc đúng phần
+cần dùng, không cần học hết framework trước khi làm bài thực hành. Nội dung giải thích
+áp dụng dưới đây là lựa chọn triển khai của nhóm/bản đề xuất, không phải yêu cầu của tác giả tài liệu.
+
+2. SPRING BOOT VÀ REST: NHẬN YÊU CẦU, KHÔNG TRỘN MỌI VIỆC TRONG CONTROLLER
+
+Lý thuyết (S01–S03): Spring MVC ánh xạ method/path HTTP đến phương thức Java.
+Controller nhận request và tạo response. DTO mô tả dữ liệu trao đổi; entity mô tả
+dữ liệu lưu. Spring Data JPA cung cấp repository để thao tác entity qua database.
+Dependency injection đưa dependency vào constructor, giúp thấy rõ quan hệ giữa lớp.
+
+Áp dụng đã viết:
+- repository/RepositoryController.java: POST, GET list và GET detail.
+- repository/RepositoryService.java: điều phối chuẩn hóa URL và lưu/đọc.
+- repository/TrackedRepositoryStore.java: JpaRepository.
+- repository/TrackedRepository.java: entity bảng tracked_repository.
+- api/ApiExceptionHandler.java: lỗi đầu vào/xung đột có thông điệp thống nhất.
+Các file Java nằm trong backend/src/main/java/com/example/demo/.
+
+Vì sao cần chia vậy trong Git Health Monitor?
+Sau này thêm worker, cảnh báo và màn hình khác, logic dữ liệu không phụ thuộc một
+controller cụ thể. DTO cũng tránh việc thêm field entity vô tình đổi public API.
+Chưa đổi package com.example.demo để không tạo refactor ngoài phạm vi tuần 3.
+
+Ví dụ luồng hiện tại: người dùng nhập URL → controller kiểm tra body → service
+chuẩn hóa → JPA gửi SQL → PostgreSQL lưu → response 201 → frontend tải danh sách.
+Nếu trùng URL, constraint chặn và API trả 409; không báo chung là thành công.
+
+HTTP cần giải thích: GET đọc; POST tạo; 201 đã tạo; 400 sai request;
+403 đăng ký đang bị tắt; 404 không có bản ghi; 409 dữ liệu xung đột.
+202 dự kiến cho analysis job chỉ xác nhận đã tiếp nhận, chưa phân tích xong.
+
+Bài thực hành: chạy README, gửi một URL hợp lệ, gửi lại với .git, gửi URL GitLab,
+gửi body rỗng, xem status/body. So kết quả với api-contract-week3.md.
+Tự trả lời: Vì sao POST repository tuần 3 chưa chứng minh đã phân tích Git?
+Vì sao URL đúng định dạng chưa có nghĩa repo tồn tại hoặc công khai?
+
+3. POSTGRESQL: RÀNG BUỘC DỮ LIỆU VÀ TRANSACTION
+
+Lý thuyết (S04): primary key xác định bản ghi; NOT NULL ngăn thiếu giá trị;
+UNIQUE ngăn trùng; foreign key ràng buộc tham chiếu. Database giữ ràng buộc kể cả
+khi request không đi qua màn hình thông thường. Index giúp các kiểu truy vấn phù hợp,
+nhưng không phải cứ thêm nhiều index là luôn nhanh hơn.
+
+Lý thuyết (S05): transaction gom thao tác thành một đơn vị thành công hoặc rollback.
+COMMIT xác nhận; ROLLBACK hủy thay đổi chưa commit. Cần thiết kế đúng ranh giới
+transaction, không coi việc dùng annotation là đã giải quyết mọi vấn đề đồng thời.
+
+Áp dụng tuần 3: bảng tracked_repository có id, url, owner, name, created_at và
+UNIQUE(url). URL được chuẩn hóa trước lưu; @Transactional bao thao tác service.
+Database là hàng rào cuối ngăn hai request đồng thời cùng ghi một URL.
+
+Áp dụng về sau: một repository có nhiều job/snapshot; file_metric thuộc snapshot.
+Không công bố snapshot khi mới ghi được một phần. Quá trình fetch/tính toán có thể
+lâu, nên nhóm phải bàn cách tính trước rồi persist nhất quán, không tùy tiện giữ
+transaction database mở trong toàn bộ thời gian gọi Git/LLM.
+
+Bài thực hành SQL chỉ trên database test:
+SELECT id, url, owner, name, created_at FROM tracked_repository ORDER BY id DESC;
+SELECT url, count(*) FROM tracked_repository GROUP BY url HAVING count(*) > 1;
+SELECT version, description, success FROM flyway_schema_history ORDER BY installed_rank;
+
+Tự trả lời: Kiểm tra "URL chưa có" trong Java có đủ chống hai request cùng lúc không?
+Nếu hai hàng khác nhau về hoa/thường nhưng cùng repo, phải xử lý trước UNIQUE thế nào?
+Không sửa/xóa dữ liệu thực để làm bài thử; dùng database riêng.
+
+4. FLYWAY: THIẾT KẾ DATABASE CŨNG CẦN LỊCH SỬ THAY ĐỔI
+
+Lý thuyết (S06): migration là thay đổi schema có phiên bản. Spring Boot có thể chạy
+Flyway khi khởi động. Với PostgreSQL, cấu hình hiện dùng starter Flyway cùng module
+flyway-database-postgresql. Chọn một cơ chế quản lý schema để tránh xung đột.
+
+Áp dụng: backend/src/main/resources/db/migration/V1__create_tracked_repository.sql.
+ddl-auto=validate giúp Hibernate kiểm tra schema, không tự âm thầm sửa bảng.
+Đã chạy migration dùng chung trong test PostgreSQL và ứng dụng local.
+
+Vì sao phù hợp dự án? Hai máy và staging phải có cùng cấu trúc bảng. Khi bổ sung
+job/snapshot ở tuần sau, tạo V2__...; không sửa V1 đã được áp dụng trên môi trường dùng chung.
+Chưa tạo cứng cả 10 bảng vì semantics metric/snapshot còn cần nhóm chốt.
+
+Tự trả lời: Vì sao ddl-auto=update tiện lúc thử nhưng làm khó truy vết thay đổi schema?
+Database chưa được cấp quyền/kết nối sẽ khiến bản backend mới không khởi động ở bước nào?
+
+5. REACT VÀ TYPESCRIPT: DỮ LIỆU SERVER KHÁC TRẠNG THÁI MÀN HÌNH
+
+Lý thuyết (S07): component chia màn hình thành phần; props là đầu vào; state là
+dữ liệu thay đổi theo tương tác. Dữ liệu tính được từ state sẵn có thường không cần
+lưu thêm một bản state trùng. TypeScript giúp kiểm tra hình dạng dữ liệu khi build,
+nhưng không tự chứng minh JSON từ server đúng lúc chạy.
+
+Lý thuyết (S08): effect đồng bộ component với hệ thống bên ngoài. Khi fetch theo
+trang thay đổi hoặc component bị tháo, cleanup tránh dùng response cũ. Event submit
+thuộc hành động người dùng, không cần chuyển mọi hành động vào effect.
+
+Áp dụng:
+- frontend/src/App.tsx quản lý url, loading, saving, thông báo, lỗi và phân trang.
+- frontend/src/api.ts gom fetch, base URL, timeout 15 giây và giải mã lỗi.
+- AbortController hủy yêu cầu đọc cũ; button bị disable lúc đang lưu để tránh bấm lặp.
+- Lỗi POST tách khỏi lỗi GET: đăng ký trùng không nên làm biến mất danh sách đang có.
+- Chưa phân tích khác với kết quả không có rủi ro. UI luôn ghi trạng thái đúng.
+
+Bài thực hành: mở hai kích thước desktop/375px; thử URL trùng; tắt backend rồi tải lại;
+đọc thông báo, bật lại rồi retry. Đối chiếu test frontend/e2e/repositories.spec.ts.
+Tự trả lời: Tại sao "[]" từ server và lỗi mất mạng không được hiển thị cùng một thông báo?
+Vì sao chỉ lưu trên state React thì reload có thể mất dữ liệu, còn bản này thì không?
+
+6. RECHARTS: BIỂU ĐỒ PHẢI NÓI ĐÚNG Ý NGHĨA DỮ LIỆU
+
+Lý thuyết (S09): LineChart nhận dữ liệu, XAxis/YAxis mô tả trục; Line chọn dataKey;
+Tooltip giúp xem từng điểm; ResponsiveContainer co theo vùng cha có kích thước.
+
+Áp dụng: frontend/src/components/DemoTrend.tsx dùng 4 điểm mẫu, trục y cố định 0–1,
+đường thẳng giữa các điểm và nhãn Dữ liệu minh họa. Có bảng số liệu thay thế để đọc.
+Tách lazy import để thư viện biểu đồ không nằm hết trong bundle đầu của màn hình.
+
+Vì sao? Hotspot dự kiến có miền 0–1; trục bị cắt có thể khiến biến động nhìn quá lớn.
+Tuần này chưa có snapshot thật, nên tuyệt đối không lấy mẫu này làm kết quả RQ2.
+Khi có API snapshot, phải giữ thời điểm, commit/config và phần giải thích raw metric.
+Percentile tương đối tăng chưa đủ kết luận file có thêm bug.
+
+Bài thực hành: đổi một điểm mẫu, nhìn bảng/trục, rồi khôi phục. Giải thích từng prop
+LineChart/Line/ResponsiveContainer. Không nộp việc đổi số mẫu thành kết quả nghiên cứu.
+
+7. ENV, CORS VÀ TRIỂN KHAI
+
+Lý thuyết (S10): Vite đưa các biến VITE_* dùng trong mã client vào bundle.
+Vì vậy chỉ đặt địa chỉ API ở VITE_API_BASE_URL, không đặt database password/API key.
+
+Áp dụng: backend đọc DB_URL/DB_USERNAME/DB_PASSWORD; CORS nhận danh sách frontend
+origin cho phép. Origin gồm scheme, host và port; localhost và 127.0.0.1 khác nhau.
+CORS là quy tắc trình duyệt, không phải hệ thống đăng nhập hoặc chống gọi trực tiếp.
+Tuần này mặc định tắt đăng ký trên môi trường chưa được cấu hình có chủ ý.
+
+Staging hiện tại: Render health đã trả OK, nhưng frontend URL được cung cấp đang
+đòi đăng nhập Vercel. Xem staging-week3.md. Health OK không chứng minh toàn sản phẩm
+đã chạy; status 200 sau redirect cũng có thể là trang đăng nhập.
+
+Docker (S14): depends_on đơn thuần nói về thứ tự, không tự bảo đảm DB đã nhận kết nối.
+Compose dùng healthcheck PostgreSQL và service_healthy trước khi khởi động backend.
+Docker Engine chưa chạy trên máy kiểm tra; file Compose/Docker chưa được thực thi ở đây.
+
+8. KIỂM THỬ VÀ GIT: LƯU CẢ QUÁ TRÌNH KIỂM CHỨNG
+
+Test tuần này có unit kiểm tra URL, test HTTP với PostgreSQL thật, browser test mock
+cho lỗi UI và một test live opt-in. Test mock không chứng minh database hoạt động;
+test live thêm và reload mới nối toàn luồng. Không dùng "build thành công" thay cho
+"test đã pass", cũng không suy ra coverage ≥70% khi chưa có báo cáo coverage.
+
+Git/CI (S11–S13): branch tách thay đổi, PR là nơi review trước merge, CI tự chạy các
+kiểm tra lặp lại. Workflow hiện thêm PostgreSQL service, npm ci, lint, build, browser
+test, npm audit, scan secret và Docker build. Chưa có run GitHub cho bản sửa local.
+
+Áp dụng quy trình: issue → branch → thay đổi nhỏ có ý nghĩa → test → PR → Tưởng review
+→ merge → triển khai → lưu minh chứng. Không giả ngày commit hoặc review thay bạn nhóm.
+Nhật ký AI phải chỉ rõ AI làm phần nào, Toản đã kiểm tra/sửa phần nào, chưa kiểm tra gì.
+
+9. CÁC ĐIỂM PHẢI BÀN VỚI TƯỞNG
+
+- Contract analysis job và DTO kết quả ingestion trước khi làm worker/API riêng.
+- Chốt contribution của HHI tính bằng commit hay churn, identity mapping, ties percentile.
+- BR06 HEAD không đổi: cửa sổ trượt/config thay đổi có cần snapshot mới không?
+- NFR03 10 phút cho ≤10.000 commit cần benchmark của pipeline thật; CRUD tuần 3 không đo được.
+- Số UC giữa đề cương và usecases-draft chưa khớp. Chốt mapping ở tuần 4.
+- AI review chỉ bổ trợ sau snapshot, không sửa code hoặc thay score.
+
+10. PHIẾU TỰ XÁC NHẬN CỦA TOẢN (ĐỂ TRỐNG ĐẾN KHI TỰ LÀM)
+
+Ngày tự đọc/thực hành: __________________
+Link đã đọc thực sự: __________________
+Lệnh/tình huống đã tự chạy và kết quả: __________________
+Giải thích được luồng React → API → service → JPA → PostgreSQL: Có / Chưa
+Giải thích được duplicate/constraint/transaction: Có / Chưa
+Giải thích được cleanup/timeout/CORS và dữ liệu giả: Có / Chưa
+Phần đã tự sửa, lý do và commit: __________________
+Điểm chưa hiểu/cần hỏi Tưởng hoặc GVHD: __________________
+
+Không điền "đã làm chủ" chỉ vì AI đã tạo xong tài liệu hoặc test đã pass.
