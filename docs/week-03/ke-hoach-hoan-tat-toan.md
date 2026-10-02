@@ -1,5 +1,3 @@
-> Bản bàn giao trước tích hợp, được giữ để truy vết. Trạng thái cập nhật ngày 02/10 và PR/CI xem [hồ sơ hiện hành](../week-03/README.md). Các dòng “chưa commit/chưa học” bên dưới phản ánh thời điểm bản cũ.
-
 # Kế hoạch hoàn tất phần việc tuần 3 của Toản
 
 **Thời gian:** 30/09–03/10/2026, theo giờ Việt Nam/Thái Lan (UTC+7).

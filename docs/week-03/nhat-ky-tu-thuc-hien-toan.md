@@ -1,5 +1,3 @@
-> Bản bàn giao trước tích hợp, được giữ để truy vết. Trạng thái cập nhật ngày 02/10 và PR/CI xem [hồ sơ hiện hành](../week-03/README.md). Các dòng “chưa commit/chưa học” bên dưới phản ánh thời điểm bản cũ.
-
 # Phiếu ghi nhận phần Toản tự thực hiện
 
 Tuần 3: 27/09–03/10/2026. Phiếu được chuẩn bị trước khi tự thực hành; các ô trống chưa biểu thị công việc đã hoàn thành.
@@ -46,3 +44,9 @@ Tuần 3: 27/09–03/10/2026. Phiếu được chuẩn bị trước khi tự th
 - Việc chuyển sang tuần sau và lý do:
 
 Không ghi mật khẩu, token hoặc thông tin liên hệ stakeholder trong phiếu. Chỉ ghi lệnh và kết quả thực sự đã chạy; những lỗi AI tự phát hiện trước đây vẫn được phân biệt với lỗi Toản tự phát hiện.
+
+## Xác nhận tiếp nhận ngày 02/10/2026
+
+- Toản xác nhận đã đọc phần lý thuyết và đã trao đổi xong với Tưởng.
+- Toản cho biết phần Tưởng đã làm xong; repository đã có cập nhật nghiên cứu `43d614f`. Trong phiên đã nhận thêm bản tổng hợp S04–S05 tại `3a3fd30` và tích hợp vào báo cáo năm trường hợp.
+- Các kết quả kiểm thử mới do AI thực thi; không điền vào bảng “tự thực hiện” ở trên. Chưa có thông tin về giờ tự học, nội dung Toản tự sửa hoặc lời giải thích độc lập nên các ô đó giữ trống.

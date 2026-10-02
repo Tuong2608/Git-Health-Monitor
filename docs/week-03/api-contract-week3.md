@@ -1,5 +1,3 @@
-> Bản bàn giao trước tích hợp, được giữ để truy vết. Trạng thái cập nhật ngày 02/10 và PR/CI xem [hồ sơ hiện hành](../week-03/README.md). Các dòng “chưa commit/chưa học” bên dưới phản ánh thời điểm bản cũ.
-
 # Contract API tuần 3
 
 Ngày 30/09/2026. Đây là contract của phần thực hành hiện có. Các route job ở cuối tài liệu chỉ là đề xuất bàn giao, chưa được cài đặt.

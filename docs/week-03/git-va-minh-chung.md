@@ -1,12 +1,10 @@
-> Bản bàn giao trước tích hợp, được giữ để truy vết. Trạng thái cập nhật ngày 02/10 và PR/CI xem [hồ sơ hiện hành](../week-03/README.md). Các dòng “chưa commit/chưa học” bên dưới phản ánh thời điểm bản cũ.
-
 # Git, AI log và minh chứng tuần 3
 
 ## Điều đã kiểm tra
 
 Nhánh local `feat/toan-week-3`, base `e99a27b`. Lịch sử lấy từ repo có commit tuần 1 và tuần 2; bảy commit hiện thấy đều mang tên tác giả `Tuong2608`. Điều này chỉ nói về metadata Git, chưa chứng minh Toản không tham gia ngoài Git.
 
-Bản bàn giao chưa tạo commit/push/PR, không giả SHA, thời điểm hay tác giả để hợp thức hóa điểm. Thay đổi AI tạo được ghi trong AI log; Toản cần review và commit thật bằng tài khoản của mình nếu tiếp nhận.
+Ngày 02/10 đã commit mã `165df33`, tài liệu `a7e7187`, push nhánh và tạo [PR #1](https://github.com/Tuong2608/Git-Health-Monitor/pull/1) bằng tài khoản GitHub `toane54111`. [CI đạt](https://github.com/Tuong2608/Git-Health-Monitor/actions/runs/36979524926). Thay đổi AI hỗ trợ được ghi rõ trong AI log; chưa có approval độc lập hoặc triển khai backend mới. Các bước dưới đây là hướng dẫn quy trình, không phải các mục đều còn chưa làm.
 
 ## Cách đưa vào quy trình nhóm
 

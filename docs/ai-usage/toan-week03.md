@@ -7,14 +7,14 @@
 | Đề tài | Xây dựng hệ thống phân tích và giám sát sức khỏe dự án phần mềm dựa trên lịch sử kho mã nguồn Git |
 | Sinh viên | Trần Quang Toản — MSSV 23110158 |
 | Thời gian báo cáo | 27/09–03/10/2026 |
-| Ngày thực hiện các hoạt động được ghi nhận | 30/09/2026 |
+| Ngày thực hiện các hoạt động được ghi nhận | 30/09 và 02/10/2026 |
 | Công cụ hỗ trợ | Codex trên ứng dụng desktop; phiên bản mô hình chưa được ghi nhận |
 | Kho mã nguồn | https://github.com/Tuong2608/Git-Health-Monitor |
-| Phiên bản cơ sở | `e99a27b` |
+| Phiên bản cơ sở | Ban đầu `e99a27b`; tích hợp nghiên cứu của Tưởng `43d614f` ngày 02/10 |
 | Nhánh triển khai cục bộ | `feat/toan-week-3` |
-| Trạng thái truy vết | Chưa tạo commit và Pull Request cho phần thay đổi tuần 3 |
+| Trạng thái truy vết | Mã chức năng `165df3376182602d84607984b267d41cec15156e`; PR/CI xem [biên bản](../week-03/bien-ban-hoan-tat-02-10.md) |
 
-Nhật ký được tổ chức theo từng hoạt động chuyên môn. Nội dung yêu cầu đối với AI được diễn giải thông qua mục tiêu và phạm vi hỗ trợ, không trích lại hội thoại gốc. Các hoạt động diễn ra trong cùng phiên làm việc; mã hoạt động dùng để truy vết nội dung, không đại diện cho những phiên sử dụng độc lập.
+Nhật ký được tổ chức theo từng hoạt động chuyên môn. Nội dung yêu cầu đối với AI được diễn giải thông qua mục tiêu và phạm vi hỗ trợ, không trích lại hội thoại gốc. Các hoạt động được ghi nhận theo hai ngày làm việc; mã hoạt động dùng để truy vết nội dung, không đại diện cho những phiên sử dụng độc lập.
 
 Trong phiên được ghi nhận, AI hỗ trợ tổng hợp tài liệu, tạo mã nguồn, thực thi kiểm tra bằng công cụ và hiệu chỉnh kết quả. Hoạt động kiểm chứng kỹ thuật của AI và hoạt động rà soát độc lập của sinh viên được ghi nhận riêng. Phần sinh viên tự thực hiện được bổ sung tại Mục 5 sau khi có kết quả.
 
@@ -170,7 +170,7 @@ Trong phiên được ghi nhận, AI hỗ trợ tổng hợp tài liệu, tạo 
 
 **Kết quả:** Cấu hình CI được cập nhật; Compose mô tả database/backend local, có kiểm tra trạng thái PostgreSQL trước khi khởi động backend.
 
-**Kiểm chứng:** `docker compose config --quiet` chấp nhận cấu hình; backend/frontend được kiểm tra trực tiếp tại máy. Docker Engine chưa chạy nên chưa thực thi container, Gitleaks hoặc Docker build. Chưa có run GitHub Actions cho bản sửa.
+**Kiểm chứng:** `docker compose config --quiet` chấp nhận cấu hình; backend/frontend được kiểm tra trực tiếp tại máy. Docker Engine chưa chạy nên chưa thực thi container, Gitleaks hoặc Docker build. Tại phiên 30/09 chưa có run GitHub Actions; ngày 02/10 đã có CI đạt, xem W3-AI-15.
 
 **Minh chứng và trạng thái:** `.github/workflows/ci.yaml`, `compose.yaml`, `.env.example` và [README](../../README.md). Hoàn thành phần cấu hình; hiệu lực trên hạ tầng CI/CD cần được kiểm chứng sau khi đưa thay đổi lên repository.
 
@@ -214,7 +214,7 @@ Trong phiên được ghi nhận, AI hỗ trợ tổng hợp tài liệu, tạo 
 
 **Kiểm chứng:** Đối chiếu từng nội dung với câu trả lời gốc; không điền thay câu 10–12 của S02; đánh dấu số liệu S03 đặt trong ngoặc vuông cần xác nhận. Các khoảng thời gian tự ước tính không được gộp thành trung bình hoặc kết quả hiệu quả sản phẩm. Chưa có xác nhận lại của người tham gia hoặc kiểm chứng thực địa độc lập.
 
-**Minh chứng và trạng thái:** [Báo cáo phỏng vấn](../interview-notes.md). Đã lập từ nguồn Toản cung cấp; chờ sinh viên xác nhận metadata, phản hồi còn thiếu và nhóm duyệt diễn giải/đề xuất. Chưa tạo commit/PR cho cập nhật này.
+**Minh chứng và trạng thái:** [Báo cáo phỏng vấn](../interview-notes.md). Đã lập từ nguồn Toản cung cấp; chờ sinh viên xác nhận metadata, phản hồi còn thiếu và nhóm duyệt diễn giải/đề xuất. Tại phiên 30/09 chưa tạo commit/PR; trạng thái mới xem W3-AI-15 và biên bản hoàn tất.
 
 ## 3. Tổng hợp kết quả kiểm chứng
 
@@ -274,11 +274,11 @@ Bảng này dành cho hoạt động sinh viên thực hiện sau khi tiếp nh�
 
 | Hoạt động | Nội dung cần xác nhận | Kết quả tự thực hiện | Ngày và minh chứng |
 |---|---|---|---|
-| W3-AI-01–02 | Nguồn đã đọc; đánh giá sự phù hợp của nội dung tổng hợp | Chờ bổ sung | |
+| W3-AI-01–02 | Nguồn đã đọc; đánh giá sự phù hợp của nội dung tổng hợp | Toản xác nhận đã đọc lý thuyết; chưa có đánh giá độc lập từng nguồn | Xác nhận trong hội thoại 02/10/2026 |
 | W3-AI-03–04 | Giải thích luồng API, chuẩn hóa URL, constraint và migration | Chờ bổ sung | |
 | W3-AI-05–06 | Giải thích state, timeout, CORS và ý nghĩa dữ liệu minh họa | Chờ bổ sung | |
 | W3-AI-07, W3-AI-14 | Đối chiếu báo cáo với nguồn; bổ sung metadata, câu trả lời thiếu và xác nhận của nhóm | Đã cung cấp 3 bộ trả lời; chờ rà soát bản tổng hợp | |
-| W3-AI-08–09 | Review contract và phạm vi AI với thành viên còn lại | Chờ bổ sung | |
+| W3-AI-08–09 | Review contract và phạm vi AI với thành viên còn lại | Toản xác nhận trao đổi xong với Tưởng; chưa có biên bản từng quyết định | Xác nhận 02/10/2026; không thay thế GitHub PR review |
 | W3-AI-10–12 | Chạy lại kiểm thử, kiểm tra CI và môi trường triển khai | Chờ bổ sung | |
 | W3-AI-13 | Rà soát báo cáo và bổ sung minh chứng nộp | Chờ bổ sung | |
 
@@ -292,10 +292,10 @@ Bảng này dành cho hoạt động sinh viên thực hiện sau khi tiếp nh�
 
 | Nhóm thay đổi | Commit triển khai | Commit hiệu chỉnh | Pull Request và người review |
 |---|---|---|---|
-| Backend và database | Chưa tạo | Chưa tạo | Chưa tạo |
-| Frontend và biểu đồ | Chưa tạo | Chưa tạo | Chưa tạo |
-| Kiểm thử và cấu hình CI | Chưa tạo | Chưa tạo | Chưa tạo |
-| Tài liệu học, khảo sát và báo cáo | Chưa tạo | Chưa tạo | Chưa tạo |
+| Backend và database | `165df3376182602d84607984b267d41cec15156e` | Trong commit triển khai | Xem biên bản hoàn tất |
+| Frontend và biểu đồ | `165df3376182602d84607984b267d41cec15156e` | Trong commit triển khai | Xem biên bản hoàn tất |
+| Kiểm thử và cấu hình CI | `165df3376182602d84607984b267d41cec15156e` | Trong commit triển khai | Xem biên bản hoàn tất |
+| Tài liệu học, khảo sát và báo cáo | Xem lịch sử Git của file | Xem biên bản hoàn tất | Xem biên bản hoàn tất |
 
 ## 6. Nguyên tắc kiểm soát và giới hạn sử dụng
 
@@ -308,3 +308,21 @@ Bảng này dành cho hoạt động sinh viên thực hiện sau khi tiếp nh�
 Người rà soát: ____________________
 
 Ngày xác nhận: ____________________
+
+## 7. Hoạt động bổ sung ngày 02/10/2026 — W3-AI-15
+
+**Mục tiêu:** Hoàn tất phần kỹ thuật và hồ sơ tuần 3 sau khi sinh viên xác nhận đã đọc lý thuyết, trao đổi với thành viên còn lại.
+
+**Đầu vào:** Nhánh tuần 3, cập nhật `43d614f` của Tưởng, xác nhận của Toản về việc học và phân công phỏng vấn bổ sung, hai URL staging được cung cấp lại.
+
+**Phạm vi AI hỗ trợ:** Tích hợp cập nhật không xung đột; rà soát thay đổi; chạy Maven trên PostgreSQL thật, lint/build/audit và browser test; kiểm tra chỉ đọc staging; tạo commit, push và mở PR #1; CI đầu tiên đạt cả bốn job; cập nhật hồ sơ theo minh chứng.
+
+**Đầu ra và kiểm chứng:** 22 backend test và 4 browser test đạt; frontend lint/build đạt; npm audit 0 vulnerabilities. Backend staging health 200 nhưng API mới 404; frontend chuyển sang Vercel login. Phiên đầu bị hạn chế truy cập cache/mạng trong sandbox; chạy lại với quyền công cụ phù hợp, không sửa kết quả kiểm thử để bỏ qua lỗi. Một lần kết nối thử dùng role postgres không tồn tại; dùng đúng role ghm của database thử nghiệm và kiểm tra thành công.
+
+**Phần do sinh viên xác nhận:** Đã đọc lý thuyết và trao đổi với Tưởng. Ban đầu Toản thông báo Tưởng tổng hợp hai người sau; trong phiên đã nhận commit `3a3fd30` gồm S04–S05 và tích hợp vào báo cáo năm người. Không tự tạo câu trả lời, xác nhận review, thời gian học hay kết quả triển khai.
+
+**Giới hạn:** Review độc lập, quyền quản trị staging và xác nhận nộp báo cáo cần bằng chứng bên ngoài phiên kiểm thử. Khác biệt công thức coupling giữa đề cương và ghi chú mới được ghi thành mục cần thống nhất trước khi cài đặt metric.
+
+**Truy vết:** [Biên bản hoàn tất và liên kết Git/CI](../week-03/bien-ban-hoan-tat-02-10.md).
+
+**Bổ sung tích hợp:** Nhánh chính có cập nhật `3a3fd30` trong lúc CI chạy. AI giải quyết hai xung đột tài liệu: giữ AI log mới nhất, tiếp nhận báo cáo năm người của Tưởng; sửa các câu còn ghi cỡ mẫu ba người và ghi nhận nguồn của S04–S05. Không thay phản hồi hoài nghi bằng nhận định ủng hộ. [PR #1](https://github.com/Tuong2608/Git-Health-Monitor/pull/1), [CI đạt tại a7e7187](https://github.com/Tuong2608/Git-Health-Monitor/actions/runs/36979524926). Bản cũ `docs/toan-week3/` được giữ để truy vết và có dẫn chiếu sang hồ sơ cập nhật.

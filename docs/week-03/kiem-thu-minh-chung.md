@@ -1,5 +1,3 @@
-> Bản bàn giao trước tích hợp, được giữ để truy vết. Trạng thái cập nhật ngày 02/10 và PR/CI xem [hồ sơ hiện hành](../week-03/README.md). Các dòng “chưa commit/chưa học” bên dưới phản ánh thời điểm bản cũ.
-
 # Kết quả kiểm thử và minh chứng ngày 30/09/2026
 
 Người thực thi các kiểm tra trong phiên này: AI qua công cụ local theo yêu cầu Toản. Đây là bằng chứng sản phẩm đã được kiểm tra, **chưa phải bằng chứng Toản tự chạy hoặc làm chủ mã**.
@@ -48,3 +46,7 @@ Các test hiện tại thêm dữ liệu có tên riêng vào database test. Ch�
 - Phỏng vấn, user study, SUS và đóng góp/cách hiểu cá nhân của Toản.
 
 22 test backend cộng 4 test browser không chứng minh đã đạt mức 5 TC2.5; cần đủ tầng, coverage, truy vết và toàn bộ phạm vi cam kết ở giai đoạn sau.
+
+## Kiểm chứng lại ngày 02/10/2026
+
+Sau khi tích hợp cập nhật `43d614f` của Tưởng, mã chức năng `165df33` đạt Maven verify 22 test, 0 failures/errors/skipped; lint/build frontend đạt; npm audit 0 vulnerabilities; Playwright 4 passed (4,9 giây), có live PostgreSQL và kiểm tra màn hình 375px. Ảnh `evidence/week3-desktop.png` và `week3-mobile.png` được cập nhật từ lần chạy này. Docker Engine local chưa chạy; kiểm chứng container/secret scan được theo dõi riêng qua CI trong biên bản hoàn tất.

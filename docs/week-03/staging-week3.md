@@ -1,5 +1,3 @@
-> Bản bàn giao trước tích hợp, được giữ để truy vết. Trạng thái cập nhật ngày 02/10 và PR/CI xem [hồ sơ hiện hành](../week-03/README.md). Các dòng “chưa commit/chưa học” bên dưới phản ánh thời điểm bản cũ.
-
 # Kiểm tra và bàn giao staging tuần 3
 
 ## Kết quả kiểm tra chỉ đọc ngày 30/09/2026
@@ -55,3 +53,9 @@ Docker Engine không chạy trong môi trường kiểm tra hiện tại; Docker
 - [ ] Link PR có Tưởng review và SHA merge.
 - [ ] Run CI bản mới và deploy thành công gắn đúng SHA.
 - [ ] Biên bản smoke test, rollback và URL minh chứng.
+
+## Kiểm tra lại ngày 02/10/2026
+
+Toản xác nhận vẫn dùng hai URL trên. Kiểm tra chỉ đọc: `/api/health` trả 200 `OK`; `/api/repositories` trả 404; frontend vẫn chuyển đến `vercel.com/login`. Do đó chưa có minh chứng bản tuần 3 mới đã triển khai. Quyền GitHub hiện có là push, không phải quyền quản trị Render/Vercel. PR không được merge chỉ dựa trên health của bản cũ. Chủ dịch vụ cần cấu hình DB/env, cung cấp domain truy cập phù hợp và xác nhận triển khai đúng SHA sau review.
+
+GitHub Actions đã chạy thành công cả backend, frontend, Gitleaks và Docker build tại [run 36979524926](https://github.com/Tuong2608/Git-Health-Monitor/actions/runs/36979524926). Vercel báo preview deployment success trên PR #1 cho commit `71e000e`; trạng thái build/deploy preview không xác nhận kết nối database hay khả năng truy cập ẩn danh. Kết quả các lần chạy tiếp theo xem [checks của PR](https://github.com/Tuong2608/Git-Health-Monitor/pull/1/checks).
