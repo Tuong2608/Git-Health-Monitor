@@ -32,10 +32,17 @@ Hai URL: https://git-health-monitor.onrender.com và https://git-health-monitor-
 3. **Nhóm:** đã có năm trường hợp phỏng vấn; bổ sung metadata/câu còn thiếu khi nhận được nguồn và xác nhận bản tổng hợp. Không yêu cầu hỏi lại hai người đã được Tưởng bổ sung.
 4. **Toản/nhóm:** nộp [báo cáo tuần](bao-cao-tuan-03-toan.md) qua kênh môn học và lưu xác nhận GVHD. Chưa có quyền truy cập kênh nộp hay minh chứng tiếp nhận trong phiên này.
 
-## Điểm cần thống nhất trước tuần 4
+## Baseline metric chuẩn bị cho tuần 4
 
-Ghi chú mới của Tưởng dùng coupling `shared / |C_A ∪ C_B|`, trong khi đề cương dùng `shared / min(|C_A|,|C_B|)`. Ví dụ A có 10 commit, B có 20, chung 5: hai cách lần lượt là 20% và 50%. Không dùng chung ngưỡng 50% rồi coi kết quả tương đương. Chưa sửa công thức trong tài liệu của Tưởng hoặc đề cương; chưa có code metric bị ảnh hưởng. Nhóm cần ghi quyết định trong SRS trước khi cài đặt.
+Mâu thuẫn công thức coupling đã được chuẩn hóa trong [Metric Specification v1](../metric-spec-v1.md) trên nhánh tài liệu để nhóm review trước khi cài đặt:
 
-HHI đo mức tập trung đóng góp theo định nghĩa dữ liệu, không trực tiếp chứng minh mức hiểu mã. Tương tự, phần thử JGit/Lizard trong ghi chú của Tưởng chưa thay thế benchmark 10.000 commit/10 phút có log đo cụ thể.
+- temporal coupling dùng `shared / min(|C_A|,|C_B|)`, phù hợp với công thức được ghi nhận từ đề cương; không dùng `shared / |C_A ∪ C_B|` với cùng ngưỡng 50%;
+- ngưỡng mặc định: `shared_commits >= 5` và `coupling >= 0.50`;
+- HHI được định nghĩa là concentration của contribution lịch sử dựa trên churn `additions + deletions`, không được diễn giải trực tiếp thành mức hiểu mã;
+- Lizard v1 dùng max function CCN làm complexity đại diện cấp file cho hotspot;
+- JGit ingestion phải bật rename detection, bỏ merge commit khỏi metric lịch sử và normalize developer identity;
+- NFR 10.000 commit/10 phút vẫn là **mục tiêu chưa được benchmark** bằng pipeline hoàn chỉnh.
 
-**Kết luận:** phần kỹ thuật local và hồ sơ đã được kiểm chứng; trạng thái nộp tuần 3 chỉ hoàn tất khi review, staging và tiếp nhận báo cáo có minh chứng.
+Các điểm trên là baseline kỹ thuật trong PR tài liệu, chưa được ghi là xác nhận của GVHD cho đến khi nhóm/GVHD review và merge.
+
+**Kết luận:** phần kỹ thuật local và hồ sơ tuần 3 đã được kiểm chứng trong phạm vi ghi nhận; metric pipeline vẫn thuộc giai đoạn tiếp theo và phải triển khai/test theo spec đã review.
