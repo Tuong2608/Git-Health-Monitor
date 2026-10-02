@@ -1,6 +1,8 @@
 # Git Health Monitor
 
-Bản thực hành tuần 3 của Toản: đăng ký URL repository, lưu PostgreSQL, xem danh sách/chi tiết qua REST API và React; biểu đồ Recharts dùng **dữ liệu minh họa** có nhãn riêng. Chưa clone Git, tính metric, tạo job/snapshot hay gọi LLM.
+Bản thực hành tuần 3 của Toản: đăng ký URL repository, lưu PostgreSQL, xem danh sách/chi tiết qua REST API và React; biểu đồ Recharts dùng **dữ liệu minh họa** có nhãn riêng. Backend hiện tại **chưa clone Git, chưa tính metric, chưa tạo job/snapshot và chưa gọi LLM**.
+
+Nhóm đã có PoC/feasibility riêng để xác minh hướng dùng JGit và Lizard; PoC này **chưa được tích hợp vào backend hiện tại**. Baseline metric chuẩn bị cho giai đoạn cài đặt nằm tại [Metric Specification v1](docs/metric-spec-v1.md).
 
 Tài liệu bắt đầu: [Bộ bàn giao tuần 3](docs/week-03/README.md).
 
