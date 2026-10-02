@@ -1,12 +1,14 @@
+> Bản bàn giao trước tích hợp, được giữ để truy vết. Trạng thái cập nhật ngày 02/10 và PR/CI xem [hồ sơ hiện hành](../week-03/README.md). Các dòng “chưa commit/chưa học” bên dưới phản ánh thời điểm bản cũ.
+
 # Báo cáo tiến độ tuần 3 của Trần Quang Toản
 
 **Đề tài:** Xây dựng hệ thống phân tích và giám sát sức khỏe dự án phần mềm dựa trên lịch sử kho mã nguồn Git.
 
 **Sinh viên:** Trần Quang Toản — MSSV 23110158. **Nhóm:** Toản và Trần Văn Tưởng.
 
-**Tuần báo cáo:** 27/09–03/10/2026. **Thời điểm cập nhật:** 02/10/2026.
+**Tuần báo cáo:** 27/09–03/10/2026. **Thời điểm cập nhật:** 30/09/2026.
 
-**Trạng thái:** Bản báo cáo theo việc đã có minh chứng đến ngày cập nhật, chưa nộp/chưa có xác nhận GVHD. Ngày 02/10, Toản xác nhận đã đọc phần lý thuyết và trao đổi xong với Tưởng; phần Tưởng được Toản xác nhận đã làm xong. Kiểm thử kỹ thuật dưới đây do AI thực thi theo yêu cầu, không quy thành Toản tự chạy. Trạng thái Git/CI mới nhất xem [biên bản hoàn tất](bien-ban-hoan-tat-02-10.md).
+**Trạng thái:** Bản báo cáo theo việc đã có minh chứng đến ngày cập nhật, chưa nộp/chưa có xác nhận GVHD. Phần sau 30/09 cần bổ sung trước nộp cuối tuần. Nội dung và mã mới được AI hỗ trợ trực tiếp; chưa xác nhận sinh viên đã tự đọc và kiểm chứng toàn bộ.
 
 ## 1. Mục tiêu tuần
 
@@ -18,15 +20,15 @@ Tìm hiểu Spring Boot REST, PostgreSQL/JPA/Flyway, React/TypeScript và Rechar
 
 | Nội dung | Kết quả/tài liệu | Giới hạn |
 |---|---|---|
-| Tìm nguồn và tổng hợp lý thuyết | Tài liệu text gồm 14 nguồn chính thức, liên hệ từng công nghệ với mã dự án, bài thực hành và câu hỏi | Toản xác nhận đã đọc ngày 02/10; chưa có bản diễn giải độc lập từng chủ đề |
+| Tìm nguồn và tổng hợp lý thuyết | Tài liệu text gồm 14 nguồn chính thức, liên hệ từng công nghệ với mã dự án, bài thực hành và câu hỏi | Chờ Toản xác nhận phần đã tự học |
 | Backend REST và PostgreSQL | API đăng ký/danh sách/chi tiết repository; DTO, service, JPA; migration Flyway V1; validation/chống trùng/phân trang/CORS | Chỉ lưu URL, chưa clone và chưa xác nhận repo công khai |
 | Frontend | Màn thêm/xem repo; trạng thái tải/rỗng/lỗi, thông báo; layout desktop/mobile | Chưa có các màn phân tích thật |
 | Recharts | Biểu đồ đường 4 điểm mẫu, trục 0–1, bảng số liệu, nhãn minh họa | Không sử dụng làm kết quả RQ2 |
 | Test và kiểm soát mã | Backend verify 22 test pass; browser 4 pass gồm live PostgreSQL; lint/build/npm audit đạt | Chưa có coverage/static report Java và CI run remote |
-| Phỏng vấn | Đã tích hợp 5 trường hợp S01–S05, gồm hai trường hợp từ Tưởng tại `3a3fd30`, lập [báo cáo tổng hợp](../interview-notes.md), nhóm nhu cầu và đề xuất yêu cầu | S02 thiếu câu 10–12; ngày/hình thức thu thập và số liệu trong ngoặc vuông của S03 cần xác nhận |
+| Phỏng vấn | Đã tiếp nhận 3 bộ trả lời S01–S03, lập [báo cáo tổng hợp](../interview-notes.md), nhóm nhu cầu và đề xuất yêu cầu | S02 thiếu câu 10–12; ngày/hình thức thu thập và số liệu trong ngoặc vuông của S03 cần xác nhận |
 | Yêu cầu/API/AI | Contract tuần 3 có 8 AC; nháp job contract; nháp phạm vi AI review | Chưa chốt SRS/provider/thiết kế chung |
-| CI/hạ tầng | Workflow bổ sung PostgreSQL service, npm ci/lint/audit/browser, secret scan, Docker build; Compose local | CI `36979524926` đạt backend/frontend/secret-scan/Docker build; staging backend mới chưa deploy |
-| Báo cáo và AI log | Log nêu rõ phạm vi AI sinh, lỗi, cách kiểm chứng và phần chờ sinh viên | Đã commit mã; PR/CI được cập nhật trong biên bản hoàn tất; review độc lập chưa xác nhận |
+| CI/hạ tầng | Workflow bổ sung PostgreSQL service, npm ci/lint/audit/browser, secret scan, Docker build; Compose local | Cấu hình mới chưa chạy trên GitHub/Docker tại đây |
+| Báo cáo và AI log | Log nêu rõ phạm vi AI sinh, lỗi, cách kiểm chứng và phần chờ sinh viên | Chưa có commit/PR/review thật của bản sửa |
 
 ## 3. Nội dung kiến thức đã được tổng hợp để học
 
@@ -40,12 +42,12 @@ Tìm hiểu Spring Boot REST, PostgreSQL/JPA/Flyway, React/TypeScript và Rechar
 
 Chi tiết, nguồn, câu hỏi tự kiểm tra và chỗ áp dụng: [ly-thuyet-va-ap-dung-toan.txt](ly-thuyet-va-ap-dung-toan.txt).
 
-**Ghi nhận việc học của Toản:**
+**Phần “Toản đã học được gì” cần tự xác nhận trước nộp:**
 
-- Toản xác nhận ngày 02/10 đã đọc phần lý thuyết được bàn giao. Phạm vi tài liệu gồm REST, JPA/PostgreSQL/Flyway, React/TypeScript, Recharts, CORS và kiểm thử/Git.
-- Kiểm thử ngày 02/10 do AI thực hiện; chưa ghi nhận Toản tự chạy lại.
-- Chưa có ghi nhận kiểm tra khả năng giải thích độc lập; không suy diễn việc đã đọc thành đã làm chủ.
-- Các câu hỏi còn vướng của Toản: chưa cung cấp.
+- Tài liệu thực sự đã đọc: chưa điền.
+- Bài thực hành tự chạy và kết quả: chưa điền.
+- Nội dung đã giải thích được không cần đọc lại: chưa điền.
+- Nội dung còn chưa hiểu: chưa điền.
 
 Không đổi tiêu đề phần này thành “đã làm chủ toàn bộ” nếu mới tiếp nhận tài liệu AI.
 
@@ -59,33 +61,29 @@ Báo cáo phỏng vấn được tổng hợp từ câu trả lời Toản cung 
 
 ## 5. Minh chứng kỹ thuật và staging
 
-- Nhánh: `feat/toan-week-3`; đã tích hợp cập nhật Tưởng `43d614f`; commit chức năng: `165df3376182602d84607984b267d41cec15156e`. Xem biên bản hoàn tất để lấy PR/CI.
+- Nhánh local: `feat/toan-week-3`; base commit: `e99a27b`. Chưa commit/push/PR.
 - Backend: `mvnw verify` trên PostgreSQL 18.3 thật, 22 test pass, 0 lỗi/skip; Flyway V1 success.
 - Frontend: lint/build pass, npm audit báo 0 vulnerabilities tại lần kiểm tra; Playwright 4 pass, trong đó 1 live luồng browser→API→database và reload.
 - Ảnh desktop/mobile và tổng hợp: [kiem-thu-minh-chung.md](kiem-thu-minh-chung.md), thư mục `evidence/`.
 - Render https://git-health-monitor.onrender.com/api/health trả HTTP 200 và OK khi kiểm tra ngày 30/09.
-- Ngày 02/10, URL Vercel vẫn chuyển sang đăng nhập; backend `/api/repositories` trả 404. Chưa xác nhận frontend công khai hoặc bản mới trên staging. Mã mới chưa được deploy. Xem [staging-week3.md](staging-week3.md).
+- URL Vercel do nhóm cung cấp chuyển sang đăng nhập; chưa xác nhận frontend công khai. Mã mới chưa được deploy. Xem [staging-week3.md](staging-week3.md).
 
 ## 6. Vướng mắc và điều chỉnh có lý do
 
 - Chuyển từ học tutorial rời rạc sang luồng nhỏ trên chính repo để có thể hiểu và kiểm thử sự liên kết frontend/API/database.
 - Giữ Boot 4.1.1 đang dùng trong repo; đề cương ghi Boot 3 nên cần nhóm xác nhận khác biệt, không đổi major version âm thầm.
-- Đã tiếp nhận 3 trường hợp từ Toản và 2 trường hợp từ bản tổng hợp của Tưởng. Cần bổ sung câu 10–12 của S02, xác nhận thông tin còn thiếu và review diễn giải. Nhu cầu cảnh báo file bị bỏ sót trong PR vượt phạm vi snapshot hiện tại, chưa đưa vào cam kết.
+- Đã tiếp nhận phản hồi của 3 stakeholder do Toản cung cấp. Cần bổ sung câu 10–12 của S02, xác nhận thông tin còn thiếu và review diễn giải. Nhu cầu cảnh báo file bị bỏ sót trong PR vượt phạm vi snapshot hiện tại, chưa đưa vào cam kết.
 - Staging frontend chưa truy cập được từ bên ngoài không đăng nhập; cần chủ account cung cấp domain phù hợp. Backend mới cần DB/env trước khi merge nếu auto-deploy đang bật.
-- Docker Engine chưa chạy trong môi trường kiểm tra. Đã dùng PostgreSQL cài sẵn với database riêng để kiểm chứng; Docker build và Gitleaks đã đạt trên GitHub Actions, không chạy local.
+- Docker Engine chưa chạy trong môi trường kiểm tra. Đã dùng PostgreSQL cài sẵn với database riêng để kiểm chứng; chưa ghi Docker/Gitleaks đã đạt.
 - Chưa có pipeline ingestion, nên không đo NFR03 10.000 commit/10 phút bằng luồng CRUD. Phối hợp Tưởng cho benchmark đúng phạm vi.
 
 ## 7. Phần cần hoàn tất đến cuối tuần 3
 
-- [x] Toản xác nhận đã đọc phần lý thuyết ngày 02/10.
-- [x] AI chạy lại kiểm thử local: 22 backend và 4 browser test đạt. Không nhận là Toản tự chạy.
-- [x] Hợp nhất 5 trường hợp stakeholder, cập nhật chủ đề N08 và giữ quan điểm hoài nghi.
-- [x] Tiếp nhận bản tổng hợp hai người S04–S05 từ Tưởng tại `3a3fd30`.
-- [ ] Metadata và những câu trả lời còn thiếu giữ nguyên trạng thái, cần bổ sung khi có nguồn.
-- [x] Toản xác nhận đã trao đổi với Tưởng; đã tích hợp ghi chú nghiên cứu tuần 3 của Tưởng.
-- [ ] Review PR độc lập và quyết định chi tiết còn mở được lưu thành minh chứng.
-- [x] Commit và push nhánh; [PR #1](https://github.com/Tuong2608/Git-Health-Monitor/pull/1); [CI đạt](https://github.com/Tuong2608/Git-Health-Monitor/actions/runs/36979524926).
-- [ ] Người khác review PR trên GitHub; chưa có approval.
+- [ ] Toản tự đọc tài liệu, chạy lại và ghi phần đã hiểu/chưa hiểu.
+- [x] Tiếp nhận 3 bộ trả lời stakeholder và lập báo cáo tổng hợp nhu cầu.
+- [ ] Bổ sung thông tin thu thập, câu 10–12 của S02, xác nhận số liệu S03; nhóm duyệt các yêu cầu đề xuất sau phỏng vấn.
+- [ ] Tưởng review mã/contract/phạm vi AI; thống nhất số UC và ranh giới module.
+- [ ] Commit, PR và review thật; thêm SHA/run URL vào AI log/báo cáo.
 - [ ] Cấu hình database/env cho staging, frontend domain phù hợp; kiểm tra và lưu deploy evidence của bản mới.
 - [ ] Báo cáo tuần cho GVHD/web khoa; lưu xác nhận và góp ý.
 

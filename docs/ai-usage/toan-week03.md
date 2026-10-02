@@ -170,7 +170,7 @@ Trong phiên được ghi nhận, AI hỗ trợ tổng hợp tài liệu, tạo 
 
 **Kết quả:** Cấu hình CI được cập nhật; Compose mô tả database/backend local, có kiểm tra trạng thái PostgreSQL trước khi khởi động backend.
 
-**Kiểm chứng:** `docker compose config --quiet` chấp nhận cấu hình; backend/frontend được kiểm tra trực tiếp tại máy. Docker Engine chưa chạy nên chưa thực thi container, Gitleaks hoặc Docker build. Chưa có run GitHub Actions cho bản sửa.
+**Kiểm chứng:** `docker compose config --quiet` chấp nhận cấu hình; backend/frontend được kiểm tra trực tiếp tại máy. Docker Engine chưa chạy nên chưa thực thi container, Gitleaks hoặc Docker build. Tại phiên 30/09 chưa có run GitHub Actions; ngày 02/10 đã có CI đạt, xem W3-AI-15.
 
 **Minh chứng và trạng thái:** `.github/workflows/ci.yaml`, `compose.yaml`, `.env.example` và [README](../../README.md). Hoàn thành phần cấu hình; hiệu lực trên hạ tầng CI/CD cần được kiểm chứng sau khi đưa thay đổi lên repository.
 
@@ -214,7 +214,7 @@ Trong phiên được ghi nhận, AI hỗ trợ tổng hợp tài liệu, tạo 
 
 **Kiểm chứng:** Đối chiếu từng nội dung với câu trả lời gốc; không điền thay câu 10–12 của S02; đánh dấu số liệu S03 đặt trong ngoặc vuông cần xác nhận. Các khoảng thời gian tự ước tính không được gộp thành trung bình hoặc kết quả hiệu quả sản phẩm. Chưa có xác nhận lại của người tham gia hoặc kiểm chứng thực địa độc lập.
 
-**Minh chứng và trạng thái:** [Báo cáo phỏng vấn](../interview-notes.md). Đã lập từ nguồn Toản cung cấp; chờ sinh viên xác nhận metadata, phản hồi còn thiếu và nhóm duyệt diễn giải/đề xuất. Chưa tạo commit/PR cho cập nhật này.
+**Minh chứng và trạng thái:** [Báo cáo phỏng vấn](../interview-notes.md). Đã lập từ nguồn Toản cung cấp; chờ sinh viên xác nhận metadata, phản hồi còn thiếu và nhóm duyệt diễn giải/đề xuất. Tại phiên 30/09 chưa tạo commit/PR; trạng thái mới xem W3-AI-15 và biên bản hoàn tất.
 
 ## 3. Tổng hợp kết quả kiểm chứng
 
@@ -315,12 +315,14 @@ Ngày xác nhận: ____________________
 
 **Đầu vào:** Nhánh tuần 3, cập nhật `43d614f` của Tưởng, xác nhận của Toản về việc học và phân công phỏng vấn bổ sung, hai URL staging được cung cấp lại.
 
-**Phạm vi AI hỗ trợ:** Tích hợp cập nhật không xung đột; rà soát thay đổi; chạy Maven trên PostgreSQL thật, lint/build/audit và browser test; kiểm tra chỉ đọc staging; tạo commit và chuẩn bị PR/CI; cập nhật hồ sơ theo minh chứng.
+**Phạm vi AI hỗ trợ:** Tích hợp cập nhật không xung đột; rà soát thay đổi; chạy Maven trên PostgreSQL thật, lint/build/audit và browser test; kiểm tra chỉ đọc staging; tạo commit, push và mở PR #1; CI đầu tiên đạt cả bốn job; cập nhật hồ sơ theo minh chứng.
 
 **Đầu ra và kiểm chứng:** 22 backend test và 4 browser test đạt; frontend lint/build đạt; npm audit 0 vulnerabilities. Backend staging health 200 nhưng API mới 404; frontend chuyển sang Vercel login. Phiên đầu bị hạn chế truy cập cache/mạng trong sandbox; chạy lại với quyền công cụ phù hợp, không sửa kết quả kiểm thử để bỏ qua lỗi. Một lần kết nối thử dùng role postgres không tồn tại; dùng đúng role ghm của database thử nghiệm và kiểm tra thành công.
 
-**Phần do sinh viên xác nhận:** Đã đọc lý thuyết và trao đổi với Tưởng. Tưởng phụ trách hỏi thêm hai người và tổng hợp sau. Không tự tạo câu trả lời, xác nhận review, thời gian học hay kết quả triển khai.
+**Phần do sinh viên xác nhận:** Đã đọc lý thuyết và trao đổi với Tưởng. Ban đầu Toản thông báo Tưởng tổng hợp hai người sau; trong phiên đã nhận commit `3a3fd30` gồm S04–S05 và tích hợp vào báo cáo năm người. Không tự tạo câu trả lời, xác nhận review, thời gian học hay kết quả triển khai.
 
 **Giới hạn:** Review độc lập, quyền quản trị staging và xác nhận nộp báo cáo cần bằng chứng bên ngoài phiên kiểm thử. Khác biệt công thức coupling giữa đề cương và ghi chú mới được ghi thành mục cần thống nhất trước khi cài đặt metric.
 
 **Truy vết:** [Biên bản hoàn tất và liên kết Git/CI](../week-03/bien-ban-hoan-tat-02-10.md).
+
+**Bổ sung tích hợp:** Nhánh chính có cập nhật `3a3fd30` trong lúc CI chạy. AI giải quyết hai xung đột tài liệu: giữ AI log mới nhất, tiếp nhận báo cáo năm người của Tưởng; sửa các câu còn ghi cỡ mẫu ba người và ghi nhận nguồn của S04–S05. Không thay phản hồi hoài nghi bằng nhận định ủng hộ. [PR #1](https://github.com/Tuong2608/Git-Health-Monitor/pull/1), [CI đạt tại a7e7187](https://github.com/Tuong2608/Git-Health-Monitor/actions/runs/36979524926). Bản cũ `docs/toan-week3/` được giữ để truy vết và có dẫn chiếu sang hồ sơ cập nhật.

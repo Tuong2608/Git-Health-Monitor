@@ -1,0 +1,36 @@
+VERIFICATION OUTPUT EXCERPTS — 2026-09-30
+Actual tool outputs selected after final successful runs; not GitHub CI evidence.
+
+com.example.demo.DemoApplicationTests.txt
+-------------------------------------------------------------------------------
+Test set: com.example.demo.DemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.940 s -- in com.example.demo.DemoApplicationTests
+
+com.example.demo.repository.GitHubRepositoryUrlTests.txt
+-------------------------------------------------------------------------------
+Test set: com.example.demo.repository.GitHubRepositoryUrlTests
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s -- in com.example.demo.repository.GitHubRepositoryUrlTests
+
+com.example.demo.repository.RegistrationDisabledTests.txt
+-------------------------------------------------------------------------------
+Test set: com.example.demo.repository.RegistrationDisabledTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.172 s -- in com.example.demo.repository.RegistrationDisabledTests
+
+com.example.demo.repository.RepositoryApiTests.txt
+-------------------------------------------------------------------------------
+Test set: com.example.demo.repository.RepositoryApiTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.800 s -- in com.example.demo.repository.RepositoryApiTests
+
+[INFO] BUILD SUCCESS
+[INFO] Finished at: 2026-09-30T15:42:59+07:00
+
+Browser run with GHM_LIVE_BACKEND=1:
+  ok 2 e2e\repositories.spec.ts:4:1 › empty list, registration and labelled learning chart (1.0s)
+  ok 3 e2e\repositories.spec.ts:21:1 › server conflict is visible (363ms)
+  ok 1 e2e\live.spec.ts:3:1 › live React to API to PostgreSQL persists across reload (1.6s)
+  ok 4 e2e\repositories.spec.ts:31:1 › network failure and mobile viewport (321ms)
+  4 passed (4.9s)

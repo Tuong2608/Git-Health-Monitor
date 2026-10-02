@@ -8,12 +8,12 @@ Sinh viên: Trần Quang Toản. Tài liệu ghi nhận công việc thực tế
 - Đã tích hợp commit nghiên cứu của Tưởng `43d614f` từ `origin/main`, không xung đột.
 - Mã chức năng: [165df33](https://github.com/Tuong2608/Git-Health-Monitor/commit/165df3376182602d84607984b267d41cec15156e), lưu repository với PostgreSQL/Flyway, UI React và biểu đồ mẫu, validation/CORS và CI.
 - AI chạy lại 22 backend test, 4 browser test với PostgreSQL thật; lint/build và npm audit đạt. Kết quả không được ghi là Toản tự chạy.
-- Báo cáo, nhật ký AI theo hoạt động, tài liệu lý thuyết, contract, hồ sơ ba người phỏng vấn và ảnh minh chứng đã được chuẩn bị/cập nhật.
-- Tưởng phụ trách hỏi thêm hai người và tổng hợp sau, theo thông tin Toản cung cấp. Chưa thêm hai người này vào dữ liệu phân tích.
+- Báo cáo, nhật ký AI theo hoạt động, tài liệu lý thuyết, contract, hồ sơ năm người phỏng vấn và ảnh minh chứng đã được chuẩn bị/cập nhật.
+- Đã nhận bản tổng hợp hai người S04–S05 từ Tưởng tại `3a3fd30`; hợp nhất thành năm trường hợp, giữ phản hồi hoài nghi S05 và những phần còn thiếu.
 
 ## Truy vết Git và CI
 
-Nhánh `feat/toan-week-3`; commit chức năng ở trên. PR và kết quả CI được bổ sung sau khi hệ thống trả kết quả. Không tự xác nhận review của Tưởng.
+Nhánh `feat/toan-week-3`; [PR #1](https://github.com/Tuong2608/Git-Health-Monitor/pull/1); commit mã `165df33`, tài liệu `a7e7187`. [CI đã đạt cả 4 job](https://github.com/Tuong2608/Git-Health-Monitor/actions/runs/36979524926) ở SHA `a7e71872bbb66f9bac71299feefb3bca282fe914`: backend, frontend, secret-scan, package (Docker build). Bản hợp nhất tài liệu mới tiếp tục được CI kiểm tra. Chưa có review độc lập khi kiểm tra PR. Vercel báo preview deploy success cho SHA này, nhưng không đồng nghĩa backend mới đã deploy hay preview công khai.
 
 ## Kiểm tra staging
 
@@ -29,7 +29,7 @@ Hai URL: https://git-health-monitor.onrender.com và https://git-health-monitor-
 
 1. **Tưởng/người review:** review PR thực tế, lưu nhận xét hoặc approval trên GitHub. Việc đã trao đổi không thay thế bằng chứng review PR.
 2. **Chủ Render/Vercel:** cấu hình PostgreSQL và `DB_*`, `APP_ALLOWED_ORIGINS`, `VITE_API_BASE_URL`; xác nhận branch triển khai; cung cấp domain phù hợp cho GVHD. Xem [hướng dẫn staging](staging-week3.md). Chỉ merge/deploy sau khi điều kiện môi trường và review sẵn sàng.
-3. **Tưởng:** bàn giao bản tổng hợp hai người bổ sung khi có. Những câu thiếu của dữ liệu hiện tại vẫn được ghi rõ, không tự điền.
+3. **Nhóm:** đã có năm trường hợp phỏng vấn; bổ sung metadata/câu còn thiếu khi nhận được nguồn và xác nhận bản tổng hợp. Không yêu cầu hỏi lại hai người đã được Tưởng bổ sung.
 4. **Toản/nhóm:** nộp [báo cáo tuần](bao-cao-tuan-03-toan.md) qua kênh môn học và lưu xác nhận GVHD. Chưa có quyền truy cập kênh nộp hay minh chứng tiếp nhận trong phiên này.
 
 ## Điểm cần thống nhất trước tuần 4

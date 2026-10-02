@@ -6,7 +6,7 @@
 
 **Ngày tổng hợp:** 30/09/2026. Ngày này là ngày lập báo cáo, không thay thế ngày phỏng vấn của từng người.
 
-**Nguồn dữ liệu:** Ba bộ câu trả lời do Toản cung cấp: một tệp văn bản đính kèm và hai phần trả lời trong trao đổi bổ sung. Quy ước bộ trả lời trong tệp đính kèm là S01; “người 2” là S02; “người 3” là S03.
+**Nguồn dữ liệu:** Năm bộ câu trả lời. Ba bộ đầu (S01–S03) do Toản cung cấp: một tệp văn bản đính kèm và hai phần trả lời trong trao đổi bổ sung. Hai bộ sau (S04–S05) do Tưởng thu thập, bổ sung ngày 30/09/2026, dùng cùng bộ câu hỏi 12 mục. Quy ước bộ trả lời trong tệp đính kèm là S01; “người 2” là S02; “người 3” là S03.
 
 ## 1. Mục tiêu khảo sát
 
@@ -20,20 +20,20 @@ Khảo sát nhằm tìm hiểu cách người phát triển xác định file c�
 
 Nội dung được tổ chức theo bộ câu hỏi 12 mục của nhóm, gồm đồng ý tham gia, bối cảnh sử dụng Git, tình huống bảo trì, khó khăn, công cụ hiện tại, thay đổi liên quan giữa các file, phân bố tri thức, cảnh báo, khả năng giải thích, kỳ vọng về AI và ưu tiên sử dụng.
 
-Định dạng tiếp nhận là văn bản. Ngày giờ phỏng vấn, kênh thu thập và người trực tiếp hỏi từng trường hợp chưa được cung cấp. Các mốc “tuần trước”, “hai tuần trước”, “vài tháng trước” được giữ là mô tả tương đối trong câu trả lời, không quy đổi sang ngày lịch cụ thể.
+Định dạng tiếp nhận là văn bản. Ngày giờ phỏng vấn và kênh thu thập từng trường hợp chưa được cung cấp đầy đủ. S04–S05 do Tưởng thu thập theo bản tổng hợp trong commit `3a3fd30`; thời điểm commit không thay thế ngày phỏng vấn. Các mốc “tuần trước”, “hai tuần trước”, “vài tháng trước” được giữ là mô tả tương đối trong câu trả lời, không quy đổi sang ngày lịch cụ thể.
 
 ### 2.2. Cách xử lý
 
-- Gán mã S01–S03; lược bỏ thông tin liên hệ và biểu tượng phản ứng không mang nội dung trả lời.
+- Gán mã S01–S05; lược bỏ thông tin liên hệ và biểu tượng phản ứng không mang nội dung trả lời.
 - Tóm tắt theo từng câu hỏi, giữ các ý kiến khác biệt và phần còn thiếu.
 - Nhóm phản hồi thành chủ đề và liên kết với yêu cầu đề xuất bằng mã người và số câu hỏi.
 - Phân biệt phát biểu của người tham gia, diễn giải của người tổng hợp và quyết định thiết kế cần nhóm duyệt.
 
-Đây là tổng hợp định tính mô tả từ ba phản hồi, chưa thực hiện mã hóa độc lập giữa nhiều người phân tích hoặc kiểm tra mức độ đồng thuận giữa người mã hóa.
+Đây là tổng hợp định tính mô tả từ năm phản hồi, chưa thực hiện mã hóa độc lập giữa nhiều người phân tích hoặc kiểm tra mức độ đồng thuận giữa người mã hóa.
 
 ### 2.3. Đồng ý tham gia và bảo mật
 
-Cả ba bộ trả lời đều ghi nhận đồng ý sử dụng nội dung đã ẩn danh trong báo cáo. S03 nêu rõ không đồng ý ghi âm; S01 và S02 chưa có thông tin về đồng ý ghi âm. Báo cáo không sử dụng hoặc giả định có dữ liệu ghi âm.
+Cả năm bộ trả lời đều ghi nhận đồng ý sử dụng nội dung đã ẩn danh trong báo cáo (câu 1). S03 nêu rõ không đồng ý ghi âm; các trường hợp còn lại chưa có thông tin về đồng ý ghi âm. Báo cáo không sử dụng hoặc giả định có dữ liệu ghi âm.
 
 Địa chỉ liên hệ được cung cấp bởi S03 không được đưa vào tài liệu công khai. Nếu cần mời thử nghiệm, thông tin liên hệ được quản lý riêng bởi người phụ trách, không lưu trong repository.
 
@@ -44,6 +44,8 @@ Cả ba bộ trả lời đều ghi nhận đồng ý sử dụng nội dung đ�
 | S01 | Sinh viên Kỹ thuật Phần mềm; Full-stack/Mobile Developer trong đồ án và dự án nhóm | Khoảng 2–3 năm | 3–5 người | Có câu trả lời 1–12 |
 | S02 | Backend và Frontend Developer; có kinh nghiệm từ đồ án đến công việc thực tế | Khoảng 3 năm | 3–5 người | Có câu trả lời 1–9; chưa có 10–12 |
 | S03 | Sinh viên năm 4; developer, đôi khi phụ trách merge code | Khoảng 2 năm, bản trả lời ghi `[2]` | 2–5 người, bản trả lời ghi `[2-5]` | Có câu trả lời 1–12; cần xác nhận các số đặt trong ngoặc vuông |
+| S04 | Sinh viên năm cuối; developer trong đồ án môn học | Khoảng 3 năm | 3–5 người | Có câu trả lời 1–12 |
+| S05 | Developer | Khoảng 2 năm | 5 người | Có câu trả lời 1–12; nhiều câu trả lời rất ngắn, một câu (6) không trả lời rõ nội dung |
 
 Các hồ sơ tự khai đều mô tả kinh nghiệm dùng Git trong dự án nhóm, phù hợp để khảo sát sơ bộ nhu cầu developer. Thông tin này chưa cho phép kết luận mẫu đại diện cho toàn bộ developer, maintainer hoặc technical lead.
 
@@ -100,17 +102,52 @@ Các hồ sơ tự khai đều mô tả kinh nghiệm dùng Git trong dự án n
 
 **Diễn giải:** Phản hồi nhấn mạnh việc ưu tiên đọc mã và khả năng kiểm tra lại bằng chứng. Thông tin tác giả nên phục vụ tìm người trao đổi; cảnh báo nhiều người cùng sửa chưa tự chứng minh file có vấn đề.
 
+### 4.4. S04 — Sinh viên năm cuối, developer trong đồ án môn học
+
+| Câu hỏi | Nội dung ghi nhận |
+|---|---|
+| 3. Tình huống gần đây | Khi ghép code backend, bạn cùng nhóm push code làm lỗi API thanh toán. Dùng GitLens (VS Code) xem git blame từng dòng, đọc lại lịch sử commit trên GitHub xem nhánh đó đổi file nào. |
+| 4. Khó khăn | Hiểu flow code của người khác khi họ lười comment/đặt tên biến khó hiểu. Lặp lại đều đặn mỗi đợt ghép code cuối kỳ. Tự ước tính 2–3 giờ mỗi lần. |
+| 5. Công cụ | GitLens và giao diện GitHub (PR, commit history). Hữu ích: biết ai viết dòng nào. Thiếu: không biết file đó trước giờ có hay lỗi không trước khi sửa. |
+| 6. Thay đổi liên quan | Đổi tên trường trong Entity quên sửa DTO/Controller; phát hiện lúc build lỗi hoặc test Postman crash. Hậu quả: tốn thời gian debug lại, ảnh hưởng điểm nếu dính lúc demo. |
+| 7. Tri thức về mã | Tự đọc mò hoặc nhắn tin chờ trả lời khi người hiểu mã vắng mặt. Muốn biết ai hay sửa file đó nhất — cho rằng người sửa nhiều nhất mới thật sự nắm logic, không nhất thiết là người tạo file. |
+| 8. Cảnh báo | Muốn cảnh báo khi 2–3 người cùng sửa một file quan trọng, hoặc file "core" bị sửa mạnh tay. Không muốn cảnh báo vặt (format code, đổi README). |
+| 9. Giá trị và bằng chứng | Đánh giá cao co-change và tần suất thay đổi. Ít ưu tiên phân bố đóng góp, nhận định có thể hữu ích hơn với người chấm điểm hơn là với dev. Để tin kết quả, cần công cụ chạy đúng trên lịch sử commit thật và chỉ đúng cặp file liên quan. |
+| 10. Trợ lý AI | Có ý định dùng khi review code lạ trước merge. Lo ngại AI "ảo giác" nhận diện sai logic và bảo mật mã nguồn khi gửi lên API ngoài. Muốn đầu ra ngắn gọn dạng gạch đầu dòng; kiểm chứng bằng cách chạy test thử. |
+| 11. Ưu tiên và rào cản | Ưu tiên: co-change, cảnh báo rủi ro ở file phức tạp/đổi thường xuyên, tìm người am hiểu đoạn code. Rào cản có thể khiến không dùng: setup rườm rà, tích hợp IDE nặng máy, cảnh báo sai (false positive) nhiều gây nhiễu. |
+| 12. Thử nghiệm sau | Đồng ý tham gia. |
+
+**Diễn giải:** Phản hồi khớp với xu hướng chung ở N01–N03, và củng cố thêm nhận định ở S02 rằng thông tin đóng góp cá nhân ít giá trị thực dụng với dev — người tham gia tự nêu giả thuyết rằng chỉ số này có thể phục vụ mục đích đánh giá/chấm điểm hơn là hỗ trợ công việc hằng ngày. Đây là diễn giải của người tham gia, chưa phải kết luận đã kiểm chứng.
+
+### 4.5. S05 — Developer
+
+| Câu hỏi | Nội dung ghi nhận |
+|---|---|
+| 3. Tình huống gần đây | Trả lời ngắn: "review code hay PR bằng mắt". Không nêu thêm chi tiết tình huống cụ thể. |
+| 4. Khó khăn | Trả lời: "Từ ngày có AI hỗ trợ thì không còn khó khăn/mất thời gian nữa". Không làm rõ công cụ AI cụ thể hay cách dùng. |
+| 5. Công cụ | Dùng Git thuần; hữu ích để xem lại mình đã làm gì qua lịch sử commit, có thể rollback nếu có vấn đề. |
+| 6. Thay đổi liên quan | Không trả lời rõ nội dung (nguyên văn: "wtf câu hỏi???"). Ghi nhận là không thu được dữ liệu hợp lệ cho câu này, không suy diễn thay. |
+| 7. Tri thức về mã | Dùng Git để biết ai từng sửa file đó. |
+| 8. Cảnh báo | Muốn biết khi có khả năng conflict trước khi merge code. |
+| 9. Giá trị và bằng chứng | Không đánh giá theo từng loại chỉ số; nhận định chung: "Git + AI hiện tại là đủ, không cần thêm". |
+| 10. Trợ lý AI | Dùng thường xuyên các công cụ AI nói chung, từ lúc commit, tạo branch tới review — không phải trả lời trực tiếp về trợ lý AI review theo mô tả tính năng của nhóm. |
+| 11. Ưu tiên và rào cản | Không nêu ưu tiên cụ thể; lặp lại quan điểm cho rằng công cụ hiện tại (Git kết hợp AI chat thông thường) đã giải quyết đủ nhu cầu. |
+| 12. Thử nghiệm sau | Đồng ý tham gia thử nghiệm sau. |
+
+**Diễn giải:** Đây là phản hồi mức độ chi tiết thấp và có thái độ hoài nghi rõ rệt về sự cần thiết của sản phẩm — khác biệt với bốn phản hồi còn lại. Báo cáo giữ nguyên phản hồi này thay vì loại bỏ, theo đúng yêu cầu không chỉ chọn ý kiến ủng hộ đề tài. Một số câu trả lời (ví dụ câu 10) không khớp sát với nội dung câu hỏi, chưa đủ dữ liệu để xác định nguyên nhân; không nên dùng các câu này làm minh chứng định lượng.
+
 ## 5. Các chủ đề rút ra từ phản hồi
 
 | Mã | Chủ đề | Bằng chứng | Nhận định |
 |---|---|---|---|
-| N01 | Khó lựa chọn file cần kiểm tra và hiểu ngữ cảnh | S01 câu 3–5; S02 câu 3–5; S03 câu 3–5 | Cần màn hình tổng quan giúp ưu tiên điều tra trước khi đi sâu vào lịch sử. |
-| N02 | Dễ bỏ sót thay đổi ở file liên quan | Cả ba, câu 6, 8–9 | Co-change là nhu cầu lặp lại trong cả ba phản hồi; cần trình bày cùng bằng chứng và giới hạn. |
-| N03 | Cần dữ liệu để giải thích xếp hạng và quan hệ | Cả ba, câu 9 | Điểm tổng hợp đơn lẻ chưa đủ; cần số liệu, phạm vi tính và đường truy vết commit. |
-| N04 | Cần biết người phù hợp để hỏi/review | Cả ba, câu 7; khác biệt ở câu 9 | Giữ chức năng hỗ trợ tìm người, không diễn giải số commit thành năng lực hay năng suất. |
-| N05 | Cảnh báo phải có lý do và hạn chế nhiễu | Cả ba, câu 8; S01 và S03 câu 11 | Chất lượng nội dung và khả năng kiểm soát cảnh báo quan trọng hơn số lượng. |
-| N06 | AI hữu ích khi có ngữ cảnh và có thể kiểm chứng | S01 và S03 câu 10; S02 thiếu câu 10 | Hai người đã trả lời bày tỏ ý định sử dụng có điều kiện; chưa thể kết luận ý kiến của cả ba. |
-| N07 | Chi phí thiết lập, độ trễ và riêng tư có thể cản trở sử dụng | S01 câu 10–11; S03 câu 10–11 | Cần hướng dẫn đơn giản và luồng sử dụng có kiểm soát; chưa có ngưỡng thời gian được người dùng thống nhất. |
+| N01 | Khó lựa chọn file cần kiểm tra và hiểu ngữ cảnh | S01, S02, S03, S04 câu 3–5 | Cần màn hình tổng quan giúp ưu tiên điều tra trước khi đi sâu vào lịch sử. |
+| N02 | Dễ bỏ sót thay đổi ở file liên quan | S01–S04, câu 6, 8–9 | Co-change là nhu cầu lặp lại trong bốn trên năm phản hồi; cần trình bày cùng bằng chứng và giới hạn. |
+| N03 | Cần dữ liệu để giải thích xếp hạng và quan hệ | S01–S04, câu 9 | Điểm tổng hợp đơn lẻ chưa đủ; cần số liệu, phạm vi tính và đường truy vết commit. |
+| N04 | Cần biết người phù hợp để hỏi/review | S01–S05, câu 7; khác biệt ở câu 9 | Giữ chức năng hỗ trợ tìm người, không diễn giải số commit thành năng lực hay năng suất. S04 nêu thêm giả thuyết: người sửa nhiều nhất mới thật sự nắm logic, không nhất thiết là người tạo file — cân nhắc khi thiết kế cách hiển thị ownership. |
+| N05 | Cảnh báo phải có lý do và hạn chế nhiễu | S01–S04, câu 8; S01, S03, S04 câu 11 | Chất lượng nội dung và khả năng kiểm soát cảnh báo quan trọng hơn số lượng. |
+| N06 | AI hữu ích khi có ngữ cảnh và có thể kiểm chứng | S01, S03, S04 câu 10; S02 thiếu câu 10; S05 trả lời lệch câu hỏi | Ba người bày tỏ ý định sử dụng có điều kiện (ngữ cảnh, kiểm chứng được); chưa thể kết luận ý kiến chung của cả nhóm. |
+| N07 | Chi phí thiết lập, độ trễ và riêng tư có thể cản trở sử dụng | S01, S03, S04 câu 10–11 | Cần hướng dẫn đơn giản và luồng sử dụng có kiểm soát; chưa có ngưỡng thời gian được người dùng thống nhất. |
+| N08 | Một bộ phận người dùng cho rằng Git kết hợp AI chat thông thường đã đủ, chưa thấy rõ nhu cầu công cụ chuyên biệt | S05 câu 9, 11 | Chỉ một trên năm phản hồi; không đủ cơ sở kết luận xu hướng chung, nhưng cần giữ lại làm tín hiệu cảnh báo — sản phẩm phải chứng minh giá trị khác biệt rõ ràng so với việc hỏi AI chat thông thường, không chỉ lặp lại thông tin Git đã có. |
 
 ### 5.1. Diễn giải thời gian tự ước tính
 
@@ -118,7 +155,7 @@ S01 nêu 2–3 giờ cho hoạt động debug và đối chiếu liên tầng; S
 
 ### 5.2. Khác biệt về thông tin đóng góp
 
-S01 ít ưu tiên biểu đồ phân bố đóng góp vì nhóm nhỏ đã biết phân công; S02 lo ngại cảm giác đánh giá cá nhân; S03 thấy hữu ích vừa phải. Tuy nhiên, cả ba đều cần biết người thường sửa để trao đổi. Do đó, đề xuất trình bày người đóng góp trong ngữ cảnh file, giải thích nguồn và giới hạn, tránh thiết kế bảng xếp hạng cá nhân.
+S01 ít ưu tiên biểu đồ phân bố đóng góp vì nhóm nhỏ đã biết phân công; S02 lo ngại cảm giác đánh giá cá nhân; S03 thấy hữu ích vừa phải; S04 cho rằng thông tin này có thể hữu ích hơn với người chấm điểm hơn là với dev. Tuy nhiên, bốn trên năm phản hồi đều cần biết người thường sửa để trao đổi. Do đó, đề xuất trình bày người đóng góp trong ngữ cảnh file, giải thích nguồn và giới hạn, tránh thiết kế bảng xếp hạng cá nhân.
 
 ## 6. Đề xuất chuyển hóa thành yêu cầu hệ thống
 
@@ -151,13 +188,14 @@ Các nội dung dưới đây là đề xuất sau tổng hợp, chưa phải th
 
 ## 7. Hạn chế và thông tin cần bổ sung
 
-1. Mẫu gồm ba trường hợp tự khai kinh nghiệm, chưa có thông tin về cách tuyển chọn; kết quả chỉ phục vụ định hướng sơ bộ.
-2. Chưa có ngày giờ, hình thức phỏng vấn, người thực hiện hỏi hoặc xác nhận bản tóm tắt của từng người. Cần bổ sung để hồ sơ có thể truy vết.
+1. Mẫu gồm năm trường hợp tự khai kinh nghiệm, chưa có thông tin về cách tuyển chọn; kết quả chỉ phục vụ định hướng sơ bộ.
+2. Chưa có ngày giờ, hình thức phỏng vấn và xác nhận bản tóm tắt đầy đủ của từng người; người thu thập S04–S05 đã ghi nhận là Tưởng. Cần bổ sung để hồ sơ có thể truy vết.
 3. S02 còn thiếu câu 10–12. Chưa có dữ liệu về kỳ vọng AI, ba ưu tiên chính thức và sự sẵn lòng tham gia user study của trường hợp này.
 4. S03 ghi thời gian Git và quy mô nhóm trong ngoặc vuông; cần xác nhận đó là số liệu thực hay trường chưa hoàn thiện.
 5. Một phần câu hỏi giới thiệu sẵn các nhóm tính năng, có thể ảnh hưởng cách trả lời. Các tình huống thực tế ở câu 3–7 cần được xem cùng với đánh giá tính năng ở câu 9–11.
 6. Không có đo thời gian trực tiếp, kiểm tra mã nguồn các tình huống hoặc thực nghiệm so sánh công cụ. Chưa thể kết luận hệ thống sẽ giảm thời gian hay số lỗi bao nhiêu.
-7. Mẫu có hai sinh viên và một developer mô tả kinh nghiệm đi làm; cần mở rộng người dùng phù hợp ở giai đoạn thực nghiệm, đặc biệt bối cảnh Java và vai trò maintainer/technical lead.
+7. Mẫu có ba sinh viên (S01, S03, S04) và hai developer mô tả kinh nghiệm đi làm (S02, S05); cần mở rộng người dùng phù hợp ở giai đoạn thực nghiệm, đặc biệt bối cảnh Java và vai trò maintainer/technical lead.
+8. S05 có nhiều câu trả lời ngắn, một câu không rõ nội dung — độ chi tiết không đồng đều giữa các bộ trả lời; không suy diễn mức độ đầu tư thời gian hoặc tự gán trọng số cho người tham gia.
 
 ### Bảng bổ sung hồ sơ
 
@@ -166,18 +204,20 @@ Các nội dung dưới đây là đề xuất sau tổng hợp, chưa phải th
 | S01 | Chưa cung cấp | Chưa cung cấp | Xác nhận bản tóm tắt; bối cảnh repo/ngôn ngữ khi thử nghiệm | Chưa bổ sung |
 | S02 | Chưa cung cấp | Chưa cung cấp | Bổ sung câu 10–12; xác nhận bản tóm tắt | Chưa bổ sung |
 | S03 | Chưa cung cấp | Chưa cung cấp | Xác nhận `[2]`, `[2-5]`; bản tóm tắt; không ghi âm | Chưa bổ sung |
+| S04 | Chưa cung cấp | Tưởng, theo bản tổng hợp `3a3fd30` | Xác nhận bản tóm tắt | Chưa bổ sung |
+| S05 | Chưa cung cấp | Tưởng, theo bản tổng hợp `3a3fd30` | Làm rõ câu 6, 10, 11 nếu có dịp phỏng vấn tiếp | Chưa bổ sung |
 
 ## 8. Kết luận và công việc tiếp theo
 
-Ba phản hồi cung cấp cơ sở định tính ban đầu cho nhu cầu ưu tiên file cần kiểm tra, nhận biết file thường thay đổi cùng nhau và truy vết bằng chứng từ lịch sử Git. Khả năng giải thích và kiểm soát nhiễu cảnh báo là yêu cầu lặp lại trong cả ba trường hợp. Vai trò của thông tin người đóng góp cần được giới hạn vào hỗ trợ trao đổi và hiểu bối cảnh, phù hợp với các ý kiến khác biệt về thống kê cá nhân.
+Năm phản hồi cung cấp cơ sở định tính ban đầu cho nhu cầu ưu tiên file cần kiểm tra, nhận biết file thường thay đổi cùng nhau và truy vết bằng chứng từ lịch sử Git. Một phản hồi (S05) thể hiện quan điểm hoài nghi về sự cần thiết của công cụ chuyên biệt so với Git kết hợp AI chat thông thường (chủ đề N08) — cần được xem là tín hiệu rủi ro cần phản biện bằng giá trị khác biệt rõ ràng của sản phẩm, không bỏ qua. Khả năng giải thích và kiểm soát nhiễu cảnh báo là yêu cầu lặp lại trong các trường hợp S01–S04. Vai trò của thông tin người đóng góp cần được giới hạn vào hỗ trợ trao đổi và hiểu bối cảnh, phù hợp với các ý kiến khác biệt về thống kê cá nhân.
 
-Dữ liệu hiện có ủng hộ việc tiếp tục đặc tả các chức năng core đã đề xuất, đồng thời chỉ ra khoảng cách giữa nhu cầu cảnh báo trong PR và phạm vi snapshot/default branch. Kỳ vọng đối với AI được ghi nhận từ S01 và S03 theo hướng tư vấn ngắn, có bằng chứng và kiểm soát dữ liệu gửi đi; chưa có ý kiến của S02 về nội dung này.
+Dữ liệu hiện có ủng hộ việc tiếp tục đặc tả các chức năng core đã đề xuất, đồng thời chỉ ra khoảng cách giữa nhu cầu cảnh báo trong PR và phạm vi snapshot/default branch. Kỳ vọng đối với AI được ghi nhận từ S01, S03 và S04 theo hướng tư vấn ngắn, có bằng chứng và kiểm soát dữ liệu gửi đi; chưa có ý kiến của S02 về nội dung này.
 
-Toản và Tưởng cần rà soát các đề xuất PV-R01–PV-R07, bổ sung thông tin hồ sơ còn thiếu và xác định phần đưa vào SRS. Không tự thêm chức năng PR/multi-repository vào khối lượng cam kết. User study và các chỉ số hiệu quả sẽ được thiết kế, thu thập riêng sau khi có sản phẩm phù hợp.
+Toản và Tưởng cần rà soát các đề xuất PV-R01–PV-R07, cân nhắc thêm phản biện cho N08, bổ sung thông tin hồ sơ còn thiếu và xác định phần đưa vào SRS. Không tự thêm chức năng PR/multi-repository vào khối lượng cam kết. User study và các chỉ số hiệu quả sẽ được thiết kế, thu thập riêng sau khi có sản phẩm phù hợp.
 
 ## 9. Ghi nhận sử dụng AI và xác nhận
 
-AI hỗ trợ chuẩn hóa văn phong, tóm tắt các câu trả lời do Toản cung cấp, nhóm chủ đề và đề xuất liên hệ với yêu cầu dự án. AI không tham gia thay người trả lời, không bổ sung câu trả lời còn thiếu và không tạo số liệu thực nghiệm. Toản cần đối chiếu báo cáo với nguồn gốc trước khi nộp và xác nhận các diễn giải chuyên môn cùng nhóm.
+AI hỗ trợ chuẩn hóa văn phong, tóm tắt các câu trả lời do Toản và Tưởng cung cấp, nhóm chủ đề và đề xuất liên hệ với yêu cầu dự án. AI không tham gia thay người trả lời, không bổ sung câu trả lời còn thiếu và không tạo số liệu thực nghiệm. Toản và Tưởng cần đối chiếu báo cáo với nguồn gốc trước khi nộp và xác nhận các diễn giải chuyên môn cùng nhau.
 
 Người rà soát nội dung: ____________________
 
@@ -185,8 +225,8 @@ Ngày rà soát: ____________________
 
 Ý kiến xác nhận/điều chỉnh của nhóm hoặc GVHD: ____________________
 
-## Cập nhật phân công ngày 02/10/2026
+## Cập nhật tích hợp ngày 02/10/2026
 
-Theo xác nhận của Toản, Tưởng phụ trách phỏng vấn thêm hai người và tổng hợp sau. Chưa tiếp nhận câu trả lời hoặc bản tổng hợp bổ sung trong hồ sơ này, nên cỡ mẫu phân tích ở trên vẫn là ba người S01–S03. Không đánh số thêm người, cộng vào tỷ lệ hay suy diễn nội dung khi chưa có nguồn. Các phần thiếu của S02/S03 và metadata được giữ nguyên trạng thái để đối chiếu khi nhóm cập nhật.
+Đã tiếp nhận bản tổng hợp S04–S05 do Tưởng đưa lên nhánh chính tại `3a3fd30ff10048c382dcba7b122bd6dbeda7827f`. Báo cáo hiện có năm trường hợp; nguồn S04–S05 là bản tổng hợp của Tưởng, chưa đối chiếu độc lập bản trả lời gốc. Giữ phản hồi hoài nghi S05 và các trường còn thiếu. Đây là khảo sát nhu cầu, không phải user study đo SUS hoặc hiệu quả.
 
-Ghi chú nghiên cứu của Tưởng tại `43d614f` sử dụng coupling theo mẫu số hợp `|C_A ∪ C_B|`, khác công thức mẫu số `min(|C_A|,|C_B|)` trong đề cương. Chưa có metric nào được triển khai trong bản tuần 3 này; nhóm cần thống nhất công thức, tên chỉ số và cập nhật đề cương/SRS trước khi triển khai.
+Công thức coupling trong ghi chú nghiên cứu `43d614f` dùng mẫu số hợp commit, khác công thức mẫu số min trong đề cương; cần thống nhất trước khi cài đặt metric.

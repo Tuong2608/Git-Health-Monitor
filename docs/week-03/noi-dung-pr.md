@@ -2,7 +2,7 @@
 
 Skeleton tuần 2 chưa có luồng lưu repository. PR bổ sung API đăng ký/danh sách/chi tiết với PostgreSQL, JPA và Flyway; UI React có trạng thái tải/rỗng/lỗi, chống trùng URL và biểu đồ Recharts gắn nhãn dữ liệu mẫu. URL chỉ được kiểm tra cú pháp, chưa clone hoặc phân tích Git.
 
-Kèm contract tuần 3, 8 acceptance criteria, tài liệu lý thuyết, báo cáo phỏng vấn 3 người, báo cáo cá nhân, nhật ký AI theo hoạt động và minh chứng. Đã tích hợp nghiên cứu tuần 3 của Tưởng tại `43d614f`.
+Kèm contract tuần 3, 8 acceptance criteria, tài liệu lý thuyết, báo cáo phỏng vấn 5 người, báo cáo cá nhân, nhật ký AI theo hoạt động và minh chứng. Đã tích hợp nghiên cứu tuần 3 của Tưởng tại `43d614f`.
 
 ## Kiểm chứng ngày 02/10/2026
 
@@ -20,4 +20,4 @@ Kèm contract tuần 3, 8 acceptance criteria, tài liệu lý thuyết, báo c�
 
 ## Giới hạn và bàn giao
 
-Không triển khai ingestion, tính metric hay LLM trong PR này. Công thức coupling trong ghi chú mới khác đề cương; cần thống nhất trước cài đặt metric. Tưởng phụ trách hai phỏng vấn bổ sung và tổng hợp sau; dữ liệu chưa nhận không được thêm vào báo cáo. Xem `docs/week-03/bien-ban-hoan-tat-02-10.md` và `docs/ai-usage/toan-week03.md`.
+Không triển khai ingestion, tính metric hay LLM trong PR này. Công thức coupling trong ghi chú mới khác đề cương; cần thống nhất trước cài đặt metric. Đã hợp nhất bản tổng hợp S04–S05 của Tưởng từ `3a3fd30`, giữ ý kiến hoài nghi và chỉ rõ dữ liệu chưa đầy đủ. Xem `docs/week-03/bien-ban-hoan-tat-02-10.md` và `docs/ai-usage/toan-week03.md`.
