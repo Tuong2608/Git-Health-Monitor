@@ -210,9 +210,9 @@ Nhật ký AI phải chỉ rõ AI làm phần nào, Toản đã kiểm tra/sửa
 9. CÁC ĐIỂM PHẢI BÀN VỚI TƯỞNG
 
 - Contract analysis job và DTO kết quả ingestion trước khi làm worker/API riêng.
-- Chốt contribution của HHI tính bằng commit hay churn, identity mapping, ties percentile.
+- Baseline metric v1 chọn contribution của HHI theo churn (additions + deletions); vẫn cần thiết kế identity mapping và kiểm thử dữ liệu thực tế.
 - BR06 HEAD không đổi: cửa sổ trượt/config thay đổi có cần snapshot mới không?
-- NFR03 10 phút cho ≤10.000 commit cần benchmark của pipeline thật; CRUD tuần 3 không đo được.
+- NFR03 10 phút cho ≤10.000 commit vẫn cần benchmark của pipeline thật; CRUD tuần 3 không đo được. Xem `docs/metric-spec-v1.md`.
 - Số UC giữa đề cương và usecases-draft chưa khớp. Chốt mapping ở tuần 4.
 - AI review chỉ bổ trợ sau snapshot, không sửa code hoặc thay score.
 
