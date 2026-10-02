@@ -48,5 +48,5 @@ Không ghi mật khẩu, token hoặc thông tin liên hệ stakeholder trong ph
 ## Xác nhận tiếp nhận ngày 02/10/2026
 
 - Toản xác nhận đã đọc phần lý thuyết và đã trao đổi xong với Tưởng.
-- Toản cho biết phần Tưởng đã làm xong; repository đã có cập nhật nghiên cứu `43d614f`. Tưởng phụ trách phỏng vấn thêm hai người và tổng hợp sau.
+- Toản cho biết phần Tưởng đã làm xong; repository đã có cập nhật nghiên cứu `43d614f`. Trong phiên đã nhận thêm bản tổng hợp S04–S05 tại `3a3fd30` và tích hợp vào báo cáo năm trường hợp.
 - Các kết quả kiểm thử mới do AI thực thi; không điền vào bảng “tự thực hiện” ở trên. Chưa có thông tin về giờ tự học, nội dung Toản tự sửa hoặc lời giải thích độc lập nên các ô đó giữ trống.

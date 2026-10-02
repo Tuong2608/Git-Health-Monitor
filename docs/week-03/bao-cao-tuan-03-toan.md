@@ -22,7 +22,7 @@ Tìm hiểu Spring Boot REST, PostgreSQL/JPA/Flyway, React/TypeScript và Rechar
 | Backend REST và PostgreSQL | API đăng ký/danh sách/chi tiết repository; DTO, service, JPA; migration Flyway V1; validation/chống trùng/phân trang/CORS | Chỉ lưu URL, chưa clone và chưa xác nhận repo công khai |
 | Frontend | Màn thêm/xem repo; trạng thái tải/rỗng/lỗi, thông báo; layout desktop/mobile | Chưa có các màn phân tích thật |
 | Recharts | Biểu đồ đường 4 điểm mẫu, trục 0–1, bảng số liệu, nhãn minh họa | Không sử dụng làm kết quả RQ2 |
-| Test và kiểm soát mã | Backend verify 22 test pass; browser 4 pass gồm live PostgreSQL; lint/build/npm audit đạt | Chưa có coverage/static report Java và CI run remote |
+| Test và kiểm soát mã | Backend verify 22 test pass; browser 4 pass gồm live PostgreSQL; lint/build/npm audit đạt; đã có CI remote đạt | Chưa có coverage/static report Java; test browser live chạy local, CI chạy 3 UI test mock và bỏ qua ca live theo cấu hình |
 | Phỏng vấn | Đã tích hợp 5 trường hợp S01–S05, gồm hai trường hợp từ Tưởng tại `3a3fd30`, lập [báo cáo tổng hợp](../interview-notes.md), nhóm nhu cầu và đề xuất yêu cầu | S02 thiếu câu 10–12; ngày/hình thức thu thập và số liệu trong ngoặc vuông của S03 cần xác nhận |
 | Yêu cầu/API/AI | Contract tuần 3 có 8 AC; nháp job contract; nháp phạm vi AI review | Chưa chốt SRS/provider/thiết kế chung |
 | CI/hạ tầng | Workflow bổ sung PostgreSQL service, npm ci/lint/audit/browser, secret scan, Docker build; Compose local | CI `36979524926` đạt backend/frontend/secret-scan/Docker build; staging backend mới chưa deploy |
