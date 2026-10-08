@@ -28,6 +28,10 @@ Sinh viên: Trần Quang Toản, 23110158. Tuần 04–10/10/2026, ngày hỗ tr
 
 ## Kiểm soát và truy vết
 
+### W4-AI-07 — Khắc phục dependency chặn CI
+
+CI đầu tiên lỗi ở npm audit dù lint/build đạt. AI đối chiếu audit và [GHSA-68fv-2mgg-jv7q](https://github.com/advisories/GHSA-68fv-2mgg-jv7q), nâng duy nhất dependency gián tiếp source-map-js từ 1.2.1 lên 1.2.2 trong lockfile. npm báo 0 vulnerabilities sau cập nhật. Không dùng force update/tắt audit, không nhận đây là lỗi do sinh viên tự phát hiện. Phạm vi kiểm chứng thêm là lint/build và browser UI; ca live cần backend riêng, không nhận đã chạy live tuần 4.
+
 Commit đặc tả: [7c316660c6a2c56fb2aa41b6c4e4312d7466af46](https://github.com/Tuong2608/Git-Health-Monitor/commit/7c316660c6a2c56fb2aa41b6c4e4312d7466af46). [PR #3](https://github.com/Tuong2608/Git-Health-Monitor/pull/3) đã tạo bằng tài khoản GitHub của Toản theo yêu cầu thực hiện công việc; không nhận là Tưởng đã review. Các liên kết này ghi sau khi commit/PR tồn tại.
 
 Kiểm tra kỹ thuật do AI chạy, chi tiết ở [biên bản](../week-04/kiem-tra-tai-lieu.md). Khi commit, tra `git log -- docs/requirements-week4.md docs/ai-usage/toan-week04.md` trên nhánh/PR để lấy SHA thật, không tự tạo hash trong báo cáo. Không backdate commit hay nhận AI sửa lỗi là sinh viên phát hiện. Chưa có review độc lập/approval hoặc xác nhận nộp tuần 4.

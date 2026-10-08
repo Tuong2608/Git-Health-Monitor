@@ -12,6 +12,10 @@ Ngày 08/10/2026; thực hiện bởi AI. Phạm vi là đặc tả/JSON schema,
 
 ## Giới hạn
 
+CI lần đầu: [run 37786597693](https://github.com/Tuong2608/Git-Health-Monitor/actions/runs/37786597693) lỗi dependency audit, backend và secret scan đạt. Đã sửa source-map-js 1.2.1 → 1.2.2 theo [advisory](https://github.com/advisories/GHSA-68fv-2mgg-jv7q), npm audit sau cập nhật báo 0 vulnerabilities. Kết quả CI cuối xem PR #3; không lấy run lỗi làm run đạt.
+
+Sau bản vá: frontend lint/build đạt; Playwright 3 UI test đạt (5,0 giây), 1 live test bỏ qua đúng cấu hình do không khởi động backend/database trong lần này. Không ghi “4 test đạt” cho tuần 4.
+
 Kết quả kiểm tra local ngày 08/10: schema hợp lệ; sample đạt; 7 mẫu sai schema bị từ chối; 3 mẫu reference/duplicate sai bị kiểm tra ngữ nghĩa minh họa từ chối; đủ 11 UC/25 AC duy nhất; không có link local hỏng hoặc conflict marker. `git diff --check` đạt. jsonschema được cài trong `.local/week4-tools`, không thêm dependency runtime backend/frontend.
 
 Không benchmark hiệu năng, không gọi LLM, không chạy AI timeout/security runtime hoặc claim pipeline đã đạt AC. Schema/evidence reference hợp lệ không chứng minh lời giải thích AI đúng. Không tạo dữ liệu phỏng vấn mới hoặc xác nhận review thay người khác. Workflow GitHub hiện có được theo dõi qua PR; kết quả tuần 3 chỉ là lịch sử, không tự chuyển thành kết quả tuần 4.

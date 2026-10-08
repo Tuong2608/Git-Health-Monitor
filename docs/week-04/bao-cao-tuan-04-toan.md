@@ -19,6 +19,8 @@ Chuyển use case draft và năm phỏng vấn thành yêu cầu có thể nghi�
 
 ## Lý do điều chỉnh/làm rõ
 
+Phát sinh CI: dependency gián tiếp source-map-js 1.2.1 bị audit báo high; đã cập nhật lockfile lên bản vá 1.2.2, npm audit báo 0 vulnerabilities. Không đổi chức năng ứng dụng, không tắt kiểm tra bảo mật. Ghi nhận chi tiết trong AI log và kiểm tra frontend sau bản vá.
+
 Mã UC draft khác đề cương nên chọn mã đề cương và lưu mapping. BR06 cũ chỉ xét HEAD chưa đủ khi config thay đổi, vì vậy đề xuất ngoại lệ có version. Cần cố định window để tái lập metric. Spec v1 đã chốt shared/min và max function CCN nên tài liệu tuần 4 tuân theo, không dùng công thức hợp commit hoặc CCN trung bình cũ.
 
 Không thay lịch phân công: ERD/wireframe vẫn tuần 5. Không tự cập nhật workbook thành “hoàn thành toàn bộ M2” vì kiến trúc/review nhóm còn thiếu minh chứng.

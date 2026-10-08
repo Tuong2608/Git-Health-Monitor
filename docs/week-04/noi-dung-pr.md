@@ -2,7 +2,7 @@
 
 Hoàn thiện phần phân tích tuần 4 của Toản theo phân công, dựa trên main `6560cb1`, năm phỏng vấn và metric-spec-v1 đã merge. Bổ sung 11 UC/25 acceptance criteria, mapping mã draft → đề cương, business rules/NFR có cách đo và API contract phân biệt route hiện có với thiết kế tương lai.
 
-Cập nhật phạm vi AI review có context budget/schema/timeout/fallback, hai ADR full clone và TaskExecutor + PostgreSQL không Redis; kèm báo cáo tuần và AI log. Đây là thay đổi tài liệu/schema, không cài pipeline, không đổi công thức metric v1 hoặc ứng dụng hiện tại.
+Cập nhật phạm vi AI review có context budget/schema/timeout/fallback, hai ADR full clone và TaskExecutor + PostgreSQL không Redis; kèm báo cáo tuần và AI log. Không cài pipeline hoặc đổi công thức metric v1. Kèm bản vá dependency gián tiếp source-map-js 1.2.1 → 1.2.2 trong lockfile vì audit CI phát hiện GHSA-68fv-2mgg-jv7q; không tắt audit hoặc thay đổi package.json.
 
 ## Kiểm chứng
 
