@@ -31,4 +31,4 @@ AI hỗ trợ đọc nguồn, soạn đặc tả, schema, ADR và kiểm tra nh�
 
 Tưởng review ADR/contract và bổ sung kiến trúc. Nhóm thống nhất các quyết định BR14/16/17, budget AI và môi trường benchmark trước implementation. Toản tiếp tục tuần 5: ERD 10 bảng/từ điển dữ liệu và 4 wireframe, dựa trên contract đã review. Provider/benchmark/user study chưa có kết quả mới.
 
-PR và CI: xem trang PR của nhánh `docs/toan-week-4` khi được tạo; link cụ thể được cung cấp trong thông báo bàn giao. Review nhóm và xác nhận nộp: chưa có tại thời điểm soạn. Không điền ngày phỏng vấn, approval hoặc điểm số giả.
+Đã push commit đặc tả `7c31666` và tạo [PR #3](https://github.com/Tuong2608/Git-Health-Monitor/pull/3); [CI/checks](https://github.com/Tuong2608/Git-Health-Monitor/pull/3/checks) phản ánh kết quả từng lần chạy. Review nhóm và xác nhận nộp: chưa có tại thời điểm soạn. Không điền ngày phỏng vấn, approval hoặc điểm số giả.

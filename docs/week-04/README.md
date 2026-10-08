@@ -2,6 +2,8 @@
 
 Tuần 04–10/10/2026; thực hiện ngày 08/10. Đã pull `main` tới `6560cb1`, gồm PR #1 tuần 3 và PR #2 metric-spec-v1 đã merge. Nhánh `docs/toan-week-4`. Đây là tuần phân tích/đặc tả theo phân công, không nhận đã cài pipeline.
 
+Đã push [commit đặc tả 7c31666](https://github.com/Tuong2608/Git-Health-Monitor/commit/7c316660c6a2c56fb2aa41b6c4e4312d7466af46), tạo [PR #3](https://github.com/Tuong2608/Git-Health-Monitor/pull/3). Kết quả CI theo [checks của PR](https://github.com/Tuong2608/Git-Health-Monitor/pull/3/checks); chưa ghi nhận review/approval khi tạo PR.
+
 ## Sản phẩm
 
 | Phân công | Đầu ra | Trạng thái |

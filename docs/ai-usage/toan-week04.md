@@ -28,6 +28,8 @@ Sinh viên: Trần Quang Toản, 23110158. Tuần 04–10/10/2026, ngày hỗ tr
 
 ## Kiểm soát và truy vết
 
+Commit đặc tả: [7c316660c6a2c56fb2aa41b6c4e4312d7466af46](https://github.com/Tuong2608/Git-Health-Monitor/commit/7c316660c6a2c56fb2aa41b6c4e4312d7466af46). [PR #3](https://github.com/Tuong2608/Git-Health-Monitor/pull/3) đã tạo bằng tài khoản GitHub của Toản theo yêu cầu thực hiện công việc; không nhận là Tưởng đã review. Các liên kết này ghi sau khi commit/PR tồn tại.
+
 Kiểm tra kỹ thuật do AI chạy, chi tiết ở [biên bản](../week-04/kiem-tra-tai-lieu.md). Khi commit, tra `git log -- docs/requirements-week4.md docs/ai-usage/toan-week04.md` trên nhánh/PR để lấy SHA thật, không tự tạo hash trong báo cáo. Không backdate commit hay nhận AI sửa lỗi là sinh viên phát hiện. Chưa có review độc lập/approval hoặc xác nhận nộp tuần 4.
 
 Toản cần review những quyết định mới trước tiếp nhận; nếu sửa/loại đề xuất, ghi file, lý do và commit tương ứng. Không tự điền lời giải thích hoặc thời gian học thay sinh viên.
