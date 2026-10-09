@@ -3,7 +3,7 @@
 Ngày 08/10/2026. Toản soạn để review chung với Tưởng. **Đã đặc tả để bàn giao; chưa ghi nhận nhóm/GVHD phê duyệt, chưa cài đặt.** Không nhận đã chọn provider hoặc chạy PoC.
 
 - Chỉ gọi theo yêu cầu sau khi có snapshot thành công. Không nằm trong đường tính metric/hotspot; không dùng output LLM trong nhãn hoặc score thực nghiệm RQ1.
-- Đầu vào: metric có nguồn, commit/snapshot id, tóm tắt thay đổi và phần source công khai người dùng chọn. Chặn secret và giới hạn kích thước context qua cấu hình; giá trị cụ thể chọn sau PoC.
+- Đầu vào: metric có nguồn, commit/snapshot id, tóm tắt thay đổi và phần source công khai người dùng chọn. Chặn secret và giới hạn kích thước context qua cấu hình; budget đề xuất nằm dưới đây và cần xác nhận sau PoC.
 - Đầu ra JSON dự kiến: `riskSummary`, `evidence[]`, `reviewChecklist[]`, `refactorSuggestions[]`. Evidence phải tham chiếu metric/đoạn code thật; không tin chỉ vì JSON parse được.
 - Giao diện gắn nhãn AI-generated, cho biết giới hạn, không tự áp dụng refactor, tạo commit hay sửa source.
 - Dùng abstraction `LLMReviewService`, adapter provider riêng, prompt có version, timeout/rate limit; CI dùng fake/mock. Provider/model chưa được chọn, không mặc định Claude.
@@ -30,9 +30,9 @@ Kiểm tra schema rồi kiểm tra ngữ nghĩa: evidenceId có trong allowlist 
 
 ## Timeout/quota/fallback/lưu trữ
 
-Timeout wall-clock đề xuất 30 giây; 1 request đang chạy/repo, 2 toàn server, 5 lượt/phút/operator trong thử nghiệm kiểm soát. Nếu chưa có danh tính đáng tin, dùng quota toàn server, không nhận operatorId tùy ý từ client.
+Provider timeout đề xuất tối đa 30 giây, deadline toàn API 35 giây từ lúc nhận (gồm xác minh public, đọc source, secret scan, provider và validation); mỗi bước dùng budget còn lại, không cộng 30 giây nếu deadline đã hết; 1 request đang chạy/repo, 2 toàn server, 5 lượt/phút/operator trong thử nghiệm kiểm soát. Nếu chưa có danh tính đáng tin, dùng quota toàn server, không nhận operatorId tùy ý từ client.
 
-Không auto-retry. 429 quá quota, 504 timeout, 502 provider/schema/evidence sai. Timeout hủy request và giải phóng slot; không giữ transaction/khóa pipeline. Dashboard/metric/scheduler không bị chặn bởi lỗi AI.
+Không auto-retry. 429 quá quota, 504 timeout, 502 provider/schema/evidence sai. Timeout hủy request và giải phóng slot khi tác vụ thực sự dừng; nếu upstream chưa dừng được thì vẫn giữ giới hạn in-flight, không mở thêm call vượt quota; không giữ transaction/khóa pipeline. Dashboard/metric/scheduler không bị chặn bởi lỗi AI.
 
 UI: chưa yêu cầu → đang xử lý → thành công hoặc “Không thể phân tích” với lý do an toàn; không giữ kết quả cũ như output của lần lỗi. Không tự áp dụng mã, commit hoặc gọi công cụ ghi repository.
 
@@ -56,3 +56,13 @@ Tuần 4 chỉ kiểm tra tĩnh schema/fixture. Ca runtime chưa triển khai/ch
 ## Quyết định còn mở
 
 Provider/model/token limit, chính sách dữ liệu của provider, cách bảo vệ endpoint trước public release; nhóm cần duyệt các budget/quota/retention đề xuất trên sau PoC. Xem [contract](api-contract.md) và [yêu cầu](requirements-week4.md).
+
+## Căn chỉnh với kiến trúc và frontend ngày 09/10/2026
+
+Bản review chung dùng POST đồng bộ trả 200 theo contract, không thêm GET reviewId hoặc output cache server. reviewId để truy vết response/log metadata, không phải tài nguyên đọc lại. Reload cần consent và gọi lại qua quota; mất kết nối không tự retry.
+
+Frontend hiện dùng timeout chung 15 giây trong frontend/src/api.ts. Khi cài AI phải có request budget riêng 40 giây, xử lý timeout/cancel; giữ timeout hiện tại cho API thường. Backend 35 giây/provider 30 giây là đề xuất; kiểm tra proxy/host trước triển khai. Nếu không phù hợp thì mở quyết định async/retention mới, không âm thầm đổi 200 sang 202.
+
+Dùng schema duy nhất trong schemas/: có limitations; checklist/suggestions chứa text/evidenceIds, không dùng mảng chuỗi của bản Tưởng trước. Giữ budget 32 KiB/quota của Toản để review chung; thay bộ 24 KiB/3 lượt phút/20 lượt ngày của bản Tưởng trước. Đây là căn chỉnh văn bản, chưa ghi nhận đồng thuận thật hoặc implementation.
+
+Không lưu raw output ở server: buffer trong RAM chỉ sống trong request, không tạo bảng kết quả review. Output byte/token cap phải chốt theo model; schema không thay cap transport. Kiểm tra HTTP/APM logging không lưu request/response body chứa source/output.

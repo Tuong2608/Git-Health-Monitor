@@ -12,7 +12,7 @@ PostgreSQL là nguồn trạng thái; TaskExecutor chỉ thực thi trong proces
 
 Đề xuất claim bằng transaction ngắn SELECT FOR UPDATE SKIP LOCKED → RUNNING với workerId/claimToken/leaseUntil → commit → tính toán ngoài transaction. Unique partial index cho QUEUED/RUNNING chống trùng repo.
 
-Heartbeat chỉ cập nhật khi claimToken hợp lệ. Watchdog chuyển job hết lease sang FAILED; worker cũ phải kiểm tra token/status/lease trong transaction finalize trước công bố snapshot. Snapshot unique theo repo/HEAD/effectiveConfigHash/window bounds. Job thành công và snapshot công bố nhất quán; alert retry idempotent. Chi tiết schema/fencing phải có test restart/race ở giai đoạn cài đặt.
+Heartbeat chỉ cập nhật khi claimToken hợp lệ. Watchdog chuyển job hết lease sang FAILED; worker cũ phải kiểm tra token/status/lease trong transaction finalize trước công bố snapshot. Snapshot unique theo repo/HEAD/effectiveConfigHash/window bounds; hash gồm tool versions và mọi tham số ảnh hưởng metric, không chỉ nhãn configVersion. Job thành công và snapshot công bố nhất quán; alert retry idempotent. Chi tiết schema/fencing phải có test restart/race ở giai đoạn cài đặt.
 
 ## Alternatives
 
@@ -25,3 +25,13 @@ Một backend và PostgreSQL phù hợp phạm vi prototype, không tuyên bố 
 ## Consequences
 
 Polling/heartbeat tăng tải DB, cần cleanup và giới hạn queue. Không giữ row lock suốt clone/Lizard. Có thể tính toán lại sau crash; không hứa exactly-once execution, chỉ ngăn công bố lặp hoặc ghi từ worker mất quyền. Mở rộng nhiều instance phải kiểm chứng fencing/recovery. Xem [BR15/NFR04](../business-rules-nfr.md).
+
+## Bổ sung bản review chung ngày 09/10/2026
+
+Bắt đầu một instance backend. Executor từ chối sau claim thì trả QUEUED có điều kiện claimToken; crash trước đó do watchdog xử lý khi hết lease. QUEUED tìm lại sau restart. Giới hạn cả backlog DB lẫn executor; pool 2/queue 20 theo BR15 là đề xuất, chưa nghiệm thu.
+
+Finalize kiểm tra status/claimToken/leaseUntil còn hạn theo thời gian DB trong transaction khóa cùng job với publication, không kiểm tra sớm rồi ghi muộn. Heartbeat sau hết lease không hồi sinh claim. Worker mất quyền không ghi staging dùng chung hoặc cache/checkout của lần chạy mới; cần workspace theo claim, khóa cache và cơ chế dừng process.
+
+NO_CHANGE chỉ khi snapshot cũ thành công cùng repo/SHA/window/effectiveConfigHash; thành công mới là CREATED. Window trượt/tool/config đổi thì không NO_CHANGE. Alert retry riêng theo key BR18, không đảo snapshot thành công.
+
+Kill worker, executor rejection, hết lease trước watchdog, worker cũ ghi muộn và DB lỗi publication là ca kiểm thử tương lai. Xem [architecture](../architecture.md); ADR vẫn đề xuất.

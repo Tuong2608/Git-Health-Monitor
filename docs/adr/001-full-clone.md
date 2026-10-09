@@ -21,3 +21,11 @@ Shallow clone giảm history nhưng có thể thiếu dữ liệu cần; partial
 ## Consequences
 
 Tốn băng thông/disk; repo rất lớn có thể vượt tài nguyên dù chỉ phân tích 10.000 commit. Benchmark tách clone và core nhưng tổng NFR03 vẫn tính clone. Cache phải xác minh remote/HEAD. Nếu pilot không đạt, ghi ADR thay thế trước đổi cách làm, không âm thầm đổi window/công thức. Kiểm thử sau cài đặt: history rename, clone timeout không tạo snapshot, giới hạn workspace, cold/warm benchmark.
+
+## Bổ sung bản review chung ngày 09/10/2026
+
+Tưởng giữ hướng full history cho baseline. “Full” là đủ object/history default branch, không bắt buộc mirror mọi ref. Cache xác minh remote, workspace riêng theo job/claimToken; không đổi checkout worker khác đang đọc.
+
+BR16 cắt tới 10.000 commit gần nhất là đề xuất chờ duyệt, độc lập tài nguyên full clone. Nếu chấp nhận phải công bố truncated/count/effective bounds; không gọi là toàn bộ lịch sử khi cắt. Clone vượt tài nguyên trả lỗi riêng thay vì tính object thiếu. Fixture kiểm tra root/merge/rename/window/SHA.
+
+Xem [architecture](../architecture.md) và [đối chiếu](../week-04/review-tich-hop-tuong-toan.md). Bổ sung chưa phải xác nhận Accepted của thành viên.

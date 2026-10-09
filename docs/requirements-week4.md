@@ -4,7 +4,7 @@ Ngày 08/10/2026. Người phụ trách: Trần Quang Toản. **Bản hoàn ch�
 
 ## 1. Cơ sở và phạm vi
 
-Đối chiếu phân công tuần 4 (04–10/10), đề cương v3, [draft tuần 2](usecases-draft.md), [năm trường hợp phỏng vấn](interview-notes.md) và [metric spec v1 đã merge](metric-spec-v1.md). Core phân tích repository GitHub công khai, default branch, Java; tối đa 10.000 commit gần nhất trong cửa sổ quan sát. Không cam kết đa repo, cảnh báo diff PR đang mở, tự sửa mã hoặc đánh giá năng suất developer.
+Đối chiếu phân công tuần 4 (04–10/10), đề cương v3, [draft tuần 2](usecases-draft.md), [năm trường hợp phỏng vấn](interview-notes.md) và [metric spec v1 đã merge](metric-spec-v1.md). Core phân tích repository GitHub công khai, default branch, Java; chính sách tối đa 10.000 commit gần nhất trong cửa sổ là đề xuất BR16 chờ review; thứ tự chọn/truncated phải chốt trước code. Không cam kết đa repo, cảnh báo diff PR đang mở, tự sửa mã hoặc đánh giá năng suất developer.
 
 Actor chính: người dùng có kinh nghiệm Git (developer/maintainer). Actor cấu hình: người vận hành nhóm được phép thay lịch và rule. Actor phụ: scheduler, GitHub, công cụ Lizard và provider LLM. Đây là vai trò thiết kế; bản tuần 3 **chưa có hệ thống tài khoản/phân quyền**, nên thao tác ghi chỉ dành cho phiên thử kiểm soát đến khi bổ sung bảo vệ.
 
@@ -46,7 +46,7 @@ Mã W3-AC của prototype giữ nguyên, không đồng nghĩa đủ nghiệm th
 - **Ngoại lệ:** repo mất public, job đang hoạt động, hàng đợi đầy, clone/Lizard lỗi; chuyển FAILED có mã lỗi an toàn. Không giữ request chờ phân tích xong.
 - **AC02.1:** Given repo hợp lệ không có job hoạt động, When yêu cầu, Then 202 + Location của job trong mục tiêu NFR01; chưa công bố snapshot dở dang.
 - **AC02.2:** Given hai request đồng thời cùng repo, Then tối đa một job QUEUED/RUNNING; request còn lại 409 tham chiếu job đang chạy.
-- **AC02.3:** Given pipeline lỗi/timeout, Then job FAILED và không có snapshot mới hiển thị. HEAD/config không đổi: job SUCCEEDED với outcome NO_CHANGE và tham chiếu snapshot cũ.
+- **AC02.3:** Given pipeline lỗi/timeout, Then job FAILED và không có snapshot mới hiển thị. Chỉ khi có snapshot thành công cùng repo/HEAD/cả hai window bounds/effectiveConfigHash (gồm tool versions), job mới SUCCEEDED/NO_CHANGE trỏ snapshot cũ. HEAD giữ nguyên nhưng window trượt không đủ điều kiện.
 
 ### UC03 — Theo dõi tiến độ
 
@@ -118,7 +118,7 @@ Mã W3-AC của prototype giữ nguyên, không đồng nghĩa đủ nghiệm th
 - **Input:** snapshotId/fileId, lineRanges và consent; **output:** JSON theo [schema](schemas/ai-review-output.schema.json), nhãn AI-generated.
 - **Luồng:** dựng context giới hạn → kiểm tra secret → gọi provider → validate cấu trúc và evidence allowlist → hiển thị gợi ý; không sửa repository.
 - **Ngoại lệ:** quá giới hạn, thiếu consent, quota, timeout, provider lỗi, JSON/evidence sai; hiển thị “Không thể phân tích” và mã lỗi an toàn.
-- **AC11.1:** Given context hợp lệ và provider trả schema/evidence hợp lệ, Then hiện riskSummary/evidence/checklist/refactorSuggestions; điểm hotspot gốc không thay đổi.
+- **AC11.1:** Given context hợp lệ và provider trả schema/evidence hợp lệ, Then hiện riskSummary/evidence/reviewChecklist/refactorSuggestions/limitations theo schema; điểm hotspot gốc không thay đổi.
 - **AC11.2:** Given provider timeout hoặc trả reference không có trong context, Then không hiển thị như kết quả hợp lệ, dashboard vẫn sử dụng được; không tự retry gây phí.
 - **AC11.3:** Given không consent hoặc context có secret/chưa kiểm tra được, Then không gửi ra provider. Mọi output chỉ tư vấn, không auto-apply/commit/PR.
 
@@ -139,3 +139,5 @@ API chi tiết ở [contract](api-contract.md); rule/NFR ở [business-rules-nfr
 ## 5. Bàn giao review
 
 Tưởng review đường job, snapshot, evidence và tính khả thi; Toản phụ trách UI/API và truy vết. Xem [danh sách quyết định](week-04/README.md). Chưa chốt auth đầy đủ, percentile/tie edge cases, budget benchmark hoặc provider. Không đưa quyết định chưa duyệt thành kết quả thực nghiệm.
+
+Bản đối chiếu 09/10/2026: kiến trúc/contract căn chỉnh trong [review chung](week-04/review-tich-hop-tuong-toan.md); chưa ghi nhận approval thành viên/GVHD.

@@ -11,7 +11,7 @@ Ngày 08/10/2026. Phụ trách Toản. Bản yêu cầu để review; mọi con 
 | BR03 | Bỏ merge commit trong frequency/churn/coupling/contribution | Regression history có merge không đếm hai lần |
 | BR04 | Metric source-code chỉ Java hợp lệ; loại binary/generated/path theo cấu hình | Lưu exclude rules và version; file bị loại có lý do |
 | BR05 | Chỉ công bố snapshot sau toàn bộ pipeline thành công | Failure giữa chừng không để UI đọc snapshot dở dang |
-| BR06 | Không tạo snapshot lặp khi HEAD và cấu hình hiệu lực không đổi | Job trả SUCCEEDED/NO_CHANGE và snapshotId cũ. Ngoại lệ đổi cấu hình cần quyết định bên dưới |
+| BR06 | Không tạo snapshot lặp khi có snapshot thành công cùng repo/HEAD/cả hai window bounds/effectiveConfigHash (gồm tool versions) | Job trả SUCCEEDED/NO_CHANGE và snapshotId cũ. Window trượt hoặc config/tool đổi thì không tái dùng chỉ vì HEAD không đổi |
 | BR07 | Cùng repo/HEAD/cửa sổ/config/tool version → cùng metric | So output chuẩn hóa, bỏ id/timestamp; công thức percentile cần đặc tả tuần 5 |
 | BR08 | Rename nối logical file khi đủ bằng chứng Git | Giữ path tại từng snapshot; không tự ghép file chỉ vì tên giống |
 | BR09 | Ngưỡng là heuristic có version, không chuẩn chất lượng phổ quát | UI hiện ngưỡng và observedValue; HHI chưa có hard threshold |
@@ -39,7 +39,7 @@ Không tự đặt rule “file >=3 commit mới tính hotspot”: đề cương
 | NFR01 | API tạo analysis job p95 <=2 giây | 100 request hợp lệ sau 10 warm-up, 5 client; đo response 202, không đo clone; queue không đầy, ghi lỗi riêng | Chưa có endpoint/pilot |
 | NFR02 | Dashboard đã có dữ liệu p95 <=1 giây | 100 GET, 5 client, snapshot cố định; ghi kích thước dataset/cache, tỷ lệ lỗi; không tính dữ liệu giả là benchmark | Chưa đo |
 | NFR03 | Repo benchmark <=10.000 commit, tổng phân tích <=10 phút | 3 lượt cold clone và 3 warm fetch trên repo/HEAD cố định; báo từng lượt và tổng clone+extract+Lizard+metric+persist, CPU/RAM/OS/network/tool versions; đạt nếu mọi lượt đúng và <=600s | Chưa có pipeline đầy đủ; không thay bằng ví dụ 5 phút |
-| NFR04 | Runtime deadline đề xuất 15 phút; lease/heartbeat 30 giây, stale sau 120 giây, phát hiện trong <=180 giây | Kill worker và giả timeout, xác minh FAILED/no snapshot; deadline không thay target 10 phút. Thời gian queue ghi riêng | Chờ nhóm duyệt giá trị và thử fault injection |
+| NFR04 | Runtime deadline đề xuất 15 phút; heartbeat mỗi 30 giây, lease hết sau 120 giây không gia hạn; watchdog quét tối đa mỗi 60 giây, phát hiện trong <=180 giây từ heartbeat hợp lệ cuối | Kill worker/timeout, xác minh FAILED/no snapshot; finalize kiểm tra lease dù watchdog chưa chạy. Thời hạn phát hiện giả định DB/watchdog hoạt động; deadline không thay target 10 phút, queue ghi riêng | Chờ nhóm duyệt giá trị và thử fault injection |
 | NFR05 | 100% secret cấu hình qua env/secret store; 0 secret phát hiện trong repo/log fixture | Secret scan + kiểm tra negative fixture đã khử dữ liệu thật; scan sạch không chứng minh mọi secret đã bị phát hiện | Chưa nghiệm thu toàn hệ thống |
 | NFR06 | 100% ca URL ngoài whitelist trong bộ kiểm thử bị từ chối trước clone | HTTPS GitHub host chính xác, chặn userinfo/port/protocol/path tùy ý; kiểm tra redirect/SSRF ở ingestion và outbound policy | Prototype mới kiểm tra cú pháp |
 | NFR07 | UI dùng được tại 375px và desktop 1440px, không tràn ngang ở luồng core | E2E viewport và kiểm tra loading/empty/error/keyboard; tuần 3 chỉ là prototype | Chưa nghiệm thu UI đầy đủ |
@@ -64,3 +64,9 @@ Các mục tiêu phải chốt trước thực nghiệm và ghi cả kết quả
 ## 5. Quyết định cần đồng thuận
 
 BR14, BR16, BR17 và NFR04/09 bổ sung chi tiết so với baseline; cần Tưởng review và cập nhật metric spec/algorithm design tương ứng khi chấp nhận. Lịch tuần 4 giữ theo phân công, không đổi lịch workbook hoặc lấy milestone khác trong đề cương làm lý do cài vượt phạm vi. ERD/wireframe thuộc tuần 5.
+
+## Căn chỉnh bản review chung ngày 09/10/2026
+
+BR06/17 đọc cùng snapshot identity trong architecture/contract: HEAD không đổi nhưng window/config/tool khác vẫn có thể tạo snapshot. NFR04 tách heartbeat interval, lease duration và watchdog interval.
+
+BR14/16, pool/queue/timeout/KPI nâng cao còn đề xuất cần hai thành viên review; chưa biến thành baseline metric spec đã duyệt. KPI task success 90%, SUS 80 và ≥10 người không thay cam kết đề cương 80%/68/5–9 người nếu chưa ghi quyết định điều chỉnh; giữ là mục tiêu nâng cao đang review.
