@@ -52,12 +52,20 @@ Chống trùng bằng transaction/constraint PostgreSQL, không chỉ Java check
 
 ## Snapshot và tương thích
 
-Metadata: repositoryId/headSha/createdAt/observationStart/End/configVersion/configHash/toolVersions/analyzedCommitCount/truncated. Window bounds cố định cho lần chạy lại; không dùng now khác nhau rồi nhận cùng input. Hotspot trả raw frequency/churn/max_ccn cùng percentile/score; null kèm unavailableReason, không giả 0. Quy tắc percentile/empty file cần algorithm design.
+Metadata: repositoryId/headSha/createdAt/observationStart/End/configVersion/configHash/toolVersions/analyzedCommitCount/truncated. Window bounds cố định cho lần chạy lại; không dùng now khác nhau rồi nhận cùng input. configHash là effectiveConfigHash gồm tool versions, filters, cách chọn commit và tham số metric; window bounds lưu riêng. NO_CHANGE chỉ khi snapshot thành công cùng repo/headSha/observationStart/End/configHash; cùng HEAD nhưng cửa sổ trượt không đủ điều kiện. Hotspot trả raw frequency/churn/max_ccn cùng percentile/score; null kèm unavailableReason, không giả 0. Quy tắc percentile/empty file cần algorithm design.
 
 So sánh khác repo →400; khác công thức/config không tương thích →409 INCOMPATIBLE_SNAPSHOTS. File thiếu một phía trả null và added/removed, không coi là delta từ 0. UI có thể xem riêng nhưng không nối biểu đồ/delta gây hiểu nhầm.
 
 ## AI review
 
-Request mẫu `{"lineRanges":[{"start":10,"end":40}],"consent":true}`. Server đọc code tại HEAD snapshot, kiểm tra file/line bounds, không nhận filesystem path tùy ý. UI cho xem phần mã chọn và thông báo dữ liệu gửi trước consent. result theo [schema](schemas/ai-review-output.schema.json) và [AI scope](ai-review-scope.md). AI gọi ở luồng riêng, timeout 30 giây đề xuất; NFR01 2 giây chỉ áp API tạo analysis job. Lỗi provider/schema/evidence không trả review thành công rỗng.
+Request mẫu `{"lineRanges":[{"start":10,"end":40}],"consent":true}`. Server đọc code tại HEAD snapshot, kiểm tra file/line bounds, không nhận filesystem path tùy ý. UI cho xem phần mã chọn và thông báo dữ liệu gửi trước consent. result theo [schema](schemas/ai-review-output.schema.json) và [AI scope](ai-review-scope.md). AI gọi ở luồng riêng, provider timeout tối đa 30 giây trong deadline toàn API 35 giây đề xuất; NFR01 2 giây chỉ áp API tạo analysis job. Lỗi provider/schema/evidence không trả review thành công rỗng.
 
 Tuần 4 bàn giao contract, tuần 5 chốt DTO/ERD/security, giai đoạn cài đặt mới thêm handler. API/DB/UI: Toản; worker/metric: Tưởng. Nguồn định dạng lỗi: [RFC 9457](https://www.rfc-editor.org/rfc/rfc9457.html); mã lỗi dự án là đề xuất riêng.
+
+## Ghi chú tích hợp ngày 09/10/2026
+
+AI v1 POST 200 trực tiếp, không có GET ai-reviews/{id}; reviewId chỉ truy vết metadata. Client AI cần budget riêng 40 giây do api.ts hiện 15 giây; khi triển khai kiểm tra proxy/host. Các giá trị là đề xuất, chưa sửa runtime.
+
+NO_CHANGE là outcome, không thêm state job. Chỉ dùng snapshot cũ có identity đầy đủ tương đương; CREATED có snapshot mới. configVersion là nhãn, không thay configHash.
+
+BR14/16, deadline/quota/queue vẫn Proposed. Xem [kiến trúc](architecture.md) và [đối chiếu](week-04/review-tich-hop-tuong-toan.md). Mã lỗi public verification/authorization hoàn thiện tuần 5; không nhận handler đã có.
