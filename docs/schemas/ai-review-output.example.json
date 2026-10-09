@@ -1,0 +1,7 @@
+{
+  "riskSummary": "Ví dụ minh họa: nên kiểm tra nhánh điều kiện; chỉ số không chứng minh có lỗi.",
+  "evidence": [{"evidenceId": "E1", "explanation": "E1 là metric của context minh họa, không phải số liệu thực nghiệm."}],
+  "reviewChecklist": [{"text": "Đối chiếu nhánh điều kiện với test hiện có.", "evidenceIds": ["E1"]}],
+  "refactorSuggestions": [],
+  "limitations": ["Fixture kiểm tra schema, không phải review thật của provider."]
+}
