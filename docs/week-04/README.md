@@ -6,6 +6,8 @@ Tuần 04–10/10/2026; thực hiện ngày 08/10. Đã pull `main` tới `6560c
 
 ## Sản phẩm
 
+Bản Word và ZIP để gửi nhóm trưởng: [bộ gửi ngày 08/10](gui-nhom-truong/README.md), đã đưa lên GitHub ngày 09/10.
+
 | Phân công | Đầu ra | Trạng thái |
 |---|---|---|
 | Toản: phân tích yêu cầu | [11 UC và acceptance criteria](../requirements-week4.md) | Đã soạn, có mapping mã cũ/mới và truy vết phỏng vấn |

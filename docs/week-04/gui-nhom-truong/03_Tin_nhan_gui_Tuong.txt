@@ -1,0 +1,8 @@
+﻿Tưởng ơi, mình gửi bộ tài liệu tuần 4 phần mình phụ trách: yêu cầu (11 UC, 25 AC), business rules/NFR, API contract, phạm vi AI review và hai ADR. Có kèm báo cáo tuần và AI log.
+
+PR: https://github.com/Tuong2608/Git-Health-Monitor/pull/3
+CI cuối đã đạt: https://github.com/Tuong2608/Git-Health-Monitor/actions/runs/37787147639
+
+Bạn đọc giúp file 02_Ban_giao_va_de_nghi_review_Tuong.docx, review PR và bổ sung architecture.md phần bạn phụ trách nhé. Các mục cần thống nhất là quy tắc lọc commit/cấu hình snapshot, luồng job khi restart và budget AI. Công thức metric vẫn theo spec v1 đã merge.
+
+Sau khi hai đứa chốt, mình dùng bản báo cáo trong gói để hoàn thiện bản nộp tuần 4.
