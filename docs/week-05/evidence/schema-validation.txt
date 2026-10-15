@@ -1,0 +1,173 @@
+BEGIN
+CREATE SCHEMA
+SET
+CREATE TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE FUNCTION
+INSERT 0 2
+INSERT 0 1
+ expect_rejection
+psql:docs/week-05/evidence/verify-schema.sql:17: NOTICE:  PASS: one active job per repository (23505)
+------------------
+
+(1 row)
+
+ expect_rejection
+------------------
+
+(1 row)
+
+psql:docs/week-05/evidence/verify-schema.sql:18: NOTICE:  PASS: running requires claim and lease (23514)
+UPDATE 1
+INSERT 0 1
+UPDATE 1
+INSERT 0 1
+psql:docs/week-05/evidence/verify-schema.sql:23: NOTICE:  PASS: snapshot identity dedupe (23505)
+ expect_rejection
+------------------
+
+(1 row)
+
+UPDATE 1
+INSERT 0 3
+INSERT 0 2
+psql:docs/week-05/evidence/verify-schema.sql:27: NOTICE:  PASS: cross repository file blocked (23503)
+ expect_rejection
+------------------
+
+(1 row)
+
+psql:docs/week-05/evidence/verify-schema.sql:28: NOTICE:  PASS: negative frequency blocked (23514)
+ expect_rejection
+------------------
+
+(1 row)
+
+INSERT 0 1
+DO
+psql:docs/week-05/evidence/verify-schema.sql:30: NOTICE:  PASS: coupling = 5/min(10,20) = 0.5
+ expect_rejection
+------------------
+
+(1 row)
+
+psql:docs/week-05/evidence/verify-schema.sql:31: NOTICE:  PASS: reversed pair blocked (23514)
+psql:docs/week-05/evidence/verify-schema.sql:32: NOTICE:  PASS: self pair blocked (23514)
+ expect_rejection
+------------------
+
+(1 row)
+
+psql:docs/week-05/evidence/verify-schema.sql:33: NOTICE:  PASS: impossible shared count blocked (23514)
+ expect_rejection
+------------------
+
+(1 row)
+
+INSERT 0 2
+INSERT 0 1
+psql:docs/week-05/evidence/verify-schema.sql:36: NOTICE:  PASS: cross repository contributor blocked (23503)
+ expect_rejection
+------------------
+
+(1 row)
+
+INSERT 0 1
+INSERT 0 1
+ expect_rejection
+------------------
+
+(1 row)
+
+psql:docs/week-05/evidence/verify-schema.sql:39: NOTICE:  PASS: NULL related file still deduplicated (23505)
+DO
+psql:docs/week-05/evidence/verify-schema.sql:40: NOTICE:  PASS: exactly 10 tables; CREATED and NO_CHANGE reference same published snapshot
+                                 version
+-------------------------------------------------------------------------
+ PostgreSQL 18.3 on x86_64-windows, compiled by msvc-19.44.35223, 64-bit
+(1 row)
+
+ROLLBACK
+ review_schema_removed
+-----------------------
+ t
+(1 row)

@@ -1,0 +1,547 @@
+{
+  "tracked_repository": [
+    [
+      "id",
+      "bigint identity PK",
+      "Mã repository, giữ id V1"
+    ],
+    [
+      "url",
+      "varchar(512) UNIQUE NOT NULL",
+      "URL chuẩn hóa, giữ V1"
+    ],
+    [
+      "owner",
+      "varchar(100) NOT NULL",
+      "GitHub owner, giữ V1"
+    ],
+    [
+      "name",
+      "varchar(100) NOT NULL",
+      "Tên kho, giữ V1"
+    ],
+    [
+      "created_at",
+      "timestamptz NOT NULL",
+      "Giữ V1"
+    ],
+    [
+      "verified_at",
+      "timestamptz NULL",
+      "Lần xác minh public, null chưa xác minh"
+    ],
+    [
+      "default_branch",
+      "text NULL",
+      "Branch lấy từ GitHub"
+    ],
+    [
+      "monitoring_enabled",
+      "boolean NOT NULL default false",
+      "Bật lịch"
+    ],
+    [
+      "interval_minutes",
+      "integer NOT NULL default 1440",
+      "Đề xuất >=60"
+    ],
+    [
+      "next_scan_at",
+      "timestamptz NULL",
+      "Lịch kế tiếp UTC"
+    ],
+    [
+      "monitoring_version",
+      "integer NOT NULL default 1",
+      "Optimistic locking lịch"
+    ]
+  ],
+  "analysis_job": [
+    [
+      "id",
+      "bigint identity PK",
+      "Mỗi lần thử có id mới"
+    ],
+    [
+      "repository_id",
+      "bigint FK NOT NULL",
+      "Repository"
+    ],
+    [
+      "status",
+      "text NOT NULL",
+      "QUEUED RUNNING SUCCEEDED FAILED"
+    ],
+    [
+      "outcome",
+      "text NULL",
+      "CREATED hoặc NO_CHANGE khi SUCCEEDED"
+    ],
+    [
+      "requested_at",
+      "timestamptz NOT NULL",
+      "Thời điểm xếp hàng"
+    ],
+    [
+      "started_at",
+      "timestamptz NULL",
+      "Lúc worker nhận"
+    ],
+    [
+      "finished_at",
+      "timestamptz NULL",
+      "Lúc terminal"
+    ],
+    [
+      "head_sha",
+      "varchar(64) NULL",
+      "Cố định trước tính metric"
+    ],
+    [
+      "window_start",
+      "timestamptz NOT NULL",
+      "Đầu window đã cố định"
+    ],
+    [
+      "window_end",
+      "timestamptz NOT NULL",
+      "Cuối window đã cố định"
+    ],
+    [
+      "config_hash",
+      "varchar(64) NOT NULL",
+      "SHA256 effective config gồm tool versions"
+    ],
+    [
+      "config",
+      "jsonb NOT NULL",
+      "Cấu hình đã resolve để tái lập"
+    ],
+    [
+      "phase",
+      "text NULL",
+      "Giai đoạn thực tế"
+    ],
+    [
+      "progress",
+      "numeric NULL",
+      "0..100, null khi chưa biết"
+    ],
+    [
+      "claim_token",
+      "uuid NULL",
+      "Fencing token do worker claim"
+    ],
+    [
+      "lease_until",
+      "timestamptz NULL",
+      "Hạn quyền chạy"
+    ],
+    [
+      "heartbeat_at",
+      "timestamptz NULL",
+      "Gia hạn lease"
+    ],
+    [
+      "result_snapshot_id",
+      "bigint NULL FK",
+      "Có thể trỏ snapshot cũ NO_CHANGE"
+    ],
+    [
+      "error_code",
+      "text NULL",
+      "Mã lỗi an toàn, không raw exception"
+    ]
+  ],
+  "analysis_snapshot": [
+    [
+      "id",
+      "bigint identity PK",
+      "Snapshot đã công bố"
+    ],
+    [
+      "repository_id",
+      "bigint FK NOT NULL",
+      "Repository"
+    ],
+    [
+      "created_by_job_id",
+      "bigint UNIQUE FK NOT NULL",
+      "Job tạo mới, không phải job NO_CHANGE"
+    ],
+    [
+      "head_sha",
+      "varchar(64) NOT NULL",
+      "SHA cố định"
+    ],
+    [
+      "window_start",
+      "timestamptz NOT NULL",
+      "Đầu window"
+    ],
+    [
+      "window_end",
+      "timestamptz NOT NULL",
+      "Cuối window"
+    ],
+    [
+      "config_hash",
+      "varchar(64) NOT NULL",
+      "Identity cùng config/window/SHA"
+    ],
+    [
+      "config_version",
+      "text NOT NULL",
+      "Nhãn phiên bản"
+    ],
+    [
+      "config",
+      "jsonb NOT NULL",
+      "Toàn cấu hình hiệu lực và tool versions"
+    ],
+    [
+      "commit_count",
+      "integer NOT NULL",
+      "Số commit thực sự phân tích"
+    ],
+    [
+      "truncated",
+      "boolean NOT NULL",
+      "Có cắt giới hạn hay không"
+    ],
+    [
+      "created_at",
+      "timestamptz NOT NULL",
+      "Thời điểm publication"
+    ],
+    [
+      "summary",
+      "jsonb NOT NULL",
+      "Số file/metric thiếu, không raw source"
+    ]
+  ],
+  "logical_file": [
+    [
+      "id",
+      "bigint identity PK",
+      "Định danh ổn định qua rename nếu đủ chứng cứ"
+    ],
+    [
+      "repository_id",
+      "bigint FK NOT NULL",
+      "Repository"
+    ],
+    [
+      "first_seen_sha",
+      "varchar(64) NOT NULL",
+      "SHA đầu tiên nhận diện"
+    ],
+    [
+      "initial_path",
+      "text NOT NULL",
+      "Tên tại lần nhận diện, không unique theo path"
+    ],
+    [
+      "identity_evidence",
+      "jsonb NOT NULL",
+      "Bằng chứng rename/identity; không giả confidence"
+    ]
+  ],
+  "file_metric": [
+    [
+      "snapshot_id",
+      "bigint composite PK FK",
+      "Snapshot"
+    ],
+    [
+      "file_id",
+      "bigint composite PK FK",
+      "Logical file"
+    ],
+    [
+      "repository_id",
+      "bigint NOT NULL",
+      "Khóa bảo đảm cùng repository"
+    ],
+    [
+      "path_at_snapshot",
+      "text NOT NULL",
+      "Tên file tại snapshot; lịch sử rename không ghi đè"
+    ],
+    [
+      "change_frequency",
+      "integer NOT NULL",
+      ">=0"
+    ],
+    [
+      "churn",
+      "bigint NOT NULL",
+      "Additions + deletions >=0"
+    ],
+    [
+      "max_ccn",
+      "numeric NULL",
+      "Max function CCN theo metric v1"
+    ],
+    [
+      "avg_ccn",
+      "numeric NULL",
+      "Thông tin bổ sung"
+    ],
+    [
+      "function_count",
+      "integer NOT NULL",
+      ">=0"
+    ],
+    [
+      "nloc",
+      "bigint NOT NULL",
+      ">=0"
+    ],
+    [
+      "hotspot_score",
+      "numeric NULL",
+      "0..1, không giả 0 nếu thiếu"
+    ],
+    [
+      "hhi",
+      "numeric NULL",
+      "0..1; tổng contribution=0 thì null"
+    ],
+    [
+      "unavailable_reason",
+      "text NULL",
+      "Lý do thiếu score/complexity/HHI"
+    ],
+    [
+      "evidence",
+      "jsonb NOT NULL",
+      "Commit SHAs, counts và provenance, không raw code"
+    ]
+  ],
+  "contributor": [
+    [
+      "id",
+      "bigint identity PK",
+      "Contributor scoped theo repo"
+    ],
+    [
+      "repository_id",
+      "bigint FK NOT NULL",
+      "Repository"
+    ],
+    [
+      "identity_key",
+      "text NOT NULL",
+      "Khóa chuẩn hóa hoặc alias mapping có version"
+    ],
+    [
+      "display_name",
+      "text NOT NULL",
+      "Tên hiển thị; không đánh giá năng suất"
+    ],
+    [
+      "aliases",
+      "jsonb NOT NULL",
+      "Mapping danh tính, hạn chế truy cập, không API raw email"
+    ]
+  ],
+  "file_contribution": [
+    [
+      "snapshot_id",
+      "bigint composite PK FK",
+      "Snapshot/file metric"
+    ],
+    [
+      "file_id",
+      "bigint composite PK FK",
+      "File"
+    ],
+    [
+      "contributor_id",
+      "bigint composite PK FK",
+      "Contributor"
+    ],
+    [
+      "repository_id",
+      "bigint NOT NULL",
+      "Cùng repo"
+    ],
+    [
+      "additions",
+      "bigint NOT NULL",
+      ">=0"
+    ],
+    [
+      "deletions",
+      "bigint NOT NULL",
+      ">=0"
+    ],
+    [
+      "commit_count",
+      "integer NOT NULL",
+      ">=0; share tính từ additions+deletions"
+    ]
+  ],
+  "temporal_coupling": [
+    [
+      "snapshot_id",
+      "bigint composite PK FK",
+      "Snapshot"
+    ],
+    [
+      "source_file_id",
+      "bigint composite PK FK",
+      "A, luôn A < B"
+    ],
+    [
+      "target_file_id",
+      "bigint composite PK FK",
+      "B"
+    ],
+    [
+      "shared_commits",
+      "integer NOT NULL",
+      ">=0, không vượt min(countA,countB)"
+    ],
+    [
+      "commit_count_a",
+      "integer NOT NULL",
+      "Mẫu số tập eligible >=1"
+    ],
+    [
+      "commit_count_b",
+      "integer NOT NULL",
+      "Mẫu số tập eligible >=1"
+    ],
+    [
+      "coupling_degree",
+      "numeric GENERATED",
+      "shared / least(countA,countB)"
+    ],
+    [
+      "evidence",
+      "jsonb NOT NULL",
+      "Commit chung, filter/count, phân trang tại API"
+    ]
+  ],
+  "alert_rule": [
+    [
+      "id",
+      "bigint identity PK",
+      "Rule logical id"
+    ],
+    [
+      "repository_id",
+      "bigint FK NOT NULL",
+      "Repository"
+    ],
+    [
+      "type",
+      "text NOT NULL",
+      "HOTSPOT_INCREASE hoặc STRONG_COUPLING đề xuất"
+    ],
+    [
+      "version",
+      "integer NOT NULL",
+      "Tăng mỗi lần sửa"
+    ],
+    [
+      "enabled",
+      "boolean NOT NULL",
+      "Không xóa rule đã có alert"
+    ],
+    [
+      "parameters",
+      "jsonb NOT NULL",
+      "Threshold và comparator có schema theo type"
+    ],
+    [
+      "updated_at",
+      "timestamptz NOT NULL",
+      "UTC"
+    ]
+  ],
+  "alert": [
+    [
+      "id",
+      "bigint identity PK",
+      "Cảnh báo"
+    ],
+    [
+      "repository_id",
+      "bigint NOT NULL",
+      "Repo guard"
+    ],
+    [
+      "rule_id",
+      "bigint FK NOT NULL",
+      "Rule"
+    ],
+    [
+      "rule_version",
+      "integer NOT NULL",
+      "Phiên bản khi sinh"
+    ],
+    [
+      "rule_config",
+      "jsonb NOT NULL",
+      "Bản chụp parameters cũ"
+    ],
+    [
+      "snapshot_id",
+      "bigint FK NOT NULL",
+      "Snapshot đích"
+    ],
+    [
+      "baseline_snapshot_id",
+      "bigint NULL FK",
+      "Snapshot trước nếu rule cần"
+    ],
+    [
+      "file_id",
+      "bigint NOT NULL FK",
+      "File metric của snapshot đích"
+    ],
+    [
+      "related_file_id",
+      "bigint NULL FK",
+      "Cặp file nếu có; file_id < related_file_id"
+    ],
+    [
+      "status",
+      "text NOT NULL",
+      "OPEN ACKNOWLEDGED CLOSED"
+    ],
+    [
+      "observed_value",
+      "numeric NOT NULL",
+      "Giá trị thực"
+    ],
+    [
+      "threshold",
+      "numeric NOT NULL",
+      "Ngưỡng áp dụng"
+    ],
+    [
+      "evidence",
+      "jsonb NOT NULL",
+      "Lý do/số liệu/commit, không tự khẳng định bug"
+    ],
+    [
+      "created_at",
+      "timestamptz NOT NULL",
+      "UTC"
+    ],
+    [
+      "acknowledged_at",
+      "timestamptz NULL",
+      "Lúc acknowledge"
+    ],
+    [
+      "closed_at",
+      "timestamptz NULL",
+      "Lúc đóng"
+    ]
+  ]
+}

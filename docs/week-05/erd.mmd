@@ -1,0 +1,72 @@
+erDiagram
+  tracked_repository ||--o{ analysis_job : "1:N"
+  tracked_repository ||--o{ analysis_snapshot : "1:N"
+  analysis_job ||--o| analysis_snapshot : creates
+  analysis_snapshot o|--o{ analysis_job : result
+  tracked_repository ||--o{ logical_file : "1:N"
+  tracked_repository ||--o{ contributor : "1:N"
+  analysis_snapshot ||--o{ file_metric : "1:N"
+  logical_file ||--o{ file_metric : "1:N"
+  file_metric ||--o{ file_contribution : "1:N"
+  contributor ||--o{ file_contribution : "1:N"
+  file_metric ||--o{ temporal_coupling : "A/B 1:N"
+  tracked_repository ||--o{ alert_rule : "1:N"
+  alert_rule ||--o{ alert : "1:N"
+  analysis_snapshot ||--o{ alert : "1:N"
+  file_metric ||--o{ alert : primary_file
+  file_metric o|--o{ alert : related_file
+  analysis_snapshot o|--o{ alert : baseline
+  tracked_repository {
+    bigint id PK
+  }
+  analysis_job {
+    bigint id PK
+    bigint repository_id FK
+    text status
+    varchar head_sha
+    varchar config_hash
+    bigint result_snapshot_id FK
+  }
+  analysis_snapshot {
+    bigint id PK
+    bigint repository_id FK
+    bigint created_by_job_id FK
+    varchar head_sha
+    varchar config_hash
+  }
+  logical_file {
+    bigint id PK
+    bigint repository_id FK
+  }
+  file_metric {
+    bigint snapshot_id PK
+    bigint file_id PK
+    text path_at_snapshot
+  }
+  contributor {
+    bigint id PK
+    bigint repository_id FK
+  }
+  file_contribution {
+    bigint snapshot_id PK
+    bigint file_id PK
+    bigint contributor_id PK
+  }
+  temporal_coupling {
+    bigint snapshot_id PK
+    bigint source_file_id PK
+    bigint target_file_id PK
+  }
+  alert_rule {
+    bigint id PK
+    bigint repository_id FK
+  }
+  alert {
+    bigint id PK
+    bigint rule_id FK
+    bigint snapshot_id FK
+    bigint baseline_snapshot_id FK
+    bigint file_id FK
+    bigint related_file_id FK
+    text status
+  }
