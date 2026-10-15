@@ -1,0 +1,55 @@
+{
+  "source": "docs/BaoCaoTienDo_TLCN.xlsx",
+  "mainCommit": "8d550409eff04f592c5f5d39182ed35a3b0bb5d7",
+  "sheet": "Kế hoạch chi tiết",
+  "rows": [
+    {
+      "row": 21,
+      "values": [
+        "17",
+        "M3 — Thiết kế chi tiết",
+        "Thiết kế cơ sở dữ liệu",
+        "Lập ERD và đặc tả 10 bảng (tracked_repository, analysis_job, analysis_snapshot, logical_file, file_metric, contributor, file_contribution, temporal_coupling, alert_rule, alert) cùng chỉ mục phục vụ truy vấn.",
+        "Toản",
+        "Trung bình",
+        "Chưa bắt đầu",
+        "5",
+        "5",
+        "Thiết kế kiến trúc",
+        null
+      ]
+    },
+    {
+      "row": 22,
+      "values": [
+        "18",
+        "M3 — Thiết kế chi tiết",
+        "Thiết kế giao diện người dùng",
+        "Vẽ sơ đồ điều hướng, thiết kế màn hình chính, màn hình AI review và chọn hình thức trực quan hóa cho từng chỉ số.",
+        "Toản",
+        "Trung bình",
+        "Chưa bắt đầu",
+        "5",
+        "5",
+        "Thiết kế kiến trúc",
+        null
+      ]
+    },
+    {
+      "row": 24,
+      "values": [
+        "20",
+        "M3 — Thiết kế chi tiết",
+        "Thiết kế thực nghiệm (temporal split & baseline)",
+        "Chốt observation/prediction window, cách xác định bug-fix file (issue label → commit-message pattern → lấy mẫu thủ công), 2 baseline (change frequency only, complexity only), metric Precision@K/Recall@K/MAP.",
+        "Cả 2 (Tưởng + Toản)",
+        "Cao",
+        "Chưa bắt đầu",
+        "5",
+        "6",
+        "Thiết kế thuật toán tính chỉ số",
+        null
+      ]
+    }
+  ]
+}

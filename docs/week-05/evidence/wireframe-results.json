@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-15T06:53:23.273Z",
+  "browser": "153.0.8010.12",
+  "scope": "Offline mock only, not application E2E",
+  "checks": [
+    "dashboard: visible, no page overflow at 1440px",
+    "hotspots: visible, no page overflow at 1440px",
+    "file: visible, no page overflow at 1440px",
+    "alerts: visible, no page overflow at 1440px",
+    "dashboard: visible, no page overflow at 375px",
+    "hotspots: visible, no page overflow at 375px",
+    "file: visible, no page overflow at 375px",
+    "alerts: visible, no page overflow at 375px",
+    "state loading",
+    "state empty",
+    "state error",
+    "filter and no results",
+    "AI mock timeout",
+    "AI mock large",
+    "AI mock ok",
+    "settings validation and alert state",
+    "comparison and mock job",
+    "no JS errors; no HTTP requests"
+  ],
+  "errors": [],
+  "httpRequests": []
+}
