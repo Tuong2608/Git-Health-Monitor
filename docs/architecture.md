@@ -67,7 +67,7 @@ flowchart TB
 | git-analyzer | Clone/fetch, SHA cố định, commit/diff/rename/tác giả, facts có nguồn | Tưởng |
 | metric-engine | Adapter Lizard, tính chỉ số theo spec, cờ dữ liệu thiếu | Tưởng |
 | snapshot | Lưu nhất quán, metadata, công bố kết quả hoàn chỉnh | Toản phối hợp Tưởng |
-| scheduler, monitoring | Tạo yêu cầu qua cùng service, so snapshot tương thích, sinh alert | Toản; Tưởng review ý nghĩa metric |
+| scheduler, monitoring | Tạo yêu cầu qua cùng service, so snapshot tương thích, sinh alert | Tưởng thiết kế tuần 5 theo phân công mới; Toản phối hợp DB/API |
 | ai-review | Context có nguồn, adapter và validation; không đổi metric | Tưởng; Toản làm API/UI |
 
 Package Java dự kiến: analysis, gitanalyzer, metrics, monitoring, aireview; không dùng dấu gạch nối trong package. Giữ repository hiện có. API gọi application service; metric không gọi controller/JPA/LLM; scheduler không tạo pipeline thứ hai.

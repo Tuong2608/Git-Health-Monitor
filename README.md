@@ -59,3 +59,5 @@ Bộ đặc tả tuần 4 của Toản: [yêu cầu, rule/NFR, API và ADR](docs
 - Hướng dẫn và giới hạn staging: [staging-week3.md](docs/week-03/staging-week3.md).
 
 Bản review tích hợp tuần 4: [kiến trúc](docs/architecture.md), [đối chiếu Tưởng và Toản](docs/week-04/review-tich-hop-tuong-toan.md). Quyết định mới chờ nhóm review; không phải tính năng runtime đã triển khai.
+
+Phần tuần 5 của Tưởng: [bàn giao](docs/week-05/README.md), [thuật toán](docs/algorithm-design.md), [giám sát](docs/monitoring-design.md), [đề xuất thực nghiệm chung](docs/experiment-design.md). Interface/prompt AI được bổ sung trong AI scope; ERD và wireframe chờ phần Toản.
