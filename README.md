@@ -59,3 +59,7 @@ Bộ thiết kế tuần 5 của Toản: [database 10 bảng, wireframe, thực 
 - Chưa có authentication/quota. Đăng ký mặc định **tắt** (`APP_REGISTRATION_ENABLED=false`); chỉ bật cho phiên thử nghiệm được kiểm soát. CORS không thay thế xác thực/phân quyền.
 - **Trước khi triển khai bản này lên Render phải cấu hình PostgreSQL và DB_*:** skeleton cũ không cần DB nhưng bản mới có Flyway/JPA nên sẽ không khởi động nếu thiếu kết nối.
 - Hướng dẫn và giới hạn staging: [staging-week3.md](docs/week-03/staging-week3.md).
+
+Bản review tích hợp tuần 4: [kiến trúc](docs/architecture.md), [đối chiếu Tưởng và Toản](docs/week-04/review-tich-hop-tuong-toan.md). Quyết định mới chờ nhóm review; không phải tính năng runtime đã triển khai.
+
+Phần tuần 5 của Tưởng: [bàn giao](docs/week-05/README.md), [thuật toán](docs/algorithm-design.md), [giám sát](docs/monitoring-design.md), [đề xuất thực nghiệm chung](docs/experiment-design.md). Interface/prompt AI được bổ sung trong AI scope; ERD và wireframe chờ phần Toản.

@@ -1,25 +1,20 @@
-# Bàn giao tuần 5 — Trần Quang Toản
+# Bàn giao chung tuần 5
 
-MSSV 23110158 · Tuần 11–17/10/2026 · Thực hiện ngày 15/10/2026.
+Cập nhật 15/10/2026. Main 188968c đã có phần Toản (PR #4). Nhánh tích hợp giữ phần Tưởng 0518e52 và bản căn chỉnh tuần 4. Thiết kế để review, chưa phải runtime đã triển khai.
 
-Đã đối chiếu workbook trên GitHub: Toản phụ trách thiết kế database và giao diện trong tuần 5; thực nghiệm là việc chung tuần 5–6. Xem [nguồn phân công](assignment-check.md). Bộ này là **thiết kế đã kiểm tra để nhóm review**, chưa triển khai pipeline lên staging và chưa được nhóm trưởng/GVHD nghiệm thu.
+- [Bàn giao Tưởng](ban-giao-tuong.md): [thuật toán](../algorithm-design.md), [giám sát](../monitoring-design.md), [AI interface](../ai-review-scope.md), [prompt](../prompts/ai-review-v1.md).
+- [Bàn giao Toản](ban-giao-toan.md): [database 10 bảng](database-design.md), [ERD](erd.png), [wireframe](wireframes/index.html), [minh chứng](evidence/verification.md).
+- Thực nghiệm: [đề xuất Tưởng](../experiment-design.md), [đề xuất Toản](experiment-design.md). Chưa chốt phương án chung.
 
-## Mở theo thứ tự
+## Đối chiếu ngày 15/10
 
-| Sản phẩm | Tệp | Trạng thái |
-|---|---|---|
-| Báo cáo gửi nhóm trưởng/GVHD | [Báo cáo tuần 5](bao-cao-tuan-05-toan.md) | Đã soạn dựa trên kết quả thật |
-| Database 10 bảng | [Từ điển và quyết định](database-design.md), [ERD xem trên GitHub](erd.md), [nguồn](erd.mmd), [ảnh tổng quan](erd.png), [SQL](schema-reference.sql) | Đã soạn; SQL kiểm tra PostgreSQL 18.3 |
-| Giao diện và điều hướng | [Mở wireframe](wireframes/index.html), [hướng dẫn và mapping](wireframes/README.md) | Bốn màn hình offline; 18 kiểm tra đạt |
-| Thực nghiệm chung | [Thiết kế thực nghiệm](experiment-design.md) | Đề xuất tuần 5–6, chờ nhóm chốt |
-| Minh chứng | [Biên bản kiểm tra](evidence/verification.md) | Log SQL, JSON kiểm tra, ảnh desktop/mobile, nguồn phân công |
-| AI học thuật | [Nhật ký AI theo hạng mục](ai-usage-toan-week05.md) | Tách mục tiêu/đầu vào/đầu ra/kiểm chứng/giới hạn, không chép prompt gốc |
-| Review/bàn giao | [Checklist](review-checklist.md) | Các quyết định cần Tưởng phản hồi |
+Hai phần cùng dùng snapshot identity gồm repo/SHA/window/config, logical file qua rename và metric thiếu không thay bằng 0. Toản có log 12 nhóm kiểm tra SQL và 18 kiểm tra wireframe offline; phiên tổng hợp này đọc lại minh chứng, không chạy lại hoặc coi là kiểm thử sản phẩm.
 
-## Cách dùng
+Các điểm còn mở trước cài đặt:
+1. Tưởng đề xuất cutoff 80/20 với observation 180 ngày; Toản đề xuất observation 180/prediction 30 ngày. Chốt trước chọn dataset/chạy đánh giá.
+2. Tie-break ranking: Tưởng dùng logicalFileId, Toản dùng path. Cần một quy tắc thống nhất cho cả ba ranking.
+3. Tưởng ưu tiên Precision/Recall; Toản đã đặc tả thêm AP/MAP. Chốt phạm vi báo cáo, không bỏ kết quả không thuận lợi.
+4. Alert evaluation marker/rule-set version của monitoring cần đối chiếu schema Toản trước migration; chưa coi SQL constraints là chứng minh recovery/lease.
+5. Preview/consent AI cần hợp đồng binding context; wireframe offline chưa thực hiện chọn dòng và provider thật.
 
-Mở `wireframes/index.html` bằng trình duyệt để demo. Trên GitHub, xem ảnh trong `evidence/` vì GitHub không chạy HTML trực tiếp. ERD Mermaid có thể copy vào Mermaid editor hoặc xem bằng công cụ hỗ trợ; ảnh PNG chỉ tóm tắt các bảng, SQL/từ điển là chi tiết ràng buộc.
-
-SQL là tài liệu kiểm chứng, không đặt trong Flyway. Chỉ chạy `evidence/verify-schema.sql` trên DB thử nghiệm; script tạo schema riêng và rollback. Không chạy `schema-reference.sql` trực tiếp vào database staging.
-
-Để kết thúc tuần theo quy trình nhóm: Toản đọc/tiếp nhận bộ thiết kế, Tưởng review các điểm mở, gắn bằng chứng review thật và cập nhật/nộp tiến độ qua kênh nhóm. Không tự đánh dấu có phản hồi hoặc đã nộp khi chưa xảy ra.
+Phần thiết kế thuật toán, giám sát, DB và UI có bản bàn giao. AI và thực nghiệm tiếp tục tuần 6. Không xác nhận sinh viên đã tự thực hiện mọi thao tác kỹ thuật hay nhóm/GVHD đã nghiệm thu.
