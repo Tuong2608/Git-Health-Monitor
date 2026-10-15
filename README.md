@@ -50,6 +50,8 @@ Dùng database thử nghiệm riêng vì bộ test ghi dữ liệu.
 
 ## Phạm vi và triển khai
 
+Bộ đặc tả tuần 4 của Toản: [yêu cầu, rule/NFR, API và ADR](docs/week-04/README.md). Đây là thiết kế để review, không đồng nghĩa các endpoint tương lai đã triển khai.
+
 - URL hợp cú pháp chưa chứng minh repo tồn tại/công khai. Ingestion ở giai đoạn sau phải kiểm tra điều đó.
 - Có chuẩn hóa URL, chống trùng tại database, giới hạn `size` của danh sách 1–100, CORS theo danh sách origin.
 - Chưa có authentication/quota. Đăng ký mặc định **tắt** (`APP_REGISTRATION_ENABLED=false`); chỉ bật cho phiên thử nghiệm được kiểm soát. CORS không thay thế xác thực/phân quyền.

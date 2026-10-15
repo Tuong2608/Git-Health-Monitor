@@ -1,5 +1,7 @@
 # Draft danh sách Use Case chính — Tuần 2
 
+> Cập nhật 08/10: đặc tả actor/input/output/luồng/ngoại lệ/acceptance criteria và bảng ánh xạ mã ở [requirements-week4.md](requirements-week4.md). Bảng dưới giữ làm nguồn lịch sử; từ tuần 4 dùng UC01–UC11 theo đề cương, không thay số trực tiếp trong báo cáo cũ.
+
 > Trạng thái: bản nháp đầu tiên, chưa đặc tả chi tiết (precondition/main flow/exception). Sẽ hoàn thiện ở M2 (tuần 4) theo kế hoạch tiến độ, cùng với acceptance criteria.
 > Cơ sở: rút ra từ kết luận khảo sát công cụ hiện có (`competitor-matrix.md`).
 
