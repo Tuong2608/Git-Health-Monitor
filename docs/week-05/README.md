@@ -18,3 +18,7 @@ Các điểm còn mở trước cài đặt:
 5. Preview/consent AI cần hợp đồng binding context; wireframe offline chưa thực hiện chọn dòng và provider thật.
 
 Phần thiết kế thuật toán, giám sát, DB và UI có bản bàn giao. AI và thực nghiệm tiếp tục tuần 6. Không xác nhận sinh viên đã tự thực hiện mọi thao tác kỹ thuật hay nhóm/GVHD đã nghiệm thu.
+
+## Bổ sung ngày 16/10
+
+[Xác thực API contract](api-contract-validation.md): 40/40 test đạt với PostgreSQL riêng, sửa createdAt để POST/GET nhất quán. Phạm vi là API repository/health hiện có. [Nội dung nộp web](bao-cao-tuan-05-nhom.md).

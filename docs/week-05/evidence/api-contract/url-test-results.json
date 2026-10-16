@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-15",
+  "scope": "URL unit tests only; not HTTP/PostgreSQL integration",
+  "suite": "com.example.demo.repository.GitHubRepositoryUrlTests",
+  "tests": 16,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "cases": [
+    "canonicalizesCaseSuffixAndTrailingSlash",
+    "rejectsUnsupportedOrAmbiguousUrls(String)[1]",
+    "rejectsUnsupportedOrAmbiguousUrls(String)[2]",
+    "rejectsUnsupportedOrAmbiguousUrls(String)[3]",
+    "rejectsUnsupportedOrAmbiguousUrls(String)[4]",
+    "rejectsUnsupportedOrAmbiguousUrls(String)[5]",
+    "rejectsUnsupportedOrAmbiguousUrls(String)[6]",
+    "rejectsUnsupportedOrAmbiguousUrls(String)[7]",
+    "rejectsUnsupportedOrAmbiguousUrls(String)[8]",
+    "rejectsUnsupportedOrAmbiguousUrls(String)[9]",
+    "rejectsUnsupportedOrAmbiguousUrls(String)[10]",
+    "rejectsUnsupportedOrAmbiguousUrls(String)[11]",
+    "rejectsUnsupportedOrAmbiguousUrls(String)[12]",
+    "rejectsUnsupportedOrAmbiguousUrls(String)[13]",
+    "rejectsUnsupportedOrAmbiguousUrls(String)[14]",
+    "rejectsUnsupportedOrAmbiguousUrls(String)[15]"
+  ],
+  "environment": {
+    "java": "21 via jbr-21.0.10",
+    "maven": "3.9.16"
+  },
+  "integrationStatus": "NOT_RUN: Docker Desktop unable to start; no PostgreSQL test instance configured"
+}
