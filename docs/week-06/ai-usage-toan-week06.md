@@ -21,3 +21,7 @@ Ngày 22/10/2026. Công cụ: Codex. Log theo mục tiêu học thuật, không 
 ## AI-06-05 — Báo cáo và bàn giao
 
 **Mục tiêu:** các phát biểu hoàn thành truy vết được về mã và kiểm tra. **Hỗ trợ:** log đã rút gọn, JSON tên test, hướng dẫn tích hợp, báo cáo, nội dung PR và ZIP. **Kiểm chứng:** lấy số test từ Surefire XML, kiểm tra liên kết/file và CI GitHub khi push. **Trách nhiệm:** Toản tiếp nhận/giải thích, Tưởng review; không tự ghi đã nộp, đã duyệt hay tự tay làm mọi thao tác.
+
+## AI-06-06 — Khắc phục CI dependency audit
+
+**Mục tiêu:** đưa bộ bàn giao qua kiểm tra bảo mật hiện hành. **Đầu vào:** frontend CI fail ở Dependency audit, npm audit và advisory GitHub. **Hỗ trợ:** cập nhật Vite 8.3.0→8.3.5 trong cùng dòng, đồng bộ lockfile. **Kiểm chứng:** npm audit=0 vulnerabilities, chạy lại lint/build/browser tests và CI. **Giới hạn:** không thay đổi UI, không gọi việc vá thư viện là đã tích hợp các màn hình tuần 5.

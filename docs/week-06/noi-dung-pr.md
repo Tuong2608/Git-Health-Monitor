@@ -4,6 +4,8 @@ Cài module lưu trữ và giám sát của Toản theo task 23 tuần 6–7: mi
 
 Chuẩn bị task 20 chung: đối chiếu protocol tuần 5, manifest/label templates, evaluator frequency/complexity/hotspot và Precision/Recall/MAP. Tài liệu, báo cáo, AI log và evidence nằm trong docs/week-06.
 
+CI phát hiện advisory của Vite 8.3.0. Cập nhật cùng dòng lên 8.3.5 và lockfile; giữ nguyên UI. npm audit sau cập nhật báo 0 vulnerabilities.
+
 ## Validation
 
 - 41 backend tests đạt trên PostgreSQL 18.3, gồm 19 tests mới cho race/lease/rollback/schedule/alerts/API.

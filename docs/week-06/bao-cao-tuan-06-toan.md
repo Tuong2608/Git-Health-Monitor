@@ -14,7 +14,7 @@ Theo workbook task 23 (Toản, tuần 6–7), cài lưu trữ snapshot và giám
 | Backend/job | Durable queue, scheduler, 2 workers/queue20, claim token, heartbeat, lease, watchdog và timeout | MonitoringStore, AnalysisWorker, PostgreSQL integration tests |
 | Backend/alert | Hai rule có version, pinned rules, PENDING/FAILED/COMPLETE, retry và dedupe, xử lý CLOSED | AlertService và tests |
 | API | Job/schedule/snapshot/hotspot/rules/alerts, pagination, validation, cờ ghi mặc định tắt | MonitoringController, API tests |
-| Frontend | Chưa sửa giao diện, tuần này tập trung task backend được phân công | Không nhận wireframe tuần 5 thành tính năng tích hợp mới |
+| Frontend | Giữ giao diện; cập nhật Vite 8.3.0→8.3.5 để xử lý audit bảo mật chặn CI | package/lockfile, npm-audit.json; không nhận wireframe thành chức năng tích hợp mới |
 | Nghiệp vụ | Làm rõ NO_CHANGE, thiếu metric/coverage, baseline tương thích và cảnh báo có evidence | Implementation/API docs |
 | Nghiên cứu chung | Đối chiếu split/tie, protocol đề xuất, manifest/label templates, evaluator baseline và P/R/MAP | experiment-protocol.md, tools/experiments |
 | Báo cáo/AI/Git | Tài liệu bàn giao, AI log từng hạng mục, nhánh tuần 6, PR và gói ZIP | README, ban-giao-tuong.md, AI log, PR |

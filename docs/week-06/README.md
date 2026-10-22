@@ -16,4 +16,4 @@ MSSV 23110158. Tuần 18–24/10/2026, thực hiện 22/10/2026. Base main `1889
 
 Mã nguồn: [module monitoring](../../backend/src/main/java/com/example/demo/monitoring), [migration V2](../../backend/src/main/resources/db/migration/V2__snapshot_jobs_and_monitoring.sql), [tests PostgreSQL](../../backend/src/test/java/com/example/demo/monitoring), [evaluation tool](../../tools/experiments).
 
-Các cờ ghi/worker mặc định tắt. Chỉ bật trong môi trường nhóm kiểm soát sau khi gắn adapter thật; chưa có auth/quota cho người dùng công khai. Không thay đổi frontend trong tuần này. Không tự nhận đã merge PR tuần 6, deploy staging, có nhãn nghiên cứu hoặc được Tưởng/GVHD nghiệm thu.
+Các cờ ghi/worker mặc định tắt. Chỉ bật trong môi trường nhóm kiểm soát sau khi gắn adapter thật; chưa có auth/quota cho người dùng công khai. Giao diện không thay đổi; Vite được cập nhật bản vá 8.3.5 để xử lý audit chặn CI. Không tự nhận đã merge PR tuần 6, deploy staging, có nhãn nghiên cứu hoặc được Tưởng/GVHD nghiệm thu.
