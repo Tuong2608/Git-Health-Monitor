@@ -10,6 +10,12 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
 public class ApiExceptionHandler {
+    @ExceptionHandler(org.springframework.web.server.ResponseStatusException.class)
+    ProblemDetail status(org.springframework.web.server.ResponseStatusException exception) {
+        var detail=ProblemDetail.forStatusAndDetail(exception.getStatusCode(),exception.getReason()==null?"Request failed":exception.getReason());
+        detail.setProperty("code",exception.getReason());
+        return detail;
+    }
     @ExceptionHandler(IllegalArgumentException.class)
     ProblemDetail invalidUrl(IllegalArgumentException exception) {
         return ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, exception.getMessage());
@@ -17,7 +23,7 @@ public class ApiExceptionHandler {
 
     @ExceptionHandler({MethodArgumentNotValidException.class, HttpMessageNotReadableException.class})
     ProblemDetail invalidBody(Exception exception) {
-        return ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, "Cần JSON với url hợp lệ, tối đa 512 ký tự.");
+        return ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, "JSON không hợp lệ hoặc thiếu trường bắt buộc.");
     }
 
     @ExceptionHandler(DataIntegrityViolationException.class)

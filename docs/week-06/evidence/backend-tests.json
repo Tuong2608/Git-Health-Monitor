@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-22",
+  "database": "Disposable PostgreSQL 18.3",
+  "command": "backend/mvnw -B -ntp verify",
+  "totals": {
+    "tests": 41,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "suites": [
+    {
+      "suite": "com.example.demo.DemoApplicationTests",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "contextLoads"
+      ]
+    },
+    {
+      "suite": "com.example.demo.monitoring.MonitoringApiTests",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "unavailablePipelineIsExplicitAndDoesNotEnqueueFakeWork",
+        "localCorsAllowsScheduleAndAlertMethodsOnlyForConfiguredOrigins",
+        "ruleValidationJsonShapePaginationAndMissingResources"
+      ]
+    },
+    {
+      "suite": "com.example.demo.monitoring.MonitoringDisabledTests",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "writesDefaultToForbidden"
+      ]
+    },
+    {
+      "suite": "com.example.demo.monitoring.MonitoringIntegrationTests",
+      "tests": 15,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "publicationStoresAllDetailsAndNoChangeReusesIdentity",
+        "queuedJobSurvivesNewWorkerButChangedConfigFailsExplicitly",
+        "durableBacklogBoundAndPaginationInput",
+        "concurrentClaimsHaveDifferentOwners",
+        "changedConfigurationIsNotComparableAndNullIsNotZero",
+        "deltaUsesStableLineageAcrossRenameAndStrictThreshold",
+        "dueScheduleCoalescesMissedTicksAndDefersActiveJob",
+        "boundedExecutorKeepsWaitingJobsDurableAndProcessesAfterRelease",
+        "invalidDetailRollsBackWholePublication",
+        "equalWindowEndUsesPublicationOrderForDifferentHeadSha",
+        "expiredOrWrongClaimCannotHeartbeatOrPublish",
+        "failedEvaluationDoesNotUndoPublishedSnapshotAndCanRetry",
+        "coverageOrTruncationSuppressesUnreliableAlerts",
+        "manualRequestsRaceToOneActiveJob",
+        "rulePinnedAtPublishAndRetryCannotReopenClosedAlert"
+      ]
+    },
+    {
+      "suite": "com.example.demo.repository.GitHubRepositoryUrlTests",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "canonicalizesCaseSuffixAndTrailingSlash",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[1]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[2]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[3]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[4]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[5]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[6]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[7]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[8]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[9]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[10]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[11]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[12]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[13]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[14]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[15]"
+      ]
+    },
+    {
+      "suite": "com.example.demo.repository.RegistrationDisabledTests",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "publicPreviewCannotRegisterWhenDisabled"
+      ]
+    },
+    {
+      "suite": "com.example.demo.repository.RepositoryApiTests",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "corsAcceptsLocalBrowserAndRejectsUnknownOrigin",
+        "invalidInputsAreClientErrors",
+        "createReadAndRejectCanonicalDuplicate",
+        "listAndExistingHealthEndpointWork"
+      ]
+    }
+  ]
+}

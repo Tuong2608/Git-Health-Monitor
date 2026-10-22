@@ -1,0 +1,7 @@
+Tưởng ơi, mình gửi bộ tuần 6 của Toản. Mình đã cài migration V2, lưu snapshot, PostgreSQL job queue, lịch quét, bounded executor, lease/recovery và cảnh báo có version/retry/chống trùng. Backend qua 41 test, công cụ đánh giá qua 8 test.
+
+Bạn xem ban-giao-tuong.md và interface AnalysisPipeline để nối module Git/metric nhé. Hiện runtime chưa có adapter thật nên mình để worker/ghi mặc định tắt; thiếu adapter sẽ báo 503, không tạo metric giả.
+
+Phần thực nghiệm mình có đối chiếu hai bản, bổ sung MAP và tool tính. Nhờ bạn cùng chốt split 80/20 hay prediction 30 ngày, tie ID/path và dataset/nhãn trước khi chạy thật. Mình chưa ghi phần này là nhóm đã đồng thuận.
+
+Nhờ bạn review PR tuần 6 và phản hồi các điểm cần chỉnh. File ZIP gồm bộ tài liệu/minh chứng và mã nguồn để đối chiếu; chưa phải bản đã deploy staging.

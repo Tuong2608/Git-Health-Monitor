@@ -1,0 +1,37 @@
+{
+  "kind": "fixture",
+  "cases": [
+    {
+      "repository": "fixture/not-a-real-study",
+      "observationStart": "2026-01-02T00:00:00Z",
+      "cutoff": "2026-07-01T00:00:00Z",
+      "predictionEnd": "2026-08-01T00:00:00Z",
+      "files": [
+        {
+          "fileId": 1,
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "positive"
+        },
+        {
+          "fileId": 2,
+          "frequency": 2,
+          "maxCcn": 2,
+          "label": "negative"
+        },
+        {
+          "fileId": 3,
+          "frequency": 2,
+          "maxCcn": 2,
+          "label": "positive"
+        },
+        {
+          "fileId": 4,
+          "frequency": 4,
+          "maxCcn": 4,
+          "label": "negative"
+        }
+      ]
+    }
+  ]
+}
