@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-22",
+  "mainCommit": "188968c30f3433e5861bf7839d01b3230d6c4843",
+  "tuongBranchCommit": "0518e52176333a8fb090697c29e1c82141d0cac9",
+  "sheet": "Kế hoạch chi tiết",
+  "rows": [
+    {
+      "row": 23,
+      "values": [
+        19,
+        "M3 — Thiết kế chi tiết",
+        "Thiết kế module trợ lý rà soát bằng LLM",
+        "Thiết kế interface LLMReviewService, prompt template có version, schema response (risk summary/evidence/checklist/refactor suggestion), timeout/fallback độc lập với pipeline phân tích.",
+        "Tưởng",
+        "Cao",
+        "Chưa bắt đầu",
+        "5",
+        "6",
+        "Phạm vi AI review đã chốt",
+        null
+      ]
+    },
+    {
+      "row": 24,
+      "values": [
+        20,
+        "M3 — Thiết kế chi tiết",
+        "Thiết kế thực nghiệm (temporal split & baseline)",
+        "Chốt observation/prediction window, cách xác định bug-fix file (issue label → commit-message pattern → lấy mẫu thủ công), 2 baseline (change frequency only, complexity only), metric Precision@K/Recall@K/MAP.",
+        "Cả 2 (Tưởng + Toản)",
+        "Cao",
+        "Chưa bắt đầu",
+        "5",
+        "6",
+        "Thiết kế thuật toán tính chỉ số",
+        null
+      ]
+    },
+    {
+      "row": 25,
+      "values": [
+        21,
+        "M4 — Cài đặt hệ thống",
+        "Cài đặt mô-đun thu thập dữ liệu",
+        "Full clone/fetch kho mã nguồn qua JGit (không dùng partial clone); commit traversal, diff, author extraction, rename detection, file lineage.",
+        "Tưởng",
+        "Cao",
+        "Chưa bắt đầu",
+        "6",
+        "7",
+        "Thiết kế thuật toán tính chỉ số",
+        null
+      ]
+    },
+    {
+      "row": 27,
+      "values": [
+        23,
+        "M4 — Cài đặt hệ thống",
+        "Cài đặt mô-đun lưu trữ & giám sát",
+        "Cài đặt lưu snapshot, bộ định thời quét định kỳ (Spring Scheduling); job state lưu trong PostgreSQL, xử lý bằng bounded TaskExecutor (không dùng Redis); sinh cảnh báo theo ngưỡng.",
+        "Toản",
+        "Cao",
+        "Chưa bắt đầu",
+        "6",
+        "7",
+        "Thiết kế cơ chế giám sát",
+        null
+      ]
+    }
+  ]
+}

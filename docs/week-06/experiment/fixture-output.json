@@ -1,0 +1,218 @@
+{
+  "kind": "fixture",
+  "policy": "week06-proposed-v1-midrank-id-tie",
+  "cases": [
+    {
+      "repository": "fixture/not-a-real-study",
+      "cutoff": "2026-07-01T00:00:00Z",
+      "eligibleFiles": 4,
+      "positives": 2,
+      "methods": {
+        "frequency": {
+          "ranking": [
+            4,
+            2,
+            3,
+            1
+          ],
+          "averagePrecision": 0.41666666666666663,
+          "atK": {
+            "5": {
+              "kActual": 4,
+              "truePositives": 2,
+              "precision": 0.5,
+              "recall": 1.0
+            },
+            "10": {
+              "kActual": 4,
+              "truePositives": 2,
+              "precision": 0.5,
+              "recall": 1.0
+            },
+            "20": {
+              "kActual": 4,
+              "truePositives": 2,
+              "precision": 0.5,
+              "recall": 1.0
+            }
+          }
+        },
+        "complexity": {
+          "ranking": [
+            4,
+            2,
+            3,
+            1
+          ],
+          "averagePrecision": 0.41666666666666663,
+          "atK": {
+            "5": {
+              "kActual": 4,
+              "truePositives": 2,
+              "precision": 0.5,
+              "recall": 1.0
+            },
+            "10": {
+              "kActual": 4,
+              "truePositives": 2,
+              "precision": 0.5,
+              "recall": 1.0
+            },
+            "20": {
+              "kActual": 4,
+              "truePositives": 2,
+              "precision": 0.5,
+              "recall": 1.0
+            }
+          }
+        },
+        "hotspot": {
+          "ranking": [
+            4,
+            2,
+            3,
+            1
+          ],
+          "averagePrecision": 0.41666666666666663,
+          "atK": {
+            "5": {
+              "kActual": 4,
+              "truePositives": 2,
+              "precision": 0.5,
+              "recall": 1.0
+            },
+            "10": {
+              "kActual": 4,
+              "truePositives": 2,
+              "precision": 0.5,
+              "recall": 1.0
+            },
+            "20": {
+              "kActual": 4,
+              "truePositives": 2,
+              "precision": 0.5,
+              "recall": 1.0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "macro": {
+    "frequency": {
+      "MAP": {
+        "value": 0.41666666666666663,
+        "validCases": 1
+      },
+      "atK": {
+        "5": {
+          "precision": {
+            "value": 0.5,
+            "validCases": 1
+          },
+          "recall": {
+            "value": 1.0,
+            "validCases": 1
+          }
+        },
+        "10": {
+          "precision": {
+            "value": 0.5,
+            "validCases": 1
+          },
+          "recall": {
+            "value": 1.0,
+            "validCases": 1
+          }
+        },
+        "20": {
+          "precision": {
+            "value": 0.5,
+            "validCases": 1
+          },
+          "recall": {
+            "value": 1.0,
+            "validCases": 1
+          }
+        }
+      }
+    },
+    "complexity": {
+      "MAP": {
+        "value": 0.41666666666666663,
+        "validCases": 1
+      },
+      "atK": {
+        "5": {
+          "precision": {
+            "value": 0.5,
+            "validCases": 1
+          },
+          "recall": {
+            "value": 1.0,
+            "validCases": 1
+          }
+        },
+        "10": {
+          "precision": {
+            "value": 0.5,
+            "validCases": 1
+          },
+          "recall": {
+            "value": 1.0,
+            "validCases": 1
+          }
+        },
+        "20": {
+          "precision": {
+            "value": 0.5,
+            "validCases": 1
+          },
+          "recall": {
+            "value": 1.0,
+            "validCases": 1
+          }
+        }
+      }
+    },
+    "hotspot": {
+      "MAP": {
+        "value": 0.41666666666666663,
+        "validCases": 1
+      },
+      "atK": {
+        "5": {
+          "precision": {
+            "value": 0.5,
+            "validCases": 1
+          },
+          "recall": {
+            "value": 1.0,
+            "validCases": 1
+          }
+        },
+        "10": {
+          "precision": {
+            "value": 0.5,
+            "validCases": 1
+          },
+          "recall": {
+            "value": 1.0,
+            "validCases": 1
+          }
+        },
+        "20": {
+          "precision": {
+            "value": 0.5,
+            "validCases": 1
+          },
+          "recall": {
+            "value": 1.0,
+            "validCases": 1
+          }
+        }
+      }
+    }
+  },
+  "limitation": "Export validation cannot prove absence of temporal leakage; audit manifest and source extraction separately."
+}

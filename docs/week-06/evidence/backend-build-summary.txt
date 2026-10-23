@@ -1,0 +1,17 @@
+2026-10-22T20:59:35.578+07:00  INFO 3448 --- [demo] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.027s)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.535 s -- in com.example.demo.DemoApplicationTests
+2026-10-22T20:59:38.755+07:00  INFO 3448 --- [demo] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.010s)
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.650 s -- in com.example.demo.monitoring.MonitoringApiTests
+2026-10-22T20:59:40.007+07:00  INFO 3448 --- [demo] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.008s)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.577 s -- in com.example.demo.monitoring.MonitoringDisabledTests
+2026-10-22T20:59:40.627+07:00  INFO 3448 --- [demo] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.007s)
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.252 s -- in com.example.demo.monitoring.MonitoringIntegrationTests
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s -- in com.example.demo.repository.GitHubRepositoryUrlTests
+2026-10-22T20:59:42.830+07:00  INFO 3448 --- [demo] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.006s)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.538 s -- in com.example.demo.repository.RegistrationDisabledTests
+2026-10-22T20:59:43.440+07:00  INFO 3448 --- [demo] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.010s)
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.918 s -- in com.example.demo.repository.RepositoryApiTests
+[INFO] Tests run: 41, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+[INFO] Total time:  17.522 s
+[INFO] Finished at: 2026-10-22T20:59:45+07:00

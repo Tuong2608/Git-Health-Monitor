@@ -1,0 +1,25 @@
+{
+  "status": "TEMPLATE_NO_INTERVIEW_OR_LABELS_CREATED",
+  "rows": [],
+  "requiredFields": [
+    "repository",
+    "commitSha",
+    "fileId",
+    "sourceKind",
+    "issueOrPrUrl",
+    "candidateReason",
+    "reviewer1",
+    "decision1",
+    "reviewer2",
+    "decision2",
+    "finalDecision",
+    "reason",
+    "reviewedAt"
+  ],
+  "decisions": [
+    "confirmed",
+    "rejected",
+    "uncertain"
+  ],
+  "note": "Reviewers fill actual observations; no score column during labeling to reduce confirmation bias."
+}

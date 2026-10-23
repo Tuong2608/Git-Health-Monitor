@@ -4,6 +4,8 @@ Ngày 08/10/2026. Toản phụ trách. **Contract để review, chưa triển kh
 
 ## Quy ước
 
+Cập nhật 22/10/2026: phần job/monitoring/snapshot/hotspot/rules/alerts đã có cài đặt tuần 6. Xem [API tuần 6](week-06/api-week6.md) để biết DTO thực tế, version bắt buộc, cờ bật/tắt và các mã 403/503. Bảng dưới giữ thiết kế tổng thể tuần 4; trạng thái triển khai mới nhất của các route này theo tài liệu tuần 6. Các route file detail/coupling/trend/comparison/AI vẫn chưa cài.
+
 Route phải kiểm tra quan hệ repo/snapshot/file. Collection dự kiến nhận `page>=0`, `size=1..100` mặc định 20 và trả `{items,page,size,hasNext}`; ngoại lệ GET repositories hiện trả mảng trực tiếp. Lỗi dự kiến theo Problem Detail `{type,title,status,detail,code,instance}`; code ổn định, detail không chứa stack trace/secret. Prototype chưa bảo đảm code/instance.
 
 400 input sai; 403 không được phép/thao tác tắt; 404 không tồn tại; 409 xung đột; 413 context quá lớn; 429 quota/queue đầy; 502 upstream/output sai; 503 chưa sẵn sàng; 504 timeout. Endpoint ghi/gọi provider cần được bảo vệ trước public release; bản hiện tại chưa có tài khoản, CORS không thay authorization.

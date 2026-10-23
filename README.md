@@ -1,6 +1,6 @@
 # Git Health Monitor
 
-Bản thực hành tuần 3 của Toản: đăng ký URL repository, lưu PostgreSQL, xem danh sách/chi tiết qua REST API và React; biểu đồ Recharts dùng **dữ liệu minh họa** có nhãn riêng. Backend hiện tại **có module đọc Git đơn lập chưa nối API, nhưng chưa tính metric, chưa tạo job/snapshot và chưa gọi LLM**.
+Bản thực hành tuần 3 của Toản: đăng ký URL repository, lưu PostgreSQL, xem danh sách/chi tiết qua REST API và React; biểu đồ Recharts dùng **dữ liệu minh họa** có nhãn riêng. Backend hiện tại **có module đọc Git đơn lập chưa nối adapter, đã có job/snapshot/cảnh báo trên PostgreSQL nhưng mặc định tắt; chưa tính metric và chưa gọi LLM**.
 
 Nhóm đã có PoC/feasibility riêng để xác minh hướng dùng JGit và Lizard; PoC này **chưa được tích hợp vào backend hiện tại**. Baseline metric chuẩn bị cho giai đoạn cài đặt nằm tại [Metric Specification v1](docs/metric-spec-v1.md).
 
@@ -9,7 +9,7 @@ Tài liệu bắt đầu: [Bộ bàn giao tuần 3](docs/week-03/README.md).
 ## Công nghệ thực tế
 
 - Java 21, Spring Boot **4.1.1** (kế thừa repo; đề cương v3 ghi Boot 3, cần nhóm xác nhận khác biệt).
-- PostgreSQL 18, Spring Data JPA, Flyway; chỉ khởi tạo bảng `tracked_repository` ở tuần này.
+- PostgreSQL 18, Spring Data JPA, Flyway; V1 tạo bảng `tracked_repository`, V2 thêm 10 bảng job/snapshot/metric/cảnh báo.
 - React 19, TypeScript, Vite 8, Recharts; dùng Node 24 như CI.
 
 ## Chạy local bằng Docker và Vite
@@ -55,7 +55,9 @@ Bộ đặc tả tuần 4 của Toản: [yêu cầu, rule/NFR, API và ADR](docs
 
 Bộ thiết kế tuần 5 của Toản: [database 10 bảng, wireframe, thực nghiệm và minh chứng](docs/week-05/README.md).
 
-- URL hợp cú pháp chưa chứng minh repo tồn tại/công khai. Module tuần 6 chỉ phát hiện điều đó khi clone/fetch thất bại, tức vẫn **không** có xác nhận sớm tại thời điểm đăng ký.
+Bộ cài đặt tuần 6 của Toản: [snapshot, PostgreSQL job/scheduler, cảnh báo, API và kiểm thử](docs/week-06/README.md). Cần adapter `AnalysisPipeline` của module Git/metric để phân tích repository thật. `APP_ANALYSIS_ENABLED` và `APP_ANALYSIS_WRITES_ENABLED` mặc định `false`; chỉ bật trong môi trường nhóm kiểm soát sau khi có adapter. Xem [hướng dẫn tích hợp](docs/week-06/ban-giao-tuong.md).
+
+- URL hợp cú pháp chưa chứng minh repo tồn tại/công khai. Module đọc Git của Tưởng chỉ phát hiện điều đó khi clone/fetch thất bại, tức vẫn **không** có xác nhận sớm tại thời điểm đăng ký.
 - Có chuẩn hóa URL, chống trùng tại database, giới hạn `size` của danh sách 1–100, CORS theo danh sách origin.
 - Chưa có authentication/quota. Đăng ký mặc định **tắt** (`APP_REGISTRATION_ENABLED=false`); chỉ bật cho phiên thử nghiệm được kiểm soát. CORS không thay thế xác thực/phân quyền.
 - **Trước khi triển khai bản này lên Render phải cấu hình PostgreSQL và DB_*:** skeleton cũ không cần DB nhưng bản mới có Flyway/JPA nên sẽ không khởi động nếu thiếu kết nối.

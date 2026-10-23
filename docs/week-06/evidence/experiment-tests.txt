@@ -1,0 +1,13 @@
+test_ap_hand_calculated_and_k_cap (test_evaluate_rankings.EvaluationTests.test_ap_hand_calculated_and_k_cap) ... ok
+test_empty_and_no_positive_are_not_nan (test_evaluate_rankings.EvaluationTests.test_empty_and_no_positive_are_not_nan) ... ok
+test_macro_counts_exclude_undefined_ap (test_evaluate_rankings.EvaluationTests.test_macro_counts_exclude_undefined_ap) ... ok
+test_midrank_ties_and_singleton (test_evaluate_rankings.EvaluationTests.test_midrank_ties_and_singleton) ... ok
+test_rejects_unresolved_missing_and_duplicate (test_evaluate_rankings.EvaluationTests.test_rejects_unresolved_missing_and_duplicate) ... ok
+test_reviewed_data_requires_provenance (test_evaluate_rankings.EvaluationTests.test_reviewed_data_requires_provenance) ... ok
+test_tie_policy_is_id_and_shared_universe (test_evaluate_rankings.EvaluationTests.test_tie_policy_is_id_and_shared_universe) ... ok
+test_time_and_duplicate_case_validation (test_evaluate_rankings.EvaluationTests.test_time_and_duplicate_case_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

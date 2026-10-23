@@ -1,0 +1,29 @@
+Date: 2026-10-22
+Vite: 8.3.5
+npm run lint: PASS
+npm run build: PASS
+npm audit: 0 vulnerabilities (see npm-audit.json)
+Browser tests: 3 passed, 1 live-backend test intentionally skipped.
+Initial sandbox run was interrupted while waiting for localhost server; rerun outside sandbox passed.
+
+> frontend@0.0.0 test:e2e
+> playwright test
+
+[WebServer] (node:29864) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:1228) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 2 workers
+
+(node:12860) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28868) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -  1 e2e\live.spec.ts:3:1 › live React to API to PostgreSQL persists across reload
+  ok 2 e2e\repositories.spec.ts:4:1 › empty list, registration and labelled learning chart (874ms)
+  ok 3 e2e\repositories.spec.ts:21:1 › server conflict is visible (342ms)
+  ok 4 e2e\repositories.spec.ts:31:1 › network failure and mobile viewport (279ms)
+
+  1 skipped
+  3 passed (4.7s)
