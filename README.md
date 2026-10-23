@@ -1,6 +1,6 @@
 # Git Health Monitor
 
-Bản thực hành tuần 3 của Toản: đăng ký URL repository, lưu PostgreSQL, xem danh sách/chi tiết qua REST API và React; biểu đồ Recharts dùng **dữ liệu minh họa** có nhãn riêng. Backend hiện tại **chưa clone Git, chưa tính metric, chưa tạo job/snapshot và chưa gọi LLM**.
+Bản thực hành tuần 3 của Toản: đăng ký URL repository, lưu PostgreSQL, xem danh sách/chi tiết qua REST API và React; biểu đồ Recharts dùng **dữ liệu minh họa** có nhãn riêng. Backend hiện tại **có module đọc Git đơn lập chưa nối API, nhưng chưa tính metric, chưa tạo job/snapshot và chưa gọi LLM**.
 
 Nhóm đã có PoC/feasibility riêng để xác minh hướng dùng JGit và Lizard; PoC này **chưa được tích hợp vào backend hiện tại**. Baseline metric chuẩn bị cho giai đoạn cài đặt nằm tại [Metric Specification v1](docs/metric-spec-v1.md).
 
@@ -47,6 +47,7 @@ Dùng database thử nghiệm riêng vì bộ test ghi dữ liệu.
 - Frontend: `npm run lint`, `npm run build`, `npx playwright install chromium`, `npm run test:e2e`.
 - Mặc định test browser mock API, test live được skip có lý do. Muốn chạy live, khởi động backend ở port 8080 trên database test và đặt `GHM_LIVE_BACKEND=1` trước `npm run test:e2e`.
 - Báo cáo backend: `backend/target/surefire-reports/`; browser: `frontend/playwright-report/`.
+- Module đọc Git (tuần 6) không cần database: `mvnw.cmd -B -ntp test "-Dtest=GitIngestion*Tests"` chạy được cả bộ ngay cả khi Docker/PostgreSQL đang hỏng.
 
 ## Phạm vi và triển khai
 
@@ -54,7 +55,7 @@ Bộ đặc tả tuần 4 của Toản: [yêu cầu, rule/NFR, API và ADR](docs
 
 Bộ thiết kế tuần 5 của Toản: [database 10 bảng, wireframe, thực nghiệm và minh chứng](docs/week-05/README.md).
 
-- URL hợp cú pháp chưa chứng minh repo tồn tại/công khai. Ingestion ở giai đoạn sau phải kiểm tra điều đó.
+- URL hợp cú pháp chưa chứng minh repo tồn tại/công khai. Module tuần 6 chỉ phát hiện điều đó khi clone/fetch thất bại, tức vẫn **không** có xác nhận sớm tại thời điểm đăng ký.
 - Có chuẩn hóa URL, chống trùng tại database, giới hạn `size` của danh sách 1–100, CORS theo danh sách origin.
 - Chưa có authentication/quota. Đăng ký mặc định **tắt** (`APP_REGISTRATION_ENABLED=false`); chỉ bật cho phiên thử nghiệm được kiểm soát. CORS không thay thế xác thực/phân quyền.
 - **Trước khi triển khai bản này lên Render phải cấu hình PostgreSQL và DB_*:** skeleton cũ không cần DB nhưng bản mới có Flyway/JPA nên sẽ không khởi động nếu thiếu kết nối.
@@ -63,3 +64,5 @@ Bộ thiết kế tuần 5 của Toản: [database 10 bảng, wireframe, thực 
 Bản review tích hợp tuần 4: [kiến trúc](docs/architecture.md), [đối chiếu Tưởng và Toản](docs/week-04/review-tich-hop-tuong-toan.md). Quyết định mới chờ nhóm review; không phải tính năng runtime đã triển khai.
 
 Phần tuần 5 của Tưởng: [bàn giao](docs/week-05/README.md), [thuật toán](docs/algorithm-design.md), [giám sát](docs/monitoring-design.md), [đề xuất thực nghiệm chung](docs/experiment-design.md). Interface/prompt AI được bổ sung trong AI scope; ERD và wireframe chờ phần Toản.
+
+Phần tuần 6 của Tưởng: [module thu thập Git](docs/week-06/git-ingestion.md) — hợp đồng `Fact`/lineage cho lớp lưu trữ, lệnh chạy mẫu không cần database, minh chứng test và ba điểm còn mở cần hai người chốt.
