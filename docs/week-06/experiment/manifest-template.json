@@ -1,0 +1,33 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "protocolVersion": "week06-proposed-v1",
+  "splitPolicy": "80/20-nonmerge-committer-time-grouped-timestamp",
+  "observationDays": 180,
+  "predictionEndPolicy": "pinned-end-sha",
+  "percentile": "normalized-midrank-singleton-0.5",
+  "tieBreak": "logicalFileId-ascending",
+  "K": [
+    5,
+    10,
+    20
+  ],
+  "labelPolicy": "issue-then-keyword-candidates-then-human-review",
+  "seed": 23110158,
+  "repositories": [],
+  "requiredRepositoryFields": [
+    "url",
+    "license",
+    "selectionReason",
+    "endSha",
+    "observationSha",
+    "observationStart",
+    "cutoff",
+    "predictionEnd",
+    "realizedCommitRatio",
+    "configHash",
+    "toolVersions",
+    "universeHash",
+    "labelEvidenceFile",
+    "exclusions"
+  ]
+}

@@ -54,6 +54,8 @@ Bộ đặc tả tuần 4 của Toản: [yêu cầu, rule/NFR, API và ADR](docs
 
 Bộ thiết kế tuần 5 của Toản: [database 10 bảng, wireframe, thực nghiệm và minh chứng](docs/week-05/README.md).
 
+Bộ cài đặt tuần 6 của Toản: [snapshot, PostgreSQL job/scheduler, cảnh báo, API và kiểm thử](docs/week-06/README.md). Cần adapter `AnalysisPipeline` của module Git/metric để phân tích repository thật. `APP_ANALYSIS_ENABLED` và `APP_ANALYSIS_WRITES_ENABLED` mặc định `false`; chỉ bật trong môi trường nhóm kiểm soát sau khi có adapter. Xem [hướng dẫn tích hợp](docs/week-06/ban-giao-tuong.md).
+
 - URL hợp cú pháp chưa chứng minh repo tồn tại/công khai. Ingestion ở giai đoạn sau phải kiểm tra điều đó.
 - Có chuẩn hóa URL, chống trùng tại database, giới hạn `size` của danh sách 1–100, CORS theo danh sách origin.
 - Chưa có authentication/quota. Đăng ký mặc định **tắt** (`APP_REGISTRATION_ENABLED=false`); chỉ bật cho phiên thử nghiệm được kiểm soát. CORS không thay thế xác thực/phân quyền.
