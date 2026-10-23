@@ -21,7 +21,7 @@ feat: collect Git history and document its data contract
 | Lenh | Ket qua |
 |---|---|
 | `mvn -o -B test -Dtest='GitIngestion*Tests'` | 12/12 dat (10 ingestion + 2 sample) |
-| `mvn -o -B test` (ca bo, sau merge) | bien dich 18 class; 24 loi la `Connection to localhost:5432 refused` |
+| `mvn -o -B test` (ca bo, sau merge) | bien dich 18 class; 28/71 dat, 43 loi la Spring context khong tai duoc vi `Connection to localhost:5432 refused` |
 | `python -m unittest -v test_evaluate_rankings` (tool Toan) | 8/8 dat, chay doc lap |
 | `GitIngestionSample` tren 3 repo cong khai | xem bang duoi |
 

@@ -1,6 +1,6 @@
 # Module thu thập Git — tuần 6
 
-Soạn 23/10/2026 trên nhánh `codex/tuong-week6` (gốc `a7c84d1`, commit module `4462e2d`). Phạm vi: **đọc lịch sử Git bằng JGit và xuất fact**. Chưa có endpoint, chưa có job, chưa ghi PostgreSQL, chưa tính metric.
+Soạn 23/10/2026 trên nhánh `codex/tuong-week6` (đã push, gốc `a7c84d1`, commit module `4462e2d`, merge `main` `0b664d9` sau PR #5 của Toản). Phạm vi: **đọc lịch sử Git bằng JGit và xuất fact**. Chưa có endpoint, chưa có job, chưa ghi PostgreSQL, chưa tính metric.
 
 ## Hai class
 
@@ -52,7 +52,7 @@ Hai con số 421/83/16 khớp đúng phép đo ngày 22/10, xác nhận module v
 
 ## Minh chứng kiểm thử
 
-`mvn -o -B test` ngày 23/10: `GitIngestionTests` 10/10, `GitIngestionSampleTests` 2/2, `GitHubRepositoryUrlTests` 16/16 → **28/28 ca không phụ thuộc database đạt**. Toàn bộ 52 ca: 24 lỗi, tất cả là `Connection to localhost:5432 refused` — Docker trên máy vẫn hỏng và chưa dựng lại PostgreSQL portable, **giống nguyên trạng tuần 5**, không phải lỗi sinh ra từ module này.
+`mvn -o -B test` ngày 23/10: `GitIngestionTests` 10/10, `GitIngestionSampleTests` 2/2, `GitHubRepositoryUrlTests` 16/16 → **28/28 ca không phụ thuộc database đạt**. Trên cây sau merge `main` `0b664d9`, tổng 71 ca thì **43 ca lỗi**, tất cả gốc `Connection to localhost:5432 refused` làm Spring context không tải được — Docker trên máy vẫn hỏng và chưa dựng lại PostgreSQL portable, **nguyên trạng tuần 5**, không phải lỗi sinh ra từ module này.
 
 Fixture đã phủ: root/modify/rename/delete/re-add/copy, committer time ngược đồng hồ, rename trước cửa sổ, file nhị phân, merge một branch, alias tác giả, giới hạn commit, deadline hết hạn, repo shallow, clone/fetch giữ SHA cũ replay được, từ chối URL cục bộ trước khi tạo thư mục.
 
@@ -63,5 +63,7 @@ Fixture đã phủ: root/modify/rename/delete/re-add/copy, committer time ngư�
 3. **Chưa có số benchmark cho mốc 10.000 commit và deadline 300 giây.** Mốc này design doc đánh dấu "chưa benchmark"; petclinic 1.047 commit đi hết trong một lần gọi nhưng chưa tách thời gian clone/duyệt/diff, nên chưa đủ cơ sở chốt trần thời gian của job.
 
 Việc còn lại của tuần 6: nối `Fact` vào bảng snapshot của Toản, hàng đợi job + lưu SHA đã chốt, hoàn thiện binding preview/consent của AI review, và chốt 5 quyết định còn mở ghi ở [week-05 README](../week-05/README.md).
+
+Tài liệu cùng tuần của Tưởng: [báo cáo tiến độ](bao-cao-tuan-06-nhom.md), [nội dung PR](noi-dung-pr-tuong.md), [nhật ký AI](../ai-usage/tuong-week06.md). Hub [docs/week-06/README.md](README.md) là bàn giao của Toản.
 
 Tài liệu mô tả module **đã cài và đã test ở mức đơn lập**; chưa phải pipeline hoàn chỉnh, chưa có metric đầu ra, chưa chứng minh trên PostgreSQL.
