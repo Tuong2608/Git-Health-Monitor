@@ -1,0 +1,7 @@
+Tưởng ơi, mình gửi phần tuần 7 của Toản. Mình đã bổ sung V3 để lưu metric chưa đo được bằng null, API chi tiết file/evidence/coupling/trend/so sánh snapshot, lịch sử job và retry.
+
+Nhánh mình qua 58 tests. Mình cũng ghép thử backend này với nhánh tuần 6 của bạn (15f291b) trong checkout riêng có PostgreSQL: 88 tests đều đạt, không sửa hay merge nhánh của bạn. Đây là kiểm tra tương thích, chưa phải pipeline repo public đã chạy thật.
+
+Bạn xem integration-contract.md: dùng selectedCommits cho commitCount, unknown churn/lineage không gán0, evidence dùng commits array. Mình giữ giới hạn API 365 ngày và cơ chế resource limit fail; nếu cần đổi giới hạn thì cùng chốt trước.
+
+Nhờ bạn review PR tuần 7 và nối phần metric/Lizard/AnalysisPipeline khi sẵn sàng. Báo cáo, AI log và minh chứng nằm trong docs/week-07, ZIP có mã nguồn để đối chiếu.

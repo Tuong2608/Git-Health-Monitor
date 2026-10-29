@@ -36,6 +36,17 @@ public class MonitoringController {
         return ResponseEntity.accepted().location(URI.create("/api/jobs/"+id)).body(Map.of("jobId",id,"status","QUEUED"));
     }
     @GetMapping("/jobs/{id}") public Object job(@PathVariable long id) { return dto(store.job(id)); }
+    @GetMapping("/analysis-capabilities") public Object capabilities() {
+        return Map.of("writesEnabled",writes,"workerEnabled",enabled,"pipelineAvailable",pipelines.getIfAvailable()!=null,
+                "canAnalyze",writes && enabled && pipelines.getIfAvailable()!=null,"maxObservationDays",365);
+    }
+    @GetMapping("/repositories/{repo}/jobs") public Object jobs(@PathVariable long repo,@RequestParam(defaultValue="0") int page,@RequestParam(defaultValue="20") int size) {
+        return collection(store.jobs(repo,size+1,offset(page,size)),page,size);
+    }
+    @PostMapping("/jobs/{id}/retry") public ResponseEntity<?> retry(@PathVariable long id) {
+        writeAccess();var p=pipeline();long next=store.retry(id,p.effectiveConfig());
+        return ResponseEntity.accepted().location(URI.create("/api/jobs/"+next)).body(Map.of("jobId",next,"status","QUEUED","retryOf",id));
+    }
     @GetMapping("/repositories/{repo}/monitoring") public Object settings(@PathVariable long repo) { return dto(store.settings(repo)); }
     @PutMapping("/repositories/{repo}/monitoring") public Object settings(@PathVariable long repo,@RequestBody ScheduleRequest r) {
         writeAccess();
@@ -72,10 +83,11 @@ public class MonitoringController {
     static Map<String,Object> dto(Map<String,Object> row) {
         var result=new LinkedHashMap<String,Object>();
         row.forEach((key,value)->{
-            String camel=java.util.regex.Pattern.compile("_([a-z])").matcher(key).replaceAll(m->m.group(1).toUpperCase(Locale.ROOT));
+            String camel=camel(key);
             if(value instanceof Timestamp t) value=t.toInstant();
             else if(value!=null && value.getClass().getName().equals("org.postgresql.util.PGobject")) value=JSON.readTree(value.toString());
             result.put(camel,value);
         });return result;
     }
+    static String camel(String key) { return java.util.regex.Pattern.compile("_([a-z])").matcher(key).replaceAll(m->m.group(1).toUpperCase(Locale.ROOT)); }
 }

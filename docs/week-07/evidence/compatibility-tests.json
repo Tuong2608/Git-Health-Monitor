@@ -1,0 +1,207 @@
+{
+  "date": "2026-10-29",
+  "totals": {
+    "tests": 88,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "suites": [
+    {
+      "suite": "com.example.demo.DemoApplicationTests",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "contextLoads"
+      ]
+    },
+    {
+      "suite": "com.example.demo.gitanalyzer.GitIngestionSampleTests",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "rejectsNonPositiveWindowBeforeTouchingTheCache",
+        "reportSummarisesCommitsRenamesAndChurnRanking"
+      ]
+    },
+    {
+      "suite": "com.example.demo.gitanalyzer.GitIngestionTests",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "mergeDoesNotEmitFactsAndConflictingLineagesAreFlagged",
+        "fullCloneFetchPinsDefaultBranchAndKeepsOldShaReplayable",
+        "rootModifyRenameDeleteReaddAndCopyHaveCorrectIdentityAndChurn",
+        "resourceLimitFailsInsteadOfReturningPartialResult",
+        "aliasesUseAuthorNotCommitter",
+        "windowUsesCommitterTimeAndDoesNotPruneOldParents",
+        "expiredDeadlineAndShallowRepositoryAreRejected",
+        "publicClientRejectsLocalUrlBeforeCreatingDirectory",
+        "binaryHasMissingChurnAndExclusionsApply",
+        "renameBeforeWindowRetainsRootIdentityAndDeletedFilesStayInFacts"
+      ]
+    },
+    {
+      "suite": "com.example.demo.monitoring.MonitoringApiTests",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "unavailablePipelineIsExplicitAndDoesNotEnqueueFakeWork",
+        "localCorsAllowsScheduleAndAlertMethodsOnlyForConfiguredOrigins",
+        "ruleValidationJsonShapePaginationAndMissingResources"
+      ]
+    },
+    {
+      "suite": "com.example.demo.monitoring.MonitoringDisabledTests",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "writesDefaultToForbidden"
+      ]
+    },
+    {
+      "suite": "com.example.demo.monitoring.MonitoringIntegrationTests",
+      "tests": 15,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "publicationStoresAllDetailsAndNoChangeReusesIdentity",
+        "queuedJobSurvivesNewWorkerButChangedConfigFailsExplicitly",
+        "durableBacklogBoundAndPaginationInput",
+        "concurrentClaimsHaveDifferentOwners",
+        "changedConfigurationIsNotComparableAndNullIsNotZero",
+        "deltaUsesStableLineageAcrossRenameAndStrictThreshold",
+        "dueScheduleCoalescesMissedTicksAndDefersActiveJob",
+        "boundedExecutorKeepsWaitingJobsDurableAndProcessesAfterRelease",
+        "invalidDetailRollsBackWholePublication",
+        "equalWindowEndUsesPublicationOrderForDifferentHeadSha",
+        "expiredOrWrongClaimCannotHeartbeatOrPublish",
+        "failedEvaluationDoesNotUndoPublishedSnapshotAndCanRetry",
+        "coverageOrTruncationSuppressesUnreliableAlerts",
+        "manualRequestsRaceToOneActiveJob",
+        "rulePinnedAtPublishAndRetryCannotReopenClosedAlert"
+      ]
+    },
+    {
+      "suite": "com.example.demo.monitoring.Week7ApiTests",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "couplingCannotInventCountsForUnknownFile",
+        "newCollectionsValidatePaginationAndMissingResources",
+        "missingReasonAndUnknownChurnWithContributionRollback",
+        "fileEvidenceAndContributionArePagedAndDoNotExposeEmailKey",
+        "retryPreservesWindowAndOriginalFailureAndRejectsChangedConfig",
+        "claimCannotPublishMutatedWindowOrConfig",
+        "trendPreservesRenameIdentityAndOrdersByWindowNotInsertOrder",
+        "incompatibleConfigCoverageAndReverseComparisonFailExplicitly",
+        "unknownMeasurementsRemainNullInDatabaseAndHttp",
+        "capabilitiesAndJobHistoryExposeReadinessWithoutClaimToken",
+        "nullableChurnDoesNotHideNegativeMeasuredFields",
+        "snapshotAndRepositoryScopesRejectForeignFileIds",
+        "comparisonPreservesZeroMissingAddedRemovedAndRename",
+        "couplingDirectionSwapsCountsButKeepsDegreeAndEvidence"
+      ]
+    },
+    {
+      "suite": "com.example.demo.monitoring.Week7WorkerHttpTests",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "actualSchedulerEnqueuesDueRepositoryOnceAndDisableStopsFutureScans",
+        "httpRetryUsesFrozenWindowAndDistinctJobId",
+        "httpManualJobPublishesSnapshotThenEvaluatesAndClosesAlert"
+      ]
+    },
+    {
+      "suite": "com.example.demo.repository.GitHubRepositoryUrlTests",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "canonicalizesCaseSuffixAndTrailingSlash",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[1]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[2]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[3]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[4]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[5]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[6]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[7]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[8]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[9]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[10]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[11]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[12]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[13]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[14]",
+        "rejectsUnsupportedOrAmbiguousUrls(String)[15]"
+      ]
+    },
+    {
+      "suite": "com.example.demo.repository.RegistrationDisabledTests",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "publicPreviewCannotRegisterWhenDisabled"
+      ]
+    },
+    {
+      "suite": "com.example.demo.repository.RepositoryApiTests",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "corsAcceptsLocalBrowserAndRejectsUnknownOrigin",
+        "invalidInputsAreClientErrors",
+        "createReadAndRejectCanonicalDuplicate",
+        "listAndExistingHealthEndpointWork"
+      ]
+    },
+    {
+      "suite": "com.example.demo.repository.RepositoryContractTests",
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        "invalidBodyDoesNotPersist(String)[1]",
+        "invalidBodyDoesNotPersist(String)[2]",
+        "invalidBodyDoesNotPersist(String)[3]",
+        "invalidBodyDoesNotPersist(String)[4]",
+        "invalidBodyDoesNotPersist(String)[5]",
+        "invalidBodyDoesNotPersist(String)[6]",
+        "invalidBodyDoesNotPersist(String)[7]",
+        "invalidBodyDoesNotPersist(String)[8]",
+        "overlongUrlIsRejectedWithoutWrite",
+        "responseShapeMatchesPersistedRowAndReadback",
+        "invalidPaginationIs400(String)[1]",
+        "invalidPaginationIs400(String)[2]",
+        "invalidPaginationIs400(String)[3]",
+        "invalidPaginationIs400(String)[4]",
+        "invalidPaginationIs400(String)[5]",
+        "invalidPaginationIs400(String)[6]",
+        "concurrentCanonicalDuplicatesPersistOnlyOnce",
+        "listBoundariesOrderingEmptyPageAndMissingId"
+      ]
+    }
+  ]
+}
