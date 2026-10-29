@@ -15,7 +15,7 @@ Hoàn thiện task 23 lưu trữ/giám sát và triển khai task 24 REST API th
 | Vận hành | Capabilities/readiness, job history, retry FAILED giữ window/config; từ chối claim bị đổi context | MonitoringStore/Controller/Publisher |
 | Nghiệp vụ | Chặn so sánh khác config/coverage, không biến null thành 0, giữ rename identity, BASE_ZERO/UNAVAILABLE rõ ràng | API contract, test cases |
 | Tích hợp nhóm | Đối chiếu 4 điểm Tưởng nêu; test mã Toản cùng JGit branch trong checkout riêng | integration-contract, compatibility evidence |
-| Frontend/AI runtime | Không cài frontend hoặc provider LLM trong tuần này | Đúng phần việc, không nhận output giả thành chức năng |
+| Frontend/AI runtime | Không thêm màn hình hoặc provider LLM; vá dependency phát triển zod trong lockfile để xử lý CI | Audit 0 cảnh báo, lint/build đạt, 3 UI tests đạt và 1 live test bỏ qua |
 | Báo cáo/Git | Tài liệu bàn giao, AI log theo mục, minh chứng HTTP và bộ ZIP | docs/week-07 và nhánh feat/toan-week-7 |
 
 ## 3. Kết quả kiểm chứng

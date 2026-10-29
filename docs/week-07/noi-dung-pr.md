@@ -13,4 +13,6 @@ Bổ sung file detail, contribution và evidence phân trang, coupling hai chi�
 
 ## Phạm vi và review
 
+Bảo trì phát sinh khi chạy CI: cập nhật riêng zod 4.6.5 → 4.6.7 trong frontend lockfile để sửa advisory GHSA-mrhx-c7xc-m3w5. Audit 0 cảnh báo, lint/build đạt; 3 UI tests đạt, 1 live test bỏ qua. Không đổi chức năng giao diện.
+
 Task 23 tuần 6–7 và task 24 tuần 7–8 của Toản. Nhờ Tưởng review nullable fields, commitCount=selected non-merge commits, evidence.commits và semantics comparison/retry. Adapter Git/metric, Lizard và LLM còn thuộc phần Tưởng; chưa có pipeline repo public/staging/benchmark mới. Giới hạn API 365 ngày giữ nguyên, không đổi ingestion resource-limit policy hoặc quyết định lineage của Tưởng.

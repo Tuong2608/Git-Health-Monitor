@@ -21,3 +21,7 @@ Sinh viên Trần Quang Toản, 23110158. Ngày 29/10/2026. Công cụ Codex. T�
 ## AI-07-05 — Báo cáo và bàn giao
 
 **Mục tiêu:** báo cáo truy vết được đến sản phẩm/kiểm tra. **Hỗ trợ:** tổng hợp Surefire XML, log sạch, HTTP evidence, báo cáo/API guide/handoff/PR và ZIP. **Kiểm chứng:** số test lấy từ XML, liên kết nội bộ và trạng thái Git/CI khi push. **Trách nhiệm:** Toản tiếp nhận/giải thích, Tưởng review các điểm nối; không tự ghi đã học xong, nộp, có approval, phỏng vấn hoặc kết quả thực nghiệm.
+
+## AI-07-06 — Xử lý lỗi kiểm tra dependency trên CI
+
+**Mục tiêu:** khắc phục cảnh báo bảo mật chặn CI. **Đầu vào:** kết quả GitHub Actions và npm audit cho zod 4.6.5. **Hỗ trợ:** cập nhật riêng lockfile lên 4.6.7, cài lại và kiểm tra hồi quy. **Kiểm chứng:** audit 0 cảnh báo, lint/build đạt; 3 UI tests đạt, 1 live test bỏ qua. **Giới hạn:** không phát triển màn hình mới, không nhận ca live chưa chạy là đã đạt. Minh chứng tại evidence/frontend-verification.md.

@@ -16,6 +16,8 @@ Theo workbook: Toản hoàn thiện lưu trữ/giám sát (task 23, tuần 6–7
 
 **Đã kiểm tra:** 58 tests trên nhánh Toản; 88 tests trên checkout thử gồm nhánh Tưởng `15f291b` và phần backend tuần 7 của Toản. Không cộng hai con số để thành 146 test độc lập. Migration V3 giữ dữ liệu V1/V2, 17 test mới tuần 7, HTTP evidence có nhãn TEST_FIXTURE_NOT_REAL_GIT.
 
-**Giới hạn:** chưa có adapter Git/metric thật trên main, không triển khai LLM/CCN thay Tưởng, không sửa frontend, chưa deploy staging. Các ca HTTP dùng scheduler/worker/database thật với adapter chỉ nằm trong test. Việc chốt thực nghiệm từ tuần 6 vẫn cần hai thành viên; không tự điền nhãn hoặc kết quả nghiên cứu.
+**Giới hạn:** chưa có adapter Git/metric thật trên main, không triển khai LLM/CCN thay Tưởng, không thêm chức năng frontend, chưa deploy staging. Các ca HTTP dùng scheduler/worker/database thật với adapter chỉ nằm trong test. Việc chốt thực nghiệm từ tuần 6 vẫn cần hai thành viên; không tự điền nhãn hoặc kết quả nghiên cứu.
+
+**Bảo trì CI:** cập nhật riêng dependency phát triển zod 4.6.5 → 4.6.7 trong lockfile sau cảnh báo mức high. Audit còn 0 cảnh báo; lint/build đạt, 3 UI tests đạt và 1 live test bị bỏ qua do không bật môi trường live. Xem [minh chứng](evidence/frontend-verification.md).
 
 Mã mới: [SnapshotQueries](../../backend/src/main/java/com/example/demo/monitoring/SnapshotQueries.java), [Controller](../../backend/src/main/java/com/example/demo/monitoring/SnapshotQueryController.java), [V3](../../backend/src/main/resources/db/migration/V3__unavailable_metrics_and_retry_provenance.sql), [tests API](../../backend/src/test/java/com/example/demo/monitoring/Week7ApiTests.java), [tests worker HTTP](../../backend/src/test/java/com/example/demo/monitoring/Week7WorkerHttpTests.java).
