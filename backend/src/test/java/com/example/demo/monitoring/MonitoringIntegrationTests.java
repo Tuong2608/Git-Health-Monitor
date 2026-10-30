@@ -41,7 +41,7 @@ class MonitoringIntegrationTests {
             List.of(new PairData("A","B",5,10,20,Map.of("commitShas",List.of("b".repeat(40))))));
     }
     static FileData file(String key,String path,String score,int frequency) {
-        return new FileData(key,"a".repeat(40),key+".java",path,frequency,100,new BigDecimal("10"),new BigDecimal("5"),2,50,score==null?null:new BigDecimal(score),BigDecimal.ONE,score==null?"CCN_UNAVAILABLE":null,Map.of("source","TEST_FIXTURE"),List.of(new Contribution("person1","Anonymous fixture",60,40,frequency)));
+        return new FileData(key,"a".repeat(40),key+".java",path,frequency,100L,new BigDecimal("10"),new BigDecimal("5"),2,50L,score==null?null:new BigDecimal(score),BigDecimal.ONE,score==null?"CCN_UNAVAILABLE":null,Map.of("source","TEST_FIXTURE"),List.of(new Contribution("person1","Anonymous fixture",60,40,frequency)));
     }
     void coupling(long repo) { alerts.create(repo,new AlertService.RuleRequest("STRONG_COUPLING",new BigDecimal("0.5"),5,true,null)); }
     void delta(long repo) { alerts.create(repo,new AlertService.RuleRequest("HOTSPOT_INCREASE",new BigDecimal("0.1"),null,true,null)); }

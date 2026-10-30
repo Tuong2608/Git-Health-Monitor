@@ -1,0 +1,34 @@
+### Replace IDs with actual IDs returned by your local test environment.
+@base = http://localhost:8080/api
+@repo = 1
+@snapshot = 1
+@file = 1
+@otherSnapshot = 2
+@job = 1
+
+GET {{base}}/analysis-capabilities
+
+### Job history (read only)
+GET {{base}}/repositories/{{repo}}/jobs?page=0&size=20
+
+### File detail and measured/unavailable metrics
+GET {{base}}/snapshots/{{snapshot}}/files/{{file}}
+
+### Paged provenance
+GET {{base}}/snapshots/{{snapshot}}/files/{{file}}/evidence?page=0&size=20
+
+### Contributions; internal identity/email keys are excluded
+GET {{base}}/snapshots/{{snapshot}}/files/{{file}}/contributions?page=0&size=20
+
+### Coupling with oriented denominators
+GET {{base}}/snapshots/{{snapshot}}/files/{{file}}/couplings?page=0&size=20
+
+### Trend with window/config metadata
+GET {{base}}/repositories/{{repo}}/files/{{file}}/trend?page=0&size=20
+
+### Compatible snapshot comparison
+GET {{base}}/repositories/{{repo}}/snapshot-comparison?fromSnapshotId={{snapshot}}&toSnapshotId={{otherSnapshot}}&page=0&size=20
+
+### Write: only after installing real adapter and enabling controlled-mode writes.
+### Target must be a FAILED job; no request body is required.
+POST {{base}}/jobs/{{job}}/retry
