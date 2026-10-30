@@ -53,3 +53,7 @@ Mã W3-AC không thay số use case hiện có. `docs/usecases-draft.md` và đ�
 Given job lỗi/timeout, Then không công bố snapshot dở dang, có nguyên nhân lỗi an toàn cho client. Restart phải xử lý job RUNNING bị bỏ lại; cần chống job trùng. DTO của pipeline giữa Tưởng và Toản phải chốt trước khi code hai phía.
 
 `GET /api/repositories/{id}/snapshots`, `GET /api/snapshots/{id}/hotspots`, `GET /api/repositories/{id}/alerts` là route dự kiến; chưa có handler. Không ghi các route này là sản phẩm đã hoàn thành.
+
+## Làm rõ createdAt (16/10/2026)
+
+createdAt là thời điểm UTC theo ISO-8601, độ chính xác tối đa microsecond để phù hợp PostgreSQL. Giá trị trả về khi POST thành công phải bằng giá trị GET đọc lại cùng bản ghi. Xem kiểm chứng trong docs/week-05/api-contract-validation.md.

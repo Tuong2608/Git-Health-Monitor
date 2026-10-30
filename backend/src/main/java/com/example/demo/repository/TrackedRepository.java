@@ -2,6 +2,7 @@ package com.example.demo.repository;
 
 import jakarta.persistence.*;
 import java.time.Instant;
+import java.time.temporal.ChronoUnit;
 
 @Entity
 @Table(name = "tracked_repository")
@@ -24,7 +25,8 @@ public class TrackedRepository {
         url = repositoryUrl.url();
         owner = repositoryUrl.owner();
         name = repositoryUrl.name();
-        createdAt = Instant.now();
+        // Match PostgreSQL timestamp precision so POST and subsequent GET agree.
+        createdAt = Instant.now().truncatedTo(ChronoUnit.MICROS);
     }
 
     public Long getId() { return id; }

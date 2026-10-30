@@ -3,8 +3,8 @@
 Ngày 08/10/2026. Toản soạn để review chung với Tưởng. **Đã đặc tả để bàn giao; chưa ghi nhận nhóm/GVHD phê duyệt, chưa cài đặt.** Không nhận đã chọn provider hoặc chạy PoC.
 
 - Chỉ gọi theo yêu cầu sau khi có snapshot thành công. Không nằm trong đường tính metric/hotspot; không dùng output LLM trong nhãn hoặc score thực nghiệm RQ1.
-- Đầu vào: metric có nguồn, commit/snapshot id, tóm tắt thay đổi và phần source công khai người dùng chọn. Chặn secret và giới hạn kích thước context qua cấu hình; giá trị cụ thể chọn sau PoC.
-- Đầu ra JSON dự kiến: `riskSummary`, `evidence[]`, `reviewChecklist[]`, `refactorSuggestions[]`. Evidence phải tham chiếu metric/đoạn code thật; không tin chỉ vì JSON parse được.
+- Đầu vào: metric có nguồn, commit/snapshot id, tóm tắt thay đổi và phần source công khai người dùng chọn. Chặn secret và giới hạn kích thước context qua cấu hình; budget đề xuất nằm dưới đây và cần xác nhận sau PoC.
+- Đầu ra JSON dự kiến: `riskSummary`, `evidence[]`, `reviewChecklist[]`, `refactorSuggestions[]`, `limitations[]`. Evidence phải tham chiếu metric/đoạn code thật; không tin chỉ vì JSON parse được.
 - Giao diện gắn nhãn AI-generated, cho biết giới hạn, không tự áp dụng refactor, tạo commit hay sửa source.
 - Dùng abstraction `LLMReviewService`, adapter provider riêng, prompt có version, timeout/rate limit; CI dùng fake/mock. Provider/model chưa được chọn, không mặc định Claude.
 - Provider lỗi, hết quota, response sai schema hoặc timeout: báo không thể review và cho thử lại có kiểm soát; dashboard/metric vẫn dùng được.
@@ -30,9 +30,9 @@ Kiểm tra schema rồi kiểm tra ngữ nghĩa: evidenceId có trong allowlist 
 
 ## Timeout/quota/fallback/lưu trữ
 
-Timeout wall-clock đề xuất 30 giây; 1 request đang chạy/repo, 2 toàn server, 5 lượt/phút/operator trong thử nghiệm kiểm soát. Nếu chưa có danh tính đáng tin, dùng quota toàn server, không nhận operatorId tùy ý từ client.
+Provider timeout đề xuất tối đa 30 giây, deadline toàn API 35 giây từ lúc nhận (gồm xác minh public, đọc source, secret scan, provider và validation); mỗi bước dùng budget còn lại, không cộng 30 giây nếu deadline đã hết; 1 request đang chạy/repo, 2 toàn server, 5 lượt/phút/operator trong thử nghiệm kiểm soát. Nếu chưa có danh tính đáng tin, dùng quota toàn server, không nhận operatorId tùy ý từ client.
 
-Không auto-retry. 429 quá quota, 504 timeout, 502 provider/schema/evidence sai. Timeout hủy request và giải phóng slot; không giữ transaction/khóa pipeline. Dashboard/metric/scheduler không bị chặn bởi lỗi AI.
+Không auto-retry. 429 quá quota, 504 timeout, 502 provider/schema/evidence sai. Timeout hủy request và giải phóng slot khi tác vụ thực sự dừng; nếu upstream chưa dừng được thì vẫn giữ giới hạn in-flight, không mở thêm call vượt quota; không giữ transaction/khóa pipeline. Dashboard/metric/scheduler không bị chặn bởi lỗi AI.
 
 UI: chưa yêu cầu → đang xử lý → thành công hoặc “Không thể phân tích” với lý do an toàn; không giữ kết quả cũ như output của lần lỗi. Không tự áp dụng mã, commit hoặc gọi công cụ ghi repository.
 
@@ -56,3 +56,77 @@ Tuần 4 chỉ kiểm tra tĩnh schema/fixture. Ca runtime chưa triển khai/ch
 ## Quyết định còn mở
 
 Provider/model/token limit, chính sách dữ liệu của provider, cách bảo vệ endpoint trước public release; nhóm cần duyệt các budget/quota/retention đề xuất trên sau PoC. Xem [contract](api-contract.md) và [yêu cầu](requirements-week4.md).
+
+## Căn chỉnh với kiến trúc và frontend ngày 09/10/2026
+
+Bản review chung dùng POST đồng bộ trả 200 theo contract, không thêm GET reviewId hoặc output cache server. reviewId để truy vết response/log metadata, không phải tài nguyên đọc lại. Reload cần consent và gọi lại qua quota; mất kết nối không tự retry.
+
+Frontend hiện dùng timeout chung 15 giây trong frontend/src/api.ts. Khi cài AI phải có request budget riêng 40 giây, xử lý timeout/cancel; giữ timeout hiện tại cho API thường. Backend 35 giây/provider 30 giây là đề xuất; kiểm tra proxy/host trước triển khai. Nếu không phù hợp thì mở quyết định async/retention mới, không âm thầm đổi 200 sang 202.
+
+Dùng schema duy nhất trong schemas/: có limitations; checklist/suggestions chứa text/evidenceIds, không dùng mảng chuỗi của bản Tưởng trước. Giữ budget 32 KiB/quota của Toản để review chung; thay bộ 24 KiB/3 lượt phút/20 lượt ngày của bản Tưởng trước. Đây là căn chỉnh văn bản, chưa ghi nhận đồng thuận thật hoặc implementation.
+
+Không lưu raw output ở server: buffer trong RAM chỉ sống trong request, không tạo bảng kết quả review. Output byte/token cap phải chốt theo model; schema không thay cap transport. Kiểm tra HTTP/APM logging không lưu request/response body chứa source/output.
+
+## Thiết kế interface tuần 5 — 15/10/2026
+
+Trạng thái: bắt đầu thiết kế, hoàn thiện tuần 6. Interface dưới đây là Java-like pseudocode, chưa thêm class vào backend.
+
+```java
+interface LLMReviewService {
+    ReviewOutcome review(VerifiedReviewContext context, ReviewBudget budget);
+}
+record VerifiedReviewContext(
+    String reviewId, String snapshotId, String fileId, String headSha,
+    String configHash, Window observationWindow,
+    MetricEvidence metrics, DiffEvidence diff, List<SourceExcerpt> excerpts,
+    Map<String, EvidenceReference> evidenceAllowlist,
+    ConsentReceipt consent, String contextHash) {}
+record ReviewBudget(Instant deadline, int maxInputTokens, int maxOutputTokens,
+                    int maxOutputBytes, CancellationToken cancellation) {}
+sealed interface ReviewOutcome {} // Success | Failure
+record Success(ReviewOutput output, ReviewMetadata metadata) implements ReviewOutcome {}
+record Failure(ReviewError code, boolean userMayRetry) implements ReviewOutcome {}
+record ReviewOutput(String riskSummary, List<Evidence> evidence,
+    List<Advice> reviewChecklist, List<Advice> refactorSuggestions,
+    List<String> limitations) {}
+record Evidence(String evidenceId, String explanation) {}
+record Advice(String text, List<String> evidenceIds) {}
+interface LLMProviderAdapter {
+    ProviderResponse generate(RenderedPrompt prompt, ReviewBudget budget);
+}
+```
+
+Các type Window/MetricEvidence/DiffEvidence/SourceExcerpt/EvidenceReference là DTO thiết kế: mang giá trị, đơn vị, source SHA/path/line range hoặc commit diff bounds. Missing metric có null + reason, không biến thành 0. ReviewMetadata chứa promptVersion/hash, schemaVersion, provider/model thực, contextHash, latency và token usage nếu provider trả.
+
+`VerifiedReviewContext` chỉ do server-side ContextBuilder tạo sau xác thực quyền, consent, public check, snapshot published, kiểm tra file/line range và secret. Client chỉ gửi snapshot/file/range selection; không gửi metric tự khai để backend tin. ContextBuilder nạp metric từ snapshot và source/diff đúng SHA; diff phải liên quan file lineage, có base/head SHA và within-window provenance. Không lấy source HEAD hiện tại thay snapshot SHA.
+
+ConsentReceipt gắn selection/contextHash và thời điểm xác nhận; nếu nội dung cần gửi khác preview đã consent, yêu cầu xác nhận lại. Public check thất bại thì dừng trước provider. Diff/source là dữ liệu, không là system instruction. Context phải có ít nhất một evidence hợp lệ; nếu thiếu trả INSUFFICIENT_CONTEXT trước gọi model.
+
+Contract tuần 4 hiện chỉ có lineRanges/consent, chưa có preview token/contextHash từ client. Đây là khoảng trống cần phối hợp Toản tuần 6: chọn cơ chế preview có token ký hoặc bổ sung trường tham chiếu context bất biến. Chưa tuyên bố consent binding đã được API hiện tại bảo đảm, chưa tự thêm endpoint công khai.
+
+### Luồng xử lý và lỗi
+
+1. API kiểm tra request/quyền; ContextBuilder tạo context đã kiểm chứng và budget UTF-8/token. Byte cap 32 KiB không gồm system/schema nhưng token budget phải tính **toàn bộ** prompt và phần output dự trữ.
+2. Chọn promptVersion/schemaVersion từ registry allowlist; load [prompt ai-review/v1](prompts/ai-review-v1.md). Không cho client truyền template tùy ý.
+3. Giành quota/concurrency slot riêng. Deadline tổng backend 35s gồm cả context/public check; adapter tối đa min(30s, thời gian còn lại trừ phần dự trữ validation). Kiểm tra còn budget trước gửi.
+4. Adapter gọi provider được cấu hình, không có tool gọi repo. Giới hạn byte response ngay khi đọc; không chờ tải vô hạn rồi mới validate. Không log body.
+5. Parse JSON nghiêm ngặt, từ chối duplicate keys/trailing prose; validate schema duy nhất rồi semantic evidence allowlist/references. Output token/byte cap bắt buộc cấu hình trước bật adapter thật, chưa chọn số thiếu căn cứ.
+6. Trả Success có output đúng 5 trường và metadata ở envelope riêng. Không thêm metadata vào object output vì schema cấm additionalProperties. HTTP mapping theo contract hiện có, không tự thêm route.
+
+| Lỗi nội bộ | Xử lý API dự kiến |
+|---|---|
+| INVALID_SELECTION / INSUFFICIENT_CONTEXT | 400, sửa lựa chọn; không gọi provider |
+| ACCESS_DENIED / CONSENT_REQUIRED / PUBLIC_CHECK_FAILED | Chặn gửi dữ liệu, mã HTTP theo nguyên nhân 403 hoặc lỗi kiểm tra upstream an toàn |
+| CONTEXT_TOO_LARGE | 413, cho chọn đoạn ngắn hơn |
+| RATE_LIMITED | 429, không retry tự động |
+| DEADLINE_EXCEEDED | 504, không trả output dở |
+| PROVIDER_FAILED / INVALID_OUTPUT / INVALID_EVIDENCE | 502, thông báo an toàn, không lộ raw response |
+| CANCELLED | Dừng theo khả năng, không publish kết quả muộn |
+
+Provider còn chạy sau cancel thì slot chưa được coi là rảnh cho đến khi transport/task kết thúc hoặc cơ chế cô lập chứng minh đã dừng. Không retry ngầm sau disconnect. Lỗi AI không đổi snapshot/metric/job trạng thái đã thành công. Không trả partial output hoặc output cũ như kết quả mới.
+
+### Prompt version và kế hoạch tuần 6
+
+Registry ánh xạ immutable version → template checksum + schema version + adapter compatibility. Thay prompt tạo version mới, không sửa nội dung version đã phát hành; rollback chọn lại version cũ qua cấu hình. Log metadata cho phép biết response đã dùng phiên bản nào mà không lưu raw source/output.
+
+Tuần 6: chọn provider và xác minh tokenizer/context window/data retention; chốt input/output budget, proxy deadline, auth/quota; thiết kế fake adapter cho success/timeout/cancel/oversize/invalid schema/evidence/injection. Kiểm tra snapshot SHA khác HEAD, no-consent không gọi adapter, cancel không giải phóng slot sớm và core metric vẫn hoạt động. Chưa chạy các ca runtime này trong tuần 5.
