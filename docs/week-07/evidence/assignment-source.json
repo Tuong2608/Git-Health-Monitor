@@ -1,0 +1,102 @@
+{
+  "mainCommit": "0b664d9fd0df8e6c73f907ca81dd0053fccf67c6",
+  "sheet": "Kế hoạch chi tiết",
+  "rows": [
+    {
+      "row": 6,
+      "values": [
+        2,
+        "M1 — Nghiên cứu & khảo sát",
+        "Duy trì AI Usage Log",
+        "Ghi công cụ AI đã dùng, phạm vi, prompt chính, phần AI hỗ trợ/đã chỉnh sửa, lỗi/ảo giác phát hiện được; đối chiếu với lịch sử commit và báo cáo tuần trên web khoa.",
+        "Cả 2 (Tưởng + Toản)",
+        "Cao",
+        "Chưa bắt đầu",
+        "1",
+        "12",
+        "—",
+        "Bắt buộc theo TC2.3, độc lập với việc sản phẩm có module AI hay không"
+      ]
+    },
+    {
+      "row": 25,
+      "values": [
+        21,
+        "M4 — Cài đặt hệ thống",
+        "Cài đặt mô-đun thu thập dữ liệu",
+        "Full clone/fetch kho mã nguồn qua JGit (không dùng partial clone); commit traversal, diff, author extraction, rename detection, file lineage.",
+        "Tưởng",
+        "Cao",
+        "Chưa bắt đầu",
+        "6",
+        "7",
+        "Thiết kế thuật toán tính chỉ số",
+        null
+      ]
+    },
+    {
+      "row": 26,
+      "values": [
+        22,
+        "M4 — Cài đặt hệ thống",
+        "Cài đặt mô-đun tính toán chỉ số",
+        "Cài đặt các thuật toán tính chỉ số đã thiết kế; gọi Lizard đo độ phức tạp qua ProcessBuilder.",
+        "Tưởng",
+        "Cao",
+        "Chưa bắt đầu",
+        "7",
+        "8",
+        "Cài đặt thu thập dữ liệu",
+        null
+      ]
+    },
+    {
+      "row": 27,
+      "values": [
+        23,
+        "M4 — Cài đặt hệ thống",
+        "Cài đặt mô-đun lưu trữ & giám sát",
+        "Cài đặt lưu snapshot, bộ định thời quét định kỳ (Spring Scheduling); job state lưu trong PostgreSQL, xử lý bằng bounded TaskExecutor (không dùng Redis); sinh cảnh báo theo ngưỡng.",
+        "Toản",
+        "Cao",
+        "Chưa bắt đầu",
+        "6",
+        "7",
+        "Thiết kế cơ chế giám sát",
+        null
+      ]
+    },
+    {
+      "row": 28,
+      "values": [
+        24,
+        "M4 — Cài đặt hệ thống",
+        "Cài đặt tầng API",
+        "Xây dựng REST API cho giao diện; job xử lý bất đồng bộ qua PostgreSQL + TaskExecutor (đã bỏ Redis/Redisson khỏi core).",
+        "Toản",
+        "Cao",
+        "Chưa bắt đầu",
+        "7",
+        "8",
+        "Cài đặt lưu trữ & giám sát",
+        null
+      ]
+    },
+    {
+      "row": 29,
+      "values": [
+        25,
+        "M4 — Cài đặt hệ thống",
+        "Cài đặt module trợ lý rà soát bằng LLM",
+        "Cài đặt LLMReviewService: provider adapter thật cho production, fake/mock provider cho test; context builder giới hạn kích thước, validate response theo schema.",
+        "Tưởng",
+        "Cao",
+        "Chưa bắt đầu",
+        "7",
+        "8",
+        "Thiết kế module trợ lý rà soát bằng LLM",
+        null
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.086 s -- in com.example.demo.DemoApplicationTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.807 s -- in com.example.demo.monitoring.MonitoringApiTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.630 s -- in com.example.demo.monitoring.MonitoringDisabledTests
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.296 s -- in com.example.demo.monitoring.MonitoringIntegrationTests
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.837 s -- in com.example.demo.monitoring.Week7ApiTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.730 s -- in com.example.demo.monitoring.Week7WorkerHttpTests
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s -- in com.example.demo.repository.GitHubRepositoryUrlTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.583 s -- in com.example.demo.repository.RegistrationDisabledTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.820 s -- in com.example.demo.repository.RepositoryApiTests
+[INFO] Tests run: 58, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+[INFO] Total time:  30.279 s
+[INFO] Finished at: 2026-10-29T20:35:34+07:00

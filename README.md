@@ -57,6 +57,8 @@ Bộ thiết kế tuần 5 của Toản: [database 10 bảng, wireframe, thực 
 
 Bộ cài đặt tuần 6 của Toản: [snapshot, PostgreSQL job/scheduler, cảnh báo, API và kiểm thử](docs/week-06/README.md). Cần adapter `AnalysisPipeline` của module Git/metric để phân tích repository thật. `APP_ANALYSIS_ENABLED` và `APP_ANALYSIS_WRITES_ENABLED` mặc định `false`; chỉ bật trong môi trường nhóm kiểm soát sau khi có adapter. Xem [hướng dẫn tích hợp](docs/week-06/ban-giao-tuong.md).
 
+Tuần 7: [API file/evidence/coupling/trend/comparison, retry job và metric nullable](docs/week-07/README.md). V3 giữ dữ liệu chưa đo được là null; xem [hợp đồng tích hợp mới](docs/week-07/integration-contract.md) trước khi nối adapter.
+
 - URL hợp cú pháp chưa chứng minh repo tồn tại/công khai. Module đọc Git của Tưởng chỉ phát hiện điều đó khi clone/fetch thất bại, tức vẫn **không** có xác nhận sớm tại thời điểm đăng ký.
 - Có chuẩn hóa URL, chống trùng tại database, giới hạn `size` của danh sách 1–100, CORS theo danh sách origin.
 - Chưa có authentication/quota. Đăng ký mặc định **tắt** (`APP_REGISTRATION_ENABLED=false`); chỉ bật cho phiên thử nghiệm được kiểm soát. CORS không thay thế xác thực/phân quyền.

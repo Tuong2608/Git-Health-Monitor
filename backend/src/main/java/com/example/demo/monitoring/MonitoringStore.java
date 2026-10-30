@@ -96,7 +96,23 @@ public class MonitoringStore {
         return db.update("UPDATE analysis_job SET status='FAILED',finished_at=clock_timestamp(),error_code='LEASE_EXPIRED',phase='FAILED' WHERE status='RUNNING' AND lease_until<=clock_timestamp()");
     }
     public Map<String,Object> job(long id) {
-        return one("SELECT id,repository_id,status,outcome,phase,progress,requested_at,started_at,finished_at,result_snapshot_id AS snapshot_id,error_code FROM analysis_job WHERE id=?",id);
+        return one("SELECT id,repository_id,status,outcome,phase,progress,requested_at,started_at,finished_at,window_start,window_end,result_snapshot_id AS snapshot_id,error_code,retry_of FROM analysis_job WHERE id=?",id);
+    }
+    public List<Map<String,Object>> jobs(long repo,int limit,int offset) {
+        repository(repo);
+        return db.queryForList("SELECT id,repository_id,status,outcome,phase,progress,requested_at,started_at,finished_at,result_snapshot_id AS snapshot_id,error_code,retry_of FROM analysis_job WHERE repository_id=? ORDER BY requested_at DESC,id DESC LIMIT ? OFFSET ?",repo,limit,offset);
+    }
+    @Transactional
+    public long retry(long jobId,String currentConfig) {
+        var previous=one("SELECT repository_id FROM analysis_job WHERE id=?",jobId);
+        long repo=((Number)previous.get("repository_id")).longValue();
+        one("SELECT id FROM tracked_repository WHERE id=? FOR UPDATE",repo);
+        var job=one("SELECT * FROM analysis_job WHERE id=? FOR UPDATE",jobId);
+        if(!job.get("status").equals("FAILED")) throw error(HttpStatus.CONFLICT,"ONLY_FAILED_JOB_CAN_RETRY");
+        if(!job.get("config_hash").equals(hash(currentConfig))) throw error(HttpStatus.CONFLICT,"RETRY_CONFIG_CHANGED");
+        long next=insertJob(repo,((Timestamp)job.get("window_start")).toInstant(),((Timestamp)job.get("window_end")).toInstant(),currentConfig,"MANUAL");
+        db.update("UPDATE analysis_job SET retry_of=? WHERE id=?",jobId,next);
+        return next;
     }
     public List<Map<String,Object>> snapshots(long repo,int limit,int offset) {
         repository(repo);
