@@ -93,6 +93,8 @@ test('AI requires preview-bound consent and clears it on range change', async ({
 test('missing provider stays explicit and mobile layout fits', async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 812 })
   await setup(page, false); await openFile(page)
+  // Exercise a wider Linux-like fallback font as well as the host's system font.
+  await page.addStyleTag({ content: ':root { font-family: Arial, sans-serif; }' })
   await page.getByRole('button', { name: 'Xem trước dữ liệu gửi' }).click()
   await expect(page.getByText('Máy chủ chưa cấu hình nhà cung cấp AI. Dữ liệu xem trước chưa được gửi ra ngoài.')).toBeVisible()
   await page.getByRole('checkbox').check()

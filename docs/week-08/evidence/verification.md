@@ -20,3 +20,4 @@ Không cộng 109 và 111 thành hai tập độc lập. 111 là tổng duy nh�
 Thời gian public runs gồm clone/fetch, queue, polling và API đọc, chỉ là quan sát local một lượt. gs-rest-service/petclinic có coverageComplete=false, vẫn giữ reason/quality flags. Không hạ giới hạn hoặc thay lineage policy để tạo số đẹp.
 
 Compose config validate đạt. Docker Desktop local không phản hồi trong 20 giây; CI package chạy kiểm chứng image/Compose riêng. Trạng thái đúng commit cuối lưu trong CI_STATUS.json của ZIP và PR, không dùng kết quả của commit cũ thay cho bản bàn giao.
+`nCI đầu tiên phát hiện tràn ngang mobile với font Linux ở vùng dữ liệu dài. Đã cho chuỗi SHA/path và nút xuống dòng, thêm kiểm thử font fallback Arial và chạy lại 11 UI tests local đạt; CI cuối xác nhận theo commit mới.

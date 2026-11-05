@@ -21,3 +21,4 @@ Trần Quang Toản, 23110158. Ngày 05/11/2026. Công cụ: Codex. Ghi yêu c�
 ## AI-08-05 — Báo cáo, bảo trì và bàn giao
 
 **Mục tiêu:** truy vết từ báo cáo tới mã/test/kết quả thật. **Hỗ trợ:** tổng hợp Surefire XML, HTTP exchanges, ảnh desktop/mobile, audit và kiểm tra staging chỉ đọc, PR/ZIP. **Kiểm chứng:** test names/counters, ảnh đã rà; staging frontend 410, capabilities backend 404. **Giới hạn:** 10 mục audit moderate của tooling còn mở, không force major chỉ để xoá báo cáo. Không tự ghi đã nộp web khoa, được GVHD duyệt hoặc có đồng thuận thực nghiệm. Toản chịu trách nhiệm đọc, giải thích và xác nhận tài liệu trước nộp; Tưởng review các điểm tích hợp.
+`n**Bổ sung khi kiểm tra CI:** một ca mobile thất bại trên Linux dù local đạt. Đã sửa cách xuống dòng chuỗi dài và bổ sung font fallback vào test; chạy lại đủ 11 UI tests local đạt. Không bỏ assertion chống tràn hoặc đánh dấu skip để che lỗi.
