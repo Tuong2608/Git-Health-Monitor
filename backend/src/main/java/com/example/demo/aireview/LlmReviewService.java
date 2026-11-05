@@ -12,6 +12,7 @@ import java.util.concurrent.Semaphore;
 import java.util.regex.Pattern;
 import tools.jackson.core.StreamReadFeature;
 import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.DeserializationFeature;
 import tools.jackson.databind.json.JsonMapper;
 
 /**
@@ -62,6 +63,7 @@ public final class LlmReviewService {
 
     private static final JsonMapper STRICT_JSON = JsonMapper.builder()
             .enable(StreamReadFeature.STRICT_DUPLICATE_DETECTION)
+            .enable(DeserializationFeature.FAIL_ON_TRAILING_TOKENS)
             .build();
 
     public enum ReviewError {
@@ -330,6 +332,10 @@ public final class LlmReviewService {
 
     public static String computeContextHash(VerifiedReviewContext context) {
         return sha256Hex(serializeContext(context));
+    }
+
+    public static String contextJson(VerifiedReviewContext context) {
+        return serializeContext(context);
     }
 
     private static String serializeContext(VerifiedReviewContext c) {

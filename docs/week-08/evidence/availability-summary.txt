@@ -1,0 +1,6 @@
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.213 s -- in com.example.demo.aireview.AiReviewDisabledTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.833 s -- in com.example.demo.aireview.AiReviewProviderUnavailableTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+[INFO] Total time:  12.941 s
+[INFO] Finished at: 2026-11-05T17:39:30+07:00

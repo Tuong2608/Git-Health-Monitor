@@ -1,0 +1,167 @@
+{
+  "source": "docs/BaoCaoTienDo_TLCN.xlsx",
+  "baseCommit": "1878d2b93ce066c6c48a00945ec34714bac902c7",
+  "sheet": "Kế hoạch chi tiết",
+  "rows": [
+    {
+      "row": 6,
+      "cells": [
+        2,
+        "M1 — Nghiên cứu & khảo sát",
+        "Duy trì AI Usage Log",
+        "Ghi công cụ AI đã dùng, phạm vi, prompt chính, phần AI hỗ trợ/đã chỉnh sửa, lỗi/ảo giác phát hiện được; đối chiếu với lịch sử commit và báo cáo tuần trên web khoa.",
+        "Cả 2 (Tưởng + Toản)",
+        "Cao",
+        "Đang làm",
+        "1",
+        "12",
+        "—",
+        "Đã ghi đầy đủ AI Usage Log tới tuần 7 cho cả hai thành viên (docs/ai-usage/tuong-week07.md, docs/week-07/ai-usage-toan-week07.md); đối chiếu rõ số liệu tự chạy (41/41 test không cần DB) và số liệu bàn giao cần PostgreSQL (58/88 test)."
+      ]
+    },
+    {
+      "row": 24,
+      "cells": [
+        20,
+        "M3 — Thiết kế chi tiết",
+        "Thiết kế thực nghiệm (temporal split & baseline)",
+        "Chốt observation/prediction window, cách xác định bug-fix file (issue label → commit-message pattern → lấy mẫu thủ công), 2 baseline (change frequency only, complexity only), metric Precision@K/Recall@K/MAP.",
+        "Cả 2 (Tưởng + Toản)",
+        "Cao",
+        "Đang làm",
+        "5",
+        "6",
+        "Thiết kế thuật toán tính chỉ số",
+        "Toản bổ sung bản đối chiếu, fixture và công cụ evaluate_rankings.py; Tưởng chạy độc lập 8/8 test đạt ngày 23/10. Chưa chốt: split 80/20 hay prediction 30 ngày, tie-break theo ID hay path, dataset/nhãn. Hai bản vẫn ghi 'đề xuất', chưa ghi nhận đồng thuận nhóm."
+      ]
+    },
+    {
+      "row": 25,
+      "cells": [
+        21,
+        "M4 — Cài đặt hệ thống",
+        "Cài đặt mô-đun thu thập dữ liệu",
+        "Full clone/fetch kho mã nguồn qua JGit (không dùng partial clone); commit traversal, diff, author extraction, rename detection, file lineage.",
+        "Tưởng",
+        "Cao",
+        "Đang làm",
+        "6",
+        "7",
+        "Thiết kế thuật toán tính chỉ số",
+        "Đã cài GitRepositoryClient, GitIngestion, GitAnalysisPipeline (implement AnalysisPipeline) và GitMetricAnalysisSample; 12/12 test ingestion + 5/5 test metric/pipeline đạt. Chờ chạy lưu snapshot từ repo công khai vào PostgreSQL thật ở tuần 8 để đóng Hoàn thành."
+      ]
+    },
+    {
+      "row": 26,
+      "cells": [
+        22,
+        "M4 — Cài đặt hệ thống",
+        "Cài đặt mô-đun tính toán chỉ số",
+        "Cài đặt các thuật toán tính chỉ số đã thiết kế; gọi Lizard đo độ phức tạp qua ProcessBuilder.",
+        "Tưởng",
+        "Cao",
+        "Đang làm",
+        "7",
+        "8",
+        "Cài đặt thu thập dữ liệu",
+        "Đã cài LizardComplexityAnalyzer (gọi python -m lizard --xml trên blob tại headSha, deduplicate theo ObjectId) và RepositoryMetricCalculator (frequency, churn, HHI, midrank percentile hotspot, temporal coupling) tuân thủ V3; 5/5 test đạt và đã đo thực tế trên gs-rest-service, spring-petclinic, Hello-World."
+      ]
+    },
+    {
+      "row": 27,
+      "cells": [
+        23,
+        "M4 — Cài đặt hệ thống",
+        "Cài đặt mô-đun lưu trữ & giám sát",
+        "Cài đặt lưu snapshot, bộ định thời quét định kỳ (Spring Scheduling); job state lưu trong PostgreSQL, xử lý bằng bounded TaskExecutor (không dùng Redis); sinh cảnh báo theo ngưỡng.",
+        "Toản",
+        "Cao",
+        "Đang làm",
+        "6",
+        "7",
+        "Thiết kế cơ chế giám sát",
+        "Toản bổ sung migration V3 (nullable metrics có unavailable_reason, retry_of cùng repository) và kiểm tra toàn vẹn Claim khi publish; 58/58 test trên nhánh Toản và 88/88 test trên checkout kết hợp đạt trên PostgreSQL 18.3 (bàn giao tuần 7)."
+      ]
+    },
+    {
+      "row": 28,
+      "cells": [
+        24,
+        "M4 — Cài đặt hệ thống",
+        "Cài đặt tầng API",
+        "Xây dựng REST API cho giao diện; job xử lý bất đồng bộ qua PostgreSQL + TaskExecutor (đã bỏ Redis/Redisson khỏi core).",
+        "Toản",
+        "Cao",
+        "Đang làm",
+        "7",
+        "8",
+        "Cài đặt lưu trữ & giám sát",
+        "Toản cài SnapshotQueries và SnapshotQueryController: API chi tiết file, contributions (ẩn email thô), evidence phân trang, coupling 2 chiều, trend qua rename, comparison và retry job; 17 test mới đạt trên PostgreSQL 18.3. Tiếp tục tích hợp frontend tuần 8."
+      ]
+    },
+    {
+      "row": 29,
+      "cells": [
+        25,
+        "M4 — Cài đặt hệ thống",
+        "Cài đặt module trợ lý rà soát bằng LLM",
+        "Cài đặt LLMReviewService: provider adapter thật cho production, fake/mock provider cho test; context builder giới hạn kích thước, validate response theo schema.",
+        "Tưởng",
+        "Cao",
+        "Đang làm",
+        "7",
+        "8",
+        "Thiết kế module trợ lý rà soát bằng LLM",
+        "Tưởng đã cài LlmReviewService (com.example.demo.aireview): kiểm tra consent/contextHash, ghim headSha, quét secret, giới hạn byte/dòng, quota 1/repo & 2/server & 5/phút, render prompt ai-review/v1 và validate JSON schema + allowlist evidenceId; đạt 8/8 test AI-T01..AI-T08. Chờ nối HTTP/provider tuần 8."
+      ]
+    },
+    {
+      "row": 30,
+      "cells": [
+        26,
+        "M4 — Cài đặt hệ thống",
+        "Cài đặt giao diện người dùng",
+        "Xây dựng ứng dụng React/TypeScript: biểu đồ xu hướng, bản đồ điểm nóng (Recharts/D3.js), màn hình AI review.",
+        "Toản",
+        "Trung bình",
+        "Đang làm",
+        "8",
+        "8",
+        "Thiết kế UI, API sẵn dùng",
+        "Đã có giao diện React đăng ký, xem danh sách/chi tiết repository và biểu đồ minh họa. Chưa có dashboard metric thật, hotspot, snapshot, cảnh báo hoặc AI review."
+      ]
+    },
+    {
+      "row": 31,
+      "cells": [
+        27,
+        "M4 — Cài đặt hệ thống",
+        "Đóng gói và triển khai bằng Docker",
+        "Viết Dockerfile/docker-compose cho backend, frontend, PostgreSQL (không có Redis); duy trì auto-deploy staging đều mỗi tuần.",
+        "Cả 2 (Tưởng + Toản)",
+        "Trung bình",
+        "Chưa bắt đầu",
+        "8",
+        "8",
+        "Các mô-đun đã hoàn thành",
+        "Đã có cấu hình Docker/Compose và staging nền từ tuần 3. Chưa đóng gói, kiểm chứng toàn bộ các module theo phạm vi M4."
+      ]
+    },
+    {
+      "row": 32,
+      "cells": [
+        28,
+        "M4 — Cài đặt hệ thống",
+        "Tích hợp và kiểm thử toàn hệ thống",
+        "Ghép các mô-đun, kiểm thử end-to-end trên vài repo mẫu (kể cả module AI review với fake provider/timeout/fallback), sửa lỗi phát sinh.",
+        "Cả 2 (Tưởng + Toản)",
+        "Cao",
+        "Chưa bắt đầu",
+        "8",
+        "8",
+        "Đóng gói Docker",
+        "Chưa kiểm thử tích hợp toàn bộ pipeline. Tuần 5 mới xác thực API repository/health với PostgreSQL riêng; 40 test backend đạt không đồng nghĩa toàn hệ thống đã nghiệm thu."
+      ]
+    }
+  ]
+}

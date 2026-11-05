@@ -1,0 +1,77 @@
+[
+  {
+    "repository": "spring-guides/gs-rest-service",
+    "repositoryId": 1,
+    "jobId": 1,
+    "snapshotId": 1,
+    "headSha": "e15fec6773dc1eb6028055630e3e68cbd8653240",
+    "windowStart": "2025-11-05T10:36:26.593883Z",
+    "windowEnd": "2026-11-05T10:36:26.593883Z",
+    "commitCount": 29,
+    "summary": {
+      "qualityFlags": [
+        "LINEAGE_AMBIGUOUS",
+        "NO_FUNCTIONS"
+      ],
+      "ambiguousFiles": 2,
+      "noFunctionFiles": 1,
+      "selectedCommits": 29,
+      "coverageComplete": false,
+      "currentJavaFiles": 6,
+      "reachableCommits": 423,
+      "hotspotPopulation": 4,
+      "filterLargeChangesets": false
+    },
+    "elapsedSeconds": 8.67,
+    "firstPageFiles": 6
+  },
+  {
+    "repository": "spring-projects/spring-petclinic",
+    "repositoryId": 2,
+    "jobId": 2,
+    "snapshotId": 2,
+    "headSha": "500158f732419217507c7656904b8e6aa1bcc0d6",
+    "windowStart": "2025-11-05T10:36:34.930332Z",
+    "windowEnd": "2026-11-05T10:36:34.930332Z",
+    "commitCount": 49,
+    "summary": {
+      "qualityFlags": [
+        "LINEAGE_AMBIGUOUS",
+        "NO_FUNCTIONS"
+      ],
+      "ambiguousFiles": 13,
+      "noFunctionFiles": 18,
+      "selectedCommits": 49,
+      "coverageComplete": false,
+      "currentJavaFiles": 50,
+      "reachableCommits": 1047,
+      "hotspotPopulation": 25,
+      "filterLargeChangesets": false
+    },
+    "elapsedSeconds": 8.3,
+    "firstPageFiles": 20
+  },
+  {
+    "repository": "octocat/Hello-World",
+    "repositoryId": 3,
+    "jobId": 3,
+    "snapshotId": 3,
+    "headSha": "7fd1a60b01f91b314f59955a4e4d4e80d8edf11d",
+    "windowStart": "2025-11-05T10:36:43.195544Z",
+    "windowEnd": "2026-11-05T10:36:43.195544Z",
+    "commitCount": 0,
+    "summary": {
+      "qualityFlags": [],
+      "ambiguousFiles": 0,
+      "noFunctionFiles": 0,
+      "selectedCommits": 0,
+      "coverageComplete": true,
+      "currentJavaFiles": 0,
+      "reachableCommits": 3,
+      "hotspotPopulation": 0,
+      "filterLargeChangesets": false
+    },
+    "elapsedSeconds": 2.09,
+    "firstPageFiles": 0
+  }
+]

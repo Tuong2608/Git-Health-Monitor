@@ -3,10 +3,11 @@ import type { FormEvent } from 'react'
 import { listRepositories, registerRepository } from './api'
 import type { TrackedRepository } from './api'
 import './App.css'
-const DemoTrend = lazy(() => import('./components/DemoTrend').then((module) => ({ default: module.DemoTrend })))
+const AnalysisDashboard = lazy(() => import('./components/AnalysisDashboard').then((module) => ({ default: module.AnalysisDashboard })))
 
 function App() {
   const [repositories, setRepositories] = useState<TrackedRepository[]>([])
+  const [selected, setSelected] = useState<TrackedRepository | null>(null)
   const [url, setUrl] = useState('')
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
@@ -35,8 +36,8 @@ function App() {
     finally { setSaving(false) }
   }
   return <main>
-    <header className="masthead"><a className="brand" href="/">Git Health Monitor</a><span className="badge">Bản thử tuần 3</span></header>
-    <section className="intro"><p className="eyebrow">KHÔNG GIAN DỰ ÁN</p><h1>Bắt đầu từ repository của bạn.</h1><p>Lưu kho mã nguồn để chuẩn bị theo dõi thay đổi và rủi ro bảo trì.</p></section>
+    <header className="masthead"><a className="brand" href="/">Git Health Monitor</a><span className="badge">Phân tích & giám sát</span></header>
+    <section className="intro"><p className="eyebrow">KHÔNG GIAN DỰ ÁN</p><h1>Bắt đầu từ repository của bạn.</h1><p>Theo dõi lịch sử thay đổi, tìm file cần review và kiểm chứng bằng dữ liệu.</p></section>
     <div className="workspace">
       <section className="panel" aria-labelledby="register-title">
         <h2 id="register-title">Thêm repository</h2><p className="muted">Bản thử chỉ lưu địa chỉ GitHub. Chưa kiểm tra kho có tồn tại hoặc công khai.</p>
@@ -51,12 +52,12 @@ function App() {
         {loading ? <p role="status" className="empty">Đang tải danh sách…</p> : listError ? <p className="empty">Chưa thể xác nhận danh sách mới nhất. Hãy tải lại.</p> : repositories.length === 0 ? <p className="empty">Chưa có repository ở trang này.</p> :
           <ul className="repository-list">{repositories.map((repository) => <li key={repository.id}><div>
             <a href={repository.url} target="_blank" rel="noreferrer">{repository.owner}/{repository.name}</a>
-            <p className="muted">Đã lưu {new Date(repository.createdAt).toLocaleString('vi-VN')}</p></div><span className="badge">Chưa phân tích</span></li>)}</ul>}
+            <p className="muted">Đã lưu {new Date(repository.createdAt).toLocaleString('vi-VN')}</p></div><button className="secondary" onClick={() => setSelected(repository)}>Mở phân tích {repository.name}</button></li>)}</ul>}
         <nav className="pagination" aria-label="Trang repository"><button className="secondary" disabled={page === 0 || loading} onClick={() => reload(page - 1)}>Trước</button><span>Trang {page + 1}</span><button className="secondary" disabled={repositories.length < 20 || loading} onClick={() => reload(page + 1)}>Sau</button></nav>
       </section>
     </div>
-    <Suspense fallback={<p role="status">Đang tải biểu đồ minh họa…</p>}><DemoTrend /></Suspense>
-    <footer>Chức năng phân tích, snapshot, cảnh báo và AI review sẽ được tích hợp ở các giai đoạn tiếp theo.</footer>
+    {selected && <Suspense fallback={<p role="status">Đang tải bảng phân tích…</p>}><AnalysisDashboard key={selected.id} repository={selected} /></Suspense>}
+    <footer>Chọn một repository để mở dữ liệu phân tích. Các chỉ số là tín hiệu hỗ trợ review và cần đối chiếu bằng chứng.</footer>
   </main>
 }
 export default App

@@ -1,5 +1,7 @@
 # API contract sơ bộ — tuần 4
 
+**Cập nhật 05/11/2026:** [API/UI tuần 8](week-08/api-and-ai-contract.md) là hợp đồng triển khai AI mới nhất: preview, startLine/endLine, consent/contextHash và audit metadata. Các dòng “dự kiến/chưa cài” bên dưới là thiết kế lịch sử tuần 4; xem tài liệu tuần 6–8 cho trạng thái runtime.
+
 Ngày 08/10/2026. Toản phụ trách. **Contract để review, chưa triển khai các route dự kiến.** Base `/api`, JSON UTF-8, ID nguyên dương, timestamp UTC ISO-8601. Không đổi ngầm response shape của API tuần 3.
 
 ## Quy ước

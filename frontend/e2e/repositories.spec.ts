@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 
 // UI contract checks, separate from live PostgreSQL API tests.
-test('empty list, registration and labelled learning chart', async ({ page }) => {
+test('empty list and repository registration', async ({ page }) => {
   let saved = false
   const repository = { id: 1, url: 'https://github.com/toan/demo', owner: 'toan', name: 'demo', createdAt: '2026-09-30T00:00:00Z' }
   await page.route('**/api/repositories**', async (route) => {
@@ -15,7 +15,7 @@ test('empty list, registration and labelled learning chart', async ({ page }) =>
   await page.getByLabel('URL repository GitHub').fill(repository.url)
   await page.getByRole('button', { name: 'Lưu repository', exact: true }).click()
   await expect(page.getByRole('link', { name: 'toan/demo', exact: true })).toBeVisible()
-  await expect(page.getByText('Dữ liệu minh họa', { exact: true })).toBeVisible()
+  await expect(page.getByRole('button', { name: /Mở phân tích/ })).toBeVisible()
 })
 
 test('server conflict is visible', async ({ page }) => {
