@@ -72,3 +72,6 @@ Phần tuần 5 của Tưởng: [bàn giao](docs/week-05/README.md), [thuật to
 Phần tuần 6 của Tưởng: [module thu thập Git](docs/week-06/git-ingestion.md) — hợp đồng `Fact`/lineage cho lớp lưu trữ, lệnh chạy mẫu không cần database, minh chứng test và ba điểm còn mở cần hai người chốt.
 
 Phần tuần 7 của Tưởng: [bộ tính chỉ số, Lizard XML, adapter AnalysisPipeline và LlmReviewService](docs/week-07/metric-and-pipeline-tuong.md) — cài đặt công thức Metric Spec v1, lệnh chạy mẫu full pipeline và 41/41 test không cần database.
+# Bổ sung tuần 8
+
+[Bộ bàn giao tuần 8 của Toản](docs/week-08/README.md): dashboard React dữ liệu thật, AI preview/review API, Docker frontend/backend và minh chứng tích hợp. Xem [runbook](docs/week-08/runbook.md) để bật pipeline có Lizard; provider AI thật và staging vẫn cần nhóm cấu hình/review.

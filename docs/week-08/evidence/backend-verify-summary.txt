@@ -1,0 +1,19 @@
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.320 s -- in com.example.demo.aireview.LlmReviewServiceTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.171 s -- in com.example.demo.DemoApplicationTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.541 s -- in com.example.demo.gitanalyzer.GitIngestionSampleTests
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.305 s -- in com.example.demo.gitanalyzer.GitIngestionTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.099 s -- in com.example.demo.gitanalyzer.RepositoryMetricAndPipelineTests
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.957 s -- in com.example.demo.gitanalyzer.Week8IntegrationTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.990 s -- in com.example.demo.monitoring.MonitoringApiTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.626 s -- in com.example.demo.monitoring.MonitoringDisabledTests
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.142 s -- in com.example.demo.monitoring.MonitoringIntegrationTests
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.060 s -- in com.example.demo.monitoring.Week7ApiTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.804 s -- in com.example.demo.monitoring.Week7WorkerHttpTests
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s -- in com.example.demo.repository.GitHubRepositoryUrlTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.691 s -- in com.example.demo.repository.RegistrationDisabledTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.044 s -- in com.example.demo.repository.RepositoryApiTests
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.250 s -- in com.example.demo.repository.RepositoryContractTests
+[INFO] Tests run: 109, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+[INFO] Total time:  39.044 s
+[INFO] Finished at: 2026-11-05T17:35:05+07:00

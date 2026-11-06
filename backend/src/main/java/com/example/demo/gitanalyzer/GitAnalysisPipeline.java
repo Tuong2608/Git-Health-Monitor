@@ -164,6 +164,10 @@ public final class GitAnalysisPipeline implements AnalysisPipeline {
     private String buildEffectiveConfigJson() {
         var map = new java.util.LinkedHashMap<String, Object>();
         map.put("metricVersion", policy.metricVersion());
+        map.put("pipelineVersion", "git-metrics-v2");
+        map.put("lizardVersion", "1.24.3");
+        map.put("jgitVersion", org.eclipse.jgit.lib.Repository.class.getPackage().getImplementationVersion());
+        map.put("authorAliases", new java.util.TreeMap<>(authorAliases));
         map.put("excludedPrefixes", excludedPrefixes);
         map.put("maxCommits", maxCommits);
         map.put("maxTreeEntries", maxTreeEntries);
