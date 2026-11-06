@@ -74,4 +74,4 @@ Phần tuần 6 của Tưởng: [module thu thập Git](docs/week-06/git-ingesti
 Phần tuần 7 của Tưởng: [bộ tính chỉ số, Lizard XML, adapter AnalysisPipeline và LlmReviewService](docs/week-07/metric-and-pipeline-tuong.md) — cài đặt công thức Metric Spec v1, lệnh chạy mẫu full pipeline và 41/41 test không cần database.
 # Bổ sung tuần 8
 
-[Bộ bàn giao tuần 8 của Toản](docs/week-08/README.md): dashboard React dữ liệu thật, AI preview/review API, Docker frontend/backend và minh chứng tích hợp. Xem [runbook](docs/week-08/runbook.md) để bật pipeline có Lizard; provider AI thật và staging vẫn cần nhóm cấu hình/review.
+[Bộ bàn giao tuần 8 của nhóm](docs/week-08/README.md): dashboard React dữ liệu thật, AI preview/review API (ReviewContextBuilder, AiReviewController, V4__ai_review_audit.sql), adapter HTTP LLM provider thật ([HttpLlmProviderAdapter](docs/week-08/provider-and-review-tuong.md)), Docker frontend/backend có Lizard 1.24.3 và minh chứng tích hợp (115 test backend duy nhất, 11 UI test). Xem [runbook](docs/week-08/runbook.md) để bật pipeline có Lizard và cấu hình APP_AI_REVIEW_PROVIDER_*.
