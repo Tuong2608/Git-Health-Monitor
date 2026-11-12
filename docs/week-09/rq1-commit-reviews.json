@@ -1,0 +1,2382 @@
+{
+  "schemaVersion": 1,
+  "status": "REVIEWED_AND_LOCKED_V1",
+  "protocolVersion": "week09-rq1-approved-v1",
+  "seed": 23110170,
+  "reviewers": [
+    "23110170",
+    "23110158"
+  ],
+  "note": "Two-stage audit: (1) all prediction-window commits matching candidateRegex and (2) 10 deterministic negative-sample commits per repository (seed=23110170). Reviewed from commit messages and diffs without viewing model hotspot scores.",
+  "repositories": {
+    "commons-csv": {
+      "13d10d724a27868eeaefa00bc08cd115b2af75da": {
+        "commitSha": "13d10d724a27868eeaefa00bc08cd115b2af75da",
+        "subject": "CSV-320: Remove Spotbugs Dependency and use exclude-filter instead (#564)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVPrinter.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "1d89cd5f0aa454ef3853dfc7528242399ef26b74": {
+        "commitSha": "1d89cd5f0aa454ef3853dfc7528242399ef26b74",
+        "subject": "[CSV-329] Fix byte tracking for supplementary delimiters",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+          "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+          "src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CSV-329] Fixes incorrect byte position tracking when supplementary multi-byte delimiters are parsed in ExtendedBufferedReader.",
+        "reviewedAt": "2026-11-12"
+      },
+      "23eb602d25a9cf0c989085e9a618dd2b3bff5b45": {
+        "commitSha": "23eb602d25a9cf0c989085e9a618dd2b3bff5b45",
+        "subject": "[CSV-323] ExtendedBufferedReader byte tracking leads to an incorrect CSVRecord.getBytePosition()",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+          "src/test/java/org/apache/commons/csv/CSVParserTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CSV-323] Fixes ExtendedBufferedReader byte tracking defect causing wrong CSVRecord.getBytePosition().",
+        "reviewedAt": "2026-11-12"
+      },
+      "27a439ae0aba41221d296bca7bb5e00379bc25a8": {
+        "commitSha": "27a439ae0aba41221d296bca7bb5e00379bc25a8",
+        "subject": "Potential fix for pull request finding",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/csv/CSVPrinterTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Reviewed diff and commit message: non-bug-fix maintenance/cleanup commit.",
+        "reviewedAt": "2026-11-12"
+      },
+      "344f282dbead967c49fd57820fca9d9249cc4ba3": {
+        "commitSha": "344f282dbead967c49fd57820fca9d9249cc4ba3",
+        "subject": "CSV-196: Remove duplicated Charset (#13)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVParser.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Reviewed diff and commit message: non-bug-fix maintenance/cleanup commit.",
+        "reviewedAt": "2026-11-12"
+      },
+      "410175c3d01403ad575cb9d23263dfc6f32f7c3f": {
+        "commitSha": "410175c3d01403ad575cb9d23263dfc6f32f7c3f",
+        "subject": "[CSV-318] CSVPrinter.printRecord(Stream) hangs if given a parallel stream",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVPrinter.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CSV-318] Fixes concurrency hang in CSVPrinter.printRecord(Stream) when passed a parallel stream.",
+        "reviewedAt": "2026-11-12"
+      },
+      "42ded1cf3a29f511264c76e5e3380006957f8921": {
+        "commitSha": "42ded1cf3a29f511264c76e5e3380006957f8921",
+        "subject": "Fix possible NullPointerException in Token.toString()",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/Token.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes potential NullPointerException in Token.toString() when token content is null.",
+        "reviewedAt": "2026-11-12"
+      },
+      "4a28ba8254ce1af6985e3dcd95c753ef1c7165ea": {
+        "commitSha": "4a28ba8254ce1af6985e3dcd95c753ef1c7165ea",
+        "subject": "[CSV-322] CSVFormat.Builder.setQuote() does not refresh quotedNullString",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVFormat.java",
+          "src/test/java/org/apache/commons/csv/CSVFormatTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CSV-322] Fixes state bug where CSVFormat.Builder.setQuote() failed to refresh quotedNullString.",
+        "reviewedAt": "2026-11-12"
+      },
+      "513aac23983337ddd2dddb266e43a5eff145957e": {
+        "commitSha": "513aac23983337ddd2dddb266e43a5eff145957e",
+        "subject": "[CSV-325] CSVParser applies characterOffset to bytePosition, which breaks getBytePosition() for multi-byte prefixes",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVParser.java",
+          "src/test/java/org/apache/commons/csv/CSVParserTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CSV-325] Fixes CSVParser characterOffset/bytePosition mix-up breaking getBytePosition() for multi-byte characters.",
+        "reviewedAt": "2026-11-12"
+      },
+      "588aa4a6be048516c204341f7b9d7747a9c69f92": {
+        "commitSha": "588aa4a6be048516c204341f7b9d7747a9c69f92",
+        "subject": "Fix Javadoc warnings on Java 23",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVFormat.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "5e2d0590ca74424d5a51defef489e374abfb921a": {
+        "commitSha": "5e2d0590ca74424d5a51defef489e374abfb921a",
+        "subject": "[CSV-321] CSVFormat.equals()/hashCode() ignores maxRows",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVFormat.java",
+          "src/test/java/org/apache/commons/csv/CSVFormatTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CSV-321] Fixes contract violation in CSVFormat.equals() and hashCode() ignoring maxRows field.",
+        "reviewedAt": "2026-11-12"
+      },
+      "68b4b0910be1b9c0beb52a39b906851f0c41c75c": {
+        "commitSha": "68b4b0910be1b9c0beb52a39b906851f0c41c75c",
+        "subject": "[CSV-326] Escape Reader values with quote and escape",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVFormat.java",
+          "src/test/java/org/apache/commons/csv/CSVFormatTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CSV-326] Fixes CSVFormat escaping defect when printing Reader values with quote and escape characters.",
+        "reviewedAt": "2026-11-12"
+      },
+      "6a11b896aa8601deceb119c3ee1fd32e2efe276c": {
+        "commitSha": "6a11b896aa8601deceb119c3ee1fd32e2efe276c",
+        "subject": "Enable Checkstyle for test sources and fix issues",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/csv/CSVBenchmark.java",
+          "src/test/java/org/apache/commons/csv/CSVFormatTest.java",
+          "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+          "src/test/java/org/apache/commons/csv/CSVPrinterTest.java",
+          "src/test/java/org/apache/commons/csv/PerformanceTest.java",
+          "src/test/java/org/apache/commons/csv/issues/JiraCsv148Test.java",
+          "src/test/java/org/apache/commons/csv/issues/JiraCsv206Test.java",
+          "src/test/java/org/apache/commons/csv/issues/JiraCsv265Test.java",
+          "src/test/java/org/apache/commons/csv/issues/JiraCsv271Test.java",
+          "src/test/java/org/apache/commons/csv/issues/JiraCsv288Test.java",
+          "src/test/java/org/apache/commons/csv/perf/PerformanceTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "80d68871b3ec2e61ac1d5e6fa757528e8224804d": {
+        "commitSha": "80d68871b3ec2e61ac1d5e6fa757528e8224804d",
+        "subject": "Fix SpotBugs USO_UNSAFE_METHOD_SYNCHRONIZATION in CSVFormat print methods.",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVFormat.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes SpotBugs USO_UNSAFE_METHOD_SYNCHRONIZATION thread-safety defect in CSVFormat print methods.",
+        "reviewedAt": "2026-11-12"
+      },
+      "8387f796b89cedbfbd0b5a30266702c682e22371": {
+        "commitSha": "8387f796b89cedbfbd0b5a30266702c682e22371",
+        "subject": "Fix comments (#15)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVParser.java",
+          "src/main/java/org/apache/commons/csv/CSVRecord.java",
+          "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+          "src/main/java/org/apache/commons/csv/Lexer.java",
+          "src/test/java/org/apache/commons/csv/CSVParserTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "8bd601d1e9e7b7dad54169ebffbf5d0b4137351c": {
+        "commitSha": "8bd601d1e9e7b7dad54169ebffbf5d0b4137351c",
+        "subject": "Javadoc: Fix double the",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "920c9497cb7dfa82648c28dc5ab9a05f2dd63bb8": {
+        "commitSha": "920c9497cb7dfa82648c28dc5ab9a05f2dd63bb8",
+        "subject": "[CSV-313] Add CSVPrinter.getRecordCount()",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+          "src/test/java/org/apache/commons/csv/CSVPrinterTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Feature addition, API deprecation, or test refactoring rather than a bug fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "966b38519e45c1fd85c76fbbdc47cb5bb1905238": {
+        "commitSha": "966b38519e45c1fd85c76fbbdc47cb5bb1905238",
+        "subject": "[CSV-327] Limit parser maxRows by produced records",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVParser.java",
+          "src/test/java/org/apache/commons/csv/CSVParserTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CSV-327] Fixes CSVParser maxRows boundary enforcement to count produced records accurately.",
+        "reviewedAt": "2026-11-12"
+      },
+      "9a33a61732bd334159d0b072aa90ba35aae14e67": {
+        "commitSha": "9a33a61732bd334159d0b072aa90ba35aae14e67",
+        "subject": "fix quadratic printWithEscapes(Reader) delimiter look-ahead",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVFormat.java",
+          "src/test/java/org/apache/commons/csv/CSVFormatTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes algorithmic performance bug (quadratic delimiter look-ahead) in CSVFormat.printWithEscapes(Reader).",
+        "reviewedAt": "2026-11-12"
+      },
+      "a6ee67ecf0d4b9208ffc640f433d8b40c258e1f3": {
+        "commitSha": "a6ee67ecf0d4b9208ffc640f433d8b40c258e1f3",
+        "subject": "[CSV-328] Fix quoted null string after disabling quote",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVFormat.java",
+          "src/test/java/org/apache/commons/csv/CSVFormatTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CSV-328] Fixes stale quotedNullString state after disabling quote character in CSVFormat.",
+        "reviewedAt": "2026-11-12"
+      },
+      "bd9793b4ef16746aee81cf663e4910c311b9963b": {
+        "commitSha": "bd9793b4ef16746aee81cf663e4910c311b9963b",
+        "subject": "Fix indentation",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVFormat.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "bdd152f917f22d6dc551f0b841bfd1ee809e95c7": {
+        "commitSha": "bdd152f917f22d6dc551f0b841bfd1ee809e95c7",
+        "subject": "CSV-196-master: More changes (#16)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVParser.java",
+          "src/main/java/org/apache/commons/csv/CSVRecord.java",
+          "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+          "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+          "src/test/java/org/apache/commons/csv/CSVRecordTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Reviewed diff and commit message: non-bug-fix maintenance/cleanup commit.",
+        "reviewedAt": "2026-11-12"
+      },
+      "d042bb37cb985910d2bbaa9b05b10764752fe870": {
+        "commitSha": "d042bb37cb985910d2bbaa9b05b10764752fe870",
+        "subject": "Fix CSVPrinter.getRecordCount() Javadoc: the header record written by the constructor is counted",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVPrinter.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "d403084ddaf83992123035b7dd2876d0dcb083e8": {
+        "commitSha": "d403084ddaf83992123035b7dd2876d0dcb083e8",
+        "subject": "CSV-196: Comments changes on Dec30 (#17)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVParser.java",
+          "src/main/java/org/apache/commons/csv/CSVRecord.java",
+          "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+          "src/test/java/org/apache/commons/csv/CSVParserTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "d65785f52078a96c9cd5fd9bcf9b6b83511e25aa": {
+        "commitSha": "d65785f52078a96c9cd5fd9bcf9b6b83511e25aa",
+        "subject": "[CSV-318] CSVPrinter.printRecord(Stream) hangs if given a parallel stream",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVPrinter.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CSV-318] Follow-up fix for parallel stream synchronization hang in CSVPrinter.printRecord(Stream).",
+        "reviewedAt": "2026-11-12"
+      },
+      "dae9b1fa1b57d712a4884dd7c0f80d9671ab0fe0": {
+        "commitSha": "dae9b1fa1b57d712a4884dd7c0f80d9671ab0fe0",
+        "subject": "Javadoc: Fix format nit in code example",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVParser.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "ede5379abbbec5333b81383a07d3b2716d56e3df": {
+        "commitSha": "ede5379abbbec5333b81383a07d3b2716d56e3df",
+        "subject": "Fix Predefined @see references in CSVFormat",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVFormat.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "fce94ea666f09f4c162cd1b67b86bd6e271a9558": {
+        "commitSha": "fce94ea666f09f4c162cd1b67b86bd6e271a9558",
+        "subject": "Fix header for Checkstyle",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/csv/Utils.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "68f17d8a9bd91a60b336f87eee040b3d667cfd97": {
+        "commitSha": "68f17d8a9bd91a60b336f87eee040b3d667cfd97",
+        "subject": "handle null name in CSVRecord accessors under ignoreHeaderCase",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVRecord.java",
+          "src/test/java/org/apache/commons/csv/CSVRecordTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[Negative-sample catch] Fixes NullPointerException / null-name handling in CSVRecord accessors when ignoreHeaderCase is enabled.",
+        "reviewedAt": "2026-11-12"
+      },
+      "dfbf6f83ac611ddf3f8bf167670e3efceca81e5c": {
+        "commitSha": "dfbf6f83ac611ddf3f8bf167670e3efceca81e5c",
+        "subject": "Handle null name in CSVRecord accessors under ignoreHeaderCase (#628).",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/csv/CSVRecordTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[Negative-sample catch] Fixes null header name handling in CSVRecord accessors under ignoreHeaderCase (#628).",
+        "reviewedAt": "2026-11-12"
+      },
+      "e24e3afd879d850abd96ff4e209c79902bb392be": {
+        "commitSha": "e24e3afd879d850abd96ff4e209c79902bb392be",
+        "subject": "CSVPrinter.printRecords(Stream) knows how to use CSVFormat's maxRows",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+          "src/test/java/org/apache/commons/csv/CSVPrinterTest.java",
+          "src/test/java/org/apache/commons/csv/Utils.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[Negative-sample catch] Fixes CSVPrinter.printRecords(Stream) ignoring CSVFormat maxRows limit.",
+        "reviewedAt": "2026-11-12"
+      },
+      "138a0b5fc57f53004b48532bed3086408bd02932": {
+        "commitSha": "138a0b5fc57f53004b48532bed3086408bd02932",
+        "subject": "CSVPrinter now uses an internal lock instead of synchronized methods",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVPrinter.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Reviewed diff and commit message: non-bug-fix maintenance/cleanup commit.",
+        "reviewedAt": "2026-11-12"
+      },
+      "41362db16e59cf41c122d63337372657f4bde7b7": {
+        "commitSha": "41362db16e59cf41c122d63337372657f4bde7b7",
+        "subject": "CSVParser.parse(URL, Charset, CSVFormat) with a null CSVFormat maps to CSVFormat.DEFAULT (like CSVParser.parse(Reader, CSVFormat))",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVParser.java",
+          "src/test/java/org/apache/commons/csv/CSVParserTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[Negative-sample catch] Fixes CSVParser.parse(URL, Charset, CSVFormat) null CSVFormat handling.",
+        "reviewedAt": "2026-11-12"
+      },
+      "d74cd0e9b7307bb4311438742f830e24da5f3d73": {
+        "commitSha": "d74cd0e9b7307bb4311438742f830e24da5f3d73",
+        "subject": "Sort members",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/csv/CSVPrinterTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "b351ba8be0a556b6cce32184ff070d1299aec7c0": {
+        "commitSha": "b351ba8be0a556b6cce32184ff070d1299aec7c0",
+        "subject": "Javadoc: Use semantic tag <strong> instead of style tag <b>",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVFormat.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "82aef023f95154329416753eeba87aa93292d62b": {
+        "commitSha": "82aef023f95154329416753eeba87aa93292d62b",
+        "subject": "Remove extra layer of assertAll()",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/csv/CSVRecordTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Feature addition, API deprecation, or test refactoring rather than a bug fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "669023ac454642c34181d82b678539f2a020b3a0": {
+        "commitSha": "669023ac454642c34181d82b678539f2a020b3a0",
+        "subject": "Normalise EOL",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+          "src/main/java/org/apache/commons/csv/Constants.java",
+          "src/test/java/org/apache/commons/csv/CSVFormatTest.java",
+          "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+          "src/test/java/org/apache/commons/csv/CSVPrinterTest.java",
+          "src/test/java/org/apache/commons/csv/PerformanceTest.java",
+          "src/test/java/org/apache/commons/csv/issues/JiraCsv198Test.java",
+          "src/test/java/org/apache/commons/csv/issues/JiraCsv211Test.java",
+          "src/test/java/org/apache/commons/csv/issues/JiraCsv288Test.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "085294dd853151bba80f826f1c1d6cec0be92865": {
+        "commitSha": "085294dd853151bba80f826f1c1d6cec0be92865",
+        "subject": "Add Checstyle FallThrough",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/csv/CSVPrinter.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Feature addition, API deprecation, or test refactoring rather than a bug fix.",
+        "reviewedAt": "2026-11-12"
+      }
+    },
+    "commons-codec": {
+      "054a4dd0fae429a655e34997bc38d8dddfcada15": {
+        "commitSha": "054a4dd0fae429a655e34997bc38d8dddfcada15",
+        "subject": "Fix Javadoc text",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/digest/DigestUtils.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "06529d5a09159129fb23416fc8fde83e741b1088": {
+        "commitSha": "06529d5a09159129fb23416fc8fde83e741b1088",
+        "subject": "Rename some new methods and fix Javadoc links",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/binary/Base64.java",
+          "src/test/java/org/apache/commons/codec/binary/Base64Test.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "089f90450fd1f8acafad3fe626b9e9425aff5a3c": {
+        "commitSha": "089f90450fd1f8acafad3fe626b9e9425aff5a3c",
+        "subject": "Fix quoted-printable line break decoding",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/net/QCodec.java",
+          "src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java",
+          "src/test/java/org/apache/commons/codec/net/QCodecTest.java",
+          "src/test/java/org/apache/commons/codec/net/QuotedPrintableCodecTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes RFC-compliant line break decoding defect in QCodec and QuotedPrintableCodec.",
+        "reviewedAt": "2026-11-12"
+      },
+      "13d65a152e5fcbc54ed94feb2b5b2e700e2a920e": {
+        "commitSha": "13d65a152e5fcbc54ed94feb2b5b2e700e2a920e",
+        "subject": "Fix redundant Javadoc phrasing",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/net/URLCodec.java",
+          "src/test/java/org/apache/commons/codec/binary/Base64Test.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "15ce42914d8c275a2d9dd82082a19d759d517e6f": {
+        "commitSha": "15ce42914d8c275a2d9dd82082a19d759d517e6f",
+        "subject": "[CODEC-326] Add Base58 support",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/codec/binary/Base64Test.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Feature addition, API deprecation, or test refactoring rather than a bug fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "1b5a00fffa93ab3ca365393f456efe2da9f88241": {
+        "commitSha": "1b5a00fffa93ab3ca365393f456efe2da9f88241",
+        "subject": "Fix Javadoc typos",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/language/ColognePhonetic.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "1d718d8515091f49fe9c092455b17bacf3085809": {
+        "commitSha": "1d718d8515091f49fe9c092455b17bacf3085809",
+        "subject": "Fix PMD UnnecessaryFullyQualifiedName in org.apache.commons.codec.digest.Md5Crypt",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/digest/Md5Crypt.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "20df4c9f2947b2c6e992778d2859c4a58856beff": {
+        "commitSha": "20df4c9f2947b2c6e992778d2859c4a58856beff",
+        "subject": "Fix SpotBugs [ERROR] Medium: org.apache.commons.codec.binary.BaseNCodec$AbstractBuilder.setEncodeTable(byte[]) may expose internal representation by storing an externally mutable object into BaseNCodec$AbstractBuilder.encodeTable [org.apache.commons.codec.binary.BaseNCodec$AbstractBuilder] At BaseNCodec.java:[line 131] EI_EXPOSE_REP2",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/binary/Base64.java",
+          "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes SpotBugs EI_EXPOSE_REP2 mutable array exposure in BaseNCodec.AbstractBuilder.setEncodeTable.",
+        "reviewedAt": "2026-11-12"
+      },
+      "2cdfac1a8e34ffba32603d97d81173158b16ba04": {
+        "commitSha": "2cdfac1a8e34ffba32603d97d81173158b16ba04",
+        "subject": "[CODEC-317] ColognePhonetic can create duplicate consecutive codes in some cases.",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/language/ColognePhonetic.java",
+          "src/test/java/org/apache/commons/codec/language/ColognePhoneticTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CODEC-317] Fixes ColognePhonetic producing duplicate consecutive phonetic codes.",
+        "reviewedAt": "2026-11-12"
+      },
+      "3019feb5fda4f40d2f5055f55a9e94d74eb0367b": {
+        "commitSha": "3019feb5fda4f40d2f5055f55a9e94d74eb0367b",
+        "subject": "CODEC-335: Add `DigestUtils.gitBlob` and `DigestUtils.gitTree` methods (#427)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/digest/DigestUtils.java",
+          "src/test/java/org/apache/commons/codec/digest/DigestUtilsTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Feature addition, API deprecation, or test refactoring rather than a bug fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "322f464c9484e60be91134b1850072b61eab4ab4": {
+        "commitSha": "322f464c9484e60be91134b1850072b61eab4ab4",
+        "subject": "Fix spelling.",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/codec/binary/Base32InputStreamTest.java",
+          "src/test/java/org/apache/commons/codec/binary/Base64InputStreamTest.java",
+          "src/test/java/org/apache/commons/codec/binary/Base64Test.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "38087c0fc5233120a60c23de5318a4fb12ba648a": {
+        "commitSha": "38087c0fc5233120a60c23de5318a4fb12ba648a",
+        "subject": "[CODEC-347] Handle names emptied during Match Rating Approach cleaning (#448)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java",
+          "src/test/java/org/apache/commons/codec/language/MatchRatingApproachEncoderTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CODEC-347] Fixes MatchRatingApproachEncoder failure when cleaned input name becomes empty (#448).",
+        "reviewedAt": "2026-11-12"
+      },
+      "3a65a4a974f420798f5aec507988cb61bfb1d82d": {
+        "commitSha": "3a65a4a974f420798f5aec507988cb61bfb1d82d",
+        "subject": "fix: add support for symlinks in `DigestUtils.gitBlob()`",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/digest/DigestUtils.java",
+          "src/test/java/org/apache/commons/codec/digest/DigestUtilsTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes DigestUtils.gitBlob() handling of symbolic links.",
+        "reviewedAt": "2026-11-12"
+      },
+      "466a61d3f957a9a0727937b3772dc6880db22f01": {
+        "commitSha": "466a61d3f957a9a0727937b3772dc6880db22f01",
+        "subject": "Fix Javadoc",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/digest/MurmurHash3.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "472a2894046e14fe2fd6e4f5312da8afb93c8769": {
+        "commitSha": "472a2894046e14fe2fd6e4f5312da8afb93c8769",
+        "subject": "[CODEC-342] Base32.Builder#setEncodeTable(...) can create an instance that cannot decode its own output (#436)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/binary/Base32.java",
+          "src/test/java/org/apache/commons/codec/binary/Base32Test.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CODEC-342] Fixes Base32.Builder.setEncodeTable creating instances unable to decode their own output (#436).",
+        "reviewedAt": "2026-11-12"
+      },
+      "552ace67fd3a5d87e8f28dfd35e69347ac0ef515": {
+        "commitSha": "552ace67fd3a5d87e8f28dfd35e69347ac0ef515",
+        "subject": "Fix Javadoc typos",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/language/ColognePhonetic.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "5552181c5daaba8547d1d879f5ef8ee486dbc19b": {
+        "commitSha": "5552181c5daaba8547d1d879f5ef8ee486dbc19b",
+        "subject": "Javadoc: Fix typo",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/codec/StringEncoderComparatorTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "59929c391777e60157ae9533f624f8383c007e85": {
+        "commitSha": "59929c391777e60157ae9533f624f8383c007e85",
+        "subject": "[CODEC-331] org.apache.commons.codec.language.bm.Rule.parsePhonemeExpr(String) adds duplicate empty phoneme when input ends with |",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/language/bm/Rule.java",
+          "src/test/java/org/apache/commons/codec/language/bm/RuleTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CODEC-331] Fixes Beider-Morse Rule.parsePhonemeExpr adding duplicate empty phoneme on trailing pipe.",
+        "reviewedAt": "2026-11-12"
+      },
+      "5b3c2a5e130bc2f27e5ba34384f7b2cf503a5fbe": {
+        "commitSha": "5b3c2a5e130bc2f27e5ba34384f7b2cf503a5fbe",
+        "subject": "Fix PMD EmptyControlStatement in org.apache.commons.codec.language.Metaphone",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/language/Metaphone.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "6837802c8f23cb970513035c0fede41a1e30bb23": {
+        "commitSha": "6837802c8f23cb970513035c0fede41a1e30bb23",
+        "subject": "[CODEC-245] Reject malformed Sha2Crypt salt syntax",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/codec/digest/Sha2CryptTest.java",
+          "src/test/java/org/apache/commons/codec/digest/Sha512CryptTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CODEC-245] Fixes Sha2Crypt salt validation tests for malformed salt syntax.",
+        "reviewedAt": "2026-11-12"
+      },
+      "70e423b8e632b416bbf1ddd9d31493758c905940": {
+        "commitSha": "70e423b8e632b416bbf1ddd9d31493758c905940",
+        "subject": "Fix bug in test",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/codec/digest/MessageDigestAlgorithmsTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes defective assertion logic in MessageDigestAlgorithmsTest.",
+        "reviewedAt": "2026-11-12"
+      },
+      "74bdc007b300dc8b06cb579517096d497540448d": {
+        "commitSha": "74bdc007b300dc8b06cb579517096d497540448d",
+        "subject": "Fix spelling (codespell)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java",
+          "src/main/java/org/apache/commons/codec/digest/HmacUtils.java",
+          "src/main/java/org/apache/commons/codec/digest/PureJavaCrc32.java",
+          "src/test/java/org/apache/commons/codec/digest/Md5CryptTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "759150423e3a51adf095ebf770d82f3183f8a9cb": {
+        "commitSha": "759150423e3a51adf095ebf770d82f3183f8a9cb",
+        "subject": "[CODEC-343] Fix Base32 hex decode table builder (#435)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/binary/Base32.java",
+          "src/test/java/org/apache/commons/codec/binary/Base32Test.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CODEC-343] Fixes Base32 hex decode table builder initialization bug (#435).",
+        "reviewedAt": "2026-11-12"
+      },
+      "8194db4cdf9e5c3d7831d6ad750dd9217b86b754": {
+        "commitSha": "8194db4cdf9e5c3d7831d6ad750dd9217b86b754",
+        "subject": "[CODEC-338] Escape literal plus with plusForSpace (#432)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/net/PercentCodec.java",
+          "src/test/java/org/apache/commons/codec/net/PercentCodecTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CODEC-338] Fixes PercentCodec failing to escape literal plus when plusForSpace is enabled (#432).",
+        "reviewedAt": "2026-11-12"
+      },
+      "8470693f2de9d8f43615d407ad7c08f42c2a5250": {
+        "commitSha": "8470693f2de9d8f43615d407ad7c08f42c2a5250",
+        "subject": "[CODEC-344] Validate Base64 custom alphabets (#438)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/binary/Base64.java",
+          "src/test/java/org/apache/commons/codec/binary/Base64Test.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CODEC-344] Fixes missing validation of custom alphabets in Base64 (#438).",
+        "reviewedAt": "2026-11-12"
+      },
+      "8cbdc117d69aaae78daa7505aaa9b2e40692a67c": {
+        "commitSha": "8cbdc117d69aaae78daa7505aaa9b2e40692a67c",
+        "subject": "Better comment, fix spelling, Javadoc",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "92e18dea1b6bb18b32b8b1443acf38d8342ff827": {
+        "commitSha": "92e18dea1b6bb18b32b8b1443acf38d8342ff827",
+        "subject": "[CODEC-339] Escape URLCodec control characters in custom safe sets (#433)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/net/URLCodec.java",
+          "src/test/java/org/apache/commons/codec/net/URLCodecTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CODEC-339] Fixes URLCodec failing to escape control characters in custom safe sets (#433).",
+        "reviewedAt": "2026-11-12"
+      },
+      "9400525894adeb9a7edd5bd5ec4fe5eeb774d83b": {
+        "commitSha": "9400525894adeb9a7edd5bd5ec4fe5eeb774d83b",
+        "subject": "Fix Base64.toIntegerBytes(BigInteger) for zero edge case. (#441)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/binary/Base64.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes Base64.toIntegerBytes(BigInteger) edge-case bug for zero value (#441).",
+        "reviewedAt": "2026-11-12"
+      },
+      "9c117905ebee09e52d54cf25fb4f27ee66258ebd": {
+        "commitSha": "9c117905ebee09e52d54cf25fb4f27ee66258ebd",
+        "subject": "Fix SpotBugs [ERROR] High: Potentially dangerous use of non-short-circuit logic in org.apache.commons.codec.language.DaitchMokotoffSoundex.cleanup(String) [org.apache.commons.codec.language.DaitchMokotoffSoundex] At DaitchMokotoffSoundex.java:[line 350] NS_DANGEROUS_NON_SHORT_CIRCUIT",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes SpotBugs High-severity non-short-circuit logic bug in DaitchMokotoffSoundex.cleanup(String).",
+        "reviewedAt": "2026-11-12"
+      },
+      "a5c007691dceff744dffca94fc6ce714a5b68622": {
+        "commitSha": "a5c007691dceff744dffca94fc6ce714a5b68622",
+        "subject": "[CODEC-245] Reject malformed Sha2Crypt salt syntax (#445)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java",
+          "src/test/java/org/apache/commons/codec/digest/Sha512CryptTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CODEC-245] Fixes Sha2Crypt to reject malformed salt syntax instead of silently accepting invalid rounds (#445).",
+        "reviewedAt": "2026-11-12"
+      },
+      "ab67d62f090393309e596773a2ab71b4d58762d3": {
+        "commitSha": "ab67d62f090393309e596773a2ab71b4d58762d3",
+        "subject": "[CODEC-345] URLCodec.encodeUrl(BitSet, byte[]) ignores the caller-supplied BitSet for % and +",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/net/URLCodec.java",
+          "src/test/java/org/apache/commons/codec/net/URLCodecTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CODEC-345] Fixes URLCodec.encodeUrl(BitSet, byte[]) ignoring caller-supplied BitSet for % and +.",
+        "reviewedAt": "2026-11-12"
+      },
+      "ab9c9208aa5db662a6c540424d7bee8f5a5324d5": {
+        "commitSha": "ab9c9208aa5db662a6c540424d7bee8f5a5324d5",
+        "subject": "[CODEC-331] org.apache.commons.codec.language.bm.Rule.parsePhonemeExpr(String) adds duplicate empty phoneme when input ends with |",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/language/bm/Rule.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CODEC-331] Fixes Beider-Morse Rule.parsePhonemeExpr empty phoneme handling.",
+        "reviewedAt": "2026-11-12"
+      },
+      "b1b7b5a3e80e2bb4dbf03b1ca7fc95f3bff589ce": {
+        "commitSha": "b1b7b5a3e80e2bb4dbf03b1ca7fc95f3bff589ce",
+        "subject": "Fix PMD multiple UnnecessaryFullyQualifiedName in org.apache.commons.codec.binary.StringUtils",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/binary/StringUtils.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "c6d8e6d5e843e0b34e694a9a4959cfb929830736": {
+        "commitSha": "c6d8e6d5e843e0b34e694a9a4959cfb929830736",
+        "subject": "Fix SHAKE digest tests on updated Java runtimes",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/codec/digest/DigestUtilsTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes SHAKE digest test failure on updated Java runtimes.",
+        "reviewedAt": "2026-11-12"
+      },
+      "c7fbb1778e87f3941c33d2ec3e7c59b6550fafbc": {
+        "commitSha": "c7fbb1778e87f3941c33d2ec3e7c59b6550fafbc",
+        "subject": "Fix test on Java 26-ea and up",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/codec/digest/DigestUtilsTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes DigestUtilsTest failure on Java 26-ea runtime.",
+        "reviewedAt": "2026-11-12"
+      },
+      "ca27bd30b6170561786d421eb48f1535dc41336f": {
+        "commitSha": "ca27bd30b6170561786d421eb48f1535dc41336f",
+        "subject": "Fix Checkstyle",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/digest/MurmurHash3.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "ca52f570255b2e1f4fd6faeb198799169870fb6d": {
+        "commitSha": "ca52f570255b2e1f4fd6faeb198799169870fb6d",
+        "subject": "[CODEC-336] Base64.Builder.setUrlSafe() Javadoc incorrectly states null is accepted for primitive boolean parameter",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/binary/Base64.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "d07487725f94114154ac230ffc75d1fb72fecb27": {
+        "commitSha": "d07487725f94114154ac230ffc75d1fb72fecb27",
+        "subject": "Fix malformed Javadoc comments",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/binary/Base32InputStream.java",
+          "src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java",
+          "src/main/java/org/apache/commons/codec/binary/Base64InputStream.java",
+          "src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java",
+          "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+          "src/main/java/org/apache/commons/codec/digest/Crypt.java",
+          "src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "d594dd25868063be2ea5a7744123393d66cad479": {
+        "commitSha": "d594dd25868063be2ea5a7744123393d66cad479",
+        "subject": "[CODEC-333] Add separate methods for strict Standard and URL Safe Base64 decoding (#419)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/binary/Base64.java",
+          "src/test/java/org/apache/commons/codec/binary/Base64Test.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Feature addition, API deprecation, or test refactoring rather than a bug fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "da16f363adf7c60d45002602afa3c466ddff427c": {
+        "commitSha": "da16f363adf7c60d45002602afa3c466ddff427c",
+        "subject": "[CODEC-328] Clarify Javadoc for org.apache.commons.codec.digest.UnixCrypt.crypt(byte[],String)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/digest/UnixCrypt.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "e352a9b11f47e21ae9ce069e12dab67455dd185a": {
+        "commitSha": "e352a9b11f47e21ae9ce069e12dab67455dd185a",
+        "subject": "[CODEC-249] Fix Incorrect transform of CH digraph according Metaphone basic rules (#423)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/language/Metaphone.java",
+          "src/test/java/org/apache/commons/codec/language/MetaphoneTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CODEC-249] Fixes incorrect transformation of CH digraph in Metaphone (#423).",
+        "reviewedAt": "2026-11-12"
+      },
+      "ef72cbdcef491533b5bb5fa6eee573b1e565440d": {
+        "commitSha": "ef72cbdcef491533b5bb5fa6eee573b1e565440d",
+        "subject": "Wrong class was tested",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/codec/CharsetsTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes CharsetsTest testing the wrong target class.",
+        "reviewedAt": "2026-11-12"
+      },
+      "f13dd50f566c318283c4138820b15d75c26a0217": {
+        "commitSha": "f13dd50f566c318283c4138820b15d75c26a0217",
+        "subject": "[CODEC-347] Handle names emptied during Match Rating Approach cleaning (#448)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java",
+          "src/test/java/org/apache/commons/codec/language/MatchRatingApproachEncoderTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CODEC-347] Fixes MatchRatingApproachEncoder empty cleaned string handling (#448).",
+        "reviewedAt": "2026-11-12"
+      },
+      "f2ac150daabcd8aa334b94c3d58c3c1ee695e8e0": {
+        "commitSha": "f2ac150daabcd8aa334b94c3d58c3c1ee695e8e0",
+        "subject": "[CODEC-337] Digest ALL reuses System.in, so only the first algorithm sees the real input (#431)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/cli/Digest.java",
+          "src/test/java/org/apache/commons/codec/cli/DigestTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[CODEC-337] Fixes CLI Digest reusing exhausted System.in across multiple algorithms (#431).",
+        "reviewedAt": "2026-11-12"
+      },
+      "f55056104a73b19f978a67cebdffaac1f7320b6c": {
+        "commitSha": "f55056104a73b19f978a67cebdffaac1f7320b6c",
+        "subject": "[CODEC-334] Add tests in Base64OutputStreamTest",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/codec/binary/Base64OutputStreamTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Feature addition, API deprecation, or test refactoring rather than a bug fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "4bae73783fc2da7ff66e4c74090f353531527807": {
+        "commitSha": "4bae73783fc2da7ff66e4c74090f353531527807",
+        "subject": "Sort members",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/codec/binary/Base64Test.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "8be1e90f56caedeec5bbe6778bbe14f6c39c3502": {
+        "commitSha": "8be1e90f56caedeec5bbe6778bbe14f6c39c3502",
+        "subject": "Use an import instead of a FQCN",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/language/Caverphone1.java",
+          "src/main/java/org/apache/commons/codec/language/Caverphone2.java",
+          "src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java",
+          "src/main/java/org/apache/commons/codec/language/Metaphone.java",
+          "src/main/java/org/apache/commons/codec/language/SoundexUtils.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "df37ca856a46ff256044c6f696615b9102e108b3": {
+        "commitSha": "df37ca856a46ff256044c6f696615b9102e108b3",
+        "subject": "Javadoc",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/net/BCodec.java",
+          "src/main/java/org/apache/commons/codec/net/QCodec.java",
+          "src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java",
+          "src/main/java/org/apache/commons/codec/net/URLCodec.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "8e36214fa2760d37e4e9c83336ed5bb324c23482": {
+        "commitSha": "8e36214fa2760d37e4e9c83336ed5bb324c23482",
+        "subject": "In-line single use test local variables",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/codec/language/Caverphone1Test.java",
+          "src/test/java/org/apache/commons/codec/language/Caverphone2Test.java",
+          "src/test/java/org/apache/commons/codec/language/ColognePhoneticTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Feature addition, API deprecation, or test refactoring rather than a bug fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "112463e9a29cbb5937c50570edf29684dcd63697": {
+        "commitSha": "112463e9a29cbb5937c50570edf29684dcd63697",
+        "subject": "Javadoc typo",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "316fb15f3aa1e810a27fcc858d7c0e7ba0a4d724": {
+        "commitSha": "316fb15f3aa1e810a27fcc858d7c0e7ba0a4d724",
+        "subject": "Remove unused method",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Feature addition, API deprecation, or test refactoring rather than a bug fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "855c6b1bf37b418cfb9db9b46d1c4625f9f6f0b1": {
+        "commitSha": "855c6b1bf37b418cfb9db9b46d1c4625f9f6f0b1",
+        "subject": "Javadoc",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/digest/MurmurHash3.java",
+          "src/main/java/org/apache/commons/codec/digest/PureJavaCrc32.java",
+          "src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java",
+          "src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+          "src/main/java/org/apache/commons/codec/digest/XXHash32.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "71fee598323eac3eb4dd7f9f3c4d070769ca9368": {
+        "commitSha": "71fee598323eac3eb4dd7f9f3c4d070769ca9368",
+        "subject": "Javadoc",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/codec/digest/UnixCryptTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "e119f125302cc6f65ffd4ab6a1284cf31990a507": {
+        "commitSha": "e119f125302cc6f65ffd4ab6a1284cf31990a507",
+        "subject": "Normalize local variable naming",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java",
+          "src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Feature addition, API deprecation, or test refactoring rather than a bug fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "5647fe2a66b3e74f044f414ad10d92407ede9396": {
+        "commitSha": "5647fe2a66b3e74f044f414ad10d92407ede9396",
+        "subject": "StringEncoderComparator.StringEncoderComparator(StringEncoder) now fails fast on null input.",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/codec/StringEncoderComparator.java",
+          "src/test/java/org/apache/commons/codec/StringEncoderComparatorTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[Negative-sample catch] Fixes StringEncoderComparator constructor to fail fast on null input.",
+        "reviewedAt": "2026-11-12"
+      }
+    },
+    "commons-dbutils": {
+      "5385191dcb3946710fa6435c05492d25976fc4ab": {
+        "commitSha": "5385191dcb3946710fa6435c05492d25976fc4ab",
+        "subject": "[DBUTILS-86] Cover non-null result set values across rows (#418)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/dbutils/wrappers/SqlNullCheckedResultSetTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[DBUTILS-86] Regression test covering SqlNullCheckedResultSet non-null value leakage across rows (#418).",
+        "reviewedAt": "2026-11-12"
+      },
+      "7ab9ae4c0f722deb2a8d1b8a043c90aa3f8c8c92": {
+        "commitSha": "7ab9ae4c0f722deb2a8d1b8a043c90aa3f8c8c92",
+        "subject": "Fix unreliable asynchronous test",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/dbutils/AsyncQueryRunnerTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes flaky asynchronous race condition in AsyncQueryRunnerTest.",
+        "reviewedAt": "2026-11-12"
+      },
+      "9ef349cf4f1696514ecbd2afb5e1e7837dbacc35": {
+        "commitSha": "9ef349cf4f1696514ecbd2afb5e1e7837dbacc35",
+        "subject": "Fix ParenPad",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/dbutils/BeanProcessor.java",
+          "src/test/java/org/apache/commons/dbutils/wrappers/SqlNullCheckedResultSetTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "b1460801efee2da7b765c6939961470c6e1cbd90": {
+        "commitSha": "b1460801efee2da7b765c6939961470c6e1cbd90",
+        "subject": "fix name",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/dbutils/ResultSetIteratorTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Reviewed diff and commit message: non-bug-fix maintenance/cleanup commit.",
+        "reviewedAt": "2026-11-12"
+      },
+      "a0c78d190747bb652caf8323f27f11b710b0eef2": {
+        "commitSha": "a0c78d190747bb652caf8323f27f11b710b0eef2",
+        "subject": "Use JUnit 5 convention for class visibility",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/dbutils/AsyncQueryRunnerTest.java",
+          "src/test/java/org/apache/commons/dbutils/BasicRowProcessorTest.java",
+          "src/test/java/org/apache/commons/dbutils/BeanProcessorTest.java",
+          "src/test/java/org/apache/commons/dbutils/DbUtilsTest.java",
+          "src/test/java/org/apache/commons/dbutils/GenerousBeanProcessorTest.java",
+          "src/test/java/org/apache/commons/dbutils/OutParameterTest.java",
+          "src/test/java/org/apache/commons/dbutils/ProxyFactoryTest.java",
+          "src/test/java/org/apache/commons/dbutils/QueryLoaderTest.java",
+          "src/test/java/org/apache/commons/dbutils/QueryRunnerTest.java",
+          "src/test/java/org/apache/commons/dbutils/ResultSetIteratorTest.java",
+          "src/test/java/org/apache/commons/dbutils/ServiceLoaderTest.java",
+          "src/test/java/org/apache/commons/dbutils/StatementConfigurationTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/ArrayHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/ArrayListHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/BeanHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/BeanListHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/BeanMapHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/ColumnListHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/KeyedHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/MapHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/MapListHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/ScalarHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/BooleanColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/ByteColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/DoubleColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/FloatColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/IntegerColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/LongColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/SQLXMLColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/ShortColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/StringColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/TimestampColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/properties/DatePropertyHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/properties/PropertyHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/properties/StringEnumPropertyHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/wrappers/SqlNullCheckedResultSetTest.java",
+          "src/test/java/org/apache/commons/dbutils/wrappers/StringTrimmedResultSetTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Reviewed diff and commit message: non-bug-fix maintenance/cleanup commit.",
+        "reviewedAt": "2026-11-12"
+      },
+      "27ca6db9458c8548e08790b557c47878c5e2d76f": {
+        "commitSha": "27ca6db9458c8548e08790b557c47878c5e2d76f",
+        "subject": "org.apache.commons.dbutils.ResultSetIterator.next() now throws NoSuchElementException as defined in java.util.Iterator.next()",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/dbutils/ResultSetIterator.java",
+          "src/test/java/org/apache/commons/dbutils/ResultSetIteratorTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[Negative-sample catch] Fixes ResultSetIterator.next() contract violation to throw NoSuchElementException per Iterator spec.",
+        "reviewedAt": "2026-11-12"
+      },
+      "662d6e126d0f2eb03002815800467d8d885b7a3b": {
+        "commitSha": "662d6e126d0f2eb03002815800467d8d885b7a3b",
+        "subject": "Javadoc: The @deprecated tag should be last.",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/dbutils/AsyncQueryRunner.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "94fc43e9659ead65464fbfa15b981ba5e8655de4": {
+        "commitSha": "94fc43e9659ead65464fbfa15b981ba5e8655de4",
+        "subject": "Javadoc: Use semantic tag <strong> instead of style tag <b>",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/dbutils/BaseResultSetHandler.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "78398b9d8091d9cb199e10fb323fb301e1211e51": {
+        "commitSha": "78398b9d8091d9cb199e10fb323fb301e1211e51",
+        "subject": "Flip null test",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+          "src/main/java/org/apache/commons/dbutils/BeanProcessor.java",
+          "src/main/java/org/apache/commons/dbutils/GenerousBeanProcessor.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Reviewed diff and commit message: non-bug-fix maintenance/cleanup commit.",
+        "reviewedAt": "2026-11-12"
+      },
+      "c8473267a972d37eb4d0838be54f9bde80df6195": {
+        "commitSha": "c8473267a972d37eb4d0838be54f9bde80df6195",
+        "subject": "Merge some string literals",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/dbutils/OutParameter.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "5da070c631f9945c729faa6a52e76991ed1d6c1f": {
+        "commitSha": "5da070c631f9945c729faa6a52e76991ed1d6c1f",
+        "subject": "Javadoc",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/dbutils/AsyncQueryRunner.java",
+          "src/main/java/org/apache/commons/dbutils/DbUtils.java",
+          "src/main/java/org/apache/commons/dbutils/OutParameter.java",
+          "src/main/java/org/apache/commons/dbutils/QueryRunner.java",
+          "src/main/java/org/apache/commons/dbutils/wrappers/SqlNullCheckedResultSet.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "4ecc5215bda6724115abf31c793b2b9ece3641e1": {
+        "commitSha": "4ecc5215bda6724115abf31c793b2b9ece3641e1",
+        "subject": "Migrate tests to JUnit5 (#324)",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/dbutils/AsyncQueryRunnerTest.java",
+          "src/test/java/org/apache/commons/dbutils/BaseResultSetHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/BaseTestCase.java",
+          "src/test/java/org/apache/commons/dbutils/BasicRowProcessorTest.java",
+          "src/test/java/org/apache/commons/dbutils/BeanProcessorTest.java",
+          "src/test/java/org/apache/commons/dbutils/DbUtilsTest.java",
+          "src/test/java/org/apache/commons/dbutils/GenerousBeanProcessorTest.java",
+          "src/test/java/org/apache/commons/dbutils/OutParameterTest.java",
+          "src/test/java/org/apache/commons/dbutils/ProxyFactoryTest.java",
+          "src/test/java/org/apache/commons/dbutils/QueryLoaderTest.java",
+          "src/test/java/org/apache/commons/dbutils/QueryRunnerTest.java",
+          "src/test/java/org/apache/commons/dbutils/ResultSetIteratorTest.java",
+          "src/test/java/org/apache/commons/dbutils/ServiceLoaderTest.java",
+          "src/test/java/org/apache/commons/dbutils/StatementConfigurationTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/ArrayHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/ArrayListHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/BeanHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/BeanListHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/BeanMapHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/ColumnListHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/KeyedHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/MapHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/MapListHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/ScalarHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/AbstractTestColumnHandler.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/BooleanColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/ByteColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/DoubleColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/FloatColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/IntegerColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/LongColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/SQLXMLColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/ShortColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/StringColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/columns/TimestampColumnHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/properties/DatePropertyHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/properties/PropertyHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/handlers/properties/StringEnumPropertyHandlerTest.java",
+          "src/test/java/org/apache/commons/dbutils/wrappers/SqlNullCheckedResultSetTest.java",
+          "src/test/java/org/apache/commons/dbutils/wrappers/StringTrimmedResultSetTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Feature addition, API deprecation, or test refactoring rather than a bug fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "0ad98103b673649ee116b7681fd7a80fa07e1b18": {
+        "commitSha": "0ad98103b673649ee116b7681fd7a80fa07e1b18",
+        "subject": "Javadoc: Empty Javadoc line before the 1st tag.",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/dbutils/AbstractQueryRunner.java",
+          "src/main/java/org/apache/commons/dbutils/AsyncQueryRunner.java",
+          "src/main/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+          "src/main/java/org/apache/commons/dbutils/BeanProcessor.java",
+          "src/main/java/org/apache/commons/dbutils/DbUtils.java",
+          "src/main/java/org/apache/commons/dbutils/OutParameter.java",
+          "src/main/java/org/apache/commons/dbutils/ProxyFactory.java",
+          "src/main/java/org/apache/commons/dbutils/QueryLoader.java",
+          "src/main/java/org/apache/commons/dbutils/QueryRunner.java",
+          "src/main/java/org/apache/commons/dbutils/ResultSetIterator.java",
+          "src/main/java/org/apache/commons/dbutils/handlers/AbstractKeyedHandler.java",
+          "src/main/java/org/apache/commons/dbutils/handlers/ArrayHandler.java",
+          "src/main/java/org/apache/commons/dbutils/handlers/ArrayListHandler.java",
+          "src/main/java/org/apache/commons/dbutils/handlers/BeanHandler.java",
+          "src/main/java/org/apache/commons/dbutils/handlers/BeanMapHandler.java",
+          "src/main/java/org/apache/commons/dbutils/handlers/ColumnListHandler.java",
+          "src/main/java/org/apache/commons/dbutils/handlers/KeyedHandler.java",
+          "src/main/java/org/apache/commons/dbutils/handlers/MapHandler.java",
+          "src/main/java/org/apache/commons/dbutils/handlers/MapListHandler.java",
+          "src/main/java/org/apache/commons/dbutils/handlers/ScalarHandler.java",
+          "src/main/java/org/apache/commons/dbutils/wrappers/SqlNullCheckedResultSet.java",
+          "src/main/java/org/apache/commons/dbutils/wrappers/StringTrimmedResultSet.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "8c9b5b826682fb9d75b888396ae2f88571cd3450": {
+        "commitSha": "8c9b5b826682fb9d75b888396ae2f88571cd3450",
+        "subject": "ResultSetIterator.hasNext() now throws IllegalStateException instead of RuntimeException to wrap cases of SQLException",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/dbutils/ResultSetIterator.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[Negative-sample catch] Fixes ResultSetIterator.hasNext() exception wrapping to throw IllegalStateException.",
+        "reviewedAt": "2026-11-12"
+      }
+    },
+    "commons-validator": {
+      "05f96daab375b4168165806b4cd0ff71799ccf5b": {
+        "commitSha": "05f96daab375b4168165806b4cd0ff71799ccf5b",
+        "subject": "Fix Javadoc fail",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/IBANValidator.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "1cfcfc9bc8564584c2d300dc78262ef6fa174cfe": {
+        "commitSha": "1cfcfc9bc8564584c2d300dc78262ef6fa174cfe",
+        "subject": "Fix deprecations in test classes",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/validator/ValidatorTest.java",
+          "src/test/java/org/apache/commons/validator/routines/IBANValidatorTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Reviewed diff and commit message: non-bug-fix maintenance/cleanup commit.",
+        "reviewedAt": "2026-11-12"
+      },
+      "26c119385936e9d175599ce4cb329e89b290e14f": {
+        "commitSha": "26c119385936e9d175599ce4cb329e89b290e14f",
+        "subject": "Fix grammar issues in the JavaDoc comments (#308)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/EmailValidator.java",
+          "src/main/java/org/apache/commons/validator/Field.java",
+          "src/main/java/org/apache/commons/validator/GenericTypeValidator.java",
+          "src/main/java/org/apache/commons/validator/GenericValidator.java",
+          "src/main/java/org/apache/commons/validator/UrlValidator.java",
+          "src/main/java/org/apache/commons/validator/ValidatorAction.java",
+          "src/main/java/org/apache/commons/validator/ValidatorResources.java",
+          "src/main/java/org/apache/commons/validator/ValidatorResults.java",
+          "src/main/java/org/apache/commons/validator/routines/AbstractCalendarValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/CalendarValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/CodeValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/CreditCardValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/CurrencyValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/DateValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/EmailValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/IBANValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/ISBNValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/ISINValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/ISSNValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/PercentValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/RegexValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/TimeValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/UrlValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigit.java",
+          "src/main/java/org/apache/commons/validator/routines/checkdigit/ISBNCheckDigit.java",
+          "src/main/java/org/apache/commons/validator/routines/checkdigit/ModulusCheckDigit.java",
+          "src/main/java/org/apache/commons/validator/routines/checkdigit/VerhoeffCheckDigit.java",
+          "src/main/java/org/apache/commons/validator/util/Flags.java",
+          "src/main/java/org/apache/commons/validator/util/ValidatorUtils.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "2afb43acacc47921ab72bff380228dad25b6310b": {
+        "commitSha": "2afb43acacc47921ab72bff380228dad25b6310b",
+        "subject": "Better descriptions and fix spelling",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/IBANValidator.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "2e744c30b5f2c322a2a81ac10c4f236fe891dec0": {
+        "commitSha": "2e744c30b5f2c322a2a81ac10c4f236fe891dec0",
+        "subject": "[VALIDATOR-506] DomainValidator ICAAN Revocation for .lipsy",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/DomainValidator.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Routine IANA/ICANN TLD registry data table update in DomainValidator, not a software logic bug.",
+        "reviewedAt": "2026-11-12"
+      },
+      "49ec507e0fbb4c32d4a271c5bf10b557935fe8af": {
+        "commitSha": "49ec507e0fbb4c32d4a271c5bf10b557935fe8af",
+        "subject": "fix ISIN country-code check using untrimmed input",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/ISINValidator.java",
+          "src/test/java/org/apache/commons/validator/routines/ISINValidatorTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes ISINValidator country-code check bug caused by untrimmed input.",
+        "reviewedAt": "2026-11-12"
+      },
+      "6146f3e377fb0eb47bf5d38cd9c0798d7844d414": {
+        "commitSha": "6146f3e377fb0eb47bf5d38cd9c0798d7844d414",
+        "subject": "[VALIDATOR-497] IBANValidator: add method validate with validation status",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/IBANValidator.java",
+          "src/test/java/org/apache/commons/validator/routines/IBANValidatorTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Feature addition, API deprecation, or test refactoring rather than a bug fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "6778de804390a95e7e788717b2cfbdf2c381e0ff": {
+        "commitSha": "6778de804390a95e7e788717b2cfbdf2c381e0ff",
+        "subject": "Fix broken Javadoc HTML tags",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/RegexValidator.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "6b8601139c7c86594eb546bf00eb1651ecd5372a": {
+        "commitSha": "6b8601139c7c86594eb546bf00eb1651ecd5372a",
+        "subject": "fix long range check in GenericTypeValidator.formatLong",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/GenericTypeValidator.java",
+          "src/test/java/org/apache/commons/validator/GenericTypeValidatorTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes long range bounds check defect in GenericTypeValidator.formatLong.",
+        "reviewedAt": "2026-11-12"
+      },
+      "6cddb3cb1d851319e14b3e32d9b458ca6da1bc5b": {
+        "commitSha": "6cddb3cb1d851319e14b3e32d9b458ca6da1bc5b",
+        "subject": "fix swapped constant maps when processing an extended form",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/Form.java",
+          "src/test/java/org/apache/commons/validator/ExtensionTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes swapped constant maps bug when processing an extended Form.",
+        "reviewedAt": "2026-11-12"
+      },
+      "70501e9b9380f6879c7d4fe463cd4b5844958e68": {
+        "commitSha": "70501e9b9380f6879c7d4fe463cd4b5844958e68",
+        "subject": "[VALIDATOR-507] DomainValidator ICAAN Revocation for .pramerica\"",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/DomainValidator.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Routine IANA/ICANN TLD registry data table update in DomainValidator, not a software logic bug.",
+        "reviewedAt": "2026-11-12"
+      },
+      "77d7d1ea7d2b458764df2368e1fcd2ff23ad2163": {
+        "commitSha": "77d7d1ea7d2b458764df2368e1fcd2ff23ad2163",
+        "subject": "[VALIDATOR-503] Revocation Report for .dunlop",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/DomainValidator.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Routine IANA/ICANN TLD registry data table update in DomainValidator, not a software logic bug.",
+        "reviewedAt": "2026-11-12"
+      },
+      "7fbb64258b7c47e83955119c6398ad937a48b330": {
+        "commitSha": "7fbb64258b7c47e83955119c6398ad937a48b330",
+        "subject": "Fix SpotBugs USO_UNSAFE_METHOD_SYNCHRONIZATION in DomainValidator.",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/DomainValidator.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes SpotBugs USO_UNSAFE_METHOD_SYNCHRONIZATION thread-safety bug in DomainValidator.",
+        "reviewedAt": "2026-11-12"
+      },
+      "82022a49227a6704aaf3bb52ebd62e66a5f54098": {
+        "commitSha": "82022a49227a6704aaf3bb52ebd62e66a5f54098",
+        "subject": "Fix trailing comma",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "8b41ddbf2f8f3be8c074cd6b1e40b2cda757ff24": {
+        "commitSha": "8b41ddbf2f8f3be8c074cd6b1e40b2cda757ff24",
+        "subject": "fix RegexValidator.validate returning null for a valid match",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/RegexValidator.java",
+          "src/test/java/org/apache/commons/validator/routines/RegexValidatorTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes RegexValidator.validate returning null on a valid regex match.",
+        "reviewedAt": "2026-11-12"
+      },
+      "97b27f878db2bbbb0ab7a27a4378f242290085dd": {
+        "commitSha": "97b27f878db2bbbb0ab7a27a4378f242290085dd",
+        "subject": "Fix malformed Javadoc comments",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/Validator.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "9c2383e05eac00a66bd7800f80efd69c00254aaa": {
+        "commitSha": "9c2383e05eac00a66bd7800f80efd69c00254aaa",
+        "subject": "[VALIDATOR-508] DomainValidator ICAAN Revocation for .redstone",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/DomainValidator.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Routine IANA/ICANN TLD registry data table update in DomainValidator, not a software logic bug.",
+        "reviewedAt": "2026-11-12"
+      },
+      "9d276ce229306636903f47e3ef4ad46485ed7496": {
+        "commitSha": "9d276ce229306636903f47e3ef4ad46485ed7496",
+        "subject": "[VALIDATOR-503] DomainValidator revocation for .dunlop: https://www.iana.org/reports/tld-transfer/20251021-dunlop",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/DomainValidator.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Routine IANA/ICANN TLD registry data table update in DomainValidator, not a software logic bug.",
+        "reviewedAt": "2026-11-12"
+      },
+      "a82f8f1a2f3e661d7f2efe16ab229674f34704d6": {
+        "commitSha": "a82f8f1a2f3e661d7f2efe16ab229674f34704d6",
+        "subject": "Fix broken build (Checkstyle)",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/validator/routines/DomainValidatorTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "cf4cd77c77f01af775399ee45a15e9fa8e1e4340": {
+        "commitSha": "cf4cd77c77f01af775399ee45a15e9fa8e1e4340",
+        "subject": "[VALIDATOR-505] DomainValidator ICAAN .kerrylogistics Registry Agreement - Terminated",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/DomainValidator.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Routine IANA/ICANN TLD registry data table update in DomainValidator, not a software logic bug.",
+        "reviewedAt": "2026-11-12"
+      },
+      "d898cb5195c3d7210d627cd067961914ece78146": {
+        "commitSha": "d898cb5195c3d7210d627cd067961914ece78146",
+        "subject": "Fix typos in Javadoc and comments",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/FormSet.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "eafeda9603ff1b8727dead728bb509b0e1ff6af0": {
+        "commitSha": "eafeda9603ff1b8727dead728bb509b0e1ff6af0",
+        "subject": "Fix BigIntegerValidator minValue(), maxValue(), and processParsedValue() for out of Long range values.",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/BigIntegerValidator.java",
+          "src/test/java/org/apache/commons/validator/routines/BigIntegerValidatorTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "Fixes BigIntegerValidator minValue(), maxValue(), and processParsedValue() for values outside Long range.",
+        "reviewedAt": "2026-11-12"
+      },
+      "f389485693a508dbd3959b4ff47751bc22476b5d": {
+        "commitSha": "f389485693a508dbd3959b4ff47751bc22476b5d",
+        "subject": "[VALIDATOR-502] Circular dependency in static initialization causes NPE in GenericValidator.isCreditCard()",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/GenericValidator.java",
+          "src/test/java/org/apache/commons/validator/routines/CreditCardValidatorTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[VALIDATOR-502] Fixes circular dependency in static initialization causing NullPointerException in GenericValidator.isCreditCard().",
+        "reviewedAt": "2026-11-12"
+      },
+      "f693a824274819e52806843bcb5197a6d6971eaf": {
+        "commitSha": "f693a824274819e52806843bcb5197a6d6971eaf",
+        "subject": "[VALIDATOR-504] DomainValidator ICAAN .kerrylogistics Registry Agreement - Terminated",
+        "sourceKind": "issue-or-keyword-candidate",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/DomainValidator.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Routine IANA/ICANN TLD registry data table update in DomainValidator, not a software logic bug.",
+        "reviewedAt": "2026-11-12"
+      },
+      "575a10a4572b3bcb049461a6de90711a89cd7c7d": {
+        "commitSha": "575a10a4572b3bcb049461a6de90711a89cd7c7d",
+        "subject": "Deprecate ValidatorUtils.ValidatorUtils()",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/util/ValidatorUtils.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Feature addition, API deprecation, or test refactoring rather than a bug fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "a8cac1819736a42dfd18938d77f4800cf6508dfc": {
+        "commitSha": "a8cac1819736a42dfd18938d77f4800cf6508dfc",
+        "subject": "Remove unused test code",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/validator/routines/TimeValidatorTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Feature addition, API deprecation, or test refactoring rather than a bug fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "af20981bee63e0f631641e945141e86efefe51b6": {
+        "commitSha": "af20981bee63e0f631641e945141e86efefe51b6",
+        "subject": "reject signed hex group in isValidInet6Address",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/InetAddressValidator.java",
+          "src/test/java/org/apache/commons/validator/routines/InetAddressValidatorTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[Negative-sample catch] Fixes InetAddressValidator bug accepting invalid signed hex groups in IPv6 addresses.",
+        "reviewedAt": "2026-11-12"
+      },
+      "1b4e82c54e3e5a207a140299f7186ad88ae2f592": {
+        "commitSha": "1b4e82c54e3e5a207a140299f7186ad88ae2f592",
+        "subject": "Preserve exact value in BigDecimal and BigInteger validate (#406).",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/AbstractNumberValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/BigDecimalValidator.java",
+          "src/main/java/org/apache/commons/validator/routines/BigIntegerValidator.java",
+          "src/test/java/org/apache/commons/validator/routines/BigDecimalValidatorTest.java",
+          "src/test/java/org/apache/commons/validator/routines/BigIntegerValidatorTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "confirmed",
+        "reviewer2": "23110158",
+        "decision2": "confirmed",
+        "finalDecision": "confirmed",
+        "reason": "[Negative-sample catch] Fixes precision loss bug in BigDecimal and BigInteger validation (#406).",
+        "reviewedAt": "2026-11-12"
+      },
+      "39e57f65030ca1bbf580cddcd66a0ffb76bd1650": {
+        "commitSha": "39e57f65030ca1bbf580cddcd66a0ffb76bd1650",
+        "subject": "Import once instead of using FQCN over and over.",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/GenericTypeValidator.java",
+          "src/main/java/org/apache/commons/validator/ISBNValidator.java",
+          "src/main/java/org/apache/commons/validator/ValidatorException.java",
+          "src/main/java/org/apache/commons/validator/routines/DomainValidator.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "a3bfb79db204a647efc5fbeac492bfb9decb6828": {
+        "commitSha": "a3bfb79db204a647efc5fbeac492bfb9decb6828",
+        "subject": "Javadoc",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/DomainValidator.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Non-functional documentation, Javadoc, or comment/spelling update; does not alter runtime behavior.",
+        "reviewedAt": "2026-11-12"
+      },
+      "8bf6b309c242001bcb0c0c9d2d2857db4bf3b05a": {
+        "commitSha": "8bf6b309c242001bcb0c0c9d2d2857db4bf3b05a",
+        "subject": "Merge some string literals",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "src/test/java/org/apache/commons/validator/EmailTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Code style, formatting, or static-analysis rule configuration cleanup without behavioral defect fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "6dc6c136bc7fd490662b927b1571df44720af1e7": {
+        "commitSha": "6dc6c136bc7fd490662b927b1571df44720af1e7",
+        "subject": "Deprecate GenericTypeValidator.GenericTypeValidator()",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/GenericTypeValidator.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Feature addition, API deprecation, or test refactoring rather than a bug fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "54131ff62326d52b55a64b1b4f12027c0061a5d1": {
+        "commitSha": "54131ff62326d52b55a64b1b4f12027c0061a5d1",
+        "subject": "Refactor copy pasta",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/test/java/org/apache/commons/validator/routines/AbstractCalendarValidatorTest.java",
+          "src/test/java/org/apache/commons/validator/routines/CalendarValidatorTest.java",
+          "src/test/java/org/apache/commons/validator/routines/DateValidatorTest.java",
+          "src/test/java/org/apache/commons/validator/routines/TimeValidatorTest.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Feature addition, API deprecation, or test refactoring rather than a bug fix.",
+        "reviewedAt": "2026-11-12"
+      },
+      "08f0b4c462312127e774cc507a01f420f367f5e2": {
+        "commitSha": "08f0b4c462312127e774cc507a01f420f367f5e2",
+        "subject": "IBANValidator: remove unneeded expression",
+        "sourceKind": "negative-sample-seed-23110170",
+        "touchedEligiblePaths": [
+          "src/main/java/org/apache/commons/validator/routines/IBANValidator.java"
+        ],
+        "reviewer1": "23110170",
+        "decision1": "rejected",
+        "reviewer2": "23110158",
+        "decision2": "rejected",
+        "finalDecision": "rejected",
+        "reason": "Reviewed diff and commit message: non-bug-fix maintenance/cleanup commit.",
+        "reviewedAt": "2026-11-12"
+      }
+    }
+  }
+}

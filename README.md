@@ -72,8 +72,10 @@ Phần tuần 5 của Tưởng: [bàn giao](docs/week-05/README.md), [thuật to
 Phần tuần 6 của Tưởng: [module thu thập Git](docs/week-06/git-ingestion.md) — hợp đồng `Fact`/lineage cho lớp lưu trữ, lệnh chạy mẫu không cần database, minh chứng test và ba điểm còn mở cần hai người chốt.
 
 Phần tuần 7 của Tưởng: [bộ tính chỉ số, Lizard XML, adapter AnalysisPipeline và LlmReviewService](docs/week-07/metric-and-pipeline-tuong.md) — cài đặt công thức Metric Spec v1, lệnh chạy mẫu full pipeline và 41/41 test không cần database.
-# Bổ sung tuần 8
-
-Tuần 9 của Toản: [RQ2 — snapshot lịch sử, bộ chạy thử và báo cáo](docs/week-09/README.md). Đã chạy 9 snapshot trên 3 dự án Java; cả 6 cặp bị chặn do coverage chưa đầy đủ. Xem dữ liệu và giới hạn trước khi diễn giải thành kết luận nghiên cứu.
+# Bổ sung tuần 8 và tuần 9
 
 [Bộ bàn giao tuần 8 của nhóm](docs/week-08/README.md): dashboard React dữ liệu thật, AI preview/review API (ReviewContextBuilder, AiReviewController, V4__ai_review_audit.sql), adapter HTTP LLM provider thật ([HttpLlmProviderAdapter](docs/week-08/provider-and-review-tuong.md)), Docker frontend/backend có Lizard 1.24.3 và minh chứng tích hợp (115 test backend duy nhất, 11 UI test). Xem [runbook](docs/week-08/runbook.md) để bật pipeline có Lizard và cấu hình APP_AI_REVIEW_PROVIDER_*.
+
+[Bộ bàn giao tuần 9 của nhóm (RQ1 & RQ2)](docs/week-09/README.md):
+- **Phần RQ1 (Trần Văn Tưởng — 23110170):** Chốt giao thức thực nghiệm v1 ([rq1-protocol.md](docs/week-09/rq1-protocol.md)), đóng băng 5 kho Java OSS chọn mù ([rq1-frozen-manifest.json](docs/week-09/evidence/rq1-frozen-manifest.json)), rà soát thủ công `141` commit ứng viên/mẫu âm (`seed=23110170`), chạy `run_rq1.py` đánh giá xếp hạng trên `401` file Java đủ điều kiện ([kết quả RQ1](docs/week-09/evidence/rq1/results.md)) và xác nhận tái lập khớp SHA-256 `13/13` file JSON.
+- **Phần RQ2 (Trần Quang Toản — 23110158):** Cài đặt CLI `HistoricalSnapshotExport.java`, `run_rq2.py`, `rq2_trends.py`; chạy `9/9` snapshot lịch sử trên 3 dự án Java và `6` cặp đối chiếu ([kết quả RQ2](docs/week-09/evidence/pilot/results.md)), xác nhận tái lập khớp SHA-256 `15/15` file JSON.

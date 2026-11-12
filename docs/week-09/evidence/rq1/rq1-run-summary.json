@@ -1,0 +1,515 @@
+{
+  "schemaVersion": 1,
+  "kind": "RQ1_TEMPORAL_SPLIT_RANKING_EVALUATION",
+  "manifestSha256": "1bcbd21bd9573c8e49c51739a201fbc518d79820d3ddc67433b51e06af3324cf",
+  "reviewsSha256": "7afa55e872c50f4f9b2da66f7c91448c1164f7b8ebf36ee94fbc6791515cd76f",
+  "datasetSha256": "30f28e41b1d249086286c50a8f954f0bdad6e9f3ad4d956282fef6c4e36cb8b9",
+  "evaluationSha256": "404a4509af284ea6349d6dc73a0d760ce724ecde0bbedbfc7a11ecbd4cb7397b",
+  "javaVersion": "openjdk version \"21.0.10\" 2026-01-20\nOpenJDK Runtime Environment JBR-21.0.10+1-1163.108-nomod (build 21.0.10+1-b1163.108)\nOpenJDK 64-Bit Server VM JBR-21.0.10+1-1163.108-nomod (build 21.0.10+1-b1163.108, mixed mode, sharing)",
+  "gitVersion": "git version 2.52.0.windows.1",
+  "toolSha256": {
+    "run_rq1.py": "5b9d0fbf4f4778564ef04892ff6a00d176fefc26ff37558f09f3742ffeb8f496",
+    "evaluate_rankings.py": "2800f913eb546caa43da52a47b9a24a73fb070cc8a9c4d9162d36cdab2d8fde6"
+  },
+  "repositories": [
+    {
+      "repository": "commons-csv",
+      "status": "EVALUATED",
+      "totalJavaFiles": 49,
+      "eligibleFiles": 43,
+      "excludedByReason": {
+        "LINEAGE_AMBIGUOUS": 3,
+        "NO_FUNCTIONS": 3
+      },
+      "predictionCommitsTouchingEligible": 190,
+      "candidateCommitsAudited": 28,
+      "negativeSampleCommitsAudited": 10,
+      "confirmedBugFixCommits": 17,
+      "rejectedCandidateCommits": 15,
+      "confirmedViaNegativeSample": 4,
+      "positives": 12,
+      "naiveKeywordPositives": 21,
+      "spearmanRhoWithBugFixCount": {
+        "frequency": 0.6241273444256469,
+        "complexity": 0.6066703813409019,
+        "hotspot": 0.6282429015317162
+      },
+      "observationSnapshot": "commons-csv-obs.json",
+      "observationSha256": "a2feed86f1a7d8dd9d1d024bf9688ad7997222352e0290e3a091c62322969a44",
+      "predictionSnapshot": "commons-csv-pred.json",
+      "predictionSha256": "e436b72762c23b4723fc576e092504b590a44e11a53ea747d00552a8b78855f8",
+      "observationSha": "560a699978fffa88b0712c2790fa77eccd59f6c9",
+      "endSha": "fde765d64e409912013d7bb6b9a9b5784b9f2f56",
+      "cutoff": "2024-09-18T21:52:03Z",
+      "realizedCommitRatio": 0.799933,
+      "productionMainJavaEligible": 9,
+      "productionMainJavaPositives": 6
+    },
+    {
+      "repository": "commons-codec",
+      "status": "EVALUATED",
+      "totalJavaFiles": 156,
+      "eligibleFiles": 126,
+      "excludedByReason": {
+        "NO_FUNCTIONS": 16,
+        "LINEAGE_AMBIGUOUS": 14
+      },
+      "predictionCommitsTouchingEligible": 287,
+      "candidateCommitsAudited": 45,
+      "negativeSampleCommitsAudited": 10,
+      "confirmedBugFixCommits": 25,
+      "rejectedCandidateCommits": 21,
+      "confirmedViaNegativeSample": 1,
+      "positives": 33,
+      "naiveKeywordPositives": 49,
+      "spearmanRhoWithBugFixCount": {
+        "frequency": 0.12971258587602247,
+        "complexity": 0.2371349431380111,
+        "hotspot": 0.2244850906584799
+      },
+      "observationSnapshot": "commons-codec-obs.json",
+      "observationSha256": "3f4a095f835f3e0c82f6138661d1d4cb14a6b13b26775bee02762952361050c8",
+      "predictionSnapshot": "commons-codec-pred.json",
+      "predictionSha256": "bc45e3574620a97a6e241babcebb721ce300b2b9086bd2a4e021e7aa709ea288",
+      "observationSha": "194065ddf9ad6560fc8c1cf77d864b5e5bf233f1",
+      "endSha": "b1f7ba74344e2f5b3acc5938388c9b3005d567f6",
+      "cutoff": "2024-12-28T12:33:19Z",
+      "realizedCommitRatio": 0.800112,
+      "productionMainJavaEligible": 60,
+      "productionMainJavaPositives": 16
+    },
+    {
+      "repository": "commons-dbutils",
+      "status": "EVALUATED",
+      "totalJavaFiles": 95,
+      "eligibleFiles": 84,
+      "excludedByReason": {
+        "NO_FUNCTIONS": 10,
+        "LINEAGE_AMBIGUOUS": 1
+      },
+      "predictionCommitsTouchingEligible": 38,
+      "candidateCommitsAudited": 4,
+      "negativeSampleCommitsAudited": 10,
+      "confirmedBugFixCommits": 4,
+      "rejectedCandidateCommits": 2,
+      "confirmedViaNegativeSample": 2,
+      "positives": 4,
+      "naiveKeywordPositives": 4,
+      "spearmanRhoWithBugFixCount": {
+        "frequency": 0.08476180974786973,
+        "complexity": 0.24130180062276618,
+        "hotspot": 0.2650687275747323
+      },
+      "observationSnapshot": "commons-dbutils-obs.json",
+      "observationSha256": "43685d9850f442b51485b508c324d0c04cd6d5afd6ade7df5814b8a2ec2e7a64",
+      "predictionSnapshot": "commons-dbutils-pred.json",
+      "predictionSha256": "434f75030a021fb6201838ac268b6d0b34abb13e6dfc2d0af883afd772b32275",
+      "observationSha": "710c447448b40ca1e6b8d467efc32477f711e4ab",
+      "endSha": "a95b664b8026483ee5179f397c90578a0f63b4d1",
+      "cutoff": "2024-09-20T21:08:53Z",
+      "realizedCommitRatio": 0.800129,
+      "productionMainJavaEligible": 39,
+      "productionMainJavaPositives": 1
+    },
+    {
+      "repository": "commons-validator",
+      "status": "EVALUATED",
+      "totalJavaFiles": 160,
+      "eligibleFiles": 148,
+      "excludedByReason": {
+        "LINEAGE_AMBIGUOUS": 6,
+        "NO_FUNCTIONS": 6
+      },
+      "predictionCommitsTouchingEligible": 226,
+      "candidateCommitsAudited": 24,
+      "negativeSampleCommitsAudited": 10,
+      "confirmedBugFixCommits": 9,
+      "rejectedCandidateCommits": 17,
+      "confirmedViaNegativeSample": 2,
+      "positives": 18,
+      "naiveKeywordPositives": 44,
+      "spearmanRhoWithBugFixCount": {
+        "frequency": 0.1527399959037018,
+        "complexity": 0.15686624863341697,
+        "hotspot": 0.1748690636445739
+      },
+      "observationSnapshot": "commons-validator-obs.json",
+      "observationSha256": "c67e3b8b6efd1c40515a7c2cb40556c1644ab04623c000c0c91e0028437b8a94",
+      "predictionSnapshot": "commons-validator-pred.json",
+      "predictionSha256": "c7d2e8c5bf8f55f0231808d4f38ca6d2943024acba9037a7cb82649debc5d723",
+      "observationSha": "195f71b127528b71a33d3357528c501503b5c4bc",
+      "endSha": "8ca512b49d1ca58b61ebf11af82f0e714fb3be56",
+      "cutoff": "2024-12-26T15:24:03Z",
+      "realizedCommitRatio": 0.800145,
+      "productionMainJavaEligible": 63,
+      "productionMainJavaPositives": 10
+    },
+    {
+      "repository": "javapoet",
+      "status": "EXCLUDED_ZERO_ELIGIBLE_FILES",
+      "totalJavaFiles": 36,
+      "eligibleFiles": 0,
+      "excludedByReason": {
+        "LINEAGE_AMBIGUOUS": 36
+      },
+      "observationSnapshot": "javapoet-obs.json",
+      "observationSha256": "6b05a393e1494624eb2dc814c95cd1238058c1791eaa651e001587c82d3c95c6",
+      "predictionSnapshot": "javapoet-pred.json",
+      "predictionSha256": "bcc960c9189cdcab4d72c14ea4056b87d7cdb47ebaf56964004b076f167f7bda",
+      "observationSha": "3f4d5c2c2eebc3915ab0f705f38d11a9f9b4237b",
+      "endSha": "b9017a9503b76e11b4ad4c1a9f050e2d29112cb0",
+      "cutoff": "2018-04-29T00:18:33Z",
+      "realizedCommitRatio": 0.79966
+    }
+  ],
+  "macroPrimary": {
+    "frequency": {
+      "MAP": {
+        "value": 0.3289998431089365,
+        "validCases": 4
+      },
+      "atK": {
+        "5": {
+          "precision": {
+            "value": 0.4,
+            "validCases": 4
+          },
+          "recall": {
+            "value": 0.17487373737373738,
+            "validCases": 4
+          }
+        },
+        "10": {
+          "precision": {
+            "value": 0.375,
+            "validCases": 4
+          },
+          "recall": {
+            "value": 0.28030303030303033,
+            "validCases": 4
+          }
+        },
+        "20": {
+          "precision": {
+            "value": 0.2875,
+            "validCases": 4
+          },
+          "recall": {
+            "value": 0.4356060606060606,
+            "validCases": 4
+          }
+        }
+      }
+    },
+    "complexity": {
+      "MAP": {
+        "value": 0.3862339011005088,
+        "validCases": 4
+      },
+      "atK": {
+        "5": {
+          "precision": {
+            "value": 0.45,
+            "validCases": 4
+          },
+          "recall": {
+            "value": 0.18244949494949494,
+            "validCases": 4
+          }
+        },
+        "10": {
+          "precision": {
+            "value": 0.425,
+            "validCases": 4
+          },
+          "recall": {
+            "value": 0.28914141414141414,
+            "validCases": 4
+          }
+        },
+        "20": {
+          "precision": {
+            "value": 0.3375,
+            "validCases": 4
+          },
+          "recall": {
+            "value": 0.5404040404040404,
+            "validCases": 4
+          }
+        }
+      }
+    },
+    "hotspot": {
+      "MAP": {
+        "value": 0.3917774095662569,
+        "validCases": 4
+      },
+      "atK": {
+        "5": {
+          "precision": {
+            "value": 0.4,
+            "validCases": 4
+          },
+          "recall": {
+            "value": 0.12626262626262624,
+            "validCases": 4
+          }
+        },
+        "10": {
+          "precision": {
+            "value": 0.4,
+            "validCases": 4
+          },
+          "recall": {
+            "value": 0.30113636363636365,
+            "validCases": 4
+          }
+        },
+        "20": {
+          "precision": {
+            "value": 0.3625,
+            "validCases": 4
+          },
+          "recall": {
+            "value": 0.5618686868686869,
+            "validCases": 4
+          }
+        }
+      }
+    }
+  },
+  "sensitivityMacro": {
+    "productionMainJavaOnly": {
+      "frequency": {
+        "MAP": {
+          "value": 0.38310069672237235,
+          "validCases": 4
+        },
+        "atK": {
+          "5": {
+            "precision": {
+              "value": 0.45,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.2635416666666667,
+              "validCases": 4
+            }
+          },
+          "10": {
+            "precision": {
+              "value": 0.36666666666666664,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.6375,
+              "validCases": 4
+            }
+          },
+          "20": {
+            "precision": {
+              "value": 0.3541666666666667,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.775,
+              "validCases": 4
+            }
+          }
+        }
+      },
+      "complexity": {
+        "MAP": {
+          "value": 0.44361095203377143,
+          "validCases": 4
+        },
+        "atK": {
+          "5": {
+            "precision": {
+              "value": 0.45,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.2635416666666667,
+              "validCases": 4
+            }
+          },
+          "10": {
+            "precision": {
+              "value": 0.44166666666666665,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.684375,
+              "validCases": 4
+            }
+          },
+          "20": {
+            "precision": {
+              "value": 0.3416666666666667,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.75,
+              "validCases": 4
+            }
+          }
+        }
+      },
+      "hotspot": {
+        "MAP": {
+          "value": 0.42979960305834136,
+          "validCases": 4
+        },
+        "atK": {
+          "5": {
+            "precision": {
+              "value": 0.4,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.24791666666666667,
+              "validCases": 4
+            }
+          },
+          "10": {
+            "precision": {
+              "value": 0.39166666666666666,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.653125,
+              "validCases": 4
+            }
+          },
+          "20": {
+            "precision": {
+              "value": 0.3541666666666667,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.75625,
+              "validCases": 4
+            }
+          }
+        }
+      }
+    },
+    "unfilteredKeywordHeuristic": {
+      "frequency": {
+        "MAP": {
+          "value": 0.4882743954666253,
+          "validCases": 4
+        },
+        "atK": {
+          "5": {
+            "precision": {
+              "value": 0.6,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.15437538651824365,
+              "validCases": 4
+            }
+          },
+          "10": {
+            "precision": {
+              "value": 0.575,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.29684601113172543,
+              "validCases": 4
+            }
+          },
+          "20": {
+            "precision": {
+              "value": 0.46249999999999997,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.40402752009894866,
+              "validCases": 4
+            }
+          }
+        }
+      },
+      "complexity": {
+        "MAP": {
+          "value": 0.5897647032560254,
+          "validCases": 4
+        },
+        "atK": {
+          "5": {
+            "precision": {
+              "value": 0.7,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.22197742733457018,
+              "validCases": 4
+            }
+          },
+          "10": {
+            "precision": {
+              "value": 0.675,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.3116110080395795,
+              "validCases": 4
+            }
+          },
+          "20": {
+            "precision": {
+              "value": 0.6,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.5278293135435993,
+              "validCases": 4
+            }
+          }
+        }
+      },
+      "hotspot": {
+        "MAP": {
+          "value": 0.5730647084085494,
+          "validCases": 4
+        },
+        "atK": {
+          "5": {
+            "precision": {
+              "value": 0.7000000000000001,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.16515924551638836,
+              "validCases": 4
+            }
+          },
+          "10": {
+            "precision": {
+              "value": 0.675,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.2683982683982684,
+              "validCases": 4
+            }
+          },
+          "20": {
+            "precision": {
+              "value": 0.5875,
+              "validCases": 4
+            },
+            "recall": {
+              "value": 0.5227272727272727,
+              "validCases": 4
+            }
+          }
+        }
+      }
+    }
+  }
+}

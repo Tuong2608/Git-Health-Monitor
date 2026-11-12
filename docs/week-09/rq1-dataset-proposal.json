@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "status": "GROUP_APPROVED_BLIND_RQ1_V1",
+  "protocolVersion": "week09-rq1-approved-v1",
+  "selectionDate": "2026-11-12",
+  "approvedBy": [
+    "23110170",
+    "23110158"
+  ],
+  "selectionRule": "Five public Java OSS libraries selected before computing model rankings; full reachable history <=10000 commits; OSI-approved open-source license verified via Git tree; not exposed during Week 8 integration testing (excluding gs-rest-service and spring-petclinic from RQ1 to prevent prior-exposure bias). Retain repositories with zero eligible files under v1 lineage rules in the manifest and exclusion log rather than replacing them.",
+  "splitPolicy": "80/20-nonmerge-committer-time-grouped-timestamp",
+  "targetObservationRatio": 0.8,
+  "observationDays": 180,
+  "predictionEndPolicy": "pinned-end-sha",
+  "percentilePolicy": "normalized-midrank-singleton-0.5",
+  "tieBreakPolicy": "fileId-ascending-by-lineageKey",
+  "K": [
+    5,
+    10,
+    20
+  ],
+  "candidateRegex": "\\b(?:fix|fixes|fixed|bug|bugs|defect|defects|npe|regression|incorrect|wrong|broken)\\b|(?:CSV|CODEC|DBUTILS|VALIDATOR)-\\d+",
+  "negativeSamplePerRepo": 10,
+  "seed": 23110170,
+  "repositories": [
+    {
+      "id": "commons-csv",
+      "url": "https://github.com/apache/commons-csv",
+      "reason": "Apache Commons tabular data format parser library; active Jira issue tracking (CSV-xxx) and non-merge history <=5000 commits"
+    },
+    {
+      "id": "commons-codec",
+      "url": "https://github.com/apache/commons-codec",
+      "reason": "Apache Commons encoding/phonetic/digest library; diverse package complexity and Jira issue tracking (CODEC-xxx)"
+    },
+    {
+      "id": "commons-dbutils",
+      "url": "https://github.com/apache/commons-dbutils",
+      "reason": "Apache Commons JDBC utility library; medium-sized Java codebase with interface/handler hierarchy (DBUTILS-xxx)"
+    },
+    {
+      "id": "commons-validator",
+      "url": "https://github.com/apache/commons-validator",
+      "reason": "Apache Commons validation routines library; high-CCN validation rules and Jira issue tracking (VALIDATOR-xxx)"
+    },
+    {
+      "id": "javapoet",
+      "url": "https://github.com/square/javapoet",
+      "reason": "Java source-code generation library using GitHub PR merge workflow; retained to audit v1 merge-lineage coverage behavior without cherry-picking"
+    }
+  ]
+}
