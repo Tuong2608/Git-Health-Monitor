@@ -1,0 +1,132 @@
+{
+  "description": "Full verify 118 tests plus targeted historical suite 4 (replacing earlier 3): 119 unique test cases",
+  "uniqueTests": 119,
+  "suites": [
+    {
+      "name": "com.example.demo.aireview.AiReviewDisabledTests",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.example.demo.aireview.AiReviewProviderUnavailableTests",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.example.demo.aireview.LlmReviewServiceTests",
+      "tests": "12",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.example.demo.DemoApplicationTests",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.example.demo.gitanalyzer.GitIngestionSampleTests",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.example.demo.gitanalyzer.GitIngestionTests",
+      "tests": "10",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.example.demo.gitanalyzer.HistoricalSnapshotExportTests",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.example.demo.gitanalyzer.RepositoryMetricAndPipelineTests",
+      "tests": "5",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.example.demo.gitanalyzer.Week8IntegrationTests",
+      "tests": "8",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.example.demo.monitoring.MonitoringApiTests",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.example.demo.monitoring.MonitoringDisabledTests",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.example.demo.monitoring.MonitoringIntegrationTests",
+      "tests": "15",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.example.demo.monitoring.Week7ApiTests",
+      "tests": "14",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.example.demo.monitoring.Week7WorkerHttpTests",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.example.demo.repository.GitHubRepositoryUrlTests",
+      "tests": "16",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.example.demo.repository.RegistrationDisabledTests",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.example.demo.repository.RepositoryApiTests",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.example.demo.repository.RepositoryContractTests",
+      "tests": "18",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "checkedFiles": 15,
+  "matchedFiles": 15,
+  "result": "PASS",
+  "files": [
+    {
+      "file": "commons-cli-0-to-1.json",
+      "sha256": "8514eacbc344c8a7f4b4f62206f3bb7c61ec798427f3d309b2e6814d40ca4f8a",
+      "replaySha256": "8514eacbc344c8a7f4b4f62206f3bb7c61ec798427f3d309b2e6814d40ca4f8a",
+      "match": true
+    },
+    {
+      "file": "commons-cli-0.json",
+      "sha256": "1b2fb0c283a3609028b05c8f59e1a8b67e84c3bde75ee1e891f99e9fc159370d",
+      "replaySha256": "1b2fb0c283a3609028b05c8f59e1a8b67e84c3bde75ee1e891f99e9fc159370d",
+      "match": true
+    },
+    {
+      "file": "commons-cli-1-to-2.json",
+      "sha256": "dc412f392d957012642d1cfe0f1e7b96f6c1f0b5fa734739586c4962f60f8ad3",
+      "replaySha256": "dc412f392d957012642d1cfe0f1e7b96f6c1f0b5fa734739586c4962f60f8ad3",
+      "match": true
+    },
+    {
+      "file": "commons-cli-1.json",
+      "sha256": "79c795af7f1ad20506a273ffa6e22166d6fdc07f2bf81aef42750508b8a6637b",
+      "replaySha256": "79c795af7f1ad20506a273ffa6e22166d6fdc07f2bf81aef42750508b8a6637b",
+      "match": true
+    },
+    {
+      "file": "commons-cli-2.json",
+      "sha256": "ae245a66ca805267dc850f85e15c409c82b0a294ded1c9440cd64094441421cb",
+      "replaySha256": "ae245a66ca805267dc850f85e15c409c82b0a294ded1c9440cd64094441421cb",
+      "match": true
+    },
+    {
+      "file": "gs-rest-service-0-to-1.json",
+      "sha256": "0add85b813624b278a01fb85fbd3c847f83710612779fd3aa2f77f86237f3f08",
+      "replaySha256": "0add85b813624b278a01fb85fbd3c847f83710612779fd3aa2f77f86237f3f08",
+      "match": true
+    },
+    {
+      "file": "gs-rest-service-0.json",
+      "sha256": "ca2bc2f4acc915034643d14201ee78cec48f95dd658ca1b15a7b5bb65e284282",
+      "replaySha256": "ca2bc2f4acc915034643d14201ee78cec48f95dd658ca1b15a7b5bb65e284282",
+      "match": true
+    },
+    {
+      "file": "gs-rest-service-1-to-2.json",
+      "sha256": "905a393b72f198583db3e6494f3db0ca327647b71c0ffd139824d48320ac6de5",
+      "replaySha256": "905a393b72f198583db3e6494f3db0ca327647b71c0ffd139824d48320ac6de5",
+      "match": true
+    },
+    {
+      "file": "gs-rest-service-1.json",
+      "sha256": "d22d66636c746efd17013ea7e26c9e8ef503963d003dd09e1e37c49e14efcb68",
+      "replaySha256": "d22d66636c746efd17013ea7e26c9e8ef503963d003dd09e1e37c49e14efcb68",
+      "match": true
+    },
+    {
+      "file": "gs-rest-service-2.json",
+      "sha256": "a62c58edb219fc7a70ffa2783acf5e9dec2bb817c438cd477d19b3c51991b4bf",
+      "replaySha256": "a62c58edb219fc7a70ffa2783acf5e9dec2bb817c438cd477d19b3c51991b4bf",
+      "match": true
+    },
+    {
+      "file": "spring-petclinic-0-to-1.json",
+      "sha256": "4396aae9f0cb51764e69c3669053516e9a29bdd259917a918fa73641acaf9d74",
+      "replaySha256": "4396aae9f0cb51764e69c3669053516e9a29bdd259917a918fa73641acaf9d74",
+      "match": true
+    },
+    {
+      "file": "spring-petclinic-0.json",
+      "sha256": "207b8bc6ff56fba4c4450d8ea68b840abdb20b25bd73ac82235e7ca43e5d53d4",
+      "replaySha256": "207b8bc6ff56fba4c4450d8ea68b840abdb20b25bd73ac82235e7ca43e5d53d4",
+      "match": true
+    },
+    {
+      "file": "spring-petclinic-1-to-2.json",
+      "sha256": "7d306e5124bb3cdf466d1d0d01995869a732400a10fdc5a33760f6efd55c5900",
+      "replaySha256": "7d306e5124bb3cdf466d1d0d01995869a732400a10fdc5a33760f6efd55c5900",
+      "match": true
+    },
+    {
+      "file": "spring-petclinic-1.json",
+      "sha256": "19ec86b3ca1a451740c9ff1d6146c178ed47fcfa24882fa2846f0ef4396bbcca",
+      "replaySha256": "19ec86b3ca1a451740c9ff1d6146c178ed47fcfa24882fa2846f0ef4396bbcca",
+      "match": true
+    },
+    {
+      "file": "spring-petclinic-2.json",
+      "sha256": "617896e009d48856c8589d966d735f4767696de31faac2db4507cc14893004cd",
+      "replaySha256": "617896e009d48856c8589d966d735f4767696de31faac2db4507cc14893004cd",
+      "match": true
+    }
+  ]
+}

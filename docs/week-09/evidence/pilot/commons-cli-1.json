@@ -1,0 +1,2444 @@
+{
+  "schemaVersion" : 1,
+  "repositoryUrl" : "https://github.com/apache/commons-cli",
+  "headSha" : "a477af7379dfd2c0f40cc85fb3dcfb1d21b9b6c4",
+  "windowStart" : "2024-07-05T00:00:00Z",
+  "windowEnd" : "2025-01-01T00:00:00Z",
+  "config" : "{\"metricVersion\":\"metric-v1\",\"pipelineVersion\":\"git-metrics-v2\",\"lizardVersion\":\"1.24.3\",\"jgitVersion\":\"7.8.0.202609011348-r\",\"authorAliases\":{},\"excludedPrefixes\":[\"vendor/\",\"generated/\",\"target/\",\"build/\"],\"maxCommits\":10000,\"maxTreeEntries\":100000,\"maxBlobBytes\":2097152,\"maxFacts\":500000,\"filterLargeChangesets\":false,\"maxChangesetFiles\":30,\"renameScore\":60,\"renameLimit\":1000}",
+  "metricVersion" : "metric-v1",
+  "reachableCommits" : 1840,
+  "commitCount" : 171,
+  "truncated" : false,
+  "summary" : {
+    "coverageComplete" : false,
+    "reachableCommits" : 1840,
+    "selectedCommits" : 171,
+    "currentJavaFiles" : 85,
+    "hotspotPopulation" : 36,
+    "ambiguousFiles" : 47,
+    "noFunctionFiles" : 4,
+    "filterLargeChangesets" : false,
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS", "NO_FUNCTIONS" ]
+  },
+  "files" : [ {
+    "lineageKey" : "00fb0a128018d7444b8efbb3da2860400b59e89e:src/main/java/org/apache/commons/cli/Converter.java",
+    "path" : "src/main/java/org/apache/commons/cli/Converter.java",
+    "frequency" : null,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "00fb0a128018d7444b8efbb3da2860400b59e89e:src/test/java/org/apache/commons/cli/ConverterTests.java",
+    "path" : "src/test/java/org/apache/commons/cli/ConverterTests.java",
+    "frequency" : null,
+    "maxCcn" : 2,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "085a1538fa20d8e48faad49eaffd697f024bf1af:src/test/java/org/apache/commons/cli/bug/BugCLI252Test.java",
+    "path" : "src/test/java/org/apache/commons/cli/bug/BugCLI252Test.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.1818274580193979,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0cafe222bb0956276977d550e94fcc554f005dc0:src/main/java/org/apache/commons/cli/Char.java",
+    "path" : "src/main/java/org/apache/commons/cli/Char.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.1818274580193979,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "19fb139a8b7ca101eceb442789d68f686e94c3d2:src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+    "frequency" : 1,
+    "maxCcn" : 9,
+    "hotspot" : 0.5394630739571202,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "1bf9e6c551b6a2e7d37291673a1ff77c338ce131:src/test/java/org/apache/commons/cli/bug/BugCLI265Test.java",
+    "path" : "src/test/java/org/apache/commons/cli/bug/BugCLI265Test.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.1818274580193979,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "2dac643fff43efcb7c42afca526e8af3938a60ba:src/test/java/org/apache/commons/cli/bug/BugCLI325Test.java",
+    "path" : "src/test/java/org/apache/commons/cli/bug/BugCLI325Test.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.2906712849910829,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "3950ce799bf77bfe98c5a06583298ce8d8b671bc:src/test/java/org/apache/commons/cli/AbstractParserTestCase.java",
+    "path" : "src/test/java/org/apache/commons/cli/AbstractParserTestCase.java",
+    "frequency" : null,
+    "maxCcn" : 3,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "3bc9b84d3ae252800eb234a7b41981a9fef8696d:src/test/java/org/apache/commons/cli/DisablePartialMatchingTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/DisablePartialMatchingTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "53af98d998fbec8822a4ef08df6ad670ed707814:src/test/java/org/apache/commons/cli/AlreadySelectedExceptionTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/AlreadySelectedExceptionTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.1818274580193979,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6b8205c03be604eb37cfe1e43cfec4123a79273a:src/main/java/org/apache/commons/cli/package-info.java",
+    "path" : "src/main/java/org/apache/commons/cli/package-info.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "afc13c445a4c80432e52d735685b272fadfeeddf:src/test/java/org/apache/commons/cli/bug/BugCLI266Test.java",
+    "path" : "src/test/java/org/apache/commons/cli/bug/BugCLI266Test.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.2641891715558133,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "c246bd419ee0efccd9a96f9d33486617d5d38a56:src/test/java/org/apache/commons/cli/TypeHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/TypeHandlerTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "c88339084264401004cc2535738d7472e344e253:src/test/java/org/apache/commons/cli/UnrecognizedOptionExceptionTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/UnrecognizedOptionExceptionTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.1818274580193979,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "ce86213e7e5aa10aa19194c4e172ca146b80c7fa:src/test/java/org/apache/commons/cli/bug/BugCLI312Test.java",
+    "path" : "src/test/java/org/apache/commons/cli/bug/BugCLI312Test.java",
+    "frequency" : 0,
+    "maxCcn" : 8,
+    "hotspot" : 0.3319700011034929,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/AlreadySelectedException.java",
+    "path" : "src/main/java/org/apache/commons/cli/AlreadySelectedException.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/BasicParser.java",
+    "path" : "src/main/java/org/apache/commons/cli/BasicParser.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/CommandLine.java",
+    "path" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "frequency" : null,
+    "maxCcn" : 6,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/CommandLineParser.java",
+    "path" : "src/main/java/org/apache/commons/cli/CommandLineParser.java",
+    "frequency" : null,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/GnuParser.java",
+    "path" : "src/main/java/org/apache/commons/cli/GnuParser.java",
+    "frequency" : null,
+    "maxCcn" : 12,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/HelpFormatter.java",
+    "path" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "frequency" : null,
+    "maxCcn" : 20,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/MissingArgumentException.java",
+    "path" : "src/main/java/org/apache/commons/cli/MissingArgumentException.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/MissingOptionException.java",
+    "path" : "src/main/java/org/apache/commons/cli/MissingOptionException.java",
+    "frequency" : null,
+    "maxCcn" : 4,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/Option.java",
+    "path" : "src/main/java/org/apache/commons/cli/Option.java",
+    "frequency" : null,
+    "maxCcn" : 5,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/OptionBuilder.java",
+    "path" : "src/main/java/org/apache/commons/cli/OptionBuilder.java",
+    "frequency" : null,
+    "maxCcn" : 2,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/OptionGroup.java",
+    "path" : "src/main/java/org/apache/commons/cli/OptionGroup.java",
+    "frequency" : null,
+    "maxCcn" : 5,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/OptionValidator.java",
+    "path" : "src/main/java/org/apache/commons/cli/OptionValidator.java",
+    "frequency" : null,
+    "maxCcn" : 7,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/Options.java",
+    "path" : "src/main/java/org/apache/commons/cli/Options.java",
+    "frequency" : null,
+    "maxCcn" : 4,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/ParseException.java",
+    "path" : "src/main/java/org/apache/commons/cli/ParseException.java",
+    "frequency" : null,
+    "maxCcn" : 3,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/Parser.java",
+    "path" : "src/main/java/org/apache/commons/cli/Parser.java",
+    "frequency" : null,
+    "maxCcn" : 16,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/PatternOptionBuilder.java",
+    "path" : "src/main/java/org/apache/commons/cli/PatternOptionBuilder.java",
+    "frequency" : null,
+    "maxCcn" : 10,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/PosixParser.java",
+    "path" : "src/main/java/org/apache/commons/cli/PosixParser.java",
+    "frequency" : null,
+    "maxCcn" : 15,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/TypeHandler.java",
+    "path" : "src/main/java/org/apache/commons/cli/TypeHandler.java",
+    "frequency" : null,
+    "maxCcn" : 2,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/UnrecognizedOptionException.java",
+    "path" : "src/main/java/org/apache/commons/cli/UnrecognizedOptionException.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/Util.java",
+    "path" : "src/main/java/org/apache/commons/cli/Util.java",
+    "frequency" : null,
+    "maxCcn" : 6,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/ApplicationTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/ApplicationTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/ArgumentIsOptionTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/ArgumentIsOptionTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/BasicParserTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/BasicParserTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/BugsTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/bug/BugsTest.java",
+    "frequency" : null,
+    "maxCcn" : 4,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/CommandLineTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "frequency" : null,
+    "maxCcn" : 11,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/GnuParserTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/GnuParserTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/HelpFormatterTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/HelpFormatterTest.java",
+    "frequency" : null,
+    "maxCcn" : 2,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/OptionBuilderTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/OptionBuilderTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/OptionGroupTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/OptionGroupTest.java",
+    "frequency" : null,
+    "maxCcn" : 3,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/OptionTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/OptionTest.java",
+    "frequency" : null,
+    "maxCcn" : 4,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/OptionsTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/OptionsTest.java",
+    "frequency" : null,
+    "maxCcn" : 3,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/PatternOptionBuilderTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/PosixParserTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/PosixParserTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/UtilTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/UtilTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/ValueTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/ValueTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/ValuesTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/ValuesTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/bug/BugCLI133Test.java",
+    "path" : "src/test/java/org/apache/commons/cli/bug/BugCLI133Test.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/bug/BugCLI13Test.java",
+    "path" : "src/test/java/org/apache/commons/cli/bug/BugCLI13Test.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/bug/BugCLI148Test.java",
+    "path" : "src/test/java/org/apache/commons/cli/bug/BugCLI148Test.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/bug/BugCLI162Test.java",
+    "path" : "src/test/java/org/apache/commons/cli/bug/BugCLI162Test.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/bug/BugCLI18Test.java",
+    "path" : "src/test/java/org/apache/commons/cli/bug/BugCLI18Test.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/bug/BugCLI71Test.java",
+    "path" : "src/test/java/org/apache/commons/cli/bug/BugCLI71Test.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "d9a9433131d8c821278af738deaf6146f11a25b9:src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+    "path" : "src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+    "frequency" : 2,
+    "maxCcn" : 4,
+    "hotspot" : 0.5126959555693245,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "d9a9433131d8c821278af738deaf6146f11a25b9:src/test/java/org/apache/commons/cli/DeprecatedAttributesTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/DeprecatedAttributesTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.1818274580193979,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "d9a9433131d8c821278af738deaf6146f11a25b9:src/test/java/org/apache/commons/cli/SolrCliTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/SolrCliTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.2906712849910829,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "d9a9433131d8c821278af738deaf6146f11a25b9:src/test/java/org/apache/commons/cli/SolrCreateToolTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/SolrCreateToolTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.2906712849910829,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e366a69318c97c70bd3278ffd8c61fad3c4a4456:src/java/org/apache/commons/cli/AmbiguousOptionException.java",
+    "path" : "src/main/java/org/apache/commons/cli/AmbiguousOptionException.java",
+    "frequency" : 0,
+    "maxCcn" : 3,
+    "hotspot" : 0.2777460299317655,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "path" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "frequency" : 11,
+    "maxCcn" : 5,
+    "hotspot" : 0.8268454930564447,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpWriter.java",
+    "path" : "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+    "frequency" : 8,
+    "maxCcn" : 1,
+    "hotspot" : 0.4494895063586364,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "path" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "frequency" : 11,
+    "maxCcn" : 6,
+    "hotspot" : 0.8672028691872108,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpWriter.java",
+    "path" : "src/main/java/org/apache/commons/cli/help/HelpAppendable.java",
+    "frequency" : 6,
+    "maxCcn" : 1,
+    "hotspot" : 0.4110712734268045,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "path" : "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "frequency" : 7,
+    "maxCcn" : 5,
+    "hotspot" : 0.7071067811865475,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+    "path" : "src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+    "frequency" : 3,
+    "maxCcn" : 1,
+    "hotspot" : 0.3481730744843982,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "path" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "frequency" : 18,
+    "maxCcn" : 13,
+    "hotspot" : 0.9928314487939459,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "path" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "frequency" : 10,
+    "maxCcn" : 12,
+    "hotspot" : 0.9211793682944862,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/Util.java",
+    "path" : "src/main/java/org/apache/commons/cli/help/Util.java",
+    "frequency" : 8,
+    "maxCcn" : 5,
+    "hotspot" : 0.749149177264394,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/package-info.java",
+    "path" : "src/main/java/org/apache/commons/cli/help/package-info.java",
+    "frequency" : 2,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+    "frequency" : 5,
+    "maxCcn" : 1,
+    "hotspot" : 0.3974407926641016,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+    "frequency" : 4,
+    "maxCcn" : 1,
+    "hotspot" : 0.3785040371283362,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextHelpWriterTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+    "frequency" : 7,
+    "maxCcn" : 3,
+    "hotspot" : 0.648074069840786,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextStyleTests.java",
+    "path" : "src/test/java/org/apache/commons/cli/help/TextStyleTests.java",
+    "frequency" : 3,
+    "maxCcn" : 1,
+    "hotspot" : 0.3481730744843982,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/UtilTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+    "frequency" : 4,
+    "maxCcn" : 3,
+    "hotspot" : 0.5781744669956589,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriter.java",
+    "path" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+    "frequency" : 8,
+    "maxCcn" : 10,
+    "hotspot" : 0.8475655413823615,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+    "frequency" : 10,
+    "maxCcn" : 1,
+    "hotspot" : 0.4810702354423639,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/WeirdOptionFormat.java",
+    "path" : "src/test/java/org/apache/commons/cli/example/WeirdOptionFormat.java",
+    "frequency" : 3,
+    "maxCcn" : 6,
+    "hotspot" : 0.6086116686897369,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriter.java",
+    "path" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+    "frequency" : 9,
+    "maxCcn" : 7,
+    "hotspot" : 0.8427360687858644,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendableTest.java",
+    "frequency" : 8,
+    "maxCcn" : 1,
+    "hotspot" : 0.4494895063586364,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "f43698527ef2b5ba15fe85d46d2d505418f68243:src/java/org/apache/commons/cli/DefaultParser.java",
+    "path" : "src/main/java/org/apache/commons/cli/DefaultParser.java",
+    "frequency" : 5,
+    "maxCcn" : 13,
+    "hotspot" : 0.7781453617940755,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "f43698527ef2b5ba15fe85d46d2d505418f68243:src/test/org/apache/commons/cli/DefaultParserTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+    "frequency" : 3,
+    "maxCcn" : 1,
+    "hotspot" : 0.3481730744843982,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "f4ab6c9dbe062e558dff98ae68c3bc7f5da06372:src/test/java/org/apache/commons/cli/ParseExceptionTest.java",
+    "path" : "src/test/java/org/apache/commons/cli/ParseExceptionTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.1818274580193979,
+    "unavailableReason" : null
+  } ],
+  "facts" : [ {
+    "commitSha" : "beb1ca866e613689807fc1676352929fb870cdb7",
+    "committerTime" : "2024-07-09T12:47:14Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/CommandLineTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "198838a546f6b870a82db4a690e906ebdc6bd70c",
+    "committerTime" : "2024-07-21T12:13:42Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "a70f96b01ef2a8f714a57c188610ea3e965361e9",
+    "committerTime" : "2024-07-26T11:56:15Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "a70f96b01ef2a8f714a57c188610ea3e965361e9",
+    "committerTime" : "2024-07-26T11:56:15Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/Option.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "a70f96b01ef2a8f714a57c188610ea3e965361e9",
+    "committerTime" : "2024-07-26T11:56:15Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/HelpFormatterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/HelpFormatterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/HelpFormatterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "cc3640816a078687a44e32a0aa43bc6da3440508",
+    "committerTime" : "2024-08-02T18:44:06Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/Option.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "c6b932cafe45ce96ec57503ae52574c57897cd89",
+    "committerTime" : "2024-08-08T11:47:08Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "8d9604d76f510642aaeb8156a43c99c8d70a504a",
+    "committerTime" : "2024-08-08T11:49:51Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "35cf8df921caf3a71b05e6e7e450ee81e514bead",
+    "committerTime" : "2024-08-08T13:32:03Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "35cf8df921caf3a71b05e6e7e450ee81e514bead",
+    "committerTime" : "2024-08-08T13:32:03Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/HelpFormatterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/HelpFormatterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/HelpFormatterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "a78cff6747c0948e889fec13045587f922c64321",
+    "committerTime" : "2024-08-10T12:44:58Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/Option.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "d6c2e6ba813e155b1b6f217a642ec5988c483a1c",
+    "committerTime" : "2024-08-10T12:49:23Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/Option.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4c6404c6820a7a6ebe7ee8956d1bf2d8d8cd5c4c",
+    "committerTime" : "2024-08-10T12:50:28Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "c9c933e873457fd2d4fe7914491928929bbea66c",
+    "committerTime" : "2024-08-10T12:51:28Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "ab4fed2364a86b1b4fd3dfb596167b48c760bdfb",
+    "committerTime" : "2024-08-10T12:52:12Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "25b52e4deac5cec186ba71e85b467404c755c9f3",
+    "committerTime" : "2024-08-10T12:53:14Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/Option.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "7ecbc0ce89af46b513169e149fba8657430303a0",
+    "committerTime" : "2024-08-10T12:53:36Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/CommandLineTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "bf4440d6b58f5fb2b3771e4f72a842a8eb441222",
+    "committerTime" : "2024-08-10T12:58:44Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "cc3d5be66bbe3dffbc2b1f00cefda35c05698e22",
+    "committerTime" : "2024-08-21T13:12:46Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/CommandLine.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "566a5d8150d5af283fe1ca3af3dd60a704dd025c",
+    "committerTime" : "2024-09-01T22:48:06Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/PatternOptionBuilderTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "625c3cd7ca10b07949e51b69745c07388c60d943",
+    "committerTime" : "2024-10-02T13:40:37Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/CommandLineTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "625c3cd7ca10b07949e51b69745c07388c60d943",
+    "committerTime" : "2024-10-02T13:40:37Z",
+    "lineageKey" : "00fb0a128018d7444b8efbb3da2860400b59e89e:src/test/java/org/apache/commons/cli/ConverterTests.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/ConverterTests.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/ConverterTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "625c3cd7ca10b07949e51b69745c07388c60d943",
+    "committerTime" : "2024-10-02T13:40:37Z",
+    "lineageKey" : "19fb139a8b7ca101eceb442789d68f686e94c3d2:src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "7e66b8dd985911e4f72f9b68e1fad0825daa7088",
+    "committerTime" : "2024-10-02T13:44:46Z",
+    "lineageKey" : "d9a9433131d8c821278af738deaf6146f11a25b9:src/test/java/org/apache/commons/cli/SolrCliTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/SolrCliTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/SolrCliTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "7e66b8dd985911e4f72f9b68e1fad0825daa7088",
+    "committerTime" : "2024-10-02T13:44:46Z",
+    "lineageKey" : "d9a9433131d8c821278af738deaf6146f11a25b9:src/test/java/org/apache/commons/cli/SolrCreateToolTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/SolrCreateToolTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/SolrCreateToolTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "oldPath" : null,
+    "newPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpWriter.java",
+    "oldPath" : null,
+    "newPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpWriter.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "oldPath" : null,
+    "newPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpWriter.java",
+    "oldPath" : null,
+    "newPath" : "src/main/java/org/apache/commons/cli/help/HelpWriter.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "oldPath" : null,
+    "newPath" : "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+    "oldPath" : null,
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : null,
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "oldPath" : null,
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/Util.java",
+    "oldPath" : null,
+    "newPath" : "src/main/java/org/apache/commons/cli/help/Util.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/package-info.java",
+    "oldPath" : null,
+    "newPath" : "src/main/java/org/apache/commons/cli/help/package-info.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+    "oldPath" : null,
+    "newPath" : "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+    "oldPath" : null,
+    "newPath" : "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextHelpWriterTest.java",
+    "oldPath" : null,
+    "newPath" : "src/test/java/org/apache/commons/cli/help/TextHelpWriterTest.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextStyleTests.java",
+    "oldPath" : null,
+    "newPath" : "src/test/java/org/apache/commons/cli/help/TextStyleTests.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/UtilTest.java",
+    "oldPath" : null,
+    "newPath" : "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriter.java",
+    "oldPath" : null,
+    "newPath" : "src/test/java/org/apache/commons/example/cli/AptHelpWriter.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+    "oldPath" : null,
+    "newPath" : "src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/WeirdOptionFormat.java",
+    "oldPath" : null,
+    "newPath" : "src/test/java/org/apache/commons/example/cli/WeirdOptionFormat.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriter.java",
+    "oldPath" : null,
+    "newPath" : "src/test/java/org/apache/commons/example/cli/XhtmlHelpWriter.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94",
+    "committerTime" : "2024-10-14T18:23:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+    "oldPath" : null,
+    "newPath" : "src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpWriter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpWriter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/HelpWriter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/HelpWriter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/Util.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/Util.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/Util.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/TextHelpWriterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/TextHelpWriterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextStyleTests.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/TextStyleTests.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/TextStyleTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/UtilTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriter.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/AptHelpWriter.java",
+    "newPath" : "src/test/java/org/apache/commons/example/cli/AptHelpWriter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/WeirdOptionFormat.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/WeirdOptionFormat.java",
+    "newPath" : "src/test/java/org/apache/commons/example/cli/WeirdOptionFormat.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriter.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/XhtmlHelpWriter.java",
+    "newPath" : "src/test/java/org/apache/commons/example/cli/XhtmlHelpWriter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c113423ace1a0f772fc8056c2d5a3e91fffc80d5",
+    "committerTime" : "2024-10-14T19:00:14Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8677d165903d9ad462afae7b64cd616daf1f6ccd",
+    "committerTime" : "2024-10-14T19:15:31Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8677d165903d9ad462afae7b64cd616daf1f6ccd",
+    "committerTime" : "2024-10-14T19:15:31Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpWriter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+    "changeType" : "RENAME",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8677d165903d9ad462afae7b64cd616daf1f6ccd",
+    "committerTime" : "2024-10-14T19:15:31Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/HelpWriter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/HelpAppendable.java",
+    "changeType" : "RENAME",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8677d165903d9ad462afae7b64cd616daf1f6ccd",
+    "committerTime" : "2024-10-14T19:15:31Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8677d165903d9ad462afae7b64cd616daf1f6ccd",
+    "committerTime" : "2024-10-14T19:15:31Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "changeType" : "RENAME",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8677d165903d9ad462afae7b64cd616daf1f6ccd",
+    "committerTime" : "2024-10-14T19:15:31Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8677d165903d9ad462afae7b64cd616daf1f6ccd",
+    "committerTime" : "2024-10-14T19:15:31Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8677d165903d9ad462afae7b64cd616daf1f6ccd",
+    "committerTime" : "2024-10-14T19:15:31Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/TextHelpWriterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/TextHelpWriterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8677d165903d9ad462afae7b64cd616daf1f6ccd",
+    "committerTime" : "2024-10-14T19:15:31Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriter.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/AptHelpWriter.java",
+    "newPath" : "src/test/java/org/apache/commons/example/cli/AptHelpAppendable.java",
+    "changeType" : "RENAME",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8677d165903d9ad462afae7b64cd616daf1f6ccd",
+    "committerTime" : "2024-10-14T19:15:31Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8677d165903d9ad462afae7b64cd616daf1f6ccd",
+    "committerTime" : "2024-10-14T19:15:31Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriter.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/XhtmlHelpWriter.java",
+    "newPath" : "src/test/java/org/apache/commons/example/cli/XhtmlHelpAppendable.java",
+    "changeType" : "RENAME",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8677d165903d9ad462afae7b64cd616daf1f6ccd",
+    "committerTime" : "2024-10-14T19:15:31Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8ae17afe6431095f145196c406f232e0ceaf298c",
+    "committerTime" : "2024-10-14T19:25:20Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8ae17afe6431095f145196c406f232e0ceaf298c",
+    "committerTime" : "2024-10-14T19:25:20Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/HelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/HelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e047c336024f8b5c5bff5bd24ad8beaa7cc9f4d7",
+    "committerTime" : "2024-10-14T19:26:21Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/TextHelpWriterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+    "changeType" : "RENAME",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e047c336024f8b5c5bff5bd24ad8beaa7cc9f4d7",
+    "committerTime" : "2024-10-14T19:26:21Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/example/cli/AptHelpAppendableTest.java",
+    "changeType" : "RENAME",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e047c336024f8b5c5bff5bd24ad8beaa7cc9f4d7",
+    "committerTime" : "2024-10-14T19:26:21Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/example/cli/XhtmlHelpAppendableTest.java",
+    "changeType" : "RENAME",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "6f733018d3b49e9f6fee09d26a6bfb9fc538cac8",
+    "committerTime" : "2024-10-14T20:33:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "6f733018d3b49e9f6fee09d26a6bfb9fc538cac8",
+    "committerTime" : "2024-10-14T20:33:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "6f733018d3b49e9f6fee09d26a6bfb9fc538cac8",
+    "committerTime" : "2024-10-14T20:33:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriter.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/AptHelpAppendable.java",
+    "newPath" : "src/test/java/org/apache/commons/example/cli/AptHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "6f733018d3b49e9f6fee09d26a6bfb9fc538cac8",
+    "committerTime" : "2024-10-14T20:33:18Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriter.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/XhtmlHelpAppendable.java",
+    "newPath" : "src/test/java/org/apache/commons/example/cli/XhtmlHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "9830ec0af8b5558ac524f044b54537f3b22bd721",
+    "committerTime" : "2024-10-14T20:36:07Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "9830ec0af8b5558ac524f044b54537f3b22bd721",
+    "committerTime" : "2024-10-14T20:36:07Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/Util.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/Util.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/Util.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "52cb4debef1ef27b4261688b5bb800c87cd81b6c",
+    "committerTime" : "2024-10-14T20:39:35Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "52cb4debef1ef27b4261688b5bb800c87cd81b6c",
+    "committerTime" : "2024-10-14T20:39:35Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/Util.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/Util.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/Util.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "52cb4debef1ef27b4261688b5bb800c87cd81b6c",
+    "committerTime" : "2024-10-14T20:39:35Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/UtilTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "d0623e728f055bbef710efb0573db37eea163eb9",
+    "committerTime" : "2024-10-14T20:42:29Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "d0623e728f055bbef710efb0573db37eea163eb9",
+    "committerTime" : "2024-10-14T20:42:29Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "d0623e728f055bbef710efb0573db37eea163eb9",
+    "committerTime" : "2024-10-14T20:42:29Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/Util.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/Util.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/Util.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "aa79dde069000187da32392b11bd9796b958f4a1",
+    "committerTime" : "2024-10-14T20:43:01Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/Util.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/Util.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/Util.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8e881b9f05bbf56f77f7870c8784bb839c168826",
+    "committerTime" : "2024-10-15T22:16:02Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "aa8360c4c904b291bea76efa651a0eea7581c35e",
+    "committerTime" : "2024-10-15T22:25:40Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/Util.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/Util.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/Util.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/package-info.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/package-info.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/package-info.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriter.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/AptHelpAppendable.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+    "changeType" : "RENAME",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/AptHelpAppendableTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+    "changeType" : "RENAME",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/WeirdOptionFormat.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/WeirdOptionFormat.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/WeirdOptionFormat.java",
+    "changeType" : "RENAME",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriter.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/XhtmlHelpAppendable.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+    "changeType" : "RENAME",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/example/cli/XhtmlHelpAppendableTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendableTest.java",
+    "changeType" : "RENAME",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "62d1ba73661f7d3b2f4e36bc2db139bf5c6b068d",
+    "committerTime" : "2024-10-16T20:07:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextStyleTests.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/TextStyleTests.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/TextStyleTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "4535fae18f5ce7747ac77c3f1cb5eaadea9fc284",
+    "committerTime" : "2024-10-16T20:13:26Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/CommandLine.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4535fae18f5ce7747ac77c3f1cb5eaadea9fc284",
+    "committerTime" : "2024-10-16T20:13:26Z",
+    "lineageKey" : "f43698527ef2b5ba15fe85d46d2d505418f68243:src/java/org/apache/commons/cli/DefaultParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/DefaultParser.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/DefaultParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "4535fae18f5ce7747ac77c3f1cb5eaadea9fc284",
+    "committerTime" : "2024-10-16T20:13:26Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/Parser.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/Parser.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/Parser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4535fae18f5ce7747ac77c3f1cb5eaadea9fc284",
+    "committerTime" : "2024-10-16T20:13:26Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/CommandLineTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "e44db7a18ffc31400eeedaea749ac89f9ee654f6",
+    "committerTime" : "2024-10-16T22:37:13Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e44db7a18ffc31400eeedaea749ac89f9ee654f6",
+    "committerTime" : "2024-10-16T22:37:13Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e44db7a18ffc31400eeedaea749ac89f9ee654f6",
+    "committerTime" : "2024-10-16T22:37:13Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e44db7a18ffc31400eeedaea749ac89f9ee654f6",
+    "committerTime" : "2024-10-16T22:37:13Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e44db7a18ffc31400eeedaea749ac89f9ee654f6",
+    "committerTime" : "2024-10-16T22:37:13Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriter.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e44db7a18ffc31400eeedaea749ac89f9ee654f6",
+    "committerTime" : "2024-10-16T22:37:13Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e44db7a18ffc31400eeedaea749ac89f9ee654f6",
+    "committerTime" : "2024-10-16T22:37:13Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriter.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e44db7a18ffc31400eeedaea749ac89f9ee654f6",
+    "committerTime" : "2024-10-16T22:37:13Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendableTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendableTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e44db7a18ffc31400eeedaea749ac89f9ee654f6",
+    "committerTime" : "2024-10-16T22:37:13Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e44db7a18ffc31400eeedaea749ac89f9ee654f6",
+    "committerTime" : "2024-10-16T22:37:13Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e44db7a18ffc31400eeedaea749ac89f9ee654f6",
+    "committerTime" : "2024-10-16T22:37:13Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e44db7a18ffc31400eeedaea749ac89f9ee654f6",
+    "committerTime" : "2024-10-16T22:37:13Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/UtilTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "5d2c0dc04554729de2d59a088d39319400dba2aa",
+    "committerTime" : "2024-10-16T23:31:32Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "5d2c0dc04554729de2d59a088d39319400dba2aa",
+    "committerTime" : "2024-10-16T23:31:32Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/HelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/HelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "5d2c0dc04554729de2d59a088d39319400dba2aa",
+    "committerTime" : "2024-10-16T23:31:32Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "5d2c0dc04554729de2d59a088d39319400dba2aa",
+    "committerTime" : "2024-10-16T23:31:32Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriter.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "5d2c0dc04554729de2d59a088d39319400dba2aa",
+    "committerTime" : "2024-10-16T23:31:32Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "5d2c0dc04554729de2d59a088d39319400dba2aa",
+    "committerTime" : "2024-10-16T23:31:32Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriter.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "5d2c0dc04554729de2d59a088d39319400dba2aa",
+    "committerTime" : "2024-10-16T23:31:32Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendableTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendableTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "5d2c0dc04554729de2d59a088d39319400dba2aa",
+    "committerTime" : "2024-10-16T23:31:32Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "4bae1b57749047b5aaa09ad317bb19d25a22be20",
+    "committerTime" : "2024-10-17T14:21:08Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "49b14971cd3ce9be786004875288ef678c778488",
+    "committerTime" : "2024-10-17T15:10:16Z",
+    "lineageKey" : "f43698527ef2b5ba15fe85d46d2d505418f68243:src/java/org/apache/commons/cli/DefaultParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/DefaultParser.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/DefaultParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "49b14971cd3ce9be786004875288ef678c778488",
+    "committerTime" : "2024-10-17T15:10:16Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/CommandLineTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "49b14971cd3ce9be786004875288ef678c778488",
+    "committerTime" : "2024-10-17T15:10:16Z",
+    "lineageKey" : "f43698527ef2b5ba15fe85d46d2d505418f68243:src/test/org/apache/commons/cli/DefaultParserTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "49b14971cd3ce9be786004875288ef678c778488",
+    "committerTime" : "2024-10-17T15:10:16Z",
+    "lineageKey" : "2dac643fff43efcb7c42afca526e8af3938a60ba:src/test/java/org/apache/commons/cli/bug/BugCLI325Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/bug/BugCLI325Test.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/bug/BugCLI325Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "af7abb3586c401e32fead7e17182f024afaf85a8",
+    "committerTime" : "2024-10-17T15:18:49Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/CommandLine.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "af7abb3586c401e32fead7e17182f024afaf85a8",
+    "committerTime" : "2024-10-17T15:18:49Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/CommandLineTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "939d383d7da83af36a6c53bce2df6aaf47aefa1e",
+    "committerTime" : "2024-10-17T15:20:46Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/CommandLine.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "5ccd06757f0ffaa74a9a438b14799bfa57745e10",
+    "committerTime" : "2024-10-17T18:11:02Z",
+    "lineageKey" : "d9a9433131d8c821278af738deaf6146f11a25b9:src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "7c49ca2afae6addf676f82acea29fdb976ce1cfe",
+    "committerTime" : "2024-10-17T18:11:53Z",
+    "lineageKey" : "d9a9433131d8c821278af738deaf6146f11a25b9:src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "d6d13c51965d50594a2978d13e78ee62293b0508",
+    "committerTime" : "2024-10-18T12:25:17Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "d6d13c51965d50594a2978d13e78ee62293b0508",
+    "committerTime" : "2024-10-18T12:25:17Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "78ac6b7ebc2fc43bca974efbb907f9093014f96b",
+    "committerTime" : "2024-10-18T12:27:24Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "a46266452c9c85dadae3c43ca4f77042ca5ed04a",
+    "committerTime" : "2024-10-18T12:29:04Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e0740a425ba5438a35f39e8419afc282c0e75e1c",
+    "committerTime" : "2024-10-18T12:29:15Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "4b25bcc130a1640ecdbea25b2e621ec914baeb71",
+    "committerTime" : "2024-10-18T12:30:02Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "d9256e6b0454d8930c70adac3c60c544083cd127",
+    "committerTime" : "2024-10-18T12:30:49Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "52ce946f502c4198d7d1635cf94c20d9be02a5ee",
+    "committerTime" : "2024-10-18T12:31:43Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "a33b3292e98eed035b20d092bdf83596082fc226",
+    "committerTime" : "2024-10-18T12:33:40Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "cc9042c28aaf00c6742c67eec10733227acaae6f",
+    "committerTime" : "2024-10-18T12:38:49Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "cc9042c28aaf00c6742c67eec10733227acaae6f",
+    "committerTime" : "2024-10-18T12:38:49Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "a2f35cd17b1e8fd1127877dd2e46147c5c4894d5",
+    "committerTime" : "2024-10-18T12:38:59Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8c3e13f7c99146fbbff5faaf9fe9efd7bd153852",
+    "committerTime" : "2024-10-18T12:39:36Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "84bcb314d11e2262a9cf029dcf59189223f61eb6",
+    "committerTime" : "2024-10-18T12:40:28Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "180ef27c6c0952a1527e2e136bb77c01de5b3f62",
+    "committerTime" : "2024-10-18T12:44:21Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "dc625e20871a5921531f268c61801e0a9460094c",
+    "committerTime" : "2024-10-18T12:45:09Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "b6c2c5964f633298813cfa24204e8675ead2a968",
+    "committerTime" : "2024-10-18T12:46:02Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "9f5a4d99e48dbe2874bb9e15bb16e23244871fa4",
+    "committerTime" : "2024-10-18T12:55:04Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriter.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "ef11f175aba987b4396b14bb7518870d6b048c8d",
+    "committerTime" : "2024-10-18T13:57:03Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "6ce3fa3e0fd74ea60b6d663be240255e089056e3",
+    "committerTime" : "2024-10-18T13:57:12Z",
+    "lineageKey" : "f43698527ef2b5ba15fe85d46d2d505418f68243:src/java/org/apache/commons/cli/DefaultParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/DefaultParser.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/DefaultParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "ccebe9023819f3be431bf7cacbcf27321fbefe70",
+    "committerTime" : "2024-10-18T14:03:04Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "ccebe9023819f3be431bf7cacbcf27321fbefe70",
+    "committerTime" : "2024-10-18T14:03:04Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "ab04dd1b856765de690ccd0717280b6bd34925d3",
+    "committerTime" : "2024-10-18T14:04:45Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "ab04dd1b856765de690ccd0717280b6bd34925d3",
+    "committerTime" : "2024-10-18T14:04:45Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "ab04dd1b856765de690ccd0717280b6bd34925d3",
+    "committerTime" : "2024-10-18T14:04:45Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "84a0ac6b134cc48b39bcf2530325a0a7eff801cb",
+    "committerTime" : "2024-10-18T14:08:27Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendableTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendableTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e369f9e21c5b66c464a686f868335a3f5a18ee5f",
+    "committerTime" : "2024-10-18T14:09:07Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "35310c43e1defc5a42415a50c29ab38463cef578",
+    "committerTime" : "2024-10-18T14:09:30Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "fd49da5f98d817d90010ed7dbda50da357a4ced4",
+    "committerTime" : "2024-10-18T14:09:43Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "3bac60ac562a0ef6823d6ce8fb9e686f2ab6553b",
+    "committerTime" : "2024-10-18T21:38:33Z",
+    "lineageKey" : "f43698527ef2b5ba15fe85d46d2d505418f68243:src/test/org/apache/commons/cli/DefaultParserTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "967a3835b743a05ebcb1b87fcd917dae6e89b924",
+    "committerTime" : "2024-10-18T21:40:32Z",
+    "lineageKey" : "f43698527ef2b5ba15fe85d46d2d505418f68243:src/test/org/apache/commons/cli/DefaultParserTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "107c822f34ec25ddcdfb199ba255444cacec516f",
+    "committerTime" : "2024-10-19T11:56:41Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/HelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/HelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "107c822f34ec25ddcdfb199ba255444cacec516f",
+    "committerTime" : "2024-10-19T11:56:41Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriter.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "107c822f34ec25ddcdfb199ba255444cacec516f",
+    "committerTime" : "2024-10-19T11:56:41Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriter.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "1b7e71fff23b117a31259531ffe15b42f7d7d5ee",
+    "committerTime" : "2024-10-19T11:57:42Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/PatternOptionBuilderTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "3896533713d1e7541958a80b6e70f354c3a5da94",
+    "committerTime" : "2024-10-19T11:59:06Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/PatternOptionBuilderTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "e44b530f5fa35ec1343f03dac145e72824ce5597",
+    "committerTime" : "2024-10-19T12:04:20Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/bug/BugCLI71Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/bug/BugCLI71Test.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/bug/BugCLI71Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "e44b530f5fa35ec1343f03dac145e72824ce5597",
+    "committerTime" : "2024-10-19T12:04:20Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/BugsTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/bug/BugsTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/bug/BugsTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "db940468d84c648797ed13b436d24119b2f55f7c",
+    "committerTime" : "2024-10-19T12:06:36Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/bug/BugCLI71Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/bug/BugCLI71Test.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/bug/BugCLI71Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "e28b2dbd32a40d37890054b8adc4ee34ff24ef9d",
+    "committerTime" : "2024-10-19T12:21:45Z",
+    "lineageKey" : "3950ce799bf77bfe98c5a06583298ce8d8b671bc:src/test/java/org/apache/commons/cli/AbstractParserTestCase.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/AbstractParserTestCase.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/AbstractParserTestCase.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "e28b2dbd32a40d37890054b8adc4ee34ff24ef9d",
+    "committerTime" : "2024-10-19T12:21:45Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/PatternOptionBuilderTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "e28b2dbd32a40d37890054b8adc4ee34ff24ef9d",
+    "committerTime" : "2024-10-19T12:21:45Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/bug/BugCLI71Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/bug/BugCLI71Test.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/bug/BugCLI71Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "e17c8103603eabf03764e2e71c69af0bc3184f85",
+    "committerTime" : "2024-10-19T12:32:46Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/OptionBuilderTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/OptionBuilderTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/OptionBuilderTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "7fabac6906248330876f057c1111613c8a96d5f7",
+    "committerTime" : "2024-10-19T12:32:51Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/OptionGroupTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/OptionGroupTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/OptionGroupTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "ae92da886a36a1b869d8769c918e3932e9d67024",
+    "committerTime" : "2024-10-19T12:35:48Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/OptionsTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/OptionsTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/OptionsTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "79fe35b0b9054710420866f0b60774c37da9c84c",
+    "committerTime" : "2024-11-12T14:04:04Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "b6ca226a56734563e18626670bf35fa96971181e",
+    "committerTime" : "2024-11-12T19:30:02Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/CommandLine.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "b6ca226a56734563e18626670bf35fa96971181e",
+    "committerTime" : "2024-11-12T19:30:02Z",
+    "lineageKey" : "00fb0a128018d7444b8efbb3da2860400b59e89e:src/main/java/org/apache/commons/cli/Converter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/Converter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/Converter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "b6ca226a56734563e18626670bf35fa96971181e",
+    "committerTime" : "2024-11-12T19:30:02Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/TypeHandler.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/TypeHandler.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/TypeHandler.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "fec5017758da72cf4b0525cce0f03dec75089c19",
+    "committerTime" : "2024-11-15T15:10:41Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/BasicParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/BasicParser.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/BasicParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "fec5017758da72cf4b0525cce0f03dec75089c19",
+    "committerTime" : "2024-11-15T15:10:41Z",
+    "lineageKey" : "f43698527ef2b5ba15fe85d46d2d505418f68243:src/java/org/apache/commons/cli/DefaultParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/DefaultParser.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/DefaultParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "fec5017758da72cf4b0525cce0f03dec75089c19",
+    "committerTime" : "2024-11-15T15:10:41Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/GnuParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/GnuParser.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/GnuParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "fec5017758da72cf4b0525cce0f03dec75089c19",
+    "committerTime" : "2024-11-15T15:10:41Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/Option.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "fec5017758da72cf4b0525cce0f03dec75089c19",
+    "committerTime" : "2024-11-15T15:10:41Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/OptionBuilder.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/OptionBuilder.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/OptionBuilder.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "fec5017758da72cf4b0525cce0f03dec75089c19",
+    "committerTime" : "2024-11-15T15:10:41Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/PosixParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/PosixParser.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/PosixParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "3da83eebe3cccfae8505913ef9126f706654245d",
+    "committerTime" : "2024-11-28T17:00:34Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/CommandLine.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "3da83eebe3cccfae8505913ef9126f706654245d",
+    "committerTime" : "2024-11-28T17:00:34Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/CommandLineParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/CommandLineParser.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/CommandLineParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "3da83eebe3cccfae8505913ef9126f706654245d",
+    "committerTime" : "2024-11-28T17:00:34Z",
+    "lineageKey" : "f43698527ef2b5ba15fe85d46d2d505418f68243:src/java/org/apache/commons/cli/DefaultParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/DefaultParser.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/DefaultParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "3da83eebe3cccfae8505913ef9126f706654245d",
+    "committerTime" : "2024-11-28T17:00:34Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "3da83eebe3cccfae8505913ef9126f706654245d",
+    "committerTime" : "2024-11-28T17:00:34Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/Option.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "3da83eebe3cccfae8505913ef9126f706654245d",
+    "committerTime" : "2024-11-28T17:00:34Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/OptionBuilder.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/OptionBuilder.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/OptionBuilder.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "3da83eebe3cccfae8505913ef9126f706654245d",
+    "committerTime" : "2024-11-28T17:00:34Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/Util.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/Util.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/Util.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "764c1487067383f4fb72dbde8913fba2d6c422ab",
+    "committerTime" : "2024-11-29T13:17:10Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/CommandLine.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "764c1487067383f4fb72dbde8913fba2d6c422ab",
+    "committerTime" : "2024-11-29T13:17:10Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/Option.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "764c1487067383f4fb72dbde8913fba2d6c422ab",
+    "committerTime" : "2024-11-29T13:17:10Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "764c1487067383f4fb72dbde8913fba2d6c422ab",
+    "committerTime" : "2024-11-29T13:17:10Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/CommandLineTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "136e0454fae9916b3183b9fb3b06de6127be3a3f",
+    "committerTime" : "2024-11-29T13:17:59Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/CommandLineTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "d7afc20de398ab72404fa41710cd2e31841ba064",
+    "committerTime" : "2024-11-29T13:18:17Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/HelpFormatter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "f5931a51ef761a1276dfc559573c6ef63a1a4579",
+    "committerTime" : "2024-11-29T13:26:39Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/CommandLine.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "065d18d95cced1386157b105060489a3a7f87b03",
+    "committerTime" : "2024-12-06T22:43:45Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/ApplicationTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/ApplicationTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/ApplicationTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "b430e8f82dad96bb452eb706b9abedbc58db95a9",
+    "committerTime" : "2024-12-26T14:25:16Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/CommandLine.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/CommandLine.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "b430e8f82dad96bb452eb706b9abedbc58db95a9",
+    "committerTime" : "2024-12-26T14:25:16Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/Option.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/Option.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "b430e8f82dad96bb452eb706b9abedbc58db95a9",
+    "committerTime" : "2024-12-26T14:25:16Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/CommandLineTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "b430e8f82dad96bb452eb706b9abedbc58db95a9",
+    "committerTime" : "2024-12-26T14:25:16Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/HelpFormatterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/HelpFormatterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/HelpFormatterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "b430e8f82dad96bb452eb706b9abedbc58db95a9",
+    "committerTime" : "2024-12-26T14:25:16Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/OptionsTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/OptionsTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/OptionsTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "a477af7379dfd2c0f40cc85fb3dcfb1d21b9b6c4",
+    "committerTime" : "2024-12-31T13:33:44Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/java/org/apache/commons/cli/GnuParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/GnuParser.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/GnuParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "a477af7379dfd2c0f40cc85fb3dcfb1d21b9b6c4",
+    "committerTime" : "2024-12-31T13:33:44Z",
+    "lineageKey" : "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+    "oldPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "newPath" : "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "a477af7379dfd2c0f40cc85fb3dcfb1d21b9b6c4",
+    "committerTime" : "2024-12-31T13:33:44Z",
+    "lineageKey" : "d26c429922ccd67aa270cf5a6cae7c36e7dc285a:src/test/org/apache/commons/cli/ApplicationTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/cli/ApplicationTest.java",
+    "newPath" : "src/test/java/org/apache/commons/cli/ApplicationTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  } ]
+}

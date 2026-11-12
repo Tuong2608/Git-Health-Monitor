@@ -1,0 +1,545 @@
+{
+  "schemaVersion" : 1,
+  "repositoryUrl" : "https://github.com/spring-projects/spring-petclinic",
+  "headSha" : "0aa3adb56f500c41564411c32cd301affe284ecc",
+  "windowStart" : "2023-07-05T00:00:00Z",
+  "windowEnd" : "2024-01-01T00:00:00Z",
+  "config" : "{\"metricVersion\":\"metric-v1\",\"pipelineVersion\":\"git-metrics-v2\",\"lizardVersion\":\"1.24.3\",\"jgitVersion\":\"7.8.0.202609011348-r\",\"authorAliases\":{},\"excludedPrefixes\":[\"vendor/\",\"generated/\",\"target/\",\"build/\"],\"maxCommits\":10000,\"maxTreeEntries\":100000,\"maxBlobBytes\":2097152,\"maxFacts\":500000,\"filterLargeChangesets\":false,\"maxChangesetFiles\":30,\"renameScore\":60,\"renameLimit\":1000}",
+  "metricVersion" : "metric-v1",
+  "reachableCommits" : 878,
+  "commitCount" : 18,
+  "truncated" : false,
+  "summary" : {
+    "coverageComplete" : false,
+    "reachableCommits" : 878,
+    "selectedCommits" : 18,
+    "currentJavaFiles" : 40,
+    "hotspotPopulation" : 20,
+    "ambiguousFiles" : 10,
+    "noFunctionFiles" : 11,
+    "filterLargeChangesets" : false,
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS", "NO_FUNCTIONS" ]
+  },
+  "files" : [ {
+    "lineageKey" : "0a51540ad04b48b5b18fd6fd400363fc02512134:src/test/java/org/springframework/samples/petclinic/vet/VetTests.java",
+    "path" : "src/test/java/org/springframework/samples/petclinic/vet/VetTests.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4736842105263157,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0fe479390b360bcb9e903b1ea749157dbbdde96a:src/main/java/org/springframework/samples/petclinic/web/OwnerController.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java",
+    "frequency" : 1,
+    "maxCcn" : 4,
+    "hotspot" : 0.7973293372391114,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "2249cbcb6f5da03a041ef1a6a20987889d6b8771:src/test/java/org/springframework/samples/petclinic/system/CrashControllerIntegrationTests.java",
+    "path" : "src/test/java/org/springframework/samples/petclinic/system/CrashControllerIntegrationTests.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2734817064582438,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "3c1ef72e6d45ef41fbc86f51476e5a72e9e66564:src/test/java/org/springframework/samples/petclinic/MySqlIntegrationTests.java",
+    "path" : "src/test/java/org/springframework/samples/petclinic/MySqlIntegrationTests.java",
+    "frequency" : 4,
+    "maxCcn" : 1,
+    "hotspot" : 0.5619514869490164,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "3c1ef72e6d45ef41fbc86f51476e5a72e9e66564:src/test/java/org/springframework/samples/petclinic/MysqlTestApplication.java",
+    "path" : "src/test/java/org/springframework/samples/petclinic/MysqlTestApplication.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4736842105263157,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "3c1ef72e6d45ef41fbc86f51476e5a72e9e66564:src/test/java/org/springframework/samples/petclinic/PostgresIntegrationTests.java",
+    "path" : "src/test/java/org/springframework/samples/petclinic/PostgresIntegrationTests.java",
+    "frequency" : 2,
+    "maxCcn" : 4,
+    "hotspot" : 0.9206766149755738,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "3c9afdc138bd120e8396aacadb2da2d55e462f8a:src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/system/CacheConfiguration.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2734817064582438,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/BaseEntity.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2734817064582438,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/NamedEntity.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2734817064582438,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/Owner.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/owner/Owner.java",
+    "frequency" : 2,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/Person.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/model/Person.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4736842105263157,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/Pet.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/owner/Pet.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/PetType.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/owner/PetType.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/Specialty.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/vet/Specialty.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/Vet.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/vet/Vet.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/Vets.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/vet/Vets.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4102225596873657,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/Visit.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/owner/Visit.java",
+    "frequency" : 1,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/package-info.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/model/package-info.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/util/EntityUtils.java",
+    "path" : "src/test/java/org/springframework/samples/petclinic/service/EntityUtils.java",
+    "frequency" : 0,
+    "maxCcn" : 4,
+    "hotspot" : 0.4603383074877869,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/validation/PetValidator.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/owner/PetValidator.java",
+    "frequency" : 1,
+    "maxCcn" : 5,
+    "hotspot" : 0.8429272304235246,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/web/AddVisitForm.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/owner/VisitController.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4102225596873657,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "57c904312191bc103e638e7db82b4ad4a19c0897:src/main/java/org/springframework/samples/petclinic/web/PetTypeFormatter.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/owner/PetTypeFormatter.java",
+    "frequency" : 0,
+    "maxCcn" : 3,
+    "hotspot" : 0.4324125453988153,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "5ff057d90baf36d40bdf81b69752143dc46782ee:src/test/java/org/springframework/samples/petclinic/PetclinicIntegrationTests.java",
+    "path" : "src/test/java/org/springframework/samples/petclinic/PetClinicIntegrationTests.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2734817064582438,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "89d0e24488af04f0c0a0d2172186d0ce2a3c3cdd:src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java",
+    "frequency" : null,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "89d0e24488af04f0c0a0d2172186d0ce2a3c3cdd:src/main/java/org/springframework/samples/petclinic/web/WelcomeController.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/system/WelcomeController.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "95e8b64a5a7417d79f4d823c4aa6745ee11d960f:src/test/java/org/springframework/samples/petclinic/service/ClinicServiceSpringDataJpaTests.java",
+    "path" : "src/test/java/org/springframework/samples/petclinic/service/ClinicServiceTests.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "ae9085de62f042dedf55ee49fdd30400fcbc4373:src/main/java/org/springframework/samples/petclinic/web/CrashController.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/system/CrashController.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2734817064582438,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "b68d7fc4f321454f51af8e7bb490111cce3a5668:src/test/java/org/springframework/samples/petclinic/web/CrashControllerTests.java",
+    "path" : "src/test/java/org/springframework/samples/petclinic/system/CrashControllerTests.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "b68d7fc4f321454f51af8e7bb490111cce3a5668:src/test/java/org/springframework/samples/petclinic/web/OwnerControllerTests.java",
+    "path" : "src/test/java/org/springframework/samples/petclinic/owner/OwnerControllerTests.java",
+    "frequency" : null,
+    "maxCcn" : 2,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "b68d7fc4f321454f51af8e7bb490111cce3a5668:src/test/java/org/springframework/samples/petclinic/web/PetControllerTests.java",
+    "path" : "src/test/java/org/springframework/samples/petclinic/owner/PetControllerTests.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "b68d7fc4f321454f51af8e7bb490111cce3a5668:src/test/java/org/springframework/samples/petclinic/web/PetTypeFormatterTests.java",
+    "path" : "src/test/java/org/springframework/samples/petclinic/owner/PetTypeFormatterTests.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "b68d7fc4f321454f51af8e7bb490111cce3a5668:src/test/java/org/springframework/samples/petclinic/web/VetControllerTests.java",
+    "path" : "src/test/java/org/springframework/samples/petclinic/vet/VetControllerTests.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "b68d7fc4f321454f51af8e7bb490111cce3a5668:src/test/java/org/springframework/samples/petclinic/web/VisitControllerTests.java",
+    "path" : "src/test/java/org/springframework/samples/petclinic/owner/VisitControllerTests.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "c88e3d462ad4645691e415588f0dc124fb22cffa:src/test/java/org/springframework/samples/petclinic/model/ValidatorTest.java",
+    "path" : "src/test/java/org/springframework/samples/petclinic/model/ValidatorTests.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4736842105263157,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "c9c8c4e085015b14ca6c3db077bac05e36859907:src/main/java/org/springframework/samples/petclinic/repository/OwnerRepository.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/owner/OwnerRepository.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "c9c8c4e085015b14ca6c3db077bac05e36859907:src/main/java/org/springframework/samples/petclinic/repository/VetRepository.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/vet/VetRepository.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "c9c8c4e085015b14ca6c3db077bac05e36859907:src/main/java/org/springframework/samples/petclinic/web/VetController.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/vet/VetController.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4736842105263157,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "d2831f9bad3327c6c7b933f420b14fe528f98a4b:.mvn/wrapper/MavenWrapperDownloader.java",
+    "path" : ".mvn/wrapper/MavenWrapperDownloader.java",
+    "frequency" : null,
+    "maxCcn" : 8,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "e9b6aff0d46774284961b06443a0b380337167a3:src/main/java/org/springframework/samples/petclinic/web/PetController.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/owner/PetController.java",
+    "frequency" : 4,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "f53e0d098ef417a0f6438f91efb24a7d2bf34daf:src/main/java/org/springframework/samples/petclinic/PetClinicRuntimeHints.java",
+    "path" : "src/main/java/org/springframework/samples/petclinic/PetClinicRuntimeHints.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4736842105263157,
+    "unavailableReason" : null
+  } ],
+  "facts" : [ {
+    "commitSha" : "ca2d8dbc0950f1c0faca8cad8988a554e3154866",
+    "committerTime" : "2023-07-05T10:34:44Z",
+    "lineageKey" : "c9c8c4e085015b14ca6c3db077bac05e36859907:src/main/java/org/springframework/samples/petclinic/web/VetController.java",
+    "oldPath" : "src/main/java/org/springframework/samples/petclinic/vet/VetController.java",
+    "newPath" : "src/main/java/org/springframework/samples/petclinic/vet/VetController.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "029de905b3e9493df193d6f949d733be59a78f51",
+    "committerTime" : "2023-07-05T12:53:07Z",
+    "lineageKey" : "3c1ef72e6d45ef41fbc86f51476e5a72e9e66564:src/test/java/org/springframework/samples/petclinic/MySqlIntegrationTests.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/MySqlIntegrationTests.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/MySqlIntegrationTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "029de905b3e9493df193d6f949d733be59a78f51",
+    "committerTime" : "2023-07-05T12:53:07Z",
+    "lineageKey" : "3c1ef72e6d45ef41fbc86f51476e5a72e9e66564:src/test/java/org/springframework/samples/petclinic/PostgresIntegrationTests.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/PostgresIntegrationTests.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/PostgresIntegrationTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c231682c2d64aecb58cbcea6da59e3ac19b8c291",
+    "committerTime" : "2023-07-07T09:25:30Z",
+    "lineageKey" : "f53e0d098ef417a0f6438f91efb24a7d2bf34daf:src/main/java/org/springframework/samples/petclinic/PetClinicRuntimeHints.java",
+    "oldPath" : "src/main/java/org/springframework/samples/petclinic/PetClinicRuntimeHints.java",
+    "newPath" : "src/main/java/org/springframework/samples/petclinic/PetClinicRuntimeHints.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c231682c2d64aecb58cbcea6da59e3ac19b8c291",
+    "committerTime" : "2023-07-07T09:25:30Z",
+    "lineageKey" : "b68d7fc4f321454f51af8e7bb490111cce3a5668:src/test/java/org/springframework/samples/petclinic/web/OwnerControllerTests.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/owner/OwnerControllerTests.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/owner/OwnerControllerTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "c231682c2d64aecb58cbcea6da59e3ac19b8c291",
+    "committerTime" : "2023-07-07T09:25:30Z",
+    "lineageKey" : "b68d7fc4f321454f51af8e7bb490111cce3a5668:src/test/java/org/springframework/samples/petclinic/web/PetControllerTests.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/owner/PetControllerTests.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/owner/PetControllerTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "c231682c2d64aecb58cbcea6da59e3ac19b8c291",
+    "committerTime" : "2023-07-07T09:25:30Z",
+    "lineageKey" : "b68d7fc4f321454f51af8e7bb490111cce3a5668:src/test/java/org/springframework/samples/petclinic/web/PetTypeFormatterTests.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/owner/PetTypeFormatterTests.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/owner/PetTypeFormatterTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "c231682c2d64aecb58cbcea6da59e3ac19b8c291",
+    "committerTime" : "2023-07-07T09:25:30Z",
+    "lineageKey" : "b68d7fc4f321454f51af8e7bb490111cce3a5668:src/test/java/org/springframework/samples/petclinic/web/VisitControllerTests.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/owner/VisitControllerTests.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/owner/VisitControllerTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "c231682c2d64aecb58cbcea6da59e3ac19b8c291",
+    "committerTime" : "2023-07-07T09:25:30Z",
+    "lineageKey" : "b68d7fc4f321454f51af8e7bb490111cce3a5668:src/test/java/org/springframework/samples/petclinic/web/VetControllerTests.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/vet/VetControllerTests.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/vet/VetControllerTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "b4efc934b2cfcdb3ca6ca2fde0adb40b99dbb19d",
+    "committerTime" : "2023-07-07T09:42:01Z",
+    "lineageKey" : "3c1ef72e6d45ef41fbc86f51476e5a72e9e66564:src/test/java/org/springframework/samples/petclinic/MySqlIntegrationTests.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/MySqlIntegrationTests.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/MySqlIntegrationTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "b4efc934b2cfcdb3ca6ca2fde0adb40b99dbb19d",
+    "committerTime" : "2023-07-07T09:42:01Z",
+    "lineageKey" : "3c1ef72e6d45ef41fbc86f51476e5a72e9e66564:src/test/java/org/springframework/samples/petclinic/PostgresIntegrationTests.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/PostgresIntegrationTests.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/PostgresIntegrationTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "3be289517d320a47bb8f359acc1d1daf0829ed0b",
+    "committerTime" : "2023-07-10T14:00:26Z",
+    "lineageKey" : "e9b6aff0d46774284961b06443a0b380337167a3:src/main/java/org/springframework/samples/petclinic/web/PetController.java",
+    "oldPath" : "src/main/java/org/springframework/samples/petclinic/owner/PetController.java",
+    "newPath" : "src/main/java/org/springframework/samples/petclinic/owner/PetController.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "3a6127557dc05d9a6462fcea67d0f329e7286245",
+    "committerTime" : "2023-07-13T12:05:34Z",
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/Owner.java",
+    "oldPath" : "src/main/java/org/springframework/samples/petclinic/owner/Owner.java",
+    "newPath" : "src/main/java/org/springframework/samples/petclinic/owner/Owner.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "3a6127557dc05d9a6462fcea67d0f329e7286245",
+    "committerTime" : "2023-07-13T12:05:34Z",
+    "lineageKey" : "e9b6aff0d46774284961b06443a0b380337167a3:src/main/java/org/springframework/samples/petclinic/web/PetController.java",
+    "oldPath" : "src/main/java/org/springframework/samples/petclinic/owner/PetController.java",
+    "newPath" : "src/main/java/org/springframework/samples/petclinic/owner/PetController.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "0a529015bc7933bcd724a5ae92605f0e9ee0e3f7",
+    "committerTime" : "2023-07-14T09:27:01Z",
+    "lineageKey" : "e9b6aff0d46774284961b06443a0b380337167a3:src/main/java/org/springframework/samples/petclinic/web/PetController.java",
+    "oldPath" : "src/main/java/org/springframework/samples/petclinic/owner/PetController.java",
+    "newPath" : "src/main/java/org/springframework/samples/petclinic/owner/PetController.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "4926e292700f79260a58d6faf55b232ce075b70e",
+    "committerTime" : "2023-08-24T21:38:46Z",
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/Person.java",
+    "oldPath" : "src/main/java/org/springframework/samples/petclinic/model/Person.java",
+    "newPath" : "src/main/java/org/springframework/samples/petclinic/model/Person.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "4926e292700f79260a58d6faf55b232ce075b70e",
+    "committerTime" : "2023-08-24T21:38:46Z",
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/Owner.java",
+    "oldPath" : "src/main/java/org/springframework/samples/petclinic/owner/Owner.java",
+    "newPath" : "src/main/java/org/springframework/samples/petclinic/owner/Owner.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "4926e292700f79260a58d6faf55b232ce075b70e",
+    "committerTime" : "2023-08-24T21:38:46Z",
+    "lineageKey" : "e9b6aff0d46774284961b06443a0b380337167a3:src/main/java/org/springframework/samples/petclinic/web/PetController.java",
+    "oldPath" : "src/main/java/org/springframework/samples/petclinic/owner/PetController.java",
+    "newPath" : "src/main/java/org/springframework/samples/petclinic/owner/PetController.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "4926e292700f79260a58d6faf55b232ce075b70e",
+    "committerTime" : "2023-08-24T21:38:46Z",
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/validation/PetValidator.java",
+    "oldPath" : "src/main/java/org/springframework/samples/petclinic/owner/PetValidator.java",
+    "newPath" : "src/main/java/org/springframework/samples/petclinic/owner/PetValidator.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "4926e292700f79260a58d6faf55b232ce075b70e",
+    "committerTime" : "2023-08-24T21:38:46Z",
+    "lineageKey" : "521d01db950e357cf81ef78c50daf290e92b309c:src/main/java/org/springframework/samples/petclinic/Visit.java",
+    "oldPath" : "src/main/java/org/springframework/samples/petclinic/owner/Visit.java",
+    "newPath" : "src/main/java/org/springframework/samples/petclinic/owner/Visit.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "4926e292700f79260a58d6faf55b232ce075b70e",
+    "committerTime" : "2023-08-24T21:38:46Z",
+    "lineageKey" : "c88e3d462ad4645691e415588f0dc124fb22cffa:src/test/java/org/springframework/samples/petclinic/model/ValidatorTest.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/model/ValidatorTests.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/model/ValidatorTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "d11d6e8e40c18b9a74511781210745fbee109685",
+    "committerTime" : "2023-09-12T11:11:33Z",
+    "lineageKey" : "0fe479390b360bcb9e903b1ea749157dbbdde96a:src/main/java/org/springframework/samples/petclinic/web/OwnerController.java",
+    "oldPath" : "src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java",
+    "newPath" : "src/main/java/org/springframework/samples/petclinic/owner/OwnerController.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "5accc40c77e51cb15eb87a480e679a5012d1423e",
+    "committerTime" : "2023-09-12T12:15:59Z",
+    "lineageKey" : "0a51540ad04b48b5b18fd6fd400363fc02512134:src/test/java/org/springframework/samples/petclinic/vet/VetTests.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/vet/VetTests.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/vet/VetTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "5a9d1fc40f3251cf9ed720cfb46517b7fb92ad84",
+    "committerTime" : "2023-11-23T18:51:25Z",
+    "lineageKey" : "b68d7fc4f321454f51af8e7bb490111cce3a5668:src/test/java/org/springframework/samples/petclinic/web/OwnerControllerTests.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/owner/OwnerControllerTests.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/owner/OwnerControllerTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "5a9d1fc40f3251cf9ed720cfb46517b7fb92ad84",
+    "committerTime" : "2023-11-23T18:51:25Z",
+    "lineageKey" : "b68d7fc4f321454f51af8e7bb490111cce3a5668:src/test/java/org/springframework/samples/petclinic/web/PetControllerTests.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/owner/PetControllerTests.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/owner/PetControllerTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "5a9d1fc40f3251cf9ed720cfb46517b7fb92ad84",
+    "committerTime" : "2023-11-23T18:51:25Z",
+    "lineageKey" : "b68d7fc4f321454f51af8e7bb490111cce3a5668:src/test/java/org/springframework/samples/petclinic/web/VisitControllerTests.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/owner/VisitControllerTests.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/owner/VisitControllerTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "5a9d1fc40f3251cf9ed720cfb46517b7fb92ad84",
+    "committerTime" : "2023-11-23T18:51:25Z",
+    "lineageKey" : "b68d7fc4f321454f51af8e7bb490111cce3a5668:src/test/java/org/springframework/samples/petclinic/web/VetControllerTests.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/vet/VetControllerTests.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/vet/VetControllerTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "de0e3663c033ac9b51f2fb497bc32edf7558277b",
+    "committerTime" : "2023-11-26T09:08:45Z",
+    "lineageKey" : "3c1ef72e6d45ef41fbc86f51476e5a72e9e66564:src/test/java/org/springframework/samples/petclinic/MySqlIntegrationTests.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/MySqlIntegrationTests.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/MySqlIntegrationTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "de0e3663c033ac9b51f2fb497bc32edf7558277b",
+    "committerTime" : "2023-11-26T09:08:45Z",
+    "lineageKey" : "3c1ef72e6d45ef41fbc86f51476e5a72e9e66564:src/test/java/org/springframework/samples/petclinic/MysqlTestApplication.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/MysqlTestApplication.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/MysqlTestApplication.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "d69204f2c1457f0ff2086eb5e9e08f0b5b3889aa",
+    "committerTime" : "2023-12-08T10:02:50Z",
+    "lineageKey" : "3c1ef72e6d45ef41fbc86f51476e5a72e9e66564:src/test/java/org/springframework/samples/petclinic/MySqlIntegrationTests.java",
+    "oldPath" : "src/test/java/org/springframework/samples/petclinic/MySqlIntegrationTests.java",
+    "newPath" : "src/test/java/org/springframework/samples/petclinic/MySqlIntegrationTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  } ]
+}

@@ -1,0 +1,168 @@
+{
+  "manifestSha256": "029dd851852ba8d4128fabe61fdbbed62b0922a88503a927b872fc1e3a9b3548",
+  "kind": "PILOT_DESCRIPTIVE_NOT_BUG_PREDICTION",
+  "javaVersion": "openjdk version \"21.0.10\" 2026-01-20 LTS\nOpenJDK Runtime Environment Microsoft-13106404 (build 21.0.10+7-LTS)\nOpenJDK 64-Bit Server VM Microsoft-13106404 (build 21.0.10+7-LTS, mixed mode, sharing)",
+  "gitVersion": "git version 2.50.1.windows.1",
+  "toolSha256": {
+    "run_rq2.py": "85aceac9b4f14fa19ca57ad6e387936d7f547601d27898148749f1387f9b7b18",
+    "rq2_trends.py": "1c26686b611eec9babaf92576e2ba870b99fc30e358551e99f186e981eb6064b"
+  },
+  "repositories": [
+    {
+      "id": "gs-rest-service",
+      "url": "https://github.com/spring-guides/gs-rest-service",
+      "snapshots": [
+        {
+          "windowEnd": "2024-01-01T00:00:00Z",
+          "windowStart": "2023-07-05T00:00:00+00:00",
+          "headSha": "2860fa6b653c26d0f78b85ce86bd25acb3066c51",
+          "reachableCommits": 385,
+          "selectionStatus": "READY",
+          "index": 0,
+          "status": "SUCCESS",
+          "output": "gs-rest-service-0.json",
+          "sha256": "ca2bc2f4acc915034643d14201ee78cec48f95dd658ca1b15a7b5bb65e284282",
+          "commitCount": 4,
+          "javaFiles": 6,
+          "coverageComplete": false
+        },
+        {
+          "windowEnd": "2025-01-01T00:00:00Z",
+          "windowStart": "2024-07-05T00:00:00+00:00",
+          "headSha": "36fcbba66bc48e5facd1168db6e9ebf57e8501b1",
+          "reachableCommits": 386,
+          "selectionStatus": "READY",
+          "index": 1,
+          "status": "SUCCESS",
+          "output": "gs-rest-service-1.json",
+          "sha256": "d22d66636c746efd17013ea7e26c9e8ef503963d003dd09e1e37c49e14efcb68",
+          "commitCount": 0,
+          "javaFiles": 6,
+          "coverageComplete": false,
+          "comparison": "gs-rest-service-0-to-1.json",
+          "comparisonStatus": "BLOCKED"
+        },
+        {
+          "windowEnd": "2026-01-01T00:00:00Z",
+          "windowStart": "2025-07-05T00:00:00+00:00",
+          "headSha": "0b398e8e9167a5bda4df6c5f5e8fc6d94da150e8",
+          "reachableCommits": 400,
+          "selectionStatus": "READY",
+          "index": 2,
+          "status": "SUCCESS",
+          "output": "gs-rest-service-2.json",
+          "sha256": "a62c58edb219fc7a70ffa2783acf5e9dec2bb817c438cd477d19b3c51991b4bf",
+          "commitCount": 12,
+          "javaFiles": 6,
+          "coverageComplete": false,
+          "comparison": "gs-rest-service-1-to-2.json",
+          "comparisonStatus": "BLOCKED"
+        }
+      ]
+    },
+    {
+      "id": "spring-petclinic",
+      "url": "https://github.com/spring-projects/spring-petclinic",
+      "snapshots": [
+        {
+          "windowEnd": "2024-01-01T00:00:00Z",
+          "windowStart": "2023-07-05T00:00:00+00:00",
+          "headSha": "0aa3adb56f500c41564411c32cd301affe284ecc",
+          "reachableCommits": 878,
+          "selectionStatus": "READY",
+          "index": 0,
+          "status": "SUCCESS",
+          "output": "spring-petclinic-0.json",
+          "sha256": "207b8bc6ff56fba4c4450d8ea68b840abdb20b25bd73ac82235e7ca43e5d53d4",
+          "commitCount": 18,
+          "javaFiles": 40,
+          "coverageComplete": false
+        },
+        {
+          "windowEnd": "2025-01-01T00:00:00Z",
+          "windowStart": "2024-07-05T00:00:00+00:00",
+          "headSha": "6148ddd9671ccab86a3f0ae2dfa77d833b713ee8",
+          "reachableCommits": 958,
+          "selectionStatus": "READY",
+          "index": 1,
+          "status": "SUCCESS",
+          "output": "spring-petclinic-1.json",
+          "sha256": "19ec86b3ca1a451740c9ff1d6146c178ed47fcfa24882fa2846f0ef4396bbcca",
+          "commitCount": 36,
+          "javaFiles": 40,
+          "coverageComplete": false,
+          "comparison": "spring-petclinic-0-to-1.json",
+          "comparisonStatus": "BLOCKED"
+        },
+        {
+          "windowEnd": "2026-01-01T00:00:00Z",
+          "windowStart": "2025-07-05T00:00:00+00:00",
+          "headSha": "987613eb4958f25ec3b137fd860cf915f516f0ec",
+          "reachableCommits": 1014,
+          "selectionStatus": "READY",
+          "index": 2,
+          "status": "SUCCESS",
+          "output": "spring-petclinic-2.json",
+          "sha256": "617896e009d48856c8589d966d735f4767696de31faac2db4507cc14893004cd",
+          "commitCount": 29,
+          "javaFiles": 47,
+          "coverageComplete": false,
+          "comparison": "spring-petclinic-1-to-2.json",
+          "comparisonStatus": "BLOCKED"
+        }
+      ]
+    },
+    {
+      "id": "commons-cli",
+      "url": "https://github.com/apache/commons-cli",
+      "snapshots": [
+        {
+          "windowEnd": "2024-01-01T00:00:00Z",
+          "windowStart": "2023-07-05T00:00:00+00:00",
+          "headSha": "3b78b1a95ffbf9c8804cacbf51be6c491ad4e7b0",
+          "reachableCommits": 1402,
+          "selectionStatus": "READY",
+          "index": 0,
+          "status": "SUCCESS",
+          "output": "commons-cli-0.json",
+          "sha256": "1b2fb0c283a3609028b05c8f59e1a8b67e84c3bde75ee1e891f99e9fc159370d",
+          "commitCount": 99,
+          "javaFiles": 52,
+          "coverageComplete": false
+        },
+        {
+          "windowEnd": "2025-01-01T00:00:00Z",
+          "windowStart": "2024-07-05T00:00:00+00:00",
+          "headSha": "a477af7379dfd2c0f40cc85fb3dcfb1d21b9b6c4",
+          "reachableCommits": 1840,
+          "selectionStatus": "READY",
+          "index": 1,
+          "status": "SUCCESS",
+          "output": "commons-cli-1.json",
+          "sha256": "79c795af7f1ad20506a273ffa6e22166d6fdc07f2bf81aef42750508b8a6637b",
+          "commitCount": 171,
+          "javaFiles": 85,
+          "coverageComplete": false,
+          "comparison": "commons-cli-0-to-1.json",
+          "comparisonStatus": "BLOCKED"
+        },
+        {
+          "windowEnd": "2026-01-01T00:00:00Z",
+          "windowStart": "2025-07-05T00:00:00+00:00",
+          "headSha": "83dc2043aa8a9215981ae8ac1428f9d706fa56ea",
+          "reachableCommits": 2122,
+          "selectionStatus": "READY",
+          "index": 2,
+          "status": "SUCCESS",
+          "output": "commons-cli-2.json",
+          "sha256": "ae245a66ca805267dc850f85e15c409c82b0a294ded1c9440cd64094441421cb",
+          "commitCount": 181,
+          "javaFiles": 87,
+          "coverageComplete": false,
+          "comparison": "commons-cli-1-to-2.json",
+          "comparisonStatus": "BLOCKED"
+        }
+      ]
+    }
+  ]
+}

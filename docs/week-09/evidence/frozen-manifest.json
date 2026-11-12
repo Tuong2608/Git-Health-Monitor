@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "frozenAt": "2026-11-12T12:16:53.523291+00:00",
+  "proposalSha256": "0e1e25f00d63647a0445078d914b86b6788718a5762807d08bdaee5ee4b6fdf1",
+  "proposal": {
+    "schemaVersion": 1,
+    "status": "PILOT_PROPOSED_NOT_GROUP_APPROVED",
+    "selectionDate": "2026-11-12",
+    "selectionRule": "Three public Java teaching/application/library repositories; full reachable history <=10000 commits. Retain failures and empty windows. No replacement based on scores. Convenience pilot, not a representative sample.",
+    "priorExposure": "gs-rest-service and spring-petclinic were measured in week 8 integration; therefore this is NOT a blind RQ1 dataset.",
+    "cutoffs": [
+      "2024-01-01T00:00:00Z",
+      "2025-01-01T00:00:00Z",
+      "2026-01-01T00:00:00Z"
+    ],
+    "windowDays": 180,
+    "hotspotIncreaseThreshold": 0.15,
+    "repositories": [
+      {
+        "id": "gs-rest-service",
+        "url": "https://github.com/spring-guides/gs-rest-service",
+        "reason": "Small Java teaching service; known integration pilot"
+      },
+      {
+        "id": "spring-petclinic",
+        "url": "https://github.com/spring-projects/spring-petclinic",
+        "reason": "Java application with multiple packages and merges; known integration pilot"
+      },
+      {
+        "id": "commons-cli",
+        "url": "https://github.com/apache/commons-cli",
+        "reason": "Reusable Java library; adds a different project type"
+      }
+    ]
+  },
+  "repositories": [
+    {
+      "id": "gs-rest-service",
+      "url": "https://github.com/spring-guides/gs-rest-service",
+      "endSha": "e15fec6773dc1eb6028055630e3e68cbd8653240",
+      "snapshots": [
+        {
+          "windowEnd": "2024-01-01T00:00:00Z",
+          "windowStart": "2023-07-05T00:00:00+00:00",
+          "headSha": "2860fa6b653c26d0f78b85ce86bd25acb3066c51",
+          "reachableCommits": 385,
+          "selectionStatus": "READY"
+        },
+        {
+          "windowEnd": "2025-01-01T00:00:00Z",
+          "windowStart": "2024-07-05T00:00:00+00:00",
+          "headSha": "36fcbba66bc48e5facd1168db6e9ebf57e8501b1",
+          "reachableCommits": 386,
+          "selectionStatus": "READY"
+        },
+        {
+          "windowEnd": "2026-01-01T00:00:00Z",
+          "windowStart": "2025-07-05T00:00:00+00:00",
+          "headSha": "0b398e8e9167a5bda4df6c5f5e8fc6d94da150e8",
+          "reachableCommits": 400,
+          "selectionStatus": "READY"
+        }
+      ],
+      "licenseFiles": [
+        "100644 blob ff77379631504c17ad0a94dddc6803f0d3fb0fbb\tLICENSE.txt",
+        "100644 blob 9d21229f84fd66fcd2b73e3a3246343282a5d577\tLICENSE.writing.txt"
+      ]
+    },
+    {
+      "id": "spring-petclinic",
+      "url": "https://github.com/spring-projects/spring-petclinic",
+      "endSha": "500158f732419217507c7656904b8e6aa1bcc0d6",
+      "snapshots": [
+        {
+          "windowEnd": "2024-01-01T00:00:00Z",
+          "windowStart": "2023-07-05T00:00:00+00:00",
+          "headSha": "0aa3adb56f500c41564411c32cd301affe284ecc",
+          "reachableCommits": 878,
+          "selectionStatus": "READY"
+        },
+        {
+          "windowEnd": "2025-01-01T00:00:00Z",
+          "windowStart": "2024-07-05T00:00:00+00:00",
+          "headSha": "6148ddd9671ccab86a3f0ae2dfa77d833b713ee8",
+          "reachableCommits": 958,
+          "selectionStatus": "READY"
+        },
+        {
+          "windowEnd": "2026-01-01T00:00:00Z",
+          "windowStart": "2025-07-05T00:00:00+00:00",
+          "headSha": "987613eb4958f25ec3b137fd860cf915f516f0ec",
+          "reachableCommits": 1014,
+          "selectionStatus": "READY"
+        }
+      ],
+      "licenseFiles": [
+        "100644 blob ff77379631504c17ad0a94dddc6803f0d3fb0fbb\tLICENSE.txt"
+      ]
+    },
+    {
+      "id": "commons-cli",
+      "url": "https://github.com/apache/commons-cli",
+      "endSha": "3a53a351a66bc5634bea646008f884148864bdac",
+      "snapshots": [
+        {
+          "windowEnd": "2024-01-01T00:00:00Z",
+          "windowStart": "2023-07-05T00:00:00+00:00",
+          "headSha": "3b78b1a95ffbf9c8804cacbf51be6c491ad4e7b0",
+          "reachableCommits": 1402,
+          "selectionStatus": "READY"
+        },
+        {
+          "windowEnd": "2025-01-01T00:00:00Z",
+          "windowStart": "2024-07-05T00:00:00+00:00",
+          "headSha": "a477af7379dfd2c0f40cc85fb3dcfb1d21b9b6c4",
+          "reachableCommits": 1840,
+          "selectionStatus": "READY"
+        },
+        {
+          "windowEnd": "2026-01-01T00:00:00Z",
+          "windowStart": "2025-07-05T00:00:00+00:00",
+          "headSha": "83dc2043aa8a9215981ae8ac1428f9d706fa56ea",
+          "reachableCommits": 2122,
+          "selectionStatus": "READY"
+        }
+      ],
+      "licenseFiles": [
+        "100644 blob 4fa588fe19bdc7bb5166aaf2855e6d321206f049\tLICENSE.txt",
+        "100644 blob a8fd7fbae143b957a5137653afba800b468ece9a\tNOTICE.txt"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "status": "PILOT_PROPOSED_NOT_GROUP_APPROVED",
+  "selectionDate": "2026-11-12",
+  "selectionRule": "Three public Java teaching/application/library repositories; full reachable history <=10000 commits. Retain failures and empty windows. No replacement based on scores. Convenience pilot, not a representative sample.",
+  "priorExposure": "gs-rest-service and spring-petclinic were measured in week 8 integration; therefore this is NOT a blind RQ1 dataset.",
+  "cutoffs": ["2024-01-01T00:00:00Z", "2025-01-01T00:00:00Z", "2026-01-01T00:00:00Z"],
+  "windowDays": 180,
+  "hotspotIncreaseThreshold": 0.15,
+  "repositories": [
+    {"id": "gs-rest-service", "url": "https://github.com/spring-guides/gs-rest-service", "reason": "Small Java teaching service; known integration pilot"},
+    {"id": "spring-petclinic", "url": "https://github.com/spring-projects/spring-petclinic", "reason": "Java application with multiple packages and merges; known integration pilot"},
+    {"id": "commons-cli", "url": "https://github.com/apache/commons-cli", "reason": "Reusable Java library; adds a different project type"}
+  ]
+}

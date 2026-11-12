@@ -1,0 +1,131 @@
+{
+  "schemaVersion" : 1,
+  "repositoryUrl" : "https://github.com/spring-guides/gs-rest-service",
+  "headSha" : "0b398e8e9167a5bda4df6c5f5e8fc6d94da150e8",
+  "windowStart" : "2025-07-05T00:00:00Z",
+  "windowEnd" : "2026-01-01T00:00:00Z",
+  "config" : "{\"metricVersion\":\"metric-v1\",\"pipelineVersion\":\"git-metrics-v2\",\"lizardVersion\":\"1.24.3\",\"jgitVersion\":\"7.8.0.202609011348-r\",\"authorAliases\":{},\"excludedPrefixes\":[\"vendor/\",\"generated/\",\"target/\",\"build/\"],\"maxCommits\":10000,\"maxTreeEntries\":100000,\"maxBlobBytes\":2097152,\"maxFacts\":500000,\"filterLargeChangesets\":false,\"maxChangesetFiles\":30,\"renameScore\":60,\"renameLimit\":1000}",
+  "metricVersion" : "metric-v1",
+  "reachableCommits" : 400,
+  "commitCount" : 12,
+  "truncated" : false,
+  "summary" : {
+    "coverageComplete" : false,
+    "reachableCommits" : 400,
+    "selectedCommits" : 12,
+    "currentJavaFiles" : 6,
+    "hotspotPopulation" : 4,
+    "ambiguousFiles" : 2,
+    "noFunctionFiles" : 1,
+    "filterLargeChangesets" : false,
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS", "NO_FUNCTIONS" ]
+  },
+  "files" : [ {
+    "lineageKey" : "a042ec14e82181e1e37134f7d5af76f220097594:complete/src/test/java/hello/GreetingControllerTests.java",
+    "path" : "complete/src/test/java/com/example/restservice/GreetingControllerTests.java",
+    "frequency" : 2,
+    "maxCcn" : 1,
+    "hotspot" : 0.7071067811865475,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "acd0d5aa743ddeac84b1914d7f26287438e7eb99:complete/src/main/java/com/example/restservice/RestServiceApplication.java",
+    "path" : "complete/src/main/java/com/example/restservice/RestServiceApplication.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4082482904638629,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "acd0d5aa743ddeac84b1914d7f26287438e7eb99:initial/src/main/java/com/example/restservice/RestServiceApplication.java",
+    "path" : "initial/src/main/java/com/example/restservice/RestServiceApplication.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4082482904638629,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "acd0d5aa743ddeac84b1914d7f26287438e7eb99:initial/src/test/java/com/example/restservice/RestServiceApplicationTests.java",
+    "path" : "initial/src/test/java/com/example/restservice/RestServiceApplicationTests.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4082482904638629,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "dda54ac539b2e4ac1af10af415c98ce7fae135cb:complete/src/main/java/hello/Greeting.java",
+    "path" : "complete/src/main/java/com/example/restservice/Greeting.java",
+    "frequency" : null,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "dda54ac539b2e4ac1af10af415c98ce7fae135cb:complete/src/main/java/hello/GreetingController.java",
+    "path" : "complete/src/main/java/com/example/restservice/GreetingController.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  } ],
+  "facts" : [ {
+    "commitSha" : "74d0f65df66ba898ee3ce6eaf5ce3ccfc6ce27f9",
+    "committerTime" : "2025-07-23T16:43:33Z",
+    "lineageKey" : "dda54ac539b2e4ac1af10af415c98ce7fae135cb:complete/src/main/java/hello/GreetingController.java",
+    "oldPath" : "complete/src/main/java/com/example/restservice/GreetingController.java",
+    "newPath" : "complete/src/main/java/com/example/restservice/GreetingController.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "ccccdcd71c068276d2fc5ccf1e155e26a5614a7c",
+    "committerTime" : "2025-12-03T14:05:05Z",
+    "lineageKey" : "dda54ac539b2e4ac1af10af415c98ce7fae135cb:complete/src/main/java/hello/GreetingController.java",
+    "oldPath" : "complete/src/main/java/com/example/restservice/GreetingController.java",
+    "newPath" : "complete/src/main/java/com/example/restservice/GreetingController.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "ccccdcd71c068276d2fc5ccf1e155e26a5614a7c",
+    "committerTime" : "2025-12-03T14:05:05Z",
+    "lineageKey" : "a042ec14e82181e1e37134f7d5af76f220097594:complete/src/test/java/hello/GreetingControllerTests.java",
+    "oldPath" : "complete/src/test/java/com/example/restservice/GreetingControllerTests.java",
+    "newPath" : "complete/src/test/java/com/example/restservice/GreetingControllerTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "389429a7345a718c27a77cabc495cf7ea68bbaee",
+    "committerTime" : "2025-12-19T14:02:50Z",
+    "lineageKey" : "dda54ac539b2e4ac1af10af415c98ce7fae135cb:complete/src/main/java/hello/GreetingController.java",
+    "oldPath" : "complete/src/main/java/com/example/restservice/GreetingController.java",
+    "newPath" : "complete/src/main/java/com/example/restservice/GreetingController.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "389429a7345a718c27a77cabc495cf7ea68bbaee",
+    "committerTime" : "2025-12-19T14:02:50Z",
+    "lineageKey" : "acd0d5aa743ddeac84b1914d7f26287438e7eb99:complete/src/main/java/com/example/restservice/RestServiceApplication.java",
+    "oldPath" : "complete/src/main/java/com/example/restservice/RestServiceApplication.java",
+    "newPath" : "complete/src/main/java/com/example/restservice/RestServiceApplication.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "389429a7345a718c27a77cabc495cf7ea68bbaee",
+    "committerTime" : "2025-12-19T14:02:50Z",
+    "lineageKey" : "a042ec14e82181e1e37134f7d5af76f220097594:complete/src/test/java/hello/GreetingControllerTests.java",
+    "oldPath" : "complete/src/test/java/com/example/restservice/GreetingControllerTests.java",
+    "newPath" : "complete/src/test/java/com/example/restservice/GreetingControllerTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "389429a7345a718c27a77cabc495cf7ea68bbaee",
+    "committerTime" : "2025-12-19T14:02:50Z",
+    "lineageKey" : "acd0d5aa743ddeac84b1914d7f26287438e7eb99:initial/src/main/java/com/example/restservice/RestServiceApplication.java",
+    "oldPath" : "initial/src/main/java/com/example/restservice/RestServiceApplication.java",
+    "newPath" : "initial/src/main/java/com/example/restservice/RestServiceApplication.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "389429a7345a718c27a77cabc495cf7ea68bbaee",
+    "committerTime" : "2025-12-19T14:02:50Z",
+    "lineageKey" : "acd0d5aa743ddeac84b1914d7f26287438e7eb99:initial/src/test/java/com/example/restservice/RestServiceApplicationTests.java",
+    "oldPath" : "initial/src/test/java/com/example/restservice/RestServiceApplicationTests.java",
+    "newPath" : "initial/src/test/java/com/example/restservice/RestServiceApplicationTests.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  } ]
+}
