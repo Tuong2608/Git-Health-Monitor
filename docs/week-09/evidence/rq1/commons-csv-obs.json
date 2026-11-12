@@ -1,0 +1,1000 @@
+{
+  "schemaVersion" : 1,
+  "repositoryUrl" : "https://github.com/apache/commons-csv",
+  "headSha" : "560a699978fffa88b0712c2790fa77eccd59f6c9",
+  "windowStart" : "2024-03-22T21:52:03Z",
+  "windowEnd" : "2024-09-18T21:52:03Z",
+  "config" : "{\"metricVersion\":\"metric-v1\",\"pipelineVersion\":\"git-metrics-v2\",\"lizardVersion\":\"1.24.3\",\"jgitVersion\":\"7.8.0.202609011348-r\",\"authorAliases\":{},\"excludedPrefixes\":[\"vendor/\",\"generated/\",\"target/\",\"build/\"],\"maxCommits\":10000,\"maxTreeEntries\":100000,\"maxBlobBytes\":2097152,\"maxFacts\":500000,\"filterLargeChangesets\":false,\"maxChangesetFiles\":30,\"renameScore\":60,\"renameLimit\":1000}",
+  "metricVersion" : "metric-v1",
+  "reachableCommits" : 2566,
+  "commitCount" : 143,
+  "truncated" : false,
+  "summary" : {
+    "coverageComplete" : false,
+    "reachableCommits" : 2566,
+    "selectedCommits" : 143,
+    "currentJavaFiles" : 49,
+    "hotspotPopulation" : 43,
+    "ambiguousFiles" : 3,
+    "noFunctionFiles" : 3,
+    "filterLargeChangesets" : false,
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS", "NO_FUNCTIONS" ]
+  },
+  "files" : [ {
+    "lineageKey" : "0ec08e400b334d95313bef33e3da17c4d416ca74:src/test/java/org/apache/commons/csv/bugs/JiraCsv198Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv198Test.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2608202654786505,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "19fbc19294e18eaf36c44dbf00605721626cb8e1:src/test/java/org/apache/commons/csv/CSVBenchmark.java",
+    "path" : "src/test/java/org/apache/commons/csv/CSVBenchmark.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4040610178208843,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "2305e0e80c9ceaba6736bea4dbf07c0979279280:src/test/java/org/apache/commons/csv/issues/JiraCsv213Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv213Test.java",
+    "frequency" : 0,
+    "maxCcn" : 3,
+    "hotspot" : 0.4441609072899435,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "238486dd77d4ac51f25ec34c4def822f9a3c53bb:src/test/java/org/apache/commons/csv/issues/JiraCsv148Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv148Test.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2608202654786505,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "23c39b158e13ee835ae77ed3e39de0d54a0600cd:src/test/java/org/apache/commons/csv/issues/JiraCsv290Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv290Test.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "28441e6a8505cd0e1a34800dd65c1eeacfc5e363:src/main/java/org/apache/commons/csv/CSVException.java",
+    "path" : "src/main/java/org/apache/commons/csv/CSVException.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.394836284566119,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "2c83a308255d07295c761d7e61f10359b0687b01:src/test/java/org/apache/commons/csv/issues/JiraCsv271Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv271Test.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2608202654786505,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "38670dbe9232dc9b56d6464c42293e745974cf60:src/main/java/org/apache/commons/csv/CSVLexer.java",
+    "path" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "frequency" : 12,
+    "maxCcn" : 20,
+    "hotspot" : 0.9880235200593537,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "3eac15fc8d5a1da80119e7389f78b9795e8aa4db:src/test/java/org/apache/commons/csv/issues/JiraCsv211Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv211Test.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2608202654786505,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4829ec961eb9db365b01428740b65ebf77e0803d:src/test/java/org/apache/commons/csv/issues/JiraCvs247Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv247Test.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2608202654786505,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4fdfc59b1cb668cb110b074742a1e760819f719b:src/main/java/org/apache/commons/csv/DuplicateHeaderMode.java",
+    "path" : "src/main/java/org/apache/commons/csv/DuplicateHeaderMode.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "4fdfc59b1cb668cb110b074742a1e760819f719b:src/test/java/org/apache/commons/csv/issues/JiraCsv264Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv264Test.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2608202654786505,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "54597a8b8e1d299a6b66de840b5496af96b297d5:src/test/java/org/apache/commons/csv/JiraCsv167Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv167Test.java",
+    "frequency" : 0,
+    "maxCcn" : 6,
+    "hotspot" : 0.4809288065886704,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "56ca5858db4765112dca44e5deeda0ac181a6766:src/main/java/org/apache/commons/csv/Constants.java",
+    "path" : "src/main/java/org/apache/commons/csv/Constants.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.394836284566119,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "660f7c9f853092ec8abf5d6c81d260e3c80c2194:src/test/java/org/apache/commons/csv/issues/JiraCsv248Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv248Test.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "7592782eee5e1744f032fa7ffe2924c2eb9f577e:src/main/java/org/apache/commons/csv/Token.java",
+    "path" : "src/main/java/org/apache/commons/csv/Token.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2608202654786505,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "96b8485176fab410d6ff829e7e9b6b5f817671ab:src/test/java/org/apache/commons/csv/issues/JiraCsv149Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv149Test.java",
+    "frequency" : 0,
+    "maxCcn" : 3,
+    "hotspot" : 0.4441609072899435,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "977824491d8d65b9952005573f2ebffe6ced671d:src/test/java/org/apache/commons/csv/issues/JiraCsv203Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv203Test.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2608202654786505,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "9a705d8605583b9614bfd7ad8117e01dc8f3e13a:src/test/java/org/apache/commons/csv/PerformanceTest.java",
+    "path" : "src/test/java/org/apache/commons/csv/PerformanceTest.java",
+    "frequency" : 1,
+    "maxCcn" : 2,
+    "hotspot" : 0.6116777418411966,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "9ab47dc56b43066be740488948d38032df636502:src/test/java/org/apache/commons/csv/bugs/JiraCsv164Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv154Test.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2608202654786505,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "9d00beb3525c135c1f5ef7f5b43c2481090c5763:src/test/java/org/apache/commons/csv/Utils.java",
+    "path" : "src/test/java/org/apache/commons/csv/Utils.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4040610178208843,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "a0d975933d6fe9eb5f359088de43508c1d3109bf:src/test/java/org/apache/commons/csv/CSVRecordTest.java",
+    "path" : "src/test/java/org/apache/commons/csv/CSVRecordTest.java",
+    "frequency" : 3,
+    "maxCcn" : 2,
+    "hotspot" : 0.6700593942604899,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "a23b784c1c81c625fed587149e0c460366206fa4:src/test/java/org/apache/commons/csv/issues/JiraCvs249.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv249Test.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2608202654786505,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "a4237345a1de8c9ada81a73fe1b8e44d0174dcf7:src/test/java/org/apache/commons/csv/issues/JiraCsv263Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv263Test.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2608202654786505,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "a4c6037d0ccfc5b7176d6c522fcc0ab38b9bdd28:src/test/java/org/apache/commons/csv/issues/JiraCsv265Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv265Test.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2608202654786505,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "ac280e705d99cc1168f93f7d9a5f92618bebbb97:src/test/java/org/apache/commons/csv/issues/JiraCsv253Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv253Test.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4040610178208843,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "ac280e705d99cc1168f93f7d9a5f92618bebbb97:src/test/java/org/apache/commons/csv/issues/JiraCsv93Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv93Test.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4040610178208843,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "adf5f834db919d8eb584eb2f701d9963ab89f525:src/main/java/org/apache/commons/csv/package-info.java",
+    "path" : "src/main/java/org/apache/commons/csv/package-info.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "aee6c50e2830c007a572cc96a57bc105308acc49:src/main/java/org/apache/commons/csv/CSVRecord.java",
+    "path" : "src/main/java/org/apache/commons/csv/CSVRecord.java",
+    "frequency" : 2,
+    "maxCcn" : 4,
+    "hotspot" : 0.7559289460184544,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "aef71309b6d84d2806b7aadd117d06bb6a845f06:src/test/java/org/apache/commons/csv/TokenMatchers.java",
+    "path" : "src/test/java/org/apache/commons/csv/TokenMatchers.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2608202654786505,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "aef71309b6d84d2806b7aadd117d06bb6a845f06:src/test/java/org/apache/commons/csv/TokenMatchersTest.java",
+    "path" : "src/test/java/org/apache/commons/csv/TokenMatchersTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2608202654786505,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "afbeaed866ee158b0ac99521c4b43011772a3873:src/test/java/org/apache/commons/csv/issues/JiraCsv150Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv150Test.java",
+    "frequency" : 4,
+    "maxCcn" : 1,
+    "hotspot" : 0.445435403187374,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "b372050f7f238b14953e609d3ec28dc755fca685:src/test/java/org/apache/commons/csv/perf/PerformanceTest.java",
+    "path" : "src/test/java/org/apache/commons/csv/perf/PerformanceTest.java",
+    "frequency" : 4,
+    "maxCcn" : 4,
+    "hotspot" : 0.7968190728895957,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "b6442ce59998f636cf99eb66ef9143d139374e9a:src/test/java/org/apache/commons/csv/issues/JiraCsv294Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv294Test.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.394836284566119,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "ba8ba605a07ff4986d3b58b9ca699d46daa4b6f3:src/test/java/org/apache/commons/csv/CSVDuplicateHeaderTest.java",
+    "path" : "src/test/java/org/apache/commons/csv/CSVDuplicateHeaderTest.java",
+    "frequency" : null,
+    "maxCcn" : 4,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "bfc40dede6ddf4988d966b1d4b8aa711518fa7b5:src/test/java/org/apache/commons/csv/CSVFileParserTest.java",
+    "path" : "src/test/java/org/apache/commons/csv/CSVFileParserTest.java",
+    "frequency" : 0,
+    "maxCcn" : 9,
+    "hotspot" : 0.4948716593053934,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "c15a06eee95e227fbe5c61849dd12b7bf126016a:src/test/java/org/apache/commons/csv/issues/JiraCsv288Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv288Test.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4040610178208843,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "ca7bbae40ef89e561f74d1a00776e3a9f697bd37:src/test/java/org/apache/commons/csv/CSVLexerTest.java",
+    "path" : "src/test/java/org/apache/commons/csv/LexerTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.394836284566119,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "d8d080453e30ee732bbdd1448d6c2e307d0746f4:src/test/java/org/apache/commons/csv/issues/JiraCsv206Test.java",
+    "path" : "src/test/java/org/apache/commons/csv/issues/JiraCsv206Test.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2608202654786505,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVParser.java",
+    "path" : "src/main/java/org/apache/commons/csv/CSVParser.java",
+    "frequency" : 8,
+    "maxCcn" : 18,
+    "hotspot" : 0.9404008408634047,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVPrinter.java",
+    "path" : "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+    "frequency" : 6,
+    "maxCcn" : 9,
+    "hotspot" : 0.8806305718527109,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/ExtendedBufferedReader.java",
+    "path" : "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+    "frequency" : 5,
+    "maxCcn" : 9,
+    "hotspot" : 0.8689660757568885,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/CSVParserTest.java",
+    "path" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "frequency" : 10,
+    "maxCcn" : 3,
+    "hotspot" : 0.8109231602822096,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/CSVPrinterTest.java",
+    "path" : "src/test/java/org/apache/commons/csv/CSVPrinterTest.java",
+    "frequency" : 2,
+    "maxCcn" : 11,
+    "hotspot" : 0.823754471047914,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/ExtendedBufferedReaderTest.java",
+    "path" : "src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java",
+    "frequency" : 4,
+    "maxCcn" : 4,
+    "hotspot" : 0.7968190728895957,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e693d87f714cb7575b6dc14454d2f7d5a8b377ac:src/main/java/org/apache/commons/csv/Quote.java",
+    "path" : "src/main/java/org/apache/commons/csv/QuoteMode.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "eac54a225bc974157e914cf66cfa598171022018:src/java/org/apache/commons/csv/CSVStrategy.java",
+    "path" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "frequency" : 11,
+    "maxCcn" : 24,
+    "hotspot" : 0.9880235200593537,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "eac54a225bc974157e914cf66cfa598171022018:src/test/org/apache/commons/csv/CSVStrategyTest.java",
+    "path" : "src/test/java/org/apache/commons/csv/CSVFormatTest.java",
+    "frequency" : 1,
+    "maxCcn" : 14,
+    "hotspot" : 0.7797391854196579,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "fd3a9862bd53c24e319655f968ea0f054453c839:src/test/java/org/apache/commons/csv/CSVFormatPredefinedTest.java",
+    "path" : "src/test/java/org/apache/commons/csv/CSVFormatPredefinedTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2608202654786505,
+    "unavailableReason" : null
+  } ],
+  "facts" : [ {
+    "commitSha" : "8f98cf634effa7a1b7600d45c58303a77610521f",
+    "committerTime" : "2024-04-05T16:59:01Z",
+    "lineageKey" : "38670dbe9232dc9b56d6464c42293e745974cf60:src/main/java/org/apache/commons/csv/CSVLexer.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8f98cf634effa7a1b7600d45c58303a77610521f",
+    "committerTime" : "2024-04-05T16:59:01Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/CSVParserTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "cf1e392f8585dbf2428f99445982d820e91a4687",
+    "committerTime" : "2024-04-05T22:08:46Z",
+    "lineageKey" : "eac54a225bc974157e914cf66cfa598171022018:src/java/org/apache/commons/csv/CSVStrategy.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "df7c340e7be5f662e641e911f1d5c76685abeaba",
+    "committerTime" : "2024-04-05T19:27:43Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/CSVParserTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "bdd72a271bd6450b0ec95d7a6e56b0ac6fa45019",
+    "committerTime" : "2024-04-06T12:17:08Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/CSVParserTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "4e3262b855185f14b44ede924b09ee5e54aef81d",
+    "committerTime" : "2024-04-06T12:18:46Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/CSVParserTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "4224a3289c7749b1e7f51aeb7c006ee060ccd5e5",
+    "committerTime" : "2024-04-06T12:22:42Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/CSVParserTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "70c9418e71c32a6a8248f9b2e62aad6b3892a485",
+    "committerTime" : "2024-04-06T12:27:37Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/CSVParserTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "dd5f756822dbcb67d09a00c51f022997c3764218",
+    "committerTime" : "2024-04-06T12:37:40Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVParser.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "b797c6daaaf657040b253ba9bf88240ed735b061",
+    "committerTime" : "2024-04-06T12:38:05Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/CSVParserTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "46f5fef4f4731fea015b6cd507bbdb6c30437cf1",
+    "committerTime" : "2024-04-06T12:38:15Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVParser.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8a8c913a10413da256cc163c484891aa64f78555",
+    "committerTime" : "2024-04-06T12:42:49Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVParser.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "b927099817345a42d565b2563b7981a9bef33232",
+    "committerTime" : "2024-04-06T12:44:11Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/ExtendedBufferedReader.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "23a264e311b84db115430aa1f2e7a101b59eda80",
+    "committerTime" : "2024-05-04T19:34:10Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/ExtendedBufferedReaderTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "a72bbe622ecbcf162852e0dad43598c9e92b3511",
+    "committerTime" : "2024-05-04T19:43:26Z",
+    "lineageKey" : "38670dbe9232dc9b56d6464c42293e745974cf60:src/main/java/org/apache/commons/csv/CSVLexer.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "a36d5bcbb1fc0bdcdd49dca6a607fabb3c4ab857",
+    "committerTime" : "2024-05-22T13:43:28Z",
+    "lineageKey" : "eac54a225bc974157e914cf66cfa598171022018:src/java/org/apache/commons/csv/CSVStrategy.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "a36d5bcbb1fc0bdcdd49dca6a607fabb3c4ab857",
+    "committerTime" : "2024-05-22T13:43:28Z",
+    "lineageKey" : "38670dbe9232dc9b56d6464c42293e745974cf60:src/main/java/org/apache/commons/csv/CSVLexer.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "f0a90dafe1271e4988aad5304997f53f3ad90178",
+    "committerTime" : "2024-06-11T14:43:34Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVParser.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "defb7563317e71bbbe14da7678f631b1c66fb957",
+    "committerTime" : "2024-06-18T13:14:46Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/CSVPrinterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/CSVPrinterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/CSVPrinterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "de8c231e0ca5569f7f35c8f28a94f488f3daa846",
+    "committerTime" : "2024-07-09T12:00:43Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/ExtendedBufferedReader.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "de8c231e0ca5569f7f35c8f28a94f488f3daa846",
+    "committerTime" : "2024-07-09T12:00:43Z",
+    "lineageKey" : "38670dbe9232dc9b56d6464c42293e745974cf60:src/main/java/org/apache/commons/csv/CSVLexer.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e835cb2de9d81a80b5ab39a7b5cada60b4b31a87",
+    "committerTime" : "2024-07-09T12:05:38Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVParser.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e835cb2de9d81a80b5ab39a7b5cada60b4b31a87",
+    "committerTime" : "2024-07-09T12:05:38Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVPrinter.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e835cb2de9d81a80b5ab39a7b5cada60b4b31a87",
+    "committerTime" : "2024-07-09T12:05:38Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/CSVParserTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e835cb2de9d81a80b5ab39a7b5cada60b4b31a87",
+    "committerTime" : "2024-07-09T12:05:38Z",
+    "lineageKey" : "a0d975933d6fe9eb5f359088de43508c1d3109bf:src/test/java/org/apache/commons/csv/CSVRecordTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/CSVRecordTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/CSVRecordTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e835cb2de9d81a80b5ab39a7b5cada60b4b31a87",
+    "committerTime" : "2024-07-09T12:05:38Z",
+    "lineageKey" : "b372050f7f238b14953e609d3ec28dc755fca685:src/test/java/org/apache/commons/csv/perf/PerformanceTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/perf/PerformanceTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/perf/PerformanceTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "19eb70c868902bd8a7fa067d77df8dcfa5b1eb0c",
+    "committerTime" : "2024-07-09T21:48:01Z",
+    "lineageKey" : "eac54a225bc974157e914cf66cfa598171022018:src/java/org/apache/commons/csv/CSVStrategy.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "19eb70c868902bd8a7fa067d77df8dcfa5b1eb0c",
+    "committerTime" : "2024-07-09T21:48:01Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVParser.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "19eb70c868902bd8a7fa067d77df8dcfa5b1eb0c",
+    "committerTime" : "2024-07-09T21:48:01Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVPrinter.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "19eb70c868902bd8a7fa067d77df8dcfa5b1eb0c",
+    "committerTime" : "2024-07-09T21:48:01Z",
+    "lineageKey" : "aee6c50e2830c007a572cc96a57bc105308acc49:src/main/java/org/apache/commons/csv/CSVRecord.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVRecord.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVRecord.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "19eb70c868902bd8a7fa067d77df8dcfa5b1eb0c",
+    "committerTime" : "2024-07-09T21:48:01Z",
+    "lineageKey" : "38670dbe9232dc9b56d6464c42293e745974cf60:src/main/java/org/apache/commons/csv/CSVLexer.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "0ed6d4854db98386432ebac4e597794a95d51300",
+    "committerTime" : "2024-07-09T21:48:52Z",
+    "lineageKey" : "56ca5858db4765112dca44e5deeda0ac181a6766:src/main/java/org/apache/commons/csv/Constants.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/Constants.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/Constants.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "58849db64a9ae8de89a75f8f97924283c057734d",
+    "committerTime" : "2024-07-11T14:49:19Z",
+    "lineageKey" : "eac54a225bc974157e914cf66cfa598171022018:src/java/org/apache/commons/csv/CSVStrategy.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "63da95a9d9f897dea6addf46341ffb3d01f6c95b",
+    "committerTime" : "2024-07-11T09:38:20Z",
+    "lineageKey" : "38670dbe9232dc9b56d6464c42293e745974cf60:src/main/java/org/apache/commons/csv/CSVLexer.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "2700513c0f82c216eec606336a3ff31709f345eb",
+    "committerTime" : "2024-07-15T18:51:23Z",
+    "lineageKey" : "eac54a225bc974157e914cf66cfa598171022018:src/java/org/apache/commons/csv/CSVStrategy.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "618a20f777204db181e4667695b0183ce6b9172a",
+    "committerTime" : "2024-07-21T15:27:47Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/CSVPrinterTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/CSVPrinterTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/CSVPrinterTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "126094a9f76db7e40da8f60b815a6f679edc44dc",
+    "committerTime" : "2024-07-29T20:36:53Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVPrinter.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "b240dec234e1f0fa1a6be0a665f2902b170c5399",
+    "committerTime" : "2024-07-29T20:59:54Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVPrinter.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "58bdedb16bdf4315744469d4cad33002fc6139dd",
+    "committerTime" : "2024-07-30T03:01:26Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVPrinter.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "9de89e1b19d094e13b3e99e83bf2cc279697f3fe",
+    "committerTime" : "2024-08-21T10:47:47Z",
+    "lineageKey" : "eac54a225bc974157e914cf66cfa598171022018:src/java/org/apache/commons/csv/CSVStrategy.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "55a885ec2d739646ecc197e4d47ec035bc1cdeec",
+    "committerTime" : "2024-08-31T02:48:24Z",
+    "lineageKey" : "38670dbe9232dc9b56d6464c42293e745974cf60:src/main/java/org/apache/commons/csv/CSVLexer.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e65d31b89a9787104b09e9239bc30895b7212314",
+    "committerTime" : "2024-09-01T22:50:30Z",
+    "lineageKey" : "a0d975933d6fe9eb5f359088de43508c1d3109bf:src/test/java/org/apache/commons/csv/CSVRecordTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/CSVRecordTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/CSVRecordTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e65d31b89a9787104b09e9239bc30895b7212314",
+    "committerTime" : "2024-09-01T22:50:30Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/ExtendedBufferedReaderTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e65d31b89a9787104b09e9239bc30895b7212314",
+    "committerTime" : "2024-09-01T22:50:30Z",
+    "lineageKey" : "660f7c9f853092ec8abf5d6c81d260e3c80c2194:src/test/java/org/apache/commons/csv/issues/JiraCsv248Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/issues/JiraCsv248Test.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/issues/JiraCsv248Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "af49daadc69d81a5e699523ec8297a91e5e70f1d",
+    "committerTime" : "2024-09-12T12:34:23Z",
+    "lineageKey" : "eac54a225bc974157e914cf66cfa598171022018:src/test/org/apache/commons/csv/CSVStrategyTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/CSVFormatTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/CSVFormatTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "723a5c9320c2eeee8f6e32d5b029cc05f8775c0a",
+    "committerTime" : "2024-09-12T12:34:52Z",
+    "lineageKey" : "9a705d8605583b9614bfd7ad8117e01dc8f3e13a:src/test/java/org/apache/commons/csv/PerformanceTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/PerformanceTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/PerformanceTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "ae79aeaa0bae191c9cde99f40971b6aa5788245d",
+    "committerTime" : "2024-09-14T13:41:02Z",
+    "lineageKey" : "23c39b158e13ee835ae77ed3e39de0d54a0600cd:src/test/java/org/apache/commons/csv/issues/JiraCsv290Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/issues/JiraCsv290Test.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/issues/JiraCsv290Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "e75b90a17ee53a27b72207671e4ba5f73a8c631f",
+    "committerTime" : "2024-09-14T13:41:39Z",
+    "lineageKey" : "a0d975933d6fe9eb5f359088de43508c1d3109bf:src/test/java/org/apache/commons/csv/CSVRecordTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/CSVRecordTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/CSVRecordTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "de158f98170994b90eec2c9559579386e2f19f71",
+    "committerTime" : "2024-09-14T13:43:33Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/CSVParserTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "33129ba46724176c9853c824c80e80ec21991643",
+    "committerTime" : "2024-09-14T13:44:01Z",
+    "lineageKey" : "ca7bbae40ef89e561f74d1a00776e3a9f697bd37:src/test/java/org/apache/commons/csv/CSVLexerTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/LexerTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/LexerTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "97bbb985be263fcc720bd23db69895ee1da680a1",
+    "committerTime" : "2024-09-14T13:49:22Z",
+    "lineageKey" : "b372050f7f238b14953e609d3ec28dc755fca685:src/test/java/org/apache/commons/csv/perf/PerformanceTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/perf/PerformanceTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/perf/PerformanceTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "3d1b085a074cb0ec07e9e0c885e0b0ba8c19bc2a",
+    "committerTime" : "2024-09-14T13:49:45Z",
+    "lineageKey" : "b372050f7f238b14953e609d3ec28dc755fca685:src/test/java/org/apache/commons/csv/perf/PerformanceTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/perf/PerformanceTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/perf/PerformanceTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "fcb83747a2333651053bdea6d9d9cbd35493a525",
+    "committerTime" : "2024-09-14T13:50:23Z",
+    "lineageKey" : "b372050f7f238b14953e609d3ec28dc755fca685:src/test/java/org/apache/commons/csv/perf/PerformanceTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/perf/PerformanceTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/perf/PerformanceTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "b6442ce59998f636cf99eb66ef9143d139374e9a",
+    "committerTime" : "2024-09-14T14:34:52Z",
+    "lineageKey" : "b6442ce59998f636cf99eb66ef9143d139374e9a:src/test/java/org/apache/commons/csv/issues/JiraCsv294Test.java",
+    "oldPath" : null,
+    "newPath" : "src/test/java/org/apache/commons/csv/issues/JiraCsv294Test.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "28441e6a8505cd0e1a34800dd65c1eeacfc5e363",
+    "committerTime" : "2024-09-14T15:43:26Z",
+    "lineageKey" : "28441e6a8505cd0e1a34800dd65c1eeacfc5e363:src/main/java/org/apache/commons/csv/CSVException.java",
+    "oldPath" : null,
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVException.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "28441e6a8505cd0e1a34800dd65c1eeacfc5e363",
+    "committerTime" : "2024-09-14T15:43:26Z",
+    "lineageKey" : "eac54a225bc974157e914cf66cfa598171022018:src/java/org/apache/commons/csv/CSVStrategy.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "28441e6a8505cd0e1a34800dd65c1eeacfc5e363",
+    "committerTime" : "2024-09-14T15:43:26Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVParser.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "28441e6a8505cd0e1a34800dd65c1eeacfc5e363",
+    "committerTime" : "2024-09-14T15:43:26Z",
+    "lineageKey" : "38670dbe9232dc9b56d6464c42293e745974cf60:src/main/java/org/apache/commons/csv/CSVLexer.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "28441e6a8505cd0e1a34800dd65c1eeacfc5e363",
+    "committerTime" : "2024-09-14T15:43:26Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/CSVParserTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "bea69cd60e3b16a864255f4facf4a2fb00fc8bd3",
+    "committerTime" : "2024-09-14T15:47:16Z",
+    "lineageKey" : "eac54a225bc974157e914cf66cfa598171022018:src/java/org/apache/commons/csv/CSVStrategy.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "bea69cd60e3b16a864255f4facf4a2fb00fc8bd3",
+    "committerTime" : "2024-09-14T15:47:16Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVParser.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVParser.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVParser.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "bea69cd60e3b16a864255f4facf4a2fb00fc8bd3",
+    "committerTime" : "2024-09-14T15:47:16Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVPrinter.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "afbeaed866ee158b0ac99521c4b43011772a3873",
+    "committerTime" : "2024-09-14T16:10:43Z",
+    "lineageKey" : "afbeaed866ee158b0ac99521c4b43011772a3873:src/test/java/org/apache/commons/csv/issues/JiraCsv150Test.java",
+    "oldPath" : null,
+    "newPath" : "src/test/java/org/apache/commons/csv/issues/JiraCsv150Test.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "28acf1138b64c889a520c190464ad1d16862dd41",
+    "committerTime" : "2024-09-14T16:30:15Z",
+    "lineageKey" : "38670dbe9232dc9b56d6464c42293e745974cf60:src/main/java/org/apache/commons/csv/CSVLexer.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "28acf1138b64c889a520c190464ad1d16862dd41",
+    "committerTime" : "2024-09-14T16:30:15Z",
+    "lineageKey" : "afbeaed866ee158b0ac99521c4b43011772a3873:src/test/java/org/apache/commons/csv/issues/JiraCsv150Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/issues/JiraCsv150Test.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/issues/JiraCsv150Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "0546fb565397c5003a5b04736d53b629bd8ffc1f",
+    "committerTime" : "2024-09-14T16:35:14Z",
+    "lineageKey" : "38670dbe9232dc9b56d6464c42293e745974cf60:src/main/java/org/apache/commons/csv/CSVLexer.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "0546fb565397c5003a5b04736d53b629bd8ffc1f",
+    "committerTime" : "2024-09-14T16:35:14Z",
+    "lineageKey" : "afbeaed866ee158b0ac99521c4b43011772a3873:src/test/java/org/apache/commons/csv/issues/JiraCsv150Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/issues/JiraCsv150Test.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/issues/JiraCsv150Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "ca1ed20288dc7cf50f0c3f9a97ea2a60d0cd7c0a",
+    "committerTime" : "2024-09-14T19:20:36Z",
+    "lineageKey" : "38670dbe9232dc9b56d6464c42293e745974cf60:src/main/java/org/apache/commons/csv/CSVLexer.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "ca1ed20288dc7cf50f0c3f9a97ea2a60d0cd7c0a",
+    "committerTime" : "2024-09-14T19:20:36Z",
+    "lineageKey" : "afbeaed866ee158b0ac99521c4b43011772a3873:src/test/java/org/apache/commons/csv/issues/JiraCsv150Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/issues/JiraCsv150Test.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/issues/JiraCsv150Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "14d31b0244741cc453f7bb6a611ad20f56a77dd1",
+    "committerTime" : "2024-09-14T23:09:02Z",
+    "lineageKey" : "eac54a225bc974157e914cf66cfa598171022018:src/java/org/apache/commons/csv/CSVStrategy.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "14d31b0244741cc453f7bb6a611ad20f56a77dd1",
+    "committerTime" : "2024-09-14T23:09:02Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/ExtendedBufferedReader.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "14d31b0244741cc453f7bb6a611ad20f56a77dd1",
+    "committerTime" : "2024-09-14T23:09:02Z",
+    "lineageKey" : "38670dbe9232dc9b56d6464c42293e745974cf60:src/main/java/org/apache/commons/csv/CSVLexer.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/Lexer.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "14d31b0244741cc453f7bb6a611ad20f56a77dd1",
+    "committerTime" : "2024-09-14T23:09:02Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/ExtendedBufferedReaderTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8cbb558027f07bcde0e9786ce84abdd3043b317a",
+    "committerTime" : "2024-09-15T00:45:33Z",
+    "lineageKey" : "eac54a225bc974157e914cf66cfa598171022018:src/java/org/apache/commons/csv/CSVStrategy.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8cbb558027f07bcde0e9786ce84abdd3043b317a",
+    "committerTime" : "2024-09-15T00:45:33Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/ExtendedBufferedReader.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "5c73cdca476f163ab7b52e65332323cddda4858a",
+    "committerTime" : "2024-09-15T13:25:07Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/ExtendedBufferedReaderTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java",
+    "newPath" : "src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e5fa9c9dfcaa542bfd7fc4220c73eabd59d25801",
+    "committerTime" : "2024-09-15T13:25:56Z",
+    "lineageKey" : "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/ExtendedBufferedReader.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "560a699978fffa88b0712c2790fa77eccd59f6c9",
+    "committerTime" : "2024-09-15T13:58:45Z",
+    "lineageKey" : "eac54a225bc974157e914cf66cfa598171022018:src/java/org/apache/commons/csv/CSVStrategy.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVFormat.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "560a699978fffa88b0712c2790fa77eccd59f6c9",
+    "committerTime" : "2024-09-15T13:58:45Z",
+    "lineageKey" : "aee6c50e2830c007a572cc96a57bc105308acc49:src/main/java/org/apache/commons/csv/CSVRecord.java",
+    "oldPath" : "src/main/java/org/apache/commons/csv/CSVRecord.java",
+    "newPath" : "src/main/java/org/apache/commons/csv/CSVRecord.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  } ]
+}

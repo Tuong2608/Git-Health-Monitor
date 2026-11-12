@@ -1,0 +1,2997 @@
+{
+  "schemaVersion" : 1,
+  "repositoryUrl" : "https://github.com/apache/commons-codec",
+  "headSha" : "194065ddf9ad6560fc8c1cf77d864b5e5bf233f1",
+  "windowStart" : "2024-07-01T12:33:19Z",
+  "windowEnd" : "2024-12-28T12:33:19Z",
+  "config" : "{\"metricVersion\":\"metric-v1\",\"pipelineVersion\":\"git-metrics-v2\",\"lizardVersion\":\"1.24.3\",\"jgitVersion\":\"7.8.0.202609011348-r\",\"authorAliases\":{},\"excludedPrefixes\":[\"vendor/\",\"generated/\",\"target/\",\"build/\"],\"maxCommits\":10000,\"maxTreeEntries\":100000,\"maxBlobBytes\":2097152,\"maxFacts\":500000,\"filterLargeChangesets\":false,\"maxChangesetFiles\":30,\"renameScore\":60,\"renameLimit\":1000}",
+  "metricVersion" : "metric-v1",
+  "reachableCommits" : 2893,
+  "commitCount" : 143,
+  "truncated" : false,
+  "summary" : {
+    "coverageComplete" : false,
+    "reachableCommits" : 2893,
+    "selectedCommits" : 143,
+    "currentJavaFiles" : 156,
+    "hotspotPopulation" : 126,
+    "ambiguousFiles" : 14,
+    "noFunctionFiles" : 18,
+    "filterLargeChangesets" : false,
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS", "NO_FUNCTIONS" ]
+  },
+  "files" : [ {
+    "lineageKey" : "01a0540a78f58f4d69cbf01adfc387874bad0706:src/main/java/org/apache/commons/codec/digest/MessageDigestAlgorithms.java",
+    "path" : "src/main/java/org/apache/commons/codec/digest/MessageDigestAlgorithms.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "03d0f6c305014f5df354851f448b3002533fd235:src/test/org/apache/commons/codec/binary/Base32Test.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/Base32Test.java",
+    "frequency" : 1,
+    "maxCcn" : 7,
+    "hotspot" : 0.4862098312457287,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+    "frequency" : 2,
+    "maxCcn" : 2,
+    "hotspot" : 0.5203076013282912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/Lang.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/bm/Lang.java",
+    "frequency" : 3,
+    "maxCcn" : 8,
+    "hotspot" : 0.8744552590041414,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/Languages.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/bm/Languages.java",
+    "frequency" : 3,
+    "maxCcn" : 6,
+    "hotspot" : 0.8219391704986446,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/NameType.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/bm/NameType.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/PhoneticEngine.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java",
+    "frequency" : 1,
+    "maxCcn" : 12,
+    "hotspot" : 0.5230678732248808,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/ResourceConstants.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/bm/ResourceConstants.java",
+    "frequency" : 1,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/Rule.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/bm/Rule.java",
+    "frequency" : 3,
+    "maxCcn" : 5,
+    "hotspot" : 0.7826110144893183,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/RuleType.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/bm/RuleType.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/test/org/apache/commons/codec/language/bm/BeiderMorseEncoderTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/bm/BeiderMorseEncoderTest.java",
+    "frequency" : 2,
+    "maxCcn" : 3,
+    "hotspot" : 0.6205030217492901,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/test/org/apache/commons/codec/language/bm/LanguageGuessingTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/bm/LanguageGuessingTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/test/org/apache/commons/codec/language/bm/PhoneticTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/bm/PhoneticEngineTest.java",
+    "frequency" : 1,
+    "maxCcn" : 3,
+    "hotspot" : 0.3919183588453085,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/test/org/apache/commons/codec/language/bm/RuleTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/bm/RuleTest.java",
+    "frequency" : 1,
+    "maxCcn" : 4,
+    "hotspot" : 0.4270831300812524,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "19e0f44eafe0fb923e292b1dc6dc8706bb8100c0:src/test/org/apache/commons/codec/net/URLCodecTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/net/URLCodecTest.java",
+    "frequency" : 2,
+    "maxCcn" : 3,
+    "hotspot" : 0.6205030217492901,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "1e48e151ea23f8891902834a4553a806c1312d60:src/test/java/org/apache/commons/codec/digest/HmacAlgorithmsTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/HmacAlgorithmsTest.java",
+    "frequency" : 1,
+    "maxCcn" : 2,
+    "hotspot" : 0.3286335345030997,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "1e531f785c26d608c489ca20636489b898faf964:src/test/java/org/apache/commons/codec/language/bm/CacheSubSequencePerformanceTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/bm/CacheSubSequencePerformanceTest.java",
+    "frequency" : 1,
+    "maxCcn" : 3,
+    "hotspot" : 0.3919183588453085,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "240542361bcfcd2522e60155686709830e98bfd6:src/java/org/apache/commons/codec/language/ColognePhonetic.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/ColognePhonetic.java",
+    "frequency" : 2,
+    "maxCcn" : 30,
+    "hotspot" : 0.8602139268809823,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "240542361bcfcd2522e60155686709830e98bfd6:src/test/org/apache/commons/codec/language/ColognePhoneticTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/ColognePhoneticTest.java",
+    "frequency" : 2,
+    "maxCcn" : 3,
+    "hotspot" : 0.6205030217492901,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "2bcdfd86643761c239ec40e6e1e2f05855a07f95:src/main/java/org/apache/commons/codec/digest/MurmurHash2.java",
+    "path" : "src/main/java/org/apache/commons/codec/digest/MurmurHash2.java",
+    "frequency" : 1,
+    "maxCcn" : 9,
+    "hotspot" : 0.5079370039680118,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "2bcdfd86643761c239ec40e6e1e2f05855a07f95:src/main/java/org/apache/commons/codec/digest/MurmurHash3.java",
+    "path" : "src/main/java/org/apache/commons/codec/digest/MurmurHash3.java",
+    "frequency" : 1,
+    "maxCcn" : 17,
+    "hotspot" : 0.5299056519796708,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "2bcdfd86643761c239ec40e6e1e2f05855a07f95:src/test/java/org/apache/commons/codec/digest/MurmurHash2Test.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/MurmurHash2Test.java",
+    "frequency" : 1,
+    "maxCcn" : 3,
+    "hotspot" : 0.3919183588453085,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "2bcdfd86643761c239ec40e6e1e2f05855a07f95:src/test/java/org/apache/commons/codec/digest/MurmurHash3Test.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/MurmurHash3Test.java",
+    "frequency" : 1,
+    "maxCcn" : 4,
+    "hotspot" : 0.4270831300812524,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "2c13032a16e37b7bc9e0272d25fc185b5c82b42e:src/test/org/apache/commons/codec/binary/Codec105ErrorInputStream.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/Codec105ErrorInputStream.java",
+    "frequency" : 1,
+    "maxCcn" : 2,
+    "hotspot" : 0.3286335345030997,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "2cb3bbda5a0c09bdb4da5533df4ef7061c1c8125:src/test/java/org/apache/commons/codec/language/bm/PhoneticEngineRegressionTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/bm/PhoneticEngineRegressionTest.java",
+    "frequency" : 1,
+    "maxCcn" : 6,
+    "hotspot" : 0.4673328578219169,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "2d72fe3f3bbfaef98d3cd32c8aeb9870ddfd079d:src/java/org/apache/commons/codec/net/BCodec.java",
+    "path" : "src/main/java/org/apache/commons/codec/net/BCodec.java",
+    "frequency" : 2,
+    "maxCcn" : 3,
+    "hotspot" : 0.6205030217492901,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "2d72fe3f3bbfaef98d3cd32c8aeb9870ddfd079d:src/java/org/apache/commons/codec/net/QCodec.java",
+    "path" : "src/main/java/org/apache/commons/codec/net/QCodec.java",
+    "frequency" : 1,
+    "maxCcn" : 7,
+    "hotspot" : 0.4862098312457287,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "2d72fe3f3bbfaef98d3cd32c8aeb9870ddfd079d:src/java/org/apache/commons/codec/net/RFC1522Codec.java",
+    "path" : "src/main/java/org/apache/commons/codec/net/RFC1522Codec.java",
+    "frequency" : 2,
+    "maxCcn" : 8,
+    "hotspot" : 0.7871772354432006,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "2eef8dee31bbaa10ffb1264fbbe9aba1bc92c45b:src/test/org/apache/commons/codec/DecoderExceptionTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/DecoderExceptionTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "2eef8dee31bbaa10ffb1264fbbe9aba1bc92c45b:src/test/org/apache/commons/codec/EncoderExceptionTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/EncoderExceptionTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "37ba197e62d6b60037d18afc33801e6221f1b8c6:src/main/java/org/apache/commons/codec/binary/CharSequenceUtils.java",
+    "path" : "src/main/java/org/apache/commons/codec/binary/CharSequenceUtils.java",
+    "frequency" : 1,
+    "maxCcn" : 8,
+    "hotspot" : 0.4971921157862421,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "3acdc6c2ff65a0bc8c02b3f0c7e0d8b64adc0548:src/test/java/org/apache/commons/codec/net/CustomRFC1522Codec.java",
+    "path" : "src/test/java/org/apache/commons/codec/net/RFC1522OverrideTestCodec.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "3b8cd11d086e4e09e801deb114d34abb80175ac0:src/test/org/apache/commons/codec/language/DoubleMetaphone2Test.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/DoubleMetaphone2Test.java",
+    "frequency" : 2,
+    "maxCcn" : 2,
+    "hotspot" : 0.5203076013282912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "3fd5dcdd3ff86b8528463a19c7b93fe0a460ec36:src/test/java/org/apache/commons/codec/binary/AllocateDirectHexTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/AllocateDirectHexTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/B64.java",
+    "path" : "src/main/java/org/apache/commons/codec/digest/B64.java",
+    "frequency" : 2,
+    "maxCcn" : 2,
+    "hotspot" : 0.5203076013282912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/Crypt.java",
+    "path" : "src/main/java/org/apache/commons/codec/digest/Crypt.java",
+    "frequency" : 3,
+    "maxCcn" : 5,
+    "hotspot" : 0.7826110144893183,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/Md5Crypt.java",
+    "path" : "src/main/java/org/apache/commons/codec/digest/Md5Crypt.java",
+    "frequency" : 1,
+    "maxCcn" : 14,
+    "hotspot" : 0.5253570214625479,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java",
+    "path" : "src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java",
+    "frequency" : 2,
+    "maxCcn" : 18,
+    "hotspot" : 0.8478867848952477,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+    "path" : "src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+    "frequency" : 5,
+    "maxCcn" : 9,
+    "hotspot" : 0.9217808850263711,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/Apr1CryptTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/Apr1CryptTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/B64Test.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/B64Test.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+    "frequency" : 5,
+    "maxCcn" : 3,
+    "hotspot" : 0.7112355446685718,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/Md5CryptTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/Md5CryptTest.java",
+    "frequency" : 2,
+    "maxCcn" : 1,
+    "hotspot" : 0.324468796650772,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/Sha256CryptTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/Sha256CryptTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/Sha512CryptTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/Sha512CryptTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/UnixCryptTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/UnixCryptTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "453c56cff0dbbc0ecefaa7f20b8df6d11d6d12ec:src/main/java/org/apache/commons/codec/Charsets.java",
+    "path" : "src/main/java/org/apache/commons/codec/Charsets.java",
+    "frequency" : 1,
+    "maxCcn" : 2,
+    "hotspot" : 0.3286335345030997,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "453c56cff0dbbc0ecefaa7f20b8df6d11d6d12ec:src/test/java/org/apache/commons/codec/CharsetsTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/CharsetsTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4bb932dee2b8a5cbefd39322c742056f8b2cea3f:src/test/java/org/apache/commons/codec/ResourcesTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/ResourcesTest.java",
+    "frequency" : 2,
+    "maxCcn" : 1,
+    "hotspot" : 0.324468796650772,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4c542d7c7a2f9072803d42bcde9748bd36a80ffe:src/test/java/org/apache/commons/codec/binary/CharSequenceUtilsTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/CharSequenceUtilsTest.java",
+    "frequency" : 1,
+    "maxCcn" : 3,
+    "hotspot" : 0.3919183588453085,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4d67ff229be56b150180cd6652d118075d171e05:src/java/org/apache/commons/codec/RequiredCharsetNames.java",
+    "path" : "src/main/java/org/apache/commons/codec/CharEncoding.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4d67ff229be56b150180cd6652d118075d171e05:src/java/org/apache/commons/codec/binary/StringBytesUtils.java",
+    "path" : "src/main/java/org/apache/commons/codec/binary/StringUtils.java",
+    "frequency" : 1,
+    "maxCcn" : 7,
+    "hotspot" : 0.4862098312457287,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4d67ff229be56b150180cd6652d118075d171e05:src/test/org/apache/commons/codec/RequiredCharsetNamesTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/CharEncodingTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "4d67ff229be56b150180cd6652d118075d171e05:src/test/org/apache/commons/codec/binary/StringBytesUtilsTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/StringUtilsTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "59c42b102e5396b2ebd4541ed9007f385a00c357:src/test/org/apache/commons/codec/binary/Base32InputStreamTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/Base32InputStreamTest.java",
+    "frequency" : 1,
+    "maxCcn" : 5,
+    "hotspot" : 0.4449719092257398,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "59c42b102e5396b2ebd4541ed9007f385a00c357:src/test/org/apache/commons/codec/binary/Base32OutputStreamTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/Base32OutputStreamTest.java",
+    "frequency" : 1,
+    "maxCcn" : 6,
+    "hotspot" : 0.4673328578219169,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "59c42b102e5396b2ebd4541ed9007f385a00c357:src/test/org/apache/commons/codec/binary/Base32TestData.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/Base32TestData.java",
+    "frequency" : 1,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "5b2806103d5e6d4a7a6df1ebc8d88005ad7731be:src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+    "frequency" : 5,
+    "maxCcn" : 19,
+    "hotspot" : 0.9799673463947664,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "5b2806103d5e6d4a7a6df1ebc8d88005ad7731be:src/test/java/org/apache/commons/codec/language/DaitchMokotoffSoundexTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/DaitchMokotoffSoundexTest.java",
+    "frequency" : 2,
+    "maxCcn" : 1,
+    "hotspot" : 0.324468796650772,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "62674ec28306307a1d98cedec1aeced2bcfffe48:src/main/java/org/apache/commons/codec/binary/package-info.java",
+    "path" : "src/main/java/org/apache/commons/codec/binary/package-info.java",
+    "frequency" : 1,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "62d55fdd9ff6ae56789b38808a60b49aa30a18ce:src/test/java/org/apache/commons/codec/cli/DigestTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/cli/DigestTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "62e27b40aaa8ceade29ef0115c596f534e17ddbe:src/test/org/apache/commons/codec/net/UtilsTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/net/UtilsTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "63d6b54f3acd0d3cfce842a3356c78313b3771ca:src/main/java/org/apache/commons/codec/language/package-info.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/package-info.java",
+    "frequency" : 1,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "690728e6332774663f2ae37d3fd473cbd0ada67f:src/java/org/apache/commons/codec/StringDecoder.java",
+    "path" : "src/main/java/org/apache/commons/codec/StringDecoder.java",
+    "frequency" : 1,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "690728e6332774663f2ae37d3fd473cbd0ada67f:src/java/org/apache/commons/codec/net/URLCodec.java",
+    "path" : "src/main/java/org/apache/commons/codec/net/URLCodec.java",
+    "frequency" : 2,
+    "maxCcn" : 7,
+    "hotspot" : 0.7697895816390347,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6aa2610adf19733a17851e0179fe84e34c7b9861:src/main/java/org/apache/commons/codec/digest/package-info.java",
+    "path" : "src/main/java/org/apache/commons/codec/digest/package-info.java",
+    "frequency" : 1,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "6dc6822c6d62209a1844c85c5b458415d9fcf5fa:src/main/java/org/apache/commons/codec/package-info.java",
+    "path" : "src/main/java/org/apache/commons/codec/package-info.java",
+    "frequency" : 1,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/BinaryDecoder.java",
+    "path" : "src/main/java/org/apache/commons/codec/BinaryDecoder.java",
+    "frequency" : 1,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/BinaryEncoder.java",
+    "path" : "src/main/java/org/apache/commons/codec/BinaryEncoder.java",
+    "frequency" : 1,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/Decoder.java",
+    "path" : "src/main/java/org/apache/commons/codec/Decoder.java",
+    "frequency" : 1,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/DecoderException.java",
+    "path" : "src/main/java/org/apache/commons/codec/DecoderException.java",
+    "frequency" : 2,
+    "maxCcn" : 1,
+    "hotspot" : 0.324468796650772,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/Encoder.java",
+    "path" : "src/main/java/org/apache/commons/codec/Encoder.java",
+    "frequency" : 1,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/EncoderException.java",
+    "path" : "src/main/java/org/apache/commons/codec/EncoderException.java",
+    "frequency" : 2,
+    "maxCcn" : 1,
+    "hotspot" : 0.324468796650772,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/StringEncoder.java",
+    "path" : "src/main/java/org/apache/commons/codec/StringEncoder.java",
+    "frequency" : 1,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/StringEncoderComparator.java",
+    "path" : "src/main/java/org/apache/commons/codec/StringEncoderComparator.java",
+    "frequency" : 1,
+    "maxCcn" : 2,
+    "hotspot" : 0.3286335345030997,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/binary/Base64.java",
+    "path" : "src/main/java/org/apache/commons/codec/binary/Base64.java",
+    "frequency" : 5,
+    "maxCcn" : 17,
+    "hotspot" : 0.9616485844631603,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/binary/Hex.java",
+    "path" : "src/main/java/org/apache/commons/codec/binary/Hex.java",
+    "frequency" : 2,
+    "maxCcn" : 5,
+    "hotspot" : 0.7044998225691757,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/language/Metaphone.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/Metaphone.java",
+    "frequency" : 2,
+    "maxCcn" : 90,
+    "hotspot" : 0.867179335547152,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/language/RefinedSoundex.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/RefinedSoundex.java",
+    "frequency" : 1,
+    "maxCcn" : 6,
+    "hotspot" : 0.4673328578219169,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/language/Soundex.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/Soundex.java",
+    "frequency" : 4,
+    "maxCcn" : 11,
+    "hotspot" : 0.9293782868132868,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/BinaryEncoderAbstractTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/BinaryEncoderAbstractTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/StringEncoderAbstractTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/AbstractStringEncoderTest.java",
+    "frequency" : 1,
+    "maxCcn" : 5,
+    "hotspot" : 0.4449719092257398,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/StringEncoderComparatorTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/StringEncoderComparatorTest.java",
+    "frequency" : 1,
+    "maxCcn" : 2,
+    "hotspot" : 0.3286335345030997,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/binary/Base64Test.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/Base64Test.java",
+    "frequency" : 2,
+    "maxCcn" : 4,
+    "hotspot" : 0.6761774914916941,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/binary/HexTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/HexTest.java",
+    "frequency" : 1,
+    "maxCcn" : 4,
+    "hotspot" : 0.4270831300812524,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/language/MetaphoneTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/MetaphoneTest.java",
+    "frequency" : 2,
+    "maxCcn" : 4,
+    "hotspot" : 0.6761774914916941,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/language/RefinedSoundexTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/RefinedSoundexTest.java",
+    "frequency" : 2,
+    "maxCcn" : 2,
+    "hotspot" : 0.5203076013282912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/language/SoundexTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/SoundexTest.java",
+    "frequency" : 2,
+    "maxCcn" : 2,
+    "hotspot" : 0.5203076013282912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "727432fe12821b9e25e2c5a1758076ad83b098eb:src/java/org/apache/commons/codec/language/DoubleMetaphone.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java",
+    "frequency" : 3,
+    "maxCcn" : 41,
+    "hotspot" : 0.9594665184361568,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "752897b3e5efb8127c3bb797dbdf3bf511ec91b5:src/java/org/apache/commons/codec/digest/DigestUtils.java",
+    "path" : "src/main/java/org/apache/commons/codec/digest/DigestUtils.java",
+    "frequency" : 4,
+    "maxCcn" : 2,
+    "hotspot" : 0.5891010100144117,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "752897b3e5efb8127c3bb797dbdf3bf511ec91b5:src/test/org/apache/commons/codec/digest/DigestUtilsTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/DigestUtilsTest.java",
+    "frequency" : 1,
+    "maxCcn" : 2,
+    "hotspot" : 0.3286335345030997,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "765445394812db1c3dedd22cce7749dfb7713971:src/java/org/apache/commons/codec/net/QuotedPrintableCodec.java",
+    "path" : "src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java",
+    "frequency" : 2,
+    "maxCcn" : 17,
+    "hotspot" : 0.8389707980615297,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "765445394812db1c3dedd22cce7749dfb7713971:src/test/org/apache/commons/codec/net/QuotedPrintableCodecTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/net/QuotedPrintableCodecTest.java",
+    "frequency" : 1,
+    "maxCcn" : 3,
+    "hotspot" : 0.3919183588453085,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7656a09e8587355ee142e730f5df99ce72b382e5:src/java/org/apache/commons/codec/language/AbstractCaverphone.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/AbstractCaverphone.java",
+    "frequency" : 1,
+    "maxCcn" : 2,
+    "hotspot" : 0.3286335345030997,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7656a09e8587355ee142e730f5df99ce72b382e5:src/java/org/apache/commons/codec/language/Caverphone1.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/Caverphone1.java",
+    "frequency" : 1,
+    "maxCcn" : 3,
+    "hotspot" : 0.3919183588453085,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7656a09e8587355ee142e730f5df99ce72b382e5:src/java/org/apache/commons/codec/language/Caverphone2.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/Caverphone2.java",
+    "frequency" : 1,
+    "maxCcn" : 2,
+    "hotspot" : 0.3286335345030997,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7656a09e8587355ee142e730f5df99ce72b382e5:src/test/org/apache/commons/codec/language/Caverphone1Test.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/Caverphone1Test.java",
+    "frequency" : 2,
+    "maxCcn" : 1,
+    "hotspot" : 0.324468796650772,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7656a09e8587355ee142e730f5df99ce72b382e5:src/test/org/apache/commons/codec/language/Caverphone2Test.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/Caverphone2Test.java",
+    "frequency" : 2,
+    "maxCcn" : 1,
+    "hotspot" : 0.324468796650772,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "817666037d3c09b9138b161964b0fafc76d65998:src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java",
+    "path" : "src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java",
+    "frequency" : 1,
+    "maxCcn" : 9,
+    "hotspot" : 0.5079370039680118,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "817666037d3c09b9138b161964b0fafc76d65998:src/test/java/org/apache/commons/codec/digest/PureJavaCrc32CTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/PureJavaCrc32CTest.java",
+    "frequency" : 1,
+    "maxCcn" : 2,
+    "hotspot" : 0.3286335345030997,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "82d967a3f9e3d4c1927ff682d0df7a09399df7b6:src/main/java/org/apache/commons/codec/digest/Digest.java",
+    "path" : "src/main/java/org/apache/commons/codec/cli/Digest.java",
+    "frequency" : 1,
+    "maxCcn" : 6,
+    "hotspot" : 0.4673328578219169,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "847a6d07793a198d28819731e5166f9ed3845164:src/main/java/org/apache/commons/codec/digest/XXHash32.java",
+    "path" : "src/main/java/org/apache/commons/codec/digest/XXHash32.java",
+    "frequency" : 2,
+    "maxCcn" : 6,
+    "hotspot" : 0.7399026963053993,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "847a6d07793a198d28819731e5166f9ed3845164:src/test/java/org/apache/commons/codec/digest/XXHash32Test.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/XXHash32Test.java",
+    "frequency" : 1,
+    "maxCcn" : 3,
+    "hotspot" : 0.3919183588453085,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "84e1e79f3837fd112ae33ce03102abfe55ceedd4:src/test/java/org/apache/commons/codec/language/Nysiis.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/Nysiis.java",
+    "frequency" : 2,
+    "maxCcn" : 19,
+    "hotspot" : 0.85495263026673,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "84e1e79f3837fd112ae33ce03102abfe55ceedd4:src/test/java/org/apache/commons/codec/language/NysiisTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/NysiisTest.java",
+    "frequency" : 2,
+    "maxCcn" : 2,
+    "hotspot" : 0.5203076013282912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "899036a36138ab7ae810ec2b351d8226c66908bc:src/java/org/apache/commons/codec/language/SoundexUtils.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/SoundexUtils.java",
+    "frequency" : 1,
+    "maxCcn" : 5,
+    "hotspot" : 0.4449719092257398,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "8b0318c9dded3ef6306d3ee5904721149b7981e1:src/test/java/org/apache/commons/codec/language/bm/PhoneticEnginePerformanceTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/bm/PhoneticEnginePerformanceTest.java",
+    "frequency" : 2,
+    "maxCcn" : 2,
+    "hotspot" : 0.5203076013282912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "91a01c9c6c0078bbc055a1e05b705edcbefb247f:src/java/org/apache/commons/codec/net/Utils.java",
+    "path" : "src/main/java/org/apache/commons/codec/net/Utils.java",
+    "frequency" : 2,
+    "maxCcn" : 2,
+    "hotspot" : 0.5203076013282912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "924540abc919d32a8aaa92c6f18906f01e64e167:src/main/java/org/apache/commons/codec/net/PercentCodec.java",
+    "path" : "src/main/java/org/apache/commons/codec/net/PercentCodec.java",
+    "frequency" : 1,
+    "maxCcn" : 7,
+    "hotspot" : 0.4862098312457287,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "924540abc919d32a8aaa92c6f18906f01e64e167:src/test/java/org/apache/commons/codec/net/PercentCodecTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/net/PercentCodecTest.java",
+    "frequency" : 1,
+    "maxCcn" : 3,
+    "hotspot" : 0.3919183588453085,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "a82070e546d2c2f871895d32cd2f6629480c02bc:src/test/java/org/apache/commons/codec/digest/MessageDigestAlgorithmTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/MessageDigestAlgorithmsTest.java",
+    "frequency" : 1,
+    "maxCcn" : 9,
+    "hotspot" : 0.5079370039680118,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "aca3970538e89a86be9968052615ae5ed05d9259:src/main/java/org/apache/commons/codec/cli/package-info.java",
+    "path" : "src/main/java/org/apache/commons/codec/cli/package-info.java",
+    "frequency" : 1,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "ad12e19e614e92f824746c199ebfc31228a8c33c:src/java/org/apache/commons/codec/binary/Base32.java",
+    "path" : "src/main/java/org/apache/commons/codec/binary/Base32.java",
+    "frequency" : 2,
+    "maxCcn" : 18,
+    "hotspot" : 0.8478867848952477,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "b542cf9d098e65a78b71e5671bf700610b03dc07:src/test/java/org/apache/commons/codec/digest/XXHash32OverflowTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/XXHash32OverflowTest.java",
+    "frequency" : null,
+    "maxCcn" : 2,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "b70e177f8733e9dd4e5f503620ed0b136b74785b:src/main/java/org/apache/commons/codec/digest/Blake3.java",
+    "path" : "src/main/java/org/apache/commons/codec/digest/Blake3.java",
+    "frequency" : null,
+    "maxCcn" : 4,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "b70e177f8733e9dd4e5f503620ed0b136b74785b:src/test/java/org/apache/commons/codec/digest/Blake3Test.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/Blake3Test.java",
+    "frequency" : null,
+    "maxCcn" : 2,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "b70e177f8733e9dd4e5f503620ed0b136b74785b:src/test/java/org/apache/commons/codec/digest/Blake3TestVectorsTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/Blake3TestVectorsTest.java",
+    "frequency" : null,
+    "maxCcn" : 2,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "bdf8e5c049a7f6bbe706c6d35bff55a79bba1e65:src/main/java/org/apache/commons/codec/language/Caverphone.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/Caverphone.java",
+    "frequency" : 2,
+    "maxCcn" : 2,
+    "hotspot" : 0.5203076013282912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "c10a2d739970c3dd19409e958fb4479135a821b9:src/test/org/apache/commons/codec/net/RFC1522CodecTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/net/RFC1522CodecTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "c23fdd2c3f0bec540bee78c1d292d4c33a588d82:src/java/org/apache/commons/codec/binary/Binary.java",
+    "path" : "src/main/java/org/apache/commons/codec/binary/BinaryCodec.java",
+    "frequency" : 1,
+    "maxCcn" : 6,
+    "hotspot" : 0.4673328578219169,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "c23fdd2c3f0bec540bee78c1d292d4c33a588d82:src/test/org/apache/commons/codec/binary/BinaryTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/BinaryCodecTest.java",
+    "frequency" : 1,
+    "maxCcn" : 3,
+    "hotspot" : 0.3919183588453085,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "c2b70e8e34a7c8ebd4c60e287c73f1e95526b2f5:src/main/java/org/apache/commons/codec/Resources.java",
+    "path" : "src/main/java/org/apache/commons/codec/Resources.java",
+    "frequency" : null,
+    "maxCcn" : 2,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/Base32InputStream.java",
+    "path" : "src/main/java/org/apache/commons/codec/binary/Base32InputStream.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/Base32OutputStream.java",
+    "path" : "src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java",
+    "frequency" : 2,
+    "maxCcn" : 1,
+    "hotspot" : 0.324468796650772,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/BasedCodec.java",
+    "path" : "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+    "frequency" : 3,
+    "maxCcn" : 6,
+    "hotspot" : 0.8219391704986446,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/BasedCodecInputStream.java",
+    "path" : "src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java",
+    "frequency" : 3,
+    "maxCcn" : 11,
+    "hotspot" : 0.9118596383216005,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/BasedCodecOutputStream.java",
+    "path" : "src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java",
+    "frequency" : 2,
+    "maxCcn" : 7,
+    "hotspot" : 0.7697895816390347,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "cbe33f0a85fd9f2c04efb96296a26880995618b0:src/test/org/apache/commons/codec/binary/Base64Codec13Test.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/Base64Codec13Test.java",
+    "frequency" : 1,
+    "maxCcn" : 3,
+    "hotspot" : 0.3919183588453085,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "cd07a9721ed81850d97a2effc26a82154d6d3d29:src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java",
+    "path" : "src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "cd07a9721ed81850d97a2effc26a82154d6d3d29:src/main/java/org/apache/commons/codec/digest/HmacUtils.java",
+    "path" : "src/main/java/org/apache/commons/codec/digest/HmacUtils.java",
+    "frequency" : 1,
+    "maxCcn" : 3,
+    "hotspot" : 0.3919183588453085,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "cd07a9721ed81850d97a2effc26a82154d6d3d29:src/test/java/org/apache/commons/codec/digest/HmacUtilsTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/HmacUtilsTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "ce54f3476745a68d02b1db11444b71c758b1d1bb:src/main/java/org/apache/commons/codec/digest/PureJavaCrc32.java",
+    "path" : "src/main/java/org/apache/commons/codec/digest/PureJavaCrc32.java",
+    "frequency" : 1,
+    "maxCcn" : 9,
+    "hotspot" : 0.5079370039680118,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "ce54f3476745a68d02b1db11444b71c758b1d1bb:src/test/java/org/apache/commons/codec/digest/PureJavaCrc32Test.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/PureJavaCrc32Test.java",
+    "frequency" : 1,
+    "maxCcn" : 9,
+    "hotspot" : 0.5079370039680118,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "cfc4ec2cad44702c4a1c955bfe088de0a869d0d0:src/main/java/org/apache/commons/codec/net/package-info.java",
+    "path" : "src/main/java/org/apache/commons/codec/net/package-info.java",
+    "frequency" : 1,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "d542ac38c91731d1fd91feefee6301d90aa44957:src/test/org/apache/commons/codec/language/DoubleMetaphoneTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/DoubleMetaphoneTest.java",
+    "frequency" : 2,
+    "maxCcn" : 5,
+    "hotspot" : 0.7044998225691757,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "d7de1506746641f632f3592b857679414bffac04:src/main/java/org/apache/commons/codec/language/bm/package-info.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/bm/package-info.java",
+    "frequency" : 1,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "e2701a5a1872adc57a2735d39ac9a0dca37f75e3:src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java",
+    "path" : "src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java",
+    "frequency" : 1,
+    "maxCcn" : 11,
+    "hotspot" : 0.5184592558726288,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e2701a5a1872adc57a2735d39ac9a0dca37f75e3:src/test/java/org/apache/commons/codec/language/MatchRatingApproachEncoderTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/language/MatchRatingApproachEncoderTest.java",
+    "frequency" : 2,
+    "maxCcn" : 1,
+    "hotspot" : 0.324468796650772,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e2df85024e2ab99645a788b4b2836ba1cfdb87f5:src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+    "path" : "src/main/java/org/apache/commons/codec/binary/Base64InputStream.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e2df85024e2ab99645a788b4b2836ba1cfdb87f5:src/java/org/apache/commons/codec/binary/Base64OutputStream.java",
+    "path" : "src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java",
+    "frequency" : 2,
+    "maxCcn" : 1,
+    "hotspot" : 0.324468796650772,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e2df85024e2ab99645a788b4b2836ba1cfdb87f5:src/test/org/apache/commons/codec/binary/Base64InputStreamTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/Base64InputStreamTest.java",
+    "frequency" : 1,
+    "maxCcn" : 5,
+    "hotspot" : 0.4449719092257398,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e2df85024e2ab99645a788b4b2836ba1cfdb87f5:src/test/org/apache/commons/codec/binary/Base64OutputStreamTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/Base64OutputStreamTest.java",
+    "frequency" : 1,
+    "maxCcn" : 6,
+    "hotspot" : 0.4673328578219169,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e2df85024e2ab99645a788b4b2836ba1cfdb87f5:src/test/org/apache/commons/codec/binary/Base64TestData.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/Base64TestData.java",
+    "frequency" : 1,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "e810384bf01c1ea545757b06af73a4bb2b2401ab:src/test/org/apache/commons/codec/binary/BaseNCodecTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/BaseNCodecTest.java",
+    "frequency" : 1,
+    "maxCcn" : 3,
+    "hotspot" : 0.3919183588453085,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "f57037a7dba457822e233129408b4d71353c0b99:src/test/org/apache/commons/codec/net/BCodecTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/net/BCodecTest.java",
+    "frequency" : 1,
+    "maxCcn" : 3,
+    "hotspot" : 0.3919183588453085,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "f57037a7dba457822e233129408b4d71353c0b99:src/test/org/apache/commons/codec/net/QCodecTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/net/QCodecTest.java",
+    "frequency" : 1,
+    "maxCcn" : 3,
+    "hotspot" : 0.3919183588453085,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "fc393f7bdf6c971cb0dcd977d3015ad5ce524149:b/src/test/java/org/apache/commons/codec/digest/Sha2CryptTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/digest/Sha2CryptTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.204939015319192,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/main/java/org/apache/commons/codec/CodecPolicy.java",
+    "path" : "src/main/java/org/apache/commons/codec/CodecPolicy.java",
+    "frequency" : null,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/main/java/org/apache/commons/codec/binary/Base16.java",
+    "path" : "src/main/java/org/apache/commons/codec/binary/Base16.java",
+    "frequency" : null,
+    "maxCcn" : 11,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/main/java/org/apache/commons/codec/binary/Base16InputStream.java",
+    "path" : "src/main/java/org/apache/commons/codec/binary/Base16InputStream.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java",
+    "path" : "src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/test/java/org/apache/commons/codec/binary/Base16InputStreamTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/Base16InputStreamTest.java",
+    "frequency" : null,
+    "maxCcn" : 4,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/test/java/org/apache/commons/codec/binary/Base16OutputStreamTest.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/Base16OutputStreamTest.java",
+    "frequency" : null,
+    "maxCcn" : 5,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/test/java/org/apache/commons/codec/binary/Base16Test.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/Base16Test.java",
+    "frequency" : null,
+    "maxCcn" : 7,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/test/java/org/apache/commons/codec/binary/Base16TestData.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/Base16TestData.java",
+    "frequency" : null,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/test/java/org/apache/commons/codec/binary/BaseNTestData.java",
+    "path" : "src/test/java/org/apache/commons/codec/binary/BaseNTestData.java",
+    "frequency" : null,
+    "maxCcn" : 5,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  } ],
+  "facts" : [ {
+    "commitSha" : "17e9b6f98161aefae40922d24509625c120a0b78",
+    "committerTime" : "2024-07-09T12:57:25Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/binary/Hex.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Hex.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Hex.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "2ba905517125a7d4fc3f65b37848b63eb275a943",
+    "committerTime" : "2024-07-09T12:57:26Z",
+    "lineageKey" : "bdf8e5c049a7f6bbe706c6d35bff55a79bba1e65:src/main/java/org/apache/commons/codec/language/Caverphone.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/Caverphone.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/Caverphone.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c7df2078afd071102b0337f5d4f4f152aa5c1401",
+    "committerTime" : "2024-07-09T12:57:27Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/language/Metaphone.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/Metaphone.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/Metaphone.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c07d6a49d5b62b4a370ec57d89235fc21004c25a",
+    "committerTime" : "2024-07-09T12:57:27Z",
+    "lineageKey" : "84e1e79f3837fd112ae33ce03102abfe55ceedd4:src/test/java/org/apache/commons/codec/language/Nysiis.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/Nysiis.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/Nysiis.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e145a0ae6e0ce48cbd0e393c0d4102a92d4b3562",
+    "committerTime" : "2024-07-09T12:57:28Z",
+    "lineageKey" : "765445394812db1c3dedd22cce7749dfb7713971:src/java/org/apache/commons/codec/net/QuotedPrintableCodec.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "982ee0300d1578d76709762b144ee576408bb35d",
+    "committerTime" : "2024-07-09T12:57:28Z",
+    "lineageKey" : "2d72fe3f3bbfaef98d3cd32c8aeb9870ddfd079d:src/java/org/apache/commons/codec/net/RFC1522Codec.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/net/RFC1522Codec.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/net/RFC1522Codec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "93271116f6636d6a4a216a73f7d0d1475ab6acd8",
+    "committerTime" : "2024-07-09T12:57:29Z",
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/test/java/org/apache/commons/codec/binary/Base16Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/Base16Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/Base16Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "146b0d82e57e4bf2bf484923103852fc7bed10cd",
+    "committerTime" : "2024-07-09T12:57:29Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/binary/Base64Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/Base64Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/Base64Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "0dfbc98bd6712f3fa2b30191869ccb2bbe3c3dd6",
+    "committerTime" : "2024-07-09T12:57:30Z",
+    "lineageKey" : "7656a09e8587355ee142e730f5df99ce72b382e5:src/test/org/apache/commons/codec/language/Caverphone1Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/Caverphone1Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/Caverphone1Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "d6a6bc7fe25375bb5b22555763f95b1d58999100",
+    "committerTime" : "2024-07-09T12:57:30Z",
+    "lineageKey" : "7656a09e8587355ee142e730f5df99ce72b382e5:src/test/org/apache/commons/codec/language/Caverphone2Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/Caverphone2Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/Caverphone2Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "6517ed1e4aa38f98caef917c80bd30214b529a4c",
+    "committerTime" : "2024-07-09T12:57:31Z",
+    "lineageKey" : "240542361bcfcd2522e60155686709830e98bfd6:src/test/org/apache/commons/codec/language/ColognePhoneticTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/ColognePhoneticTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/ColognePhoneticTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "a54c0e63a39da406fdc5a904fbae4979b1978c81",
+    "committerTime" : "2024-07-09T12:57:32Z",
+    "lineageKey" : "5b2806103d5e6d4a7a6df1ebc8d88005ad7731be:src/test/java/org/apache/commons/codec/language/DaitchMokotoffSoundexTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/DaitchMokotoffSoundexTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/DaitchMokotoffSoundexTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "9f1d2c4a73f6d3b7c5357121ba8349b04fdc4e20",
+    "committerTime" : "2024-07-09T12:57:32Z",
+    "lineageKey" : "3b8cd11d086e4e09e801deb114d34abb80175ac0:src/test/org/apache/commons/codec/language/DoubleMetaphone2Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/DoubleMetaphone2Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/DoubleMetaphone2Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "9bcb651b24698fd8af6ec9eba3a2e5897e8c8dd0",
+    "committerTime" : "2024-07-09T12:57:33Z",
+    "lineageKey" : "d542ac38c91731d1fd91feefee6301d90aa44957:src/test/org/apache/commons/codec/language/DoubleMetaphoneTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/DoubleMetaphoneTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/DoubleMetaphoneTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "9b825364d420fc63438ed14e323163d5d2339960",
+    "committerTime" : "2024-07-09T12:57:34Z",
+    "lineageKey" : "e2701a5a1872adc57a2735d39ac9a0dca37f75e3:src/test/java/org/apache/commons/codec/language/MatchRatingApproachEncoderTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/MatchRatingApproachEncoderTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/MatchRatingApproachEncoderTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "dbe8f00fb12ba4830e5d8033bb5b3336a7ee67da",
+    "committerTime" : "2024-07-09T12:57:34Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/language/MetaphoneTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/MetaphoneTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/MetaphoneTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "a7ffcabf619f590c9f33105d41e7cc8a91ae1912",
+    "committerTime" : "2024-07-09T12:57:35Z",
+    "lineageKey" : "84e1e79f3837fd112ae33ce03102abfe55ceedd4:src/test/java/org/apache/commons/codec/language/NysiisTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/NysiisTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/NysiisTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8dcf9d1f745c88beedf54e63c7a5d683725ebdea",
+    "committerTime" : "2024-07-09T12:57:35Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/language/RefinedSoundexTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/RefinedSoundexTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/RefinedSoundexTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "1e6544e4f1d269c0edf8b702f60d6dc866b3affa",
+    "committerTime" : "2024-07-09T12:57:36Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/language/SoundexTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/SoundexTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/SoundexTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "0c82238e5b9a914fdd862df3f6ab0085f533b5e8",
+    "committerTime" : "2024-07-09T12:57:36Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/test/org/apache/commons/codec/language/bm/BeiderMorseEncoderTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/bm/BeiderMorseEncoderTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/bm/BeiderMorseEncoderTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "974cf873936633d7bb7e060b1caf119e60b60e98",
+    "committerTime" : "2024-07-09T12:57:37Z",
+    "lineageKey" : "19e0f44eafe0fb923e292b1dc6dc8706bb8100c0:src/test/org/apache/commons/codec/net/URLCodecTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/net/URLCodecTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/net/URLCodecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "166e04e82f920f4ab0a5fe9e0eb95c7350b2b42e",
+    "committerTime" : "2024-07-21T15:23:06Z",
+    "lineageKey" : "240542361bcfcd2522e60155686709830e98bfd6:src/java/org/apache/commons/codec/language/ColognePhonetic.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/ColognePhonetic.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/ColognePhonetic.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "cd2b090758ce2b92b6e07bec568687d694db9814",
+    "committerTime" : "2024-07-28T22:16:36Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/Md5CryptTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/Md5CryptTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/Md5CryptTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "867eafc0877d3c78dd59b6721c78a977dd0245fe",
+    "committerTime" : "2024-07-29T11:58:36Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/DecoderException.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/DecoderException.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/DecoderException.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "867eafc0877d3c78dd59b6721c78a977dd0245fe",
+    "committerTime" : "2024-07-29T11:58:36Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/EncoderException.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/EncoderException.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/EncoderException.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "fd903ce169dc6094c0386fc6ecf85f35c38fb0f5",
+    "committerTime" : "2024-07-30T07:56:44Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "aaef8c591276a4eb8be871e6ff1fdab3564930f3",
+    "committerTime" : "2024-07-30T10:33:09Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/B64.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/B64.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/B64.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "c52d4daddb00ce45ecd7bb0ab2e34fab29569b67",
+    "committerTime" : "2024-07-30T11:14:09Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8862fb3ca57e0fa9e86be0b56aa7eba5e121f33c",
+    "committerTime" : "2024-07-30T11:26:22Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/Crypt.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/Crypt.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/Crypt.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "97b7e5d170f494ecbc5861f2f0df8925db3831b2",
+    "committerTime" : "2024-07-30T14:16:12Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "cd91956caf3aed9402b6a0c43affc3a7e8546661",
+    "committerTime" : "2024-07-30T15:01:26Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "6175c99ee3055b3a87d9c51e59ab8be22a4c1cfc",
+    "committerTime" : "2024-07-30T15:53:54Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/Crypt.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/Crypt.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/Crypt.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "7cae886f2de60fabc37d36a1ddd09473c5aeaa46",
+    "committerTime" : "2024-07-30T15:55:23Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "a6f7a5372ecb859d6a3a651e76507a4d354ecadd",
+    "committerTime" : "2024-08-02T18:45:18Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/binary/Base64.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Base64.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Base64.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "83e80d714a58d5c49591d694d6bf030380f36fa9",
+    "committerTime" : "2024-08-02T18:46:22Z",
+    "lineageKey" : "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/BasedCodecInputStream.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "83e80d714a58d5c49591d694d6bf030380f36fa9",
+    "committerTime" : "2024-08-02T18:46:22Z",
+    "lineageKey" : "752897b3e5efb8127c3bb797dbdf3bf511ec91b5:src/java/org/apache/commons/codec/digest/DigestUtils.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/DigestUtils.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/DigestUtils.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "83e80d714a58d5c49591d694d6bf030380f36fa9",
+    "committerTime" : "2024-08-02T18:46:22Z",
+    "lineageKey" : "847a6d07793a198d28819731e5166f9ed3845164:src/main/java/org/apache/commons/codec/digest/XXHash32.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/XXHash32.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/XXHash32.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "83e80d714a58d5c49591d694d6bf030380f36fa9",
+    "committerTime" : "2024-08-02T18:46:22Z",
+    "lineageKey" : "5b2806103d5e6d4a7a6df1ebc8d88005ad7731be:src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "83e80d714a58d5c49591d694d6bf030380f36fa9",
+    "committerTime" : "2024-08-02T18:46:22Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/language/Soundex.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/Soundex.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/Soundex.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "007ddf13798a20fc6578f670c3bd057c39c6c179",
+    "committerTime" : "2024-08-03T12:07:56Z",
+    "lineageKey" : "5b2806103d5e6d4a7a6df1ebc8d88005ad7731be:src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "a3a36c53cca3453ab3ff8f510ca37d36355209fd",
+    "committerTime" : "2024-08-21T13:13:04Z",
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/test/java/org/apache/commons/codec/binary/Base16OutputStreamTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/Base16OutputStreamTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/Base16OutputStreamTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "44a317ea0b319190264b20fec612f6c2da6223f3",
+    "committerTime" : "2024-09-12T00:45:14Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "babe1807cfc2fbb7c69bc146d33672db7d9eb30c",
+    "committerTime" : "2024-09-12T00:45:26Z",
+    "lineageKey" : "727432fe12821b9e25e2c5a1758076ad83b098eb:src/java/org/apache/commons/codec/language/DoubleMetaphone.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "54431b0a0d5dc4d5032ebc0409008f8f88420eac",
+    "committerTime" : "2024-10-11T15:41:11Z",
+    "lineageKey" : "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/BasedCodec.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "2160eaa3403aa3ebce4d82c95368b96c39d9c24d",
+    "committerTime" : "2024-10-19T21:49:00Z",
+    "lineageKey" : "727432fe12821b9e25e2c5a1758076ad83b098eb:src/java/org/apache/commons/codec/language/DoubleMetaphone.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "ffbabba277653100dc08f4733c9e264f23561dfc",
+    "committerTime" : "2024-11-11T14:26:22Z",
+    "lineageKey" : "752897b3e5efb8127c3bb797dbdf3bf511ec91b5:src/java/org/apache/commons/codec/digest/DigestUtils.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/DigestUtils.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/DigestUtils.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "44373279e1c3a29f1448abe17c0b993bc3cf88d8",
+    "committerTime" : "2024-11-15T15:11:03Z",
+    "lineageKey" : "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/Base32OutputStream.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "44373279e1c3a29f1448abe17c0b993bc3cf88d8",
+    "committerTime" : "2024-11-15T15:11:03Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/binary/Base64.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Base64.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Base64.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "44373279e1c3a29f1448abe17c0b993bc3cf88d8",
+    "committerTime" : "2024-11-15T15:11:03Z",
+    "lineageKey" : "e2df85024e2ab99645a788b4b2836ba1cfdb87f5:src/java/org/apache/commons/codec/binary/Base64OutputStream.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "44373279e1c3a29f1448abe17c0b993bc3cf88d8",
+    "committerTime" : "2024-11-15T15:11:03Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/language/Soundex.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/Soundex.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/Soundex.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "44373279e1c3a29f1448abe17c0b993bc3cf88d8",
+    "committerTime" : "2024-11-15T15:11:03Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "44373279e1c3a29f1448abe17c0b993bc3cf88d8",
+    "committerTime" : "2024-11-15T15:11:03Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/Lang.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/bm/Lang.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/bm/Lang.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "44373279e1c3a29f1448abe17c0b993bc3cf88d8",
+    "committerTime" : "2024-11-15T15:11:03Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/Languages.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/bm/Languages.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/bm/Languages.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "44373279e1c3a29f1448abe17c0b993bc3cf88d8",
+    "committerTime" : "2024-11-15T15:11:03Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/Rule.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/bm/Rule.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/bm/Rule.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "44373279e1c3a29f1448abe17c0b993bc3cf88d8",
+    "committerTime" : "2024-11-15T15:11:03Z",
+    "lineageKey" : "8b0318c9dded3ef6306d3ee5904721149b7981e1:src/test/java/org/apache/commons/codec/language/bm/PhoneticEnginePerformanceTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/bm/PhoneticEnginePerformanceTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/bm/PhoneticEnginePerformanceTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "914807a40afc1519a9e3a1fcd8e35b77e0ad273b",
+    "committerTime" : "2024-11-28T17:10:33Z",
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/main/java/org/apache/commons/codec/binary/Base16.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Base16.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Base16.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "914807a40afc1519a9e3a1fcd8e35b77e0ad273b",
+    "committerTime" : "2024-11-28T17:10:33Z",
+    "lineageKey" : "ad12e19e614e92f824746c199ebfc31228a8c33c:src/java/org/apache/commons/codec/binary/Base32.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Base32.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Base32.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "914807a40afc1519a9e3a1fcd8e35b77e0ad273b",
+    "committerTime" : "2024-11-28T17:10:33Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/binary/Base64.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Base64.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Base64.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "914807a40afc1519a9e3a1fcd8e35b77e0ad273b",
+    "committerTime" : "2024-11-28T17:10:33Z",
+    "lineageKey" : "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/BasedCodec.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "914807a40afc1519a9e3a1fcd8e35b77e0ad273b",
+    "committerTime" : "2024-11-28T17:10:33Z",
+    "lineageKey" : "752897b3e5efb8127c3bb797dbdf3bf511ec91b5:src/java/org/apache/commons/codec/digest/DigestUtils.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/DigestUtils.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/DigestUtils.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "914807a40afc1519a9e3a1fcd8e35b77e0ad273b",
+    "committerTime" : "2024-11-28T17:10:33Z",
+    "lineageKey" : "5b2806103d5e6d4a7a6df1ebc8d88005ad7731be:src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "914807a40afc1519a9e3a1fcd8e35b77e0ad273b",
+    "committerTime" : "2024-11-28T17:10:33Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/language/Soundex.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/Soundex.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/Soundex.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "914807a40afc1519a9e3a1fcd8e35b77e0ad273b",
+    "committerTime" : "2024-11-28T17:10:33Z",
+    "lineageKey" : "2d72fe3f3bbfaef98d3cd32c8aeb9870ddfd079d:src/java/org/apache/commons/codec/net/BCodec.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/net/BCodec.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/net/BCodec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "914807a40afc1519a9e3a1fcd8e35b77e0ad273b",
+    "committerTime" : "2024-11-28T17:10:33Z",
+    "lineageKey" : "690728e6332774663f2ae37d3fd473cbd0ada67f:src/java/org/apache/commons/codec/net/URLCodec.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/net/URLCodec.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/net/URLCodec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "914807a40afc1519a9e3a1fcd8e35b77e0ad273b",
+    "committerTime" : "2024-11-28T17:10:33Z",
+    "lineageKey" : "91a01c9c6c0078bbc055a1e05b705edcbefb247f:src/java/org/apache/commons/codec/net/Utils.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/net/Utils.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/net/Utils.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "914807a40afc1519a9e3a1fcd8e35b77e0ad273b",
+    "committerTime" : "2024-11-28T17:10:33Z",
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/test/java/org/apache/commons/codec/binary/BaseNTestData.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/BaseNTestData.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/BaseNTestData.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "f4401a3111124896d1edd56bcb2d1a28a85e37e8",
+    "committerTime" : "2024-12-06T22:40:27Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "4b5ea318b86910cd5fd2677c5f923c6eaa8d3fd0",
+    "committerTime" : "2024-12-06T22:43:23Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "485f524e7b423a452bb2b86d1dcaab46160e2ba9",
+    "committerTime" : "2024-12-26T14:25:35Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/binary/Base64.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Base64.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Base64.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "09d901b6c768afd16c922a016e48732dad8d51b0",
+    "committerTime" : "2024-12-27T15:25:31Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "ba343294fcdc0c439156eefe55e7ed9ae963db34",
+    "committerTime" : "2024-12-27T15:27:36Z",
+    "lineageKey" : "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/BasedCodecInputStream.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "ba343294fcdc0c439156eefe55e7ed9ae963db34",
+    "committerTime" : "2024-12-27T15:27:36Z",
+    "lineageKey" : "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/BasedCodecOutputStream.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/BinaryDecoder.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/BinaryDecoder.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/BinaryDecoder.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/BinaryEncoder.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/BinaryEncoder.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/BinaryEncoder.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "4d67ff229be56b150180cd6652d118075d171e05:src/java/org/apache/commons/codec/RequiredCharsetNames.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/CharEncoding.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/CharEncoding.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "453c56cff0dbbc0ecefaa7f20b8df6d11d6d12ec:src/main/java/org/apache/commons/codec/Charsets.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/Charsets.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/Charsets.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/main/java/org/apache/commons/codec/CodecPolicy.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/CodecPolicy.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/CodecPolicy.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/Decoder.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/Decoder.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/Decoder.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/DecoderException.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/DecoderException.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/DecoderException.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/Encoder.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/Encoder.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/Encoder.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/EncoderException.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/EncoderException.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/EncoderException.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "c2b70e8e34a7c8ebd4c60e287c73f1e95526b2f5:src/main/java/org/apache/commons/codec/Resources.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/Resources.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/Resources.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "690728e6332774663f2ae37d3fd473cbd0ada67f:src/java/org/apache/commons/codec/StringDecoder.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/StringDecoder.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/StringDecoder.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/StringEncoder.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/StringEncoder.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/StringEncoder.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/StringEncoderComparator.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/StringEncoderComparator.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/StringEncoderComparator.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/main/java/org/apache/commons/codec/binary/Base16.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Base16.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Base16.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/main/java/org/apache/commons/codec/binary/Base16InputStream.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Base16InputStream.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Base16InputStream.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "ad12e19e614e92f824746c199ebfc31228a8c33c:src/java/org/apache/commons/codec/binary/Base32.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Base32.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Base32.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/Base32InputStream.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Base32InputStream.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Base32InputStream.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/Base32OutputStream.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/binary/Base64.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Base64.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Base64.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "e2df85024e2ab99645a788b4b2836ba1cfdb87f5:src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Base64InputStream.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Base64InputStream.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "e2df85024e2ab99645a788b4b2836ba1cfdb87f5:src/java/org/apache/commons/codec/binary/Base64OutputStream.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/BasedCodec.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/BasedCodecInputStream.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/BasedCodecOutputStream.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "c23fdd2c3f0bec540bee78c1d292d4c33a588d82:src/java/org/apache/commons/codec/binary/Binary.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/BinaryCodec.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/BinaryCodec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "37ba197e62d6b60037d18afc33801e6221f1b8c6:src/main/java/org/apache/commons/codec/binary/CharSequenceUtils.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/CharSequenceUtils.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/CharSequenceUtils.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/binary/Hex.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/Hex.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/Hex.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "4d67ff229be56b150180cd6652d118075d171e05:src/java/org/apache/commons/codec/binary/StringBytesUtils.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/StringUtils.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/StringUtils.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "62674ec28306307a1d98cedec1aeced2bcfffe48:src/main/java/org/apache/commons/codec/binary/package-info.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/binary/package-info.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/binary/package-info.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "82d967a3f9e3d4c1927ff682d0df7a09399df7b6:src/main/java/org/apache/commons/codec/digest/Digest.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/cli/Digest.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/cli/Digest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "aca3970538e89a86be9968052615ae5ed05d9259:src/main/java/org/apache/commons/codec/cli/package-info.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/cli/package-info.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/cli/package-info.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/B64.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/B64.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/B64.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "b70e177f8733e9dd4e5f503620ed0b136b74785b:src/main/java/org/apache/commons/codec/digest/Blake3.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/Blake3.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/Blake3.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/Crypt.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/Crypt.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/Crypt.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "752897b3e5efb8127c3bb797dbdf3bf511ec91b5:src/java/org/apache/commons/codec/digest/DigestUtils.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/DigestUtils.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/DigestUtils.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "cd07a9721ed81850d97a2effc26a82154d6d3d29:src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "cd07a9721ed81850d97a2effc26a82154d6d3d29:src/main/java/org/apache/commons/codec/digest/HmacUtils.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/HmacUtils.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/HmacUtils.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/Md5Crypt.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/Md5Crypt.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/Md5Crypt.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "01a0540a78f58f4d69cbf01adfc387874bad0706:src/main/java/org/apache/commons/codec/digest/MessageDigestAlgorithms.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/MessageDigestAlgorithms.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/MessageDigestAlgorithms.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "2bcdfd86643761c239ec40e6e1e2f05855a07f95:src/main/java/org/apache/commons/codec/digest/MurmurHash2.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/MurmurHash2.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/MurmurHash2.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "2bcdfd86643761c239ec40e6e1e2f05855a07f95:src/main/java/org/apache/commons/codec/digest/MurmurHash3.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/MurmurHash3.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/MurmurHash3.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "ce54f3476745a68d02b1db11444b71c758b1d1bb:src/main/java/org/apache/commons/codec/digest/PureJavaCrc32.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/PureJavaCrc32.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/PureJavaCrc32.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "817666037d3c09b9138b161964b0fafc76d65998:src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "847a6d07793a198d28819731e5166f9ed3845164:src/main/java/org/apache/commons/codec/digest/XXHash32.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/XXHash32.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/XXHash32.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "6aa2610adf19733a17851e0179fe84e34c7b9861:src/main/java/org/apache/commons/codec/digest/package-info.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/digest/package-info.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/digest/package-info.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "7656a09e8587355ee142e730f5df99ce72b382e5:src/java/org/apache/commons/codec/language/AbstractCaverphone.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/AbstractCaverphone.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/AbstractCaverphone.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "bdf8e5c049a7f6bbe706c6d35bff55a79bba1e65:src/main/java/org/apache/commons/codec/language/Caverphone.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/Caverphone.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/Caverphone.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "7656a09e8587355ee142e730f5df99ce72b382e5:src/java/org/apache/commons/codec/language/Caverphone1.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/Caverphone1.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/Caverphone1.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "7656a09e8587355ee142e730f5df99ce72b382e5:src/java/org/apache/commons/codec/language/Caverphone2.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/Caverphone2.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/Caverphone2.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "240542361bcfcd2522e60155686709830e98bfd6:src/java/org/apache/commons/codec/language/ColognePhonetic.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/ColognePhonetic.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/ColognePhonetic.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "5b2806103d5e6d4a7a6df1ebc8d88005ad7731be:src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "727432fe12821b9e25e2c5a1758076ad83b098eb:src/java/org/apache/commons/codec/language/DoubleMetaphone.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "e2701a5a1872adc57a2735d39ac9a0dca37f75e3:src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/language/Metaphone.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/Metaphone.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/Metaphone.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "84e1e79f3837fd112ae33ce03102abfe55ceedd4:src/test/java/org/apache/commons/codec/language/Nysiis.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/Nysiis.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/Nysiis.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/language/RefinedSoundex.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/RefinedSoundex.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/RefinedSoundex.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/language/Soundex.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/Soundex.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/Soundex.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "899036a36138ab7ae810ec2b351d8226c66908bc:src/java/org/apache/commons/codec/language/SoundexUtils.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/SoundexUtils.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/SoundexUtils.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/Lang.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/bm/Lang.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/bm/Lang.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/Languages.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/bm/Languages.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/bm/Languages.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/NameType.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/bm/NameType.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/bm/NameType.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/PhoneticEngine.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/ResourceConstants.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/bm/ResourceConstants.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/bm/ResourceConstants.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/Rule.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/bm/Rule.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/bm/Rule.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/RuleType.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/bm/RuleType.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/bm/RuleType.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "d7de1506746641f632f3592b857679414bffac04:src/main/java/org/apache/commons/codec/language/bm/package-info.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/bm/package-info.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/bm/package-info.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "63d6b54f3acd0d3cfce842a3356c78313b3771ca:src/main/java/org/apache/commons/codec/language/package-info.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/package-info.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/package-info.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "2d72fe3f3bbfaef98d3cd32c8aeb9870ddfd079d:src/java/org/apache/commons/codec/net/BCodec.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/net/BCodec.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/net/BCodec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "924540abc919d32a8aaa92c6f18906f01e64e167:src/main/java/org/apache/commons/codec/net/PercentCodec.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/net/PercentCodec.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/net/PercentCodec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "2d72fe3f3bbfaef98d3cd32c8aeb9870ddfd079d:src/java/org/apache/commons/codec/net/QCodec.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/net/QCodec.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/net/QCodec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "765445394812db1c3dedd22cce7749dfb7713971:src/java/org/apache/commons/codec/net/QuotedPrintableCodec.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "2d72fe3f3bbfaef98d3cd32c8aeb9870ddfd079d:src/java/org/apache/commons/codec/net/RFC1522Codec.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/net/RFC1522Codec.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/net/RFC1522Codec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "690728e6332774663f2ae37d3fd473cbd0ada67f:src/java/org/apache/commons/codec/net/URLCodec.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/net/URLCodec.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/net/URLCodec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "91a01c9c6c0078bbc055a1e05b705edcbefb247f:src/java/org/apache/commons/codec/net/Utils.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/net/Utils.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/net/Utils.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "cfc4ec2cad44702c4a1c955bfe088de0a869d0d0:src/main/java/org/apache/commons/codec/net/package-info.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/net/package-info.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/net/package-info.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "6dc6822c6d62209a1844c85c5b458415d9fcf5fa:src/main/java/org/apache/commons/codec/package-info.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/package-info.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/package-info.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/StringEncoderAbstractTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/AbstractStringEncoderTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/AbstractStringEncoderTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/BinaryEncoderAbstractTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/BinaryEncoderAbstractTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/BinaryEncoderAbstractTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "4d67ff229be56b150180cd6652d118075d171e05:src/test/org/apache/commons/codec/RequiredCharsetNamesTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/CharEncodingTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/CharEncodingTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "453c56cff0dbbc0ecefaa7f20b8df6d11d6d12ec:src/test/java/org/apache/commons/codec/CharsetsTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/CharsetsTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/CharsetsTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "2eef8dee31bbaa10ffb1264fbbe9aba1bc92c45b:src/test/org/apache/commons/codec/DecoderExceptionTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/DecoderExceptionTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/DecoderExceptionTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "2eef8dee31bbaa10ffb1264fbbe9aba1bc92c45b:src/test/org/apache/commons/codec/EncoderExceptionTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/EncoderExceptionTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/EncoderExceptionTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/StringEncoderComparatorTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/StringEncoderComparatorTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/StringEncoderComparatorTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "3fd5dcdd3ff86b8528463a19c7b93fe0a460ec36:src/test/java/org/apache/commons/codec/binary/AllocateDirectHexTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/AllocateDirectHexTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/AllocateDirectHexTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/test/java/org/apache/commons/codec/binary/Base16InputStreamTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/Base16InputStreamTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/Base16InputStreamTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/test/java/org/apache/commons/codec/binary/Base16OutputStreamTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/Base16OutputStreamTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/Base16OutputStreamTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/test/java/org/apache/commons/codec/binary/Base16Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/Base16Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/Base16Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/test/java/org/apache/commons/codec/binary/Base16TestData.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/Base16TestData.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/Base16TestData.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "59c42b102e5396b2ebd4541ed9007f385a00c357:src/test/org/apache/commons/codec/binary/Base32InputStreamTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/Base32InputStreamTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/Base32InputStreamTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "59c42b102e5396b2ebd4541ed9007f385a00c357:src/test/org/apache/commons/codec/binary/Base32OutputStreamTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/Base32OutputStreamTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/Base32OutputStreamTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "03d0f6c305014f5df354851f448b3002533fd235:src/test/org/apache/commons/codec/binary/Base32Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/Base32Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/Base32Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "59c42b102e5396b2ebd4541ed9007f385a00c357:src/test/org/apache/commons/codec/binary/Base32TestData.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/Base32TestData.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/Base32TestData.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "cbe33f0a85fd9f2c04efb96296a26880995618b0:src/test/org/apache/commons/codec/binary/Base64Codec13Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/Base64Codec13Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/Base64Codec13Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "e2df85024e2ab99645a788b4b2836ba1cfdb87f5:src/test/org/apache/commons/codec/binary/Base64InputStreamTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/Base64InputStreamTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/Base64InputStreamTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "e2df85024e2ab99645a788b4b2836ba1cfdb87f5:src/test/org/apache/commons/codec/binary/Base64OutputStreamTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/Base64OutputStreamTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/Base64OutputStreamTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/binary/Base64Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/Base64Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/Base64Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "e2df85024e2ab99645a788b4b2836ba1cfdb87f5:src/test/org/apache/commons/codec/binary/Base64TestData.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/Base64TestData.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/Base64TestData.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "e810384bf01c1ea545757b06af73a4bb2b2401ab:src/test/org/apache/commons/codec/binary/BaseNCodecTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/BaseNCodecTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/BaseNCodecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "fc3e6769ee8dbc6d1ec06ff50547e1121b47801d:src/test/java/org/apache/commons/codec/binary/BaseNTestData.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/BaseNTestData.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/BaseNTestData.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "c23fdd2c3f0bec540bee78c1d292d4c33a588d82:src/test/org/apache/commons/codec/binary/BinaryTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/BinaryCodecTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/BinaryCodecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "4c542d7c7a2f9072803d42bcde9748bd36a80ffe:src/test/java/org/apache/commons/codec/binary/CharSequenceUtilsTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/CharSequenceUtilsTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/CharSequenceUtilsTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "2c13032a16e37b7bc9e0272d25fc185b5c82b42e:src/test/org/apache/commons/codec/binary/Codec105ErrorInputStream.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/Codec105ErrorInputStream.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/Codec105ErrorInputStream.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/binary/HexTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/HexTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/HexTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "4d67ff229be56b150180cd6652d118075d171e05:src/test/org/apache/commons/codec/binary/StringBytesUtilsTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/binary/StringUtilsTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/binary/StringUtilsTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "62d55fdd9ff6ae56789b38808a60b49aa30a18ce:src/test/java/org/apache/commons/codec/cli/DigestTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/cli/DigestTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/cli/DigestTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/Apr1CryptTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/Apr1CryptTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/Apr1CryptTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/B64Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/B64Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/B64Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "b70e177f8733e9dd4e5f503620ed0b136b74785b:src/test/java/org/apache/commons/codec/digest/Blake3Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/Blake3Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/Blake3Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "b70e177f8733e9dd4e5f503620ed0b136b74785b:src/test/java/org/apache/commons/codec/digest/Blake3TestVectorsTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/Blake3TestVectorsTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/Blake3TestVectorsTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "752897b3e5efb8127c3bb797dbdf3bf511ec91b5:src/test/org/apache/commons/codec/digest/DigestUtilsTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/DigestUtilsTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/DigestUtilsTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "1e48e151ea23f8891902834a4553a806c1312d60:src/test/java/org/apache/commons/codec/digest/HmacAlgorithmsTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/HmacAlgorithmsTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/HmacAlgorithmsTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "cd07a9721ed81850d97a2effc26a82154d6d3d29:src/test/java/org/apache/commons/codec/digest/HmacUtilsTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/HmacUtilsTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/HmacUtilsTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/Md5CryptTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/Md5CryptTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/Md5CryptTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "a82070e546d2c2f871895d32cd2f6629480c02bc:src/test/java/org/apache/commons/codec/digest/MessageDigestAlgorithmTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/MessageDigestAlgorithmsTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/MessageDigestAlgorithmsTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "2bcdfd86643761c239ec40e6e1e2f05855a07f95:src/test/java/org/apache/commons/codec/digest/MurmurHash2Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/MurmurHash2Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/MurmurHash2Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "2bcdfd86643761c239ec40e6e1e2f05855a07f95:src/test/java/org/apache/commons/codec/digest/MurmurHash3Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/MurmurHash3Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/MurmurHash3Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "817666037d3c09b9138b161964b0fafc76d65998:src/test/java/org/apache/commons/codec/digest/PureJavaCrc32CTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/PureJavaCrc32CTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/PureJavaCrc32CTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "ce54f3476745a68d02b1db11444b71c758b1d1bb:src/test/java/org/apache/commons/codec/digest/PureJavaCrc32Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/PureJavaCrc32Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/PureJavaCrc32Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/Sha256CryptTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/Sha256CryptTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/Sha256CryptTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "fc393f7bdf6c971cb0dcd977d3015ad5ce524149:b/src/test/java/org/apache/commons/codec/digest/Sha2CryptTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/Sha2CryptTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/Sha2CryptTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/Sha512CryptTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/Sha512CryptTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/Sha512CryptTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/UnixCryptTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/UnixCryptTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/UnixCryptTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "b542cf9d098e65a78b71e5671bf700610b03dc07:src/test/java/org/apache/commons/codec/digest/XXHash32OverflowTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/XXHash32OverflowTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/XXHash32OverflowTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "847a6d07793a198d28819731e5166f9ed3845164:src/test/java/org/apache/commons/codec/digest/XXHash32Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/digest/XXHash32Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/digest/XXHash32Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "7656a09e8587355ee142e730f5df99ce72b382e5:src/test/org/apache/commons/codec/language/Caverphone1Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/Caverphone1Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/Caverphone1Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "7656a09e8587355ee142e730f5df99ce72b382e5:src/test/org/apache/commons/codec/language/Caverphone2Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/Caverphone2Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/Caverphone2Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "240542361bcfcd2522e60155686709830e98bfd6:src/test/org/apache/commons/codec/language/ColognePhoneticTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/ColognePhoneticTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/ColognePhoneticTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "5b2806103d5e6d4a7a6df1ebc8d88005ad7731be:src/test/java/org/apache/commons/codec/language/DaitchMokotoffSoundexTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/DaitchMokotoffSoundexTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/DaitchMokotoffSoundexTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "3b8cd11d086e4e09e801deb114d34abb80175ac0:src/test/org/apache/commons/codec/language/DoubleMetaphone2Test.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/DoubleMetaphone2Test.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/DoubleMetaphone2Test.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "d542ac38c91731d1fd91feefee6301d90aa44957:src/test/org/apache/commons/codec/language/DoubleMetaphoneTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/DoubleMetaphoneTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/DoubleMetaphoneTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "e2701a5a1872adc57a2735d39ac9a0dca37f75e3:src/test/java/org/apache/commons/codec/language/MatchRatingApproachEncoderTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/MatchRatingApproachEncoderTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/MatchRatingApproachEncoderTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/language/MetaphoneTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/MetaphoneTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/MetaphoneTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "84e1e79f3837fd112ae33ce03102abfe55ceedd4:src/test/java/org/apache/commons/codec/language/NysiisTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/NysiisTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/NysiisTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/language/RefinedSoundexTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/RefinedSoundexTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/RefinedSoundexTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/language/SoundexTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/SoundexTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/SoundexTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/test/org/apache/commons/codec/language/bm/BeiderMorseEncoderTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/bm/BeiderMorseEncoderTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/bm/BeiderMorseEncoderTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "1e531f785c26d608c489ca20636489b898faf964:src/test/java/org/apache/commons/codec/language/bm/CacheSubSequencePerformanceTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/bm/CacheSubSequencePerformanceTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/bm/CacheSubSequencePerformanceTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/test/org/apache/commons/codec/language/bm/LanguageGuessingTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/bm/LanguageGuessingTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/bm/LanguageGuessingTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "8b0318c9dded3ef6306d3ee5904721149b7981e1:src/test/java/org/apache/commons/codec/language/bm/PhoneticEnginePerformanceTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/bm/PhoneticEnginePerformanceTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/bm/PhoneticEnginePerformanceTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "2cb3bbda5a0c09bdb4da5533df4ef7061c1c8125:src/test/java/org/apache/commons/codec/language/bm/PhoneticEngineRegressionTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/bm/PhoneticEngineRegressionTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/bm/PhoneticEngineRegressionTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/test/org/apache/commons/codec/language/bm/PhoneticTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/bm/PhoneticEngineTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/bm/PhoneticEngineTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/test/org/apache/commons/codec/language/bm/RuleTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/language/bm/RuleTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/language/bm/RuleTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "f57037a7dba457822e233129408b4d71353c0b99:src/test/org/apache/commons/codec/net/BCodecTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/net/BCodecTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/net/BCodecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "924540abc919d32a8aaa92c6f18906f01e64e167:src/test/java/org/apache/commons/codec/net/PercentCodecTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/net/PercentCodecTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/net/PercentCodecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "f57037a7dba457822e233129408b4d71353c0b99:src/test/org/apache/commons/codec/net/QCodecTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/net/QCodecTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/net/QCodecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "765445394812db1c3dedd22cce7749dfb7713971:src/test/org/apache/commons/codec/net/QuotedPrintableCodecTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/net/QuotedPrintableCodecTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/net/QuotedPrintableCodecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "c10a2d739970c3dd19409e958fb4479135a821b9:src/test/org/apache/commons/codec/net/RFC1522CodecTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/net/RFC1522CodecTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/net/RFC1522CodecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "3acdc6c2ff65a0bc8c02b3f0c7e0d8b64adc0548:src/test/java/org/apache/commons/codec/net/CustomRFC1522Codec.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/net/RFC1522OverrideTestCodec.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/net/RFC1522OverrideTestCodec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "19e0f44eafe0fb923e292b1dc6dc8706bb8100c0:src/test/org/apache/commons/codec/net/URLCodecTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/net/URLCodecTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/net/URLCodecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "committerTime" : "2024-12-27T15:46:30Z",
+    "lineageKey" : "62e27b40aaa8ceade29ef0115c596f534e17ddbe:src/test/org/apache/commons/codec/net/UtilsTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/net/UtilsTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/net/UtilsTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "4bb932dee2b8a5cbefd39322c742056f8b2cea3f",
+    "committerTime" : "2024-12-27T19:26:38Z",
+    "lineageKey" : "4bb932dee2b8a5cbefd39322c742056f8b2cea3f:src/test/java/org/apache/commons/codec/ResourcesTest.java",
+    "oldPath" : null,
+    "newPath" : "src/test/java/org/apache/commons/codec/ResourcesTest.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "59784523e9a30a348a271164fce7b63c42b6b84f",
+    "committerTime" : "2024-12-28T02:08:38Z",
+    "lineageKey" : "c2b70e8e34a7c8ebd4c60e287c73f1e95526b2f5:src/main/java/org/apache/commons/codec/Resources.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/Resources.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/Resources.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "59784523e9a30a348a271164fce7b63c42b6b84f",
+    "committerTime" : "2024-12-28T02:08:38Z",
+    "lineageKey" : "5b2806103d5e6d4a7a6df1ebc8d88005ad7731be:src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "59784523e9a30a348a271164fce7b63c42b6b84f",
+    "committerTime" : "2024-12-28T02:08:38Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/Lang.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/bm/Lang.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/bm/Lang.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "59784523e9a30a348a271164fce7b63c42b6b84f",
+    "committerTime" : "2024-12-28T02:08:38Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/Languages.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/bm/Languages.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/bm/Languages.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "59784523e9a30a348a271164fce7b63c42b6b84f",
+    "committerTime" : "2024-12-28T02:08:38Z",
+    "lineageKey" : "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/Rule.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/language/bm/Rule.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/language/bm/Rule.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "59784523e9a30a348a271164fce7b63c42b6b84f",
+    "committerTime" : "2024-12-28T02:08:38Z",
+    "lineageKey" : "4bb932dee2b8a5cbefd39322c742056f8b2cea3f:src/test/java/org/apache/commons/codec/ResourcesTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/codec/ResourcesTest.java",
+    "newPath" : "src/test/java/org/apache/commons/codec/ResourcesTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "01edad7586be038a68b7890044420bc6ce4fcfc9",
+    "committerTime" : "2024-12-28T12:28:52Z",
+    "lineageKey" : "c2b70e8e34a7c8ebd4c60e287c73f1e95526b2f5:src/main/java/org/apache/commons/codec/Resources.java",
+    "oldPath" : "src/main/java/org/apache/commons/codec/Resources.java",
+    "newPath" : "src/main/java/org/apache/commons/codec/Resources.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  } ]
+}

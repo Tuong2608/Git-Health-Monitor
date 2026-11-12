@@ -1,0 +1,3649 @@
+{
+  "kind": "reviewed-dataset",
+  "protocolVersion": "week09-rq1-approved-v1",
+  "manifestSha256": "1bcbd21bd9573c8e49c51739a201fbc518d79820d3ddc67433b51e06af3324cf",
+  "reviewsSha256": "7afa55e872c50f4f9b2da66f7c91448c1164f7b8ebf36ee94fbc6791515cd76f",
+  "cases": [
+    {
+      "repository": "commons-csv",
+      "observationStart": "2024-03-22T21:52:03Z",
+      "cutoff": "2024-09-18T21:52:03Z",
+      "predictionEnd": "2026-11-12T00:53:24Z",
+      "files": [
+        {
+          "fileId": 1,
+          "lineageKey": "0ec08e400b334d95313bef33e3da17c4d416ca74:src/test/java/org/apache/commons/csv/bugs/JiraCsv198Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv198Test.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 2,
+          "lineageKey": "19fbc19294e18eaf36c44dbf00605721626cb8e1:src/test/java/org/apache/commons/csv/CSVBenchmark.java",
+          "path": "src/test/java/org/apache/commons/csv/CSVBenchmark.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 3,
+          "lineageKey": "2305e0e80c9ceaba6736bea4dbf07c0979279280:src/test/java/org/apache/commons/csv/issues/JiraCsv213Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv213Test.java",
+          "frequency": 0,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 4,
+          "lineageKey": "238486dd77d4ac51f25ec34c4def822f9a3c53bb:src/test/java/org/apache/commons/csv/issues/JiraCsv148Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv148Test.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 5,
+          "lineageKey": "28441e6a8505cd0e1a34800dd65c1eeacfc5e363:src/main/java/org/apache/commons/csv/CSVException.java",
+          "path": "src/main/java/org/apache/commons/csv/CSVException.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 6,
+          "lineageKey": "2c83a308255d07295c761d7e61f10359b0687b01:src/test/java/org/apache/commons/csv/issues/JiraCsv271Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv271Test.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 7,
+          "lineageKey": "38670dbe9232dc9b56d6464c42293e745974cf60:src/main/java/org/apache/commons/csv/CSVLexer.java",
+          "path": "src/main/java/org/apache/commons/csv/Lexer.java",
+          "frequency": 12,
+          "maxCcn": 20,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 8,
+          "lineageKey": "3eac15fc8d5a1da80119e7389f78b9795e8aa4db:src/test/java/org/apache/commons/csv/issues/JiraCsv211Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv211Test.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 9,
+          "lineageKey": "4829ec961eb9db365b01428740b65ebf77e0803d:src/test/java/org/apache/commons/csv/issues/JiraCvs247Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv247Test.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 10,
+          "lineageKey": "4fdfc59b1cb668cb110b074742a1e760819f719b:src/test/java/org/apache/commons/csv/issues/JiraCsv264Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv264Test.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 11,
+          "lineageKey": "54597a8b8e1d299a6b66de840b5496af96b297d5:src/test/java/org/apache/commons/csv/JiraCsv167Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv167Test.java",
+          "frequency": 0,
+          "maxCcn": 6,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 12,
+          "lineageKey": "56ca5858db4765112dca44e5deeda0ac181a6766:src/main/java/org/apache/commons/csv/Constants.java",
+          "path": "src/main/java/org/apache/commons/csv/Constants.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 13,
+          "lineageKey": "7592782eee5e1744f032fa7ffe2924c2eb9f577e:src/main/java/org/apache/commons/csv/Token.java",
+          "path": "src/main/java/org/apache/commons/csv/Token.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:42ded1cf3a"
+        },
+        {
+          "fileId": 14,
+          "lineageKey": "96b8485176fab410d6ff829e7e9b6b5f817671ab:src/test/java/org/apache/commons/csv/issues/JiraCsv149Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv149Test.java",
+          "frequency": 0,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 15,
+          "lineageKey": "977824491d8d65b9952005573f2ebffe6ced671d:src/test/java/org/apache/commons/csv/issues/JiraCsv203Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv203Test.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 16,
+          "lineageKey": "9a705d8605583b9614bfd7ad8117e01dc8f3e13a:src/test/java/org/apache/commons/csv/PerformanceTest.java",
+          "path": "src/test/java/org/apache/commons/csv/PerformanceTest.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 17,
+          "lineageKey": "9ab47dc56b43066be740488948d38032df636502:src/test/java/org/apache/commons/csv/bugs/JiraCsv164Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv154Test.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 18,
+          "lineageKey": "9d00beb3525c135c1f5ef7f5b43c2481090c5763:src/test/java/org/apache/commons/csv/Utils.java",
+          "path": "src/test/java/org/apache/commons/csv/Utils.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:e24e3afd87"
+        },
+        {
+          "fileId": 19,
+          "lineageKey": "a0d975933d6fe9eb5f359088de43508c1d3109bf:src/test/java/org/apache/commons/csv/CSVRecordTest.java",
+          "path": "src/test/java/org/apache/commons/csv/CSVRecordTest.java",
+          "frequency": 3,
+          "maxCcn": 2,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:68f17d8a9b,dfbf6f83ac"
+        },
+        {
+          "fileId": 20,
+          "lineageKey": "a23b784c1c81c625fed587149e0c460366206fa4:src/test/java/org/apache/commons/csv/issues/JiraCvs249.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv249Test.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 21,
+          "lineageKey": "a4237345a1de8c9ada81a73fe1b8e44d0174dcf7:src/test/java/org/apache/commons/csv/issues/JiraCsv263Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv263Test.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 22,
+          "lineageKey": "a4c6037d0ccfc5b7176d6c522fcc0ab38b9bdd28:src/test/java/org/apache/commons/csv/issues/JiraCsv265Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv265Test.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 23,
+          "lineageKey": "ac280e705d99cc1168f93f7d9a5f92618bebbb97:src/test/java/org/apache/commons/csv/issues/JiraCsv253Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv253Test.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 24,
+          "lineageKey": "ac280e705d99cc1168f93f7d9a5f92618bebbb97:src/test/java/org/apache/commons/csv/issues/JiraCsv93Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv93Test.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 25,
+          "lineageKey": "aee6c50e2830c007a572cc96a57bc105308acc49:src/main/java/org/apache/commons/csv/CSVRecord.java",
+          "path": "src/main/java/org/apache/commons/csv/CSVRecord.java",
+          "frequency": 2,
+          "maxCcn": 4,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:68f17d8a9b"
+        },
+        {
+          "fileId": 26,
+          "lineageKey": "aef71309b6d84d2806b7aadd117d06bb6a845f06:src/test/java/org/apache/commons/csv/TokenMatchers.java",
+          "path": "src/test/java/org/apache/commons/csv/TokenMatchers.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 27,
+          "lineageKey": "aef71309b6d84d2806b7aadd117d06bb6a845f06:src/test/java/org/apache/commons/csv/TokenMatchersTest.java",
+          "path": "src/test/java/org/apache/commons/csv/TokenMatchersTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 28,
+          "lineageKey": "afbeaed866ee158b0ac99521c4b43011772a3873:src/test/java/org/apache/commons/csv/issues/JiraCsv150Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv150Test.java",
+          "frequency": 4,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 29,
+          "lineageKey": "b372050f7f238b14953e609d3ec28dc755fca685:src/test/java/org/apache/commons/csv/perf/PerformanceTest.java",
+          "path": "src/test/java/org/apache/commons/csv/perf/PerformanceTest.java",
+          "frequency": 4,
+          "maxCcn": 4,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 30,
+          "lineageKey": "b6442ce59998f636cf99eb66ef9143d139374e9a:src/test/java/org/apache/commons/csv/issues/JiraCsv294Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv294Test.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 31,
+          "lineageKey": "bfc40dede6ddf4988d966b1d4b8aa711518fa7b5:src/test/java/org/apache/commons/csv/CSVFileParserTest.java",
+          "path": "src/test/java/org/apache/commons/csv/CSVFileParserTest.java",
+          "frequency": 0,
+          "maxCcn": 9,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 32,
+          "lineageKey": "c15a06eee95e227fbe5c61849dd12b7bf126016a:src/test/java/org/apache/commons/csv/issues/JiraCsv288Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv288Test.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 33,
+          "lineageKey": "ca7bbae40ef89e561f74d1a00776e3a9f697bd37:src/test/java/org/apache/commons/csv/CSVLexerTest.java",
+          "path": "src/test/java/org/apache/commons/csv/LexerTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 34,
+          "lineageKey": "d8d080453e30ee732bbdd1448d6c2e307d0746f4:src/test/java/org/apache/commons/csv/issues/JiraCsv206Test.java",
+          "path": "src/test/java/org/apache/commons/csv/issues/JiraCsv206Test.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        },
+        {
+          "fileId": 35,
+          "lineageKey": "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVParser.java",
+          "path": "src/main/java/org/apache/commons/csv/CSVParser.java",
+          "frequency": 8,
+          "maxCcn": 18,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:41362db16e,513aac2398,966b38519e"
+        },
+        {
+          "fileId": 36,
+          "lineageKey": "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/CSVPrinter.java",
+          "path": "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+          "frequency": 6,
+          "maxCcn": 9,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:410175c3d0,d65785f520,e24e3afd87"
+        },
+        {
+          "fileId": 37,
+          "lineageKey": "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/java/ch/netcetera/wake/core/format/csv/ExtendedBufferedReader.java",
+          "path": "src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java",
+          "frequency": 5,
+          "maxCcn": 9,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:1d89cd5f0a,23eb602d25"
+        },
+        {
+          "fileId": 38,
+          "lineageKey": "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/CSVParserTest.java",
+          "path": "src/test/java/org/apache/commons/csv/CSVParserTest.java",
+          "frequency": 10,
+          "maxCcn": 3,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:1d89cd5f0a,23eb602d25,41362db16e,513aac2398,966b38519e"
+        },
+        {
+          "fileId": 39,
+          "lineageKey": "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/CSVPrinterTest.java",
+          "path": "src/test/java/org/apache/commons/csv/CSVPrinterTest.java",
+          "frequency": 2,
+          "maxCcn": 11,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:e24e3afd87"
+        },
+        {
+          "fileId": 40,
+          "lineageKey": "e23e79e0ceacf38d3298e7f5207c4518ad2b5955:src/test/ch/netcetera/wake/core/format/csv/ExtendedBufferedReaderTest.java",
+          "path": "src/test/java/org/apache/commons/csv/ExtendedBufferedReaderTest.java",
+          "frequency": 4,
+          "maxCcn": 4,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:1d89cd5f0a"
+        },
+        {
+          "fileId": 41,
+          "lineageKey": "eac54a225bc974157e914cf66cfa598171022018:src/java/org/apache/commons/csv/CSVStrategy.java",
+          "path": "src/main/java/org/apache/commons/csv/CSVFormat.java",
+          "frequency": 11,
+          "maxCcn": 24,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:4a28ba8254,5e2d0590ca,68b4b0910b,80d68871b3,9a33a61732,a6ee67ecf0"
+        },
+        {
+          "fileId": 42,
+          "lineageKey": "eac54a225bc974157e914cf66cfa598171022018:src/test/org/apache/commons/csv/CSVStrategyTest.java",
+          "path": "src/test/java/org/apache/commons/csv/CSVFormatTest.java",
+          "frequency": 1,
+          "maxCcn": 14,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:4a28ba8254,5e2d0590ca,68b4b0910b,9a33a61732,a6ee67ecf0"
+        },
+        {
+          "fileId": 43,
+          "lineageKey": "fd3a9862bd53c24e319655f968ea0f054453c839:src/test/java/org/apache/commons/csv/CSVFormatPredefinedTest.java",
+          "path": "src/test/java/org/apache/commons/csv/CSVFormatPredefinedTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-38-audited-commits"
+        }
+      ]
+    },
+    {
+      "repository": "commons-codec",
+      "observationStart": "2024-07-01T12:33:19Z",
+      "cutoff": "2024-12-28T12:33:19Z",
+      "predictionEnd": "2026-11-12T00:53:16Z",
+      "files": [
+        {
+          "fileId": 1,
+          "lineageKey": "01a0540a78f58f4d69cbf01adfc387874bad0706:src/main/java/org/apache/commons/codec/digest/MessageDigestAlgorithms.java",
+          "path": "src/main/java/org/apache/commons/codec/digest/MessageDigestAlgorithms.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 2,
+          "lineageKey": "03d0f6c305014f5df354851f448b3002533fd235:src/test/org/apache/commons/codec/binary/Base32Test.java",
+          "path": "src/test/java/org/apache/commons/codec/binary/Base32Test.java",
+          "frequency": 1,
+          "maxCcn": 7,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:472a289404,759150423e"
+        },
+        {
+          "fileId": 3,
+          "lineageKey": "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+          "path": "src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+          "frequency": 2,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 4,
+          "lineageKey": "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/Lang.java",
+          "path": "src/main/java/org/apache/commons/codec/language/bm/Lang.java",
+          "frequency": 3,
+          "maxCcn": 8,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 5,
+          "lineageKey": "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/Languages.java",
+          "path": "src/main/java/org/apache/commons/codec/language/bm/Languages.java",
+          "frequency": 3,
+          "maxCcn": 6,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 6,
+          "lineageKey": "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/NameType.java",
+          "path": "src/main/java/org/apache/commons/codec/language/bm/NameType.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 7,
+          "lineageKey": "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/PhoneticEngine.java",
+          "path": "src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java",
+          "frequency": 1,
+          "maxCcn": 12,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 8,
+          "lineageKey": "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/Rule.java",
+          "path": "src/main/java/org/apache/commons/codec/language/bm/Rule.java",
+          "frequency": 3,
+          "maxCcn": 5,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:59929c3917,ab9c9208aa"
+        },
+        {
+          "fileId": 9,
+          "lineageKey": "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/java/org/apache/commons/codec/language/bm/RuleType.java",
+          "path": "src/main/java/org/apache/commons/codec/language/bm/RuleType.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 10,
+          "lineageKey": "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/test/org/apache/commons/codec/language/bm/BeiderMorseEncoderTest.java",
+          "path": "src/test/java/org/apache/commons/codec/language/bm/BeiderMorseEncoderTest.java",
+          "frequency": 2,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 11,
+          "lineageKey": "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/test/org/apache/commons/codec/language/bm/LanguageGuessingTest.java",
+          "path": "src/test/java/org/apache/commons/codec/language/bm/LanguageGuessingTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 12,
+          "lineageKey": "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/test/org/apache/commons/codec/language/bm/PhoneticTest.java",
+          "path": "src/test/java/org/apache/commons/codec/language/bm/PhoneticEngineTest.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 13,
+          "lineageKey": "1573a121c4fa7b39f4f49691cc5fde3cccf4c7a1:src/test/org/apache/commons/codec/language/bm/RuleTest.java",
+          "path": "src/test/java/org/apache/commons/codec/language/bm/RuleTest.java",
+          "frequency": 1,
+          "maxCcn": 4,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:59929c3917"
+        },
+        {
+          "fileId": 14,
+          "lineageKey": "19e0f44eafe0fb923e292b1dc6dc8706bb8100c0:src/test/org/apache/commons/codec/net/URLCodecTest.java",
+          "path": "src/test/java/org/apache/commons/codec/net/URLCodecTest.java",
+          "frequency": 2,
+          "maxCcn": 3,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:92e18dea1b,ab67d62f09"
+        },
+        {
+          "fileId": 15,
+          "lineageKey": "1e48e151ea23f8891902834a4553a806c1312d60:src/test/java/org/apache/commons/codec/digest/HmacAlgorithmsTest.java",
+          "path": "src/test/java/org/apache/commons/codec/digest/HmacAlgorithmsTest.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 16,
+          "lineageKey": "1e531f785c26d608c489ca20636489b898faf964:src/test/java/org/apache/commons/codec/language/bm/CacheSubSequencePerformanceTest.java",
+          "path": "src/test/java/org/apache/commons/codec/language/bm/CacheSubSequencePerformanceTest.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 17,
+          "lineageKey": "240542361bcfcd2522e60155686709830e98bfd6:src/java/org/apache/commons/codec/language/ColognePhonetic.java",
+          "path": "src/main/java/org/apache/commons/codec/language/ColognePhonetic.java",
+          "frequency": 2,
+          "maxCcn": 30,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:2cdfac1a8e"
+        },
+        {
+          "fileId": 18,
+          "lineageKey": "240542361bcfcd2522e60155686709830e98bfd6:src/test/org/apache/commons/codec/language/ColognePhoneticTest.java",
+          "path": "src/test/java/org/apache/commons/codec/language/ColognePhoneticTest.java",
+          "frequency": 2,
+          "maxCcn": 3,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:2cdfac1a8e"
+        },
+        {
+          "fileId": 19,
+          "lineageKey": "2bcdfd86643761c239ec40e6e1e2f05855a07f95:src/main/java/org/apache/commons/codec/digest/MurmurHash2.java",
+          "path": "src/main/java/org/apache/commons/codec/digest/MurmurHash2.java",
+          "frequency": 1,
+          "maxCcn": 9,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 20,
+          "lineageKey": "2bcdfd86643761c239ec40e6e1e2f05855a07f95:src/main/java/org/apache/commons/codec/digest/MurmurHash3.java",
+          "path": "src/main/java/org/apache/commons/codec/digest/MurmurHash3.java",
+          "frequency": 1,
+          "maxCcn": 17,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 21,
+          "lineageKey": "2bcdfd86643761c239ec40e6e1e2f05855a07f95:src/test/java/org/apache/commons/codec/digest/MurmurHash2Test.java",
+          "path": "src/test/java/org/apache/commons/codec/digest/MurmurHash2Test.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 22,
+          "lineageKey": "2bcdfd86643761c239ec40e6e1e2f05855a07f95:src/test/java/org/apache/commons/codec/digest/MurmurHash3Test.java",
+          "path": "src/test/java/org/apache/commons/codec/digest/MurmurHash3Test.java",
+          "frequency": 1,
+          "maxCcn": 4,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 23,
+          "lineageKey": "2c13032a16e37b7bc9e0272d25fc185b5c82b42e:src/test/org/apache/commons/codec/binary/Codec105ErrorInputStream.java",
+          "path": "src/test/java/org/apache/commons/codec/binary/Codec105ErrorInputStream.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 24,
+          "lineageKey": "2cb3bbda5a0c09bdb4da5533df4ef7061c1c8125:src/test/java/org/apache/commons/codec/language/bm/PhoneticEngineRegressionTest.java",
+          "path": "src/test/java/org/apache/commons/codec/language/bm/PhoneticEngineRegressionTest.java",
+          "frequency": 1,
+          "maxCcn": 6,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 25,
+          "lineageKey": "2d72fe3f3bbfaef98d3cd32c8aeb9870ddfd079d:src/java/org/apache/commons/codec/net/BCodec.java",
+          "path": "src/main/java/org/apache/commons/codec/net/BCodec.java",
+          "frequency": 2,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 26,
+          "lineageKey": "2d72fe3f3bbfaef98d3cd32c8aeb9870ddfd079d:src/java/org/apache/commons/codec/net/QCodec.java",
+          "path": "src/main/java/org/apache/commons/codec/net/QCodec.java",
+          "frequency": 1,
+          "maxCcn": 7,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:089f90450f"
+        },
+        {
+          "fileId": 27,
+          "lineageKey": "2d72fe3f3bbfaef98d3cd32c8aeb9870ddfd079d:src/java/org/apache/commons/codec/net/RFC1522Codec.java",
+          "path": "src/main/java/org/apache/commons/codec/net/RFC1522Codec.java",
+          "frequency": 2,
+          "maxCcn": 8,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 28,
+          "lineageKey": "2eef8dee31bbaa10ffb1264fbbe9aba1bc92c45b:src/test/org/apache/commons/codec/DecoderExceptionTest.java",
+          "path": "src/test/java/org/apache/commons/codec/DecoderExceptionTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 29,
+          "lineageKey": "2eef8dee31bbaa10ffb1264fbbe9aba1bc92c45b:src/test/org/apache/commons/codec/EncoderExceptionTest.java",
+          "path": "src/test/java/org/apache/commons/codec/EncoderExceptionTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 30,
+          "lineageKey": "37ba197e62d6b60037d18afc33801e6221f1b8c6:src/main/java/org/apache/commons/codec/binary/CharSequenceUtils.java",
+          "path": "src/main/java/org/apache/commons/codec/binary/CharSequenceUtils.java",
+          "frequency": 1,
+          "maxCcn": 8,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 31,
+          "lineageKey": "3acdc6c2ff65a0bc8c02b3f0c7e0d8b64adc0548:src/test/java/org/apache/commons/codec/net/CustomRFC1522Codec.java",
+          "path": "src/test/java/org/apache/commons/codec/net/RFC1522OverrideTestCodec.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 32,
+          "lineageKey": "3b8cd11d086e4e09e801deb114d34abb80175ac0:src/test/org/apache/commons/codec/language/DoubleMetaphone2Test.java",
+          "path": "src/test/java/org/apache/commons/codec/language/DoubleMetaphone2Test.java",
+          "frequency": 2,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 33,
+          "lineageKey": "3fd5dcdd3ff86b8528463a19c7b93fe0a460ec36:src/test/java/org/apache/commons/codec/binary/AllocateDirectHexTest.java",
+          "path": "src/test/java/org/apache/commons/codec/binary/AllocateDirectHexTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 34,
+          "lineageKey": "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/B64.java",
+          "path": "src/main/java/org/apache/commons/codec/digest/B64.java",
+          "frequency": 2,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 35,
+          "lineageKey": "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/Crypt.java",
+          "path": "src/main/java/org/apache/commons/codec/digest/Crypt.java",
+          "frequency": 3,
+          "maxCcn": 5,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 36,
+          "lineageKey": "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/Md5Crypt.java",
+          "path": "src/main/java/org/apache/commons/codec/digest/Md5Crypt.java",
+          "frequency": 1,
+          "maxCcn": 14,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 37,
+          "lineageKey": "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java",
+          "path": "src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java",
+          "frequency": 2,
+          "maxCcn": 18,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:a5c007691d"
+        },
+        {
+          "fileId": 38,
+          "lineageKey": "4008ff9e49715f77cd6ac956b358160b7e416e69:src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+          "path": "src/main/java/org/apache/commons/codec/digest/UnixCrypt.java",
+          "frequency": 5,
+          "maxCcn": 9,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 39,
+          "lineageKey": "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/Apr1CryptTest.java",
+          "path": "src/test/java/org/apache/commons/codec/digest/Apr1CryptTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 40,
+          "lineageKey": "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/B64Test.java",
+          "path": "src/test/java/org/apache/commons/codec/digest/B64Test.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 41,
+          "lineageKey": "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+          "path": "src/test/java/org/apache/commons/codec/digest/CryptTest.java",
+          "frequency": 5,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 42,
+          "lineageKey": "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/Md5CryptTest.java",
+          "path": "src/test/java/org/apache/commons/codec/digest/Md5CryptTest.java",
+          "frequency": 2,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 43,
+          "lineageKey": "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/Sha256CryptTest.java",
+          "path": "src/test/java/org/apache/commons/codec/digest/Sha256CryptTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 44,
+          "lineageKey": "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/Sha512CryptTest.java",
+          "path": "src/test/java/org/apache/commons/codec/digest/Sha512CryptTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:6837802c8f,a5c007691d"
+        },
+        {
+          "fileId": 45,
+          "lineageKey": "4008ff9e49715f77cd6ac956b358160b7e416e69:src/test/java/org/apache/commons/codec/digest/UnixCryptTest.java",
+          "path": "src/test/java/org/apache/commons/codec/digest/UnixCryptTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 46,
+          "lineageKey": "453c56cff0dbbc0ecefaa7f20b8df6d11d6d12ec:src/main/java/org/apache/commons/codec/Charsets.java",
+          "path": "src/main/java/org/apache/commons/codec/Charsets.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 47,
+          "lineageKey": "453c56cff0dbbc0ecefaa7f20b8df6d11d6d12ec:src/test/java/org/apache/commons/codec/CharsetsTest.java",
+          "path": "src/test/java/org/apache/commons/codec/CharsetsTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:ef72cbdcef"
+        },
+        {
+          "fileId": 48,
+          "lineageKey": "4bb932dee2b8a5cbefd39322c742056f8b2cea3f:src/test/java/org/apache/commons/codec/ResourcesTest.java",
+          "path": "src/test/java/org/apache/commons/codec/ResourcesTest.java",
+          "frequency": 2,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 49,
+          "lineageKey": "4c542d7c7a2f9072803d42bcde9748bd36a80ffe:src/test/java/org/apache/commons/codec/binary/CharSequenceUtilsTest.java",
+          "path": "src/test/java/org/apache/commons/codec/binary/CharSequenceUtilsTest.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 50,
+          "lineageKey": "4d67ff229be56b150180cd6652d118075d171e05:src/java/org/apache/commons/codec/RequiredCharsetNames.java",
+          "path": "src/main/java/org/apache/commons/codec/CharEncoding.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 51,
+          "lineageKey": "4d67ff229be56b150180cd6652d118075d171e05:src/java/org/apache/commons/codec/binary/StringBytesUtils.java",
+          "path": "src/main/java/org/apache/commons/codec/binary/StringUtils.java",
+          "frequency": 1,
+          "maxCcn": 7,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 52,
+          "lineageKey": "4d67ff229be56b150180cd6652d118075d171e05:src/test/org/apache/commons/codec/RequiredCharsetNamesTest.java",
+          "path": "src/test/java/org/apache/commons/codec/CharEncodingTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 53,
+          "lineageKey": "4d67ff229be56b150180cd6652d118075d171e05:src/test/org/apache/commons/codec/binary/StringBytesUtilsTest.java",
+          "path": "src/test/java/org/apache/commons/codec/binary/StringUtilsTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 54,
+          "lineageKey": "59c42b102e5396b2ebd4541ed9007f385a00c357:src/test/org/apache/commons/codec/binary/Base32InputStreamTest.java",
+          "path": "src/test/java/org/apache/commons/codec/binary/Base32InputStreamTest.java",
+          "frequency": 1,
+          "maxCcn": 5,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 55,
+          "lineageKey": "59c42b102e5396b2ebd4541ed9007f385a00c357:src/test/org/apache/commons/codec/binary/Base32OutputStreamTest.java",
+          "path": "src/test/java/org/apache/commons/codec/binary/Base32OutputStreamTest.java",
+          "frequency": 1,
+          "maxCcn": 6,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 56,
+          "lineageKey": "5b2806103d5e6d4a7a6df1ebc8d88005ad7731be:src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+          "path": "src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+          "frequency": 5,
+          "maxCcn": 19,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:9c117905eb"
+        },
+        {
+          "fileId": 57,
+          "lineageKey": "5b2806103d5e6d4a7a6df1ebc8d88005ad7731be:src/test/java/org/apache/commons/codec/language/DaitchMokotoffSoundexTest.java",
+          "path": "src/test/java/org/apache/commons/codec/language/DaitchMokotoffSoundexTest.java",
+          "frequency": 2,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 58,
+          "lineageKey": "62d55fdd9ff6ae56789b38808a60b49aa30a18ce:src/test/java/org/apache/commons/codec/cli/DigestTest.java",
+          "path": "src/test/java/org/apache/commons/codec/cli/DigestTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:f2ac150daa"
+        },
+        {
+          "fileId": 59,
+          "lineageKey": "62e27b40aaa8ceade29ef0115c596f534e17ddbe:src/test/org/apache/commons/codec/net/UtilsTest.java",
+          "path": "src/test/java/org/apache/commons/codec/net/UtilsTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 60,
+          "lineageKey": "690728e6332774663f2ae37d3fd473cbd0ada67f:src/java/org/apache/commons/codec/net/URLCodec.java",
+          "path": "src/main/java/org/apache/commons/codec/net/URLCodec.java",
+          "frequency": 2,
+          "maxCcn": 7,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:92e18dea1b,ab67d62f09"
+        },
+        {
+          "fileId": 61,
+          "lineageKey": "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/DecoderException.java",
+          "path": "src/main/java/org/apache/commons/codec/DecoderException.java",
+          "frequency": 2,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 62,
+          "lineageKey": "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/EncoderException.java",
+          "path": "src/main/java/org/apache/commons/codec/EncoderException.java",
+          "frequency": 2,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 63,
+          "lineageKey": "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/StringEncoderComparator.java",
+          "path": "src/main/java/org/apache/commons/codec/StringEncoderComparator.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:5647fe2a66"
+        },
+        {
+          "fileId": 64,
+          "lineageKey": "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/binary/Base64.java",
+          "path": "src/main/java/org/apache/commons/codec/binary/Base64.java",
+          "frequency": 5,
+          "maxCcn": 17,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:20df4c9f29,8470693f2d,9400525894"
+        },
+        {
+          "fileId": 65,
+          "lineageKey": "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/binary/Hex.java",
+          "path": "src/main/java/org/apache/commons/codec/binary/Hex.java",
+          "frequency": 2,
+          "maxCcn": 5,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 66,
+          "lineageKey": "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/language/Metaphone.java",
+          "path": "src/main/java/org/apache/commons/codec/language/Metaphone.java",
+          "frequency": 2,
+          "maxCcn": 90,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:e352a9b11f"
+        },
+        {
+          "fileId": 67,
+          "lineageKey": "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/language/RefinedSoundex.java",
+          "path": "src/main/java/org/apache/commons/codec/language/RefinedSoundex.java",
+          "frequency": 1,
+          "maxCcn": 6,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 68,
+          "lineageKey": "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/java/org/apache/commons/codec/language/Soundex.java",
+          "path": "src/main/java/org/apache/commons/codec/language/Soundex.java",
+          "frequency": 4,
+          "maxCcn": 11,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 69,
+          "lineageKey": "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/BinaryEncoderAbstractTest.java",
+          "path": "src/test/java/org/apache/commons/codec/BinaryEncoderAbstractTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 70,
+          "lineageKey": "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/StringEncoderAbstractTest.java",
+          "path": "src/test/java/org/apache/commons/codec/AbstractStringEncoderTest.java",
+          "frequency": 1,
+          "maxCcn": 5,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 71,
+          "lineageKey": "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/StringEncoderComparatorTest.java",
+          "path": "src/test/java/org/apache/commons/codec/StringEncoderComparatorTest.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:5647fe2a66"
+        },
+        {
+          "fileId": 72,
+          "lineageKey": "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/binary/Base64Test.java",
+          "path": "src/test/java/org/apache/commons/codec/binary/Base64Test.java",
+          "frequency": 2,
+          "maxCcn": 4,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:8470693f2d"
+        },
+        {
+          "fileId": 73,
+          "lineageKey": "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/binary/HexTest.java",
+          "path": "src/test/java/org/apache/commons/codec/binary/HexTest.java",
+          "frequency": 1,
+          "maxCcn": 4,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 74,
+          "lineageKey": "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/language/MetaphoneTest.java",
+          "path": "src/test/java/org/apache/commons/codec/language/MetaphoneTest.java",
+          "frequency": 2,
+          "maxCcn": 4,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:e352a9b11f"
+        },
+        {
+          "fileId": 75,
+          "lineageKey": "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/language/RefinedSoundexTest.java",
+          "path": "src/test/java/org/apache/commons/codec/language/RefinedSoundexTest.java",
+          "frequency": 2,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 76,
+          "lineageKey": "71205dde6b8eda4140c777b4fb71935d73bf2d12:src/test/org/apache/commons/codec/language/SoundexTest.java",
+          "path": "src/test/java/org/apache/commons/codec/language/SoundexTest.java",
+          "frequency": 2,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 77,
+          "lineageKey": "727432fe12821b9e25e2c5a1758076ad83b098eb:src/java/org/apache/commons/codec/language/DoubleMetaphone.java",
+          "path": "src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java",
+          "frequency": 3,
+          "maxCcn": 41,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 78,
+          "lineageKey": "752897b3e5efb8127c3bb797dbdf3bf511ec91b5:src/java/org/apache/commons/codec/digest/DigestUtils.java",
+          "path": "src/main/java/org/apache/commons/codec/digest/DigestUtils.java",
+          "frequency": 4,
+          "maxCcn": 2,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:3a65a4a974"
+        },
+        {
+          "fileId": 79,
+          "lineageKey": "752897b3e5efb8127c3bb797dbdf3bf511ec91b5:src/test/org/apache/commons/codec/digest/DigestUtilsTest.java",
+          "path": "src/test/java/org/apache/commons/codec/digest/DigestUtilsTest.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:3a65a4a974,c6d8e6d5e8,c7fbb1778e"
+        },
+        {
+          "fileId": 80,
+          "lineageKey": "765445394812db1c3dedd22cce7749dfb7713971:src/java/org/apache/commons/codec/net/QuotedPrintableCodec.java",
+          "path": "src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java",
+          "frequency": 2,
+          "maxCcn": 17,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:089f90450f"
+        },
+        {
+          "fileId": 81,
+          "lineageKey": "765445394812db1c3dedd22cce7749dfb7713971:src/test/org/apache/commons/codec/net/QuotedPrintableCodecTest.java",
+          "path": "src/test/java/org/apache/commons/codec/net/QuotedPrintableCodecTest.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:089f90450f"
+        },
+        {
+          "fileId": 82,
+          "lineageKey": "7656a09e8587355ee142e730f5df99ce72b382e5:src/java/org/apache/commons/codec/language/AbstractCaverphone.java",
+          "path": "src/main/java/org/apache/commons/codec/language/AbstractCaverphone.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 83,
+          "lineageKey": "7656a09e8587355ee142e730f5df99ce72b382e5:src/java/org/apache/commons/codec/language/Caverphone1.java",
+          "path": "src/main/java/org/apache/commons/codec/language/Caverphone1.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 84,
+          "lineageKey": "7656a09e8587355ee142e730f5df99ce72b382e5:src/java/org/apache/commons/codec/language/Caverphone2.java",
+          "path": "src/main/java/org/apache/commons/codec/language/Caverphone2.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 85,
+          "lineageKey": "7656a09e8587355ee142e730f5df99ce72b382e5:src/test/org/apache/commons/codec/language/Caverphone1Test.java",
+          "path": "src/test/java/org/apache/commons/codec/language/Caverphone1Test.java",
+          "frequency": 2,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 86,
+          "lineageKey": "7656a09e8587355ee142e730f5df99ce72b382e5:src/test/org/apache/commons/codec/language/Caverphone2Test.java",
+          "path": "src/test/java/org/apache/commons/codec/language/Caverphone2Test.java",
+          "frequency": 2,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 87,
+          "lineageKey": "817666037d3c09b9138b161964b0fafc76d65998:src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java",
+          "path": "src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java",
+          "frequency": 1,
+          "maxCcn": 9,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 88,
+          "lineageKey": "817666037d3c09b9138b161964b0fafc76d65998:src/test/java/org/apache/commons/codec/digest/PureJavaCrc32CTest.java",
+          "path": "src/test/java/org/apache/commons/codec/digest/PureJavaCrc32CTest.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 89,
+          "lineageKey": "82d967a3f9e3d4c1927ff682d0df7a09399df7b6:src/main/java/org/apache/commons/codec/digest/Digest.java",
+          "path": "src/main/java/org/apache/commons/codec/cli/Digest.java",
+          "frequency": 1,
+          "maxCcn": 6,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:f2ac150daa"
+        },
+        {
+          "fileId": 90,
+          "lineageKey": "847a6d07793a198d28819731e5166f9ed3845164:src/main/java/org/apache/commons/codec/digest/XXHash32.java",
+          "path": "src/main/java/org/apache/commons/codec/digest/XXHash32.java",
+          "frequency": 2,
+          "maxCcn": 6,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 91,
+          "lineageKey": "847a6d07793a198d28819731e5166f9ed3845164:src/test/java/org/apache/commons/codec/digest/XXHash32Test.java",
+          "path": "src/test/java/org/apache/commons/codec/digest/XXHash32Test.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 92,
+          "lineageKey": "84e1e79f3837fd112ae33ce03102abfe55ceedd4:src/test/java/org/apache/commons/codec/language/Nysiis.java",
+          "path": "src/main/java/org/apache/commons/codec/language/Nysiis.java",
+          "frequency": 2,
+          "maxCcn": 19,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 93,
+          "lineageKey": "84e1e79f3837fd112ae33ce03102abfe55ceedd4:src/test/java/org/apache/commons/codec/language/NysiisTest.java",
+          "path": "src/test/java/org/apache/commons/codec/language/NysiisTest.java",
+          "frequency": 2,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 94,
+          "lineageKey": "899036a36138ab7ae810ec2b351d8226c66908bc:src/java/org/apache/commons/codec/language/SoundexUtils.java",
+          "path": "src/main/java/org/apache/commons/codec/language/SoundexUtils.java",
+          "frequency": 1,
+          "maxCcn": 5,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 95,
+          "lineageKey": "8b0318c9dded3ef6306d3ee5904721149b7981e1:src/test/java/org/apache/commons/codec/language/bm/PhoneticEnginePerformanceTest.java",
+          "path": "src/test/java/org/apache/commons/codec/language/bm/PhoneticEnginePerformanceTest.java",
+          "frequency": 2,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 96,
+          "lineageKey": "91a01c9c6c0078bbc055a1e05b705edcbefb247f:src/java/org/apache/commons/codec/net/Utils.java",
+          "path": "src/main/java/org/apache/commons/codec/net/Utils.java",
+          "frequency": 2,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 97,
+          "lineageKey": "924540abc919d32a8aaa92c6f18906f01e64e167:src/main/java/org/apache/commons/codec/net/PercentCodec.java",
+          "path": "src/main/java/org/apache/commons/codec/net/PercentCodec.java",
+          "frequency": 1,
+          "maxCcn": 7,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:8194db4cdf"
+        },
+        {
+          "fileId": 98,
+          "lineageKey": "924540abc919d32a8aaa92c6f18906f01e64e167:src/test/java/org/apache/commons/codec/net/PercentCodecTest.java",
+          "path": "src/test/java/org/apache/commons/codec/net/PercentCodecTest.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:8194db4cdf"
+        },
+        {
+          "fileId": 99,
+          "lineageKey": "a82070e546d2c2f871895d32cd2f6629480c02bc:src/test/java/org/apache/commons/codec/digest/MessageDigestAlgorithmTest.java",
+          "path": "src/test/java/org/apache/commons/codec/digest/MessageDigestAlgorithmsTest.java",
+          "frequency": 1,
+          "maxCcn": 9,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:70e423b8e6"
+        },
+        {
+          "fileId": 100,
+          "lineageKey": "ad12e19e614e92f824746c199ebfc31228a8c33c:src/java/org/apache/commons/codec/binary/Base32.java",
+          "path": "src/main/java/org/apache/commons/codec/binary/Base32.java",
+          "frequency": 2,
+          "maxCcn": 18,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:472a289404,759150423e"
+        },
+        {
+          "fileId": 101,
+          "lineageKey": "bdf8e5c049a7f6bbe706c6d35bff55a79bba1e65:src/main/java/org/apache/commons/codec/language/Caverphone.java",
+          "path": "src/main/java/org/apache/commons/codec/language/Caverphone.java",
+          "frequency": 2,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 102,
+          "lineageKey": "c10a2d739970c3dd19409e958fb4479135a821b9:src/test/org/apache/commons/codec/net/RFC1522CodecTest.java",
+          "path": "src/test/java/org/apache/commons/codec/net/RFC1522CodecTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 103,
+          "lineageKey": "c23fdd2c3f0bec540bee78c1d292d4c33a588d82:src/java/org/apache/commons/codec/binary/Binary.java",
+          "path": "src/main/java/org/apache/commons/codec/binary/BinaryCodec.java",
+          "frequency": 1,
+          "maxCcn": 6,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 104,
+          "lineageKey": "c23fdd2c3f0bec540bee78c1d292d4c33a588d82:src/test/org/apache/commons/codec/binary/BinaryTest.java",
+          "path": "src/test/java/org/apache/commons/codec/binary/BinaryCodecTest.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 105,
+          "lineageKey": "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/Base32InputStream.java",
+          "path": "src/main/java/org/apache/commons/codec/binary/Base32InputStream.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 106,
+          "lineageKey": "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/Base32OutputStream.java",
+          "path": "src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java",
+          "frequency": 2,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 107,
+          "lineageKey": "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/BasedCodec.java",
+          "path": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+          "frequency": 3,
+          "maxCcn": 6,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:20df4c9f29"
+        },
+        {
+          "fileId": 108,
+          "lineageKey": "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/BasedCodecInputStream.java",
+          "path": "src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java",
+          "frequency": 3,
+          "maxCcn": 11,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 109,
+          "lineageKey": "c6fadeeac0487a158234cf5d59a144f67bd68e93:src/java/org/apache/commons/codec/binary/BasedCodecOutputStream.java",
+          "path": "src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java",
+          "frequency": 2,
+          "maxCcn": 7,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 110,
+          "lineageKey": "cbe33f0a85fd9f2c04efb96296a26880995618b0:src/test/org/apache/commons/codec/binary/Base64Codec13Test.java",
+          "path": "src/test/java/org/apache/commons/codec/binary/Base64Codec13Test.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 111,
+          "lineageKey": "cd07a9721ed81850d97a2effc26a82154d6d3d29:src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java",
+          "path": "src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 112,
+          "lineageKey": "cd07a9721ed81850d97a2effc26a82154d6d3d29:src/main/java/org/apache/commons/codec/digest/HmacUtils.java",
+          "path": "src/main/java/org/apache/commons/codec/digest/HmacUtils.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 113,
+          "lineageKey": "cd07a9721ed81850d97a2effc26a82154d6d3d29:src/test/java/org/apache/commons/codec/digest/HmacUtilsTest.java",
+          "path": "src/test/java/org/apache/commons/codec/digest/HmacUtilsTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 114,
+          "lineageKey": "ce54f3476745a68d02b1db11444b71c758b1d1bb:src/main/java/org/apache/commons/codec/digest/PureJavaCrc32.java",
+          "path": "src/main/java/org/apache/commons/codec/digest/PureJavaCrc32.java",
+          "frequency": 1,
+          "maxCcn": 9,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 115,
+          "lineageKey": "ce54f3476745a68d02b1db11444b71c758b1d1bb:src/test/java/org/apache/commons/codec/digest/PureJavaCrc32Test.java",
+          "path": "src/test/java/org/apache/commons/codec/digest/PureJavaCrc32Test.java",
+          "frequency": 1,
+          "maxCcn": 9,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 116,
+          "lineageKey": "d542ac38c91731d1fd91feefee6301d90aa44957:src/test/org/apache/commons/codec/language/DoubleMetaphoneTest.java",
+          "path": "src/test/java/org/apache/commons/codec/language/DoubleMetaphoneTest.java",
+          "frequency": 2,
+          "maxCcn": 5,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 117,
+          "lineageKey": "e2701a5a1872adc57a2735d39ac9a0dca37f75e3:src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java",
+          "path": "src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java",
+          "frequency": 1,
+          "maxCcn": 11,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:38087c0fc5,f13dd50f56"
+        },
+        {
+          "fileId": 118,
+          "lineageKey": "e2701a5a1872adc57a2735d39ac9a0dca37f75e3:src/test/java/org/apache/commons/codec/language/MatchRatingApproachEncoderTest.java",
+          "path": "src/test/java/org/apache/commons/codec/language/MatchRatingApproachEncoderTest.java",
+          "frequency": 2,
+          "maxCcn": 1,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:38087c0fc5,f13dd50f56"
+        },
+        {
+          "fileId": 119,
+          "lineageKey": "e2df85024e2ab99645a788b4b2836ba1cfdb87f5:src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+          "path": "src/main/java/org/apache/commons/codec/binary/Base64InputStream.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 120,
+          "lineageKey": "e2df85024e2ab99645a788b4b2836ba1cfdb87f5:src/java/org/apache/commons/codec/binary/Base64OutputStream.java",
+          "path": "src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java",
+          "frequency": 2,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 121,
+          "lineageKey": "e2df85024e2ab99645a788b4b2836ba1cfdb87f5:src/test/org/apache/commons/codec/binary/Base64InputStreamTest.java",
+          "path": "src/test/java/org/apache/commons/codec/binary/Base64InputStreamTest.java",
+          "frequency": 1,
+          "maxCcn": 5,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 122,
+          "lineageKey": "e2df85024e2ab99645a788b4b2836ba1cfdb87f5:src/test/org/apache/commons/codec/binary/Base64OutputStreamTest.java",
+          "path": "src/test/java/org/apache/commons/codec/binary/Base64OutputStreamTest.java",
+          "frequency": 1,
+          "maxCcn": 6,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 123,
+          "lineageKey": "e810384bf01c1ea545757b06af73a4bb2b2401ab:src/test/org/apache/commons/codec/binary/BaseNCodecTest.java",
+          "path": "src/test/java/org/apache/commons/codec/binary/BaseNCodecTest.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 124,
+          "lineageKey": "f57037a7dba457822e233129408b4d71353c0b99:src/test/org/apache/commons/codec/net/BCodecTest.java",
+          "path": "src/test/java/org/apache/commons/codec/net/BCodecTest.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-55-audited-commits"
+        },
+        {
+          "fileId": 125,
+          "lineageKey": "f57037a7dba457822e233129408b4d71353c0b99:src/test/org/apache/commons/codec/net/QCodecTest.java",
+          "path": "src/test/java/org/apache/commons/codec/net/QCodecTest.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:089f90450f"
+        },
+        {
+          "fileId": 126,
+          "lineageKey": "fc393f7bdf6c971cb0dcd977d3015ad5ce524149:b/src/test/java/org/apache/commons/codec/digest/Sha2CryptTest.java",
+          "path": "src/test/java/org/apache/commons/codec/digest/Sha2CryptTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:6837802c8f"
+        }
+      ]
+    },
+    {
+      "repository": "commons-dbutils",
+      "observationStart": "2024-03-24T21:08:53Z",
+      "cutoff": "2024-09-20T21:08:53Z",
+      "predictionEnd": "2026-11-12T11:40:32Z",
+      "files": [
+        {
+          "fileId": 1,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+          "path": "src/main/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+          "frequency": 4,
+          "maxCcn": 6,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 2,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/DbUtils.java",
+          "path": "src/main/java/org/apache/commons/dbutils/DbUtils.java",
+          "frequency": 1,
+          "maxCcn": 4,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 3,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/ProxyFactory.java",
+          "path": "src/main/java/org/apache/commons/dbutils/ProxyFactory.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 4,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/QueryLoader.java",
+          "path": "src/main/java/org/apache/commons/dbutils/QueryLoader.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 5,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/QueryRunner.java",
+          "path": "src/main/java/org/apache/commons/dbutils/QueryRunner.java",
+          "frequency": 1,
+          "maxCcn": 6,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 6,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/ResultSetIterator.java",
+          "path": "src/main/java/org/apache/commons/dbutils/ResultSetIterator.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:27ca6db945,8c9b5b8266"
+        },
+        {
+          "fileId": 7,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/handlers/ArrayHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/ArrayHandler.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 8,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/handlers/ArrayListHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/ArrayListHandler.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 9,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/handlers/BeanHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/BeanHandler.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 10,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/handlers/BeanListHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/BeanListHandler.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 11,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/handlers/MapHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/MapHandler.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 12,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/handlers/MapListHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/MapListHandler.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 13,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/handlers/ScalarHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/ScalarHandler.java",
+          "frequency": 0,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 14,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/wrappers/SqlNullCheckedResultSet.java",
+          "path": "src/main/java/org/apache/commons/dbutils/wrappers/SqlNullCheckedResultSet.java",
+          "frequency": 0,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 15,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/wrappers/StringTrimmedResultSet.java",
+          "path": "src/main/java/org/apache/commons/dbutils/wrappers/StringTrimmedResultSet.java",
+          "frequency": 0,
+          "maxCcn": 4,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 16,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/BaseTestCase.java",
+          "path": "src/test/java/org/apache/commons/dbutils/BaseTestCase.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 17,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/BasicRowProcessorTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/BasicRowProcessorTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 18,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/MockResultSet.java",
+          "path": "src/test/java/org/apache/commons/dbutils/MockResultSet.java",
+          "frequency": 3,
+          "maxCcn": 11,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 19,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/MockResultSetMetaData.java",
+          "path": "src/test/java/org/apache/commons/dbutils/MockResultSetMetaData.java",
+          "frequency": 2,
+          "maxCcn": 7,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 20,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/ProxyFactoryTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/ProxyFactoryTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 21,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/QueryLoaderTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/QueryLoaderTest.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 22,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/ResultSetIteratorTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/ResultSetIteratorTest.java",
+          "frequency": 2,
+          "maxCcn": 2,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:27ca6db945"
+        },
+        {
+          "fileId": 23,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/TestBean.java",
+          "path": "src/test/java/org/apache/commons/dbutils/TestBean.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 24,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/ArrayHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/ArrayHandlerTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 25,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/ArrayListHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/ArrayListHandlerTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 26,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/BeanHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/BeanHandlerTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 27,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/BeanListHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/BeanListHandlerTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 28,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/MapHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/MapHandlerTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 29,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/MapListHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/MapListHandlerTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 30,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/ScalarHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/ScalarHandlerTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 31,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/wrappers/SqlNullCheckedResultSetTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/wrappers/SqlNullCheckedResultSetTest.java",
+          "frequency": 0,
+          "maxCcn": 9,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:5385191dcb"
+        },
+        {
+          "fileId": 32,
+          "lineageKey": "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/wrappers/StringTrimmedResultSetTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/wrappers/StringTrimmedResultSetTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 33,
+          "lineageKey": "03c4155d11db745ec20f9627a136168c98139d09:src/main/java/org/apache/commons/dbutils/handlers/BeanMapHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/BeanMapHandler.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 34,
+          "lineageKey": "03c4155d11db745ec20f9627a136168c98139d09:src/test/java/org/apache/commons/dbutils/handlers/BeanMapHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/BeanMapHandlerTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 35,
+          "lineageKey": "148bd5680493d3a5b430331598094a239eccab3e:src/java/org/apache/commons/dbutils/AsyncQueryRunner.java",
+          "path": "src/main/java/org/apache/commons/dbutils/AsyncQueryRunner.java",
+          "frequency": 0,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 36,
+          "lineageKey": "148bd5680493d3a5b430331598094a239eccab3e:src/test/org/apache/commons/dbutils/AsyncQueryRunnerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/AsyncQueryRunnerTest.java",
+          "frequency": 0,
+          "maxCcn": 3,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:7ab9ae4c0f"
+        },
+        {
+          "fileId": 37,
+          "lineageKey": "1913334b490a9ffa4d14eed660993a401b0f05e4:src/java/org/apache/commons/dbutils/handlers/GenericListHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/AbstractListHandler.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 38,
+          "lineageKey": "3d007fb729d5168f326c800c2e4f79e544443d1a:src/java/org/apache/commons/dbutils/handlers/AbstractKeyedHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/AbstractKeyedHandler.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 39,
+          "lineageKey": "3e7e24d40e6e3f95f11f866a4cbf40fab6ec79f6:src/test/org/apache/commons/dbutils/QueryRunnerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/QueryRunnerTest.java",
+          "frequency": 0,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 40,
+          "lineageKey": "584c5ca581954a0bac498b69833ba4a7a370437d:src/java/org/apache/commons/dbutils/handlers/KeyedHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/KeyedHandler.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 41,
+          "lineageKey": "584c5ca581954a0bac498b69833ba4a7a370437d:src/test/org/apache/commons/dbutils/handlers/KeyedHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/KeyedHandlerTest.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 42,
+          "lineageKey": "6622aaeb43d0786056c0331c9595b7bb987a7a1f:src/java/org/apache/commons/dbutils/handlers/ColumnListHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/ColumnListHandler.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 43,
+          "lineageKey": "6622aaeb43d0786056c0331c9595b7bb987a7a1f:src/test/org/apache/commons/dbutils/handlers/ColumnListHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/ColumnListHandlerTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 44,
+          "lineageKey": "6e9fbc7d69e79fbd1b862e6b453a09eaffe4a833:src/test/java/org/apache/commons/dbutils/DbUtilsTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/DbUtilsTest.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 45,
+          "lineageKey": "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/BooleanColumnHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/columns/BooleanColumnHandler.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 46,
+          "lineageKey": "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/ByteColumnHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/columns/ByteColumnHandler.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 47,
+          "lineageKey": "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/DoubleColumnHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/columns/DoubleColumnHandler.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 48,
+          "lineageKey": "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/FloatColumnHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/columns/FloatColumnHandler.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 49,
+          "lineageKey": "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/IntegerColumnHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/columns/IntegerColumnHandler.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 50,
+          "lineageKey": "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/LongColumnHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/columns/LongColumnHandler.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 51,
+          "lineageKey": "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/SQLXMLColumnHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/columns/SQLXMLColumnHandler.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 52,
+          "lineageKey": "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/ShortColumnHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/columns/ShortColumnHandler.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 53,
+          "lineageKey": "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/StringColumnHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/columns/StringColumnHandler.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 54,
+          "lineageKey": "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/TimestampColumnHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/columns/TimestampColumnHandler.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 55,
+          "lineageKey": "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/properties/DatePropertyHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/properties/DatePropertyHandler.java",
+          "frequency": 1,
+          "maxCcn": 6,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 56,
+          "lineageKey": "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/properties/StringEnumPropertyHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/handlers/properties/StringEnumPropertyHandler.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 57,
+          "lineageKey": "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/test/java/org/apache/commons/dbutils/ServiceLoaderTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/ServiceLoaderTest.java",
+          "frequency": 0,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 58,
+          "lineageKey": "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/test/java/org/apache/commons/dbutils/handlers/columns/TestColumnHandler.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/columns/TestColumnHandler.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 59,
+          "lineageKey": "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/test/java/org/apache/commons/dbutils/handlers/properties/PropertyHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/properties/PropertyHandlerTest.java",
+          "frequency": 0,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 60,
+          "lineageKey": "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/test/java/org/apache/commons/dbutils/handlers/properties/TestPropertyHandler.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/properties/TestPropertyHandler.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 61,
+          "lineageKey": "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/BooleanColumnHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/columns/BooleanColumnHandlerTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 62,
+          "lineageKey": "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/ByteColumnHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/columns/ByteColumnHandlerTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 63,
+          "lineageKey": "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/ColumnHandlerTestBase.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/columns/AbstractTestColumnHandler.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 64,
+          "lineageKey": "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/DoubleColumnHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/columns/DoubleColumnHandlerTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 65,
+          "lineageKey": "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/FloatColumnHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/columns/FloatColumnHandlerTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 66,
+          "lineageKey": "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/IntegerColumnHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/columns/IntegerColumnHandlerTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 67,
+          "lineageKey": "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/LongColumnHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/columns/LongColumnHandlerTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 68,
+          "lineageKey": "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/SQLXMLColumnHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/columns/SQLXMLColumnHandlerTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 69,
+          "lineageKey": "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/ShortColumnHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/columns/ShortColumnHandlerTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 70,
+          "lineageKey": "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/StringColumnHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/columns/StringColumnHandlerTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 71,
+          "lineageKey": "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/TimestampColumnHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/columns/TimestampColumnHandlerTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 72,
+          "lineageKey": "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/properties/DatePropertyHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/properties/DatePropertyHandlerTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 73,
+          "lineageKey": "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/properties/StringEnumPropertyHandlerTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/handlers/properties/StringEnumPropertyHandlerTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 74,
+          "lineageKey": "92c6d6d58f9c3f8d8370459d364daa0925ca7980:src/main/java/org/apache/commons/dbutils/StatementConfiguration.java",
+          "path": "src/main/java/org/apache/commons/dbutils/StatementConfiguration.java",
+          "frequency": 0,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 75,
+          "lineageKey": "92c6d6d58f9c3f8d8370459d364daa0925ca7980:src/test/java/org/apache/commons/dbutils/StatementConfigurationTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/StatementConfigurationTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 76,
+          "lineageKey": "a1c479eba99f9bcff15ce635dedf0b5a0e3aa32b:src/test/org/apache/commons/dbutils/BasicColumnProcessorTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/BeanProcessorTest.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 77,
+          "lineageKey": "aa276d1adf6c3bf79340d26008a3ac760acefbc5:src/main/java/org/apache/commons/dbutils/OutParameter.java",
+          "path": "src/main/java/org/apache/commons/dbutils/OutParameter.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 78,
+          "lineageKey": "aa276d1adf6c3bf79340d26008a3ac760acefbc5:src/test/java/org/apache/commons/dbutils/OutParameterTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/OutParameterTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 79,
+          "lineageKey": "ce25148d7d7c50378d8e61e0e2c5084673e94b09:src/java/org/apache/commons/dbutils/AbstractQueryRunner.java",
+          "path": "src/main/java/org/apache/commons/dbutils/AbstractQueryRunner.java",
+          "frequency": 2,
+          "maxCcn": 13,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 80,
+          "lineageKey": "e13fbd3bf94a01d321baa66548ecbaa06f136cef:src/main/java/org/apache/commons/dbutils/GenerousBeanProcessor.java",
+          "path": "src/main/java/org/apache/commons/dbutils/GenerousBeanProcessor.java",
+          "frequency": 0,
+          "maxCcn": 7,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 81,
+          "lineageKey": "e13fbd3bf94a01d321baa66548ecbaa06f136cef:src/test/java/org/apache/commons/dbutils/GenerousBeanProcessorTest.java",
+          "path": "src/test/java/org/apache/commons/dbutils/GenerousBeanProcessorTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 82,
+          "lineageKey": "e89c9bfa8e727a87cb45e33b21784e584da502ec:src/java/org/apache/commons/dbutils/BeanProcessor.java",
+          "path": "src/main/java/org/apache/commons/dbutils/BeanProcessor.java",
+          "frequency": 2,
+          "maxCcn": 10,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 83,
+          "lineageKey": "edcf0ecfbf576bc6615beee3820b4ce5b0200fcd:src/main/java/org/apache/commons/dbutils/BaseResultSetHandler.java",
+          "path": "src/main/java/org/apache/commons/dbutils/BaseResultSetHandler.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        },
+        {
+          "fileId": 84,
+          "lineageKey": "edcf0ecfbf576bc6615beee3820b4ce5b0200fcd:src/test/java/org/apache/commons/dbutils/BaseResultSetHandlerTestCase.java",
+          "path": "src/test/java/org/apache/commons/dbutils/BaseResultSetHandlerTest.java",
+          "frequency": 0,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-14-audited-commits"
+        }
+      ]
+    },
+    {
+      "repository": "commons-validator",
+      "observationStart": "2024-06-29T15:24:03Z",
+      "cutoff": "2024-12-26T15:24:03Z",
+      "predictionEnd": "2026-11-12T00:53:54Z",
+      "files": [
+        {
+          "fileId": 1,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/share/org/apache/commons/validator/routines/AbstractCalendarValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/AbstractCalendarValidator.java",
+          "frequency": 3,
+          "maxCcn": 12,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 2,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/share/org/apache/commons/validator/routines/AbstractFormatValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/AbstractFormatValidator.java",
+          "frequency": 3,
+          "maxCcn": 5,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 3,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/share/org/apache/commons/validator/routines/AbstractNumberValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/AbstractNumberValidator.java",
+          "frequency": 3,
+          "maxCcn": 9,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:1b4e82c54e"
+        },
+        {
+          "fileId": 4,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/share/org/apache/commons/validator/routines/BigDecimalValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/BigDecimalValidator.java",
+          "frequency": 3,
+          "maxCcn": 3,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:1b4e82c54e"
+        },
+        {
+          "fileId": 5,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/share/org/apache/commons/validator/routines/BigIntegerValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/BigIntegerValidator.java",
+          "frequency": 3,
+          "maxCcn": 2,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:1b4e82c54e,eafeda9603"
+        },
+        {
+          "fileId": 6,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/share/org/apache/commons/validator/routines/ByteValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/ByteValidator.java",
+          "frequency": 3,
+          "maxCcn": 4,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 7,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/share/org/apache/commons/validator/routines/CalendarValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/CalendarValidator.java",
+          "frequency": 3,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 8,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/share/org/apache/commons/validator/routines/CurrencyValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/CurrencyValidator.java",
+          "frequency": 3,
+          "maxCcn": 6,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 9,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/share/org/apache/commons/validator/routines/DateValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/DateValidator.java",
+          "frequency": 3,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 10,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/share/org/apache/commons/validator/routines/DoubleValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/DoubleValidator.java",
+          "frequency": 3,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 11,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/share/org/apache/commons/validator/routines/FloatValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/FloatValidator.java",
+          "frequency": 3,
+          "maxCcn": 7,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 12,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/share/org/apache/commons/validator/routines/IntegerValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/IntegerValidator.java",
+          "frequency": 3,
+          "maxCcn": 4,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 13,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/share/org/apache/commons/validator/routines/LongValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/LongValidator.java",
+          "frequency": 3,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 14,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/share/org/apache/commons/validator/routines/PercentValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/PercentValidator.java",
+          "frequency": 3,
+          "maxCcn": 7,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 15,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/share/org/apache/commons/validator/routines/ShortValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/ShortValidator.java",
+          "frequency": 3,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 16,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/share/org/apache/commons/validator/routines/TimeValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/TimeValidator.java",
+          "frequency": 3,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 17,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/test/org/apache/commons/validator/routines/BaseCalendarValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/AbstractCalendarValidatorTest.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 18,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/test/org/apache/commons/validator/routines/BaseNumberValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/AbstractNumberValidatorTest.java",
+          "frequency": 3,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 19,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/test/org/apache/commons/validator/routines/BigDecimalValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/BigDecimalValidatorTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:1b4e82c54e"
+        },
+        {
+          "fileId": 20,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/test/org/apache/commons/validator/routines/BigIntegerValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/BigIntegerValidatorTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:1b4e82c54e,eafeda9603"
+        },
+        {
+          "fileId": 21,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/test/org/apache/commons/validator/routines/ByteValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/ByteValidatorTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 22,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/test/org/apache/commons/validator/routines/CalendarValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/CalendarValidatorTest.java",
+          "frequency": 9,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 23,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/test/org/apache/commons/validator/routines/CurrencyValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/CurrencyValidatorTest.java",
+          "frequency": 3,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 24,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/test/org/apache/commons/validator/routines/DateValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/DateValidatorTest.java",
+          "frequency": 4,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 25,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/test/org/apache/commons/validator/routines/DoubleValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/DoubleValidatorTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 26,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/test/org/apache/commons/validator/routines/FloatValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/FloatValidatorTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 27,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/test/org/apache/commons/validator/routines/IntegerValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/IntegerValidatorTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 28,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/test/org/apache/commons/validator/routines/LongValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/LongValidatorTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 29,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/test/org/apache/commons/validator/routines/PercentValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/PercentValidatorTest.java",
+          "frequency": 2,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 30,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/test/org/apache/commons/validator/routines/ShortValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/ShortValidatorTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 31,
+          "lineageKey": "10dd877a61fa91ff8ea00e070155b54d020b602e:src/test/org/apache/commons/validator/routines/TimeValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/TimeValidatorTest.java",
+          "frequency": 4,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 32,
+          "lineageKey": "14019d4fbea68532aec31bbf55e9f313247ff30f:src/test/org/apache/commons/validator/ByteTest.java",
+          "path": "src/test/java/org/apache/commons/validator/ByteTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 33,
+          "lineageKey": "14019d4fbea68532aec31bbf55e9f313247ff30f:src/test/org/apache/commons/validator/DoubleTest.java",
+          "path": "src/test/java/org/apache/commons/validator/DoubleTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 34,
+          "lineageKey": "14019d4fbea68532aec31bbf55e9f313247ff30f:src/test/org/apache/commons/validator/FloatTest.java",
+          "path": "src/test/java/org/apache/commons/validator/FloatTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 35,
+          "lineageKey": "14019d4fbea68532aec31bbf55e9f313247ff30f:src/test/org/apache/commons/validator/ValueBean.java",
+          "path": "src/test/java/org/apache/commons/validator/ValueBean.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 36,
+          "lineageKey": "15a6eca245e4234328a6ec1f13d59283f5c094e2:src/test/org/apache/commons/validator/MultipleTests.java",
+          "path": "src/test/java/org/apache/commons/validator/MultipleTest.java",
+          "frequency": 4,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 37,
+          "lineageKey": "17243d18115b9d9d4b57bcc5b63bc328e019d4b4:src/test/org/apache/commons/validator/VarTest.java",
+          "path": "src/test/java/org/apache/commons/validator/VarTest.java",
+          "frequency": 3,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 38,
+          "lineageKey": "17fb673d18878a944c14ea5c73f09bc861e9ab1a:src/share/org/apache/commons/validator/ValidatorResult.java",
+          "path": "src/main/java/org/apache/commons/validator/ValidatorResult.java",
+          "frequency": 3,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 39,
+          "lineageKey": "17fb673d18878a944c14ea5c73f09bc861e9ab1a:src/share/org/apache/commons/validator/ValidatorResults.java",
+          "path": "src/main/java/org/apache/commons/validator/ValidatorResults.java",
+          "frequency": 2,
+          "maxCcn": 5,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 40,
+          "lineageKey": "1d69b94e009787adb50bcbcc561cfaba42a8253d:src/test/org/apache/commons/validator/ValidatorResultsTest.java",
+          "path": "src/test/java/org/apache/commons/validator/ValidatorResultsTest.java",
+          "frequency": 2,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 41,
+          "lineageKey": "1f40a4550861eb02b85060039d81ef52d47235b6:src/test/org/apache/commons/validator/TestCommon.java",
+          "path": "src/test/java/org/apache/commons/validator/AbstractCommonTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 42,
+          "lineageKey": "1f40a4550861eb02b85060039d81ef52d47235b6:src/test/org/apache/commons/validator/TestNumber.java",
+          "path": "src/test/java/org/apache/commons/validator/AbstractNumberTest.java",
+          "frequency": 2,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 43,
+          "lineageKey": "206b98d9b246b36cfa941d1c4f6679d4058364e2:src/test/java/org/apache/commons/validator/ValidatorResourcesTest.java",
+          "path": "src/test/java/org/apache/commons/validator/ValidatorResourcesTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 44,
+          "lineageKey": "24a9f5e5dc1d64948db07270dcc696635b158e69:src/test/org/apache/commons/validator/RequiredNameTest.java",
+          "path": "src/test/java/org/apache/commons/validator/RequiredNameTest.java",
+          "frequency": 4,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 45,
+          "lineageKey": "24a9f5e5dc1d64948db07270dcc696635b158e69:src/test/org/apache/commons/validator/TestValidator.java",
+          "path": "src/test/java/org/apache/commons/validator/GenericValidatorImpl.java",
+          "frequency": 1,
+          "maxCcn": 23,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 46,
+          "lineageKey": "26cfcf2d957f0c36885792254ef14389b4edaeea:src/main/java/org/apache/commons/validator/routines/EmailValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/EmailValidator.java",
+          "frequency": 1,
+          "maxCcn": 6,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 47,
+          "lineageKey": "26cfcf2d957f0c36885792254ef14389b4edaeea:src/main/java/org/apache/commons/validator/routines/UrlValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/UrlValidator.java",
+          "frequency": 6,
+          "maxCcn": 15,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 48,
+          "lineageKey": "27f1c3badc173b2e739121dce36b3a6634dd3a65:src/main/java/org/apache/commons/validator/routines/checkdigit/ModulusTenCheckDigit.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/checkdigit/ModulusTenCheckDigit.java",
+          "frequency": 5,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 49,
+          "lineageKey": "27f1c3badc173b2e739121dce36b3a6634dd3a65:src/test/java/org/apache/commons/validator/routines/checkdigit/ModulusTenABACheckDigitTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/checkdigit/ModulusTenABACheckDigitTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 50,
+          "lineageKey": "27f1c3badc173b2e739121dce36b3a6634dd3a65:src/test/java/org/apache/commons/validator/routines/checkdigit/ModulusTenCUSIPCheckDigitTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/checkdigit/ModulusTenCUSIPCheckDigitTest.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 51,
+          "lineageKey": "27f1c3badc173b2e739121dce36b3a6634dd3a65:src/test/java/org/apache/commons/validator/routines/checkdigit/ModulusTenEAN13CheckDigitTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/checkdigit/ModulusTenEAN13CheckDigitTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 52,
+          "lineageKey": "27f1c3badc173b2e739121dce36b3a6634dd3a65:src/test/java/org/apache/commons/validator/routines/checkdigit/ModulusTenLuhnCheckDigitTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/checkdigit/ModulusTenLuhnCheckDigitTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 53,
+          "lineageKey": "27f1c3badc173b2e739121dce36b3a6634dd3a65:src/test/java/org/apache/commons/validator/routines/checkdigit/ModulusTenSedolCheckDigitTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/checkdigit/ModulusTenSedolCheckDigitTest.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 54,
+          "lineageKey": "28283808eab7d11b69f3afaca6e294a9a31ddcd1:src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "frequency": 5,
+          "maxCcn": 13,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:7fbb64258b"
+        },
+        {
+          "fileId": 55,
+          "lineageKey": "28283808eab7d11b69f3afaca6e294a9a31ddcd1:src/test/java/org/apache/commons/validator/routines/DomainValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/DomainValidatorTest.java",
+          "frequency": 5,
+          "maxCcn": 19,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 56,
+          "lineageKey": "28711cd8991af50077b0f2f655cc0fa32c6d2842:src/test/org/apache/commons/validator/EntityImportTest.java",
+          "path": "src/test/java/org/apache/commons/validator/EntityImportTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 57,
+          "lineageKey": "2c2c02fa2d4e10395243d88d21598b99ba3f894a:src/test/org/apache/commons/validator/UrlTest.java",
+          "path": "src/test/java/org/apache/commons/validator/UrlTest.java",
+          "frequency": 0,
+          "maxCcn": 9,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 58,
+          "lineageKey": "307a299164fe0e6c754d9553ada3b694e2e13751:src/share/org/apache/commons/validator/routines/ISBNValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/ISBNValidator.java",
+          "frequency": 3,
+          "maxCcn": 4,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 59,
+          "lineageKey": "3e7d4834287f9d036864294f63d623743cd36e32:src/main/java/org/apache/commons/validator/routines/checkdigit/ABANumberCheckDigit.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/checkdigit/ABANumberCheckDigit.java",
+          "frequency": 4,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 60,
+          "lineageKey": "3e7d4834287f9d036864294f63d623743cd36e32:src/main/java/org/apache/commons/validator/routines/checkdigit/CUSIPCheckDigit.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/checkdigit/CUSIPCheckDigit.java",
+          "frequency": 2,
+          "maxCcn": 4,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 61,
+          "lineageKey": "3e7d4834287f9d036864294f63d623743cd36e32:src/main/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigit.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigit.java",
+          "frequency": 3,
+          "maxCcn": 7,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 62,
+          "lineageKey": "3e7d4834287f9d036864294f63d623743cd36e32:src/main/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigit.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigit.java",
+          "frequency": 2,
+          "maxCcn": 6,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 63,
+          "lineageKey": "3e7d4834287f9d036864294f63d623743cd36e32:src/main/java/org/apache/commons/validator/routines/checkdigit/SedolCheckDigit.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/checkdigit/SedolCheckDigit.java",
+          "frequency": 4,
+          "maxCcn": 4,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 64,
+          "lineageKey": "3e7d4834287f9d036864294f63d623743cd36e32:src/test/java/org/apache/commons/validator/routines/checkdigit/ABANumberCheckDigitTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/checkdigit/ABANumberCheckDigitTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 65,
+          "lineageKey": "3e7d4834287f9d036864294f63d623743cd36e32:src/test/java/org/apache/commons/validator/routines/checkdigit/CUSIPCheckDigitTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/checkdigit/CUSIPCheckDigitTest.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 66,
+          "lineageKey": "3e7d4834287f9d036864294f63d623743cd36e32:src/test/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigitTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigitTest.java",
+          "frequency": 1,
+          "maxCcn": 5,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 67,
+          "lineageKey": "3e7d4834287f9d036864294f63d623743cd36e32:src/test/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigitTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/checkdigit/ISINCheckDigitTest.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 68,
+          "lineageKey": "3e7d4834287f9d036864294f63d623743cd36e32:src/test/java/org/apache/commons/validator/routines/checkdigit/SedolCheckDigitTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/checkdigit/SedolCheckDigitTest.java",
+          "frequency": 1,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 69,
+          "lineageKey": "3f33c59b2fa880f80458cfdbbfd2f72ee3c136bf:src/test/org/apache/commons/validator/IntegerTest.java",
+          "path": "src/test/java/org/apache/commons/validator/IntegerTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 70,
+          "lineageKey": "3f33c59b2fa880f80458cfdbbfd2f72ee3c136bf:src/test/org/apache/commons/validator/LongTest.java",
+          "path": "src/test/java/org/apache/commons/validator/LongTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 71,
+          "lineageKey": "3f33c59b2fa880f80458cfdbbfd2f72ee3c136bf:src/test/org/apache/commons/validator/NameBean.java",
+          "path": "src/test/java/org/apache/commons/validator/NameBean.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 72,
+          "lineageKey": "3f33c59b2fa880f80458cfdbbfd2f72ee3c136bf:src/test/org/apache/commons/validator/ShortTest.java",
+          "path": "src/test/java/org/apache/commons/validator/ShortTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 73,
+          "lineageKey": "3f33c59b2fa880f80458cfdbbfd2f72ee3c136bf:src/test/org/apache/commons/validator/TestTypeValidator.java",
+          "path": "src/test/java/org/apache/commons/validator/GenericTypeValidatorImpl.java",
+          "frequency": 1,
+          "maxCcn": 5,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 74,
+          "lineageKey": "3f33c59b2fa880f80458cfdbbfd2f72ee3c136bf:src/test/org/apache/commons/validator/TypeBean.java",
+          "path": "src/test/java/org/apache/commons/validator/TypeBean.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 75,
+          "lineageKey": "3f33c59b2fa880f80458cfdbbfd2f72ee3c136bf:src/test/org/apache/commons/validator/TypeTest.java",
+          "path": "src/test/java/org/apache/commons/validator/GenericTypeValidatorTest.java",
+          "frequency": 3,
+          "maxCcn": 2,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:6b8601139c"
+        },
+        {
+          "fileId": 76,
+          "lineageKey": "40fa56349f87ededb3f361e36f48bb80ff80b2eb:src/share/org/apache/commons/validator/ISBNValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/ISBNValidator.java",
+          "frequency": 2,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 77,
+          "lineageKey": "40fa56349f87ededb3f361e36f48bb80ff80b2eb:src/test/org/apache/commons/validator/ISBNValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/ISBNValidatorTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 78,
+          "lineageKey": "45cc7f0095290b264ffadf3d2fb9fd86cf32d181:src/share/org/apache/commons/validator/EmailValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/EmailValidator.java",
+          "frequency": 0,
+          "maxCcn": 7,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 79,
+          "lineageKey": "4713bced416c3737f993677d238d6c1a9b7a8fd5:src/test/org/apache/commons/validator/DateTest.java",
+          "path": "src/test/java/org/apache/commons/validator/DateTest.java",
+          "frequency": 3,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 80,
+          "lineageKey": "47b96b30ae5b968ef295997dc6d92d959e65428c:src/main/java/org/apache/commons/validator/routines/InetAddressValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/InetAddressValidator.java",
+          "frequency": 6,
+          "maxCcn": 33,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:af20981bee"
+        },
+        {
+          "fileId": 81,
+          "lineageKey": "47b96b30ae5b968ef295997dc6d92d959e65428c:src/test/java/org/apache/commons/validator/routines/InetAddressValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/InetAddressValidatorTest.java",
+          "frequency": 3,
+          "maxCcn": 3,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:af20981bee"
+        },
+        {
+          "fileId": 82,
+          "lineageKey": "4c7628679db9e2eb24dcf358f460e4a00252adf1:src/test/org/apache/commons/validator/CreditCardValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/CreditCardValidatorTest.java",
+          "frequency": 0,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 83,
+          "lineageKey": "50ebc0f5446a38762932f9f7d202856501b2c9c7:src/main/java/org/apache/commons/validator/routines/IBANValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/IBANValidator.java",
+          "frequency": 7,
+          "maxCcn": 8,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 84,
+          "lineageKey": "50ebc0f5446a38762932f9f7d202856501b2c9c7:src/test/java/org/apache/commons/validator/routines/IBANValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/IBANValidatorTest.java",
+          "frequency": 12,
+          "maxCcn": 8,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 85,
+          "lineageKey": "527d29b98a6a9cd9aa34a7ac942979767008c0b4:src/share/org/apache/commons/validator/util/Flags.java",
+          "path": "src/main/java/org/apache/commons/validator/util/Flags.java",
+          "frequency": 3,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 86,
+          "lineageKey": "536bfe588f58e6c7054e8e6091088c5162a738cc:src/test/org/apache/commons/validator/routines/ISBNValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/ISBNValidatorTest.java",
+          "frequency": 2,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 87,
+          "lineageKey": "5889c8baee33faccd55bd62012ff1ce377f29e16:src/test/org/apache/commons/validator/RetrieveFormTest.java",
+          "path": "src/test/java/org/apache/commons/validator/RetrieveFormTest.java",
+          "frequency": 3,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 88,
+          "lineageKey": "5e0a6a9e47c7f0f38aa7f4cf7644f5bec7201721:src/share/org/apache/commons/validator/routines/RegexValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/RegexValidator.java",
+          "frequency": 6,
+          "maxCcn": 7,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:8b41ddbf2f"
+        },
+        {
+          "fileId": 89,
+          "lineageKey": "5e0a6a9e47c7f0f38aa7f4cf7644f5bec7201721:src/test/org/apache/commons/validator/routines/RegexValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/RegexValidatorTest.java",
+          "frequency": 4,
+          "maxCcn": 7,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:8b41ddbf2f"
+        },
+        {
+          "fileId": 90,
+          "lineageKey": "6c455e0d54cb9d09836920d48a996bf6022e2e2f:src/test/org/apache/commons/validator/ParameterTest.java",
+          "path": "src/test/java/org/apache/commons/validator/ParameterTest.java",
+          "frequency": 2,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 91,
+          "lineageKey": "6c455e0d54cb9d09836920d48a996bf6022e2e2f:src/test/org/apache/commons/validator/ParameterTestValidator.java",
+          "path": "src/test/java/org/apache/commons/validator/ParameterValidatorImpl.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 92,
+          "lineageKey": "75714c7c3f9dd0596bc066aa44c0acffcda3490e:src/share/org/apache/commons/validator/FormSetFactory.java",
+          "path": "src/main/java/org/apache/commons/validator/FormSetFactory.java",
+          "frequency": 1,
+          "maxCcn": 4,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 93,
+          "lineageKey": "7f6d2217fe853ff3c0085395aa724b1e5bb8e9c5:src/test/org/apache/commons/validator/CustomValidatorResourcesTest.java",
+          "path": "src/test/java/org/apache/commons/validator/CustomValidatorResourcesTest.java",
+          "frequency": 0,
+          "maxCcn": 4,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 94,
+          "lineageKey": "7f6d2217fe853ff3c0085395aa724b1e5bb8e9c5:src/test/org/apache/commons/validator/custom/CustomValidatorResources.java",
+          "path": "src/test/java/org/apache/commons/validator/custom/CustomValidatorResources.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 95,
+          "lineageKey": "8f2cabf34cb42b5b0bc9ee648346a247ccd186b3:src/test/org/apache/commons/validator/FieldTest.java",
+          "path": "src/test/java/org/apache/commons/validator/FieldTest.java",
+          "frequency": 2,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 96,
+          "lineageKey": "946da9d66480c27a221e6ef1282c88d7f81ee8af:src/main/java/org/apache/commons/validator/routines/ISINValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/ISINValidator.java",
+          "frequency": 3,
+          "maxCcn": 4,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:49ec507e0f"
+        },
+        {
+          "fileId": 97,
+          "lineageKey": "946da9d66480c27a221e6ef1282c88d7f81ee8af:src/test/java/org/apache/commons/validator/routines/ISINValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/ISINValidatorTest.java",
+          "frequency": 2,
+          "maxCcn": 3,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:49ec507e0f"
+        },
+        {
+          "fileId": 98,
+          "lineageKey": "97466888592f45d28721e869ebb192c9ea05ea8f:src/test/org/apache/commons/validator/TestPair.java",
+          "path": "src/test/java/org/apache/commons/validator/ResultPair.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 99,
+          "lineageKey": "9cad8211cc6ecf280e031d9c8b1c0e985d70019c:src/main/java/org/apache/commons/validator/routines/ISSNValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/ISSNValidator.java",
+          "frequency": 0,
+          "maxCcn": 5,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 100,
+          "lineageKey": "9cad8211cc6ecf280e031d9c8b1c0e985d70019c:src/main/java/org/apache/commons/validator/routines/checkdigit/ISSNCheckDigit.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/checkdigit/ISSNCheckDigit.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 101,
+          "lineageKey": "9cad8211cc6ecf280e031d9c8b1c0e985d70019c:src/test/java/org/apache/commons/validator/routines/ISSNValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/ISSNValidatorTest.java",
+          "frequency": 3,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 102,
+          "lineageKey": "9cad8211cc6ecf280e031d9c8b1c0e985d70019c:src/test/java/org/apache/commons/validator/routines/checkdigit/ISSNCheckDigitTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/checkdigit/ISSNCheckDigitTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 103,
+          "lineageKey": "a08514ec9394075c5f5dc59b692b1c0c003ee46b:src/test/org/apache/commons/validator/EmailTest.java",
+          "path": "src/test/java/org/apache/commons/validator/EmailTest.java",
+          "frequency": 5,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 104,
+          "lineageKey": "a32c9fd967426f42cbc80003e56ebdad23a3bb64:src/test/org/apache/commons/validator/ExceptionTest.java",
+          "path": "src/test/java/org/apache/commons/validator/ExceptionTest.java",
+          "frequency": 5,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 105,
+          "lineageKey": "b73f1af85ab21c8752cc3e3c1ae8a5c4c35fc8c7:src/example/org/apache/commons/validator/ValidateBean.java",
+          "path": "src/example/org/apache/commons/validator/example/ValidateBean.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 106,
+          "lineageKey": "b73f1af85ab21c8752cc3e3c1ae8a5c4c35fc8c7:src/example/org/apache/commons/validator/ValidateExample.java",
+          "path": "src/example/org/apache/commons/validator/example/ValidateExample.java",
+          "frequency": 1,
+          "maxCcn": 6,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 107,
+          "lineageKey": "c1f24f3ea99bd30e92a2f20ffb3bdb7a8ee7a78b:src/test/org/apache/commons/validator/LocaleTest.java",
+          "path": "src/test/java/org/apache/commons/validator/LocaleTest.java",
+          "frequency": 2,
+          "maxCcn": 4,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 108,
+          "lineageKey": "c20b58e177e222d68ef74d9253b1175ad32b2ad3:src/test/java/org/apache/commons/validator/routines/EmailValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/EmailValidatorTest.java",
+          "frequency": 3,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 109,
+          "lineageKey": "c20b58e177e222d68ef74d9253b1175ad32b2ad3:src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/UrlValidatorTest.java",
+          "frequency": 5,
+          "maxCcn": 9,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 110,
+          "lineageKey": "c34bdc23ab53deefed5d17462581186bf0c73f1b:src/test/org/apache/commons/validator/util/FlagsTest.java",
+          "path": "src/test/java/org/apache/commons/validator/util/FlagsTest.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 111,
+          "lineageKey": "c5f3de459e681104982a88568c1a7a8777836f11:src/share/org/apache/commons/validator/Arg.java",
+          "path": "src/main/java/org/apache/commons/validator/Arg.java",
+          "frequency": 3,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 112,
+          "lineageKey": "c5f3de459e681104982a88568c1a7a8777836f11:src/share/org/apache/commons/validator/Field.java",
+          "path": "src/main/java/org/apache/commons/validator/Field.java",
+          "frequency": 4,
+          "maxCcn": 6,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 113,
+          "lineageKey": "c5f3de459e681104982a88568c1a7a8777836f11:src/share/org/apache/commons/validator/Form.java",
+          "path": "src/main/java/org/apache/commons/validator/Form.java",
+          "frequency": 2,
+          "maxCcn": 4,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:6cddb3cb1d"
+        },
+        {
+          "fileId": 114,
+          "lineageKey": "c5f3de459e681104982a88568c1a7a8777836f11:src/share/org/apache/commons/validator/FormSet.java",
+          "path": "src/main/java/org/apache/commons/validator/FormSet.java",
+          "frequency": 2,
+          "maxCcn": 10,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 115,
+          "lineageKey": "c5f3de459e681104982a88568c1a7a8777836f11:src/share/org/apache/commons/validator/GenericValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/GenericValidator.java",
+          "frequency": 1,
+          "maxCcn": 4,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:f389485693"
+        },
+        {
+          "fileId": 116,
+          "lineageKey": "c5f3de459e681104982a88568c1a7a8777836f11:src/share/org/apache/commons/validator/Msg.java",
+          "path": "src/main/java/org/apache/commons/validator/Msg.java",
+          "frequency": 2,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 117,
+          "lineageKey": "c5f3de459e681104982a88568c1a7a8777836f11:src/share/org/apache/commons/validator/Validator.java",
+          "path": "src/main/java/org/apache/commons/validator/Validator.java",
+          "frequency": 2,
+          "maxCcn": 4,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 118,
+          "lineageKey": "c5f3de459e681104982a88568c1a7a8777836f11:src/share/org/apache/commons/validator/ValidatorAction.java",
+          "path": "src/main/java/org/apache/commons/validator/ValidatorAction.java",
+          "frequency": 5,
+          "maxCcn": 13,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 119,
+          "lineageKey": "c5f3de459e681104982a88568c1a7a8777836f11:src/share/org/apache/commons/validator/ValidatorException.java",
+          "path": "src/main/java/org/apache/commons/validator/ValidatorException.java",
+          "frequency": 1,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 120,
+          "lineageKey": "c5f3de459e681104982a88568c1a7a8777836f11:src/share/org/apache/commons/validator/ValidatorResources.java",
+          "path": "src/main/java/org/apache/commons/validator/ValidatorResources.java",
+          "frequency": 2,
+          "maxCcn": 13,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 121,
+          "lineageKey": "c5f3de459e681104982a88568c1a7a8777836f11:src/share/org/apache/commons/validator/Var.java",
+          "path": "src/main/java/org/apache/commons/validator/Var.java",
+          "frequency": 3,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 122,
+          "lineageKey": "c63104668b83d985e06cac617ba697dfd0dd73c4:src/main/java/org/apache/commons/validator/routines/CreditCardValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/CreditCardValidator.java",
+          "frequency": 4,
+          "maxCcn": 8,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 123,
+          "lineageKey": "c63104668b83d985e06cac617ba697dfd0dd73c4:src/test/java/org/apache/commons/validator/routines/CreditCardValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/CreditCardValidatorTest.java",
+          "frequency": 1,
+          "maxCcn": 3,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:f389485693"
+        },
+        {
+          "fileId": 124,
+          "lineageKey": "c774420270b9b48e67434410ae0b23e155735df3:src/test/org/apache/commons/validator/RequiredIfTest.java",
+          "path": "src/test/java/org/apache/commons/validator/RequiredIfTest.java",
+          "frequency": 3,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 125,
+          "lineageKey": "c7bbda0ffad5ada7a9e0f054a5c31554f0b27407:src/test/org/apache/commons/validator/ValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/ValidatorTest.java",
+          "frequency": 2,
+          "maxCcn": 5,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 126,
+          "lineageKey": "d157acaa88e1e10cbacdd127b75fe2642b5c21b9:src/share/org/apache/commons/validator/routines/checkdigit/VerhoeffCheckDigit.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/checkdigit/VerhoeffCheckDigit.java",
+          "frequency": 2,
+          "maxCcn": 5,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 127,
+          "lineageKey": "d157acaa88e1e10cbacdd127b75fe2642b5c21b9:src/test/org/apache/commons/validator/routines/checkdigit/VerhoeffCheckDigitTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/checkdigit/VerhoeffCheckDigitTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 128,
+          "lineageKey": "d42568af6beaefe24ec70ccae9a79581430f1273:src/share/org/apache/commons/validator/routines/checkdigit/CheckDigitException.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/checkdigit/CheckDigitException.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 129,
+          "lineageKey": "d42568af6beaefe24ec70ccae9a79581430f1273:src/share/org/apache/commons/validator/routines/checkdigit/EAN13CheckDigit.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/checkdigit/EAN13CheckDigit.java",
+          "frequency": 3,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 130,
+          "lineageKey": "d42568af6beaefe24ec70ccae9a79581430f1273:src/share/org/apache/commons/validator/routines/checkdigit/ISBN10CheckDigit.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/checkdigit/ISBN10CheckDigit.java",
+          "frequency": 3,
+          "maxCcn": 3,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 131,
+          "lineageKey": "d42568af6beaefe24ec70ccae9a79581430f1273:src/share/org/apache/commons/validator/routines/checkdigit/ISBNCheckDigit.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/checkdigit/ISBNCheckDigit.java",
+          "frequency": 1,
+          "maxCcn": 4,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 132,
+          "lineageKey": "d42568af6beaefe24ec70ccae9a79581430f1273:src/share/org/apache/commons/validator/routines/checkdigit/LuhnCheckDigit.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/checkdigit/LuhnCheckDigit.java",
+          "frequency": 2,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 133,
+          "lineageKey": "d42568af6beaefe24ec70ccae9a79581430f1273:src/share/org/apache/commons/validator/routines/checkdigit/ModulusCheckDigit.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/checkdigit/ModulusCheckDigit.java",
+          "frequency": 4,
+          "maxCcn": 4,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 134,
+          "lineageKey": "d42568af6beaefe24ec70ccae9a79581430f1273:src/test/org/apache/commons/validator/routines/checkdigit/CheckDigitTestBase.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/checkdigit/AbstractCheckDigitTest.java",
+          "frequency": 4,
+          "maxCcn": 7,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 135,
+          "lineageKey": "d42568af6beaefe24ec70ccae9a79581430f1273:src/test/org/apache/commons/validator/routines/checkdigit/EAN13CheckDigitTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/checkdigit/EAN13CheckDigitTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 136,
+          "lineageKey": "d42568af6beaefe24ec70ccae9a79581430f1273:src/test/org/apache/commons/validator/routines/checkdigit/ISBN10CheckDigitTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/checkdigit/ISBN10CheckDigitTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 137,
+          "lineageKey": "d42568af6beaefe24ec70ccae9a79581430f1273:src/test/org/apache/commons/validator/routines/checkdigit/ISBNCheckDigitTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/checkdigit/ISBNCheckDigitTest.java",
+          "frequency": 2,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 138,
+          "lineageKey": "d42568af6beaefe24ec70ccae9a79581430f1273:src/test/org/apache/commons/validator/routines/checkdigit/LuhnCheckDigitTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/checkdigit/LuhnCheckDigitTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 139,
+          "lineageKey": "d72b8fde0ef8ec509a3b677eb8a2db252827e8d8:src/share/org/apache/commons/validator/CreditCardValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/CreditCardValidator.java",
+          "frequency": 2,
+          "maxCcn": 7,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 140,
+          "lineageKey": "dbb237f90a1303bb41e7caef36abd05d0e94a3ee:src/share/org/apache/commons/validator/routines/CodeValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/routines/CodeValidator.java",
+          "frequency": 5,
+          "maxCcn": 11,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 141,
+          "lineageKey": "dbb237f90a1303bb41e7caef36abd05d0e94a3ee:src/test/org/apache/commons/validator/routines/CodeValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/routines/CodeValidatorTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 142,
+          "lineageKey": "de0a2fb1221357ed481a088b64b8ded34c054c44:src/share/org/apache/commons/validator/DateValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/DateValidator.java",
+          "frequency": 1,
+          "maxCcn": 7,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 143,
+          "lineageKey": "e2a991d6a1821f7798b3d37443f4b4495b6774c9:src/test/org/apache/commons/validator/MultipleConfigFilesTest.java",
+          "path": "src/test/java/org/apache/commons/validator/MultipleConfigFilesTest.java",
+          "frequency": 3,
+          "maxCcn": 2,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 144,
+          "lineageKey": "e739a774419cd8a06cbf3d5f5f80987ab8c491b8:src/share/org/apache/commons/validator/util/ValidatorUtils.java",
+          "path": "src/main/java/org/apache/commons/validator/util/ValidatorUtils.java",
+          "frequency": 2,
+          "maxCcn": 5,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 145,
+          "lineageKey": "e9316aa94e14d7227f92355e3ff5fcaba2135deb:src/share/org/apache/commons/validator/UrlValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/UrlValidator.java",
+          "frequency": 2,
+          "maxCcn": 19,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 146,
+          "lineageKey": "e9912b0421180cec62bd96bdb9e5b1665843641a:src/test/org/apache/commons/validator/ExtensionTest.java",
+          "path": "src/test/java/org/apache/commons/validator/ExtensionTest.java",
+          "frequency": 3,
+          "maxCcn": 1,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:6cddb3cb1d"
+        },
+        {
+          "fileId": 147,
+          "lineageKey": "ece8625d3d0d0a48ce900a1a02dc8c7db4ff4418:src/test/org/apache/commons/validator/GenericValidatorTest.java",
+          "path": "src/test/java/org/apache/commons/validator/GenericValidatorTest.java",
+          "frequency": 0,
+          "maxCcn": 1,
+          "label": "negative",
+          "labelEvidence": "reviewed-negative:0-confirmed-of-34-audited-commits"
+        },
+        {
+          "fileId": 148,
+          "lineageKey": "fadffb0da363c8719eca258943e1503cd34b842d:src/share/org/apache/commons/validator/GenericTypeValidator.java",
+          "path": "src/main/java/org/apache/commons/validator/GenericTypeValidator.java",
+          "frequency": 1,
+          "maxCcn": 8,
+          "label": "positive",
+          "labelEvidence": "confirmed-bugfix-commits:6b8601139c"
+        }
+      ]
+    }
+  ]
+}

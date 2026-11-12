@@ -1,6 +1,10 @@
 # Preserve byte-level hashes of frozen research inputs and evidence across checkouts.
 docs/week-09/dataset-proposal.json -text
+docs/week-09/rq1-dataset-proposal.json -text
+docs/week-09/rq1-commit-reviews.json -text
 docs/week-09/evidence/**/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 docs/week-09/evidence/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 tools/experiments/run_rq2.py text eol=lf
 tools/experiments/rq2_trends.py text eol=lf
+tools/experiments/run_rq1.py text eol=lf
+tools/experiments/summarize_rq1.py text eol=lf

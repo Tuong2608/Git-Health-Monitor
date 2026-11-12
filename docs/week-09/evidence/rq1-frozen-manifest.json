@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "frozenAt": "2026-11-12T14:21:11.082487+00:00",
+  "proposalSha256": "0d8d30375de4be6bb355a93e2a16e767744f86c1c6b1e61d2962fb7dbfe40ff3",
+  "proposal": {
+    "schemaVersion": 1,
+    "status": "GROUP_APPROVED_BLIND_RQ1_V1",
+    "protocolVersion": "week09-rq1-approved-v1",
+    "selectionDate": "2026-11-12",
+    "approvedBy": [
+      "23110170",
+      "23110158"
+    ],
+    "selectionRule": "Five public Java OSS libraries selected before computing model rankings; full reachable history <=10000 commits; OSI-approved open-source license verified via Git tree; not exposed during Week 8 integration testing (excluding gs-rest-service and spring-petclinic from RQ1 to prevent prior-exposure bias). Retain repositories with zero eligible files under v1 lineage rules in the manifest and exclusion log rather than replacing them.",
+    "splitPolicy": "80/20-nonmerge-committer-time-grouped-timestamp",
+    "targetObservationRatio": 0.8,
+    "observationDays": 180,
+    "predictionEndPolicy": "pinned-end-sha",
+    "percentilePolicy": "normalized-midrank-singleton-0.5",
+    "tieBreakPolicy": "fileId-ascending-by-lineageKey",
+    "K": [
+      5,
+      10,
+      20
+    ],
+    "candidateRegex": "\\b(?:fix|fixes|fixed|bug|bugs|defect|defects|npe|regression|incorrect|wrong|broken)\\b|(?:CSV|CODEC|DBUTILS|VALIDATOR)-\\d+",
+    "negativeSamplePerRepo": 10,
+    "seed": 23110170,
+    "repositories": [
+      {
+        "id": "commons-csv",
+        "url": "https://github.com/apache/commons-csv",
+        "reason": "Apache Commons tabular data format parser library; active Jira issue tracking (CSV-xxx) and non-merge history <=5000 commits"
+      },
+      {
+        "id": "commons-codec",
+        "url": "https://github.com/apache/commons-codec",
+        "reason": "Apache Commons encoding/phonetic/digest library; diverse package complexity and Jira issue tracking (CODEC-xxx)"
+      },
+      {
+        "id": "commons-dbutils",
+        "url": "https://github.com/apache/commons-dbutils",
+        "reason": "Apache Commons JDBC utility library; medium-sized Java codebase with interface/handler hierarchy (DBUTILS-xxx)"
+      },
+      {
+        "id": "commons-validator",
+        "url": "https://github.com/apache/commons-validator",
+        "reason": "Apache Commons validation routines library; high-CCN validation rules and Jira issue tracking (VALIDATOR-xxx)"
+      },
+      {
+        "id": "javapoet",
+        "url": "https://github.com/square/javapoet",
+        "reason": "Java source-code generation library using GitHub PR merge workflow; retained to audit v1 merge-lineage coverage behavior without cherry-picking"
+      }
+    ]
+  },
+  "repositories": [
+    {
+      "id": "commons-csv",
+      "url": "https://github.com/apache/commons-csv",
+      "reason": "Apache Commons tabular data format parser library; active Jira issue tracking (CSV-xxx) and non-merge history <=5000 commits",
+      "endSha": "fde765d64e409912013d7bb6b9a9b5784b9f2f56",
+      "reachableCommitsAtEnd": 3320,
+      "observationSha": "560a699978fffa88b0712c2790fa77eccd59f6c9",
+      "reachableCommitsAtObservation": 2566,
+      "observationStart": "2024-03-22T21:52:03Z",
+      "cutoff": "2024-09-18T21:52:03Z",
+      "predictionEnd": "2026-11-12T00:53:24Z",
+      "totalNonMergeCommits": 2974,
+      "observationNonMergeCommits": 2379,
+      "predictionNonMergeCommits": 595,
+      "realizedCommitRatio": 0.799933,
+      "selectionStatus": "READY",
+      "licenseFiles": [
+        "100644 blob ff9ad4530f5716304e042cbac72cecd7c40f0e0e\tLICENSE.txt",
+        "100644 blob 06d3824a28009d20e6134dd45d1229a76e43e47d\tNOTICE.txt"
+      ]
+    },
+    {
+      "id": "commons-codec",
+      "url": "https://github.com/apache/commons-codec",
+      "reason": "Apache Commons encoding/phonetic/digest library; diverse package complexity and Jira issue tracking (CODEC-xxx)",
+      "endSha": "b1f7ba74344e2f5b3acc5938388c9b3005d567f6",
+      "reachableCommitsAtEnd": 3630,
+      "observationSha": "194065ddf9ad6560fc8c1cf77d864b5e5bf233f1",
+      "reachableCommitsAtObservation": 2893,
+      "observationStart": "2024-07-01T12:33:19Z",
+      "cutoff": "2024-12-28T12:33:19Z",
+      "predictionEnd": "2026-11-12T00:53:16Z",
+      "totalNonMergeCommits": 3562,
+      "observationNonMergeCommits": 2850,
+      "predictionNonMergeCommits": 712,
+      "realizedCommitRatio": 0.800112,
+      "selectionStatus": "READY",
+      "licenseFiles": [
+        "100644 blob ff9ad4530f5716304e042cbac72cecd7c40f0e0e\tLICENSE.txt",
+        "100644 blob 7af763fda50e2afc8ba0505cfd67f1f40d5aaf46\tNOTICE.txt"
+      ]
+    },
+    {
+      "id": "commons-dbutils",
+      "url": "https://github.com/apache/commons-dbutils",
+      "reason": "Apache Commons JDBC utility library; medium-sized Java codebase with interface/handler hierarchy (DBUTILS-xxx)",
+      "endSha": "a95b664b8026483ee5179f397c90578a0f63b4d1",
+      "reachableCommitsAtEnd": 1606,
+      "observationSha": "710c447448b40ca1e6b8d467efc32477f711e4ab",
+      "reachableCommitsAtObservation": 1277,
+      "observationStart": "2024-03-24T21:08:53Z",
+      "cutoff": "2024-09-20T21:08:53Z",
+      "predictionEnd": "2026-11-12T11:40:32Z",
+      "totalNonMergeCommits": 1556,
+      "observationNonMergeCommits": 1245,
+      "predictionNonMergeCommits": 311,
+      "realizedCommitRatio": 0.800129,
+      "selectionStatus": "READY",
+      "licenseFiles": [
+        "100644 blob ff9ad4530f5716304e042cbac72cecd7c40f0e0e\tLICENSE.txt",
+        "100644 blob d2e103fd716890a5b47cc0fc352a499e494ccedb\tNOTICE.txt"
+      ]
+    },
+    {
+      "id": "commons-validator",
+      "url": "https://github.com/apache/commons-validator",
+      "reason": "Apache Commons validation routines library; high-CCN validation rules and Jira issue tracking (VALIDATOR-xxx)",
+      "endSha": "8ca512b49d1ca58b61ebf11af82f0e714fb3be56",
+      "reachableCommitsAtEnd": 3127,
+      "observationSha": "195f71b127528b71a33d3357528c501503b5c4bc",
+      "reachableCommitsAtObservation": 2454,
+      "observationStart": "2024-06-29T15:24:03Z",
+      "cutoff": "2024-12-26T15:24:03Z",
+      "predictionEnd": "2026-11-12T00:53:54Z",
+      "totalNonMergeCommits": 2762,
+      "observationNonMergeCommits": 2210,
+      "predictionNonMergeCommits": 552,
+      "realizedCommitRatio": 0.800145,
+      "selectionStatus": "READY",
+      "licenseFiles": [
+        "100644 blob ff9ad4530f5716304e042cbac72cecd7c40f0e0e\tLICENSE.txt",
+        "100644 blob c938bc60d9084e1b626592b80a8459191c4c6765\tNOTICE.txt"
+      ]
+    },
+    {
+      "id": "javapoet",
+      "url": "https://github.com/square/javapoet",
+      "reason": "Java source-code generation library using GitHub PR merge workflow; retained to audit v1 merge-lineage coverage behavior without cherry-picking",
+      "endSha": "b9017a9503b76e11b4ad4c1a9f050e2d29112cb0",
+      "reachableCommitsAtEnd": 937,
+      "observationSha": "3f4d5c2c2eebc3915ab0f705f38d11a9f9b4237b",
+      "reachableCommitsAtObservation": 746,
+      "observationStart": "2017-10-31T00:18:33Z",
+      "cutoff": "2018-04-29T00:18:33Z",
+      "predictionEnd": "2024-10-10T21:04:59Z",
+      "totalNonMergeCommits": 589,
+      "observationNonMergeCommits": 471,
+      "predictionNonMergeCommits": 118,
+      "realizedCommitRatio": 0.79966,
+      "selectionStatus": "READY",
+      "licenseFiles": [
+        "100644 blob d645695673349e3947e8e5ae42332d0ac3164cd7\tLICENSE.txt"
+      ]
+    }
+  ]
+}

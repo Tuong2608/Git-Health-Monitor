@@ -37,6 +37,18 @@ python tools/experiments/run_rq2.py run .local/new-rq2-manifest.json .local/new-
 
 `freeze` tái sử dụng HEAD trong cache hiện có, không tự fetch. Muốn lấy trạng thái mới nhất thì dùng cache mới hoặc fetch có chủ đích trước freeze. Mỗi lần manifest ghi endSha thật của cache.
 
+## Tái lập bộ thực nghiệm RQ1 (Chia cắt thời gian 80/20)
+
+```powershell
+git clone --bare https://github.com/apache/commons-csv .local/rq1-cache/commons-csv.git
+git clone --bare https://github.com/apache/commons-codec .local/rq1-cache/commons-codec.git
+git clone --bare https://github.com/apache/commons-dbutils .local/rq1-cache/commons-dbutils.git
+git clone --bare https://github.com/apache/commons-validator .local/rq1-cache/commons-validator.git
+git clone --bare https://github.com/square/javapoet .local/rq1-cache/javapoet.git
+python tools/experiments/run_rq1.py run docs/week-09/evidence/rq1-frozen-manifest.json .local/rq1-cache docs/week-09/rq1-commit-reviews.json .local/rq1-replay --classpath $rq2cp
+python tools/experiments/summarize_rq1.py .local/rq1-replay
+```
+
 ## Kiểm thử
 
 ```powershell

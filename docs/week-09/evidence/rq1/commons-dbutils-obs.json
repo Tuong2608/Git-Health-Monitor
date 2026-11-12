@@ -1,0 +1,1010 @@
+{
+  "schemaVersion" : 1,
+  "repositoryUrl" : "https://github.com/apache/commons-dbutils",
+  "headSha" : "710c447448b40ca1e6b8d467efc32477f711e4ab",
+  "windowStart" : "2024-03-24T21:08:53Z",
+  "windowEnd" : "2024-09-20T21:08:53Z",
+  "config" : "{\"metricVersion\":\"metric-v1\",\"pipelineVersion\":\"git-metrics-v2\",\"lizardVersion\":\"1.24.3\",\"jgitVersion\":\"7.8.0.202609011348-r\",\"authorAliases\":{},\"excludedPrefixes\":[\"vendor/\",\"generated/\",\"target/\",\"build/\"],\"maxCommits\":10000,\"maxTreeEntries\":100000,\"maxBlobBytes\":2097152,\"maxFacts\":500000,\"filterLargeChangesets\":false,\"maxChangesetFiles\":30,\"renameScore\":60,\"renameLimit\":1000}",
+  "metricVersion" : "metric-v1",
+  "reachableCommits" : 1277,
+  "commitCount" : 103,
+  "truncated" : false,
+  "summary" : {
+    "coverageComplete" : false,
+    "reachableCommits" : 1277,
+    "selectedCommits" : 103,
+    "currentJavaFiles" : 95,
+    "hotspotPopulation" : 84,
+    "ambiguousFiles" : 1,
+    "noFunctionFiles" : 11,
+    "filterLargeChangesets" : false,
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS", "NO_FUNCTIONS" ]
+  },
+  "files" : [ {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+    "frequency" : 4,
+    "maxCcn" : 6,
+    "hotspot" : 0.9569026338151701,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/DbUtils.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/DbUtils.java",
+    "frequency" : 1,
+    "maxCcn" : 4,
+    "hotspot" : 0.8327646000416897,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/ProxyFactory.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/ProxyFactory.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4234044190555562,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/QueryLoader.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/QueryLoader.java",
+    "frequency" : 1,
+    "maxCcn" : 3,
+    "hotspot" : 0.7950894434648876,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/QueryRunner.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/QueryRunner.java",
+    "frequency" : 1,
+    "maxCcn" : 6,
+    "hotspot" : 0.8468088381111122,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/ResultSetHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/ResultSetHandler.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/ResultSetIterator.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/ResultSetIterator.java",
+    "frequency" : 1,
+    "maxCcn" : 3,
+    "hotspot" : 0.7950894434648876,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/RowProcessor.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/RowProcessor.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/handlers/ArrayHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/ArrayHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/handlers/ArrayListHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/ArrayListHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/handlers/BeanHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/BeanHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/handlers/BeanListHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/BeanListHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/handlers/MapHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/MapHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/handlers/MapListHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/MapListHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/handlers/ScalarHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/ScalarHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 3,
+    "hotspot" : 0.5028587169809448,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/wrappers/SqlNullCheckedResultSet.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/wrappers/SqlNullCheckedResultSet.java",
+    "frequency" : 0,
+    "maxCcn" : 3,
+    "hotspot" : 0.5028587169809448,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/wrappers/StringTrimmedResultSet.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/wrappers/StringTrimmedResultSet.java",
+    "frequency" : 0,
+    "maxCcn" : 4,
+    "hotspot" : 0.5266865781781782,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/BaseTestCase.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/BaseTestCase.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4234044190555562,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/BasicRowProcessorTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/BasicRowProcessorTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4234044190555562,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/MockResultSet.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/MockResultSet.java",
+    "frequency" : 3,
+    "maxCcn" : 11,
+    "hotspot" : 0.9879518072289157,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/MockResultSetMetaData.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/MockResultSetMetaData.java",
+    "frequency" : 2,
+    "maxCcn" : 7,
+    "hotspot" : 0.9517881651285912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/ProxyFactoryTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/ProxyFactoryTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/QueryLoaderTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/QueryLoaderTest.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/ResultSetIteratorTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/ResultSetIteratorTest.java",
+    "frequency" : 2,
+    "maxCcn" : 2,
+    "hotspot" : 0.759609651380632,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/TestBean.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/TestBean.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/ArrayHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/ArrayHandlerTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4234044190555562,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/ArrayListHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/ArrayListHandlerTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4234044190555562,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/BeanHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/BeanHandlerTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4234044190555562,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/BeanListHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/BeanListHandlerTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4234044190555562,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/MapHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/MapHandlerTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4234044190555562,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/MapListHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/MapListHandlerTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4234044190555562,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/ScalarHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/ScalarHandlerTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4234044190555562,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/wrappers/SqlNullCheckedResultSetTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/wrappers/SqlNullCheckedResultSetTest.java",
+    "frequency" : 0,
+    "maxCcn" : 9,
+    "hotspot" : 0.5494821325778978,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/wrappers/StringTrimmedResultSetTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/wrappers/StringTrimmedResultSetTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4234044190555562,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "03c4155d11db745ec20f9627a136168c98139d09:src/main/java/org/apache/commons/dbutils/handlers/BeanMapHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/BeanMapHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "03c4155d11db745ec20f9627a136168c98139d09:src/test/java/org/apache/commons/dbutils/handlers/BeanMapHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/BeanMapHandlerTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "148bd5680493d3a5b430331598094a239eccab3e:src/java/org/apache/commons/dbutils/AsyncQueryRunner.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/AsyncQueryRunner.java",
+    "frequency" : 0,
+    "maxCcn" : 3,
+    "hotspot" : 0.5028587169809448,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "148bd5680493d3a5b430331598094a239eccab3e:src/test/org/apache/commons/dbutils/AsyncQueryRunnerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/AsyncQueryRunnerTest.java",
+    "frequency" : 0,
+    "maxCcn" : 3,
+    "hotspot" : 0.5028587169809448,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "1913334b490a9ffa4d14eed660993a401b0f05e4:src/java/org/apache/commons/dbutils/handlers/GenericListHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/AbstractListHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "3d007fb729d5168f326c800c2e4f79e544443d1a:src/java/org/apache/commons/dbutils/handlers/AbstractKeyedHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/AbstractKeyedHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "3e7e24d40e6e3f95f11f866a4cbf40fab6ec79f6:src/test/org/apache/commons/dbutils/QueryRunnerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/QueryRunnerTest.java",
+    "frequency" : 0,
+    "maxCcn" : 3,
+    "hotspot" : 0.5028587169809448,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "584c5ca581954a0bac498b69833ba4a7a370437d:src/java/org/apache/commons/dbutils/handlers/KeyedHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/KeyedHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "584c5ca581954a0bac498b69833ba4a7a370437d:src/test/org/apache/commons/dbutils/handlers/KeyedHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/KeyedHandlerTest.java",
+    "frequency" : 1,
+    "maxCcn" : 2,
+    "hotspot" : 0.6868526657223723,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6622aaeb43d0786056c0331c9595b7bb987a7a1f:src/java/org/apache/commons/dbutils/handlers/ColumnListHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/ColumnListHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6622aaeb43d0786056c0331c9595b7bb987a7a1f:src/test/org/apache/commons/dbutils/handlers/ColumnListHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/ColumnListHandlerTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4234044190555562,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6e9fbc7d69e79fbd1b862e6b453a09eaffe4a833:src/test/java/org/apache/commons/dbutils/DbUtilsTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/DbUtilsTest.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/ColumnHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/ColumnHandler.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/PropertyHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/PropertyHandler.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/BooleanColumnHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/columns/BooleanColumnHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/ByteColumnHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/columns/ByteColumnHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/DoubleColumnHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/columns/DoubleColumnHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/FloatColumnHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/columns/FloatColumnHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/IntegerColumnHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/columns/IntegerColumnHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/LongColumnHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/columns/LongColumnHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/SQLXMLColumnHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/columns/SQLXMLColumnHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/ShortColumnHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/columns/ShortColumnHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/StringColumnHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/columns/StringColumnHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/columns/TimestampColumnHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/columns/TimestampColumnHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/properties/DatePropertyHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/properties/DatePropertyHandler.java",
+    "frequency" : 1,
+    "maxCcn" : 6,
+    "hotspot" : 0.8468088381111122,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/properties/StringEnumPropertyHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/properties/StringEnumPropertyHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/test/java/org/apache/commons/dbutils/ServiceLoaderTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/ServiceLoaderTest.java",
+    "frequency" : 0,
+    "maxCcn" : 3,
+    "hotspot" : 0.5028587169809448,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/test/java/org/apache/commons/dbutils/handlers/columns/TestColumnHandler.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/columns/TestColumnHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/test/java/org/apache/commons/dbutils/handlers/properties/PropertyHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/properties/PropertyHandlerTest.java",
+    "frequency" : 0,
+    "maxCcn" : 3,
+    "hotspot" : 0.5028587169809448,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/test/java/org/apache/commons/dbutils/handlers/properties/TestPropertyHandler.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/properties/TestPropertyHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/BooleanColumnHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/columns/BooleanColumnHandlerTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4234044190555562,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/ByteColumnHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/columns/ByteColumnHandlerTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4234044190555562,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/ColumnHandlerTestBase.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/columns/AbstractTestColumnHandler.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/DoubleColumnHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/columns/DoubleColumnHandlerTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4234044190555562,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/FloatColumnHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/columns/FloatColumnHandlerTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4234044190555562,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/IntegerColumnHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/columns/IntegerColumnHandlerTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/LongColumnHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/columns/LongColumnHandlerTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/SQLXMLColumnHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/columns/SQLXMLColumnHandlerTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/ShortColumnHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/columns/ShortColumnHandlerTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/StringColumnHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/columns/StringColumnHandlerTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/TimestampColumnHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/columns/TimestampColumnHandlerTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/properties/DatePropertyHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/properties/DatePropertyHandlerTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/properties/StringEnumPropertyHandlerTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/properties/StringEnumPropertyHandlerTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/properties/TestEnum.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/handlers/properties/TestEnum.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "87cb92d1be9d7d9b79c757ffad234b730db8c000:src/main/java/org/apache/commons/dbutils/annotations/Column.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/Column.java",
+    "frequency" : null,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "92c6d6d58f9c3f8d8370459d364daa0925ca7980:src/main/java/org/apache/commons/dbutils/StatementConfiguration.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/StatementConfiguration.java",
+    "frequency" : 0,
+    "maxCcn" : 3,
+    "hotspot" : 0.5028587169809448,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "92c6d6d58f9c3f8d8370459d364daa0925ca7980:src/test/java/org/apache/commons/dbutils/StatementConfigurationTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/StatementConfigurationTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "a1c479eba99f9bcff15ce635dedf0b5a0e3aa32b:src/test/org/apache/commons/dbutils/BasicColumnProcessorTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/BeanProcessorTest.java",
+    "frequency" : 1,
+    "maxCcn" : 2,
+    "hotspot" : 0.6868526657223723,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "aa276d1adf6c3bf79340d26008a3ac760acefbc5:src/main/java/org/apache/commons/dbutils/OutParameter.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/OutParameter.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0.4344037681281915,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "aa276d1adf6c3bf79340d26008a3ac760acefbc5:src/test/java/org/apache/commons/dbutils/OutParameterTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/OutParameterTest.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.2677844671191912,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "ad16a146f12d27458040b2176b858f0e29927290:src/java/org/apache/commons/dbutils/handlers/package-info.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/package-info.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "ad16a146f12d27458040b2176b858f0e29927290:src/java/org/apache/commons/dbutils/package-info.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/package-info.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "ad16a146f12d27458040b2176b858f0e29927290:src/java/org/apache/commons/dbutils/wrappers/package-info.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/wrappers/package-info.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "b993cf2eb762c06cc1f00acbf3e9b6254057b990:src/main/java/org/apache/commons/dbutils/handlers/columns/package-info.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/columns/package-info.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "b993cf2eb762c06cc1f00acbf3e9b6254057b990:src/main/java/org/apache/commons/dbutils/handlers/properties/package-info.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/handlers/properties/package-info.java",
+    "frequency" : 0,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "NO_FUNCTIONS"
+  }, {
+    "lineageKey" : "ce25148d7d7c50378d8e61e0e2c5084673e94b09:src/java/org/apache/commons/dbutils/AbstractQueryRunner.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/AbstractQueryRunner.java",
+    "frequency" : 2,
+    "maxCcn" : 13,
+    "hotspot" : 0.9786885742161317,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e13fbd3bf94a01d321baa66548ecbaa06f136cef:src/main/java/org/apache/commons/dbutils/GenerousBeanProcessor.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/GenerousBeanProcessor.java",
+    "frequency" : 0,
+    "maxCcn" : 7,
+    "hotspot" : 0.5443063613530852,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e13fbd3bf94a01d321baa66548ecbaa06f136cef:src/test/java/org/apache/commons/dbutils/GenerousBeanProcessorTest.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/GenerousBeanProcessorTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.4234044190555562,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e89c9bfa8e727a87cb45e33b21784e584da502ec:src/java/org/apache/commons/dbutils/BeanProcessor.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/BeanProcessor.java",
+    "frequency" : 2,
+    "maxCcn" : 10,
+    "hotspot" : 0.9668252439827896,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "edcf0ecfbf576bc6615beee3820b4ce5b0200fcd:src/main/java/org/apache/commons/dbutils/BaseResultSetHandler.java",
+    "path" : "src/main/java/org/apache/commons/dbutils/BaseResultSetHandler.java",
+    "frequency" : 1,
+    "maxCcn" : 2,
+    "hotspot" : 0.6868526657223723,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "edcf0ecfbf576bc6615beee3820b4ce5b0200fcd:src/test/java/org/apache/commons/dbutils/BaseResultSetHandlerTestCase.java",
+    "path" : "src/test/java/org/apache/commons/dbutils/BaseResultSetHandlerTest.java",
+    "frequency" : 0,
+    "maxCcn" : 3,
+    "hotspot" : 0.5028587169809448,
+    "unavailableReason" : null
+  } ],
+  "facts" : [ {
+    "commitSha" : "c0bcbf9753c726fd01577a21e490d4987d55464a",
+    "committerTime" : "2024-05-22T14:24:58Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+    "oldPath" : "src/main/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+    "newPath" : "src/main/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "9e0b54a43d02fad48a852fd962e7c346a41b9553",
+    "committerTime" : "2024-05-22T14:25:24Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+    "oldPath" : "src/main/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+    "newPath" : "src/main/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "b9e70457591887c728c3f6c3100f23fc76a4d0cc",
+    "committerTime" : "2024-05-22T14:26:11Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+    "oldPath" : "src/main/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+    "newPath" : "src/main/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "1f999bb65511154b5770e4e60f0379807a4abcdd",
+    "committerTime" : "2024-05-22T14:30:34Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/ProxyFactory.java",
+    "oldPath" : "src/main/java/org/apache/commons/dbutils/ProxyFactory.java",
+    "newPath" : "src/main/java/org/apache/commons/dbutils/ProxyFactory.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "0cdf8321ce36d405e1636a5d2309d47a42d72029",
+    "committerTime" : "2024-05-22T14:47:33Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/ResultSetIterator.java",
+    "oldPath" : "src/main/java/org/apache/commons/dbutils/ResultSetIterator.java",
+    "newPath" : "src/main/java/org/apache/commons/dbutils/ResultSetIterator.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "06f79e221a542e551eb0ec63c5ba2b8405e85913",
+    "committerTime" : "2024-05-22T14:54:25Z",
+    "lineageKey" : "e89c9bfa8e727a87cb45e33b21784e584da502ec:src/java/org/apache/commons/dbutils/BeanProcessor.java",
+    "oldPath" : "src/main/java/org/apache/commons/dbutils/BeanProcessor.java",
+    "newPath" : "src/main/java/org/apache/commons/dbutils/BeanProcessor.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "9159f8b84ae4c43c210c045445b08549e2e1f43e",
+    "committerTime" : "2024-05-22T15:07:10Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/ResultSetIteratorTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/ResultSetIteratorTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/ResultSetIteratorTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "679bcf87454cb3116a1cf4b326f2da283cd4fbcc",
+    "committerTime" : "2024-06-11T14:47:18Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/MockResultSet.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/MockResultSet.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/MockResultSet.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "9494d079cb7ded7dcf1a933b5674c36e4122d323",
+    "committerTime" : "2024-07-09T14:21:11Z",
+    "lineageKey" : "ce25148d7d7c50378d8e61e0e2c5084673e94b09:src/java/org/apache/commons/dbutils/AbstractQueryRunner.java",
+    "oldPath" : "src/main/java/org/apache/commons/dbutils/AbstractQueryRunner.java",
+    "newPath" : "src/main/java/org/apache/commons/dbutils/AbstractQueryRunner.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "9163eb0946fa3f57978a2e374559895bdfa603ce",
+    "committerTime" : "2024-07-09T14:21:25Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/ArrayHandlerTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/handlers/ArrayHandlerTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/handlers/ArrayHandlerTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e771642b78610412eeaa96ed1a5acfbfc521058d",
+    "committerTime" : "2024-07-09T14:21:36Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/ArrayListHandlerTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/handlers/ArrayListHandlerTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/handlers/ArrayListHandlerTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "167b0e444f69077ef17efe66581bf70133729b1e",
+    "committerTime" : "2024-07-09T14:21:59Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/BaseTestCase.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/BaseTestCase.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/BaseTestCase.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "eb5aee3daff42079c1a72740b363e48fb8c1e8bf",
+    "committerTime" : "2024-07-09T14:22:09Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/BasicRowProcessorTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/BasicRowProcessorTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/BasicRowProcessorTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "329c497d721866cdee3fb557e553527a34652e3e",
+    "committerTime" : "2024-07-09T14:22:19Z",
+    "lineageKey" : "a1c479eba99f9bcff15ce635dedf0b5a0e3aa32b:src/test/org/apache/commons/dbutils/BasicColumnProcessorTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/BeanProcessorTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/BeanProcessorTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "7c25fa714854ff7b106264877e8dd0fd0f691e1d",
+    "committerTime" : "2024-07-09T14:22:27Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/BeanHandlerTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/handlers/BeanHandlerTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/handlers/BeanHandlerTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "ce51cc8bda76b6fe31047c43cc8bb49fb899c4a6",
+    "committerTime" : "2024-07-09T14:22:37Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/BeanListHandlerTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/handlers/BeanListHandlerTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/handlers/BeanListHandlerTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "1f263c8a98acb62db289e3e89f7780b6a9f48679",
+    "committerTime" : "2024-07-09T14:22:52Z",
+    "lineageKey" : "e89c9bfa8e727a87cb45e33b21784e584da502ec:src/java/org/apache/commons/dbutils/BeanProcessor.java",
+    "oldPath" : "src/main/java/org/apache/commons/dbutils/BeanProcessor.java",
+    "newPath" : "src/main/java/org/apache/commons/dbutils/BeanProcessor.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "3e58ae8043a2f12f403d6f7a6ba4c6e2ca2a9b96",
+    "committerTime" : "2024-07-09T14:23:03Z",
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/DoubleColumnHandlerTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/handlers/columns/DoubleColumnHandlerTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/handlers/columns/DoubleColumnHandlerTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "2184689d68ae7107b40eeca237df5e241552a55c",
+    "committerTime" : "2024-07-09T14:23:12Z",
+    "lineageKey" : "6622aaeb43d0786056c0331c9595b7bb987a7a1f:src/test/org/apache/commons/dbutils/handlers/ColumnListHandlerTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/handlers/ColumnListHandlerTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/handlers/ColumnListHandlerTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "eaa1a0b2f25ce4883e868a3231885d0406bcfd96",
+    "committerTime" : "2024-07-09T14:23:20Z",
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/BooleanColumnHandlerTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/handlers/columns/BooleanColumnHandlerTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/handlers/columns/BooleanColumnHandlerTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "1b5fca914b38522a09c42c3ffb5981fb34855cca",
+    "committerTime" : "2024-07-09T14:23:26Z",
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/ByteColumnHandlerTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/handlers/columns/ByteColumnHandlerTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/handlers/columns/ByteColumnHandlerTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "573a7bf6e1553eb03c27a481cbc346acc95549cc",
+    "committerTime" : "2024-07-09T14:23:32Z",
+    "lineageKey" : "7bb417462f63c9a91c757fba5c5f00f937032879:src/test/java/org/apache/commons/dbutils/handlers/columns/FloatColumnHandlerTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/handlers/columns/FloatColumnHandlerTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/handlers/columns/FloatColumnHandlerTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "37a7a8353346d022610ec2db8e6b3744b77dfb07",
+    "committerTime" : "2024-07-09T14:23:48Z",
+    "lineageKey" : "e13fbd3bf94a01d321baa66548ecbaa06f136cef:src/test/java/org/apache/commons/dbutils/GenerousBeanProcessorTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/GenerousBeanProcessorTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/GenerousBeanProcessorTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "5abd1883a1e4370a36bd9806ce7908fb1f5ed553",
+    "committerTime" : "2024-07-09T14:23:59Z",
+    "lineageKey" : "584c5ca581954a0bac498b69833ba4a7a370437d:src/test/org/apache/commons/dbutils/handlers/KeyedHandlerTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/handlers/KeyedHandlerTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/handlers/KeyedHandlerTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "ba57d65879cdfcb498d5d719a86a03e35fb60a9e",
+    "committerTime" : "2024-07-09T14:24:11Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/MapHandlerTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/handlers/MapHandlerTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/handlers/MapHandlerTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e00369b49a40773f0d63468cdf0554833908cd53",
+    "committerTime" : "2024-07-09T14:24:21Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/MapListHandlerTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/handlers/MapListHandlerTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/handlers/MapListHandlerTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "7dc65bbdff1749b06adaf70f726e503deed9e8ad",
+    "committerTime" : "2024-07-09T14:24:32Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/MockResultSet.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/MockResultSet.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/MockResultSet.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "f5701ffc6d6fdf13cf0bef3e692b7324d63e9cc0",
+    "committerTime" : "2024-07-09T14:24:43Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/MockResultSetMetaData.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/MockResultSetMetaData.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/MockResultSetMetaData.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "f5701ffc6d6fdf13cf0bef3e692b7324d63e9cc0",
+    "committerTime" : "2024-07-09T14:24:43Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/ResultSetIteratorTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/ResultSetIteratorTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/ResultSetIteratorTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "fdac492dce1685886226023e127be629d553efb3",
+    "committerTime" : "2024-07-09T14:24:53Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/QueryLoader.java",
+    "oldPath" : "src/main/java/org/apache/commons/dbutils/QueryLoader.java",
+    "newPath" : "src/main/java/org/apache/commons/dbutils/QueryLoader.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "57a4576a3827b3c47723906e1d9be46d5dd52c31",
+    "committerTime" : "2024-07-09T14:25:27Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/QueryRunner.java",
+    "oldPath" : "src/main/java/org/apache/commons/dbutils/QueryRunner.java",
+    "newPath" : "src/main/java/org/apache/commons/dbutils/QueryRunner.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "9e4f867d5543e0d2c69c55365228b557e8fac3c8",
+    "committerTime" : "2024-07-09T14:25:35Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/handlers/ScalarHandlerTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/handlers/ScalarHandlerTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/handlers/ScalarHandlerTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "775234a020b99d8bd57a490e35c23f475fe24f49",
+    "committerTime" : "2024-07-09T14:25:41Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/wrappers/StringTrimmedResultSetTest.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/wrappers/StringTrimmedResultSetTest.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/wrappers/StringTrimmedResultSetTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "3814cd593af0a8355506e7c9dc5ef0f1a2dd834b",
+    "committerTime" : "2024-07-21T15:30:24Z",
+    "lineageKey" : "edcf0ecfbf576bc6615beee3820b4ce5b0200fcd:src/main/java/org/apache/commons/dbutils/BaseResultSetHandler.java",
+    "oldPath" : "src/main/java/org/apache/commons/dbutils/BaseResultSetHandler.java",
+    "newPath" : "src/main/java/org/apache/commons/dbutils/BaseResultSetHandler.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8df8043aeab4ad7f10292519ac5cf2e8fe9865e2",
+    "committerTime" : "2024-07-29T11:55:05Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/DbUtils.java",
+    "oldPath" : "src/main/java/org/apache/commons/dbutils/DbUtils.java",
+    "newPath" : "src/main/java/org/apache/commons/dbutils/DbUtils.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "31837e86de1aaa44b1c968a324cc03adffb41553",
+    "committerTime" : "2024-08-02T14:12:24Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+    "oldPath" : "src/main/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+    "newPath" : "src/main/java/org/apache/commons/dbutils/BasicRowProcessor.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "fca2db017fd8b759a16f4121f546d4920ea78398",
+    "committerTime" : "2024-09-12T12:42:13Z",
+    "lineageKey" : "6f6e4bc01a267342ba43e7c1f2625250d8539293:src/main/java/org/apache/commons/dbutils/handlers/properties/DatePropertyHandler.java",
+    "oldPath" : "src/main/java/org/apache/commons/dbutils/handlers/properties/DatePropertyHandler.java",
+    "newPath" : "src/main/java/org/apache/commons/dbutils/handlers/properties/DatePropertyHandler.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "2cb573c258e9e0f7206b71a56f6f2400fc22d254",
+    "committerTime" : "2024-09-12T12:42:22Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/MockResultSet.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/MockResultSet.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/MockResultSet.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e2e667b0eab1420b22ab1a21172f7227d5d3a593",
+    "committerTime" : "2024-09-12T12:47:44Z",
+    "lineageKey" : "0342b92678f201c01deaca416067a62f53b1fc22:src/test/org/apache/commons/dbutils/MockResultSetMetaData.java",
+    "oldPath" : "src/test/java/org/apache/commons/dbutils/MockResultSetMetaData.java",
+    "newPath" : "src/test/java/org/apache/commons/dbutils/MockResultSetMetaData.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8dac4c69fbba4d187b0465217f57443efc5c47dd",
+    "committerTime" : "2024-09-20T21:05:58Z",
+    "lineageKey" : "ce25148d7d7c50378d8e61e0e2c5084673e94b09:src/java/org/apache/commons/dbutils/AbstractQueryRunner.java",
+    "oldPath" : "src/main/java/org/apache/commons/dbutils/AbstractQueryRunner.java",
+    "newPath" : "src/main/java/org/apache/commons/dbutils/AbstractQueryRunner.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  } ]
+}

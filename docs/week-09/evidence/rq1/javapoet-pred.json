@@ -1,0 +1,994 @@
+{
+  "schemaVersion" : 1,
+  "repositoryUrl" : "https://github.com/square/javapoet",
+  "headSha" : "b9017a9503b76e11b4ad4c1a9f050e2d29112cb0",
+  "windowStart" : "2018-04-29T00:18:33Z",
+  "windowEnd" : "2024-10-10T21:04:59Z",
+  "config" : "{\"metricVersion\":\"metric-v1\",\"pipelineVersion\":\"git-metrics-v2\",\"lizardVersion\":\"1.24.3\",\"jgitVersion\":\"7.8.0.202609011348-r\",\"authorAliases\":{},\"excludedPrefixes\":[\"vendor/\",\"generated/\",\"target/\",\"build/\"],\"maxCommits\":10000,\"maxTreeEntries\":100000,\"maxBlobBytes\":2097152,\"maxFacts\":500000,\"filterLargeChangesets\":false,\"maxChangesetFiles\":30,\"renameScore\":60,\"renameLimit\":1000}",
+  "metricVersion" : "metric-v1",
+  "reachableCommits" : 937,
+  "commitCount" : 118,
+  "truncated" : false,
+  "summary" : {
+    "coverageComplete" : false,
+    "reachableCommits" : 937,
+    "selectedCommits" : 118,
+    "currentJavaFiles" : 39,
+    "hotspotPopulation" : 3,
+    "ambiguousFiles" : 36,
+    "noFunctionFiles" : 0,
+    "filterLargeChangesets" : false,
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  },
+  "files" : [ {
+    "lineageKey" : "04746e06713df4190277b9a001b58cd4ee40ed8b:src/main/java/com/squareup/javapoet/Util.java",
+    "path" : "src/main/java/com/squareup/javapoet/Util.java",
+    "frequency" : null,
+    "maxCcn" : 10,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "0d6bdebf124a0c0e2a52ef520231b64e98c77a64:src/main/java/com/squareup/javapoet/LineWrapper.java",
+    "path" : "src/main/java/com/squareup/javapoet/LineWrapper.java",
+    "frequency" : null,
+    "maxCcn" : 8,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "0d6bdebf124a0c0e2a52ef520231b64e98c77a64:src/test/java/com/squareup/javapoet/LineWrapperTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/LineWrapperTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "2bbcf96c5caa558bc5471eee5a2146ac8f2547c3:src/test/java/com/squareup/javapoet/FileWritingTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/FileWritingTest.java",
+    "frequency" : null,
+    "maxCcn" : 2,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/FieldSpecTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/FieldSpecTest.java",
+    "frequency" : null,
+    "maxCcn" : 2,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "frequency" : null,
+    "maxCcn" : 4,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "frequency" : null,
+    "maxCcn" : 2,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "3829f2ca6f03a4b941fea41a1e2f4eead8f37bc1:src/test/java/ClassNameNoPackageTest.java",
+    "path" : "src/test/java/ClassNameNoPackageTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.3535533905932738,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "3d65852a482185e464c4986b862394691ac197da:src/test/java/com/squareup/javapoet/CodeWriterTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/CodeWriterTest.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.3535533905932738,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "44c278882ca7b314c54e6db15bf48f4188d925f9:src/test/java/com/squareup/javapoet/TypeNameTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/TypeNameTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "553fe8a18d54e4b3bda42d439687ba59b9b6b2e3:src/test/java/com/squareup/javapoet/CodeBlockTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/CodeBlockTest.java",
+    "frequency" : null,
+    "maxCcn" : 2,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "5f619e393b26311b04ce34cf7092029fb9a66893:src/test/java/com/squareup/javapoet/AnnotationSpecTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/AnnotationSpecTest.java",
+    "frequency" : null,
+    "maxCcn" : 2,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "5f619e393b26311b04ce34cf7092029fb9a66893:src/test/java/com/squareup/javapoet/FileReadingTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/FileReadingTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "7896b1896dae8251b710373703d94cec3f7c4228:src/main/java/com/squareup/javapoet/ArrayTypeName.java",
+    "path" : "src/main/java/com/squareup/javapoet/ArrayTypeName.java",
+    "frequency" : null,
+    "maxCcn" : 4,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "7896b1896dae8251b710373703d94cec3f7c4228:src/main/java/com/squareup/javapoet/ParameterizedTypeName.java",
+    "path" : "src/main/java/com/squareup/javapoet/ParameterizedTypeName.java",
+    "frequency" : null,
+    "maxCcn" : 6,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "7896b1896dae8251b710373703d94cec3f7c4228:src/main/java/com/squareup/javapoet/TypeName.java",
+    "path" : "src/main/java/com/squareup/javapoet/TypeName.java",
+    "frequency" : null,
+    "maxCcn" : 16,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "7896b1896dae8251b710373703d94cec3f7c4228:src/main/java/com/squareup/javapoet/TypeVariableName.java",
+    "path" : "src/main/java/com/squareup/javapoet/TypeVariableName.java",
+    "frequency" : null,
+    "maxCcn" : 3,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "7896b1896dae8251b710373703d94cec3f7c4228:src/main/java/com/squareup/javapoet/WildcardTypeName.java",
+    "path" : "src/main/java/com/squareup/javapoet/WildcardTypeName.java",
+    "frequency" : null,
+    "maxCcn" : 5,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "a0eadbbf0e7b70f0fbbc66043536e4328c3808fd:src/test/java/com/squareup/javapoet/TestUtil.java",
+    "path" : "src/test/java/com/squareup/javapoet/TestUtil.java",
+    "frequency" : 1,
+    "maxCcn" : 3,
+    "hotspot" : 0.7071067811865475,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "b716399da5d35529fb70a05e4c88df587b5310a3:src/test/java/com/squareup/javapoet/AbstractTypesTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/AbstractTypesTest.java",
+    "frequency" : null,
+    "maxCcn" : 3,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "b716399da5d35529fb70a05e4c88df587b5310a3:src/test/java/com/squareup/javapoet/TypesEclipseTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/TypesEclipseTest.java",
+    "frequency" : null,
+    "maxCcn" : 3,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "c2a686d75cf0b621571a4fb9286521a29badfe79:src/main/java/com/squareup/javapoet/NameAllocator.java",
+    "path" : "src/main/java/com/squareup/javapoet/NameAllocator.java",
+    "frequency" : null,
+    "maxCcn" : 6,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "c2a686d75cf0b621571a4fb9286521a29badfe79:src/test/java/com/squareup/javapoet/NameAllocatorTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/NameAllocatorTest.java",
+    "frequency" : null,
+    "maxCcn" : 2,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "c5109fa0009cc8f4d50843a220ec46d3f98399d2:src/test/java/com/squareup/javapoet/AnnotatedTypeNameTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/AnnotatedTypeNameTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/AnnotationSpec.java",
+    "path" : "src/main/java/com/squareup/javapoet/AnnotationSpec.java",
+    "frequency" : null,
+    "maxCcn" : 8,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/ClassName.java",
+    "path" : "src/main/java/com/squareup/javapoet/ClassName.java",
+    "frequency" : null,
+    "maxCcn" : 8,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "path" : "src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "frequency" : null,
+    "maxCcn" : 24,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/FieldSpec.java",
+    "path" : "src/main/java/com/squareup/javapoet/FieldSpec.java",
+    "frequency" : null,
+    "maxCcn" : 4,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/JavaFile.java",
+    "path" : "src/main/java/com/squareup/javapoet/JavaFile.java",
+    "frequency" : null,
+    "maxCcn" : 10,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "path" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "frequency" : null,
+    "maxCcn" : 13,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "path" : "src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "frequency" : null,
+    "maxCcn" : 4,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "path" : "src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "frequency" : null,
+    "maxCcn" : 45,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/test/java/com/squareup/javapoet/ClassNameTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/ClassNameTest.java",
+    "frequency" : null,
+    "maxCcn" : 4,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/test/java/com/squareup/javapoet/JavaFileTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/JavaFileTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/test/java/com/squareup/javapoet/TestFiler.java",
+    "path" : "src/test/java/com/squareup/javapoet/TestFiler.java",
+    "frequency" : null,
+    "maxCcn" : 2,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "frequency" : null,
+    "maxCcn" : 4,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/test/java/com/squareup/javapoet/TypesTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/TypesTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "e3e7652c8abdd64a6d0d5aa723421cba2311ecfe:src/test/java/com/squareup/javapoet/UtilTest.java",
+    "path" : "src/test/java/com/squareup/javapoet/UtilTest.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "e5e163f5b46f6f0348af6560c7960d720b33cfe8:src/main/java/com/squareup/javapoet/CodeBlock.java",
+    "path" : "src/main/java/com/squareup/javapoet/CodeBlock.java",
+    "frequency" : null,
+    "maxCcn" : 16,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  } ],
+  "facts" : [ {
+    "commitSha" : "1c897e44ddd6b50e22180b6d32e4a3c69223614a",
+    "committerTime" : "2018-04-29T00:18:33Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/ClassName.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/ClassName.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/ClassName.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "1c897e44ddd6b50e22180b6d32e4a3c69223614a",
+    "committerTime" : "2018-04-29T00:18:33Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/test/java/com/squareup/javapoet/ClassNameTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/ClassNameTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/ClassNameTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "558401605880b7d636c4e41e3044c775d987a208",
+    "committerTime" : "2018-05-16T15:14:47Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/ClassName.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/ClassName.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/ClassName.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "558401605880b7d636c4e41e3044c775d987a208",
+    "committerTime" : "2018-05-16T15:14:47Z",
+    "lineageKey" : "b716399da5d35529fb70a05e4c88df587b5310a3:src/test/java/com/squareup/javapoet/AbstractTypesTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/AbstractTypesTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/AbstractTypesTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4a7857e873c4d5f249bee373187289c2e1fa35ba",
+    "committerTime" : "2018-08-01T20:21:44Z",
+    "lineageKey" : "7896b1896dae8251b710373703d94cec3f7c4228:src/main/java/com/squareup/javapoet/TypeName.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/TypeName.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/TypeName.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "077bd8c26b4b509807bb3af96cc429e34982d927",
+    "committerTime" : "2018-08-20T07:46:59Z",
+    "lineageKey" : "c2a686d75cf0b621571a4fb9286521a29badfe79:src/test/java/com/squareup/javapoet/NameAllocatorTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/NameAllocatorTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/NameAllocatorTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "0cbc16df9213d64e6dfe389a2d164ab6f007121b",
+    "committerTime" : "2018-08-20T07:48:56Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/FieldSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/FieldSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/FieldSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "b879b58254804b953c6280d05d7882a89ec3b7c8",
+    "committerTime" : "2018-08-22T01:12:33Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "b879b58254804b953c6280d05d7882a89ec3b7c8",
+    "committerTime" : "2018-08-22T01:12:33Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "b879b58254804b953c6280d05d7882a89ec3b7c8",
+    "committerTime" : "2018-08-22T01:12:33Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "b879b58254804b953c6280d05d7882a89ec3b7c8",
+    "committerTime" : "2018-08-22T01:12:33Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "f1600e5cc03fcc8bc6757fd115e3de89c7dad6fd",
+    "committerTime" : "2018-08-20T07:48:12Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "c93bfa88c30940d4f9bda88cac322ebbb83703a6",
+    "committerTime" : "2018-10-04T02:57:36Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "c93bfa88c30940d4f9bda88cac322ebbb83703a6",
+    "committerTime" : "2018-10-04T02:57:36Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "ea7a02ee88f8a3aa9afd3a9268390f4f9fee4b59",
+    "committerTime" : "2018-10-04T02:59:30Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "ea7a02ee88f8a3aa9afd3a9268390f4f9fee4b59",
+    "committerTime" : "2018-10-04T02:59:30Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "ea7a02ee88f8a3aa9afd3a9268390f4f9fee4b59",
+    "committerTime" : "2018-10-04T02:59:30Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "30a8bdaa2224f224be04261b9fceea6cd7048cd5",
+    "committerTime" : "2018-11-12T04:32:46Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/ClassName.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/ClassName.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/ClassName.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "30a8bdaa2224f224be04261b9fceea6cd7048cd5",
+    "committerTime" : "2018-11-12T04:32:46Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/test/java/com/squareup/javapoet/ClassNameTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/ClassNameTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/ClassNameTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "53cfc840f2b860e88e8b0aecd7026901ee76399e",
+    "committerTime" : "2019-02-04T15:06:39Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "53cfc840f2b860e88e8b0aecd7026901ee76399e",
+    "committerTime" : "2019-02-04T15:06:39Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "dc30890a5002fc65eefb94a570ff4aff2d6f8577",
+    "committerTime" : "2019-02-05T21:49:26Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "dc30890a5002fc65eefb94a570ff4aff2d6f8577",
+    "committerTime" : "2019-02-05T21:49:26Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "e79bb2f09d29678ece0abfb50abe3e4a855aee4f",
+    "committerTime" : "2019-03-25T15:03:39Z",
+    "lineageKey" : "e5e163f5b46f6f0348af6560c7960d720b33cfe8:src/main/java/com/squareup/javapoet/CodeBlock.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/CodeBlock.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/CodeBlock.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "02ece26b2e05f3b1306f67aacc3a8932a3e51d51",
+    "committerTime" : "2019-04-16T19:30:11Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/ClassName.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/ClassName.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/ClassName.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "3829f2ca6f03a4b941fea41a1e2f4eead8f37bc1",
+    "committerTime" : "2019-05-01T19:32:05Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/ClassName.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/ClassName.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/ClassName.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "3829f2ca6f03a4b941fea41a1e2f4eead8f37bc1",
+    "committerTime" : "2019-05-01T19:32:05Z",
+    "lineageKey" : "3829f2ca6f03a4b941fea41a1e2f4eead8f37bc1:src/test/java/ClassNameNoPackageTest.java",
+    "oldPath" : null,
+    "newPath" : "src/test/java/ClassNameNoPackageTest.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8bc90713f5efe4f827cb4af5aa558e170073ed27",
+    "committerTime" : "2019-05-03T18:58:24Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "a03c97888d3afeeaa92e8ee8eaaffb19fccbaba1",
+    "committerTime" : "2019-06-04T17:07:29Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/JavaFile.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/JavaFile.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/JavaFile.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4e8f72f6a989ffbf99f0df4bbf0ab408ba412887",
+    "committerTime" : "2019-08-11T02:37:45Z",
+    "lineageKey" : "e5e163f5b46f6f0348af6560c7960d720b33cfe8:src/main/java/com/squareup/javapoet/CodeBlock.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/CodeBlock.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/CodeBlock.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4e8f72f6a989ffbf99f0df4bbf0ab408ba412887",
+    "committerTime" : "2019-08-11T02:37:45Z",
+    "lineageKey" : "553fe8a18d54e4b3bda42d439687ba59b9b6b2e3:src/test/java/com/squareup/javapoet/CodeBlockTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/CodeBlockTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/CodeBlockTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "a0eadbbf0e7b70f0fbbc66043536e4328c3808fd",
+    "committerTime" : "2019-12-21T13:39:33Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "a0eadbbf0e7b70f0fbbc66043536e4328c3808fd",
+    "committerTime" : "2019-12-21T13:39:33Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "a0eadbbf0e7b70f0fbbc66043536e4328c3808fd",
+    "committerTime" : "2019-12-21T13:39:33Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "a0eadbbf0e7b70f0fbbc66043536e4328c3808fd",
+    "committerTime" : "2019-12-21T13:39:33Z",
+    "lineageKey" : "a0eadbbf0e7b70f0fbbc66043536e4328c3808fd:src/test/java/com/squareup/javapoet/TestUtil.java",
+    "oldPath" : null,
+    "newPath" : "src/test/java/com/squareup/javapoet/TestUtil.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e6993cc2af1a2db55c134e45dc324148d76b3993",
+    "committerTime" : "2019-12-22T14:45:11Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4272265a319a562bceaa537fc1b9b6b40236a881",
+    "committerTime" : "2020-01-01T13:37:31Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/AnnotationSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/AnnotationSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/AnnotationSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4272265a319a562bceaa537fc1b9b6b40236a881",
+    "committerTime" : "2020-01-01T13:37:31Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/FieldSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/FieldSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/FieldSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4272265a319a562bceaa537fc1b9b6b40236a881",
+    "committerTime" : "2020-01-01T13:37:31Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/JavaFile.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/JavaFile.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/JavaFile.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4272265a319a562bceaa537fc1b9b6b40236a881",
+    "committerTime" : "2020-01-01T13:37:31Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4272265a319a562bceaa537fc1b9b6b40236a881",
+    "committerTime" : "2020-01-01T13:37:31Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4272265a319a562bceaa537fc1b9b6b40236a881",
+    "committerTime" : "2020-01-01T13:37:31Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4272265a319a562bceaa537fc1b9b6b40236a881",
+    "committerTime" : "2020-01-01T13:37:31Z",
+    "lineageKey" : "5f619e393b26311b04ce34cf7092029fb9a66893:src/test/java/com/squareup/javapoet/AnnotationSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/AnnotationSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/AnnotationSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4272265a319a562bceaa537fc1b9b6b40236a881",
+    "committerTime" : "2020-01-01T13:37:31Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/FieldSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/FieldSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/FieldSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4272265a319a562bceaa537fc1b9b6b40236a881",
+    "committerTime" : "2020-01-01T13:37:31Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/test/java/com/squareup/javapoet/JavaFileTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/JavaFileTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/JavaFileTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4272265a319a562bceaa537fc1b9b6b40236a881",
+    "committerTime" : "2020-01-01T13:37:31Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4272265a319a562bceaa537fc1b9b6b40236a881",
+    "committerTime" : "2020-01-01T13:37:31Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4272265a319a562bceaa537fc1b9b6b40236a881",
+    "committerTime" : "2020-01-01T13:37:31Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "e2ed025d5936a65836f1a6f79c750a3197f290e9",
+    "committerTime" : "2020-01-01T13:40:39Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "e2ed025d5936a65836f1a6f79c750a3197f290e9",
+    "committerTime" : "2020-01-01T13:40:39Z",
+    "lineageKey" : "0d6bdebf124a0c0e2a52ef520231b64e98c77a64:src/main/java/com/squareup/javapoet/LineWrapper.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/LineWrapper.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/LineWrapper.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "e2ed025d5936a65836f1a6f79c750a3197f290e9",
+    "committerTime" : "2020-01-01T13:40:39Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "e2ed025d5936a65836f1a6f79c750a3197f290e9",
+    "committerTime" : "2020-01-01T13:40:39Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "e2ed025d5936a65836f1a6f79c750a3197f290e9",
+    "committerTime" : "2020-01-01T13:40:39Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "1225800fdbd05d6a2b069fc1e4949f6461a7236b",
+    "committerTime" : "2020-01-01T22:31:32Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "1225800fdbd05d6a2b069fc1e4949f6461a7236b",
+    "committerTime" : "2020-01-01T22:31:32Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "3d65852a482185e464c4986b862394691ac197da",
+    "committerTime" : "2020-01-02T13:18:32Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "3d65852a482185e464c4986b862394691ac197da",
+    "committerTime" : "2020-01-02T13:18:32Z",
+    "lineageKey" : "3d65852a482185e464c4986b862394691ac197da:src/test/java/com/squareup/javapoet/CodeWriterTest.java",
+    "oldPath" : null,
+    "newPath" : "src/test/java/com/squareup/javapoet/CodeWriterTest.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "25d19845b866c04a2fb3e11ce3d43ccb2e7b98cd",
+    "committerTime" : "2020-01-04T17:10:32Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "25d19845b866c04a2fb3e11ce3d43ccb2e7b98cd",
+    "committerTime" : "2020-01-04T17:10:32Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "80ddc99409399bd15b06509a6e3e75cb4117b8d2",
+    "committerTime" : "2020-01-06T19:01:51Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "80ddc99409399bd15b06509a6e3e75cb4117b8d2",
+    "committerTime" : "2020-01-06T19:01:51Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/JavaFile.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/JavaFile.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/JavaFile.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "80ddc99409399bd15b06509a6e3e75cb4117b8d2",
+    "committerTime" : "2020-01-06T19:01:51Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "80ddc99409399bd15b06509a6e3e75cb4117b8d2",
+    "committerTime" : "2020-01-06T19:01:51Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/test/java/com/squareup/javapoet/JavaFileTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/JavaFileTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/JavaFileTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "80ddc99409399bd15b06509a6e3e75cb4117b8d2",
+    "committerTime" : "2020-01-06T19:01:51Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "dc64ed1f9bf362e68451d75f302e6e656a114066",
+    "committerTime" : "2020-01-06T19:28:54Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/JavaFile.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/JavaFile.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/JavaFile.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "eff1ee43296678eb0b0588faf4f18c34d8be4baf",
+    "committerTime" : "2020-01-06T19:42:40Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/JavaFile.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/JavaFile.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/JavaFile.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "eff1ee43296678eb0b0588faf4f18c34d8be4baf",
+    "committerTime" : "2020-01-06T19:42:40Z",
+    "lineageKey" : "2bbcf96c5caa558bc5471eee5a2146ac8f2547c3:src/test/java/com/squareup/javapoet/FileWritingTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/FileWritingTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/FileWritingTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "5a6c842a37a8c71f079ad2ce6063a70a9dee9e31",
+    "committerTime" : "2020-01-13T13:46:02Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "5a6c842a37a8c71f079ad2ce6063a70a9dee9e31",
+    "committerTime" : "2020-01-13T13:46:02Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "ecfcfca2781e1edd2a98a8508294ea0ad40e88a6",
+    "committerTime" : "2020-01-14T13:25:08Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "622e07eb0859fcf0eb9537ea5657277b7f3b18af",
+    "committerTime" : "2020-04-20T15:53:48Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/MethodSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "622e07eb0859fcf0eb9537ea5657277b7f3b18af",
+    "committerTime" : "2020-04-20T15:53:48Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "622e07eb0859fcf0eb9537ea5657277b7f3b18af",
+    "committerTime" : "2020-04-20T15:53:48Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "622e07eb0859fcf0eb9537ea5657277b7f3b18af",
+    "committerTime" : "2020-04-20T15:53:48Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "4135ccbc902eac2f2bfc063aacd8b3e7864e1ab5",
+    "committerTime" : "2020-04-20T15:56:24Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/MethodSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "a5f4f0f2ada5c8040d7a02db9b423093f051b1d6",
+    "committerTime" : "2020-06-04T01:23:44Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/ParameterSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "a5f4f0f2ada5c8040d7a02db9b423093f051b1d6",
+    "committerTime" : "2020-06-04T01:23:44Z",
+    "lineageKey" : "33bb07eac9bc92bb4df30d71623dac0a2a1adf37:src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/ParameterSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "52c72c0a96c9e0b3b953f00af75dc663a308680a",
+    "committerTime" : "2021-03-01T15:41:16Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/CodeWriter.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "6f3d36c155880af80f6754fa69eaf9d42dbeb640",
+    "committerTime" : "2021-03-18T17:48:08Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "6f3d36c155880af80f6754fa69eaf9d42dbeb640",
+    "committerTime" : "2021-03-18T17:48:08Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "ed181db179bd76e801daac69a0f3b91cabbca9b8",
+    "committerTime" : "2021-04-15T15:43:32Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/TypeSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "ed181db179bd76e801daac69a0f3b91cabbca9b8",
+    "committerTime" : "2021-04-15T15:43:32Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/TypeSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "70ef9bdf9a72743746e2315d3bdf9b89c7990b29",
+    "committerTime" : "2022-04-19T04:17:36Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/AnnotationSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/AnnotationSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/AnnotationSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "d682f2013751d25725349d79b449870d0e77354c",
+    "committerTime" : "2023-10-30T18:49:13Z",
+    "lineageKey" : "7896b1896dae8251b710373703d94cec3f7c4228:src/main/java/com/squareup/javapoet/TypeName.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/TypeName.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/TypeName.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "d682f2013751d25725349d79b449870d0e77354c",
+    "committerTime" : "2023-10-30T18:49:13Z",
+    "lineageKey" : "44c278882ca7b314c54e6db15bf48f4188d925f9:src/test/java/com/squareup/javapoet/TypeNameTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/TypeNameTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/TypeNameTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "fa579e1b403315558abc0178cd84c31b5e02b37e",
+    "committerTime" : "2024-01-13T13:12:08Z",
+    "lineageKey" : "dac757a11aeedf297575a7ba23fcde4c63e09cf6:src/main/java/com/squareup/javapoet/AnnotationSpec.java",
+    "oldPath" : "src/main/java/com/squareup/javapoet/AnnotationSpec.java",
+    "newPath" : "src/main/java/com/squareup/javapoet/AnnotationSpec.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  }, {
+    "commitSha" : "fa579e1b403315558abc0178cd84c31b5e02b37e",
+    "committerTime" : "2024-01-13T13:12:08Z",
+    "lineageKey" : "5f619e393b26311b04ce34cf7092029fb9a66893:src/test/java/com/squareup/javapoet/AnnotationSpecTest.java",
+    "oldPath" : "src/test/java/com/squareup/javapoet/AnnotationSpecTest.java",
+    "newPath" : "src/test/java/com/squareup/javapoet/AnnotationSpecTest.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  } ]
+}
