@@ -1,0 +1,67 @@
+{
+  "schemaVersion" : 1,
+  "repositoryUrl" : "https://github.com/spring-guides/gs-rest-service",
+  "headSha" : "36fcbba66bc48e5facd1168db6e9ebf57e8501b1",
+  "windowStart" : "2024-07-05T00:00:00Z",
+  "windowEnd" : "2025-01-01T00:00:00Z",
+  "config" : "{\"metricVersion\":\"metric-v1\",\"pipelineVersion\":\"git-metrics-v2\",\"lizardVersion\":\"1.24.3\",\"jgitVersion\":\"7.8.0.202609011348-r\",\"authorAliases\":{},\"excludedPrefixes\":[\"vendor/\",\"generated/\",\"target/\",\"build/\"],\"maxCommits\":10000,\"maxTreeEntries\":100000,\"maxBlobBytes\":2097152,\"maxFacts\":500000,\"filterLargeChangesets\":false,\"maxChangesetFiles\":30,\"renameScore\":60,\"renameLimit\":1000}",
+  "metricVersion" : "metric-v1",
+  "reachableCommits" : 386,
+  "commitCount" : 0,
+  "truncated" : false,
+  "summary" : {
+    "coverageComplete" : false,
+    "reachableCommits" : 386,
+    "selectedCommits" : 0,
+    "currentJavaFiles" : 6,
+    "hotspotPopulation" : 4,
+    "ambiguousFiles" : 2,
+    "noFunctionFiles" : 1,
+    "filterLargeChangesets" : false,
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS", "NO_FUNCTIONS" ]
+  },
+  "files" : [ {
+    "lineageKey" : "a042ec14e82181e1e37134f7d5af76f220097594:complete/src/test/java/hello/GreetingControllerTests.java",
+    "path" : "complete/src/test/java/com/example/restservice/GreetingControllerTests.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.5,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "acd0d5aa743ddeac84b1914d7f26287438e7eb99:complete/src/main/java/com/example/restservice/RestServiceApplication.java",
+    "path" : "complete/src/main/java/com/example/restservice/RestServiceApplication.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.5,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "acd0d5aa743ddeac84b1914d7f26287438e7eb99:initial/src/main/java/com/example/restservice/RestServiceApplication.java",
+    "path" : "initial/src/main/java/com/example/restservice/RestServiceApplication.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.5,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "acd0d5aa743ddeac84b1914d7f26287438e7eb99:initial/src/test/java/com/example/restservice/RestServiceApplicationTests.java",
+    "path" : "initial/src/test/java/com/example/restservice/RestServiceApplicationTests.java",
+    "frequency" : 0,
+    "maxCcn" : 1,
+    "hotspot" : 0.5,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "dda54ac539b2e4ac1af10af415c98ce7fae135cb:complete/src/main/java/hello/Greeting.java",
+    "path" : "complete/src/main/java/com/example/restservice/Greeting.java",
+    "frequency" : null,
+    "maxCcn" : null,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  }, {
+    "lineageKey" : "dda54ac539b2e4ac1af10af415c98ce7fae135cb:complete/src/main/java/hello/GreetingController.java",
+    "path" : "complete/src/main/java/com/example/restservice/GreetingController.java",
+    "frequency" : null,
+    "maxCcn" : 1,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  } ],
+  "facts" : [ ]
+}

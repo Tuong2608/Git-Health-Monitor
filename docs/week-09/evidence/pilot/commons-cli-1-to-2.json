@@ -1,0 +1,1034 @@
+{
+  "beforeSha": "a477af7379dfd2c0f40cc85fb3dcfb1d21b9b6c4",
+  "afterSha": "83dc2043aa8a9215981ae8ac1428f9d706fa56ea",
+  "status": "BLOCKED",
+  "blockers": [
+    "INCOMPLETE_COVERAGE"
+  ],
+  "threshold": 0.15,
+  "added": [
+    "f6c45f8f46217c9eec2b398fb10a5c60b3ed8c46:src/test/java/org/apache/commons/cli/OptionCountTest.java",
+    "f9f6ab12668fdec496f4877e6ac0ac58113924dd:src/test/java/org/apache/commons/cli/MissingOptionExceptionTest.java"
+  ],
+  "removed": [],
+  "unavailableCommonFiles": 49,
+  "comparableCommonFiles": 36,
+  "alertCandidates": null,
+  "diagnosticChangesOnly": true,
+  "changes": [
+    {
+      "lineageKey": "085a1538fa20d8e48faad49eaffd697f024bf1af:src/test/java/org/apache/commons/cli/bug/BugCLI252Test.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/bug/BugCLI252Test.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/bug/BugCLI252Test.java",
+      "before": {
+        "lineageKey": "085a1538fa20d8e48faad49eaffd697f024bf1af:src/test/java/org/apache/commons/cli/bug/BugCLI252Test.java",
+        "path": "src/test/java/org/apache/commons/cli/bug/BugCLI252Test.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.1818274580193979,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "085a1538fa20d8e48faad49eaffd697f024bf1af:src/test/java/org/apache/commons/cli/bug/BugCLI252Test.java",
+        "path": "src/test/java/org/apache/commons/cli/bug/BugCLI252Test.java",
+        "frequency": 2,
+        "maxCcn": 1,
+        "hotspot": 0.439968124218911,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.2581406661995131,
+      "relativeDelta": 1.4197012322086902,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": true,
+      "evidenceCommits": [
+        "95f2d837bccc4f833f9ec27e9bdd825e6fb72e94",
+        "c9698e622f3e0d2fe1d304056b28c24ff7d02e81"
+      ]
+    },
+    {
+      "lineageKey": "0cafe222bb0956276977d550e94fcc554f005dc0:src/main/java/org/apache/commons/cli/Char.java",
+      "beforePath": "src/main/java/org/apache/commons/cli/Char.java",
+      "afterPath": "src/main/java/org/apache/commons/cli/Char.java",
+      "before": {
+        "lineageKey": "0cafe222bb0956276977d550e94fcc554f005dc0:src/main/java/org/apache/commons/cli/Char.java",
+        "path": "src/main/java/org/apache/commons/cli/Char.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.1818274580193979,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "0cafe222bb0956276977d550e94fcc554f005dc0:src/main/java/org/apache/commons/cli/Char.java",
+        "path": "src/main/java/org/apache/commons/cli/Char.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.2261243314956961,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.0442968734762982,
+      "relativeDelta": 0.24362037482574542,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": []
+    },
+    {
+      "lineageKey": "19fb139a8b7ca101eceb442789d68f686e94c3d2:src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+      "before": {
+        "lineageKey": "19fb139a8b7ca101eceb442789d68f686e94c3d2:src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+        "path": "src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+        "frequency": 1,
+        "maxCcn": 9,
+        "hotspot": 0.5394630739571202,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "19fb139a8b7ca101eceb442789d68f686e94c3d2:src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+        "path": "src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+        "frequency": 0,
+        "maxCcn": 9,
+        "hotspot": 0.4107752473938017,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.1286878265633185,
+      "relativeDelta": -0.23854797997452443,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": []
+    },
+    {
+      "lineageKey": "1bf9e6c551b6a2e7d37291673a1ff77c338ce131:src/test/java/org/apache/commons/cli/bug/BugCLI265Test.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/bug/BugCLI265Test.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/bug/BugCLI265Test.java",
+      "before": {
+        "lineageKey": "1bf9e6c551b6a2e7d37291673a1ff77c338ce131:src/test/java/org/apache/commons/cli/bug/BugCLI265Test.java",
+        "path": "src/test/java/org/apache/commons/cli/bug/BugCLI265Test.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.1818274580193979,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "1bf9e6c551b6a2e7d37291673a1ff77c338ce131:src/test/java/org/apache/commons/cli/bug/BugCLI265Test.java",
+        "path": "src/test/java/org/apache/commons/cli/bug/BugCLI265Test.java",
+        "frequency": 1,
+        "maxCcn": 1,
+        "hotspot": 0.367607311046904,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.1857798530275061,
+      "relativeDelta": 1.0217370635390313,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": true,
+      "evidenceCommits": [
+        "c9698e622f3e0d2fe1d304056b28c24ff7d02e81"
+      ]
+    },
+    {
+      "lineageKey": "2dac643fff43efcb7c42afca526e8af3938a60ba:src/test/java/org/apache/commons/cli/bug/BugCLI325Test.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/bug/BugCLI325Test.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/bug/BugCLI325Test.java",
+      "before": {
+        "lineageKey": "2dac643fff43efcb7c42afca526e8af3938a60ba:src/test/java/org/apache/commons/cli/bug/BugCLI325Test.java",
+        "path": "src/test/java/org/apache/commons/cli/bug/BugCLI325Test.java",
+        "frequency": 1,
+        "maxCcn": 1,
+        "hotspot": 0.2906712849910829,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "2dac643fff43efcb7c42afca526e8af3938a60ba:src/test/java/org/apache/commons/cli/bug/BugCLI325Test.java",
+        "path": "src/test/java/org/apache/commons/cli/bug/BugCLI325Test.java",
+        "frequency": 1,
+        "maxCcn": 1,
+        "hotspot": 0.367607311046904,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.0769360260558211,
+      "relativeDelta": 0.264683957543936,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": [
+        "c9698e622f3e0d2fe1d304056b28c24ff7d02e81"
+      ]
+    },
+    {
+      "lineageKey": "53af98d998fbec8822a4ef08df6ad670ed707814:src/test/java/org/apache/commons/cli/AlreadySelectedExceptionTest.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/AlreadySelectedExceptionTest.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/AlreadySelectedExceptionTest.java",
+      "before": {
+        "lineageKey": "53af98d998fbec8822a4ef08df6ad670ed707814:src/test/java/org/apache/commons/cli/AlreadySelectedExceptionTest.java",
+        "path": "src/test/java/org/apache/commons/cli/AlreadySelectedExceptionTest.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.1818274580193979,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "53af98d998fbec8822a4ef08df6ad670ed707814:src/test/java/org/apache/commons/cli/AlreadySelectedExceptionTest.java",
+        "path": "src/test/java/org/apache/commons/cli/AlreadySelectedExceptionTest.java",
+        "frequency": 1,
+        "maxCcn": 1,
+        "hotspot": 0.367607311046904,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.1857798530275061,
+      "relativeDelta": 1.0217370635390313,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": true,
+      "evidenceCommits": [
+        "ea9e408813e0cdf10d3e35fadfe4de19da74f4b0"
+      ]
+    },
+    {
+      "lineageKey": "afc13c445a4c80432e52d735685b272fadfeeddf:src/test/java/org/apache/commons/cli/bug/BugCLI266Test.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/bug/BugCLI266Test.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/bug/BugCLI266Test.java",
+      "before": {
+        "lineageKey": "afc13c445a4c80432e52d735685b272fadfeeddf:src/test/java/org/apache/commons/cli/bug/BugCLI266Test.java",
+        "path": "src/test/java/org/apache/commons/cli/bug/BugCLI266Test.java",
+        "frequency": 0,
+        "maxCcn": 2,
+        "hotspot": 0.2641891715558133,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "afc13c445a4c80432e52d735685b272fadfeeddf:src/test/java/org/apache/commons/cli/bug/BugCLI266Test.java",
+        "path": "src/test/java/org/apache/commons/cli/bug/BugCLI266Test.java",
+        "frequency": 2,
+        "maxCcn": 2,
+        "hotspot": 0.6375743844370513,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.373385212881238,
+      "relativeDelta": 1.4133251967988236,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": true,
+      "evidenceCommits": [
+        "c9698e622f3e0d2fe1d304056b28c24ff7d02e81",
+        "ea9e408813e0cdf10d3e35fadfe4de19da74f4b0"
+      ]
+    },
+    {
+      "lineageKey": "c88339084264401004cc2535738d7472e344e253:src/test/java/org/apache/commons/cli/UnrecognizedOptionExceptionTest.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/UnrecognizedOptionExceptionTest.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/UnrecognizedOptionExceptionTest.java",
+      "before": {
+        "lineageKey": "c88339084264401004cc2535738d7472e344e253:src/test/java/org/apache/commons/cli/UnrecognizedOptionExceptionTest.java",
+        "path": "src/test/java/org/apache/commons/cli/UnrecognizedOptionExceptionTest.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.1818274580193979,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "c88339084264401004cc2535738d7472e344e253:src/test/java/org/apache/commons/cli/UnrecognizedOptionExceptionTest.java",
+        "path": "src/test/java/org/apache/commons/cli/UnrecognizedOptionExceptionTest.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.2261243314956961,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.0442968734762982,
+      "relativeDelta": 0.24362037482574542,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": []
+    },
+    {
+      "lineageKey": "ce86213e7e5aa10aa19194c4e172ca146b80c7fa:src/test/java/org/apache/commons/cli/bug/BugCLI312Test.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/bug/BugCLI312Test.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/bug/BugCLI312Test.java",
+      "before": {
+        "lineageKey": "ce86213e7e5aa10aa19194c4e172ca146b80c7fa:src/test/java/org/apache/commons/cli/bug/BugCLI312Test.java",
+        "path": "src/test/java/org/apache/commons/cli/bug/BugCLI312Test.java",
+        "frequency": 0,
+        "maxCcn": 8,
+        "hotspot": 0.3319700011034929,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "ce86213e7e5aa10aa19194c4e172ca146b80c7fa:src/test/java/org/apache/commons/cli/bug/BugCLI312Test.java",
+        "path": "src/test/java/org/apache/commons/cli/bug/BugCLI312Test.java",
+        "frequency": 1,
+        "maxCcn": 8,
+        "hotspot": 0.657595949221429,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.3256259481179361,
+      "relativeDelta": 0.9808896798973742,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": true,
+      "evidenceCommits": [
+        "c9698e622f3e0d2fe1d304056b28c24ff7d02e81"
+      ]
+    },
+    {
+      "lineageKey": "d9a9433131d8c821278af738deaf6146f11a25b9:src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+      "beforePath": "src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+      "afterPath": "src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+      "before": {
+        "lineageKey": "d9a9433131d8c821278af738deaf6146f11a25b9:src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+        "path": "src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+        "frequency": 2,
+        "maxCcn": 4,
+        "hotspot": 0.5126959555693245,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "d9a9433131d8c821278af738deaf6146f11a25b9:src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+        "path": "src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+        "frequency": 1,
+        "maxCcn": 4,
+        "hotspot": 0.5812381937190964,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.0685422381497719,
+      "relativeDelta": 0.13368983586706668,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": [
+        "423048b164c61f0eb7ca907108168ff7a36996b1"
+      ]
+    },
+    {
+      "lineageKey": "d9a9433131d8c821278af738deaf6146f11a25b9:src/test/java/org/apache/commons/cli/DeprecatedAttributesTest.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/DeprecatedAttributesTest.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/DeprecatedAttributesTest.java",
+      "before": {
+        "lineageKey": "d9a9433131d8c821278af738deaf6146f11a25b9:src/test/java/org/apache/commons/cli/DeprecatedAttributesTest.java",
+        "path": "src/test/java/org/apache/commons/cli/DeprecatedAttributesTest.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.1818274580193979,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "d9a9433131d8c821278af738deaf6146f11a25b9:src/test/java/org/apache/commons/cli/DeprecatedAttributesTest.java",
+        "path": "src/test/java/org/apache/commons/cli/DeprecatedAttributesTest.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.2261243314956961,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.0442968734762982,
+      "relativeDelta": 0.24362037482574542,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": []
+    },
+    {
+      "lineageKey": "d9a9433131d8c821278af738deaf6146f11a25b9:src/test/java/org/apache/commons/cli/SolrCliTest.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/SolrCliTest.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/SolrCliTest.java",
+      "before": {
+        "lineageKey": "d9a9433131d8c821278af738deaf6146f11a25b9:src/test/java/org/apache/commons/cli/SolrCliTest.java",
+        "path": "src/test/java/org/apache/commons/cli/SolrCliTest.java",
+        "frequency": 1,
+        "maxCcn": 1,
+        "hotspot": 0.2906712849910829,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "d9a9433131d8c821278af738deaf6146f11a25b9:src/test/java/org/apache/commons/cli/SolrCliTest.java",
+        "path": "src/test/java/org/apache/commons/cli/SolrCliTest.java",
+        "frequency": 2,
+        "maxCcn": 1,
+        "hotspot": 0.439968124218911,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.1492968392278281,
+      "relativeDelta": 0.5136277538815304,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": [
+        "588fe7922efd74e82ef5f4c433d846e1e5528e79",
+        "c9698e622f3e0d2fe1d304056b28c24ff7d02e81"
+      ]
+    },
+    {
+      "lineageKey": "d9a9433131d8c821278af738deaf6146f11a25b9:src/test/java/org/apache/commons/cli/SolrCreateToolTest.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/SolrCreateToolTest.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/SolrCreateToolTest.java",
+      "before": {
+        "lineageKey": "d9a9433131d8c821278af738deaf6146f11a25b9:src/test/java/org/apache/commons/cli/SolrCreateToolTest.java",
+        "path": "src/test/java/org/apache/commons/cli/SolrCreateToolTest.java",
+        "frequency": 1,
+        "maxCcn": 1,
+        "hotspot": 0.2906712849910829,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "d9a9433131d8c821278af738deaf6146f11a25b9:src/test/java/org/apache/commons/cli/SolrCreateToolTest.java",
+        "path": "src/test/java/org/apache/commons/cli/SolrCreateToolTest.java",
+        "frequency": 1,
+        "maxCcn": 1,
+        "hotspot": 0.367607311046904,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.0769360260558211,
+      "relativeDelta": 0.264683957543936,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": [
+        "c9698e622f3e0d2fe1d304056b28c24ff7d02e81"
+      ]
+    },
+    {
+      "lineageKey": "e366a69318c97c70bd3278ffd8c61fad3c4a4456:src/java/org/apache/commons/cli/AmbiguousOptionException.java",
+      "beforePath": "src/main/java/org/apache/commons/cli/AmbiguousOptionException.java",
+      "afterPath": "src/main/java/org/apache/commons/cli/AmbiguousOptionException.java",
+      "before": {
+        "lineageKey": "e366a69318c97c70bd3278ffd8c61fad3c4a4456:src/java/org/apache/commons/cli/AmbiguousOptionException.java",
+        "path": "src/main/java/org/apache/commons/cli/AmbiguousOptionException.java",
+        "frequency": 0,
+        "maxCcn": 3,
+        "hotspot": 0.2777460299317655,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e366a69318c97c70bd3278ffd8c61fad3c4a4456:src/java/org/apache/commons/cli/AmbiguousOptionException.java",
+        "path": "src/main/java/org/apache/commons/cli/AmbiguousOptionException.java",
+        "frequency": 1,
+        "maxCcn": 3,
+        "hotspot": 0.5575040903982775,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.279758060466512,
+      "relativeDelta": 1.0072441378738728,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": true,
+      "evidenceCommits": [
+        "472bdd590a521e975c17a38f254634c4495442a9"
+      ]
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+      "beforePath": "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+      "afterPath": "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+        "path": "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+        "frequency": 11,
+        "maxCcn": 5,
+        "hotspot": 0.8268454930564447,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+        "path": "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+        "frequency": 8,
+        "maxCcn": 5,
+        "hotspot": 0.8562706439157236,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.0294251508592789,
+      "relativeDelta": 0.03558724224341897,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": [
+        "0abda9d3d648727d92f5e1952a05e488afe229aa",
+        "13d7f9c14ac5b1187f12223d78553edb5d908851",
+        "7199a701924f0ecf95d729095bc610d6434a3a77",
+        "d4cead7973eedc6f892f9c98ee3e3c1d16f88151",
+        "ded2696f29a6ad3416c2da81163874a5b322a7c9",
+        "ea9e408813e0cdf10d3e35fadfe4de19da74f4b0",
+        "f53ab49e9ed4d3e24c1b343bbcd418a9b2d243f2",
+        "fd459881e010fadcd3b26e36bafbc90163643ac6"
+      ]
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpWriter.java",
+      "beforePath": "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+      "afterPath": "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpWriter.java",
+        "path": "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+        "frequency": 8,
+        "maxCcn": 1,
+        "hotspot": 0.4494895063586364,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/AbstractHelpWriter.java",
+        "path": "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.2261243314956961,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.2233651748629403,
+      "relativeDelta": -0.4969307886015983,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": []
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+      "beforePath": "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+      "afterPath": "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+        "path": "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+        "frequency": 11,
+        "maxCcn": 6,
+        "hotspot": 0.8672028691872108,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+        "path": "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+        "frequency": 3,
+        "maxCcn": 5,
+        "hotspot": 0.7954628460952129,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.0717400230919979,
+      "relativeDelta": -0.08272576768482848,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": [
+        "0abda9d3d648727d92f5e1952a05e488afe229aa",
+        "107acd4d093a4f8a5fe9407070207043b4d7ae60",
+        "c4dddc7f694770a610ad9486ef28fb8a57e792c2"
+      ]
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpWriter.java",
+      "beforePath": "src/main/java/org/apache/commons/cli/help/HelpAppendable.java",
+      "afterPath": "src/main/java/org/apache/commons/cli/help/HelpAppendable.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpWriter.java",
+        "path": "src/main/java/org/apache/commons/cli/help/HelpAppendable.java",
+        "frequency": 6,
+        "maxCcn": 1,
+        "hotspot": 0.4110712734268045,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/HelpWriter.java",
+        "path": "src/main/java/org/apache/commons/cli/help/HelpAppendable.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.2261243314956961,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.1849469419311084,
+      "relativeDelta": -0.44991453766481715,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": []
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+      "beforePath": "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+      "afterPath": "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+        "path": "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+        "frequency": 7,
+        "maxCcn": 5,
+        "hotspot": 0.7071067811865475,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+        "path": "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+        "frequency": 4,
+        "maxCcn": 5,
+        "hotspot": 0.8203270384203345,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.113220257233787,
+      "relativeDelta": 0.16011762331539212,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": [
+        "0abda9d3d648727d92f5e1952a05e488afe229aa",
+        "13d7f9c14ac5b1187f12223d78553edb5d908851",
+        "e852acf572129fa8b2e3824b0e23a32a074e832f",
+        "f53ab49e9ed4d3e24c1b343bbcd418a9b2d243f2"
+      ]
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+      "beforePath": "src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+      "afterPath": "src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+        "path": "src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+        "frequency": 3,
+        "maxCcn": 1,
+        "hotspot": 0.3481730744843982,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+        "path": "src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.2261243314956961,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.1220487429887021,
+      "relativeDelta": -0.35054044075476365,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": []
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+      "beforePath": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+      "afterPath": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+        "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+        "frequency": 18,
+        "maxCcn": 13,
+        "hotspot": 0.9928314487939459,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextHelpWriter.java",
+        "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+        "frequency": 4,
+        "maxCcn": 12,
+        "hotspot": 0.9320406540821828,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.0607907947117631,
+      "relativeDelta": -0.06122972311726171,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": [
+        "107acd4d093a4f8a5fe9407070207043b4d7ae60",
+        "a6526104cc68f0bddc3014ca6beb084353714bd1",
+        "ab0ff340bf3d5fcfc89fd108e440901445b52dcc",
+        "beef6739db1eeef8e09041819593663e3b15bbfc"
+      ]
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextStyle.java",
+      "beforePath": "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+      "afterPath": "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextStyle.java",
+        "path": "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+        "frequency": 10,
+        "maxCcn": 12,
+        "hotspot": 0.9211793682944862,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/TextStyle.java",
+        "path": "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+        "frequency": 2,
+        "maxCcn": 12,
+        "hotspot": 0.828963463408919,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.0922159048855672,
+      "relativeDelta": -0.10010635068423207,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": [
+        "0abda9d3d648727d92f5e1952a05e488afe229aa",
+        "13d7f9c14ac5b1187f12223d78553edb5d908851"
+      ]
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/Util.java",
+      "beforePath": "src/main/java/org/apache/commons/cli/help/Util.java",
+      "afterPath": "src/main/java/org/apache/commons/cli/help/Util.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/Util.java",
+        "path": "src/main/java/org/apache/commons/cli/help/Util.java",
+        "frequency": 8,
+        "maxCcn": 5,
+        "hotspot": 0.749149177264394,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/main/java/org/apache/commons/cli/help/Util.java",
+        "path": "src/main/java/org/apache/commons/cli/help/Util.java",
+        "frequency": 1,
+        "maxCcn": 5,
+        "hotspot": 0.6096077604670249,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.1395414167973691,
+      "relativeDelta": -0.18626652879326508,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": [
+        "f53ab49e9ed4d3e24c1b343bbcd418a9b2d243f2"
+      ]
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+        "path": "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+        "frequency": 5,
+        "maxCcn": 1,
+        "hotspot": 0.3974407926641016,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+        "path": "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+        "frequency": 7,
+        "maxCcn": 1,
+        "hotspot": 0.5056293765910732,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.1081885839269716,
+      "relativeDelta": 0.2722130841219601,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": [
+        "13c57f3a42717c8b2934d36fdf1a0944e4e24c19",
+        "760357fc340dc563d047449a26eb8c1313c516a9",
+        "91d0185c017e39cd3696bfffd56d5b36de22dc07",
+        "c9698e622f3e0d2fe1d304056b28c24ff7d02e81",
+        "d4cead7973eedc6f892f9c98ee3e3c1d16f88151",
+        "dcc169b9183409ccb2f6bbb5506d498301a5b684",
+        "ea9e408813e0cdf10d3e35fadfe4de19da74f4b0"
+      ]
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+        "path": "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+        "frequency": 4,
+        "maxCcn": 1,
+        "hotspot": 0.3785040371283362,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+        "path": "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+        "frequency": 2,
+        "maxCcn": 1,
+        "hotspot": 0.439968124218911,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.0614640870905748,
+      "relativeDelta": 0.1623868732204161,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": [
+        "859d5e5e749c1ec6a4c7f7ead88a587f316d8065",
+        "c9698e622f3e0d2fe1d304056b28c24ff7d02e81"
+      ]
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextHelpWriterTest.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextHelpWriterTest.java",
+        "path": "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+        "frequency": 7,
+        "maxCcn": 3,
+        "hotspot": 0.648074069840786,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextHelpWriterTest.java",
+        "path": "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+        "frequency": 2,
+        "maxCcn": 3,
+        "hotspot": 0.6672446970610005,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.0191706272202145,
+      "relativeDelta": 0.029580920009535633,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": [
+        "760357fc340dc563d047449a26eb8c1313c516a9",
+        "beef6739db1eeef8e09041819593663e3b15bbfc"
+      ]
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextStyleTests.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/help/TextStyleTests.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/help/TextStyleTests.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextStyleTests.java",
+        "path": "src/test/java/org/apache/commons/cli/help/TextStyleTests.java",
+        "frequency": 3,
+        "maxCcn": 1,
+        "hotspot": 0.3481730744843982,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/TextStyleTests.java",
+        "path": "src/test/java/org/apache/commons/cli/help/TextStyleTests.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.2261243314956961,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.1220487429887021,
+      "relativeDelta": -0.35054044075476365,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": []
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/UtilTest.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/UtilTest.java",
+        "path": "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+        "frequency": 4,
+        "maxCcn": 3,
+        "hotspot": 0.5781744669956589,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/cli/help/UtilTest.java",
+        "path": "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+        "frequency": 0,
+        "maxCcn": 3,
+        "hotspot": 0.3429345281202574,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.2352399388754015,
+      "relativeDelta": -0.406866702533178,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": []
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriter.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriter.java",
+        "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+        "frequency": 8,
+        "maxCcn": 10,
+        "hotspot": 0.8475655413823615,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriter.java",
+        "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+        "frequency": 0,
+        "maxCcn": 10,
+        "hotspot": 0.4169526654200409,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.4306128759623206,
+      "relativeDelta": -0.508058498060221,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": []
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+        "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+        "frequency": 10,
+        "maxCcn": 1,
+        "hotspot": 0.4810702354423639,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/AptHelpWriterTest.java",
+        "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.2261243314956961,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.2549459039466678,
+      "relativeDelta": -0.5299556804054496,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": []
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/WeirdOptionFormat.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/example/WeirdOptionFormat.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/example/WeirdOptionFormat.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/WeirdOptionFormat.java",
+        "path": "src/test/java/org/apache/commons/cli/example/WeirdOptionFormat.java",
+        "frequency": 3,
+        "maxCcn": 6,
+        "hotspot": 0.6086116686897369,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/WeirdOptionFormat.java",
+        "path": "src/test/java/org/apache/commons/cli/example/WeirdOptionFormat.java",
+        "frequency": 0,
+        "maxCcn": 6,
+        "hotspot": 0.391658830978093,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.2169528377116439,
+      "relativeDelta": -0.3564717025204522,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": []
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriter.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriter.java",
+        "path": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+        "frequency": 9,
+        "maxCcn": 7,
+        "hotspot": 0.8427360687858644,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriter.java",
+        "path": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+        "frequency": 0,
+        "maxCcn": 7,
+        "hotspot": 0.3981329692609793,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.4446030995248851,
+      "relativeDelta": -0.5275709869229019,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": []
+    },
+    {
+      "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendableTest.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendableTest.java",
+      "before": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+        "path": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendableTest.java",
+        "frequency": 8,
+        "maxCcn": 1,
+        "hotspot": 0.4494895063586364,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "e9a72ea9a5b6523ced486f31130f1d00320d2b94:src/test/java/org/apache/commons/example/cli/XhtmlHelpWriterTest.java",
+        "path": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendableTest.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.2261243314956961,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.2233651748629403,
+      "relativeDelta": -0.4969307886015983,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": []
+    },
+    {
+      "lineageKey": "f43698527ef2b5ba15fe85d46d2d505418f68243:src/java/org/apache/commons/cli/DefaultParser.java",
+      "beforePath": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+      "afterPath": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+      "before": {
+        "lineageKey": "f43698527ef2b5ba15fe85d46d2d505418f68243:src/java/org/apache/commons/cli/DefaultParser.java",
+        "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+        "frequency": 5,
+        "maxCcn": 13,
+        "hotspot": 0.7781453617940755,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "f43698527ef2b5ba15fe85d46d2d505418f68243:src/java/org/apache/commons/cli/DefaultParser.java",
+        "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+        "frequency": 8,
+        "maxCcn": 13,
+        "hotspot": 0.9932202608115113,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.2150748990174358,
+      "relativeDelta": 0.27639424402860113,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": true,
+      "evidenceCommits": [
+        "035555e2c800be23e7cd671fc2561d51fb8c6a60",
+        "472bdd590a521e975c17a38f254634c4495442a9",
+        "516b2ea3a2af27e18ce3d5d55134307db120dc26",
+        "a9baf80a113c75885f53bb0dc34e6f9e15bc37b3",
+        "e852acf572129fa8b2e3824b0e23a32a074e832f",
+        "ea9e408813e0cdf10d3e35fadfe4de19da74f4b0",
+        "ff2af019aaa199c787ec6354b490f1a92c01939a",
+        "ff678b0ac3019e621d23b2eb2230096206baae78"
+      ]
+    },
+    {
+      "lineageKey": "f43698527ef2b5ba15fe85d46d2d505418f68243:src/test/org/apache/commons/cli/DefaultParserTest.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+      "before": {
+        "lineageKey": "f43698527ef2b5ba15fe85d46d2d505418f68243:src/test/org/apache/commons/cli/DefaultParserTest.java",
+        "path": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+        "frequency": 3,
+        "maxCcn": 1,
+        "hotspot": 0.3481730744843982,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "f43698527ef2b5ba15fe85d46d2d505418f68243:src/test/org/apache/commons/cli/DefaultParserTest.java",
+        "path": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+        "frequency": 3,
+        "maxCcn": 1,
+        "hotspot": 0.4796821445756446,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.1315090700912464,
+      "relativeDelta": 0.37771177534619893,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": [
+        "774dd2ee63fb3984fd44c81f8162e8c2553245f3",
+        "c9698e622f3e0d2fe1d304056b28c24ff7d02e81",
+        "ff678b0ac3019e621d23b2eb2230096206baae78"
+      ]
+    },
+    {
+      "lineageKey": "f4ab6c9dbe062e558dff98ae68c3bc7f5da06372:src/test/java/org/apache/commons/cli/ParseExceptionTest.java",
+      "beforePath": "src/test/java/org/apache/commons/cli/ParseExceptionTest.java",
+      "afterPath": "src/test/java/org/apache/commons/cli/ParseExceptionTest.java",
+      "before": {
+        "lineageKey": "f4ab6c9dbe062e558dff98ae68c3bc7f5da06372:src/test/java/org/apache/commons/cli/ParseExceptionTest.java",
+        "path": "src/test/java/org/apache/commons/cli/ParseExceptionTest.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.1818274580193979,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "f4ab6c9dbe062e558dff98ae68c3bc7f5da06372:src/test/java/org/apache/commons/cli/ParseExceptionTest.java",
+        "path": "src/test/java/org/apache/commons/cli/ParseExceptionTest.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.2261243314956961,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.0442968734762982,
+      "relativeDelta": 0.24362037482574542,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": []
+    }
+  ]
+}

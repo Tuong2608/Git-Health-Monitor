@@ -1,0 +1,130 @@
+{
+  "beforeSha": "36fcbba66bc48e5facd1168db6e9ebf57e8501b1",
+  "afterSha": "0b398e8e9167a5bda4df6c5f5e8fc6d94da150e8",
+  "status": "BLOCKED",
+  "blockers": [
+    "INCOMPLETE_COVERAGE"
+  ],
+  "threshold": 0.15,
+  "added": [],
+  "removed": [],
+  "unavailableCommonFiles": 2,
+  "comparableCommonFiles": 4,
+  "alertCandidates": null,
+  "diagnosticChangesOnly": true,
+  "changes": [
+    {
+      "lineageKey": "a042ec14e82181e1e37134f7d5af76f220097594:complete/src/test/java/hello/GreetingControllerTests.java",
+      "beforePath": "complete/src/test/java/com/example/restservice/GreetingControllerTests.java",
+      "afterPath": "complete/src/test/java/com/example/restservice/GreetingControllerTests.java",
+      "before": {
+        "lineageKey": "a042ec14e82181e1e37134f7d5af76f220097594:complete/src/test/java/hello/GreetingControllerTests.java",
+        "path": "complete/src/test/java/com/example/restservice/GreetingControllerTests.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.5,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "a042ec14e82181e1e37134f7d5af76f220097594:complete/src/test/java/hello/GreetingControllerTests.java",
+        "path": "complete/src/test/java/com/example/restservice/GreetingControllerTests.java",
+        "frequency": 2,
+        "maxCcn": 1,
+        "hotspot": 0.7071067811865475,
+        "unavailableReason": null
+      },
+      "hotspotDelta": 0.2071067811865475,
+      "relativeDelta": 0.414213562373095,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": true,
+      "evidenceCommits": [
+        "389429a7345a718c27a77cabc495cf7ea68bbaee",
+        "ccccdcd71c068276d2fc5ccf1e155e26a5614a7c"
+      ]
+    },
+    {
+      "lineageKey": "acd0d5aa743ddeac84b1914d7f26287438e7eb99:complete/src/main/java/com/example/restservice/RestServiceApplication.java",
+      "beforePath": "complete/src/main/java/com/example/restservice/RestServiceApplication.java",
+      "afterPath": "complete/src/main/java/com/example/restservice/RestServiceApplication.java",
+      "before": {
+        "lineageKey": "acd0d5aa743ddeac84b1914d7f26287438e7eb99:complete/src/main/java/com/example/restservice/RestServiceApplication.java",
+        "path": "complete/src/main/java/com/example/restservice/RestServiceApplication.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.5,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "acd0d5aa743ddeac84b1914d7f26287438e7eb99:complete/src/main/java/com/example/restservice/RestServiceApplication.java",
+        "path": "complete/src/main/java/com/example/restservice/RestServiceApplication.java",
+        "frequency": 1,
+        "maxCcn": 1,
+        "hotspot": 0.4082482904638629,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.0917517095361371,
+      "relativeDelta": -0.1835034190722742,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": [
+        "389429a7345a718c27a77cabc495cf7ea68bbaee"
+      ]
+    },
+    {
+      "lineageKey": "acd0d5aa743ddeac84b1914d7f26287438e7eb99:initial/src/main/java/com/example/restservice/RestServiceApplication.java",
+      "beforePath": "initial/src/main/java/com/example/restservice/RestServiceApplication.java",
+      "afterPath": "initial/src/main/java/com/example/restservice/RestServiceApplication.java",
+      "before": {
+        "lineageKey": "acd0d5aa743ddeac84b1914d7f26287438e7eb99:initial/src/main/java/com/example/restservice/RestServiceApplication.java",
+        "path": "initial/src/main/java/com/example/restservice/RestServiceApplication.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.5,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "acd0d5aa743ddeac84b1914d7f26287438e7eb99:initial/src/main/java/com/example/restservice/RestServiceApplication.java",
+        "path": "initial/src/main/java/com/example/restservice/RestServiceApplication.java",
+        "frequency": 1,
+        "maxCcn": 1,
+        "hotspot": 0.4082482904638629,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.0917517095361371,
+      "relativeDelta": -0.1835034190722742,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": [
+        "389429a7345a718c27a77cabc495cf7ea68bbaee"
+      ]
+    },
+    {
+      "lineageKey": "acd0d5aa743ddeac84b1914d7f26287438e7eb99:initial/src/test/java/com/example/restservice/RestServiceApplicationTests.java",
+      "beforePath": "initial/src/test/java/com/example/restservice/RestServiceApplicationTests.java",
+      "afterPath": "initial/src/test/java/com/example/restservice/RestServiceApplicationTests.java",
+      "before": {
+        "lineageKey": "acd0d5aa743ddeac84b1914d7f26287438e7eb99:initial/src/test/java/com/example/restservice/RestServiceApplicationTests.java",
+        "path": "initial/src/test/java/com/example/restservice/RestServiceApplicationTests.java",
+        "frequency": 0,
+        "maxCcn": 1,
+        "hotspot": 0.5,
+        "unavailableReason": null
+      },
+      "after": {
+        "lineageKey": "acd0d5aa743ddeac84b1914d7f26287438e7eb99:initial/src/test/java/com/example/restservice/RestServiceApplicationTests.java",
+        "path": "initial/src/test/java/com/example/restservice/RestServiceApplicationTests.java",
+        "frequency": 1,
+        "maxCcn": 1,
+        "hotspot": 0.4082482904638629,
+        "unavailableReason": null
+      },
+      "hotspotDelta": -0.0917517095361371,
+      "relativeDelta": -0.1835034190722742,
+      "relativeStatus": "AVAILABLE",
+      "candidateIncrease": false,
+      "evidenceCommits": [
+        "389429a7345a718c27a77cabc495cf7ea68bbaee"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+repository,windowEnd,selectedCommits,javaFiles,hotspotPopulation,ambiguousFiles,coverageComplete
+gs-rest-service,2024-01-01T00:00:00Z,4,6,4,2,False
+gs-rest-service,2025-01-01T00:00:00Z,0,6,4,2,False
+gs-rest-service,2026-01-01T00:00:00Z,12,6,4,2,False
+spring-petclinic,2024-01-01T00:00:00Z,18,40,20,10,False
+spring-petclinic,2025-01-01T00:00:00Z,36,40,21,9,False
+spring-petclinic,2026-01-01T00:00:00Z,29,47,22,13,False
+commons-cli,2024-01-01T00:00:00Z,99,52,6,45,False
+commons-cli,2025-01-01T00:00:00Z,171,85,36,47,False
+commons-cli,2026-01-01T00:00:00Z,181,87,38,47,False
