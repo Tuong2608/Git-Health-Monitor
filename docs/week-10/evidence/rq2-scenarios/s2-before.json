@@ -1,0 +1,86 @@
+{
+  "schemaVersion" : 1,
+  "repositoryUrl" : "https://github.com/fixture/s2-rename",
+  "headSha" : "3cfb8c42eae163cbec9f2d3e76e809320e4d2aca",
+  "windowStart" : "2025-01-02T00:00:00Z",
+  "windowEnd" : "2025-07-01T00:00:00Z",
+  "config" : "{\"metricVersion\":\"metric-v1\",\"pipelineVersion\":\"git-metrics-v2\",\"lizardVersion\":\"1.24.3\",\"jgitVersion\":\"7.8.0.202609011348-r\",\"authorAliases\":{},\"excludedPrefixes\":[\"vendor/\",\"generated/\",\"target/\",\"build/\"],\"maxCommits\":10000,\"maxTreeEntries\":100000,\"maxBlobBytes\":2097152,\"maxFacts\":500000,\"filterLargeChangesets\":false,\"maxChangesetFiles\":30,\"renameScore\":60,\"renameLimit\":1000}",
+  "metricVersion" : "metric-v1",
+  "reachableCommits" : 2,
+  "commitCount" : 2,
+  "truncated" : false,
+  "summary" : {
+    "coverageComplete" : true,
+    "reachableCommits" : 2,
+    "selectedCommits" : 2,
+    "currentJavaFiles" : 3,
+    "hotspotPopulation" : 3,
+    "ambiguousFiles" : 0,
+    "noFunctionFiles" : 0,
+    "filterLargeChangesets" : false,
+    "qualityFlags" : [ ]
+  },
+  "files" : [ {
+    "lineageKey" : "e11cd7000e3a4ecb62268d35c61b94648e23f59a:src/High.java",
+    "path" : "src/High.java",
+    "frequency" : 2,
+    "maxCcn" : 4,
+    "hotspot" : 0.8660254037844386,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e11cd7000e3a4ecb62268d35c61b94648e23f59a:src/LegacyService.java",
+    "path" : "src/LegacyService.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e11cd7000e3a4ecb62268d35c61b94648e23f59a:src/Mid.java",
+    "path" : "src/Mid.java",
+    "frequency" : 2,
+    "maxCcn" : 3,
+    "hotspot" : 0.6123724356957945,
+    "unavailableReason" : null
+  } ],
+  "facts" : [ {
+    "commitSha" : "e11cd7000e3a4ecb62268d35c61b94648e23f59a",
+    "committerTime" : "2025-02-01T10:00:00Z",
+    "lineageKey" : "e11cd7000e3a4ecb62268d35c61b94648e23f59a:src/High.java",
+    "oldPath" : null,
+    "newPath" : "src/High.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e11cd7000e3a4ecb62268d35c61b94648e23f59a",
+    "committerTime" : "2025-02-01T10:00:00Z",
+    "lineageKey" : "e11cd7000e3a4ecb62268d35c61b94648e23f59a:src/LegacyService.java",
+    "oldPath" : null,
+    "newPath" : "src/LegacyService.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e11cd7000e3a4ecb62268d35c61b94648e23f59a",
+    "committerTime" : "2025-02-01T10:00:00Z",
+    "lineageKey" : "e11cd7000e3a4ecb62268d35c61b94648e23f59a:src/Mid.java",
+    "oldPath" : null,
+    "newPath" : "src/Mid.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "3cfb8c42eae163cbec9f2d3e76e809320e4d2aca",
+    "committerTime" : "2025-02-10T10:00:00Z",
+    "lineageKey" : "e11cd7000e3a4ecb62268d35c61b94648e23f59a:src/High.java",
+    "oldPath" : "src/High.java",
+    "newPath" : "src/High.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "3cfb8c42eae163cbec9f2d3e76e809320e4d2aca",
+    "committerTime" : "2025-02-10T10:00:00Z",
+    "lineageKey" : "e11cd7000e3a4ecb62268d35c61b94648e23f59a:src/Mid.java",
+    "oldPath" : "src/Mid.java",
+    "newPath" : "src/Mid.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  } ]
+}

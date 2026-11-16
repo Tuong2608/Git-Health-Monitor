@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "kind": "RQ2_COMPLETE_SCENARIO_AND_PILOT_AUDIT",
+  "scenariosPassed": 5,
+  "scenariosTotal": 5,
+  "scenarios": [
+    {
+      "id": "S1_REAL_HOTSPOT_REGRESSION",
+      "title": "Tăng rủi ro thực sự khi tần suất và độ phức tạp cùng tăng",
+      "status": "COMPARABLE",
+      "alertCandidates": 1,
+      "targetFile": "A.java",
+      "hotspotBefore": 0,
+      "hotspotAfter": 1,
+      "hotspotDelta": 1.0,
+      "evidenceCommits": [
+        "60b45df504d8160a2ee94012987ebb2a86c7b408",
+        "9244cde1eef08e9a2ac6da6118b38603cf694225",
+        "b21b5be753f2beb906a2d772dcb707e0eb6c7921"
+      ],
+      "passed": true
+    },
+    {
+      "id": "S2_RENAME_LINEAGE_PRESERVED",
+      "title": "Đổi tên tập tin vẫn giữ chung lineageKey và phát hiện tăng rủi ro",
+      "status": "COMPARABLE",
+      "alertCandidates": 1,
+      "beforePath": "src/LegacyService.java",
+      "afterPath": "src/RenamedService.java",
+      "lineageKey": "e11cd7000e3a4ecb62268d35c61b94648e23f59a:src/LegacyService.java",
+      "hotspotBefore": 0,
+      "hotspotAfter": 1,
+      "hotspotDelta": 1.0,
+      "added": [],
+      "removed": [],
+      "evidenceCommits": [
+        "03af705d1699e8fdc3d55e0984f36c428e83e5c6",
+        "423fcf4cbbdd6499d0d4afcfa5c2d7be110e1972",
+        "a8f1bd5c5af98e1714f3e35c2cc2b7400b06f3d4"
+      ],
+      "passed": true
+    },
+    {
+      "id": "S3_WINDOW_SLIDE_NO_NEW_COMMITS",
+      "title": "Trượt cửa sổ thời gian làm giảm hotspot dù maxCcn giữ nguyên (tránh kết luận nhầm đã sửa code)",
+      "status": "COMPARABLE",
+      "alertCandidates": 0,
+      "targetFile": "StableComplex.java",
+      "freqBefore": 3,
+      "freqAfter": 0,
+      "ccnBefore": 5,
+      "ccnAfter": 5,
+      "hotspotBefore": 0.8660254037844386,
+      "hotspotAfter": 0.5,
+      "hotspotDelta": -0.3660254037844386,
+      "evidenceCommits": [],
+      "passed": true
+    },
+    {
+      "id": "S4_THRESHOLD_BOUNDARY_DECIMAL",
+      "title": "Kiểm chứng biên ngưỡng chính xác +0.15 bằng Decimal (0.40 -> 0.55 không báo giả, vượt >0.15 mới báo)",
+      "exactBoundaryStep": {
+        "status": "COMPARABLE",
+        "alertCandidates": 0,
+        "targetFile": "F08.java",
+        "hotspotBefore": 0.4,
+        "hotspotAfter": 0.55,
+        "hotspotDelta": 0.15,
+        "candidateIncrease": false
+      },
+      "aboveBoundaryStep": {
+        "status": "COMPARABLE",
+        "alertCandidates": 1,
+        "targetFile": "F08.java",
+        "hotspotBefore": 0.55,
+        "hotspotAfter": 0.775,
+        "hotspotDelta": 0.225,
+        "candidateIncrease": true
+      },
+      "passed": true
+    },
+    {
+      "id": "S5_SAFETY_BLOCKERS",
+      "title": "Chặn cảnh báo an toàn khi vướng LINEAGE_AMBIGUOUS qua merge hoặc lệch độ dài cửa sổ",
+      "mergeCoverageCheck": {
+        "status": "BLOCKED",
+        "blockers": [
+          "INCOMPLETE_COVERAGE"
+        ],
+        "alertCandidates": null,
+        "diagnosticChangesOnly": true,
+        "ambiguousFilesAfter": 1
+      },
+      "windowMismatchCheck": {
+        "status": "BLOCKED",
+        "blockers": [
+          "WINDOW_DURATION_CHANGED"
+        ],
+        "alertCandidates": null
+      },
+      "passed": true
+    }
+  ],
+  "pilotAudit": {
+    "totalSnapshots": 9,
+    "succeededSnapshots": 9,
+    "totalComparisons": 6,
+    "comparablePairs": 0,
+    "blockedPairs": 6,
+    "comparisons": [
+      {
+        "repository": "gs-rest-service",
+        "comparisonFile": "gs-rest-service-0-to-1.json",
+        "status": "BLOCKED",
+        "blockers": [
+          "INCOMPLETE_COVERAGE"
+        ],
+        "comparableCommonFiles": 4,
+        "verifiedTraceabilityCount": 4,
+        "topDiagnosticChange": {
+          "path": "complete/src/test/java/com/example/restservice/GreetingControllerTests.java",
+          "freqBefore": 0,
+          "freqAfter": 0,
+          "ccnBefore": 1,
+          "ccnAfter": 1,
+          "hotspotBefore": 0.5,
+          "hotspotAfter": 0.5,
+          "hotspotDelta": 0.0,
+          "evidenceCommitCount": 0
+        }
+      },
+      {
+        "repository": "gs-rest-service",
+        "comparisonFile": "gs-rest-service-1-to-2.json",
+        "status": "BLOCKED",
+        "blockers": [
+          "INCOMPLETE_COVERAGE"
+        ],
+        "comparableCommonFiles": 4,
+        "verifiedTraceabilityCount": 4,
+        "topDiagnosticChange": {
+          "path": "complete/src/test/java/com/example/restservice/GreetingControllerTests.java",
+          "freqBefore": 0,
+          "freqAfter": 2,
+          "ccnBefore": 1,
+          "ccnAfter": 1,
+          "hotspotBefore": 0.5,
+          "hotspotAfter": 0.7071067811865475,
+          "hotspotDelta": 0.2071067811865475,
+          "evidenceCommitCount": 2
+        }
+      },
+      {
+        "repository": "spring-petclinic",
+        "comparisonFile": "spring-petclinic-0-to-1.json",
+        "status": "BLOCKED",
+        "blockers": [
+          "INCOMPLETE_COVERAGE"
+        ],
+        "comparableCommonFiles": 20,
+        "verifiedTraceabilityCount": 20,
+        "topDiagnosticChange": {
+          "path": "src/main/java/org/springframework/samples/petclinic/owner/PetValidator.java",
+          "freqBefore": 1,
+          "freqAfter": 0,
+          "ccnBefore": 5,
+          "ccnAfter": 5,
+          "hotspotBefore": 0.8429272304235246,
+          "hotspotAfter": 0.4472135954999579,
+          "hotspotDelta": -0.3957136349235667,
+          "evidenceCommitCount": 0
+        }
+      },
+      {
+        "repository": "spring-petclinic",
+        "comparisonFile": "spring-petclinic-1-to-2.json",
+        "status": "BLOCKED",
+        "blockers": [
+          "INCOMPLETE_COVERAGE"
+        ],
+        "comparableCommonFiles": 21,
+        "verifiedTraceabilityCount": 21,
+        "topDiagnosticChange": {
+          "path": "src/test/java/org/springframework/samples/petclinic/vet/VetTests.java",
+          "freqBefore": 2,
+          "freqAfter": 0,
+          "ccnBefore": 1,
+          "ccnAfter": 1,
+          "hotspotBefore": 0.5099019513592785,
+          "hotspotAfter": 0.2020305089104422,
+          "hotspotDelta": -0.3078714424488363,
+          "evidenceCommitCount": 0
+        }
+      },
+      {
+        "repository": "commons-cli",
+        "comparisonFile": "commons-cli-0-to-1.json",
+        "status": "BLOCKED",
+        "blockers": [
+          "INCOMPLETE_COVERAGE"
+        ],
+        "comparableCommonFiles": 6,
+        "verifiedTraceabilityCount": 6,
+        "topDiagnosticChange": {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI252Test.java",
+          "freqBefore": 1,
+          "freqAfter": 0,
+          "ccnBefore": 1,
+          "ccnAfter": 1,
+          "hotspotBefore": 0.3741657386773941,
+          "hotspotAfter": 0.1818274580193979,
+          "hotspotDelta": -0.1923382806579962,
+          "evidenceCommitCount": 0
+        }
+      },
+      {
+        "repository": "commons-cli",
+        "comparisonFile": "commons-cli-1-to-2.json",
+        "status": "BLOCKED",
+        "blockers": [
+          "INCOMPLETE_COVERAGE"
+        ],
+        "comparableCommonFiles": 36,
+        "verifiedTraceabilityCount": 36,
+        "topDiagnosticChange": {
+          "path": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+          "freqBefore": 9,
+          "freqAfter": 0,
+          "ccnBefore": 7,
+          "ccnAfter": 7,
+          "hotspotBefore": 0.8427360687858644,
+          "hotspotAfter": 0.3981329692609793,
+          "hotspotDelta": -0.4446030995248851,
+          "evidenceCommitCount": 0
+        }
+      }
+    ]
+  }
+}

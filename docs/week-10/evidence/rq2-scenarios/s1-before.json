@@ -1,0 +1,86 @@
+{
+  "schemaVersion" : 1,
+  "repositoryUrl" : "https://github.com/fixture/s1-regression",
+  "headSha" : "94900cd193c2a15c7f07eb2a809769d5e051454f",
+  "windowStart" : "2025-01-02T00:00:00Z",
+  "windowEnd" : "2025-07-01T00:00:00Z",
+  "config" : "{\"metricVersion\":\"metric-v1\",\"pipelineVersion\":\"git-metrics-v2\",\"lizardVersion\":\"1.24.3\",\"jgitVersion\":\"7.8.0.202609011348-r\",\"authorAliases\":{},\"excludedPrefixes\":[\"vendor/\",\"generated/\",\"target/\",\"build/\"],\"maxCommits\":10000,\"maxTreeEntries\":100000,\"maxBlobBytes\":2097152,\"maxFacts\":500000,\"filterLargeChangesets\":false,\"maxChangesetFiles\":30,\"renameScore\":60,\"renameLimit\":1000}",
+  "metricVersion" : "metric-v1",
+  "reachableCommits" : 2,
+  "commitCount" : 2,
+  "truncated" : false,
+  "summary" : {
+    "coverageComplete" : true,
+    "reachableCommits" : 2,
+    "selectedCommits" : 2,
+    "currentJavaFiles" : 3,
+    "hotspotPopulation" : 3,
+    "ambiguousFiles" : 0,
+    "noFunctionFiles" : 0,
+    "filterLargeChangesets" : false,
+    "qualityFlags" : [ ]
+  },
+  "files" : [ {
+    "lineageKey" : "545814412f299aca0f4c66a58bd5b3339156b636:A.java",
+    "path" : "A.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "545814412f299aca0f4c66a58bd5b3339156b636:B.java",
+    "path" : "B.java",
+    "frequency" : 2,
+    "maxCcn" : 2,
+    "hotspot" : 0.6123724356957945,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "545814412f299aca0f4c66a58bd5b3339156b636:C.java",
+    "path" : "C.java",
+    "frequency" : 2,
+    "maxCcn" : 4,
+    "hotspot" : 0.8660254037844386,
+    "unavailableReason" : null
+  } ],
+  "facts" : [ {
+    "commitSha" : "545814412f299aca0f4c66a58bd5b3339156b636",
+    "committerTime" : "2025-02-01T10:00:00Z",
+    "lineageKey" : "545814412f299aca0f4c66a58bd5b3339156b636:A.java",
+    "oldPath" : null,
+    "newPath" : "A.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "545814412f299aca0f4c66a58bd5b3339156b636",
+    "committerTime" : "2025-02-01T10:00:00Z",
+    "lineageKey" : "545814412f299aca0f4c66a58bd5b3339156b636:B.java",
+    "oldPath" : null,
+    "newPath" : "B.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "545814412f299aca0f4c66a58bd5b3339156b636",
+    "committerTime" : "2025-02-01T10:00:00Z",
+    "lineageKey" : "545814412f299aca0f4c66a58bd5b3339156b636:C.java",
+    "oldPath" : null,
+    "newPath" : "C.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "94900cd193c2a15c7f07eb2a809769d5e051454f",
+    "committerTime" : "2025-02-10T10:00:00Z",
+    "lineageKey" : "545814412f299aca0f4c66a58bd5b3339156b636:B.java",
+    "oldPath" : "B.java",
+    "newPath" : "B.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "94900cd193c2a15c7f07eb2a809769d5e051454f",
+    "committerTime" : "2025-02-10T10:00:00Z",
+    "lineageKey" : "545814412f299aca0f4c66a58bd5b3339156b636:C.java",
+    "oldPath" : "C.java",
+    "newPath" : "C.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  } ]
+}

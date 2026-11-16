@@ -1,0 +1,55 @@
+{
+  "schemaVersion" : 1,
+  "repositoryUrl" : "https://github.com/fixture/s5-blockers",
+  "headSha" : "7025bafaaa55af289c473a5cc9bc9ea378e50232",
+  "windowStart" : "2025-01-02T00:00:00Z",
+  "windowEnd" : "2025-07-01T00:00:00Z",
+  "config" : "{\"metricVersion\":\"metric-v1\",\"pipelineVersion\":\"git-metrics-v2\",\"lizardVersion\":\"1.24.3\",\"jgitVersion\":\"7.8.0.202609011348-r\",\"authorAliases\":{},\"excludedPrefixes\":[\"vendor/\",\"generated/\",\"target/\",\"build/\"],\"maxCommits\":10000,\"maxTreeEntries\":100000,\"maxBlobBytes\":2097152,\"maxFacts\":500000,\"filterLargeChangesets\":false,\"maxChangesetFiles\":30,\"renameScore\":60,\"renameLimit\":1000}",
+  "metricVersion" : "metric-v1",
+  "reachableCommits" : 1,
+  "commitCount" : 1,
+  "truncated" : false,
+  "summary" : {
+    "coverageComplete" : true,
+    "reachableCommits" : 1,
+    "selectedCommits" : 1,
+    "currentJavaFiles" : 2,
+    "hotspotPopulation" : 2,
+    "ambiguousFiles" : 0,
+    "noFunctionFiles" : 0,
+    "filterLargeChangesets" : false,
+    "qualityFlags" : [ ]
+  },
+  "files" : [ {
+    "lineageKey" : "7025bafaaa55af289c473a5cc9bc9ea378e50232:Main.java",
+    "path" : "Main.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7025bafaaa55af289c473a5cc9bc9ea378e50232:Peer.java",
+    "path" : "Peer.java",
+    "frequency" : 1,
+    "maxCcn" : 2,
+    "hotspot" : 0.7071067811865475,
+    "unavailableReason" : null
+  } ],
+  "facts" : [ {
+    "commitSha" : "7025bafaaa55af289c473a5cc9bc9ea378e50232",
+    "committerTime" : "2025-02-01T10:00:00Z",
+    "lineageKey" : "7025bafaaa55af289c473a5cc9bc9ea378e50232:Main.java",
+    "oldPath" : null,
+    "newPath" : "Main.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "7025bafaaa55af289c473a5cc9bc9ea378e50232",
+    "committerTime" : "2025-02-01T10:00:00Z",
+    "lineageKey" : "7025bafaaa55af289c473a5cc9bc9ea378e50232:Peer.java",
+    "oldPath" : null,
+    "newPath" : "Peer.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  } ]
+}

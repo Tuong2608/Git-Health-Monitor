@@ -1,0 +1,70 @@
+{
+  "schemaVersion" : 1,
+  "repositoryUrl" : "https://github.com/fixture/s2-rename",
+  "headSha" : "a8f1bd5c5af98e1714f3e35c2cc2b7400b06f3d4",
+  "windowStart" : "2025-03-05T00:00:00Z",
+  "windowEnd" : "2025-09-01T00:00:00Z",
+  "config" : "{\"metricVersion\":\"metric-v1\",\"pipelineVersion\":\"git-metrics-v2\",\"lizardVersion\":\"1.24.3\",\"jgitVersion\":\"7.8.0.202609011348-r\",\"authorAliases\":{},\"excludedPrefixes\":[\"vendor/\",\"generated/\",\"target/\",\"build/\"],\"maxCommits\":10000,\"maxTreeEntries\":100000,\"maxBlobBytes\":2097152,\"maxFacts\":500000,\"filterLargeChangesets\":false,\"maxChangesetFiles\":30,\"renameScore\":60,\"renameLimit\":1000}",
+  "metricVersion" : "metric-v1",
+  "reachableCommits" : 5,
+  "commitCount" : 3,
+  "truncated" : false,
+  "summary" : {
+    "coverageComplete" : true,
+    "reachableCommits" : 5,
+    "selectedCommits" : 3,
+    "currentJavaFiles" : 3,
+    "hotspotPopulation" : 3,
+    "ambiguousFiles" : 0,
+    "noFunctionFiles" : 0,
+    "filterLargeChangesets" : false,
+    "qualityFlags" : [ ]
+  },
+  "files" : [ {
+    "lineageKey" : "e11cd7000e3a4ecb62268d35c61b94648e23f59a:src/High.java",
+    "path" : "src/High.java",
+    "frequency" : 0,
+    "maxCcn" : 4,
+    "hotspot" : 0.3535533905932738,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e11cd7000e3a4ecb62268d35c61b94648e23f59a:src/LegacyService.java",
+    "path" : "src/RenamedService.java",
+    "frequency" : 3,
+    "maxCcn" : 7,
+    "hotspot" : 1,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e11cd7000e3a4ecb62268d35c61b94648e23f59a:src/Mid.java",
+    "path" : "src/Mid.java",
+    "frequency" : 0,
+    "maxCcn" : 3,
+    "hotspot" : 0.0,
+    "unavailableReason" : null
+  } ],
+  "facts" : [ {
+    "commitSha" : "03af705d1699e8fdc3d55e0984f36c428e83e5c6",
+    "committerTime" : "2025-07-05T10:00:00Z",
+    "lineageKey" : "e11cd7000e3a4ecb62268d35c61b94648e23f59a:src/LegacyService.java",
+    "oldPath" : "src/LegacyService.java",
+    "newPath" : "src/RenamedService.java",
+    "changeType" : "RENAME",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "423fcf4cbbdd6499d0d4afcfa5c2d7be110e1972",
+    "committerTime" : "2025-07-15T10:00:00Z",
+    "lineageKey" : "e11cd7000e3a4ecb62268d35c61b94648e23f59a:src/LegacyService.java",
+    "oldPath" : "src/RenamedService.java",
+    "newPath" : "src/RenamedService.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "a8f1bd5c5af98e1714f3e35c2cc2b7400b06f3d4",
+    "committerTime" : "2025-08-01T10:00:00Z",
+    "lineageKey" : "e11cd7000e3a4ecb62268d35c61b94648e23f59a:src/LegacyService.java",
+    "oldPath" : "src/RenamedService.java",
+    "newPath" : "src/RenamedService.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  } ]
+}

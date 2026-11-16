@@ -384,7 +384,7 @@ class LlmReviewServiceTests {
             server.createContext("/v1/chat/completions", exchange -> {
                 httpCalls.incrementAndGet();
                 try {
-                    Thread.sleep(1500);
+                    Thread.sleep(4000);
                 } catch (InterruptedException ignored) {
                     Thread.currentThread().interrupt();
                 }
@@ -403,7 +403,7 @@ class LlmReviewServiceTests {
                     "test-api-key-12345",
                     16_384,
                     2048,
-                    Duration.ofSeconds(1),
+                    Duration.ofSeconds(3),
                     Duration.ofSeconds(5),
                     Duration.ofMillis(200)));
             var service = new LlmReviewService(adapter);
@@ -414,8 +414,8 @@ class LlmReviewServiceTests {
                     .isEqualTo(new Failure(ReviewError.DEADLINE_EXCEEDED, true));
             assertThat(httpCalls.get()).isZero();
 
-            // 2. Slow upstream exceeds remaining deadline (500ms budget vs 1500ms upstream sleep)
-            var tightBudget = new ReviewBudget(Instant.now().plusMillis(500), 8000, 1000, 16_384, () -> false);
+            // 2. Slow upstream exceeds remaining deadline (2000ms budget vs 4000ms upstream sleep)
+            var tightBudget = new ReviewBudget(Instant.now().plusMillis(2000), 8000, 1000, 16_384, () -> false);
             assertThat(service.review(validContext("class A {}\n", defaultAllowlist()), tightBudget))
                     .isEqualTo(new Failure(ReviewError.DEADLINE_EXCEEDED, true));
             assertThat(httpCalls.get()).isEqualTo(1);
