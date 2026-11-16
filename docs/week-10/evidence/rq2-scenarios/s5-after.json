@@ -1,0 +1,62 @@
+{
+  "schemaVersion" : 1,
+  "repositoryUrl" : "https://github.com/fixture/s5-blockers",
+  "headSha" : "a59d3e1805154ddc36c580595b14a458e0e9bee0",
+  "windowStart" : "2025-03-05T00:00:00Z",
+  "windowEnd" : "2025-09-01T00:00:00Z",
+  "config" : "{\"metricVersion\":\"metric-v1\",\"pipelineVersion\":\"git-metrics-v2\",\"lizardVersion\":\"1.24.3\",\"jgitVersion\":\"7.8.0.202609011348-r\",\"authorAliases\":{},\"excludedPrefixes\":[\"vendor/\",\"generated/\",\"target/\",\"build/\"],\"maxCommits\":10000,\"maxTreeEntries\":100000,\"maxBlobBytes\":2097152,\"maxFacts\":500000,\"filterLargeChangesets\":false,\"maxChangesetFiles\":30,\"renameScore\":60,\"renameLimit\":1000}",
+  "metricVersion" : "metric-v1",
+  "reachableCommits" : 4,
+  "commitCount" : 2,
+  "truncated" : false,
+  "summary" : {
+    "coverageComplete" : false,
+    "reachableCommits" : 4,
+    "selectedCommits" : 2,
+    "currentJavaFiles" : 3,
+    "hotspotPopulation" : 2,
+    "ambiguousFiles" : 1,
+    "noFunctionFiles" : 0,
+    "filterLargeChangesets" : false,
+    "qualityFlags" : [ "LINEAGE_AMBIGUOUS" ]
+  },
+  "files" : [ {
+    "lineageKey" : "7025bafaaa55af289c473a5cc9bc9ea378e50232:Main.java",
+    "path" : "Main.java",
+    "frequency" : 1,
+    "maxCcn" : 6,
+    "hotspot" : 1,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "7025bafaaa55af289c473a5cc9bc9ea378e50232:Peer.java",
+    "path" : "Peer.java",
+    "frequency" : 0,
+    "maxCcn" : 2,
+    "hotspot" : 0,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "a59d3e1805154ddc36c580595b14a458e0e9bee0:BranchOnly.java",
+    "path" : "BranchOnly.java",
+    "frequency" : null,
+    "maxCcn" : 2,
+    "hotspot" : null,
+    "unavailableReason" : "LINEAGE_AMBIGUOUS"
+  } ],
+  "facts" : [ {
+    "commitSha" : "525d52cf88cf3bc491e5399dda148bed8a7f745c",
+    "committerTime" : "2025-07-10T10:00:00Z",
+    "lineageKey" : "525d52cf88cf3bc491e5399dda148bed8a7f745c:BranchOnly.java",
+    "oldPath" : null,
+    "newPath" : "BranchOnly.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "9b16fa0021e33c4f440a5b6f23bad414ef8911ed",
+    "committerTime" : "2025-07-15T10:00:00Z",
+    "lineageKey" : "7025bafaaa55af289c473a5cc9bc9ea378e50232:Main.java",
+    "oldPath" : "Main.java",
+    "newPath" : "Main.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  } ]
+}

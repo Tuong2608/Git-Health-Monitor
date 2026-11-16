@@ -1,0 +1,164 @@
+{
+  "schemaVersion" : 1,
+  "repositoryUrl" : "https://github.com/fixture/s3-window-slide",
+  "headSha" : "818c9f60bf156f8b0c2476e5f8b2482131ec3eec",
+  "windowStart" : "2025-01-02T00:00:00Z",
+  "windowEnd" : "2025-07-01T00:00:00Z",
+  "config" : "{\"metricVersion\":\"metric-v1\",\"pipelineVersion\":\"git-metrics-v2\",\"lizardVersion\":\"1.24.3\",\"jgitVersion\":\"7.8.0.202609011348-r\",\"authorAliases\":{},\"excludedPrefixes\":[\"vendor/\",\"generated/\",\"target/\",\"build/\"],\"maxCommits\":10000,\"maxTreeEntries\":100000,\"maxBlobBytes\":2097152,\"maxFacts\":500000,\"filterLargeChangesets\":false,\"maxChangesetFiles\":30,\"renameScore\":60,\"renameLimit\":1000}",
+  "metricVersion" : "metric-v1",
+  "reachableCommits" : 8,
+  "commitCount" : 8,
+  "truncated" : false,
+  "summary" : {
+    "coverageComplete" : true,
+    "reachableCommits" : 8,
+    "selectedCommits" : 8,
+    "currentJavaFiles" : 5,
+    "hotspotPopulation" : 5,
+    "ambiguousFiles" : 0,
+    "noFunctionFiles" : 0,
+    "filterLargeChangesets" : false,
+    "qualityFlags" : [ ]
+  },
+  "files" : [ {
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:Anchor.java",
+    "path" : "Anchor.java",
+    "frequency" : 6,
+    "maxCcn" : 4,
+    "hotspot" : 0.8660254037844386,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:Peer1.java",
+    "path" : "Peer1.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.125,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:Peer2.java",
+    "path" : "Peer2.java",
+    "frequency" : 1,
+    "maxCcn" : 1,
+    "hotspot" : 0.125,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:Peer3.java",
+    "path" : "Peer3.java",
+    "frequency" : 2,
+    "maxCcn" : 2,
+    "hotspot" : 0.5,
+    "unavailableReason" : null
+  }, {
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:StableComplex.java",
+    "path" : "StableComplex.java",
+    "frequency" : 3,
+    "maxCcn" : 5,
+    "hotspot" : 0.8660254037844386,
+    "unavailableReason" : null
+  } ],
+  "facts" : [ {
+    "commitSha" : "e9ef28d2e761b45c5df32b302a7411b13adb4813",
+    "committerTime" : "2025-01-10T10:00:00Z",
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:Anchor.java",
+    "oldPath" : null,
+    "newPath" : "Anchor.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9ef28d2e761b45c5df32b302a7411b13adb4813",
+    "committerTime" : "2025-01-10T10:00:00Z",
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:Peer1.java",
+    "oldPath" : null,
+    "newPath" : "Peer1.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9ef28d2e761b45c5df32b302a7411b13adb4813",
+    "committerTime" : "2025-01-10T10:00:00Z",
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:Peer2.java",
+    "oldPath" : null,
+    "newPath" : "Peer2.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9ef28d2e761b45c5df32b302a7411b13adb4813",
+    "committerTime" : "2025-01-10T10:00:00Z",
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:Peer3.java",
+    "oldPath" : null,
+    "newPath" : "Peer3.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "e9ef28d2e761b45c5df32b302a7411b13adb4813",
+    "committerTime" : "2025-01-10T10:00:00Z",
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:StableComplex.java",
+    "oldPath" : null,
+    "newPath" : "StableComplex.java",
+    "changeType" : "ADD",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "4d60c0c90f26b93d8776866b094dc56ab2ec1a94",
+    "committerTime" : "2025-01-15T10:00:00Z",
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:StableComplex.java",
+    "oldPath" : "StableComplex.java",
+    "newPath" : "StableComplex.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "88077d0728a96cab3c8b9e7eb1710f0ed257ecec",
+    "committerTime" : "2025-01-20T10:00:00Z",
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:StableComplex.java",
+    "oldPath" : "StableComplex.java",
+    "newPath" : "StableComplex.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "2dde2875220afa6cb5c5f1589efa5c15032307a1",
+    "committerTime" : "2025-05-01T10:00:00Z",
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:Anchor.java",
+    "oldPath" : "Anchor.java",
+    "newPath" : "Anchor.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "98061d765a886a8d77d1987bb7e41ad90c8974dc",
+    "committerTime" : "2025-05-02T10:00:00Z",
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:Anchor.java",
+    "oldPath" : "Anchor.java",
+    "newPath" : "Anchor.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "1b51c898cd4414a3f7d3e48aba6fe2bf456f68a2",
+    "committerTime" : "2025-05-03T10:00:00Z",
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:Anchor.java",
+    "oldPath" : "Anchor.java",
+    "newPath" : "Anchor.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "8ee610a68e4bced85936a3bab4b8c6f46e265e36",
+    "committerTime" : "2025-05-04T10:00:00Z",
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:Anchor.java",
+    "oldPath" : "Anchor.java",
+    "newPath" : "Anchor.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "818c9f60bf156f8b0c2476e5f8b2482131ec3eec",
+    "committerTime" : "2025-06-15T10:00:00Z",
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:Anchor.java",
+    "oldPath" : "Anchor.java",
+    "newPath" : "Anchor.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  }, {
+    "commitSha" : "818c9f60bf156f8b0c2476e5f8b2482131ec3eec",
+    "committerTime" : "2025-06-15T10:00:00Z",
+    "lineageKey" : "e9ef28d2e761b45c5df32b302a7411b13adb4813:Peer3.java",
+    "oldPath" : "Peer3.java",
+    "newPath" : "Peer3.java",
+    "changeType" : "MODIFY",
+    "qualityFlags" : [ ]
+  } ]
+}

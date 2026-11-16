@@ -1,0 +1,785 @@
+{
+  "schemaVersion": 1,
+  "jacocoVersion": "0.8.12",
+  "scope": "NON_DB_UNIT_SUITES_ONLY",
+  "executedSuites": [
+    "LlmReviewServiceTests (12)",
+    "GitIngestionSampleTests (2)",
+    "GitIngestionTests (10)",
+    "HistoricalSnapshotExportTests (4)",
+    "RepositoryMetricAndPipelineTests (5)",
+    "GitHubRepositoryUrlTests (16)"
+  ],
+  "testsRun": 49,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "note": "SpringBootTest integration suites requiring PostgreSQL 18 (monitoring, repository stores/controllers, ReviewContextBuilder, AiReviewController) run on GitHub Actions CI with postgres:18; excluded in local offline run without local PostgreSQL.",
+  "totals": {
+    "instructionMissed": 6216,
+    "instructionCovered": 6968,
+    "branchMissed": 732,
+    "branchCovered": 529,
+    "lineMissed": 658,
+    "lineCovered": 1173,
+    "methodMissed": 168,
+    "methodCovered": 157,
+    "lineCoveragePct": 64.06,
+    "branchCoveragePct": 41.95,
+    "instructionCoveragePct": 52.85
+  },
+  "byPackage": {
+    "com.example.demo.aireview": {
+      "instructionMissed": 1167,
+      "instructionCovered": 1988,
+      "branchMissed": 198,
+      "branchCovered": 195,
+      "lineMissed": 151,
+      "lineCovered": 359,
+      "methodMissed": 26,
+      "methodCovered": 43,
+      "classes": 25,
+      "lineCoveragePct": 70.39,
+      "branchCoveragePct": 49.62,
+      "instructionCoveragePct": 63.01
+    },
+    "com.example.demo.monitoring": {
+      "instructionMissed": 4053,
+      "instructionCovered": 138,
+      "branchMissed": 360,
+      "branchCovered": 0,
+      "lineMissed": 347,
+      "lineCovered": 5,
+      "methodMissed": 96,
+      "methodCovered": 5,
+      "classes": 17,
+      "lineCoveragePct": 1.42,
+      "branchCoveragePct": 0.0,
+      "instructionCoveragePct": 3.29
+    },
+    "com.example.demo.gitanalyzer": {
+      "instructionMissed": 705,
+      "instructionCovered": 4729,
+      "branchMissed": 161,
+      "branchCovered": 313,
+      "lineMissed": 109,
+      "lineCovered": 793,
+      "methodMissed": 14,
+      "methodCovered": 106,
+      "classes": 22,
+      "lineCoveragePct": 87.92,
+      "branchCoveragePct": 66.03,
+      "instructionCoveragePct": 87.03
+    },
+    "com.example.demo.api": {
+      "instructionMissed": 94,
+      "instructionCovered": 0,
+      "branchMissed": 4,
+      "branchCovered": 0,
+      "lineMissed": 14,
+      "lineCovered": 0,
+      "methodMissed": 9,
+      "methodCovered": 0,
+      "classes": 2,
+      "lineCoveragePct": 0.0,
+      "branchCoveragePct": 0.0,
+      "instructionCoveragePct": 0.0
+    },
+    "com.example.demo.repository": {
+      "instructionMissed": 184,
+      "instructionCovered": 113,
+      "branchMissed": 9,
+      "branchCovered": 21,
+      "lineMissed": 32,
+      "lineCovered": 16,
+      "methodMissed": 19,
+      "methodCovered": 3,
+      "classes": 6,
+      "lineCoveragePct": 33.33,
+      "branchCoveragePct": 70.0,
+      "instructionCoveragePct": 38.05
+    },
+    "com.example.demo": {
+      "instructionMissed": 13,
+      "instructionCovered": 0,
+      "branchMissed": 0,
+      "branchCovered": 0,
+      "lineMissed": 5,
+      "lineCovered": 0,
+      "methodMissed": 4,
+      "methodCovered": 0,
+      "classes": 2,
+      "lineCoveragePct": 0.0,
+      "branchCoveragePct": null,
+      "instructionCoveragePct": 0.0
+    }
+  },
+  "classes": [
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService.Failure",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService.Success",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService.ReviewOutput",
+      "lineCovered": 6,
+      "lineTotal": 6,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "AiReviewController",
+      "lineCovered": 0,
+      "lineTotal": 38,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 33
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService.ProviderResponse",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService.Window",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService.MetricEvidence",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService.VerifiedReviewContext",
+      "lineCovered": 5,
+      "lineTotal": 6,
+      "lineCoveragePct": 83.33,
+      "branchCovered": 2,
+      "branchTotal": 4
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "AiReviewController.Selection",
+      "lineCovered": 0,
+      "lineTotal": 1,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "ReviewContextBuilder",
+      "lineCovered": 0,
+      "lineTotal": 43,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 32
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "HttpLlmProviderAdapter.ProviderConfiguration",
+      "lineCovered": 0,
+      "lineTotal": 5,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService.SourceExcerpt",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService",
+      "lineCovered": 217,
+      "lineTotal": 260,
+      "lineCoveragePct": 83.46,
+      "branchCovered": 140,
+      "branchTotal": 232
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService.DiffEvidence",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService.RenderedPrompt",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService.ReviewError",
+      "lineCovered": 12,
+      "lineTotal": 12,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "HttpLlmProviderAdapter",
+      "lineCovered": 86,
+      "lineTotal": 97,
+      "lineCoveragePct": 88.66,
+      "branchCovered": 30,
+      "branchTotal": 52
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService.ReviewMetadata",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService.Advice",
+      "lineCovered": 3,
+      "lineTotal": 3,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService.EvidenceReference",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService.Evidence",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "ReviewContextBuilder.PublicCheckConfiguration",
+      "lineCovered": 0,
+      "lineTotal": 6,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 2
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "HttpLlmProviderAdapter.Config",
+      "lineCovered": 17,
+      "lineTotal": 20,
+      "lineCoveragePct": 85.0,
+      "branchCovered": 23,
+      "branchTotal": 38
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService.ConsentReceipt",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.aireview",
+      "class": "LlmReviewService.ReviewBudget",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.monitoring",
+      "class": "AlertService.EvaluationFailure",
+      "lineCovered": 0,
+      "lineTotal": 1,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.monitoring",
+      "class": "AlertService.RuleRequest",
+      "lineCovered": 0,
+      "lineTotal": 1,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.monitoring",
+      "class": "MonitoringStore",
+      "lineCovered": 0,
+      "lineTotal": 67,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 32
+    },
+    {
+      "package": "com.example.demo.monitoring",
+      "class": "AnalysisPipeline.Contribution",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.monitoring",
+      "class": "AnalysisWorker",
+      "lineCovered": 0,
+      "lineTotal": 49,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 20
+    },
+    {
+      "package": "com.example.demo.monitoring",
+      "class": "AnalysisPipeline.FileData",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.monitoring",
+      "class": "SnapshotPublisher",
+      "lineCovered": 0,
+      "lineTotal": 57,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 124
+    },
+    {
+      "package": "com.example.demo.monitoring",
+      "class": "MonitoringController.AnalysisRequest",
+      "lineCovered": 0,
+      "lineTotal": 1,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.monitoring",
+      "class": "SnapshotQueryController",
+      "lineCovered": 0,
+      "lineTotal": 8,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.monitoring",
+      "class": "MonitoringController.ScheduleRequest",
+      "lineCovered": 0,
+      "lineTotal": 1,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.monitoring",
+      "class": "MonitoringController",
+      "lineCovered": 0,
+      "lineTotal": 41,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 40
+    },
+    {
+      "package": "com.example.demo.monitoring",
+      "class": "AlertService",
+      "lineCovered": 0,
+      "lineTotal": 64,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 64
+    },
+    {
+      "package": "com.example.demo.monitoring",
+      "class": "MonitoringController.StatusRequest",
+      "lineCovered": 0,
+      "lineTotal": 1,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.monitoring",
+      "class": "AnalysisPipeline.PairData",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.monitoring",
+      "class": "SnapshotQueries",
+      "lineCovered": 0,
+      "lineTotal": 56,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 80
+    },
+    {
+      "package": "com.example.demo.monitoring",
+      "class": "AnalysisPipeline.Claim",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.monitoring",
+      "class": "AnalysisPipeline.SnapshotData",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "GitIngestion.Result",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "GitRepositoryClient.PinnedRepository",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "GitAnalysisPipeline.PipelineConfiguration",
+      "lineCovered": 0,
+      "lineTotal": 2,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "RepositoryMetricCalculator.Policy",
+      "lineCovered": 4,
+      "lineTotal": 5,
+      "lineCoveragePct": 80.0,
+      "branchCovered": 5,
+      "branchTotal": 10
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "GitIngestion",
+      "lineCovered": 92,
+      "lineTotal": 92,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 107,
+      "branchTotal": 126
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "GitRepositoryClient.new CredentialsProvider() {...}",
+      "lineCovered": 1,
+      "lineTotal": 4,
+      "lineCoveragePct": 25.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "GitAnalysisPipeline",
+      "lineCovered": 69,
+      "lineTotal": 74,
+      "lineCoveragePct": 93.24,
+      "branchCovered": 1,
+      "branchTotal": 4
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "HistoricalSnapshotExport",
+      "lineCovered": 62,
+      "lineTotal": 63,
+      "lineCoveragePct": 98.41,
+      "branchCovered": 13,
+      "branchTotal": 16
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "GitMetricAnalysisSample",
+      "lineCovered": 60,
+      "lineTotal": 87,
+      "lineCoveragePct": 68.97,
+      "branchCovered": 11,
+      "branchTotal": 26
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "RepositoryMetricCalculator.CoalescedCommitChange",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "GitIngestion.FileIdentity",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "GitIngestion.ExtractionException",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "LizardComplexityAnalyzer.FileComplexity",
+      "lineCovered": 5,
+      "lineTotal": 5,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "GitIngestionSample",
+      "lineCovered": 32,
+      "lineTotal": 42,
+      "lineCoveragePct": 76.19,
+      "branchCovered": 6,
+      "branchTotal": 16
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "GitIngestion.Options",
+      "lineCovered": 7,
+      "lineTotal": 8,
+      "lineCoveragePct": 87.5,
+      "branchCovered": 8,
+      "branchTotal": 16
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "GitRepositoryClient.Budget",
+      "lineCovered": 5,
+      "lineTotal": 5,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 3,
+      "branchTotal": 6
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "GitIngestion.Fact",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "GitRepositoryClient",
+      "lineCovered": 25,
+      "lineTotal": 31,
+      "lineCoveragePct": 80.65,
+      "branchCovered": 11,
+      "branchTotal": 24
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "LizardComplexityAnalyzer",
+      "lineCovered": 154,
+      "lineTotal": 181,
+      "lineCoveragePct": 85.08,
+      "branchCovered": 53,
+      "branchTotal": 86
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "RepositoryMetricCalculator",
+      "lineCovered": 269,
+      "lineTotal": 295,
+      "lineCoveragePct": 91.19,
+      "branchCovered": 95,
+      "branchTotal": 144
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "RepositoryMetricCalculator.PartialFileMetric",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.gitanalyzer",
+      "class": "GitIngestion.Entry",
+      "lineCovered": 1,
+      "lineTotal": 1,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.api",
+      "class": "ApiExceptionHandler",
+      "lineCovered": 0,
+      "lineTotal": 7,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 2
+    },
+    {
+      "package": "com.example.demo.api",
+      "class": "WebConfiguration",
+      "lineCovered": 0,
+      "lineTotal": 7,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 2
+    },
+    {
+      "package": "com.example.demo.repository",
+      "class": "RepositoryController.RegisterRequest",
+      "lineCovered": 0,
+      "lineTotal": 1,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.repository",
+      "class": "TrackedRepository",
+      "lineCovered": 0,
+      "lineTotal": 12,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.repository",
+      "class": "RepositoryController.RepositoryResponse",
+      "lineCovered": 0,
+      "lineTotal": 3,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo.repository",
+      "class": "GitHubRepositoryUrl",
+      "lineCovered": 16,
+      "lineTotal": 16,
+      "lineCoveragePct": 100.0,
+      "branchCovered": 21,
+      "branchTotal": 22
+    },
+    {
+      "package": "com.example.demo.repository",
+      "class": "RepositoryController",
+      "lineCovered": 0,
+      "lineTotal": 12,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 8
+    },
+    {
+      "package": "com.example.demo.repository",
+      "class": "RepositoryService",
+      "lineCovered": 0,
+      "lineTotal": 4,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo",
+      "class": "DemoApplication",
+      "lineCovered": 0,
+      "lineTotal": 3,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    },
+    {
+      "package": "com.example.demo",
+      "class": "HealthController",
+      "lineCovered": 0,
+      "lineTotal": 2,
+      "lineCoveragePct": 0.0,
+      "branchCovered": 0,
+      "branchTotal": 0
+    }
+  ]
+}

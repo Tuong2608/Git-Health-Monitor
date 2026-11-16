@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "kind": "NFR03_CORE_PIPELINE_SCALE_BENCHMARK",
+  "measuredAtUtc": "2026-11-16T05:44:07.785249+00:00",
+  "nfr03TargetMaxMs": 600000,
+  "iterationsPerScale": 3,
+  "scopeNote": "Measures offline core analysis pipeline (GitIngestion + LizardComplexityAnalyzer + RepositoryMetricCalculator) on local bare repositories without remote network GitHub clone latency or PostgreSQL JDBC persistence.",
+  "environment": {
+    "os": "Windows-10-10.0.19045-SP0",
+    "cpu": "Intel(R) Core(TM) i3-7020U CPU @ 2.30GHz",
+    "logicalCores": 4,
+    "ramGiB": 19.87,
+    "javaVersion": "openjdk version \"21.0.8\" 2025-07-15\nOpenJDK Runtime Environment JBR-21.0.8+9-1163.69-jcef (build 21.0.8+9-b1163.69)\nOpenJDK 64-Bit Server VM JBR-21.0.8+9-1163.69-jcef (build 21.0.8+9-b1163.69, mixed mode, sharing)",
+    "gitVersion": "git version 2.52.0.windows.1",
+    "lizardVersion": "1.24.3",
+    "jgitVersion": "7.8.0.202609011348-r"
+  },
+  "scales": [
+    {
+      "id": "scale_1k",
+      "targetCommits": 1000,
+      "targetFiles": 25,
+      "repoGenMs": 2652.97,
+      "reachableCommits": 1000,
+      "selectedCommits": 1000,
+      "javaFiles": 25,
+      "factsCount": 1222,
+      "runs": [
+        {
+          "iteration": 1,
+          "runType": "cold_jvm",
+          "jgitMs": 27493.3363,
+          "lizardMs": 3549.8226,
+          "metricMs": 96.6415,
+          "serializeMs": 1391.1481,
+          "totalMs": 32530.9485,
+          "payloadBytes": 244329
+        },
+        {
+          "iteration": 2,
+          "runType": "warm_jvm",
+          "jgitMs": 7234.8136,
+          "lizardMs": 3476.8058,
+          "metricMs": 144.2749,
+          "serializeMs": 146.1007,
+          "totalMs": 11001.995,
+          "payloadBytes": 244329
+        },
+        {
+          "iteration": 3,
+          "runType": "warm_jvm",
+          "jgitMs": 6355.0948,
+          "lizardMs": 1631.9956,
+          "metricMs": 78.5176,
+          "serializeMs": 34.3172,
+          "totalMs": 8099.9252,
+          "payloadBytes": 244329
+        }
+      ],
+      "summary": {
+        "coldTotalMs": 32530.95,
+        "meanWarmTotalMs": 9550.96,
+        "meanAllTotalMs": 17210.96,
+        "maxTotalMs": 32530.95,
+        "meanJgitMs": 13694.41,
+        "meanLizardMs": 2886.21,
+        "meanMetricMs": 106.48,
+        "meanSerializeMs": 523.86,
+        "endToEndCliWallMs": 19269.25,
+        "passesNfr03Within600s": true
+      }
+    },
+    {
+      "id": "scale_5k",
+      "targetCommits": 5000,
+      "targetFiles": 40,
+      "repoGenMs": 3834.21,
+      "reachableCommits": 5000,
+      "selectedCommits": 5000,
+      "javaFiles": 40,
+      "factsCount": 6036,
+      "runs": [
+        {
+          "iteration": 1,
+          "runType": "cold_jvm",
+          "jgitMs": 32396.5071,
+          "lizardMs": 3146.2106,
+          "metricMs": 739.1249,
+          "serializeMs": 459.7679,
+          "totalMs": 36741.6105,
+          "payloadBytes": 1145883
+        },
+        {
+          "iteration": 2,
+          "runType": "warm_jvm",
+          "jgitMs": 24624.6264,
+          "lizardMs": 1237.0742,
+          "metricMs": 266.7751,
+          "serializeMs": 148.5159,
+          "totalMs": 26276.9916,
+          "payloadBytes": 1145883
+        },
+        {
+          "iteration": 3,
+          "runType": "warm_jvm",
+          "jgitMs": 18954.2276,
+          "lizardMs": 2123.2007,
+          "metricMs": 53.8404,
+          "serializeMs": 58.8964,
+          "totalMs": 21190.1651,
+          "payloadBytes": 1145883
+        }
+      ],
+      "summary": {
+        "coldTotalMs": 36741.61,
+        "meanWarmTotalMs": 23733.58,
+        "meanAllTotalMs": 28069.59,
+        "maxTotalMs": 36741.61,
+        "meanJgitMs": 25325.12,
+        "meanLizardMs": 2168.83,
+        "meanMetricMs": 353.25,
+        "meanSerializeMs": 222.39,
+        "endToEndCliWallMs": 41250.04,
+        "passesNfr03Within600s": true
+      }
+    },
+    {
+      "id": "scale_10k",
+      "targetCommits": 10000,
+      "targetFiles": 50,
+      "repoGenMs": 7522.05,
+      "reachableCommits": 10000,
+      "selectedCommits": 10000,
+      "javaFiles": 50,
+      "factsCount": 12045,
+      "runs": [
+        {
+          "iteration": 1,
+          "runType": "cold_jvm",
+          "jgitMs": 54354.5843,
+          "lizardMs": 2807.7924,
+          "metricMs": 1372.6388,
+          "serializeMs": 1427.5301,
+          "totalMs": 59962.5456,
+          "payloadBytes": 2264914
+        },
+        {
+          "iteration": 2,
+          "runType": "warm_jvm",
+          "jgitMs": 48729.2028,
+          "lizardMs": 2323.7115,
+          "metricMs": 409.9436,
+          "serializeMs": 195.9945,
+          "totalMs": 51658.8524,
+          "payloadBytes": 2264914
+        },
+        {
+          "iteration": 3,
+          "runType": "warm_jvm",
+          "jgitMs": 32382.9315,
+          "lizardMs": 2185.9676,
+          "metricMs": 342.1196,
+          "serializeMs": 346.7959,
+          "totalMs": 35257.8146,
+          "payloadBytes": 2264914
+        }
+      ],
+      "summary": {
+        "coldTotalMs": 59962.55,
+        "meanWarmTotalMs": 43458.33,
+        "meanAllTotalMs": 48959.74,
+        "maxTotalMs": 59962.55,
+        "meanJgitMs": 45155.57,
+        "meanLizardMs": 2439.16,
+        "meanMetricMs": 708.23,
+        "meanSerializeMs": 656.77,
+        "endToEndCliWallMs": 73247.13,
+        "passesNfr03Within600s": true
+      }
+    }
+  ]
+}
