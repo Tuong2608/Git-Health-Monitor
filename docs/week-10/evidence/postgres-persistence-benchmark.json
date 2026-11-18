@@ -1,0 +1,45 @@
+{
+  "schemaVersion" : 1,
+  "kind" : "NFR03_POSTGRES_PERSISTENCE_AND_ALERT_BENCHMARK",
+  "measuredAtUtc" : "2026-11-18T05:56:08.496021100Z",
+  "scales" : [ {
+    "scaleId" : "scale_1k",
+    "selectedCommits" : 1000,
+    "javaFiles" : 25,
+    "contributionsRowsPerSnapshot" : 75,
+    "couplingPairsPerSnapshot" : 12,
+    "publishBaselineMs" : 42.13,
+    "evalBaselineMs" : 8.9,
+    "publishTargetMs" : 32.11,
+    "evalTargetMs" : 9.64,
+    "compareQueryMs" : 8.32,
+    "totalTargetDbOverheadMs" : 50.08,
+    "generatedAlerts" : 29
+  }, {
+    "scaleId" : "scale_5k",
+    "selectedCommits" : 5000,
+    "javaFiles" : 40,
+    "contributionsRowsPerSnapshot" : 120,
+    "couplingPairsPerSnapshot" : 20,
+    "publishBaselineMs" : 56.86,
+    "evalBaselineMs" : 8.34,
+    "publishTargetMs" : 45.49,
+    "evalTargetMs" : 10.59,
+    "compareQueryMs" : 7.26,
+    "totalTargetDbOverheadMs" : 63.34,
+    "generatedAlerts" : 45
+  }, {
+    "scaleId" : "scale_10k",
+    "selectedCommits" : 10000,
+    "javaFiles" : 50,
+    "contributionsRowsPerSnapshot" : 150,
+    "couplingPairsPerSnapshot" : 25,
+    "publishBaselineMs" : 64.09,
+    "evalBaselineMs" : 9.23,
+    "publishTargetMs" : 45.59,
+    "evalTargetMs" : 10.35,
+    "compareQueryMs" : 3.96,
+    "totalTargetDbOverheadMs" : 59.9,
+    "generatedAlerts" : 55
+  } ]
+}

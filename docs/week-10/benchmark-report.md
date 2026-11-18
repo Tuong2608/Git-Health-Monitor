@@ -1,7 +1,7 @@
 # Báo cáo Thực nghiệm Hiệu năng theo Quy mô Commit (STT 32 & NFR03)
 
-- **Số liệu gốc:** [benchmark-results.json](evidence/benchmark-results.json)
-- **Bộ đo tự động:** `tools/experiments/run_benchmark.py` (chạy trực tiếp `GitIngestion`, `LizardComplexityAnalyzer`, `RepositoryMetricCalculator` và `HistoricalSnapshotExport` qua Java CLI)
+- **Số liệu gốc:** [benchmark-results.json](evidence/benchmark-results.json) (lõi phân tích JGit/Lizard/Metric) và [postgres-persistence-benchmark.json](evidence/postgres-persistence-benchmark.json) (lưu trữ giao dịch, đánh giá cảnh báo & so sánh trên PostgreSQL 18.3)
+- **Bộ đo tự động:** `tools/experiments/run_benchmark.py` và `backend/src/test/java/com/example/demo/monitoring/Week10PersistenceBenchmarkTests.java`
 - **Mục tiêu nghiệm thu (`NFR03`):** Phân tích kho mã nguồn tối đa `10.000` commit trong thời gian `<= 10 phút` (`600.000 ms`).
 
 ---
@@ -36,6 +36,18 @@
 | **1.000 commit** | 13,694.41 ms (13.69 s) | 2,886.21 ms (2.89 s) | 106.48 ms | 523.86 ms | 79.6% |
 | **5.000 commit** | 25,325.12 ms (25.33 s) | 2,168.83 ms (2.17 s) | 353.25 ms | 222.39 ms | 90.2% |
 | **10.000 commit** | 45,155.57 ms (45.16 s) | 2,439.16 ms (2.44 s) | 708.23 ms | 656.77 ms | **92.2%** |
+
+### 2.2. Đo thời gian lưu trữ giao dịch, đánh giá Cảnh báo và truy vấn So sánh trên PostgreSQL 18.3
+
+Để bổ sung phần thời gian lưu trữ cơ sở dữ liệu quan hệ (`SnapshotPublisher.publish`, `AlertService.evaluateNext`, `SnapshotQueries.comparison`) của đầu việc `STT 32`, bộ kiểm thử `Week10PersistenceBenchmarkTests.publishAlertAndComparisonScaleWithinNfr03Budget` đã đo trực tiếp trên PostgreSQL 18.3 ([postgres-persistence-benchmark.json](evidence/postgres-persistence-benchmark.json)) ứng với đúng 3 mốc quy mô:
+
+| Mốc quy mô | File Java (`file_metric`) | Dòng `file_contribution` / snapshot | Cặp `temporal_coupling` / snapshot | Ghi Snapshot đích (`publishTargetMs`) | Đánh giá Alert (`evalTargetMs`) | Truy vấn Comparison (`compareQueryMs`) | Tổng chi phí chu trình DB (`totalTargetDbOverheadMs`) |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| **1.000 commit** | 25 | 75 | 12 | 32.11 ms | 9.64 ms | 8.32 ms | **50.08 ms (0.05 s)** |
+| **5.000 commit** | 40 | 120 | 20 | 45.49 ms | 10.59 ms | 7.26 ms | **63.34 ms (0.06 s)** |
+| **10.000 commit** | 50 | 150 | 25 | 45.59 ms | 10.35 ms | 3.96 ms | **59.90 ms (0.06 s)** |
+
+Khi cộng cả chu trình giao dịch PostgreSQL 18.3 (`~0.06 s`) vào thời gian lõi phân tích ở mốc 10.000 commit (`48.96 s` trung bình JVM / `73.25 s` CLI), tổng thời gian xử lý đầu-cuối vẫn đạt **`~49.02 s` (`73.31 s` CLI)**, nằm sâu trong ngưỡng `NFR03 <= 600 s`.
 
 ---
 
