@@ -15,3 +15,5 @@ tools/experiments/evaluate_rq3_sus.py text eol=lf
 tools/experiments/run_benchmark.py text eol=lf
 tools/experiments/test_rq2_scenarios.py text eol=lf
 tools/experiments/test_rq3_sus.py text eol=lf
+tools/experiments/audit_rq2_coverage.py text eol=lf
+tools/experiments/test_rq2_coverage_audit.py text eol=lf

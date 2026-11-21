@@ -1,0 +1,72 @@
+PHIẾU THỰC NGHIỆM NGƯỜI DÙNG (RQ3) VÀ KHẢO SÁT SUS — GIT HEALTH MONITOR
+=======================================================================
+
+1. GIỚI THIỆU VÀ ĐỒNG THUẬN THAM GIA
+------------------------------------
+Chào bạn,
+Nhóm thực hiện Tiểu luận chuyên ngành Công nghệ phần mềm (Trần Văn Tưởng - 23110170 & Trần Quang Toản - 23110158) đang đánh giá khả năng sử dụng của hệ thống "Git Health Monitor" (phân tích và giám sát sức khỏe dự án phần mềm từ lịch sử Git).
+
+- Đối tượng tham gia: Sinh viên CNTT năm 3-4 hoặc lập trình viên có kinh nghiệm làm việc với Git/Java.
+- Thời lượng dự kiến: 15 - 20 phút.
+- Quyền riêng tư: Kết quả chỉ ghi nhận theo mã ẩn danh (P01, P02...), không công bố họ tên hay thông tin cá nhân trong báo cáo. Bài kiểm thử này đánh giá giao diện của hệ thống, KHÔNG chấm điểm kỹ năng của người tham gia.
+- Lưu ý: Trong quá trình thực hiện 7 tác vụ, vui lòng tự tìm thao tác trên màn hình theo đề bài. Nếu có chỗ nào khó hiểu hoặc không tìm thấy, hãy nói rõ để nhóm ghi nhận cải tiến giao diện.
+
+[ ] Tôi đồng ý tham gia thực nghiệm và cho phép sử dụng kết quả ẩn danh trong báo cáo học thuật.
+Mã người tham gia (do nhóm cấp, VD: P01): ________
+Vai trò / Kinh nghiệm sử dụng Git: [ ] SV CNTT năm 3-4   [ ] Fresher/Junior Dev   [ ] Khác: ________
+
+
+2. ĐỀ BÀI 7 TÁC VỤ CHUẨN (T1 .. T7)
+-----------------------------------
+Tác vụ T1 — Đăng ký kho mã nguồn và kích hoạt phân tích:
+- Yêu cầu: Nhập URL `https://github.com/spring-guides/gs-rest-service` vào ô đăng ký repository, thêm kho và bấm nút chạy một lượt phân tích mới.
+- Kết quả ghi nhận: [ ] Đạt (1)   [ ] Không đạt (0) | Thời gian (giây): ______
+
+Tác vụ T2 — Tìm Top 5 tập tin ưu tiên rà soát (Hotspot):
+- Yêu cầu: Chuyển sang kho mẫu đã phân tích xong (`spring-petclinic`), mở snapshot mới nhất và chỉ ra 5 tập tin có điểm `hotspot_score` cao nhất trên bảng/bản đồ điểm nóng.
+- Kết quả ghi nhận: [ ] Đạt (1)   [ ] Không đạt (0) | Thời gian (giây): ______
+
+Tác vụ T3 — Giải thích lý do rủi ro của tập tin:
+- Yêu cầu: Chọn tập tin đứng đầu bảng Hotspot, mở phần chi tiết tập tin và đọc các chỉ số thành phần (`change_frequency`, `max_ccn`, `HHI`), danh sách người đóng góp cùng ít nhất 1 mã commit bằng chứng (`evidence`).
+- Kết quả ghi nhận: [ ] Đạt (1)   [ ] Không đạt (0) | Thời gian (giây): ______
+
+Tác vụ T4 — Xác định cặp tập tin liên kết thời gian (Temporal Coupling):
+- Yêu cầu: Kiểm tra xem tập tin đang mở có thường xuyên thay đổi cùng tập tin nào khác không (`Temporal Coupling`), cho biết số commit chung (`shared_commits`) và mức độ liên kết (`coupling_degree`).
+- Kết quả ghi nhận: [ ] Đạt (1)   [ ] Không đạt (0) | Thời gian (giây): ______
+
+Tác vụ T5 — Xem lịch sử Snapshot và biểu đồ xu hướng:
+- Yêu cầu: Xem biểu đồ xu hướng (`Trend`) hoặc bảng so sánh giữa 2 snapshot (`Comparison`), đồng thời kiểm tra xem cặp snapshot có bị chặn (`coverageComplete = false`) do thiếu độ phủ phả hệ hay không.
+- Kết quả ghi nhận: [ ] Đạt (1)   [ ] Không đạt (0) | Thời gian (giây): ______
+
+Tác vụ T6 — Kiểm tra cảnh báo (Alerts):
+- Yêu cầu: Mở khu vực quy tắc và danh sách cảnh báo (`Alerts`), đọc nguyên nhân kích hoạt cảnh báo (giá trị vượt ngưỡng) và chuyển trạng thái một cảnh báo sang `ACKNOWLEDGED`.
+- Kết quả ghi nhận: [ ] Đạt (1)   [ ] Không đạt (0) | Thời gian (giây): ______
+
+Tác vụ T7 — Sử dụng Trợ lý AI Review có kiểm soát:
+- Yêu cầu: Trên chi tiết một tập tin Java, nhập khoảng dòng mã cần rà soát (`startLine..endLine`), bấm xem trước ngữ cảnh gửi đi (`Preview`), kiểm tra `contextHash` / thông báo bảo mật và tích xác nhận đồng thuận (`Consent`) trước khi yêu cầu AI Review.
+- Kết quả ghi nhận: [ ] Đạt (1)   [ ] Không đạt (0) | Thời gian (giây): ______
+
+
+3. BẢNG HỎI SYSTEM USABILITY SCALE (SUS — BROOKE, 1996)
+-------------------------------------------------------
+Vui lòng khoanh tròn 1 mức điểm từ 1 đến 5 cho từng câu:
+(1 = Hoàn toàn không đồng ý | 2 = Không đồng ý | 3 = Phân vân | 4 = Đồng ý | 5 = Hoàn toàn đồng ý)
+
+Q1. Tôi nghĩ rằng mình sẽ muốn sử dụng hệ thống này thường xuyên.            [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]
+Q2. Tôi thấy hệ thống này phức tạp một cách không cần thiết.                 [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]
+Q3. Tôi nghĩ rằng hệ thống này dễ sử dụng.                                   [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]
+Q4. Tôi nghĩ rằng tôi sẽ cần sự hỗ trợ của nhân viên kỹ thuật để dùng được.  [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]
+Q5. Tôi thấy các chức năng khác nhau trong hệ thống này được tích hợp tốt.   [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]
+Q6. Tôi nghĩ rằng có quá nhiều sự không nhất quán trong hệ thống này.        [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]
+Q7. Tôi hình dung hầu hết mọi người sẽ học cách dùng hệ thống rất nhanh.     [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]
+Q8. Tôi thấy hệ thống này rất rườm rà / khó thao tác khi sử dụng.            [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]
+Q9. Tôi cảm thấy rất tự tin khi sử dụng hệ thống này.                        [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]
+Q10. Tôi cần phải học rất nhiều thứ trước khi có thể bắt đầu sử dụng.        [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ 5 ]
+
+
+4. GÓP Ý CẢI TIẾN GIAO DIỆN (PHỤC VỤ STT 34)
+--------------------------------------------
+- Thao tác hoặc thuật ngữ nào trên màn hình khiến bạn mất thời gian tìm kiếm hoặc dễ hiểu nhầm nhất?
+  ....................................................................................................
+- Bạn đề xuất chỉnh sửa gì để Dashboard / Chi tiết tập tin / AI Review trực quan hơn?
+  ....................................................................................................
