@@ -25,6 +25,7 @@ Bám sát phân công của Toản trong **Kế hoạch Về Đích (Chặng 1, 
 ## 2. Kết quả kiểm thử kỹ thuật trước mốc CODE FREEZE
 
 - **Backend JUnit Tests + PostgreSQL 18.3 (lượt chạy 18/11; tuần 11 không sửa mã backend):** **122 / 122 ca PASS** (`0` lỗi, `0` skip); độ phủ JaCoCo `0.8.12` full-stack đạt **89.07% line coverage** (`repository` 100%, `api` 100%, `monitoring` 94.60%, `gitanalyzer` 88.12%, `aireview` 85.88%).
+- **NFR01/NFR02 đo thật (25/11):** `POST /analyses` trả `202` tối đa 46,00 ms ($n=2$); `GET /hotspots?size=100` p95 28,42 ms; `GET /files/{id}` p95 28,05 ms — xem [nfr01-nfr02-api-latency.json](evidence/nfr01-nfr02-api-latency.json). Script: `tools/experiments/measure_api_latency.py`.
 - **Python Experiment Unit Tests:** **37 / 37 ca PASS** (`0` lỗi).
 - **Frontend Lint, Build & Playwright E2E:**
   - `npm run lint` và `npm run build` PASS.

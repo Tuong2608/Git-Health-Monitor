@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "kind": "NFR01_NFR02_API_LATENCY",
+  "measuredAtUtc": "2026-11-24T17:48:52.474170+00:00",
+  "baseUrl": "http://127.0.0.1:8080",
+  "scopeNote": "Local single-instance backend + PostgreSQL 18 on the student laptop; HTTP measured client-side including JSON parsing. Not a load test.",
+  "nfr01PostAnalysesAccepted202": {
+    "n": 2,
+    "medianMs": 31.87,
+    "p95Ms": 46.0,
+    "maxMs": 46.0,
+    "minMs": 17.74
+  },
+  "nfr01PostAnalysesDuplicate409": {
+    "n": 2,
+    "medianMs": 21.29,
+    "p95Ms": 27.18,
+    "maxMs": 27.18,
+    "minMs": 15.4
+  },
+  "nfr01TargetMs": 2000,
+  "nfr02TargetMs": 1000,
+  "repositories": [
+    {
+      "repository": "https://github.com/spring-guides/gs-rest-service",
+      "jobId": 1,
+      "snapshotId": 1,
+      "observedJobCompletionSeconds": 5.98,
+      "hotspotPageItems": 6,
+      "getHotspotsSize100": {
+        "n": 30,
+        "medianMs": 19.61,
+        "p95Ms": 28.42,
+        "maxMs": 31.63,
+        "minMs": 2.35
+      },
+      "getFileDetail": {
+        "n": 30,
+        "medianMs": 13.24,
+        "p95Ms": 20.99,
+        "maxMs": 23.71,
+        "minMs": 2.88
+      }
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-petclinic",
+      "jobId": 2,
+      "snapshotId": 2,
+      "observedJobCompletionSeconds": 3.91,
+      "hotspotPageItems": 50,
+      "getHotspotsSize100": {
+        "n": 30,
+        "medianMs": 5.51,
+        "p95Ms": 28.37,
+        "maxMs": 29.24,
+        "minMs": 4.13
+      },
+      "getFileDetail": {
+        "n": 30,
+        "medianMs": 15.4,
+        "p95Ms": 28.05,
+        "maxMs": 28.68,
+        "minMs": 2.72
+      }
+    }
+  ]
+}

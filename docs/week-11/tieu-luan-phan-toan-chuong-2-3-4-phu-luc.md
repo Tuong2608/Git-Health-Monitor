@@ -34,8 +34,8 @@ Tám yêu cầu phi chức năng định lượng (`NFR01..NFR08`) và kết qu�
 
 | Mã NFR | Nội dung yêu cầu định lượng | Ngưỡng cam kết | Kết quả thực tế đạt được |
 |---|---|---|---|
-| **NFR01** | Thời gian phản hồi tạo Job phân tích bất đồng bộ (`POST /analyses`) | $\le 2.000\text{ ms}$ | Trả `202 Accepted` ngay sau khi ghi job, không chờ phân tích. *[CẦN ĐO bổ sung thời gian phản hồi trước khi đưa vào bản cuối]* |
-| **NFR02** | Thời gian truy vấn danh sách Hotspot / Chi tiết file đã phân trang (`size <= 100`) | $\le 1.000\text{ ms}$ | Chưa đo riêng endpoint Hotspot; truy vấn so sánh 2 snapshot đo được $3,96..8,32\text{ ms}$ (benchmark PostgreSQL 18.3). *[CẦN ĐO bổ sung]* |
+| **NFR01** | Thời gian phản hồi tạo Job phân tích bất đồng bộ (`POST /analyses`) | $\le 2.000\text{ ms}$ | Đo trên backend + PostgreSQL 18 local: `202 Accepted` trung vị **31,87 ms**, lớn nhất **46,00 ms** ($n = 2$ repo); yêu cầu trùng trả `409` lớn nhất **27,18 ms** (`nfr01-nfr02-api-latency.json`) |
+| **NFR02** | Thời gian truy vấn danh sách Hotspot / Chi tiết file đã phân trang (`size <= 100`) | $\le 1.000\text{ ms}$ | `GET /hotspots?size=100`: p95 **28,42 ms** (lớn nhất 31,63 ms); `GET /files/{id}`: p95 **28,05 ms** (lớn nhất 28,68 ms) — 30 lượt/endpoint trên `gs-rest-service` và `spring-petclinic` (`nfr01-nfr02-api-latency.json`) |
 | **NFR03** | Tổng thời gian phân tích kho mã nguồn quy mô tối đa `10.000` commit | $\le 10\text{ phút}$ ($600\text{ s}$) | Trung bình **$48,96\text{ s}$** (CLI **$73,25\text{ s}$**, cộng lưu trữ PostgreSQL **$+0,06\text{ s}$**) |
 | **NFR04** | Thời gian chờ tối đa (Timeout) cho mỗi yêu cầu gọi LLM Provider | $\le 30\text{ s}$ + đọc khối $4\text{ KiB}$ | Cài đặt `HttpLlmProviderAdapter` với deadline cứng và giới hạn payload |
 | **NFR05** | Khả năng tự phục hồi Job khi tiến trình Worker dừng đột ngột | Thu hồi 100% job hết hạn lease | Cơ chế `lease_until` + `heartbeat` + `recoverExpired()` gán `LEASE_EXPIRED` |
