@@ -1,0 +1,33 @@
+# Staging overlay for Way 1 (Ubuntu VM / Azure for Students + Caddy automatic HTTPS reverse proxy).
+# Usage: docker compose -f compose.yaml -f compose.staging.yaml up -d --build
+services:
+  db:
+    restart: unless-stopped
+  backend:
+    restart: unless-stopped
+    environment:
+      APP_REGISTRATION_ENABLED: "true"
+      APP_ANALYSIS_ENABLED: "true"
+      APP_ANALYSIS_WRITES_ENABLED: "true"
+      APP_ANALYSIS_PIPELINE_ENABLED: "true"
+      APP_AI_REVIEW_ENABLED: ${APP_AI_REVIEW_ENABLED:-true}
+      APP_ALLOWED_ORIGINS: ${APP_ALLOWED_ORIGINS:-http://localhost:5173,http://127.0.0.1:5173}
+  frontend:
+    restart: unless-stopped
+  caddy:
+    image: caddy:2.9-alpine
+    restart: unless-stopped
+    environment:
+      STAGING_DOMAIN: ${STAGING_DOMAIN:-localhost}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - frontend
+volumes:
+  caddy_data:
+  caddy_config:

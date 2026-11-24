@@ -1,0 +1,97 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Tour Ôn Code Bảo Vệ — Git Health Monitor (15 Điểm Trọng Tâm)",
+  "description": "Bấm Next từng bước để đi qua toàn bộ luồng code từ Đăng ký Repo -> Hàng đợi PostgreSQL -> JGit/Lizard/Metric -> Lưu Snapshot & Cảnh báo -> AI Review -> Giao diện React.",
+  "steps": [
+    {
+      "file": "backend/src/main/java/com/example/demo/repository/GitHubRepositoryUrl.java",
+      "line": 22,
+      "title": "1. Chuẩn hóa & Bảo mật URL GitHub (Toản)",
+      "description": "Hàm parse() kiểm tra URL chỉ nhận https://github.com/<owner>/<repo>, cắt hậu tố .git, chặn user-info/query/fragment và ký tự lạ để chống Command Injection và SSRF."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/monitoring/MonitoringController.java",
+      "line": 32,
+      "title": "2. API Kích hoạt Phân tích Bất đồng bộ (Toản)",
+      "description": "POST /api/repositories/{repo}/analyses: kiểm tra cờ writesEnabled & pipeline, gọi store.enqueue() tạo job QUEUED và trả ngay 202 Accepted kèm jobId (< 50ms)."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/monitoring/MonitoringStore.java",
+      "line": 31,
+      "title": "3. Hàng đợi Job trên PostgreSQL không dùng Redis (Toản — ADR-002)",
+      "description": "Hàm enqueue() khóa hàng repository (FOR UPDATE), kiểm tra tổng job active < 20 (trả 429 nếu đầy) và dựa vào partial unique index uk_analysis_job_one_active để chặn 2 job chạy trùng trên cùng 1 repo (trả 409)."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/monitoring/MonitoringStore.java",
+      "line": 42,
+      "title": "4. Nhận Job bằng FOR UPDATE SKIP LOCKED & Lease (Toản)",
+      "description": "Hàm claim() lấy 1 job QUEUED cũ nhất mà không khóa chéo các worker khác, cấp claim_token (UUID) và hạn thuê lease_until (+120s). Các hàm heartbeat() và recoverExpired() bên dưới đảm bảo tự thu hồi job bị treo."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/monitoring/AnalysisWorker.java",
+      "line": 44,
+      "title": "5. Luồng điều phối của AnalysisWorker (Toản)",
+      "description": "Hàm runOne() nhận job từ store.claim(), mở luồng nền gửi heartbeat định kỳ, gọi pipeline.analyze() để chạy JGit/Lizard/Metric, rồi gọi publisher.publish() lưu kết quả."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/gitanalyzer/GitIngestion.java",
+      "line": 68,
+      "title": "6. Duyệt DAG Commit & Nối phả hệ File qua Rename (Tưởng)",
+      "description": "Hàm extract() duyệt RevWalk theo thứ tự topo từ cũ đến mới, bật DiffFormatter#setDetectRenames(true) (ngưỡng 60%) để giữ nguyên lineageKey = '<firstSeenSha>:<initialPath>' khi file bị git mv."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/gitanalyzer/GitIngestion.java",
+      "line": 103,
+      "title": "7. Chốt chặn an toàn LINEAGE_AMBIGUOUS tại Merge Commit (Tưởng)",
+      "description": "Tại merge commit (>= 2 cha), nếu tập tin có mặt ở các cha với định danh khác nhau (parentIds.size() != 1), quy tắc v1 đánh dấu FileIdentity.ambiguous = true (LINEAGE_AMBIGUOUS) để không ghép sai lịch sử."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/gitanalyzer/LizardComplexityAnalyzer.java",
+      "line": 45,
+      "title": "8. Đo độ phức tạp hàm tại đúng cây HEAD lịch sử (Tưởng)",
+      "description": "Hàm analyzeAtHead() đọc trực tiếp blob của các file .java tại đúng headSha từ bare repo, gọi tiến trình lizard --xml lấy maxCcn, avgCcn, functions, nloc. Nếu functions == 0 (interface/package-info) thì gán NO_FUNCTIONS."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/gitanalyzer/RepositoryMetricCalculator.java",
+      "line": 198,
+      "title": "9. Tính Phân vị Midrank, Hotspot, HHI và Temporal Coupling (Tưởng)",
+      "description": "Chỉ các file có đủ cả frequency != null và maxCcn != null mới vào tập population để tính phân vị midrank P_change, P_complexity và Hotspot = sqrt(P_change * P_complexity)."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/monitoring/SnapshotPublisher.java",
+      "line": 17,
+      "title": "10. Xuất bản Snapshot nguyên tử @Transactional (Toản)",
+      "description": "Hàm publish() kiểm tra claim_token còn hạn, kiểm tra trùng snapshot (trả NO_CHANGE), xác thực tổng churn tác giả == churn file, ghi vào 6 bảng và chuyển job sang SUCCEEDED trong cùng 1 transaction."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/monitoring/AlertService.java",
+      "line": 76,
+      "title": "11. Đánh giá Cảnh báo tách giao dịch & Chặn INCOMPLETE_COVERAGE (Toản)",
+      "description": "Hàm evaluate() chạy ở transaction riêng: nếu coverageComplete == false thì ghi chú INCOMPLETE_COVERAGE và chặn sinh cảnh báo giả; nếu đủ độ phủ thì so sánh NUMERIC n.hotspot_score - o.hotspot_score > threshold."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/monitoring/SnapshotQueries.java",
+      "line": 50,
+      "title": "12. Truy vấn So sánh 2 Snapshot bằng FULL OUTER JOIN (Toản)",
+      "description": "Hàm comparison() kiểm tra cùng repo, đúng thứ tự thời gian, cùng config_hash/độ dài cửa sổ và cả hai đều coverageComplete == true, rồi FULL OUTER JOIN theo file_id giữ nguyên giá trị NULL."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/aireview/ReviewContextBuilder.java",
+      "line": 44,
+      "title": "13. Tạo ngữ cảnh Xem trước AI Review từ Blob lịch sử & contextHash SHA-256 (Toản)",
+      "description": "Hàm build() đọc mã nguồn tại đúng headSha của snapshot trong khoảng dòng [startLine, endLine] (<= 200 dòng), gom bằng chứng E1..E5 và băm SHA-256 ra contextHash."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/aireview/LlmReviewService.java",
+      "line": 85,
+      "title": "14. Kiểm tra Consent, Quét Secret & Kiểm soát Schema AI (Tưởng)",
+      "description": "Hàm review() kiểm tra ConsentReceipt khớp contextHash, quét SECRET_PATTERN (chặn 403 SECRET_DETECTED), gọi HttpLlmProviderAdapter và ép mọi mã bằng chứng AI trả về phải nằm trong evidenceAllowlist."
+    },
+    {
+      "file": "frontend/src/components/AnalysisDashboard.tsx",
+      "line": 15,
+      "title": "15. Giao diện React: Stale Response Guard & Biểu đồ Trend tự ngắt nét (Toản)",
+      "description": "Hook useRemote() dùng AbortController hủy request cũ khi người dùng đổi lựa chọn; hàm Trend() bên dưới tự tách đoạn series khi hai snapshot lệch cấu hình hoặc thiếu coverage."
+    }
+  ]
+}
