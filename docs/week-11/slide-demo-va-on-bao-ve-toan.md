@@ -18,7 +18,7 @@ Dưới đây là nội dung chữ cô đọng (bullet points đưa lên Slide) 
   - **Lược đồ 11 bảng PostgreSQL 18 (`V1..V4`):** `tracked_repository`, `analysis_job`, `analysis_snapshot`, `logical_file`, `file_metric`, `contributor`, `file_contribution`, `temporal_coupling`, `alert_rule`, `alert`, `ai_review_audit`.
   - **Hàng đợi Job bền vững (`MonitoringStore` & `AnalysisWorker`):**
     - Nhận việc đồng thời không khóa chéo: `SELECT ... FOR UPDATE SKIP LOCKED`.
-    - Chống chạy trùng trên cùng kho: Partial Unique Index `uk_analysis_job_one_active`.
+    - Chống chạy trùng trên cùng kho: Partial Unique Index `one_active_job`.
     - Tự phục hồi sau sự cố: Cơ chế thuê bao `lease_until` + `heartbeat` + `recoverExpired()`.
     - Gộp lịch quét định kỳ (`scheduleDue`): Không gây bão job khi server tạm dừng nhiều ngày.
 - **Lời thuyết trình của Toản:**
@@ -116,7 +116,7 @@ Dưới đây là nội dung chữ cô đọng (bullet points đưa lên Slide) 
 ### Slide 16: Thực nghiệm Người dùng RQ3 & Cải tiến Giao diện Before / After (`STT 33, 34`)
 - **Nội dung trên Slide:**
   - **Giao thức đánh giá RQ3:** 7 tác vụ chuẩn (`T1..T7`) + thang đo SUS 10 câu (Brooke, 1996) chấm tự động qua `evaluate_rq3_sus.py`.
-  - **4 cải tiến giao diện Before / After từ phản hồi người dùng (`ui-before-*.png` vs `ui-after-*.png`):**
+  - **4 cải tiến giao diện Before / After (`ui-before-*.png` vs `ui-after-*.png`) — làm trước khảo sát; bổ sung điều chỉnh theo phiếu RQ3 thật trước khi bảo vệ:**
     1. Chỉ dẫn xác định nhanh Top 5 Hotspot ngay đầu bảng Điểm nóng (`T2`).
     2. Hộp tra cứu công thức `Hotspot`, `Max CCN`, `HHI` và tooltip giải thích trực tiếp trên thẻ chỉ số (`T3`).
     3. Giải thích rõ sự khác biệt giữa `LINEAGE_AMBIGUOUS` và `NO_FUNCTIONS` khi `coverageComplete = false` (`T5, T6`).
@@ -132,7 +132,7 @@ Dưới đây là nội dung chữ cô đọng (bullet points đưa lên Slide) 
 
 | Thời lượng | Thao tác trên màn hình | Lời thuyết minh của Toản khi bấm Demo |
 |---|---|---|
-| **Phút 0:00 – 0:45**<br>*(Tác vụ T1: Đăng ký & Chạy Job bất đồng bộ)* | - Dán URL `https://github.com/spring-guides/gs-rest-service` vào ô đăng ký, bấm **Đăng ký repository**.<br>- Bấm **Mở phân tích gs-rest-service**, để cửa sổ `180` ngày và bấm **Phân tích repository**.<br>- Chuyển sang tab **Lịch sử phân tích** chỉ cho Hội đồng thấy Job `#...` chuyển từ `QUEUED` $\to$ `RUNNING` $\to$ `SUCCEEDED`. | *"Đầu tiên em xin demo luồng đăng ký và phân tích bất đồng bộ. Khi bấm Phân tích, API trả ngay mã 202 Accepted trong chưa tới 50ms để không treo giao diện, còn AnalysisWorker ở nền nhận job từ bảng PostgreSQL qua cơ chế lease và chạy JGit cùng Lizard."* |
+| **Phút 0:00 – 0:45**<br>*(Tác vụ T1: Đăng ký & Chạy Job bất đồng bộ)* | - Dán URL `https://github.com/spring-guides/gs-rest-service` vào ô đăng ký, bấm **Đăng ký repository**.<br>- Bấm **Mở phân tích gs-rest-service**, để cửa sổ `180` ngày và bấm **Phân tích repository**.<br>- Chuyển sang tab **Lịch sử phân tích** chỉ cho Hội đồng thấy Job `#...` chuyển từ `QUEUED` $\to$ `RUNNING` $\to$ `SUCCEEDED`. | *"Đầu tiên em xin demo luồng đăng ký và phân tích bất đồng bộ. Khi bấm Phân tích, API trả ngay mã 202 Accepted mà không chờ phân tích xong để không treo giao diện, còn AnalysisWorker ở nền nhận job từ bảng PostgreSQL qua cơ chế lease và chạy JGit cùng Lizard."* |
 | **Phút 0:45 – 2:15**<br>*(Tác vụ T2, T3, T4: Điểm nóng, Chi tiết file, HHI & Coupling)* | - Chọn kho `spring-projects/spring-petclinic`, bấm **Mở #1** trong danh sách Snapshot.<br>- Chỉ vào dòng hướng dẫn Top 5 Hotspot, bản đồ nhiệt và bảng phân trang.<br>- Bấm vào tập tin đứng đầu bảng, mở hộp **Giải thích công thức chỉ số (Hotspot, Max CCN, HHI)**.<br>- Cuộn xuống phần **Đóng góp theo thay đổi dòng**, **Bằng chứng commit** và bấm vào 1 tập tin trong mục **File thường thay đổi cùng** để mở **Bằng chứng cặp file**. | *"Trên kho Spring PetClinic, hệ thống xếp hạng các file theo điểm Hotspot giảm dần. Khi bấm vào một file rủi ro cao, hệ thống không chỉ đưa ra một con số hộp đen mà giải thích đầy đủ tần suất sửa, độ phức tạp Max CCN, chỉ số tập trung đóng góp HHI, danh sách SHA commit bằng chứng và các cặp file có liên kết thay đổi Temporal Coupling."* |
 | **Phút 2:15 – 3:30**<br>*(Tác vụ T5, T6: Xu hướng, Chốt chặn Coverage & Cảnh báo)* | - Chỉ vào thông báo giải thích `coverageComplete = false` (`LINEAGE_AMBIGUOUS` vs `NO_FUNCTIONS`) và biểu đồ **Xu hướng file**.<br>- Chuyển sang tab **Giám sát & cảnh báo**, chỉ vào phần cấu hình chu kỳ quét, danh sách **Quy tắc đã lưu** và bấm nút **Đã xem** trên một thẻ **Cảnh báo** (`OPEN` $\to$ `ACKNOWLEDGED`). | *"Điểm đặc biệt của hệ thống là tính trung thực dữ liệu: khi kho có merge commit chưa rõ nhánh cha làm `coverageComplete = false`, hệ thống hiển thị rõ nguyên nhân và tự động chặn cảnh báo giả. Ở tab Giám sát, người dùng có thể bật lịch quét định kỳ và xác nhận trạng thái xử lý từng cảnh báo."* |
 | **Phút 3:30 – 5:00**<br>*(Tác vụ T7: Trợ lý AI Review có kiểm soát)* | - Quay lại phần **Chi tiết file**, cuộn tới **Trợ lý AI review**.<br>- Chỉ vào dòng **Quy trình 3 bước**, nhập dòng `1` đến `25` và bấm **Xem trước dữ liệu gửi**.<br>- Chỉ vào dòng **Mã xác thực ngữ cảnh (`contextHash` SHA-256)** và khung JSON ngữ cảnh.<br>- Tích vào ô checkbox **Tôi đồng ý gửi đúng dữ liệu đang xem...** và bấm **Gửi yêu cầu AI review**.<br>- Chỉ vào kết quả có cấu trúc (`Nhận xét rủi ro`, `Bằng chứng E1..`, `Điểm cần kiểm tra`, `Giới hạn`). | *"Cuối cùng là Trợ lý AI Review có kiểm soát. Hệ thống bắt buộc qua bước Xem trước: trích xuất đúng đoạn mã tại commit SHA của snapshot và khóa bằng mã băm SHA-256 `contextHash`. Chỉ khi người dùng tích đồng thuận Consent và đoạn mã không chứa secret, hệ thống mới gọi LLM và ép phản hồi chỉ được trích dẫn các mã bằng chứng có thật."* |
@@ -146,13 +146,13 @@ Dưới đây là nội dung chữ cô đọng (bullet points đưa lên Slide) 
 Khi Hội đồng gọi tên Toản nhưng hỏi sang phần của Tưởng, bạn cần mở đúng 4 file sau trong IDE và giải thích theo đúng các ý dưới đây:
 
 1. **`GitIngestion.java` (`backend/src/main/java/com/example/demo/gitanalyzer/GitIngestion.java`):**
-   - **Làm sao lấy lịch sử mà không tính nhầm merge commit?** Hàm `extract()` dùng JGit `RevWalk` duyệt đồ thị commit từ `headSha`, sắp theo thứ tự topo từ cũ đến mới để nối phả hệ `FileIdentity`. Tuy nhiên, khi ghi nhận sự kiện thay đổi (`Fact`: `additions`, `deletions`, `author`) vào cửa sổ `[windowStart, windowEnd)`, hệ thống **bỏ qua các commit có `parentCount > 1` (merge commit)** để không đếm lặp dòng code đã sửa ở nhánh con.
+   - **Làm sao lấy lịch sử mà không tính nhầm merge commit?** Hàm `extract()` dùng JGit `RevWalk` duyệt đồ thị commit từ `headSha`, sắp theo thứ tự topo từ cũ đến mới để nối phả hệ `FileIdentity`. Theo Metric Spec v1, merge commit không được tính vào `frequency`/`churn` để không đếm lặp thay đổi đã có ở nhánh con; diff của mỗi commit được so với cha đầu tiên (`getParent(0)`, dòng 112). *(Toản mở `GitIngestion.extract()` từ dòng 71 để chỉ đúng chỗ lọc trước buổi ôn.)*
    - **Làm sao theo dõi đổi tên file (`git mv`)?** Dùng `DiffFormatter` bật `setDetectRenames(true)` với `RenameDetector` có ngưỡng tương đồng nội dung `renameScore = 60%`. Khi file đổi tên từ `A.java` sang `B.java`, nó vẫn giữ nguyên `FileIdentity.id = "<firstSeenSha>:<initialPath>"` (`lineageKey`).
-   - **Vì sao sinh ra `LINEAGE_AMBIGUOUS` (dòng 103–110)?** Khi duyệt qua một merge commit có $\ge 2$ cha, hệ thống kiểm tra định danh của từng đường dẫn trên các nhánh cha. Nếu tập tin có mặt ở các cha với định danh khác nhau hoặc chỉ xuất hiện từ một nhánh theo cách quy tắc `v1` chưa thể khẳng định duy nhất phả hệ, nó gán `ambiguous = true` (`LINEAGE_AMBIGUOUS`) để thà báo *"chưa đo được"* chứ không ghép sai lịch sử hai file khác nhau.
+   - **Vì sao sinh ra `LINEAGE_AMBIGUOUS` (dòng 103–110)?** Khi duyệt qua một merge commit có $\ge 2$ cha, hệ thống kiểm tra định danh của từng đường dẫn trên các nhánh cha. Chỉ phả hệ được **mọi** nhánh cha cùng ủng hộ mới coi là rõ ràng (chú thích dòng 104); nếu không, dòng 109 gán `ambiguous = true` (`LINEAGE_AMBIGUOUS`) để thà báo *"chưa đo được"* chứ không ghép sai lịch sử hai file khác nhau.
 
 2. **`LizardComplexityAnalyzer.java`:**
-   - Không đọc file trên ổ đĩa working tree hiện tại mà dùng `ObjectReader` của JGit trích xuất nội dung blob của từng file `.java` tại đúng cây `headSha` ra thư mục tạm, gọi tiến trình `lizard --xml` qua `ProcessBuilder` (có timeout cứng), đọc XML lấy `maxCcn`, `avgCcn`, `functions`, `nloc` rồi xóa sạch thư mục tạm.
-   - Nếu file Java là `interface`, `record` không hàm hoặc `package-info.java`, Lizard trả về `functions = 0`, hệ thống gán `maxCcn = null` và cờ `NO_FUNCTIONS`.
+   - Hàm `analyzeAtHead(...)` (dòng 111) không đọc working tree hiện tại mà đọc nội dung blob của từng file `.java` tại đúng cây `headSha`, gọi `lizard` qua `ProcessBuilder` có deadline, đọc kết quả XML lấy `maxCcn`, `avgCcn`, `functions`, `nloc`.
+   - Nếu file không có hàm (`interface`, `package-info.java`...), `FileComplexity.noFunctions(nloc)` (dòng 51–52) trả `functions = 0`, `maxCcn = null` và cờ `NO_FUNCTIONS`.
 
 3. **`RepositoryMetricCalculator.java`:**
    - **Phân vị hạng giữa (`midrankPercentile`):** Với quần thể $N$ tập tin hợp lệ (có cả `frequency != null` và `maxCcn != null`):
@@ -164,7 +164,7 @@ Khi Hội đồng gọi tên Toản nhưng hỏi sang phần của Tưởng, b�
    - **HHI (`computeHhi`):** Với mỗi tác giả $i$ đóng góp $c_i = \text{additions}_i + \text{deletions}_i$ dòng trên tổng $\text{Churn} = \sum c_i > 0$, tính $p_i = c_i / \text{Churn}$ và $\text{HHI} = \sum p_i^2 \in (0, 1]$. Nếu $\text{Churn} = 0$ thì $\text{HHI} = \text{null}$ (`NO_LINE_CONTRIBUTION`).
 
 4. **`LlmReviewService.java` & `HttpLlmProviderAdapter.java`:**
-   - `LlmReviewService` kiểm tra: (1) `consentReceipt` khớp `contextHash` SHA-256 của payload; (2) kích thước tổng $\le 32\text{ KiB}$, đoạn mã $\le 8\text{ KiB}$ và $\le 200$ dòng; (3) quét regex `SECRET_PATTERN` (chặn `PRIVATE KEY`, `ghp_`, `sk-`, `AKIA`, `password=...`, `api_key=...`); (4) sau khi nhận phản hồi từ `HttpLlmProviderAdapter` (đọc `InputStream` theo từng khối $4\text{ KiB}$ có kiểm tra deadline còn lại và giới hạn phản hồi $\le 64\text{ KiB}$), parse JSON nghiêm ngặt (chặn trailing garbage) và kiểm tra mọi `evidenceId` mà AI viện dẫn phải nằm trong tập `evidenceAllowlist` (`E1, E2...`) đã gửi đi.
+   - `LlmReviewService` kiểm tra: (1) `consentReceipt` khớp `contextHash` SHA-256 của payload; (2) kích thước tổng $\le 32\text{ KiB}$, đoạn mã $\le 8\text{ KiB}$ và $\le 200$ dòng; (3) quét regex `SECRET_PATTERN` (dòng 37–38: `-----BEGIN ... PRIVATE KEY-----`, `ghp_`, `github_pat_`, `AKIA`, và `api_key`/`secret`/`password` = ...); (4) sau khi nhận phản hồi từ `HttpLlmProviderAdapter` (deadline tối đa 30 giây, đọc `InputStream` theo khối $4\text{ KiB}$ ở dòng 211 và giới hạn kích thước phản hồi), parse JSON nghiêm ngặt (chặn trailing garbage) và kiểm tra mọi `evidenceId` mà AI viện dẫn phải nằm trong tập `evidenceAllowlist` (`E1, E2...`) đã gửi đi.
 
 ---
 
@@ -172,10 +172,11 @@ Khi Hội đồng gọi tên Toản nhưng hỏi sang phần của Tưởng, b�
 
 Trong Buổi 2, Toản mở lần lượt 6 file sau để chỉ cho Tưởng:
 1. **`V2__monitoring_and_snapshots.sql`, `V3__nullable_file_metrics.sql`, `V4__ai_review_audit.sql`:**
-   - Giải thích Partial Unique Index `uk_analysis_job_one_active` trên `analysis_job(repository_id) WHERE status IN ('QUEUED', 'RUNNING')` (cách PostgreSQL chặn 2 job chạy trùng ở mức engine CSDL).
-   - Giải thích khóa ngoại kép `(snapshot_id, file_id, repository_id)` giữa `file_metric` và `file_contribution`, cột sinh tự động `coupling_degree GENERATED ALWAYS AS ... STORED` trong `temporal_coupling`, và việc `V3` cho phép `change_frequency`, `churn`, `max_ccn`, `hotspot_score` nhận giá trị `NULL` kèm ràng buộc `CHECK` bắt buộc phải có `unavailable_reason`.
+   - Giải thích Partial Unique Index `one_active_job` trên `analysis_job(repository_id) WHERE status IN ('QUEUED', 'RUNNING')` (cách PostgreSQL chặn 2 job chạy trùng ở mức engine CSDL).
+   - Giải thích cột sinh tự động `coupling_degree GENERATED ALWAYS AS ... STORED` trong `temporal_coupling`, và việc `V3` cho phép `change_frequency`, `churn`, `max_ccn`, `hotspot_score` nhận giá trị `NULL` kèm ràng buộc `CHECK` bắt buộc phải có `unavailable_reason`.
 2. **`MonitoringStore.java` & `AnalysisWorker.java`:**
-   - Mở hàm `claim()`: giải thích `SELECT id FROM analysis_job WHERE status='QUEUED' ORDER BY requested_at,id LIMIT 1 FOR UPDATE SKIP LOCKED` và việc sinh `claim_token` + `lease_until`.
+   - Mở hàm `enqueue()` (dòng 46): giải thích `pg_advisory_xact_lock` và giới hạn 20 job `QUEUED` (`429`).
+   - Mở hàm `claim()` (dòng 82): giải thích `FOR UPDATE SKIP LOCKED` và việc sinh `claim_token` + `lease_until = now + 120 giây` (dòng 86).
    - Mở hàm `scheduleDue()`: giải thích công thức nhảy mốc `next_scan_at` qua các chu kỳ bị lỡ để gộp thành 1 job duy nhất.
 3. **`SnapshotPublisher.java` & `AlertService.java`:**
    - Mở `SnapshotPublisher.publish()`: chỉ dòng kiểm tra `claim_token` còn hạn, dòng kiểm tra `existing` trả `NO_CHANGE`, vòng lặp kiểm tra `contributed != f.churn()` và lệnh `complete(c, snapshot, "CREATED")` trong cùng `@Transactional`.
@@ -215,7 +216,7 @@ Trong Buổi 2, Toản mở lần lượt 6 file sau để chỉ cho Tưởng:
   > *"Dạ nhóm đã thiết kế 4 lớp hàng rào kỹ thuật để cô lập hoàn toàn các rủi ro này:*
   > *1. **Cô lập một chiều:** Module `aireview` chỉ đọc dữ liệu từ snapshot đã lưu; đầu ra của LLM tuyệt đối không bao giờ được ghi ngược vào `hotspot_score` hay bảng `file_metric`.*
   > *2. **Đồng thuận 2 bước gắn mã băm SHA-256 (`Preview & ConsentReceipt`):** Người dùng phải bấm Xem trước đúng đoạn mã (tối đa 200 dòng / 8 KiB lấy từ đúng blob `headSha` của snapshot). Hệ thống tính `contextHash` SHA-256; chỉ khi người dùng tích `consent = true` khớp đúng `contextHash` đó thì yêu cầu mới được xử lý.*
-  > *3. **Quét Secret trước khi gửi (`SECRET_PATTERN`):** Nếu đoạn mã hoặc message chứa khóa bí mật (`PRIVATE KEY`, `ghp_`, `sk-`, `AKIA`, `password`...), `LlmReviewService` chặn ngay với mã `403 SECRET_DETECTED` và không gọi provider.*
+  > *3. **Quét Secret trước khi gửi (`SECRET_PATTERN`):** Nếu đoạn mã hoặc message chứa khóa bí mật (`PRIVATE KEY`, `ghp_`, `github_pat_`, `AKIA`, `password`...), `LlmReviewService` chặn ngay với mã `403 SECRET_DETECTED` và không gọi provider.*
   > *4. **Chống ảo giác bằng `evidenceAllowlist`:** Phản hồi JSON từ LLM bị kiểm tra schema nghiêm ngặt và chỉ được phép trích dẫn các mã bằng chứng (`E1..E5`) có thật trong ngữ cảnh gửi đi; nếu AI tự bịa mã bằng chứng khác, hệ thống từ chối ngay với mã `502 Bad Gateway`."*
 
 ### Câu hỏi 5: *"Làm thế nào nhóm đảm bảo phép tính tăng điểm Hotspot (`> +0.15`) và cảnh báo không bị sai lệch do sai số dấu phẩy động hoặc do cửa sổ thời gian trượt?"*

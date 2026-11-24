@@ -3,7 +3,8 @@
 - **Người thực hiện:** Trần Quang Toản (`23110158`)
 - **Ngày thực hiện:** 24/11/2026
 - **Tập tin chỉnh sửa:** [AnalysisDashboard.tsx](../../frontend/src/components/AnalysisDashboard.tsx), [App.css](../../frontend/src/App.css), [week8.spec.ts](../../frontend/e2e/week8.spec.ts)
-- **Mục tiêu:** Giải quyết triệt để các điểm dễ gây khựng thao tác hoặc hiểu nhầm khi người tham gia thực hiện 7 tác vụ chuẩn (`T1..T7`) của thực nghiệm người dùng `RQ3` (`STT 33`, `STT 34`).
+- **Ghi chú trung thực:** Vòng cải tiến này làm **trước** khi thu phiếu RQ3 (dựa trên rà soát 7 tác vụ chuẩn). Rubric TC2.7 yêu cầu cải tiến theo phản hồi người dùng có đo trước–sau, nên sau khi có phiếu thật cần bổ sung ít nhất 1 điều chỉnh theo góp ý Câu 11–12.
+- **Mục tiêu:** Giải quyết các điểm dễ gây khựng thao tác hoặc hiểu nhầm khi người tham gia thực hiện 7 tác vụ chuẩn (`T1..T7`) của thực nghiệm người dùng `RQ3` (`STT 33`, `STT 34`).
 
 ---
 

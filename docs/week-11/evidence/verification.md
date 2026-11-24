@@ -12,8 +12,8 @@ Ngày thực hiện: 24/11/2026. Môi trường kiểm chứng của Toản: Win
 | **Playwright UI E2E Tests (12 ca)** | **10 / 10 ca chế độ mock PASS** (gồm ca thứ 12 kiểm chứng 4 cải tiến UI Tuần 11 và chống tràn ngang Mobile `375 × 812`); 2 ca live chạy khi bật backend live | `frontend/e2e/week8.spec.ts` |
 | **Minh chứng hình ảnh UI Before / After (`STT 34`)** | Đủ 4 ảnh độ phân giải chuẩn Desktop (`1440 × 1000`) và Mobile (`375 × 812`) trước và sau cải tiến | [ui-before-desktop.png](ui-before-desktop.png), [ui-after-desktop.png](ui-after-desktop.png), [ui-before-mobile.png](ui-before-mobile.png), [ui-after-mobile.png](ui-after-mobile.png) |
 | **Python Experiment Unit Tests** | **37 / 37 ca PASS** (`0` lỗi) | `python -m unittest discover -s tools/experiments -v` |
-| **Backend JUnit + PostgreSQL 18.3 + JaCoCo `0.8.12`** | **122 / 122 ca PASS** (`0` lỗi, `0` skip); độ phủ dòng lệnh toàn hệ thống **89.07%** (`1.630/1.830` dòng) | [jacoco-fullstack-coverage.json](../../week-10/evidence/jacoco-fullstack-coverage.json) |
-| **Cấu hình Docker Compose & Staging Overlay** | Tham số hóa `APP_ALLOWED_ORIGINS` & cổng frontend tương thích ngược 100% với CI; có `compose.staging.yaml`, `deploy/Caddyfile` và `deploy/seed_staging.py` | [compose.yaml](../../../compose.yaml), [compose.staging.yaml](../../../compose.staging.yaml), [deploy/seed_staging.py](../../../deploy/seed_staging.py) |
+| **Backend JUnit + PostgreSQL 18.3 + JaCoCo `0.8.12`** (lượt chạy 18/11; tuần 11 không sửa backend) | **122 / 122 ca PASS** (`0` lỗi, `0` skip); độ phủ dòng lệnh toàn hệ thống **89.07%** (`1.630/1.830` dòng) | [jacoco-fullstack-coverage.json](../../week-10/evidence/jacoco-fullstack-coverage.json) |
+| **Cấu hình Docker Compose & Staging Overlay** | `docker compose config` và `docker compose -f compose.yaml -f compose.staging.yaml config` đều hợp lệ (exit 0); tham số hóa `APP_ALLOWED_ORIGINS` & cổng frontend tương thích ngược 100% với CI; có `compose.staging.yaml`, `deploy/Caddyfile` và `deploy/seed_staging.py` | [compose.yaml](../../../compose.yaml), [compose.staging.yaml](../../../compose.staging.yaml), [deploy/seed_staging.py](../../../deploy/seed_staging.py) |
 
 ---
 

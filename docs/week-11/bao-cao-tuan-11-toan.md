@@ -24,7 +24,7 @@ Bám sát phân công của Toản trong **Kế hoạch Về Đích (Chặng 1, 
 
 ## 2. Kết quả kiểm thử kỹ thuật trước mốc CODE FREEZE
 
-- **Backend JUnit Tests + PostgreSQL 18.3:** **122 / 122 ca PASS** (`0` lỗi, `0` skip); độ phủ JaCoCo `0.8.12` full-stack đạt **89.07% line coverage** (`repository` 100%, `api` 100%, `monitoring` 94.60%, `gitanalyzer` 88.12%, `aireview` 85.88%).
+- **Backend JUnit Tests + PostgreSQL 18.3 (lượt chạy 18/11; tuần 11 không sửa mã backend):** **122 / 122 ca PASS** (`0` lỗi, `0` skip); độ phủ JaCoCo `0.8.12` full-stack đạt **89.07% line coverage** (`repository` 100%, `api` 100%, `monitoring` 94.60%, `gitanalyzer` 88.12%, `aireview` 85.88%).
 - **Python Experiment Unit Tests:** **37 / 37 ca PASS** (`0` lỗi).
 - **Frontend Lint, Build & Playwright E2E:**
   - `npm run lint` và `npm run build` PASS.
