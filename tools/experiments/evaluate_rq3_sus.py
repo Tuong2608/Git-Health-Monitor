@@ -157,28 +157,46 @@ def evaluate_participants(participants: list[dict]) -> dict:
 
 def load_csv_responses(csv_path: Path) -> list[dict]:
     """Load Google Form CSV export cleanly (columns: participantId,role,T1..T7,Q1..Q10,feedback)."""
+    pass_tokens = {"1", "true", "pass", "passed", "yes", "dat", "đạt", "đạt (1)", "dat (1)"}
+    fail_tokens = {
+        "0",
+        "false",
+        "fail",
+        "failed",
+        "no",
+        "khong",
+        "không",
+        "không đạt",
+        "khong dat",
+        "không đạt (0)",
+        "khong dat (0)",
+    }
     participants = []
     with csv_path.open(encoding="utf-8-sig", newline="") as stream:
-        for row in csv.DictReader(stream):
+        for raw_row in csv.DictReader(stream):
+            row = {k.strip(): (v if v is not None else "") for k, v in raw_row.items() if k is not None}
+            if not any(str(v).strip() for v in row.values()):
+                continue
             tasks = {}
             for tid in REQUIRED_TASKS:
                 raw_ok = str(row[tid]).strip().lower()
-                if raw_ok in ("1", "true", "pass", "passed", "yes", "dat", "đạt"):
+                if raw_ok in pass_tokens:
                     ok = True
-                elif raw_ok in ("0", "false", "fail", "failed", "no", "khong", "không"):
+                elif raw_ok in fail_tokens:
                     ok = False
                 else:
                     raise ValueError(f"Unrecognized boolean value for {tid}: {row[tid]!r}")
                 dur_key = f"{tid}_sec"
-                sec = float(row[dur_key]) if row.get(dur_key) not in (None, "") else None
+                sec_raw = str(row.get(dur_key, "")).strip()
+                sec = float(sec_raw) if sec_raw else None
                 tasks[tid] = {"passed": ok, "seconds": sec}
-            sus = [int(row[f"Q{i}"]) for i in range(1, 11)]
+            sus = [int(str(row[f"Q{i}"]).strip()) for i in range(1, 11)]
             participants.append({
-                "participantId": row["participantId"].strip(),
-                "role": row.get("role", "").strip(),
+                "participantId": str(row["participantId"]).strip(),
+                "role": str(row.get("role", "")).strip(),
                 "tasks": tasks,
                 "sus": sus,
-                "feedback": row.get("feedback", "").strip(),
+                "feedback": str(row.get("feedback", "")).strip(),
             })
     return participants
 

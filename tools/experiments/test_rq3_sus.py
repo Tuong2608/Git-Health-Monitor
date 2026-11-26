@@ -72,6 +72,38 @@ class Rq3SusTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 evaluate_participants([rows[0], rows[0]])
 
+    def test_load_csv_responses_supports_vietnamese_labels_whitespace_and_template(self):
+        csv_text = (
+            " participantId , role , T1 , T1_sec , T2 , T2_sec , T3 , T3_sec , T4 , T4_sec , "
+            "T5 , T5_sec , T6 , T6_sec , T7 , T7_sec , Q1 , Q2 , Q3 , Q4 , Q5 , Q6 , Q7 , Q8 , Q9 , Q10 , feedback \n"
+            "P02,SV năm 4,Đạt (1),25,dat (1),30,Không đạt (0),70,Không đạt,80,Đạt,40,khong dat (0),50,Đạt (1),45,"
+            "4,2,4,2,4,2,5,2,4,2,Cần tooltip rõ hơn\n"
+            ",,,,,,,,,,,,,,,,,,,,,,,,,,\n"
+        )
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td) / "vn_responses.csv"
+            p.write_text(csv_text, encoding="utf-8-sig")
+            rows = load_csv_responses(p)
+            self.assertEqual(len(rows), 1)
+            self.assertEqual(rows[0]["participantId"], "P02")
+            self.assertTrue(rows[0]["tasks"]["T1"]["passed"])
+            self.assertFalse(rows[0]["tasks"]["T3"]["passed"])
+            self.assertFalse(rows[0]["tasks"]["T4"]["passed"])
+            self.assertFalse(rows[0]["tasks"]["T6"]["passed"])
+            report = evaluate_participants(rows)
+            self.assertEqual(report["overallTaskPassed"], 4)
+            self.assertEqual(report["sus"]["mean"], 77.5)
+
+        template = (
+            Path(__file__).resolve().parents[2]
+            / "docs"
+            / "week-11"
+            / "evidence"
+            / "rq3-responses-template.csv"
+        )
+        self.assertTrue(template.exists())
+        self.assertEqual(load_csv_responses(template), [])
+
 
 if __name__ == "__main__":
     unittest.main()
