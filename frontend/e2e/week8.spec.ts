@@ -114,6 +114,24 @@ test('stale snapshot response is ignored after changing selection', async ({ pag
   await expect(page.getByText('OLD_RESPONSE', { exact: false })).toHaveCount(0)
 })
 
+test('week 11 RQ3 UI guidance exposes metric formulas, AI 3-step contextHash and coverage explanation', async ({ page }) => {
+  await setup(page)
+  await page.route('**/api/snapshots/2', async route => route.fulfill({ json: { ...snapshot, summary: { coverageComplete: false } } }))
+  await openFile(page)
+  await expect(page.getByText('Giải thích độ phủ: LINEAGE_AMBIGUOUS', { exact: false })).toBeVisible()
+  await page.getByText('Giải thích công thức chỉ số (Hotspot, Max CCN, HHI)').click()
+  await expect(page.getByText('Hotspot = √(P_change × P_complexity):')).toBeVisible()
+  await expect(page.getByText('Quy trình 3 bước:', { exact: false })).toBeVisible()
+  await page.getByRole('button', { name: 'Xem trước dữ liệu gửi' }).click()
+  await expect(page.getByText('Mã xác thực ngữ cảnh (contextHash SHA-256):')).toBeVisible()
+  await expect(page.locator('.context-hash code')).toHaveText('preview-hash')
+  await page.setViewportSize({ width: 1440, height: 1000 })
+  await page.screenshot({ path: 'test-results/week11-after-desktop.png', fullPage: true })
+  await page.setViewportSize({ width: 375, height: 812 })
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true)
+  await page.screenshot({ path: 'test-results/week11-after-mobile.png', fullPage: true })
+})
+
 test('live published snapshot opens through React with no API mocks', async ({ page }) => {
   test.skip(!process.env.GHM_WEEK8_LIVE, 'Requires a completed public-repository analysis in the disposable live database')
   await page.goto('/')

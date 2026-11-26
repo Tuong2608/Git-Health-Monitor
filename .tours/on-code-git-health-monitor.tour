@@ -1,0 +1,97 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Tour Ôn Code Bảo Vệ — Git Health Monitor (15 Điểm Trọng Tâm)",
+  "description": "Bấm Next từng bước để đi qua luồng code: Đăng ký Repo -> Hàng đợi PostgreSQL -> JGit/Lizard/Metric -> Lưu Snapshot & Cảnh báo -> AI Review -> Giao diện React. Số dòng đã đối chiếu với main 01f9ed1.",
+  "steps": [
+    {
+      "file": "backend/src/main/java/com/example/demo/repository/GitHubRepositoryUrl.java",
+      "line": 11,
+      "title": "1. Chuẩn hóa & kiểm tra URL GitHub (Toản)",
+      "description": "parse(String input) chỉ chấp nhận URL GitHub dạng /<owner>/<repo> khớp regex PATH (dòng 9), chuẩn hóa và trả record GitHubRepositoryUrl(url, owner, name). URL sai định dạng bị từ chối trước khi chạm tới JGit."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/monitoring/MonitoringController.java",
+      "line": 32,
+      "title": "2. API kích hoạt phân tích bất đồng bộ (Toản)",
+      "description": "POST /api/repositories/{repo}/analyses: kiểm tra quyền ghi (writeAccess) và pipeline sẵn sàng, gọi store.enqueue() rồi trả ngay 202 Accepted kèm jobId, không chờ phân tích xong."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/monitoring/MonitoringStore.java",
+      "line": 46,
+      "title": "3. Hàng đợi job trên PostgreSQL, không Redis (Toản — ADR-002)",
+      "description": "enqueue() lấy khóa pg_advisory_xact_lock (dòng 56) để tuần tự hóa, từ chối 429 khi đã có 20 job QUEUED (dòng 57). Partial unique index one_active_job trong V2 chặn 2 job active trên cùng một repo (409)."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/monitoring/MonitoringStore.java",
+      "line": 82,
+      "title": "4. Nhận job bằng SKIP LOCKED + lease 120 giây (Toản)",
+      "description": "claim() lấy job QUEUED cũ nhất, chuyển RUNNING, cấp claim_token và lease_until = now + 120 giây (dòng 86). heartbeat() (dòng 89) gia hạn lease; recoverExpired() (dòng 95) đánh FAILED cho job mất lease."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/monitoring/AnalysisWorker.java",
+      "line": 38,
+      "title": "5. Luồng điều phối của AnalysisWorker (Toản)",
+      "description": "dispatch() (@Scheduled mỗi 1 s, dòng 29-30) gọi runOne(): nhận job qua store.claim(), bật heartbeat định kỳ (dòng 44), chạy pipeline, rồi publish snapshot. Nếu mất lease thì ngắt luồng (dòng 63). Các tác vụ scheduleDue/recover/evaluate ở dòng 74-81."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/gitanalyzer/GitIngestion.java",
+      "line": 71,
+      "title": "6. Duyệt DAG commit & theo dõi đổi tên file (Tưởng)",
+      "description": "extract() bật DiffFormatter.setDetectRenames(true) với renameScore = 60 và renameLimit = 1000 (dòng 78-80) để giữ cùng lineageKey khi file bị git mv."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/gitanalyzer/GitIngestion.java",
+      "line": 103,
+      "title": "7. Chốt chặn LINEAGE_AMBIGUOUS tại merge commit (Tưởng)",
+      "description": "Với commit có > 1 cha, chỉ phả hệ được mọi nhánh cha ủng hộ mới coi là rõ ràng (dòng 104). Ngược lại gán FileIdentity ambiguous = true và cờ LINEAGE_AMBIGUOUS (dòng 109), thà báo chưa đo được còn hơn ghép sai lịch sử."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/gitanalyzer/LizardComplexityAnalyzer.java",
+      "line": 111,
+      "title": "8. Đo độ phức tạp tại đúng cây HEAD của snapshot (Tưởng)",
+      "description": "analyzeAtHead() đo Lizard trên blob tại headSha, không dùng working tree hiện tại. File không có hàm trả FileComplexity.noFunctions (dòng 51-52): functions = 0, maxCcn = null, cờ NO_FUNCTIONS."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/gitanalyzer/RepositoryMetricCalculator.java",
+      "line": 198,
+      "title": "9. Phân vị midrank và Hotspot (Tưởng)",
+      "description": "Chỉ file có frequency != null và maxCcn != null mới vào population. midrankPercentiles() (dòng 293, công thức ở dòng 289-291) tính phân vị; Hotspot = sqrt(P_change * P_complexity). HHI ở computeHhi() (dòng 320), coupling ở computeTemporalCoupling() (dòng 336). coverageComplete tính ở dòng 227-229."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/monitoring/SnapshotPublisher.java",
+      "line": 17,
+      "title": "10. Xuất bản snapshot nguyên tử @Transactional (Toản)",
+      "description": "publish() kiểm tra claim còn hiệu lực (dòng 23-24), trùng khóa tự nhiên thì trả NO_CHANGE (dòng 25-29), ghim pinned_rules (dòng 30), kiểm tra tổng churn tác giả == churn file (dòng 48), ghi 6 bảng và chuyển job SUCCEEDED trong cùng một giao dịch."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/monitoring/AlertService.java",
+      "line": 76,
+      "title": "11. Đánh giá cảnh báo & chặn INCOMPLETE_COVERAGE (Toản)",
+      "description": "evaluate() tìm snapshot chuẩn cùng config và độ dài cửa sổ (dòng 78). Nếu coverageComplete = false thì ghi INCOMPLETE_COVERAGE, không sinh cảnh báo (dòng 89, 94). So sánh hotspot bằng SQL NUMERIC: n.hotspot_score - o.hotspot_score > threshold (dòng 96)."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/monitoring/SnapshotQueries.java",
+      "line": 50,
+      "title": "12. So sánh 2 snapshot bằng FULL OUTER JOIN (Toản)",
+      "description": "comparison() bắt buộc cùng repo, đúng thứ tự, cùng config_hash và độ dài cửa sổ (409 SNAPSHOTS_NOT_COMPARABLE_CONFIG) và cả hai coverageComplete (409 SNAPSHOTS_NOT_COMPARABLE_COVERAGE), rồi FULL OUTER JOIN theo file_id, giữ nguyên NULL (dòng 61)."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/aireview/ReviewContextBuilder.java",
+      "line": 35,
+      "title": "13. Ngữ cảnh AI Review từ blob lịch sử (Toản)",
+      "description": "build(snapshot, file, start, end) đọc đúng đoạn mã tại headSha của snapshot, gom metric và bằng chứng E1.., để LlmReviewService.computeContextHash() băm SHA-256 thành contextHash cho bước Preview."
+    },
+    {
+      "file": "backend/src/main/java/com/example/demo/aireview/LlmReviewService.java",
+      "line": 216,
+      "title": "14. Kiểm tra giới hạn, secret và evidence allowlist (Tưởng)",
+      "description": "review() kiểm tra giới hạn 32 KiB / 8 KiB / 200 dòng (dòng 29-33), quét SECRET_PATTERN trước khi gọi provider (dòng 271-273), và từ chối INVALID_EVIDENCE nếu AI trích evidenceId không có trong allowlist (dòng 468-469)."
+    },
+    {
+      "file": "frontend/src/components/AnalysisDashboard.tsx",
+      "line": 15,
+      "title": "15. React: chống phản hồi cũ & biểu đồ Trend tự ngắt nét (Toản)",
+      "description": "useRemote() dùng AbortController hủy request cũ khi đổi lựa chọn. Hàm Trend() phía dưới tách series mới khi hai snapshot lệch config, cửa sổ hoặc thiếu coverage (connectNulls = false)."
+    }
+  ]
+}
